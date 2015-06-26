@@ -1,0 +1,67 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: List Content</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">list-content</h1>
+         <h1 class="attrname">List Content</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Names a type of list, usually with a semantically meaningful name, such as procedure list or notation list</p>
+      </div>
+      <h2 class="header">Usage</h2>
+      <p class="para">Preserves the semantic information concerning a
+                <em>named</em> type of list, for those instances where
+                the publisher&#8217;s original Tag Set modeling uses specific named lists instead of
+                the more generic element <a href="n-ai40.html"><span class="elementname">List</span></a></p>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Potential values for this attribute include, but are not limited
+                      to, &#8220;<tt>procedure</tt>&#8221;, &#8220;<tt>where-list</tt>&#8221; (used in equations),
+                      &#8220;<tt>synonymy</tt>&#8221;, &#8220;<tt>compound-info</tt>&#8221;, &#8220;<tt>algorithm</tt>&#8221;, &#8220;<tt>notation</tt>&#8221;, etc. For example, if a list in a publisher&#8217;s Tag Set would be tagged as: <tt>&lt;algorithm&gt;</tt>; in this Tag Set, such a list would be tagged:
+         </p>
+         <div class="codeblock"><pre>&lt;list list-content="algorithm"&gt;</pre></div>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5 class="heading"><a href="n-pku0.html"><span class="elementtag">&lt;def-list&gt;</span></a> <a href="n-pku0.html"><span class="elementname">Definition List</span></a></h5>
+            <h5 class="heading"><a href="n-ai40.html"><span class="elementtag">&lt;list&gt;</span></a> <a href="n-ai40.html"><span class="elementname">List</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">The type
+                                of list for special list types, for example, &#8220;<tt>where-list</tt>&#8221;, for a list of the variables that frequently follows an equation. This attribute may take any text value.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

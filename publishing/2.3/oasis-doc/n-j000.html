@@ -1,0 +1,237 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Tag Library Introduction</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">OASIS Open Exchange CALS Table Model (XML version)</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="intro">
+         <h1 class="header">General Introduction</h1>
+         <p class="para">The NLM Journal Archiving and Interchange Suite and the tag sets made from the Suite elements use the XHTML table model by
+            default. If an archive or publisher would prefer the CALS table model, instead of or in addition to the XHTML table, the Suite
+            has been set up to accept the 
+            OASIS Open Exchange CALS table model (XML version). This Tag Library describes how to integrate the OASIS Table model with
+            the NLM Archiving and Interchange Suite DTD modules and describes the elements and attributes that make up the OASIS restricted
+            version of the CALS table model.
+         </p>
+         <hr class="hrule">
+         <div class="section"><a name=""></a><h2 class="header">Structure of this Tag Library</h2>
+            <p class="para">This Tag Library contains the following sections:</p>
+            <div class="deflist">
+               <table class="deflisttable">
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Introduction</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">This introduction to the contents of this Tag Library</p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Elements Section</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Definitions, tagged examples, and usage notes for each of the elements in the OASIS CALS table model. Elements are nouns,
+                           like &#8220;row&#8221; and
+                                       &#8220;entry&#8221;, that represent components of CALS tables. The element descriptions are listed in
+                                      alphabetical order by tag name. 
+                        </p>
+                        <p class="para">Note: Each element has two names: a &#8220;tag name&#8221; (formally called
+                                       an element-type name) that is used in tagged
+                                      documents, in the DTDs/schemas, and by the software, and an
+                                       &#8220;element name&#8221; (usually longer) that provides a fuller, more descriptive name for the
+                                       benefit of readers. For example, a tag name might be
+                                       <a href="n-e800.html"><span class="elementtag">&lt;oasis:colspec&gt;</span></a> with the corresponding element name
+                                       <a href="n-e800.html"><span class="elementname">Column Specification (OASIS Table Model)</span></a> or a tag name might be
+                                       <a href="n-k400.html"><span class="elementtag">&lt;oasis:tbody&gt;</span></a> with the corresponding element name
+                                       <a href="n-k400.html"><span class="elementname">Table Body (OASIS Table Model)</span></a>.
+                                     
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Attributes Section</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">
+                                       Descriptions of the attributes in the OASIS CALS table model. Attributes are facts
+                                       about an element, such as which type of list (e.g., plain, bulleted, or
+                                       numbered) is being requested when using a
+                                       <tt>&lt;list&gt;</tt>
+                                       element, or the name of a pointer to an external file that makes a hypertext link.
+                        </p>
+                        <p class="para">Like elements, attributes also have two names: the shorter machine-readable one
+                                       and a (usually longer) human-readable one. Attributes are listed in order by
+                                       the shorter machine-readable names, for example, the attribute short name
+                                       <a href="n-7z00.html"><span class="attrtag">valign</span></a> instead of the more informal, easier to read: 
+                                       <a href="n-7z00.html"><span class="attrname">Vertical Alignment (OASIS Table Model)</span></a>.
+                                     
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Parameter Entity Section <em>(For Implementors
+                                        Only)</em></p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Names (with occasional descriptions) and contents of the
+                                      Parameter Entities in the DTD modules
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Context Table</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Listings of where each element may be used. All elements
+                                      in the OASIS CALS table model are given in a simple alphabetical list.
+                        </p>
+                        <p class="para">The Context Table is formatted in two columns. The first
+                                      column lists an element&#8217;s tag name as well as its descriptive name, and the second column lists the tag and name
+                           pairs of all the elements in which the listed element may occur. For example, if
+                                      the first column contains the element
+                                      <a href="n-q400.html"><span class="elementtag">&lt;oasis:tgroup&gt;</span></a> and the second column contains only the element <a href="n-mx00.html"><span class="elementtag">&lt;oasis:table&gt;</span></a>, this means that the
+                                      <a href="n-q400.html"><span class="elementtag">&lt;oasis:tgroup&gt;</span></a> [<a href="n-q400.html"><span class="elementname">Table Group (OASIS Table Model)</span></a>]
+                                      element may only be used inside an <a href="n-mx00.html"><span class="elementtag">&lt;oasis:table&gt;</span></a>
+                                      [<a href="n-mx00.html"><span class="elementname">Table (OASIS Table Model)</span></a>] element.
+                        </p>
+                        <p class="para">Most elements may be used inside more than one other
+                                      element. For example, the element
+                                      <a href="n-kx00.html"><span class="elementtag">&lt;oasis:row&gt;</span></a> [<a href="n-kx00.html"><span class="elementname">Table Row (OASIS Table Model)</span></a>] may be used inside the
+                                      <a href="n-ms00.html"><span class="elementtag">&lt;oasis:thead&gt;</span></a> and <a href="n-k400.html"><span class="elementtag">&lt;oasis:tbody&gt;</span></a> elements.
+                        </p>
+                        <p class="para">Note: These Context Table listings (which list <em>where</em> an
+                                      element may be used) are the inverse of the content
+                                      definition that is given as a part of each element description,
+                                      which lists what can be <em>inside</em> the named element.
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Using OASIS CALS Tables</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Instructions for adding the OASIS CALS Table model to the NLM Suite, either in addition to the XHTML table model using pseudo-namespaces
+                           or as a complete replacement for the XHTML table model
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Document Hierarchy Diagrams</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Tree-like graphical representations of the CALS table model
+                                      elements. This can be a fast visual way to determine the structure of a table or of most elements within a table.
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>DTD Section</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Copies of all of the DTD modules described in this Tag Library, including the OASIS CALS table model module</p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Index By Element Name</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Index of element descriptions, alphabetically by element
+                                      name (the longer, more descriptive name)
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Index By Tag Name</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Index of element descriptions, alphabetically by tag name
+                                      (element-type name)
+                        </p>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name=""></a><h2 class="header">Typographic Conventions</h2>
+            <table xmlns:mtl="http://www.mulberrytech.com/taglib" xmlns:xsd="http://www.w3.org/2000/10/XMLSchema" frame="hsides">
+                           
+               <colgroup span="1">
+                                 
+                  <col width="10%" span="1">
+                                 
+                  <col width="90%" span="1">
+                              
+               </colgroup>
+                           
+               <tbody>
+                                 
+                  <tr>
+                                       
+                     <td colspan="1" rowspan="1">
+                                             <a href="n-k400.html"><span class="elementtag">&lt;oasis:tbody&gt;</span></a>
+                                          
+                     </td>
+                                       
+                     <td colspan="1" rowspan="1">The tag name of an element (Written in lower case with the
+                                 entire name surrounded by &#8220;&lt; &gt;&#8221;)
+                                
+                     </td>
+                                    
+                  </tr>
+                                 
+                  <tr>
+                                       
+                     <td colspan="1" rowspan="1">
+                                             <a href="n-k400.html"><span class="elementname">Table Body (OASIS Table Model)</span></a>
+                                          
+                     </td>
+                                       
+                     <td colspan="1" rowspan="1">Descriptive name of an element or an attribute (Written in title case, that is, with important words capitalized and the words
+                        separated by spaces)
+                                
+                     </td>
+                                    
+                  </tr>
+                                 
+                  <tr>
+                                       
+                     <td colspan="1" rowspan="1">
+                                             <em>must not</em>
+                                          
+                     </td>
+                                       
+                     <td colspan="1" rowspan="1">Emphasis added to stress a point</td>
+                                    
+                  </tr>
+                              
+               </tbody>
+                        
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">OASIS Open Exchange CALS Table Model (XML version)</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

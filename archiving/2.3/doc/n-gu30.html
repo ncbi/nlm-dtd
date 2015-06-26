@@ -1,0 +1,164 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Back Matter</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;back&gt;</h1>
+         <h1 class="elementname">Back Matter</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Ancillary or supporting material that is not included as part of
+             the main textual content of a journal article, but that follows the body of
+             material that comprises the article; Back Matter might include, for example, appendices, glossaries, and
+             bibliographic reference lists.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Conversion Note: The <a href="n-z5f0.html"><span class="elementtag">&lt;sec&gt;</span></a> element
+             can be used within the <a href="n-gu30.html"><span class="elementname">Back Matter</span></a> <a href="n-gu30.html"><span class="elementtag">&lt;back&gt;</span></a> to tag
+             material that has not been explicitly named as one of the other back matter
+             components, that is, it is not named as an appendix, an acknowledgment, a
+             glossary, etc. For example, tables are frequently placed in the back matter,
+             with no other designation than a label such as &#8220;Table 6&#8221;, or a
+             title such as &#8220;Epochs of Geologic Time&#8221;.
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">A journal article <a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a> may be divided into several components:
+            
+            <ol class="olist">
+               <li>the <a href="n-i9w0.html"><span class="elementname">Front Matter</span></a> (the article metadata or header information, which contains both journal and article metadata);
+               </li>
+               <li>the <a href="n-yv30.html"><span class="elementname">Body of the Article</span></a> (the textual and graphical content of the article);
+               </li>
+               <li>any <a href="n-gu30.html"><span class="elementname">Back Matter</span></a> (any ancillary information such as a glossary, reference list, or appendix);
+               </li>
+               <li>a  <a href="n-ynw0.html"><span class="elementname">Floats Wrapper</span></a> (single container element some publishers and archives use to hold all floating elements such as figures and tables that
+                  are referenced in the article body or back matter); and
+               </li>
+               <li>either a series of <a href="n-yde0.html"><span class="elementname">Response</span></a> elements (A response is a commentary on the article itself.) or a series of <a href="n-a4n0.html"><span class="elementname">Sub-article</span></a> elements (Sub-articles are smaller articles completely contained within the article.).
+               </li>
+            </ol>
+            
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  back         %back-model;                                 &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-tid0.html"><span class="elementname">Title</span></a> <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or more
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>All the back matter elements:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-us20.html"><span class="elementname">Acknowledgments</span></a> <a href="n-us20.html"><span class="elementtag">&lt;ack&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-2sc0.html"><span class="elementname">Appendix Group</span></a> <a href="n-2sc0.html"><span class="elementtag">&lt;app-group&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-9x30.html"><span class="elementname">Biography</span></a> <a href="n-9x30.html"><span class="elementtag">&lt;bio&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-ghw0.html"><span class="elementname">Footnote Group</span></a> <a href="n-ghw0.html"><span class="elementtag">&lt;fn-group&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-vxx0.html"><span class="elementname">Glossary Elements List</span></a> <a href="n-vxx0.html"><span class="elementtag">&lt;glossary&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-awe0.html"><span class="elementname">Reference List (Bibliographic)</span></a> <a href="n-awe0.html"><span class="elementtag">&lt;ref-list&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-kbs0.html"><span class="elementname">Notes</span></a> <a href="n-kbs0.html"><span class="elementtag">&lt;notes&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-z5f0.html"><span class="elementname">Section</span></a> <a href="n-z5f0.html"><span class="elementtag">&lt;sec&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a> <a href="n-4nc0.html"><span class="elementname">Article</span></a>; <a href="n-yde0.html"><span class="elementtag">&lt;response&gt;</span></a> <a href="n-yde0.html"><span class="elementname">Response</span></a>; <a href="n-a4n0.html"><span class="elementtag">&lt;sub-article&gt;</span></a> <a href="n-a4n0.html"><span class="elementname">Sub-article</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;...
+&lt;/front&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+<strong><span class="focus">&lt;back&gt;
+&lt;ack&gt;
+&lt;p&gt;We thank B. Beltchev for purification of Hfq, S. Cusack and A. J.
+Carpousis for the gift of PAP I, A. Ishihama for Hfq antibodies used in Hfq
+purification, M. E. Winkler for strains TX2808 and TX2758, I. Boni for reminding
+us that Hfq binds poly(A), M. Springer for suggesting that Hfq might
+relate PAPs to primitive telomerase, Ph. Derreumeaux for help in sequence
+comparisons, M. Grunberg-Manago, C. Condon and R. Buckingham for reading the
+manuscript, and H. Weber for advice. We also acknowledge Minist&amp;#x00E8;re de
+l'Education Nationale de la Recherche et de la Technologie, Centre National de
+la Recherche Scientifique, and Paris7 University for
+support.&lt;/p&gt;
+&lt;/ack&gt;
+&lt;glossary&gt;...
+&lt;/glossary&gt;
+&lt;ref-list&gt;...
+&lt;/ref-list&gt;
+&lt;/back&gt;</span></strong>
+&lt;/article&gt;
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">archivearticle.dtd</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

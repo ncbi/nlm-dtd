@@ -1,0 +1,607 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Authoring Changes</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h4 class="header">Authoring Changes</h4>
+         <p class="para">The Authoring Tag Set, <tt>articleauthoring3.dtd</tt>, was brought up to version 3.0, with
+            the DTD version attribute (<a href="n-8re0.html" target="main" title="Version of the Tag Set (DTD)"><span class="attrtag">@dtd-version</span></a>) set to “<tt>3.0 </tt>”
+            and the version and date changed in <em>every</em> module to “<tt>v3.0
+               20080202 </tt>”.
+         </p>
+         <div class="section"><a name="v3-auth-classes"></a><h4 class="header">Authoring Changes in Classes</h4>
+            <p class="para">The following changes were made to <tt>articleauthcustom-classes3.ent</tt>:
+            </p>
+            <ul class="bullist">
+               <li><strong>Alternatives</strong> — Redefined
+                  <a href="n-br60.html" target="main" title="Alternatives Display Class Elements"><span class="petag">%alternatives-display.class;</span></a> to remove <tt>array</tt> and
+                  <tt>private-char</tt>, which are not used in Authoring. Added
+                  <a href="n-7k20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> to <a href="n-2qh0.html" target="main" title="Inline Display Class Elements"><span class="petag">%inline-display.class;</span></a>.
+               </li>
+               <li><strong>Chemical Structure</strong> — Added
+                  <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> to the override for
+                  <a href="n-7pj0.html" target="main" title="Simple Display Class Elements"><span class="petag">%simple-display.class;</span></a>, which adds <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> to the
+                  models of the following elements in the Authoring Tag Set: 
+                  <ul class="bullist">
+                     <li><a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> (using
+                        <a href="n-rnd0.html" target="main" title="Chemical Structure Elements"><span class="petag">%chem-struct-elements;</span></a>)
+                     </li>
+                     <li><a href="n-ev50.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a> (using
+                        <a href="n-9pr0.html" target="main" title="Formula, Display Elements"><span class="petag">%disp-formula-elements;</span></a>)
+                     </li>
+                     <li><a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> (using <a href="n-yvh0.html" target="main" title="Figure-Like Content Model"><span class="petag">%fig-model;</span></a>)
+                     </li>
+                     <li><a href="n-ues0.html" target="main" title="Table Data Cell (XHTML table model)"><span class="elementtag">&lt;td&gt;</span></a> (using <a href="n-pki0.html" target="main" title="Inside Table Cell Elements"><span class="petag">%inside-cell;</span></a>)
+                     </li>
+                     <li><a href="n-ekt0.html" target="main" title="Table Header Cell (XHTML table model)"><span class="elementtag">&lt;th&gt;</span></a> (using <a href="n-pki0.html" target="main" title="Inside Table Cell Elements"><span class="petag">%inside-cell;</span></a>)
+                     </li>
+                  </ul>
+               </li>
+               <li><strong>Citations</strong> — Added
+                  <a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> to the override for <a href="n-ahd0.html" target="main" title="Citation Class Elements"><span class="petag">%citation.class;</span></a>,
+                  which adds <a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> to the models of the following elements
+                  in the Authoring Tag Set: 
+                  <ul class="bullist">
+                     <li><tt>entry</tt> (using <a href="n-pki0.html" target="main" title="Inside Table Cell Elements"><span class="petag">%inside-cell;</span></a>)
+                     </li>
+                     <li><a href="n-xya0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a> (using
+                        <a href="n-smi0.html" target="main" title="License Paragraph Elements"><span class="petag">%license-p-elements;</span></a>)
+                     </li>
+                     <li><a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> (using <a href="n-eyy0.html" target="main" title="Paragraph Elements"><span class="petag">%p-elements;</span></a>)
+                     </li>
+                     <li><a href="n-s640.html" target="main" title="Article Subtitle"><span class="elementtag">&lt;subtitle&gt;</span></a> (using <a href="n-tkq0.html" target="main" title="Elements Used in Titles"><span class="petag">%title-elements;</span></a>)
+                     </li>
+                     <li><a href="n-ues0.html" target="main" title="Table Data Cell (XHTML table model)"><span class="elementtag">&lt;td&gt;</span></a> (using <a href="n-pki0.html" target="main" title="Inside Table Cell Elements"><span class="petag">%inside-cell;</span></a>)
+                     </li>
+                     <li><a href="n-ekt0.html" target="main" title="Table Header Cell (XHTML table model)"><span class="elementtag">&lt;th&gt;</span></a> (using <a href="n-pki0.html" target="main" title="Inside Table Cell Elements"><span class="petag">%inside-cell;</span></a>)
+                     </li>
+                     <li><a href="n-bft0.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a> (using <a href="n-tkq0.html" target="main" title="Elements Used in Titles"><span class="petag">%title-elements;</span></a>)
+                     </li>
+                  </ul>
+               </li>
+               <li><strong>Display Back Matter</strong> — Deleted the parameter entity
+                  <a href="n-6mr0.html" target="main" title="Display Element Back Matter Class Elements"><span class="petag">%display-back-matter.class;</span></a> since the override and the Suite default were
+                  the same..
+               </li>
+               <li>
+                  <strong>References Class</strong> — The Authoring Tag Set no longer
+                  overrides <a href="n-swj0.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a>, which is used in the models of
+                  <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>,
+                  <a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, and
+                  <a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a>. <br class="br"> In <tt>articleauthcustom-classes3.ent</tt>, removed the
+                  <a href="n-swj0.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a> as duplicative of the Suite default.<br class="br">In <tt>default-classes3.ent</tt>, in <a href="n-swj0.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a>, added the
+                  elements: 
+                  <ul class="bullist">
+                     <li><a href="n-g4c0.html" target="main" title="Chapter Title in a Citation"><span class="elementtag">&lt;chapter-title&gt;</span></a>,
+                     </li>
+                     <li><a href="n-5rw0.html" target="main" title="Part Title in a Citation"><span class="elementtag">&lt;part-title&gt;</span></a>,
+                     </li>
+                     <li><a href="n-t930.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a>,
+                     </li>
+                     <li><a href="n-5yv0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a>,
+                     </li>
+                     <li><a href="n-2u40.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a>, and
+                     </li>
+                     <li><a href="n-5270.html" target="main" title="Volume Series"><span class="elementtag">&lt;volume-series&gt;</span></a>.
+                     </li>
+                  </ul><br class="br">Also deleted the following elements from <a href="n-swj0.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a>: 
+                  <ul class="bullist">
+                     <li><a href="n-ar00.html" target="main" title="Access Date for Cited Work"><span class="elementtag">&lt;access-date&gt;</span></a> (replaced by
+                        <a href="n-t930.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a>),
+                     </li>
+                     <li><a href="n-6gw0.html" target="main" title="Page Count"><span class="elementtag">&lt;page-count&gt;</span></a> (replaced by <a href="n-5yv0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a>),
+                        and
+                     </li>
+                     <li><a href="n-rat0.html" target="main" title="Time Stamp for Cited Work"><span class="elementtag">&lt;time-stamp&gt;</span></a> (replaced by
+                        <a href="n-t930.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a>).
+                     </li>
+                  </ul><br class="br">The default references class (used by all Tag Sets) is now:
+                  <div class="codeblock"><pre>annotation | article-title | chapter-title |
+collab | comment | conf-date | conf-loc | 
+conf-name | conf-sponsor | date |
+date-in-citation | day | edition | email | 
+elocation-id | etal | ext-link | fpage | 
+gov | institution | isbn | issn | 
+issue | issue-id | issue-part | issue-title | 
+lpage | month | name | object-id | 
+page-range | part-title | 
+patent | person-group | pub-id | 
+publisher-loc | publisher-name | role |
+season | series | size | source | std | 
+string-name | supplement | 
+trans-source | trans-title | uri | 
+volume | volume-id | volume-series | year</pre></div>
+               </li>
+               <li><strong>Phrase-level Elements</strong> — Added
+                  <a href="n-sx40.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a> to the override for
+                  <a href="n-c9y0.html" target="main" title="Phrase Class Elements"><span class="petag">%phrase.class;</span></a>.
+               </li>
+               <li><strong>Roman Emphasis</strong> — Added <a href="n-hwv0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a>
+                  to the <a href="n-b3h0.html" target="main" title="Emphasis Rendition Class Elements"><span class="petag">%emphasis.class;</span></a>.
+               </li>
+            </ul>
+         </div>
+         <div class="section"><a name="v3-auth-ameta"></a><h4 class="header">Authoring Article Metadata</h4>
+            <p class="para">In <tt>articleauthcustom-models3.ent</tt>, after all the changes to
+               <a href="n-n420.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a> (using the <a href="n-kkd0.html" target="main" title="Article Metadata Model"><span class="petag">%article-meta-model;</span></a> override),
+               the final model is:
+            </p>
+            <div class="codeblock"><pre>(title-group, contrib-group, 
+(product | supplementary-material)*, 
+permissions?, self-uri*, related-article*, 
+abstract+, kwd-group?, funding-group*, 
+conference*)</pre></div>
+            <p class="para">In the module <tt>articleauthcustom-models3.ent</tt>, the following changes were
+               made to the article metadata elements:
+            </p>
+            <ul class="bullist">
+               <li><strong>Address Line</strong> — In
+                  <tt>articleauthcustom-models3.ent</tt>, changed the model for
+                  <a href="n-tj00.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a> to include all the elements in the new
+                  <a href="n-bf60.html" target="main" title="Address Class Elements"><span class="petag">%address.class;</span></a> ( <a href="n-fp30.html" target="main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a>, <a href="n-ua80.html" target="main" title="Fax Number: in an Address"><span class="elementtag">&lt;fax&gt;</span></a>,
+                  <a href="n-kua0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>, <a href="n-tqw0.html" target="main" title="Phone Number: in an Address"><span class="elementtag">&lt;phone&gt;</span></a>, and
+                  <a href="n-tj00.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>).
+               </li>
+               <li><strong>Collaboration</strong> — In
+                  <tt>articleauthcustom-models3.ent</tt>, added new elements to
+                  <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>. Changed the content of <a href="n-spd0.html" target="main" title="Collaborative (Group) Author Elements"><span class="petag">%collab-elements;</span></a> from
+                  including <a href="n-cn60.html" target="main" title="Address Link Class Elements"><span class="petag">%address-link.class;</span></a> to including
+                  <a href="n-a4r0.html" target="main" title="Contributor Information Class Elements"><span class="petag">%contrib-info.class;</span></a>, which necessitated removing
+                  <a href="n-cn60.html" target="main" title="Address Link Class Elements"><span class="petag">%address-link.class;</span></a> to remove duplicate elements.<br class="br">Also added <a href="n-bf60.html" target="main" title="Address Class Elements"><span class="petag">%address.class;</span></a> (<a href="n-tj00.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>,
+                  <a href="n-fp30.html" target="main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a>, <a href="n-ua80.html" target="main" title="Fax Number: in an Address"><span class="elementtag">&lt;fax&gt;</span></a>,
+                  <a href="n-kua0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>, and <a href="n-tqw0.html" target="main" title="Phone Number: in an Address"><span class="elementtag">&lt;phone&gt;</span></a>) to the content of
+                  <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>.
+               </li>
+               <li><strong>Funding Information</strong> — Replaced the element
+                  grouping:
+                  <div class="codeblock"><pre>contract-num*, contract-sponsor*, grant-num*, grant-sponsor*,</pre></div><br class="br">with the new “<tt>funding-group*</tt>”.
+               </li>
+            </ul>
+         </div>
+         <div class="section"><a name="v3-auth-funding"></a><h4 class="header">Authoring Funding Information</h4>
+            <ul class="bullist">
+               <li><strong>Replaced Elements</strong> — In the module
+                  <tt>articleauthcustom-models3.ent</tt>, deleted the following old Parameter
+                  Entity overrides:
+                  <ul class="bullist">
+                     <li><tt>contract-elements</tt></li>
+                     <li><tt>contract-sponsor-elements</tt></li>
+                  </ul>and inserted the following new (equivalent) overrides: 
+                  <ul class="bullist">
+                     <li><a href="n-d8d0.html" target="main" title="Award-ID Elements"><span class="petag">%award-id-elements;</span></a></li>
+                     <li><a href="n-udh0.html" target="main" title="Funding-Source Elements"><span class="petag">%funding-source-elements;</span></a></li>
+                  </ul>
+               </li>
+               <li>Inside the element <a href="n-n420.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, replaced the element grouping
+                  (<tt>contract-num*, contract-sponsor*, grant-num*, grant-sponsor*,</tt>) with the
+                  new <tt>funding-group*</tt>.
+               </li>
+            </ul>
+         </div>
+         <div class="section"><a name="v3-auth-misc"></a><h4 class="header">Authoring Other Metadata Changes</h4>
+            <ul class="bullist">
+               <li><strong>Collab</strong> — In
+                  <tt>articleauthcustom-models3.ent</tt>, enhanced the model of
+                  <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a> (using <a href="n-spd0.html" target="main" title="Collaborative (Group) Author Elements"><span class="petag">%collab-elements;</span></a>) to allow additional
+                  elements inside a <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, to make it more like a contributor. The
+                  original model for <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a> included the face markup and internal
+                  cross references:
+                  <div class="codeblock"><pre>%rendition-plus; | %address-link.class;</pre></div>
+                  <ul class="bullist">
+                     <li>Added the elements of the <a href="n-a4r0.html" target="main" title="Contributor Information Class Elements"><span class="petag">%contrib-info.class;</span></a> to this
+                        <tt>OR</tt> mix. That adds the following elements to
+                        <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>:
+                        <div class="codeblock"><pre>address | aff | author-comment | bio | 
+email | etal | ext-link | on-behalf-of |
+role | uri | xref</pre></div>
+                     </li>
+                     <li>Also added <a href="n-bf60.html" target="main" title="Address Class Elements"><span class="petag">%address.class;</span></a>, which added the elements:
+                        <div class="codeblock"><pre>addr-line | country | fax | institution | phone</pre></div>
+                     </li>
+                  </ul><br class="br">(Implementor’s Note: When <a href="n-a4r0.html" target="main" title="Contributor Information Class Elements"><span class="petag">%contrib-info.class;</span></a> was added to
+                  <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, that caused some duplication errors. Therefore, changed
+                  the content of <a href="n-spd0.html" target="main" title="Collaborative (Group) Author Elements"><span class="petag">%collab-elements;</span></a> from including
+                  <a href="n-cn60.html" target="main" title="Address Link Class Elements"><span class="petag">%address-link.class;</span></a>, since <a href="n-a4r0.html" target="main" title="Contributor Information Class Elements"><span class="petag">%contrib-info.class;</span></a> provides the
+                  same elements.)
+               </li>
+               <li><strong>Keyword Group</strong> — In
+                  <tt>articleauthcustom-models3.ent</tt>, overrode the model of
+                  <a href="n-9da0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a> to remove <a href="n-tha0.html" target="main" title="Label (Of a Statement)"><span class="elementtag">&lt;label&gt;</span></a> (using
+                  <a href="n-dpi0.html" target="main" title="Keyword Group Model"><span class="petag">%kwd-group-model;</span></a>):
+                  <div class="codeblock"><pre>(title?, (%kwd.class;)+ )</pre></div>
+               </li>
+               <li><strong>related-article-elements</strong> — In
+                  <tt>articleauthcustom-models3.ent</tt>, removed the override for the content of
+                  <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a> (<a href="n-ktj0.html" target="main" title="Related Article Elements"><span class="petag">%related-article-elements;</span></a>) so that
+                  Publishing and Authoring would share a <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a> model. The
+                  new elements for the mixed-content model are:
+                  <div class="codeblock"><pre>"| %emphasis.class; | %journal-id.class; |
+%phrase-content.class; | 
+%references.class; | %subsup.class;" </pre></div><br class="br">This change deleted the following elements from the model:
+                  <a href="n-un00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a>, <a href="n-bv80.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a>,
+                  <a href="n-xka0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a>, <a href="n-33a0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a>,
+                  <a href="n-x5a0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>,
+                  <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-vss0.html" target="main" title="Target of an Internal Link"><span class="elementtag">&lt;target&gt;</span></a>, and
+                  <a href="n-2c70.html" target="main" title="X(cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a>.
+               </li>
+            </ul>
+         </div>
+         <div class="section"><a name="v3-auth-back"></a><h4 class="header">Authoring Back Matter Elements</h4>
+            <div class="section"><a name="v3-auth-other-meta"></a><h4 class="header">Footnote Group</h4>
+               <ul class="bullist">
+                  <li><strong>Footnote Group</strong> — In
+                     <tt>articleauthcustom-models3.ent</tt>, added an override for
+                     <a href="n-us80.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a> (using <a href="n-jth0.html" target="main" title="Footnote Group Model"><span class="petag">%fn-group-model;</span></a>) that
+                     removes <a href="n-tha0.html" target="main" title="Label (Of a Statement)"><span class="elementtag">&lt;label&gt;</span></a> leaving:
+                     <div class="codeblock"><pre>(title?, (%fn-link.class;)+ )
+</pre></div>
+                  </li>
+               </ul>
+            </div>
+            <div class="section"><a name="v3-auth-glossary"></a><h4 class="header">Glossary</h4>
+               <p class="para">Made the model of <a href="n-eh80.html" target="main" title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a> recursive (as reference lists have
+                  been recursive) instead of using the artificial <tt>gloss-group</tt>
+                  structure. In <tt>articleauthcustom-models3.ent</tt>:
+               </p>
+               <ul class="bullist">
+                  <li><strong>Glossary</strong> — Changed the model of
+                     <a href="n-eh80.html" target="main" title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a> to be recursive, deleting the element
+                     <tt>gloss-group</tt>. The parameter entity <a href="n-6ih0.html" target="main" title="Glossary Model"><span class="petag">%glossary-model;</span></a>
+                     was changed from:
+                     <div class="codeblock"><pre>(title?, p*, gloss-group*)</pre></div><br class="br">to the following recursive model:
+                     <div class="codeblock"><pre>(title?, p*, def-list*, glossary*)</pre></div><br class="br">The recursive <a href="n-eh80.html" target="main" title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a> element allows a glossary list to be
+                     divided into subgroups of terms, usually titled subgroups. 
+                  </li>
+                  <li><strong>Glossary Group</strong><ul class="bullist">
+                        <li>Deleted the element <tt>gloss-group</tt></li>
+                        <li>Deleted the parameter entities <tt>gloss-group-model</tt> and
+                           <tt>gloss-group-atts</tt></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="section"><a name="v3-auth-ref-list"></a><h4 class="header">Authoring Reference Lists</h4>
+               <p class="para">The Authoring Tag Set no longer has an override for the
+                  <a href="n-swj0.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a>. This Tag Set uses the default references elements.
+               </p>
+               <ul class="bullist">
+                  <li><strong>New Elements in Citations</strong> — In
+                     <tt>default-classes3.ent</tt>, added the following new elements to
+                     <a href="n-swj0.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a>: 
+                     <ul class="bullist">
+                        <li><a href="n-g4c0.html" target="main" title="Chapter Title in a Citation"><span class="elementtag">&lt;chapter-title&gt;</span></a>,
+                        </li>
+                        <li><a href="n-t930.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> (replaces
+                           <a href="n-rat0.html" target="main" title="Time Stamp for Cited Work"><span class="elementtag">&lt;time-stamp&gt;</span></a> and <a href="n-ar00.html" target="main" title="Access Date for Cited Work"><span class="elementtag">&lt;access-date&gt;</span></a>),
+                        </li>
+                        <li><a href="n-csa0.html" target="main" title="Issue Part"><span class="elementtag">&lt;issue-part&gt;</span></a>,
+                        </li>
+                        <li><a href="n-5rw0.html" target="main" title="Part Title in a Citation"><span class="elementtag">&lt;part-title&gt;</span></a>,
+                        </li>
+                        <li><a href="n-prv0.html" target="main" title="Series"><span class="elementtag">&lt;series&gt;</span></a> (a requested addition; was already present in
+                           the class),
+                        </li>
+                        <li><a href="n-5yv0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a> (replaces <a href="n-6gw0.html" target="main" title="Page Count"><span class="elementtag">&lt;page-count&gt;</span></a>),
+                           and
+                        </li>
+                        <li><a href="n-5270.html" target="main" title="Volume Series"><span class="elementtag">&lt;volume-series&gt;</span></a>.
+                        </li>
+                     </ul><br class="br">This expansion of <a href="n-swj0.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a> led to element duplication in
+                     some of the places the PE was used, so in <tt>articleauthcustom-models3.ent</tt>,
+                     removed <a href="n-5yv0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a> (which used <tt>size.class</tt>) from
+                     <a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a> (using<a href="n-45j0.html" target="main" title="Product Elements"><span class="petag">%product-elements;</span></a>).
+                  </li>
+                  <li><strong>Date Elements Deleted from Citations</strong> — In
+                     <tt>default-classes3.ent</tt>, deleted the following elements from
+                     <a href="n-swj0.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a>: [Backward incompatible]
+                     <ul class="bullist">
+                        <li><a href="n-ar00.html" target="main" title="Access Date for Cited Work"><span class="elementtag">&lt;access-date&gt;</span></a> (replaced by <a href="n-t930.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a>)
+                        </li>
+                        <li><a href="n-rat0.html" target="main" title="Time Stamp for Cited Work"><span class="elementtag">&lt;time-stamp&gt;</span></a> (replaced by <a href="n-t930.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a>)
+                        </li>
+                        <li><a href="n-6gw0.html" target="main" title="Page Count"><span class="elementtag">&lt;page-count&gt;</span></a> (replaced by <a href="n-5yv0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a>)
+                        </li>
+                     </ul>
+                  </li>
+                  <li><strong>Person Group</strong> — In
+                     <tt>articleauthcustom-models3.ent</tt>, added <a href="n-2u40.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a>
+                     to <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> using <a href="n-p5p0.html" target="main" title="String Name Class"><span class="petag">%string-name.class;</span></a> so that
+                     the punctuation and spacing between <a href="n-v3s0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> and
+                     <a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> could be captured. The Authoring Tag Set still has a
+                     more restricted model for <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> since the
+                     <a href="n-kqy0.html" target="main" title="Person Group Model"><span class="petag">%person-group-model;</span></a> uses <a href="n-27y0.html" target="main" title="Names Class Elements"><span class="petag">%name.class;</span></a>, which is more
+                     restricted in Authoring.
+                  </li>
+                  <li><strong>Size Versus Page Count</strong> — Now that the
+                     <a href="n-5yv0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a> element exists within <a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>,
+                     <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>,
+                     <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, and <a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a>
+                     (through <a href="n-swj0.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a>), there is no need to carry the
+                     <tt>EMPTY</tt>
+                     <a href="n-6gw0.html" target="main" title="Page Count"><span class="elementtag">&lt;page-count&gt;</span></a> element as well; so<a href="n-6gw0.html" target="main" title="Page Count"><span class="elementtag">&lt;page-count&gt;</span></a> can
+                     be reserved for metadata uses. Therefore, in
+                     <tt>articleauthcustom-classes3.ent</tt>, removed <a href="n-6gw0.html" target="main" title="Page Count"><span class="elementtag">&lt;page-count&gt;</span></a>
+                     from the parameter entity <a href="n-swj0.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a>.
+                  </li>
+                  <li><strong>Parameter Entity Modification</strong> — Implementor ’s
+                     Note: In previous Tag Set versions, the parameter entity <a href="n-yhd0.html" target="main" title="Citation Elements"><span class="petag">%citation-elements;</span></a>
+                     was only used to create mixed-content, so by convention it started with an
+                     “<tt>|</tt>” bar. Now it may be used mixed with <tt>#PCDATA</tt> or used as an
+                     entire element-only model, so the initial “<tt>|</tt>” bar has been removed. For
+                     Authoring, removed from the “<tt>|</tt>” from the beginning of
+                     <a href="n-yhd0.html" target="main" title="Citation Elements"><span class="petag">%citation-elements;</span></a> in
+                     <tt>articleauthcustom-models3.ent</tt> and also added the “<tt>|</tt>” to the
+                     <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> model.
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="section"><a name="v3--auth-elem"></a><h4 class="header">Authoring Structural Elements</h4>
+            <ul class="bullist">
+               <li><strong>Boxed Text</strong> — In
+                  <tt>articleauthcustom-models3.ent</tt>, changed the model of
+                  <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a> from using the parameter entity
+                  <a href="n-uij0.html" target="main" title="Content Model for an Untitled Section"><span class="petag">%sec-opt-title-model;</span></a> to replicating the content of that model. The
+                  parameter entity <a href="n-k4d0.html" target="main" title="Boxed Text Model"><span class="petag">%boxed-text-model;</span></a> was changed to the following, with
+                  <a href="n-yut0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> replaced by <a href="n-5vc0.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a>:
+                  <div class="codeblock"><pre>&lt;!ENTITY % boxed-text-model
+"((%id.class;)*, caption?, (%para-level;)*, 
+(%sec-level;)*, %display-back-matter; )" &gt;
+</pre></div>
+               </li>
+               <li><strong>Figure and Supplementary Material</strong> —Removed
+                  <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> from within the following elements:
+                  <ul class="bullist">
+                     <li><a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> (using <a href="n-yvh0.html" target="main" title="Figure-Like Content Model"><span class="petag">%fig-model;</span></a>)
+                     </li>
+                     <li>
+                        <a href="n-jz40.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a> (using
+                        <a href="n-yvh0.html" target="main" title="Figure-Like Content Model"><span class="petag">%fig-model;</span></a>)
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="section"><a name="ve-auth-chem-struct"></a><h4 class="header">Authoring Chemical Structures Changes</h4>
+            <p class="para"> Although it was not the intent when the Tag Sets were written, most Tag Set users have
+               been treating <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> as an inline and
+               <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> as a block structure. This greatly simplifies all
+               processing with the two and seems quite flexible, so steps were taken to regularize this usage:
+               <ul class="bullist">
+                  <li>As an inline object, <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> should be able to be used
+                     anywhere that <a href="n-xka0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a> is used; therefore,
+                     <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> has been added to <a href="n-hmh0.html" target="main" title="Inline Mathematical Expressions Class Elements"><span class="petag">%inline-math.class;</span></a>
+                     (in the Authoring override in <tt>articleauthcustom-models3.ent</tt>).
+                  </li>
+                  <li>As an inline object, <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> should <em>not</em> be used as a block-level object, so it was removed from
+                     <a href="n-6wd0.html" target="main" title="Block Display Class Elements"><span class="petag">%block-display.class;</span></a> (in the Authoring override in
+                     <tt>articleauthcustom-models3.ent</tt>).
+                  </li>
+                  <li>As an inline object, <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> must be inside
+                     <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> (using <a href="n-zdd0.html" target="main" title="Chemical Structure Wrapper Model"><span class="petag">%chem-struct-wrap-model;</span></a>)
+                     (in the Authoring override in <tt>articleauthcustom-models3.ent</tt>).
+                  </li>
+                  <li>As a block object, <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> needs to be everywhere
+                     block display objects are used, so it needs to be part of the
+                     <a href="n-6wd0.html" target="main" title="Block Display Class Elements"><span class="petag">%block-display.class;</span></a>, which it
+                     already was in the Authoring override (in
+                     <tt>articleauthcustom-models3.ent</tt>).
+                  </li>
+                  <li>As a block object, <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> should be inside figures
+                     (using %fig-model;), which it already was in the default and the Authoring override
+                     (in <tt>articleauthcustom-models3.ent</tt>).
+                  </li>
+                  <li>Changed the OR group allowed inside a <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> (using
+                     <a href="n-eci0.html" target="main" title="Inside Table Wrapper Elements"><span class="petag">%inside-table-wrap;</span></a>) to allow <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>
+                     instead of <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> in <tt>display3.ent</tt>.
+                  </li>
+               </ul>
+            </p>
+            <p class="para">The element <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> has been removed from within the following
+               elements, where it has been allowed in previous versions, allowing only the inline
+               <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> to be used. [Backward incompatible]
+               <ul class="bullist">
+                  <li><a href="n-ues0.html" target="main" title="Table Data Cell (XHTML table model)"><span class="elementtag">&lt;td&gt;</span></a> and <a href="n-ekt0.html" target="main" title="Table Header Cell (XHTML table model)"><span class="elementtag">&lt;th&gt;</span></a> (using
+                     <a href="n-pki0.html" target="main" title="Inside Table Cell Elements"><span class="petag">%inside-cell;</span></a>)
+                  </li>
+                  <li><a href="n-ers0.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a> (using <a href="n-8yp0.html" target="main" title="Definition List: Term Elements"><span class="petag">%term-elements;</span></a>)
+                  </li>
+               </ul>
+            </p>
+            <p class="para">The element <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> has been removed from within the following
+               elements, where it has been allowed in previous versions, allowing only the block
+               <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> to be used. [Backward incompatible]
+               <ul class="bullist">
+                  <li><a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> (using <a href="n-eci0.html" target="main" title="Inside Table Wrapper Elements"><span class="petag">%inside-table-wrap;</span></a>)
+                  </li>
+               </ul>
+            </p>
+            <p class="para"> Following these changes, <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> can appear in the following elements:
+               <ul class="bullist">
+                  <li><a href="n-7k20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a></li>
+                  <li><a href="n-6t20.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a></li>
+                  <li><a href="n-6n20.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a></li>
+                  <li><a href="n-j2c0.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a></li>
+                  <li><a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a></li>
+                  <li><a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a></li>
+                  <li><a href="n-cqc0.html" target="main" title="Comment in a Citation"><span class="elementtag">&lt;comment&gt;</span></a></li>
+                  <li><a href="n-rs30.html" target="main" title="Conference Theme"><span class="elementtag">&lt;conf-theme&gt;</span></a></li>
+                  <li><a href="n-7c50.html" target="main" title="Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a></li>
+                  <li><a href="n-ev50.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a></li>
+                  <li><a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a></li>
+                  <li><a href="n-xka0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a></li>
+                  <li><a href="n-ita0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a></li>
+                  <li><a href="n-tha0.html" target="main" title="Label (Of a Statement)"><span class="elementtag">&lt;label&gt;</span></a></li>
+                  <li><a href="n-xya0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a></li>
+                  <li><a href="n-dgu0.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a></li>
+                  <li><a href="n-myu0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a></li>
+                  <li><a href="n-yuw0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a></li>
+                  <li><a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a></li>
+                  <li><a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a></li>
+                  <li><a href="n-hwv0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a></li>
+                  <li><a href="n-fsv0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a></li>
+                  <li><a href="n-x340.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a></li>
+                  <li><a href="n-sx40.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a></li>
+                  <li><a href="n-te40.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a></li>
+                  <li><a href="n-s640.html" target="main" title="Article Subtitle"><span class="elementtag">&lt;subtitle&gt;</span></a></li>
+                  <li><a href="n-9y40.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a></li>
+                  <li><a href="n-qb40.html" target="main" title="Supplement Information"><span class="elementtag">&lt;supplement&gt;</span></a></li>
+                  <li><a href="n-ues0.html" target="main" title="Table Data Cell (XHTML table model)"><span class="elementtag">&lt;td&gt;</span></a></li>
+                  <li><a href="n-ers0.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a></li>
+                  <li><a href="n-njs0.html" target="main" title="Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a></li>
+                  <li><a href="n-ekt0.html" target="main" title="Table Header Cell (XHTML table model)"><span class="elementtag">&lt;th&gt;</span></a></li>
+                  <li><a href="n-yut0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a></li>
+                  <li><a href="n-bft0.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a></li>
+                  <li><a href="n-pdt0.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a></li>
+                  <li><a href="n-abt0.html" target="main" title="Line of a Verse"><span class="elementtag">&lt;verse-line&gt;</span></a></li>
+               </ul>
+            </p>
+            <p class="para">Following these changes, <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> can appear in the
+               following elements:
+               <ul class="bullist">
+                  <li><a href="n-hq20.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a></li>
+                  <li><a href="n-im20.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a></li>
+                  <li><a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a></li>
+                  <li><a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a></li>
+                  <li><a href="n-xya0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a></li>
+                  <li><a href="n-myu0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a></li>
+                  <li><a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a></li>
+                  <li><a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a></li>
+                  <li><a href="n-sx40.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a></li>
+                  <li><a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></li>
+               </ul>
+            </p>
+         </div>
+         <div class="section"><a name="v3-auth-attr"></a><h4 class="header">Authoring Attribute Changes</h4>
+            <ul class="bullist">
+               <li><strong>Article Types</strong> — In
+                  <tt>articleauthoring3.dtd</tt>, removed the parameter entity
+                  <tt>article-types</tt> that explicitly named the types of articles and made the
+                  value of the <a href="n-uf70.html" target="main" title="Type of Article"><span class="attrtag">@article-type</span></a> on the element <a href="n-2v20.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a> into
+                  <tt>CDATA</tt>.<br class="br">In previous Authoring Tag Sets, the following article type values were named explicitly. Since the value is now completely
+                  open, these values are reduced to a 
+                  mention in the documentation as potential article type values.
+                  <div class="codeblock"><pre>abstract | addendum | announcement | 
+article-commentary | book-review | 
+books-received | brief-report | calendar | 
+case-report | correction | discussion |
+dissertation | editorial | in-brief | 
+introduction | letter | meeting-report | 
+news | obituary | oration | other | 
+product-review | rapid-communication | 
+reply | research-article | retraction | 
+review-article</pre></div>
+               </li>
+               <li><strong>Citation Types</strong> — Removed the override for
+                  <a href="n-drd0.html" target="main" title="Citation Attributes"><span class="petag">%citation-atts;</span></a> as it is now the same as the default, which is described
+                  below.<br class="br">The previous values for the <tt>citation-type</tt> attribute used on
+                  <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> (previously <tt>citation</tt>) and
+                  <a href="n-czu0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a> were confusing, mixing together values such as
+                  “book” and “thesis” that described the type of
+                  publication and “gov” that described the publisher. There was no way to
+                  say that something was a government-published book. Therefore, in
+                  <tt>articleauthcustom-models3.ent</tt>, the attribute <tt>citation-type</tt>
+                  was deleted from <a href="n-drd0.html" target="main" title="Citation Attributes"><span class="petag">%citation-atts;</span></a>, and the following attributes were added
+                  for all three types of citations (<a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>,
+                  <a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, and <a href="n-czu0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>):
+                  <ul class="bullist">
+                     <li><a href="n-9eg0.html" target="main" title="Type of Publication"><span class="attrtag">@publication-type</span></a> — The type of object (journal, book, patent)
+                        that contains the cited material. While the attribute values are not constrained,
+                        typical values include: journal, book, patent, report, thesis, website, standard,
+                        book-part ( a chapter or an article from a book where the entire book is not being
+                        cited), conf-proc (conference proceeding), working paper, list (list serve), blog,
+                        online-ref (an online reference such as Wikipedia or an online dictionary),
+                        court-case, database, communc (a personal communication such as a conversation,
+                        letter, or personal email), or discussion (implies group communication, usually
+                        face to face, as opposed to an online list discussion). This is the most important
+                        of the new attributes and best practice is now to use it whenever possible, as
+                        downstream processing many require this information.
+                     </li>
+                     <li><a href="n-qfg0.html" target="main" title="Type of Publisher"><span class="attrtag">@publisher-type</span></a> — Describes the type of organization that
+                        publishes the cited material. While not constrained, typical values include: gov
+                        (government), std-body (standards body), personal (personal imprint), society,
+                        non-profit, ngo, etc. Unless it is important that the cited material is of a
+                        particular type, this attribute need not be used. For example, while it may be
+                        true that a cited journal was published by a commercial publisher (value
+                        “<tt>commercial</tt>”), that is rarely recorded. This attribute can preserve
+                        information about the publisher where a citation has recorded this
+                        material.
+                     </li>
+                     <li><a href="n-z7g0.html" target="main" title="Publication Format"><span class="attrtag">@publication-format</span></a> — What format of the reference is being
+                        cited, for example, print, online, video, audio, etc. This attribute
+                        should be used when known for non-print sources.
+                     </li>
+                     <li><a href="n-yce0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> — Provides a way to preserve or add semantic
+                        distinctions. 
+                     </li>
+                  </ul>
+               </li>
+               <li><strong>Graphic Attributes</strong> — In
+                  <tt>articleauthcustom-models3.ent</tt>, 
+                  <ul class="bullist">
+                     <li>Removed the attribute <tt>alternative-form-of</tt> from:
+                        <ul class="bullist">
+                           <li><a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> (using <a href="n-ajh0.html" target="main" title="Graphic Attributes"><span class="petag">%graphic-atts;</span></a>) 
+                           </li>
+                           <li><a href="n-33a0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a> (using
+                              <a href="n-h9h0.html" target="main" title="Inline Graphic Attributes"><span class="petag">%inline-graphic-atts;</span></a>).
+                           </li>
+                        </ul>
+                     </li>
+                     <li>Also removed  the attribute <tt>alt-version</tt> from <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>
+                        (using <a href="n-ajh0.html" target="main" title="Graphic Attributes"><span class="petag">%graphic-atts;</span></a>).
+                     </li>
+                     <li>Also added <a href="n-vwn0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> to <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> (using
+                        <a href="n-ajh0.html" target="main" title="Graphic Attributes"><span class="petag">%graphic-atts;</span></a>).
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <strong>List </strong> — In <tt>articleauthcustom-models3.ent</tt>,
+                  added the following attributes to <a href="n-fma0.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a> (using <a href="n-hky0.html" target="main" title="Default List Class Attributes"><span class="petag">%list-atts;</span></a>):
+                  <ul class="bullist">
+                     <li><a href="n-6gf0.html" target="main" title="List Content"><span class="attrtag">@list-content</span></a> (for semantic distinctions)
+                     </li>
+                     <li><a href="n-4we0.html" target="main" title="Continued From"><span class="attrtag">@continued-from</span></a> (an <tt>IDREF</tt>-type attribute that can be used to
+                        point to the previous list in a series of lists to distinguish the parts of superlists.
+                        This element is <em>not</em> intended for generation of numbering.
+                     </li>
+                  </ul>
+               </li>
+               <li><strong>List Item</strong> — In
+                  <tt>articleauthcustom-models3.ent</tt>, removed the override for
+                  <a href="n-xcy0.html" target="main" title="List Item Attributes"><span class="petag">%list-item-atts;</span></a> since it was the same as the Suite default.
+               </li>
+               <li><strong>Orientation</strong> — In
+                  <tt>articleauthcustom-models3.ent</tt>, added the new attribute
+                  <a href="n-hmf0.html" target="main" title="Orientation"><span class="attrtag">@Orientation</span></a>, that takes the values “<tt>portrait</tt>” and
+                  “<tt>landscape</tt>”. The attribute was added to <a href="n-t9r0.html" target="main" title="Display Attributes Optional ID"><span class="petag">%display-atts;</span></a>
+                  (therefore, adding it to the elements <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>,
+                  <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>,
+                  <a href="n-f3u0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>, <a href="n-t9w0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a>,
+                  <a href="n-jz40.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, and <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>.
+               </li>
+               <li><strong>Specific Use Sections</strong> — In
+                  <tt>articleauthcustom-models3.ent</tt>, added <a href="n-vwn0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> to
+                  <a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a> (using <a href="n-ddj0.html" target="main" title="Section Attributes"><span class="petag">%sec-atts;</span></a>).
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

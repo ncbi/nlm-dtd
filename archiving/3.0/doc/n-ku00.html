@@ -1,0 +1,475 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Tag Library Introduction</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="intro">
+         <h1 class="header">General Introduction</h1>
+         <ul class="bullist">
+            <li><a href="n-ku00.html#set-intro">Introduction to the Journal Archiving Tag Set</a>
+               
+               <ul class="bullist">
+                  <li><a href="n-ku00.html#rationale">Rationale</a>
+                     
+                  </li>
+                  <li><a href="n-ku00.html#scope">Scope</a>
+                     
+                  </li>
+                  <li><a href="n-ku00.html#overview">Structural Overview</a>
+                     
+                  </li>
+                  <li><a href="n-ku00.html#developed">Tag Sets Developed from the Suite</a>
+                     
+                  </li>
+                  <li><a href="n-ku00.html#accessibility">Accessibility</a>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            <li><a href="n-ku00.html#howto">How To Read This Tag Library</a>
+               
+               <ul class="bullist">
+                  <li><a href="n-ku00.html#terms">Terms and Definitions</a>
+                     
+                  </li>
+                  <li><a href="n-ku00.html#howtostart">How To Start Using This Tag Library</a>
+                     
+                  </li>
+                  <li><a href="n-ku00.html#structure">Structure of This Tag Library</a>
+                     
+                  </li>
+                  <li><a href="n-ku00.html#typog">Tag Library Typographic Conventions</a>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            <li><a href="n-ku00.html#change-version3.0">Changes in Version 3.0</a>
+               
+            </li>
+            <li><a href="n-ku00.html#thanks">Acknowledgments</a>
+               
+            </li>
+         </ul>
+         <p class="para">The intent of the NLM Journal Archiving and Interchange Tag Suite is to provide a common format in which publishers and archives
+            can exchange journal content. The Suite provides a set of XML schema modules that define elements and attributes for describing
+            the textual and graphical content of journal articles as well as some non-article material such as letters, editorials, and
+            book and product reviews.
+         </p>
+         <div class="section"><a name="set-intro"></a><h3 class="header">Introduction to the Journal Archiving Tag Set</h3>
+            <div class="section"><a name="rationale"></a><h4 class="header">Rationale</h4>
+               <p class="para">The Journal Archiving and Interchange Tag Set (“Journal Archiving Tag Set”) defines elements and attributes that describe
+                  the content and metadata of journal articles, including research and non-research articles, letters, editorials, and book
+                  and product reviews. The Tag Set allows for descriptions of the full article content or just the article header metadata.
+               </p>
+               <p class="para">The intent of the Archiving Tag Set is to “preserve the intellectual content of journals independent of the form in which
+                  that content was originally delivered”. This Tag Set enables an archive to capture structural and semantic components of existing
+                  material without modeling any particular sequence or textual format.
+               </p>
+               <p class="para">It was planned that Archiving could be used for conversion from a variety of journal source Tag Sets, with the intent of providing
+                  a single format: 
+                  
+                  <ul class="bullist">
+                     <li>in which publishers could deliver their content to a wide range of archives, and</li>
+                     <li>into which archives could conveniently translate content from many publishers.</li>
+                  </ul>
+                  
+               </p>
+               <p class="para">In order to enable description of the content used by the wide array of publishers, repositories, aggregators, etc., the Tag
+                  Set uses many loose structures, including some elements with nearly all content structures optional. Many attribute values
+                  in the Tag Set are data character values, accommodating any source values. Because some article components are prescriptive
+                  in nature, article metadata for example, the Archiving Tag Set includes a few completely generic structures for capturing
+                  semantic tagging that is not available natively in the Tag Set. Although publication order cannot always be preserved, particularly
+                  within the metadata, the Archiving Tag Set works harder than any of the other NLM Tag Sets in this Suite to allow almost any
+                  publication arrangement and to allow re-tagging as renaming without rearrangement during conversion.
+               </p>
+               <p class="para">The Archiving Tag Set has a distinct focus on conversion from multiple sources. That focus has made this Tag Set a large and
+                  inclusive one. Many elements have been created explicitly so that information tagged by publishers would not be discarded
+                  when they converted material from another Tag Set to this one (or one created from this Suite). Care has also been taken to
+                  provide several mechanisms (frequently, information classing attributes) to preserve the intellectual content of a document
+                  structure when that structure is converted from another Tag Set or schema to this one, even when there is no exact element
+                  equivalent of the structure.
+               </p>
+               <p class="para">The exact replication of the look and feel of any particular journal has not been a consideration. Therefore, many purely
+                  formatting mechanisms have not been included. At the same time, Archiving is intended to preserve observed content, without
+                  resorting to stylesheets or generation of textual elements. For that reason, labels, numbers, and symbols of tables, figures,
+                  sidebars, and the like can be recorded as elements, as can the punctuation and spaces inside bibliographic references and
+                  lists.
+               </p>
+            </div>
+            <div class="section"><a name="scope"></a><h4 class="header">Scope</h4>
+               <p class="para">By design, this is a model for journal articles, such as the typical research article found in an STM journal, and not a model
+                  for complete journals. This Tag Set does not include an overarching model for a collection of articles. In addition, the following
+                  journal material is not described by this Tag Set:
+                  
+                  <ul class="bullist">
+                     <li>Company, product, or service display advertising;</li>
+                     <li>Job search or classified advertising;</li>
+                     <li>Calendars, meeting schedules, and conference announcements (except as these can be tagged as ordinary articles, sub-articles,
+                        or sections within articles); and
+                     </li>
+                     <li>Material specific to an individual journal, such as Author Guidelines, Policy and Scope statements, editorial or advisory
+                        boards, detailed indicia, etc.
+                     </li>
+                  </ul>
+                  
+               </p>
+            </div>
+            <div class="section"><a name="overview"></a><h4 class="header">Structural Overview</h4>
+               <p class="para">The Journal Archiving Tag Set defines a document that is a top-level component of a journal such as an article, a book or
+                  product review, or a letter to the editor. Each such document is composed of one or more parts; if there is more than one
+                  part, they must appear in the following order:
+               </p>
+               <ul class="bullist">
+                  <li>Front matter (required). The article front matter contains the metadata for the article (also called article header information),
+                     for example, the article title, the journal in which it appears, the date and issue of publication for that issue of that
+                     journal, a copyright statement, etc. This is not textual front matter as appears in books, rather this is bibliographic information
+                     about the article and the journal in which it was published.
+                  </li>
+                  <li>Body of the article (optional). The body of the article is the main textual and graphic content of the article. This usually
+                     consists of paragraphs and sections, which may themselves contain figures, tables, sidebars (boxed text), etc. The body of
+                     the article is optional to accommodate those repositories that just keep article header information and do not tag the textual
+                     content.
+                  </li>
+                  <li>Back matter for the article (optional). If present, the article back matter contains information that is ancillary to the
+                     main text, such as a glossary, appendix, or list of cited references.
+                  </li>
+                  <li>Floating Material (optional). A publisher may choose to place all the floating objects in an article and its back matter (such
+                     as tables, figures, boxed text sidebars, etc.) into a separate container element outside the narrative flow for convenience
+                     of processing.
+                  </li>
+                  <li>Following the front, body, back, and floating material, there may be either one or more responses to the article or one or
+                     more subordinate articles:
+                     
+                     <ul class="bullist">
+                        <li>Response. A response is a commentary on the article itself, for example, an opinion from an editor on the importance of the
+                           article or a reply from the original author to a letter concerning his article.
+                        </li>
+                        <li>Sub-article. A sub-article is a small article that is completely contained inside another article.</li>
+                     </ul>
+                     
+                  </li>
+               </ul>
+            </div>
+            <div class="section"><a name="developed"></a><h4 class="header">Tag Sets Developed from the Suite</h4>
+               <p class="para">This Tag Set is one of several created from the Suite. Information about these Tag Sets may be found at the following site:
+                  <a href="http://dtd.nlm.nih.gov" target="_new" class="external">http://dtd.nlm.nih.gov</a>.
+               </p>
+            </div>
+            <div class="section"><a name="accessibility"></a><h4 class="header">Accessibility</h4>
+               <p class="para">Because access for a wide range of output devices, as well as for the visually impaired, is becoming more and more important
+                  in the STM journal community, the modules in the Archiving and Interchange Suite were designed to follow, as much as possible,
+                  the W3C <a href="http://www.w3.org/TR/2002/WD-WCAG20-20020822/"><span class="citetitle">Web Content Accessibility Guidelines 2.0</span></a> working draft (22 August 2002), which was the latest accessibility specification available when the Suite was initially constructed.
+                  This Specification specifies accessibility guidelines on many levels from design through application. The guidelines which
+                  pertain to the modeling of materials were followed to at least Level-2 compliance. For example, a <a href="n-id70.html" target="main" title="<long-desc&gt;"><span class="elementname">Long Description</span></a> <a href="n-id70.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a> element was defined as part of many other elements, such as <a href="n-pcv0.html" target="main" title="<fig&gt;"><span class="elementname">Figure</span></a> <a href="n-pcv0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, so it can be added not only to all figures and other graphical objects, but to any section of the text (for example, to
+                  a <a href="n-y850.html" target="main" title="<boxed-text&gt;"><span class="elementname">Boxed Text</span></a> <a href="n-y850.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>) to provide an accessible description of the object. The <a href="n-u9c2.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attribute was added to all section-level elements and many paragraph-level elements to permit explicit indication of the
+                  language of the content, as required by these guidelines. The <a href="n-sn00.html" target="main" title="<abbrev&gt;"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-sn00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a> element (also to be used for acronyms) was added to meet Checkpoint 4.3.
+               </p>
+            </div>
+         </div>
+         <div class="section"><a name="howto"></a><h3 class="header">How to Read This Tag Library</h3>
+            <div class="section"><a name="terms"></a><h4 class="header">Terms and Definitions</h4>
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Element</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Elements are nouns, like “speech” and “speaker”, that represent components of journal articles, the articles themselves, and
+                              accompanying metadata.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Attribute</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Attributes hold facts about an element, such as which type of list (e.g., numbered, bulleted, or plain) is being requested
+                              when using the <a href="n-ng70.html" target="main" title="<list&gt;"><span class="elementname">List</span></a> <a href="n-ng70.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a> tag, or the name of a pointer to an external file that contains an image. Each attribute has both a name (e.g., <a href="n-q5k2.html" target="main" title="Type of List"><span class="attrtag">@list-type</span></a>) and a value (e.g., “<tt>bullet</tt>”).
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Metadata</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Data <em>about</em> the data, for example, bibliographic information. The distinction is between metadata elements which <em>describe</em> an article (such as the name of the journal in which an article was published) versus elements which contain the textual
+                              and graphical content of the article.
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <div class="section"><a name="howtostart"></a><h4 class="header">How To Start Using This Tag Library</h4>
+               <p class="para">The Journal Archiving Tag Set is available on the NLM Journal Archiving and Interchange Tag Suite Website including: the Tag
+                  Set models expressed as DTDs, XSD schemas, and RELAX NG schemas; and this Tag Library documentation (a set of linked HTML
+                  files). The DTD file delivery includes the Journal Archiving DTD; the customization files needed for the Journal Archiving
+                  Tag Set to override the declarations in the modular Suite, any new modules that define Tag-Set-specific elements, and the
+                  modules that comprise the full Suite.
+               </p>
+               <p class="para">How you use the documentation will depend on what you need to learn about the modules and the Tag Set.</p>
+               <div class="section"><a name="learn-tag-set"></a><h4 class="header">Learn the Tag Set</h4>
+                  <p class="para">If you want to learn about the elements and the attributes in this Tag Set so you can tag documents or learn how the journal
+                     article model is constructed, here is a good way to start. 
+                     
+                     <ul class="bullist">
+                        <li>Read the Tag Library General Introduction, taking particular note of the next section that describes the parts of the Tag
+                           Library so you will know what resources are available.
+                           
+                        </li>
+                        <li>Next, if you do not know the symbols used in the Document Hierarchy diagrams, read the “<a href="n-mhs2.html#nearfar-key">Key to the Near &amp; Far® Diagrams</a>”.
+                        </li>
+                        <li>Scan the Document Hierarchy diagrams to get a good sense of the top-level elements and their contents. (Find what is inside
+                           an <a href="n-q6c0.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a>, now what is inside each of the four large pieces of an article, keep working your way down.)
+                        </li>
+                        <li>Pick an element from one of the diagrams. Look up the element in the Elements Section to find the full name of the element,
+                           its definition, usage notes, content allowed, and any attributes. Look up one of the attributes to find its full name, usage
+                           notes, and potential values.
+                        </li>
+                     </ul>
+                     
+                  </p>
+                  <p class="para">Finally, if you are interested in conversion from a particular source: 
+                     
+                     <ul class="bullist">
+                        <li>Look at an article in a printed or online journal or look at the DTD/schema for the other journal.
+                           
+                           <ul class="bullist">
+                              <li>Can all the information you want to store from an article fit into the models shown in the diagrams?</li>
+                              <li>Do you have, or know how to get, all the information the models require? Will that information always be available for documents
+                                 that are complete and correct?
+                              </li>
+                              <li>How difficult will it be to identify the parts of the information using the elements and attributes described in these models?
+                                 Would changes to one or more models make this easier?
+                              </li>
+                           </ul>
+                           
+                        </li>
+                        <li>Now look at some non-article content, such as a news column, a book review, or some letters to the editor. Are there tags
+                           to handle all these article types and all their components?
+                        </li>
+                     </ul>
+                     
+                  </p>
+               </div>
+            </div>
+            <div class="section"><a name="structure"></a><h4 class="header">Structure of This Tag Library</h4>
+               <p class="para">This Tag Library contains the following sections:</p>
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>How To Use (Read Me First</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">How to make best use of this Tag Library to reference XML tags, become familiar with the Archiving Tag Set as a whole, or
+                              see examples of recommended usage.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Introduction</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">This introduction to the contents of this Tag Library, to the design philosophy and intended usage of the Archiving and Interchange
+                              Suite, and to the Journal Archiving Tag Set.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Elements Section</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Descriptions of the elements used in the Journal Archiving Tag Set and the parts of the Archiving and Interchange Suite used
+                              in this Tag Set. The element descriptions are listed in alphabetical order by tag name.
+                           </p>
+                           <p class="para">[Note: Each element has two names: a “tag name” (formally called an element-type name) that is used in tagged documents, in
+                              the DTDs/schemas, and by XML software; and an “element name” (usually longer) that provides a fuller, more descriptive name
+                              for the benefit of human readers. For example, a tag name might be <a href="n-6nw0.html" target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a> with the corresponding element name <a href="n-6nw0.html" target="main" title="<disp-quote&gt;"><span class="elementname">Quote, Displayed</span></a>, or a tag name might be <a href="n-j7b0.html" target="main" title="Verse Form for Poetry"><span class="elementtag">&lt;verse-group&gt;</span></a> with the corresponding element name <a href="n-j7b0.html" target="main" title="<verse-group&gt;"><span class="elementname">Verse Form for Poetry</span></a>.]
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Attributes Section</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Descriptions of the attributes in the Journal Archiving Tag Set. Like elements, attributes also have two names: the shorter
+                              machine-readable one and a (usually longer) human-readable one. Attributes are listed in order by the shorter, machine-readable
+                              names. For example, the attribute short name <a href="n-q5k2.html" target="main" title="Type of List"><span class="attrtag">@list-type</span></a> instead of the more informal, easier to read: <a href="n-q5k2.html" target="main" title="@list-type"><span class="attrname">Type of List</span></a>.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Parameter Entity Section</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Names (with occasional descriptions) and contents of the parameter entities in the Tag Set modules.</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Document Hierarchy Diagrams</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Tree-like graphical representations of the content of many elements. This can be a fast, visual way to determine the structure
+                              of an article or of any element within an article.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Common Tagging Practice</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Tips, tricks, hints, and examples of how (and why) to tag certain structures using this Tag Set.</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Implementing This Tag Set</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Implementor’s instructions for using the Tag Set, customizing this Tag Set, or making derivative tag sets based on this one.</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Change Report: Version 3.0</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Detailed information about the changes between version 3.0 and 2.3 for both for the base Suite and the Journal Archiving Tag
+                              Set. The report has two sections: the first identifies how each element changed between the two versions; the second provides
+                              an implementor’s view of the changes in parameter entities, content models, attribute lists and/or values, etc.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>DTD, XSD, and RNG</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">The Journal Archiving Tag Set is available in three forms: an XML Document Type Definition (DTD); a W3C XML Schema (XSD);
+                              and a RELAX NG Schema (RNG). Each of these formats is available in two forms: a zipped file containing a downloadable version
+                              of the schema (often in multiple files), and a readable/browsable version in which the internal markup has been escaped.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Context Table</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">A listing of where each element may be used. All elements in the Tag Set are given in a single alphabetical list.</p>
+                           <p class="para">The Context Table is formatted in two columns. The first column (“This Element”) names an element, with the name shown in
+                              pointy brackets. In the second column (“May Be Contained In”) for each element is an alphabetical list of all the elements
+                              in which the first column element may occur. For example, if the first column contains the element <a href="n-7nv0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> and the second column contains only the <a href="n-q6c0.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a> element, this means that the <a href="n-7nv0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> element may only be used directly inside an <a href="n-q6c0.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a>. Most elements may be used inside more than one other element. For example, the element <a href="n-cpu0.html" target="main" title="Definition List: Definition"><span class="elementtag">&lt;def&gt;</span></a> (a definition) may be used inside the <a href="n-sn00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a> and the <a href="n-zkw0.html" target="main" title="Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a> elements.
+                           </p>
+                           <p class="para">The Context Table contains the same information that is found on each element page under the heading “May Be Contained In”.</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Index</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Where to find elements, tags, and terms used in this Tag Library. Includes synonyms (terms <em>not</em> used in this Tag Set) that direct the reader to elements used in this Tag Library, for example, “author” is paired with <a href="n-5ya0.html" target="main" title="<contrib&gt;"><span class="elementname">Contributor</span></a>  <a href="n-5ya0.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>.
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <div class="section"><a name="typog"></a><h4 class="header">Tag Library Typographic Conventions</h4>
+               <table xmlns:mtl="http://www.mulberrytech.com/taglib" frame="box" rules="all">
+                  <colgroup span="1">
+                     <col width="30%" span="1">
+                     <col width="70%" span="1">
+                  </colgroup>
+                  <tbody>
+                     <tr>
+                        <td rowspan="1" colspan="1"><a href="n-6p20.html" target="main" title="Alternate Text Name (For a Figure, Etc.)"><span class="elementtag">&lt;alt-text&gt;</span></a></td>
+                        <td rowspan="1" colspan="1">The tag name of an element (written in lower case with the entire name surrounded by “&lt; &gt;”)</td>
+                     </tr>
+                     <tr>
+                        <td rowspan="1" colspan="1"><a href="n-6p20.html" target="main" title="<alt-text&gt;"><span class="elementname">Alternate Text Name (For a Figure, Etc.)</span></a></td>
+                        <td rowspan="1" colspan="1">The element name (long descriptive name of an element) or the descriptive name of an attribute (written in title case, with
+                           important words capitalized, and the words separated by spaces)
+                        </td>
+                     </tr>
+                     <tr>
+                        <td rowspan="1" colspan="1"><em>must not</em></td>
+                        <td rowspan="1" colspan="1">Emphasis to stress a point</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class="section"><a name="change-version3.0"></a><h3 class="header">Changes in Version 3.0</h3>
+            <p class="para">This version of the Tag Suite and the derivative Tag Sets marks a significant departure from all previous versions. Before
+               now, all changes to the Suite had been fully backward compatible. That meant that while the Suite changed and grew, no document
+               tagged according to a particular Tag Set was invalid because of any new or changed models. For the first time, this is not
+               the case. Version 3.0 is non-backward compatible, meaning documents which were valid against any previous version may not
+               be valid against this version. Some users will choose to keep their existing documents as they are, valid according to an
+               older version of the Tag Set and to use the new Tag Set for future documents. Some users will convert their existing documents
+               to the new Tag Set, a conversion that we believe will be mostly automatable in most cases. It is possible that some users
+               will choose to continue to use an older version of the Tag Set.
+            </p>
+            <p class="para">The rationales behind the changes vary, but all were made with the intent to make it easier to move forward. There has been
+               nearly six years of experience working with this Tag Set on journal articles as varied as medicine, biotechnology, and physics.
+               Many of the changes were of the “if we had known then what we know now” variety. Others were changes that have been obvious
+               improvements for four or five years, but could not be made within the scope of normal maintenance because they would have
+               been non-backward compatible.
+            </p>
+            <p class="para">Version 3.0 includes the regular scope changes and additions that have been the subject of previous version releases. For
+               example, a new funding model (<a href="n-mjv0.html" target="main" title="Funding Group"><span class="elementtag">&lt;funding-group&gt;</span></a>) has been added to reflect the changing needs of the community. In addition to this kind of change, version 3.0 changes also
+               include:
+               
+               <ul class="bullist">
+                  <li>Elements renamed to make the naming more consistent throughout the Tag Suite. For example, the element <tt>&lt;custom-meta-wrap&gt;</tt> was changed to <a href="n-qgu0.html" target="main" title="Custom Metadata Group"><span class="elementtag">&lt;custom-meta-group&gt;</span></a> because it was learned over the years that “wraps” represent a single element and all its component parts while “groups”
+                     are collections of similar objects.
+                  </li>
+                  <li>Confusing or ambiguous aspects of the models were simplified. For example, the “<tt>citation-type</tt>” attribute on bibliographic reference citations used to be a text attribute that gave the “type” of the citation. This attribute
+                     was used to specify that this was a journal, not a book; or that this was a print, not a web publication; or that this was
+                     published by the government or by a standards body. Use of this “type” attribute got very confusing when a user wanted to
+                     specify several things about a document (a report published online by the government). This single, over-used attribute was
+                     replaced with three new, more specific attributes: <a href="n-7c22.html" target="main" title="Type of Publication"><span class="attrtag">@publication-type</span></a> (to hold journal or book), <a href="n-f222.html" target="main" title="Publication Format"><span class="attrtag">@publication-format</span></a> (to hold print versus online), and <a href="n-s322.html" target="main" title="Type of Publisher"><span class="attrtag">@publisher-type</span></a> (to hold standards body versus government).
+                  </li>
+                  <li>Wrapper elements were added to keep related-material together. For example, translated titles and subtitles are now tied together
+                     in a <a href="n-qpq0.html" target="main" title="Translated Title Group"><span class="elementtag">&lt;trans-title-group&gt;</span></a> element, which holds the <a href="n-u9c2.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attribute previously held by individual titles and subtitles.
+                  </li>
+               </ul>
+               
+            </p>
+            <p class="para">A report listing all changes is available in the <a href="n-e4e2.html#chg-rpt">Change Report </a> section.
+            </p>
+         </div>
+         <div class="section"><a name="thanks"></a><h3 class="header">Acknowledgments</h3>
+            <p class="para">We thank <em>bmj.com</em>, <em>Molecular Biology of the Cell</em>, and <em>The Proceedings of the National Academy of Sciences of the U.S.A.</em> for providing the sample articles used in this Tag Library.
+            </p>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

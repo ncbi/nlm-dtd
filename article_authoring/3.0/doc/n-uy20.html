@@ -1,0 +1,101 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Author Comment</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;author-comment&gt;</h1>
+         <h1 class="elementname">Author Comment</h1>
+      </div>
+      <div class="definition">
+         <p class="para">An article metadata element that contains extra textual material associated with a contributor (an author or editor)
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">A typical author comment might explain, for example, some facts about the circumstances under which a contributor wrote the
+            article material. Such remarks are typically added by the publisher, so this element will rarely be used in Authoring.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  author-comment    
+                        <a href="n-d3d0.html" target="main" title="Author Comment Model"><span class="petag">%author-comment-model;</span></a>                       &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(title?, (p)+)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-yut0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-yut0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-s4w0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-he30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="editor"&gt;
+&lt;name&gt;&lt;surname&gt;Pollard&lt;/surname&gt;
+&lt;given-names&gt;Thomas D.&lt;/given-names&gt;&lt;/name&gt;
+<strong><span class="focus">&lt;author-comment&gt;
+&lt;p&gt;This essay constitutes the second article in the
+&amp;#x201C;Genome Annotation Series&amp;#x201D; initiated by 
+Thomas D. Pollard, Essay Editor. The first essay, by 
+J.S. Berg, B.C. Powell, and R.E. Cheney, appeared in
+the April 2001 issue of &lt;italic&gt;Molecular Biology of the 
+Cell&lt;/italic&gt; (Vol. 12, Issue 4, pp 780&amp;#x2013;794).&lt;/p&gt;
+&lt;/author-comment&gt;</span></strong>
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Boehm&lt;/surname&gt;
+&lt;given-names&gt;Markus&lt;/given-names&gt;&lt;/name&gt;
+&lt;aff&gt;Cell Biology and Metabolism Branch, National Institute 
+of Child Health and Human Development, National Institutes 
+of Health, Bethesda, Maryland, 20892&lt;/aff&gt;
+&lt;/contrib&gt;
+...
+&lt;/contrib-group&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

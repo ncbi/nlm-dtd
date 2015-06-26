@@ -1,0 +1,91 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Language</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">xml:lang</h1>
+         <h1 class="attrname">Language</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The language of the intellectual content of the element for which this is an attribute, typically a whole article</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Recommended best practice is to use values as defined in RFC
+                   1766, typically two-letter language codes such as &#8220;<tt>FR</tt>&#8221; (French),
+                   &#8220;<tt>EN</tt>&#8221; (English), and &#8220;<tt>DE</tt>&#8221; (German), including hyphenated
+                   differentiators such as &#8220;<tt>EN-AU</tt>&#8221; (Australian English) and
+                   &#8220;<tt>EN-US</tt>&#8221; (US English). These values are <strong>NOT</strong> case sensitive, so &#8220;<tt>EN</tt>&#8221; equals
+                   &#8220;<tt>en</tt>&#8221;.
+         </p>
+         <p class="para">Processing and Conversion Note:  Unlike nearly all other attributes in XML, the value of language is inherited. This means
+            that all elements inside the one with the language attribute (its descendants) are assumed to be in the same language, unless
+            they
+                   explicitly set their own <a href="n-dcq0.html"><span class="attrtag">xml:lang</span></a>
+                   attribute.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5 class="heading"><a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a> <a href="n-4nc0.html"><span class="elementname">Article</span></a></h5>
+            <h5 class="heading"><a href="n-yde0.html"><span class="elementtag">&lt;response&gt;</span></a> <a href="n-yde0.html"><span class="elementname">Response</span></a></h5>
+            <h5 class="heading"><a href="n-a4n0.html"><span class="elementtag">&lt;sub-article&gt;</span></a> <a href="n-a4n0.html"><span class="elementname">Sub-article</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">An alphanumeric string, which may include hyphens</td>
+                  <td class="attrmeaning">For best practice, use the RFC two-letter language code (such as &#8220;<tt>EN</tt>&#8221;),
+                                including any hyphenated differentiators (such as &#8220;<tt>EN-AU</tt>&#8221;). The
+                                values are not case sensitive.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Default value: </b>EN
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4><a href="n-8a20.html"><span class="elementtag">&lt;abstract&gt;</span></a> <a href="n-8a20.html"><span class="elementname">Abstract</span></a>; <a href="n-bb20.html"><span class="elementtag">&lt;alt-text&gt;</span></a> <a href="n-bb20.html"><span class="elementname">Alternate Text Name (For a Figure, Etc.)</span></a>; <a href="n-6ec0.html"><span class="elementtag">&lt;array&gt;</span></a> <a href="n-6ec0.html"><span class="elementname">Array (Simple Tabular Array)</span></a>; <a href="n-dqc0.html"><span class="elementtag">&lt;article-title&gt;</span></a> <a href="n-dqc0.html"><span class="elementname">Article Title</span></a>; <a href="n-pn30.html"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-pn30.html"><span class="elementname">Boxed Text</span></a>; <a href="n-3y30.html"><span class="elementtag">&lt;caption&gt;</span></a> <a href="n-3y30.html"><span class="elementname">Caption of a Figure, Table, Etc.</span></a>; <a href="n-jsu0.html"><span class="elementtag">&lt;disp-quote&gt;</span></a> <a href="n-jsu0.html"><span class="elementname">Quote, Displayed</span></a>; <a href="n-h4w0.html"><span class="elementtag">&lt;fig&gt;</span></a> <a href="n-h4w0.html"><span class="elementname">Figure</span></a>; <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-crw0.html"><span class="elementname">Footnote</span></a>; <a href="n-x5v0.html"><span class="elementtag">&lt;inline-formula&gt;</span></a> <a href="n-x5v0.html"><span class="elementname">Formula, Inline</span></a>; <a href="n-yf40.html"><span class="elementtag">&lt;kwd-group&gt;</span></a> <a href="n-yf40.html"><span class="elementname">Keyword Group</span></a>; <a href="n-gj40.html"><span class="elementtag">&lt;long-desc&gt;</span></a> <a href="n-gj40.html"><span class="elementname">Long Description</span></a>; <a href="n-7st0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-7st0.html"><span class="elementname">Paragraph</span></a>; <a href="n-wa70.html"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-wa70.html"><span class="elementname">Preformatted Text</span></a>; <a href="n-z5f0.html"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-z5f0.html"><span class="elementname">Section</span></a>; <a href="n-cwg0.html"><span class="elementtag">&lt;source&gt;</span></a> <a href="n-cwg0.html"><span class="elementname">Source</span></a>; <a href="n-qgg0.html"><span class="elementtag">&lt;speech&gt;</span></a> <a href="n-qgg0.html"><span class="elementname">Speech</span></a>; <a href="n-7tn0.html"><span class="elementtag">&lt;subj-group&gt;</span></a> <a href="n-7tn0.html"><span class="elementname">Subject Group</span></a>; <a href="n-z6n0.html"><span class="elementtag">&lt;subtitle&gt;</span></a> <a href="n-z6n0.html"><span class="elementname">Article Subtitle</span></a>; <a href="n-4a60.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-4a60.html"><span class="elementname">Supplementary Material</span></a>; <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> <a href="n-tn60.html"><span class="elementname">Table Wrapper</span></a>; <a href="n-2zd0.html"><span class="elementtag">&lt;trans-abstract&gt;</span></a> <a href="n-2zd0.html"><span class="elementname">Translated Abstract</span></a>; <a href="n-k3r0.html"><span class="elementtag">&lt;trans-source&gt;</span></a> <a href="n-k3r0.html"><span class="elementname">Translated Source</span></a>; <a href="n-iur0.html"><span class="elementtag">&lt;trans-subtitle&gt;</span></a> <a href="n-iur0.html"><span class="elementname">Translated Subtitle</span></a>; <a href="n-ssr0.html"><span class="elementtag">&lt;trans-title&gt;</span></a> <a href="n-ssr0.html"><span class="elementname">Translated Title</span></a>; <a href="n-k9r0.html"><span class="elementtag">&lt;verse-group&gt;</span></a> <a href="n-k9r0.html"><span class="elementname">Verse Form for Poetry</span></a><table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">An alphanumeric string, which may include hyphens</td>
+                  <td class="attrmeaning">For best practice, use the RFC two-letter language code (such as &#8220;<tt>EN</tt>&#8221;),
+                                including any hyphenated differentiators (such as &#8220;<tt>EN-AU</tt>&#8221;). The
+                                values are not case sensitive.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

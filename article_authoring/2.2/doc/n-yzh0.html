@@ -1,0 +1,233 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Article Authoring DTD Over-ride Classes Module</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Article Authoring DTD Over-ride Classes Module</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Article Authoring DTD Over-ride Classes Module    --&gt;
+&lt;!--  VERSION:   2.1                                               --&gt;
+&lt;!--  DATE:      June 2005                                         --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Article Authoring DTD Over-ride Classes Module v2.1 20050630//EN"
+Delivered as file "articleauthcustom-classes.ent"                  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Article Authoring DTD of the                      --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    To declare the Parameter Entities (PEs) used to   --&gt;
+&lt;!--             over-ride the named element classes for the       --&gt;
+&lt;!--             Article Authoring DTD, which was developed from   --&gt;
+&lt;!--             the Archiving and Interchange DTD Suite.          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             This DTD is a more prescriptive and limited DTD   --&gt;
+&lt;!--             than are the Publishing or Archiving DTDs.        --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Note: Since PEs must be declared before they      --&gt;
+&lt;!--             are used, this module must be called before the   --&gt;
+&lt;!--             content modules that declare elements, and before --&gt;
+&lt;!--             the Suite default classes module.                 --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) PEs for changing the contents of the Suite     --&gt;
+&lt;!--                default element classes                        --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital Archive of Journal Articles               --&gt;
+&lt;!--             National Center for Biotechnology Information     --&gt;
+&lt;!--                (NCBI)                                         --&gt;
+&lt;!--             National Library of Medicine (NLM)                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             June 2005                                         --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             this DTD should be sent in email to:              --&gt;
+&lt;!--                 authoring-dtd@ncbi.nlm.nih.gov                --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION\CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+                                                                   --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PARAMETER ENTITIES FOR CLASS OVER-RIDES    --&gt;
+&lt;!-- ============================================================= --&gt;
+                            
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OVER-RIDE INLINE CLASSES                   --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    EMPHASIS RENDITION ELEMENTS                --&gt;
+&lt;!ENTITY % emphasis.class   
+                        "bold | italic | monospace | overline | 
+                         sc | strike | underline "                   &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OVER-RIDE DISPLAY ELEMENTS                 --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    DISPLAY CLASS ELEMENTS                     --&gt;
+&lt;!--                    Graphical or other image-related elements.
+                        The display elements may occur within 
+                        the text of a table cell or paragraph
+                        although they are typically at the same 
+                        hierarchical level as a paragraph.         
+                        Deleted &lt;array&gt;, &lt;chem-struct&gt;, &lt;fig-group&gt;,
+                        &lt;table-wrap-group&gt;                         --&gt;
+&lt;!ENTITY % block-display.class
+                        "boxed-text | chem-struct-wrapper | fig | 
+                         graphic | media | preformat | 
+                         supplementary-material | table-wrap"        &gt;
+
+
+&lt;!--                    INLINE DISPLAY CLASS ELEMENTS              --&gt;
+&lt;!--                    Non-block display elements that set or
+                        display inline with the text 
+                        Deleted &lt;private-char&gt;                     --&gt;
+&lt;!ENTITY % inline-display.class
+                        "inline-graphic"                             &gt;
+                            
+
+&lt;!--                    SIMPLE DISPLAY ELEMENTS                    --&gt;
+&lt;!--                    The simplest and most basic of the Display
+                        Class elements, which may be allowed in many
+                        places, for example, inside other Display
+                        Class elements or inside the cell of a
+                        Table 
+                        Deleted &lt;array&gt;, &lt;chem-struct&gt;             --&gt;
+&lt;!ENTITY % simple-display.class
+                        "graphic | media | preformat"                &gt;
+
+
+&lt;!--                    DISPLAY ELEMENT BACK MATTER ELEMENTS       --&gt;
+&lt;!--                    Miscellaneous stuff (such as photo credits or
+                        copyright statement) at the end of a display
+                        element such as a figure or a boxed text
+                        element such as a sidebar                  
+                        Maintenance Modification Note: This model 
+                        originally allowed the &lt;copyright-statement&gt;
+                        element which was deleted here, since that 
+                        element is available within &lt;permissions&gt;. --&gt;
+&lt;!ENTITY % display-back-matter.class
+                        "attrib | permissions"                       &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OVER-RIDE PARAGRAPH-LIKE ELEMENTS          --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    REST OF PARAGRAPH CLASS (MINUS PARAGRAPH)  --&gt;
+&lt;!--                    Full paragraph class, minus the paragraph
+                        element itself, so this PE can be used inside
+                        the content model of a paragraph           
+                        Unlike in base, &lt;ack&gt; not allowed. 
+                        Acknowledgements only allowed in Back Matter
+                        &lt;back&gt;                                     --&gt;
+&lt;!ENTITY % rest-of-para.class   
+                        "disp-quote | speech | statement | 
+                         verse-group"                                &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OTHER CLASS OVER-RIDES                     --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    CONTRIBUTOR INFORMATION                    --&gt;
+&lt;!--                    Metadata about a contributor               --&gt;
+&lt;!ENTITY % contrib-info.class
+                        "address | aff | author-comment | bio |  
+                         email | ext-link | on-behalf-of |
+                         role | uri | xref"                          &gt;
+                        
+                        
+&lt;!--                    DATE CLASS ELEMENTS                        --&gt;
+&lt;!--                    Dates and other matters of history         --&gt;
+&lt;!ENTITY % date.class   "date"                                       &gt;
+
+
+&lt;!--                    NAMES CLASS                                --&gt;
+&lt;!--                    The elements used to name the personal names
+                        for individuals and the collaboration names
+                        for groups                                 --&gt;
+&lt;!ENTITY % name.class   "collab | name"                              &gt;
+
+
+&lt;!--                    MATHEMATICAL EXPRESSIONS                   
+                        Deleted &lt;tex-math&gt;                         --&gt;
+&lt;!ENTITY % math.class   "mml:math"                                   &gt;
+              
+
+
+&lt;!--                    BIBLIOGRAPHIC REFERENCE (CITATION) CLASS   --&gt;
+&lt;!--                    The elements that may be included inside a
+                        Citation (bibliographic reference) 
+                        Removed &lt;string-name&gt;                      --&gt;
+&lt;!ENTITY % references.class
+                        "access-date | annotation | article-title | 
+                         collab | comment | 
+                         conf-date | conf-loc | conf-name | 
+                         day | edition | email | elocation-id | 
+                         ext-link | fpage |  gov | isbn | 
+                         issn | issue | issue-id | issue-title |
+                         lpage | month | name | object-id |  
+                         page-count | page-range | 
+                         patent | person-group | pub-id | 
+                         publisher-loc | publisher-name | 
+                         role | season |
+                         series | source | std | 
+                         supplement | time-stamp | trans-source | 
+                         trans-title | uri |
+                         volume | volume-id | year"                  &gt;
+
+              
+&lt;!-- ================== End Authoring Classes Customization ====== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

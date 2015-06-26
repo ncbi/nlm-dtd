@@ -1,0 +1,39 @@
+<?ent version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book SYSTEM "H:\authoring\dtd\reflist.dtd" [
+   <!ENTITY journals SYSTEM "journals.ent">
+   <!ENTITY books SYSTEM "books.ent">
+   <!ENTITY conferences SYSTEM "conferences.ent">
+   <!ENTITY reports SYSTEM "reports.ent">
+   <!ENTITY theses SYSTEM "theses.ent">
+   <!ENTITY bibliographies SYSTEM "bibs.ent">
+   <!ENTITY patents SYSTEM "patent.ent">
+   <!ENTITY unpublished SYSTEM "unpublished.ent">
+   <!ENTITY www-mono SYSTEM "www-mono.ent">
+   <!ENTITY www-serials SYSTEM "www-serials.ent">
+   <!ENTITY homepages SYSTEM "homepages.ent">
+   <!ENTITY email SYSTEM "email.ent">
+   <!ENTITY lists SYSTEM "lists.ent">
+]>
+<book>
+   <part>
+      <title>NLM Recommended Formats for Bibliographic Citation</title>
+&journals;
+&books;
+&conferences;
+&reports;
+&theses;
+&bibliographies;
+&patents;
+&unpublished;
+</part>
+   <part>
+      <title>NLM Recommended Formats for Bibliographic Citation Supplement: Internet Formats</title>
+&www-mono;
+&www-serials;
+&homepages;
+&email;
+&lists;
+
+
+</part>
+</book>

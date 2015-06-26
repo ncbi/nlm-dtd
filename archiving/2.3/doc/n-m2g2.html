@@ -1,0 +1,326 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Archiving and Interchange Suite Section Class Elements</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Archiving and Interchange Suite Section Class Elements</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Section Class Elements                            --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.3 20070202//EN"
+     Delivered as file "section.ent"                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    Defines the member of the sec.class, that is,     --&gt;
+&lt;!--             names all section-level elements in the           --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             At the time of the initial DTD creation           --&gt;
+&lt;!--             there is only one such element, Section itself    --&gt;
+&lt;!--             &lt;sec&gt;, but future expansion to named sections     --&gt;
+&lt;!--             (such as &lt;methodology&gt; or &lt;materials&gt; or any      --&gt;
+&lt;!--             new section-level structures would be added here. --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) Default definition of the section class        --&gt;
+&lt;!--             2) Defaults for attribute lists                   --&gt;
+&lt;!--             3) Section &lt;sec&gt;                                  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital archives and publishers who wish to       --&gt;
+&lt;!--             create a custom XML DTD for original markup of    --&gt;
+&lt;!--             journal literature, books, and related material,  --&gt;
+&lt;!--             or for archiving and transferring such material   --&gt;
+&lt;!--             between archives.                                 --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             This DTD is in the public domain. An organization --&gt;
+&lt;!--             that wishes to create its own DTD from the suite  --&gt;
+&lt;!--             may do so without permission from NLM.            --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             The suite has been set up to be extended using a  --&gt;
+&lt;!--             new DTD file and a new DTD-specific customization --&gt;
+&lt;!--             module to redefine the many Parameter Entities.   --&gt;
+&lt;!--             Do not modify the suite directly or redistribute  --&gt;
+&lt;!--             modified versions of the suite.                   --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             In the interest of maintaining consistency and    --&gt;
+&lt;!--             clarity for potential users, NLM requests:        --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             1. If you create a DTD from the Archiving and     --&gt;
+&lt;!--                Interchange DTD Suite and intend to stay       --&gt;
+&lt;!--                compatible with the suite, then please include --&gt;
+&lt;!--                the following statement as a comment in all of --&gt;
+&lt;!--                your DTD modules:                              --&gt;
+&lt;!--                   "Created from, and fully compatible with,   --&gt;
+&lt;!--                    the Archiving and Interchange DTD Suite."  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             2. If you alter one or more modules of the suite, --&gt;
+&lt;!--                then please rename your version and all its    --&gt;
+&lt;!--                modules to avoid any confusion with the        --&gt;
+&lt;!--                original suite. Also, please include the       --&gt;
+&lt;!--                following statement as a comment in all your   --&gt;
+&lt;!--                DTD modules:                                   --&gt;
+&lt;!--                   "Based in part on, but not fully compatible --&gt;
+&lt;!--                    with, the Archiving and Interchange DTD    --&gt; 
+&lt;!--                    Suite."                                    --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             the DTD suite should be sent in email to:         --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             December 2002                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Jeff Beck       (NCBI)                            --&gt;
+&lt;!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             Bruce Rosenblum (Inera Inc.)                      --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             NLM thanks the Harvard University Libraries, both --&gt;
+&lt;!--             for proposing that a draft archiving NLM DTD for  --&gt; 
+&lt;!--             life sciences journals be extended to accommodate --&gt;
+&lt;!--             journals in all disciplines and for sponsoring    --&gt;
+&lt;!--             Bruce Rosenblum's collaboration with other DTD    --&gt;
+&lt;!--             authors in completing Version 1.0. The Andrew W.  --&gt; 
+&lt;!--             Mellon Foundation provided support for these      --&gt; 
+&lt;!--             important contributions.                          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  7. FLOATS WRAPPER - Added new element &lt;floats-wrap&gt; to be used to
+     hold the floating objects (figures, tables, text boxes, graphics, 
+     etc.) that occur throughout an &lt;article&gt; in on place all
+     together at the end of the &lt;body&gt; of the article, rather than 
+     letting them appear where they are referenced. New PE
+     floats-wrap-model.
+     
+  6. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.2                       (DAL/BTU) v2.2 (2006-04-30)
+     
+     Backwards-compatible changes to meet operational needs.
+     Typical changes include adding attribute values and making 
+     required elements optional.
+          
+  5. SECTION METADATA - Added new element &lt;sec-meta&gt;. There are 
+     sections that are authored independently, even in journal 
+     articles, and this is the start of allowing additional metadata 
+     for such sections.
+     
+  4. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+     
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+
+  3. COMPLETE MODELS WHEN OVER-RIDING A MODEL 
+     (for all Parameter Entities suffixed "-model")
+     ### Customization Alert ###
+     Added internal parentheses to Parameter Entity and removed 
+     them from Element Declaration for:
+     - %sec-model;
+
+  2. DEFAULT CLASSES - Were moved from this module to 
+     %default-classes.ent;
+  
+  1. Updated public identifier to "v2.3 20070202"          
+                                                                   --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PARAMETER ENTITY DEPENDENCIES             
+                        Requires the following parameter entities
+                        be defined before calling this module. 
+                        The content-model Parameter Entities are
+                        defined in %common.ent; but may be
+                        redefined in the Customization Module for
+                        the specific DTD:
+                          %sec-model; - Content model for section-like 
+                                        elements  
+                                                                   --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DEFAULTS FOR ATTRIBUTE LISTS               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    SECTION ATTRIBUTES                         --&gt;
+&lt;!--                    Attribute list for Section element         --&gt;
+&lt;!ENTITY % sec-atts   
+            "id         ID                                 #IMPLIED
+             xml:lang   NMTOKEN                            #IMPLIED
+
+             sec-type   CDATA                              #IMPLIED 
+             disp-level CDATA                              #IMPLIED" &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    FLOATS WRAPPER ELEMENTS                    --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    FLOATS WRAPPER MODEL                       --&gt;
+&lt;!--                    Model for the container element &lt;floats-wrap&gt;,
+                        which can be used to place all the floating 
+                        elements such as tables and figures within an 
+                        &lt;article&gt;.                                 --&gt;
+&lt;!ENTITY % floats-wrap-model
+                        "(%floats-display.class;)*"                  &gt;
+ 
+
+&lt;!--                    FLOATS WRAPPER                             --&gt;
+&lt;!--                    This container element is just a wrapper to
+                        hold the floating objects that occur within
+                        an article. Some publishers like to
+                        collect all these floating objects (figures,
+                        tables, text boxes, graphics, etc.) together
+                        at the end  rather than interspersing them
+                        throughout the various parts of the document
+                        where they are referenced. As such,
+                        the element is not part of the narrative flow
+                        of an article, it holds article resources.
+                        Remarks: This element was added because some
+                        users of the DTD were adding an extra fake
+                        section &lt;sec&gt; at the end of the body to hold
+                        the floating material. This is clearly tag
+                        abuse since a &lt;sec&gt; should contain authored 
+                        content.                                   --&gt;
+&lt;!ELEMENT  floats-wrap  %floats-wrap-model;                          &gt; 
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    SECTION ELEMENTS                           --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    SECTION                                    --&gt;
+&lt;!--                    A headed group of material; the basic 
+                        structural unit of the article             --&gt;
+&lt;!ELEMENT  sec          %sec-model;                                  &gt;
+&lt;!--         id         Unique identifier, so the Section can be
+                        referenced                   
+             xml:lang   The language in which the value of the
+                        element is expressed.  Recommended best 
+                        practice is to use values as defined in
+                        RFC 1766, typically 2-letter language
+                        codes such as "FR" (French), "EN" (English),
+                        and "DE" (German). These values are NOT
+                        case sensitive, so "EN" = "en". The values
+                        may include hyphenated differentiations such 
+                        as "EN-AU" (Australian English) and "EN-US"
+                        (United States English). 
+             sec-type   Conversion Note: This attribute may be used
+                        to retain information on the semantic
+                        content of a section where that is known.
+                        Authoring Note: Top-level sections (those 
+                        that are not nested inside other sections)
+                        may be assigned a "type" attribute for 
+                        indexing purposes. This attribute should be
+                        used only if the section is one of the listed
+                        types and should otherwise be omitted. A
+                        section that contains content of more than 
+                        one type should have the type IDs combined.
+                        (e.g., "Materials and Methods" would be
+                        type="materials | methods").  
+                        Types values are:         
+                          cases     Cases/Case Reports
+                          conclusions Conclusions/Comment
+                          discussion  Discussion/Interpretation
+                          intro     Introduction/Synopsis/Overview
+                          materials Materials
+                          methods   Methods/Methodology/Procedures
+                          results   Results/Statement of Findings
+                          subjects  Patients/Participants/Subjects
+                          supplementary-material
+                                    Supplementary Materials
+             disp-level Sometimes in print or on screen, the display
+                        or apparent hierarchical level of a section
+                        is not the same as its real position in the
+                        hierarchy.  For example, in some styles,
+                        the "Clinical Finding" Section or the 
+                        'Methodology" Section always looks like a 
+                        particular level heading (say a level 2 head),
+                        wherever it falls in the hierarchy (say a 
+                        level 1 head or a level 3 head). This
+                        attribute can be used to record the needed
+                        display level. (Rare)                      --&gt;
+&lt;!ATTLIST  sec
+             %sec-atts;                                              &gt;
+
+
+&lt;!--                    SECTION METADATA                           --&gt;
+&lt;!--                    In some articles, each section has a different
+                        author or some sections are authored by 
+                        different contributors from the enclosing
+                        article. This wrapper element for 
+                        section-level metadata is used to capture
+                        information concerning those contributors. --&gt;
+&lt;!ELEMENT  sec-meta     %sec-meta-model;                             &gt;
+
+
+&lt;!-- ================== End Section Class Module ================= --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

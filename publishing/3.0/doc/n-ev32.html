@@ -1,0 +1,79 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Labels in Citations</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h4 class="header">Labels in Citations</h4>
+         <p class="para">Some bibliographic reference lists are unnumbered, some are bulleted lists, some have a counting number before each reference,
+            and some have special symbols or author-descriptive labels (such as [Piez 2009]) constructed according to “Harvard rules”
+            or other semantic numbering system. The first decision a publisher or archive needs to make is whether to capture such numbers
+            using <a href="n-axx0.html" target="main" title="Label (Of a Figure, Reference, Etc.)"><span class="elementtag">&lt;label&gt;</span></a> or whether all such designators are generated for display or print. A repository archive may choose to preserve all numbers,
+            a publisher may choose to generate them.
+         </p>
+         <p class="para">Assuming numbers will be preserved, the next decision concerns punctuation and spacing. It is possible to preserve all punctuation
+            and spacing “<tt>3. </tt>” or “<tt>[Lapeyre-Usdin 2009]</tt>” or to preserve just the significant portion of the label (the numeral, or the name-year) and not preserve the spacing: “<tt>3</tt>” or “<tt>Lapeyre-Usdin 2009</tt>”. The following samples, preserve the punctuation and spacing:
+         </p>
+         <div class="codeblock"><pre>
+
+...
+&lt;ref&gt;
+&lt;label&gt;13.&lt;/label&gt;
+&lt;element-citation publication-type="journal"
+publication-format="print"&gt;
+&lt;collab&gt;American College of Dentists, Board of
+Regents&lt;/collab&gt;
+&lt;article-title&gt;The ethics of quackery and fraud
+in dentistry: a position paper&lt;/article-title&gt;
+&lt;source&gt;J Am Coll Dent&lt;/source&gt;
+&lt;year&gt;2003&lt;/year&gt;
+&lt;volume&gt;70&lt;/volume&gt;
+&lt;issue&gt;3&lt;/issue&gt;
+&lt;fpage&gt;6&lt;/fpage&gt;
+&lt;lpage&gt;8&lt;/lpage&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+
+
+
+...
+&lt;ref&gt;
+&lt;label&gt;13.&lt;/label&gt;
+<strong><span class="focus">&lt;mixed-citation publication-type="journal"
+publication-format="print"&gt;
+&lt;collab&gt;American College of Dentists, Board of
+Regents&lt;/collab&gt;. &lt;article-title&gt;The ethics of
+quackery and fraud in dentistry: a position
+paper&lt;/article-title&gt;. &lt;source&gt;J Am Coll
+Dent&lt;/source&gt;. &lt;year&gt;2003&lt;/year&gt;;
+&lt;volume&gt;70&lt;/volume&gt;(&lt;issue&gt;3&lt;/issue&gt;):
+&lt;fpage&gt;6&lt;/fpage&gt;-&lt;lpage&gt;8&lt;/lpage&gt;.&lt;/mixed-citation&gt;</span></strong>
+&lt;/ref&gt;
+...
+
+
+
+</pre></div>
+         <p class="para">Usually the label applies to the reference (<a href="n-2kt0.html" target="main" title="Reference Item"><span class="elementtag">&lt;ref&gt;</span></a>). Citations (<a href="n-8xa0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-t5v0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>) are typically only numbered when multiple citations occur within a single reference. In such cases, the reference is typically
+            numbered in series with the other, single references, and the citations are numbered using a different numbering scheme. For
+            example, a reference numbered <tt>&lt;label&gt;4.&lt;/label&gt;</tt> could have citations inside it labeled “<tt>a.</tt>”, “<tt>b.</tt>”, “<tt>c.</tt>” or “<tt>[Gaylord 2005]</tt>”. “<tt>[Beck 2006]</tt>”, “<tt>[Usdin 2009]</tt>”.
+         </p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

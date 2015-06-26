@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../ArchivingDTDforTaglib/archivearticle.dtd">
+<article>
+<front><?mtl hellip?><article-meta></article-meta><?mtl /hellip?></front>
+<body><?mtl hellip?><p></p><?mtl /hellip?></body>
+<back>
+<?mtl hellip?><?mtl /hellip?>
+<ref-list><?mtl hellip?><p></p><?mtl /hellip?></ref-list>
+<fn-group>
+<fn>
+<p>Funding: NHS Executive Northern and
+Yorkshire Region, Stroke Association.</p>
+</fn>
+<fn>
+<p>Competing interests: None declared.</p>
+</fn>
+</fn-group>
+</back>
+</article>

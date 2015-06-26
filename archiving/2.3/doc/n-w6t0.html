@@ -1,0 +1,135 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Page Count</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;page-count&gt;</h1>
+         <h1 class="elementname">Page Count</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Number of pages in a print article; by convention, each page or
+                   partial page is counted as one. Electronic articles do not traditionally have
+                   page counts.
+         </p>
+         <p class="para">This element may also be used in a bibliographic reference (<a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>) to indicate the total number of pages of a referenced item, typically a book.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Many elements in this Suite were created explicitly for
+            import conversion, that is, so that the intellectual work of tagging done by publishers would not be discarded when they converted
+            material from another tag set to the Journal Archiving Tag Set. The count
+             elements are a perfect example of this rationale; they are conversion elements and should only be tagged if present in the
+            original source.
+         </p>
+         <p class="para">The count elements are modeled as <tt>EMPTY</tt> elements (that is, elements that have no content and store their real values in one or more attributes) because the majority
+            of journal tag sets that were examined in the course of preparing this DTD used this mechanism, an inheritance of the older
+            MAJOUR-header DTD.
+         </p>
+         <p class="para">For extensive examples of formatted <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-w6t0.html"><span class="elementtag">&lt;page-count&gt;</span></a>s in <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-bmi0.html"><span class="attrtag">count</span></a> <a href="n-bmi0.html"><span class="attrname">Count</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Inside the <a href="n-c6a0.html"><span class="elementtag">&lt;counts&gt;</span></a> wrapper element are the counts of various components of the article: the <a href="n-few0.html"><span class="elementtag">&lt;fig-count&gt;</span></a> is the number of figures, the <a href="n-sg60.html"><span class="elementtag">&lt;table-count&gt;</span></a> is the number of tables, the <a href="n-ipu0.html"><span class="elementtag">&lt;equation-count&gt;</span></a> is the number of display equations, the <a href="n-5ue0.html"><span class="elementtag">&lt;ref-count&gt;</span></a> is either the number of references or (more properly) the number of citations in the bibliographic reference list, the <a href="n-w6t0.html"><span class="elementtag">&lt;page-count&gt;</span></a> is the total page count, and the <a href="n-m4h0.html"><span class="elementtag">&lt;word-count&gt;</span></a> is the number of words in the article.
+         </p>
+         <p class="para">A number of elements in the Suite relate to page numbers:
+                   
+            <ul class="bullist">
+               <li><a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> names the page number
+                             on which the article begins;
+               </li>
+               <li><a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a> names the page number on which the article ends (which should be the same page number or a number larger than the starting
+                  page number);
+               </li>
+               <li><a href="n-pdu0.html"><span class="elementtag">&lt;elocation-id&gt;</span></a> replaces the start and end page elements just described for electronic-only journals; and
+               </li>
+               <li><a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> records discontinuous page ranges (See note below.).
+               </li>
+               <li><a href="n-w6t0.html"><span class="elementtag">&lt;page-count&gt;</span></a> holds the total page count, if the publisher has provided one. Typically this element records what the publisher said and
+                  makes no validity claim.
+               </li>
+            </ul> 
+         </p>
+         <p class="para">Note: The <a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> is intended to record supplementary information and should <em>not</em> be used in the place of  the <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> and <a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a> elements, which are typically needed for citation matching. The <a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> element is merely a text string, containing such material as &#8220;8-11, 14-19, 40&#8221;,
+                                    which would mean that the article began on page
+                                    8, ran through 11, skipped to page 14, ran
+                                    through 19, and concluded on page 40.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  page-count    EMPTY                                       &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">This is an EMPTY element</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-c6a0.html"><span class="elementtag">&lt;counts&gt;</span></a> <a href="n-c6a0.html"><span class="elementname">Counts</span></a>; <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-2is0.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;abstract&gt;...
+&lt;/abstract&gt;
+&lt;conference&gt;
+&lt;conf-date&gt;1999&lt;/conf-date&gt;
+&lt;conf-name&gt;The 27th annual ACM SI/GUCCS
+conference&lt;/conf-name&gt;
+&lt;conf-num&gt;27&lt;/conf-num&gt;
+&lt;conf-loc&gt;Denver, Colorado, United States&lt;/conf-loc&gt;
+&lt;conf-sponsor&gt;ACM, Assoc. for Computing
+Machinery&lt;/conf-sponsor&gt;
+&lt;conf-theme&gt;User services conference for
+university and college computing service
+organizations&lt;/conf-theme&gt;
+&lt;conf-acronym&gt;SIGUCCS&lt;/conf-acronym&gt;
+&lt;/conference&gt;
+&lt;counts&gt;
+&lt;fig-count count="5"/&gt;
+&lt;table-count count="3"/&gt;
+&lt;equation-count count="10"/&gt;
+&lt;ref-count count="26"/&gt;
+<strong><span class="focus">&lt;page-count count="6"/&gt;</span></strong>
+&lt;word-count count="2847"/&gt;
+&lt;/counts&gt;
+&lt;/article-meta&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

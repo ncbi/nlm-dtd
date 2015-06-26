@@ -1,0 +1,65 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute:  Prefix Word (For a List Item)</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">prefix-word</h1>
+         <h1 class="attrname"> Prefix Word (For a List Item)</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Holds a word such as &#8220;Step&#8221; or &#8220;Procedure&#8221;
+                   that is to be added to the beginning of each item of a list
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Display Note: Any such prefix word is in addition to (not instead of) any prefix characters, such as numbers or bullets, and
+            typically, the word precedes the prefix character. For example, a list type of &#8220;<tt>order</tt>&#8221; and a prefix word of &#8220;<tt>Step</tt>&#8221; would produce: &#8220;<tt>Step1. aaaa</tt>&#8221;, &#8220;<tt>Step2. bbbb</tt>&#8221;, &#8220;<tt>Step3. cccc</tt>&#8221;, etc. Note that typically, no white space follows the inserted word, i.e., &#8220;<tt>Step</tt>&#8221; rather than &#8220;<tt>Step   </tt>&#8221;.
+         </p>
+         <p class="para">The odd man out is the bulleted (unordered) list (type &#8220;<tt>bullet</tt>&#8221;), which is the only case in which the prefix character would precede the prefix word, for example, &#8220;<tt>&#8226; Step</tt>&#8221;, &#8220;<tt>&#8226; Step</tt>&#8221;, &#8220;<tt>&#8226; Step</tt>&#8221;, etc., but the combination of a prefix word and a bullet is rarely sensible.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5 class="heading"><a href="n-pku0.html"><span class="elementtag">&lt;def-list&gt;</span></a> <a href="n-pku0.html"><span class="elementname">Definition List</span></a></h5>
+            <h5 class="heading"><a href="n-ai40.html"><span class="elementtag">&lt;list&gt;</span></a> <a href="n-ai40.html"><span class="elementname">List</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">The
+                                prefix word to be used for the list; for example, the word &#8220;<tt>Step</tt>&#8221;
+                                might be used to display a list numbered &#8220;<tt>Step1.</tt>&#8221;, &#8220;<tt>Step2.</tt>&#8221;, &#8220;<tt>Step3.</tt>&#8221;, etc.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

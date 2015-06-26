@@ -1,0 +1,367 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Journal Archiving DTD Customize Mixes Module</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Journal Archiving DTD Customize Mixes Module</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Journal Archiving DTD Customize Mixes Module      --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.3 20070202//EN"
+Delivered as file "archivecustom-mixes.ent"                        --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Journal Archiving and Interchange DTD of the      --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    Declares over-ride values for the default element --&gt;
+&lt;!--             mixes in the Suite. These over-rides are specific --&gt;
+&lt;!--             to the Journal Archiving and Interchange DTD.     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Note: Since PEs must be declared before they      --&gt;
+&lt;!--             are used, this module must be called before the   --&gt;
+&lt;!--             default mixes modules (%default-mixes;)           --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) PEs that define the element mixes to be        --&gt;
+&lt;!--                over-ridden                                    --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital Archive of Journal Articles               --&gt;
+&lt;!--             National Center for Biotechnology Information     --&gt;
+&lt;!--                (NCBI)                                         --&gt;
+&lt;!--             National Library of Medicine (NLM)                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             August 2004                                       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             this DTD should be sent in email to:              --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  9. INSIDE CELL - Added &lt;chem-struct-wrapper&gt; to the contents of 
+     a table cell using -%inside-cell; so that you can use a
+     &lt;chem-struct-wrapper&gt; anywhere you can use a &lt;disp-formula&gt;.
+     
+  8. EMPHASIZED TEXT - Added &lt;break&gt; to the contents of 
+     emphasized-text using break.class
+     
+  7. INSIDE CELL MIX  - Added &lt;nlm-citation&gt; as an alternative to
+     unstructured &lt;citation&gt;s by adding &lt;nlm-citation&gt;
+     to -%citation.class;.
+  
+  6. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by NCBI   
+          
+  5. Minor, non-functional changes to wording in comments as part 
+     of 2.1 release.
+          
+  4. Updated public identifier to "v2.3 20070202" 
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-07-30)
+     
+     
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+
+  3. LOOSENING ALL PHRASE-LEVEL ELEMENT USAGE - As part of the
+     version 2.0 split into 3 DTDs, removed the distinctions
+     between where phrase-level elements may be used. Now, if
+     you can use one phrase-level, you can use them all. This
+     allows any in any order. Phrase-level elements include the
+     address elements (which is only a little odd for &lt;addr-line&gt;).
+     
+     The New Parameter Entity is %all-phrase; used inside:
+       - %inside-cell;
+     as well as inside the following inline mixes:
+       - %emphasized-text;
+       - %just-rendition;
+       - %rendition-plus;
+       - %simple-phrase;
+       - %simple-text;
+            
+  2. REGULARIZING CLASS/MIX NAMES AND USAGE 
+
+     a. MODIFY INLINE PARAMETER MIXES
+        ### Customization Alert ###
+        Changed the inline-mix Parameter Entities to use the 
+        OR-bar-first mechanism. This requires changing not
+        only the Parameter Entity, but all content models that
+        use the entity.
+        - %emphasized-text; (used in most of the format elements)
+        - %simple-phrase; 
+        - %simple-text; 
+        The following PEs were already in OR-bar-first form and were
+        not changed:
+        - %just-rendition;
+        - %rendition-plus;
+  
+     b. RENAME EXISTING MIXES
+        ### Customization Alert ###
+        Rename all general-purpose mixes whose named ended in the 
+        suffix "-elements", since that suffix is reserved for mixes 
+        that are mixed with #PCDATA for a particular element
+        -  %doc-back-matter-elements; ==&gt; %doc-back-matter-mix;
+        -  %sec-back-matter-elements; ==&gt; %sec-back-matter-mix;
+        
+     c. RENAME EXISTING CLASSES
+        ### Customization Alert ###
+        Some classes did not have the ".class" suffix in their
+        names. Changed the names to add the class suffix.
+        - %block-math.class; used in 
+             - %p-elements;
+             - %inside-cell;
+        - %inline-math.class; used in -%all-phrase;
+
+
+     d.  MODIFIED %doc-back-matter-mix; (formerly named
+         %doc-back-matter-elements;
+         ### Customization Alert ###
+         Corrected the historical error that had this Parameter 
+         Entity calling a mix (-%sec-level;) and not a class 
+         (-%sec.class);. Since there was nothing in -%sec-level; 
+         but &lt;sec&gt;, this has no effect on blue or green but may 
+         change existing customizations.
+                
+  1. Created this module as version "v2.3 20070202"                --&gt;
+                          
+                        
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    ELEMENT MIXES FOR USE IN CONTENT MODELS    --&gt;
+&lt;!--                    (MIXES ARE COMPOSED USING CLASSES)         --&gt;
+&lt;!-- ============================================================= --&gt;
+                         
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    EXCEPTION: A MIX USED IN OTHER MIXES       --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    ALL PHRASE-LEVEL ELEMENTS                  --&gt;
+&lt;!--                    This Parameter Entity contains all of the
+                        phrase-level elements in the entire
+                        Archival Tag Set EXCEPT THE &lt;x&gt; AND
+                        &lt;break&gt; elements.
+                        This change is as a result of the version
+                        2.0 of the DTDs splitting into three.
+                        The restrictions in the phrase-level content 
+                        models were in place to help regularize the
+                        archive. They have no place in a more
+                        descriptive, open archival DTD. The cleanest
+                        way to accomplish this is to relax the
+                        fairly clean class/mix structure that the
+                        DTD uses and do one layer of "onion" entities.
+                          Thus the individual entities such as
+                        %emphasized-text; will continue to exist,
+                        but they will contain all the phrase-level
+                        elements, through this Parameter Entity.
+                        Developer's Note: At the moment, the &lt;break&gt;
+                        and &lt;x&gt; elements are not included considered
+                        to be "ordinary" phrase-level elements and
+                        are not in %all-phrase;.
+                        ### Usage Alert ###
+                        Design Note: 
+                        1) Since this is used in other mixes,
+                        unlike all other mixes, all-phrase must be 
+                        declared first in this module. 
+                        2) Since it acts  like a class (is used in
+                        other mixes) it does not start with an 
+                        OR bar, as all other inline mixes do       --&gt;
+&lt;!ENTITY % all-phrase   "%address-link.class; | %article-link.class; |
+                         %appearance.class; | %emphasis.class;  |
+                         %inline-display.class; | 
+                         %inline-math.class; | %math.class; |  
+                         %phrase.class; | %simple-link.class; |
+                         %subsup.class;"                             &gt;
+
+                         
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    TABLE ELEMENT MIXES                        --&gt;
+&lt;!-- ============================================================= --&gt;
+                          
+
+&lt;!--                    INSIDE TABLE CELL ELEMENTS                 --&gt;
+&lt;!--                    Mixed with #PCDATA inside a table cell, such
+                        as a &lt;td&gt; or &lt;th&gt; element in the XHTML table
+                        model, the &lt;entry&gt; element in the OASIS CALS
+                        table model, etc.  This PE will be used as the
+                        value of %Flow.mix;, %paracon;, etc.
+                        ### Usage Alert ###
+                        Design Note: Inside cell is an exception, an
+                        inline mix that does not start with an OR
+                        bar. This is because is used within the
+                        PE -%Flow.mix;, which is an inline mix
+                        defined in the course of the XHTML Table DTD,
+                        a DTD not under control of this DTD Suite. --&gt;
+&lt;!ENTITY % inside-cell  "%all-phrase;  | %block-math.class; |
+                         %break.class; | %chem-struct-wrap.class; |
+                         %citation.class; |
+                         %list.class;  | %simple-display.class;"     &gt;
+                         
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    BACK MATTER ELEMENT MIXES(%backmatter.ent;)--&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    DOCUMENT BACK MATTER ELEMENTS              --&gt;
+&lt;!--                    Back Matter Elements used by a full document
+                        such as a journal article. This is an element
+                        grouping rather than a class. These 
+                        elements may also appear in the content models 
+                        of structural elements, such as back matter.
+                                                                   --&gt;
+&lt;!ENTITY % doc-back-matter-mix
+                        "%back.class; | %front-back.class; | 
+                         %sec.class;"                                &gt;
+                         
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    INLINE ELEMENT MIXES                       --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    EMPHASIS MIX ELEMENTS                      --&gt;
+&lt;!--                    Elements that may be used inside most of the
+                        emphasis class elements                    --&gt;
+&lt;!ENTITY % emphasized-text  
+                        "| %all-phrase; | %break.class;"             &gt;
+                         
+
+&lt;!--                    JUST RENDITION                             --&gt;
+&lt;!--                    Only the simplest of the typographic 
+                        emphasis elements, as well as subscript and
+                        superscript.  Usually used in a model that
+                        allows #PCDATA and this restricted mixture.
+                        This mix may be stripped down to only
+                        subscript and superscript by some, more
+                        restrictive DTDs.                         
+                        DTD Maintenance Note: This Parameter Entity
+                        and the related PE "rendition-plus" have
+                        been put in place to restrict the amount of
+                        variability that a person modifying the DTD
+                        through PE redefinition can achieve. Some
+                        elements have been set #PCDATA plus one PE
+                        and some have been set to #PCDATA plus the
+                        other in an effort to allow designers to
+                        modify entire groups of elements, but not
+                        to change similar models individually .    --&gt;
+&lt;!ENTITY % just-rendition
+                        "| %all-phrase;"                             &gt;
+                         
+
+&lt;!--                    RENDITION MARKUP PLUS                      --&gt;
+&lt;!--                    Only the simplest of the typographic 
+                        emphasis elements, as well as subscript and
+                        superscript.  Usually used in a model that
+                        allows #PCDATA and this restricted mixture.
+                        This mix may be enhanced slightly in some
+                        more permissive DTDs, and should always
+                        contain at least typographic emphasis, 
+                        subscript, and superscript.  
+                        DTD Maintenance Note: This Parameter Entity
+                        and the related PE "just-rendition" have
+                        been put in place to restrict the amount of
+                        variability that a person modifying the DTD
+                        through PE redefinition can achieve. Some
+                        elements have been set #PCDATA plus one PE
+                        and some have been set to #PCDATA plus the
+                        other in an effort to allow designers to
+                        modify entire groups of elements, but not
+                        to individually change similar models. 
+                        modify entire groups of elements, but not
+                        to change similar models individually .    --&gt;
+&lt;!ENTITY % rendition-plus                             
+                        "| %all-phrase;"                             &gt;
+
+
+&lt;!--                    SIMPLE PHRASE-LEVEL TEXTUAL ELEMENTS       --&gt;
+&lt;!--                    Elements that may be used almost anywhere
+                        text is used, for example, inside a title.
+                        Simple text plus inline display and math 
+                        elements.                                  --&gt;
+&lt;!ENTITY % simple-phrase
+                        "| %all-phrase;"                             &gt;
+
+
+&lt;!--                    SIMPLE TEXTUAL CONTENT                     --&gt;
+&lt;!--                    Elements that may be used inside elements
+                        that are really expected to be #PCDATA and
+                        not to contain any of these things.
+                        Note that in the original, this contained
+                        no math and no links, thus is was even
+                        simpler than %simple-phrase; Now (v2 2004)
+                        the two are the same.                      --&gt;
+&lt;!ENTITY % simple-text  "| %all-phrase;"                             &gt;
+
+
+&lt;!-- ================== End Archiving DTD Mixes Customization ==== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

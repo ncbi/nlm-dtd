@@ -1,0 +1,527 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Citation</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;citation&gt;</h1>
+         <h1 class="elementname">Citation</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A bibliographic description of a work (such as a journal article, book, or personal communication). Citations are either cited
+            directly in the text of an article or  listed in the bibliographic reference list at the end of the article and that list
+            item is cited from within the text
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Although in this DTD Suite citations are allowed to float freely within a paragraph, most journals require that the full citation
+            be listed in the bibliographic reference list <a href="n-2qx0.html"><span class="elementtag">&lt;ref-list&gt;</span></a>, and only a <a href="n-hzt0.html"><span class="elementname">X(cross) Reference</span></a> <a href="n-hzt0.html"><span class="elementtag">&lt;xref&gt;</span></a> be inserted into the text at the place of reference.
+         </p>
+         <p class="para">Although the DTD does not enforce it, a citation to a journal article <strong>should</strong> be tagged with as many as possible of the following, so that PubMed Central, CrossRef, or other matching service can make
+            the citation into a live link:
+                   
+            <div class="deflist">
+               <table class="deflisttable">
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>source</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">The title of a
+                                                   journal, book, conference proceedings, etc.
+                                                   that is the source of the cited material. (Note: In PubMed Central processing, this is typically the
+                           MEDLINE abbreviation of the journal name.)
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>article-title</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Title of the article</p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>volume</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Volume of the journal</p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>issue</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Issue of the journal</p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>fpage</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Page number on which the article starts</p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>name</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Name of an author or editor</p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>year</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Year of publication</p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>month</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Month of publication (if present)</p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>day</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Date of publication (if present)</p>
+                     </td>
+                  </tr>
+               </table>
+            </div> The other elements may be tagged if desired. Use the
+                   <a href="n-p9v0.html"><span class="elementtag">&lt;source&gt;</span></a> element for titles of books, conference
+                   proceedings, etc.
+         </p>
+         <p class="para">In those instances in which a citation to a journal article is not fully tagged, all punctuation and spacing should be included.</p>
+         <p class="para">Conversion Note: In order to make citations into live links, as much of the author and date information as is available should
+            be preserved, even if it is not possible to tag all the element just named. The most important date tag is <a href="n-n270.html"><span class="elementtag">&lt;year&gt;</span></a>, and it should always be tagged if possible, for example, <tt>&lt;year&gt;2003&lt;/year&gt;</tt>. The <a href="n-nm50.html"><span class="elementtag">&lt;day&gt;</span></a> and <a href="n-zcw0.html"><span class="elementtag">&lt;month&gt;</span></a> tags are used more rarely; they are provided because some of the citation matching services can use the month and day information
+            if it is available.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-cq70.html"><span class="attrtag">citation-type</span></a> <a href="n-cq70.html"><span class="attrname">Type of Citation</span></a></h5>
+         <h5 class="header"><a href="n-zhe0.html"><span class="attrtag">id</span></a> <a href="n-zhe0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-vig0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-vig0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-2jg0.html"><span class="attrtag">xlink:href</span></a> <a href="n-2jg0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-ypg0.html"><span class="attrtag">xlink:role</span></a> <a href="n-ypg0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-3bg0.html"><span class="attrtag">xlink:show</span></a> <a href="n-3bg0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-m9g0.html"><span class="attrtag">xlink:title</span></a> <a href="n-m9g0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-4zg0.html"><span class="attrtag">xlink:type</span></a> <a href="n-4zg0.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-38n0.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-38n0.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">There are two kinds of citations in this DTD, this <a href="n-jt30.html"><span class="elementtag">&lt;citation&gt;</span></a> is free form and the other (<a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>) has a rigid structure of elements within it. For citations that follow the NLM Citation Guidelines, use <a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, which provides a more structured model than <a href="n-jt30.html"><span class="elementtag">&lt;citation&gt;</span></a>.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  citation     (#PCDATA %citation-elements;)*               &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-x9c0.html"><span class="elementname">Bold</span></a> <a href="n-x9c0.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-g3u0.html"><span class="elementname">Italic</span></a> <a href="n-g3u0.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-6zu0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-6zu0.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-chw0.html"><span class="elementname">Overline</span></a> <a href="n-chw0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-9uv0.html"><span class="elementname">Small Caps</span></a> <a href="n-9uv0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-q840.html"><span class="elementname">Strike Through</span></a> <a href="n-q840.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-7dt0.html"><span class="elementname">Underline</span></a> <a href="n-7dt0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-iqa0.html"><span class="elementname">Graphic, Inline</span></a> <a href="n-iqa0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-wvx0.html"><span class="elementname">Private Character (Custom or Unicode)</span></a> <a href="n-wvx0.html"><span class="elementtag">&lt;private-char&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-fja0.html"><span class="elementname">Formula, Inline</span></a> <a href="n-fja0.html"><span class="elementtag">&lt;inline-formula&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-2tu0.html"><span class="elementname">Label (Of a Figure, Reference, Etc.)</span></a> <a href="n-2tu0.html"><span class="elementtag">&lt;label&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-ku20.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-ku20.html"><span class="elementtag">&lt;abbrev&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-v8w0.html"><span class="elementname">Named Special (Subject) Content</span></a> <a href="n-v8w0.html"><span class="elementtag">&lt;named-content&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-vv20.html"><span class="elementname">Access Date for Cited Work</span></a> <a href="n-vv20.html"><span class="elementtag">&lt;access-date&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-nj20.html"><span class="elementname">Annotation in a Citation</span></a> <a href="n-nj20.html"><span class="elementtag">&lt;annotation&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-bsc0.html"><span class="elementname">Article Title</span></a> <a href="n-bsc0.html"><span class="elementtag">&lt;article-title&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-gi30.html"><span class="elementname">Collaborative (Group) Author</span></a> <a href="n-gi30.html"><span class="elementtag">&lt;collab&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-rp30.html"><span class="elementname">Comment in a Citation</span></a> <a href="n-rp30.html"><span class="elementtag">&lt;comment&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-6z30.html"><span class="elementname">Conference Date</span></a> <a href="n-6z30.html"><span class="elementtag">&lt;conf-date&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-bk50.html"><span class="elementname">Conference Location</span></a> <a href="n-bk50.html"><span class="elementtag">&lt;conf-loc&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-z250.html"><span class="elementname">Conference Name</span></a> <a href="n-z250.html"><span class="elementtag">&lt;conf-name&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-nm50.html"><span class="elementname">Day</span></a> <a href="n-nm50.html"><span class="elementtag">&lt;day&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-8e80.html"><span class="elementname">Edition, Cited</span></a> <a href="n-8e80.html"><span class="elementtag">&lt;edition&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-sg80.html"><span class="elementname">Email Address</span></a> <a href="n-sg80.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-nd80.html"><span class="elementname">External Link</span></a> <a href="n-nd80.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-pit0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-pit0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-3f80.html"><span class="elementname">Electronic Location Identifier</span></a> <a href="n-3f80.html"><span class="elementtag">&lt;elocation-id&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-n680.html"><span class="elementname">Et Al</span></a> <a href="n-n680.html"><span class="elementtag">&lt;etal&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-q5a0.html"><span class="elementname">First Page</span></a> <a href="n-q5a0.html"><span class="elementtag">&lt;fpage&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-t6a0.html"><span class="elementname">Government Report, Cited</span></a> <a href="n-t6a0.html"><span class="elementtag">&lt;gov&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-wku0.html"><span class="elementname">ISBN</span></a> <a href="n-wku0.html"><span class="elementtag">&lt;isbn&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-jku0.html"><span class="elementname">ISSN</span></a> <a href="n-jku0.html"><span class="elementtag">&lt;issn&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-v2u0.html"><span class="elementname">Issue Number</span></a> <a href="n-v2u0.html"><span class="elementtag">&lt;issue&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-scu0.html"><span class="elementname">Issue Identifier</span></a> <a href="n-scu0.html"><span class="elementtag">&lt;issue-id&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-k3u0.html"><span class="elementname">Issue Title</span></a> <a href="n-k3u0.html"><span class="elementtag">&lt;issue-title&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-dnu0.html"><span class="elementname">Last Page</span></a> <a href="n-dnu0.html"><span class="elementtag">&lt;lpage&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-zcw0.html"><span class="elementname">Month</span></a> <a href="n-zcw0.html"><span class="elementtag">&lt;month&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-55w0.html"><span class="elementname">Name of Person</span></a> <a href="n-55w0.html"><span class="elementtag">&lt;name&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-x6w0.html"><span class="elementname">Object Identifier</span></a> <a href="n-x6w0.html"><span class="elementtag">&lt;object-id&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-6mw0.html"><span class="elementname">Page Count</span></a> <a href="n-6mw0.html"><span class="elementtag">&lt;page-count&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-4kx0.html"><span class="elementname">Page Ranges</span></a> <a href="n-4kx0.html"><span class="elementtag">&lt;page-range&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-h2x0.html"><span class="elementname">Patent Number, Cited</span></a> <a href="n-h2x0.html"><span class="elementtag">&lt;patent&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-73x0.html"><span class="elementname">Person Group for a Cited Publication</span></a> <a href="n-73x0.html"><span class="elementtag">&lt;person-group&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-jdx0.html"><span class="elementname">Publication Identifier for a Cited Publication</span></a> <a href="n-jdx0.html"><span class="elementtag">&lt;pub-id&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-ehx0.html"><span class="elementname">Publisher&#8217;s Location</span></a> <a href="n-ehx0.html"><span class="elementtag">&lt;publisher-loc&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-yix0.html"><span class="elementname">Publisher&#8217;s Name</span></a> <a href="n-yix0.html"><span class="elementtag">&lt;publisher-name&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-d8v0.html"><span class="elementname">Role or Function Title of Contributor</span></a> <a href="n-d8v0.html"><span class="elementtag">&lt;role&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-a4v0.html"><span class="elementname">Season</span></a> <a href="n-a4v0.html"><span class="elementtag">&lt;season&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-igv0.html"><span class="elementname">Series</span></a> <a href="n-igv0.html"><span class="elementtag">&lt;series&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-p9v0.html"><span class="elementname">Source</span></a> <a href="n-p9v0.html"><span class="elementtag">&lt;source&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-x540.html"><span class="elementname">Standard, Cited</span></a> <a href="n-x540.html"><span class="elementtag">&lt;std&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-hj40.html"><span class="elementname">Supplement Information</span></a> <a href="n-hj40.html"><span class="elementtag">&lt;supplement&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-n2t0.html"><span class="elementname">Time Stamp for Cited Work</span></a> <a href="n-n2t0.html"><span class="elementtag">&lt;time-stamp&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-avt0.html"><span class="elementname">Translated Source</span></a> <a href="n-avt0.html"><span class="elementtag">&lt;trans-source&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-wft0.html"><span class="elementname">Translated Title</span></a> <a href="n-wft0.html"><span class="elementtag">&lt;trans-title&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-c9t0.html"><span class="elementname">Volume Number</span></a> <a href="n-c9t0.html"><span class="elementtag">&lt;volume&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-8mt0.html"><span class="elementname">Volume Identifier</span></a> <a href="n-8mt0.html"><span class="elementtag">&lt;volume-id&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-n270.html"><span class="elementname">Year</span></a> <a href="n-n270.html"><span class="elementtag">&lt;year&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-cx40.html"><span class="elementname">Subscript</span></a> <a href="n-cx40.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-xh40.html"><span class="elementname">Superscript</span></a> <a href="n-xh40.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-xjw0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-xjw0.html"><span class="elementname">Paragraph</span></a>; <a href="n-9yx0.html"><span class="elementtag">&lt;ref&gt;</span></a> <a href="n-9yx0.html"><span class="elementname">Reference Item</span></a>; <a href="n-fts0.html"><span class="elementtag">&lt;td&gt;</span></a> <a href="n-fts0.html"><span class="elementname">Table Data Cell (XHTML table model)</span></a>; <a href="n-5bs0.html"><span class="elementtag">&lt;th&gt;</span></a> <a href="n-5bs0.html"><span class="elementname">Table Header Cell (XHTML table model)</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+    </pre><p class="examp.desc">A reference to a journal article:</p><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;...&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;ref id="B7"&gt;&lt;label&gt;7&lt;/label&gt;
+<strong><span class="focus">&lt;citation citation-type="journal"&gt;
+&lt;name&gt;&lt;surname&gt;Woodford-Williams&lt;/surname&gt;
+&lt;given-names&gt;E&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;McKeon&lt;/surname&gt;
+&lt;given-names&gt;JA&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Trotter&lt;/surname&gt;
+&lt;given-names&gt;IS&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Watson&lt;/surname&gt;
+&lt;given-names&gt;D&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Bushby&lt;/surname&gt;
+&lt;given-names&gt;C&lt;/given-names&gt;&lt;/name&gt;
+&lt;article-title&gt;The day hospital in the community care
+of the elderly&lt;/article-title&gt;
+&lt;source&gt;Gerontology Clinic&lt;/source&gt;
+&lt;volume&gt;4&lt;/volume&gt;&lt;year&gt;1962&lt;/year&gt;
+&lt;fpage&gt;241&lt;/fpage&gt;&lt;lpage&gt;256&lt;/lpage&gt;
+&lt;/citation&gt;</span></strong>
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+
+
+</pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">A reference to a Listserv:</p><pre class="taggedtext">
+    
+...
+&lt;ref-list&gt;
+...
+&lt;ref id="B18"&gt;&lt;label&gt;18&lt;/label&gt;
+<strong><span class="focus">&lt;citation citation-type="list"&gt;
+&lt;source&gt;Washington Area SGML/XML Users Group Listserv&lt;/source&gt;
+&lt;access-date&gt;2005 Sep 6&lt;/access-date&gt;
+&lt;comment&gt;List archives are available at: 
+http://www.eccnet.com/pipermail/dc-xmlusers/&lt;/comment&gt;
+&lt;/citation&gt;</span></strong>
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+...
+
+
+    </pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 3</h3><pre class="taggedtext">
+</pre><p class="examp.desc">A reference to something other than the listed reference types:</p><pre class="taggedtext">
+    
+...
+&lt;ref-list&gt;
+...
+&lt;ref id="B28"&gt;&lt;label&gt;28&lt;/label&gt;
+<strong><span class="focus">&lt;citation citation-type="other"&gt;
+&lt;article-title&gt;Bazooka Joe and his Gang&amp;#x00AE;&lt;/article-title&gt;
+&lt;source&gt;Topps Bazooka Bubble Gum&lt;/source&gt;
+&lt;comment&gt;Comic #18&lt;/comment&gt;
+&lt;/citation&gt;</span></strong>
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+...
+
+
+    </pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 4</h3><pre class="taggedtext">
+</pre><p class="examp.desc">A reference to a journal article. If a citation is not fully tagged (as in the examples above), all punctuation and spacing
+               should be included.
+            </p><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;...&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;ref id="C10"&gt;&lt;label&gt;14&lt;/label&gt;
+<strong><span class="focus">&lt;citation citation-type="journal"&gt;Carter, A.P., Clemons, 
+W.M., Brodersen, D.E., Morgan-Warren, R.J., Wimberly, B.T., 
+and Ramakrishnan, V. &lt;year&gt;2002&lt;/year&gt;. Functional insights 
+from the structure of the 30S ribosomal subunit and its 
+interactions with antibiotics. &lt;source&gt;Nature&lt;/source&gt; 
+&lt;volume&gt;07&lt;/volume&gt;: &lt;fpage&gt;340&lt;/fpage&gt;&amp;#x02013;348.
+&lt;/citation&gt;</span></strong>
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

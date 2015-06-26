@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<article>
+<front>
+<journal-meta>
+<?mtl hellip?>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher>
+<publisher-name>...</publisher-name>
+</publisher>
+<?mtl /hellip?>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">WES-10092260</article-id>
+<title-group>
+<article-title>Systematic review of day hospital care for 
+elderly people</article-title>
+</title-group>
+<contrib-group>
+<?mtl hellip?><contrib>
+<name><surname>...</surname>
+<given-names>...</given-names></name>
+</contrib><?mtl /hellip?>
+</contrib-group> 
+<aff><?mtl hellip?> <?mtl /hellip?></aff>
+<pub-date pub-type="pub"><day>27</day>
+<month>3</month><year>1999</year></pub-date>
+<?mtl hellip?><fpage>...</fpage>
+<copyright-year>1999</copyright-year><?mtl /hellip?>
+</article-meta></front>
+<?mtl hellip?> <?mtl /hellip?>
+</article>

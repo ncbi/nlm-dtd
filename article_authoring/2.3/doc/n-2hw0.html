@@ -1,0 +1,185 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Supplementary Material</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;supplementary-material&gt;</h1>
+         <h1 class="elementname">Supplementary Material</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Additional data files that contain information directly
+                    supportive of the document, for example, an audio clip, movie, database,
+                    spreadsheet, applet, or other external file
+         </p>
+         <p class="para">This element has a similar function to the <tt>&lt;audiovisual&gt;</tt> element
+                    in some XML tag sets and the <tt>&lt;unprinted-item&gt;</tt> element (used only for electronic files) in
+                    other tag sets.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The element is used in two senses: first, inside the article
+                    front matter as an alert to the existence of supplementary material; and
+                    second, as part of the textual flow, where it is similar to a
+                    <a href="n-zs50.html"><span class="elementtag">&lt;fig&gt;</span></a>, in that it can be positioned as a
+                    floating or anchored object and may take a caption.
+         </p>
+         <p class="para">For the second usage, the <a href="n-irs0.html"><span class="attrtag">position</span></a> attribute may be used to
+                    indicate whether this element must be anchored at its exact location within the
+                    text or whether it may float, for example, to the top of the next page, into the next column, to the end of a logical
+            file, or within a separate window. The <a href="n-ets0.html"><span class="attrtag">mimetype</span></a> attribute may be used to identify a file type for a <a href="n-2hw0.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a> element.
+         </p>
+         <p class="para">The <a href="n-2hw0.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a> element may contain a preview image (e.g., the first frame of a movie, tagged as a <a href="n-sm50.html"><span class="elementtag">&lt;graphic&gt;</span></a> or <a href="n-ry80.html"><span class="elementtag">&lt;media&gt;</span></a> inside a paragraph). A cross-reference can be made to the supplementary material (and preview) from the text.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-sdv0.html"><span class="attrtag">alternate-form-of</span></a> <a href="n-sdv0.html"><span class="attrname">Alternate Form of Graphic, Media Object, Etc.</span></a></h5>
+         <h5 class="header"><a href="n-pv40.html"><span class="attrtag">content-type</span></a> <a href="n-pv40.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-t2s0.html"><span class="attrtag">id</span></a> <a href="n-t2s0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-y4s0.html"><span class="attrtag">mime-subtype</span></a> <a href="n-y4s0.html"><span class="attrname">Mime Subtype</span></a></h5>
+         <h5 class="header"><a href="n-ets0.html"><span class="attrtag">mimetype</span></a> <a href="n-ets0.html"><span class="attrname">Mime Type</span></a></h5>
+         <h5 class="header"><a href="n-irs0.html"><span class="attrtag">position</span></a> <a href="n-irs0.html"><span class="attrname">Position</span></a></h5>
+         <h5 class="header"><a href="n-8yt0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-8yt0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-mjt0.html"><span class="attrtag">xlink:href</span></a> <a href="n-mjt0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-iqt0.html"><span class="attrtag">xlink:role</span></a> <a href="n-iqt0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-59t0.html"><span class="attrtag">xlink:show</span></a> <a href="n-59t0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-2zt0.html"><span class="attrtag">xlink:title</span></a> <a href="n-2zt0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-fk70.html"><span class="attrtag">xlink:type</span></a> <a href="n-fk70.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-ec70.html"><span class="attrtag">xml:lang</span></a> <a href="n-ec70.html"><span class="attrname">Language</span></a></h5>
+         <h5 class="header"><a href="n-aa70.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-aa70.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">This Suite contains several elements to describe non-XML material:  <a href="n-sm50.html"><span class="elementtag">&lt;graphic&gt;</span></a>, <a href="n-g380.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>, <a href="n-ry80.html"><span class="elementtag">&lt;media&gt;</span></a>, and <a href="n-2hw0.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a>.  The elements <a href="n-sm50.html"><span class="elementtag">&lt;graphic&gt;</span></a> and <a href="n-g380.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a> are used for &#8220;still&#8221; images, i.e., photographs, diagrams, etc.  The distinction between the two other elements is more subtle.
+            The element <a href="n-ry80.html"><span class="elementtag">&lt;media&gt;</span></a> should be used for movies, audio clips, or media in other formats which is <em>intrinsic</em> to the document&#8217;s content, that is, the media object is discussed within the document.  The element <a href="n-2hw0.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a> should be used for films, audio clips, or other material which enhances a document, but which is <em>not</em> discussed as part of the document.
+         </p>
+         <p class="para">See <a href="n-7580.html"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>
+                    for a simpler form that can be used to mark up text references to supplementary
+                    material where the reference appears in the regular flow of the text and does
+                    not have a preview image or separate caption.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  supplementary-material
+                        %supplementary-material-model;               &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-jxa0.html"><span class="elementname">Object Identifier</span></a> <a href="n-jxa0.html"><span class="elementtag">&lt;object-id&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-s4c0.html"><span class="elementname">Caption of a Figure, Table, Etc.</span></a> <a href="n-s4c0.html"><span class="elementtag">&lt;caption&gt;</span></a>, zero or one
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>All the accessibility elements:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-9720.html"><span class="elementname">Alternate Title Text (For a Figure, Etc.)</span></a> <a href="n-9720.html"><span class="elementtag">&lt;alt-text&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-xh80.html"><span class="elementname">Long Description</span></a> <a href="n-xh80.html"><span class="elementtag">&lt;long-desc&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>All the address linking elements:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-p850.html"><span class="elementname">Email Address</span></a> <a href="n-p850.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-ju50.html"><span class="elementname">External Link</span></a> <a href="n-ju50.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-v3v0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-v3v0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-tea0.html"><span class="elementname">Paragraph</span></a> <a href="n-tea0.html"><span class="elementtag">&lt;p&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-cb20.html"><span class="elementname">Attribution</span></a> <a href="n-cb20.html"><span class="elementtag">&lt;attrib&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-5ya0.html"><span class="elementname">Permissions</span></a> <a href="n-5ya0.html"><span class="elementtag">&lt;permissions&gt;</span></a>, zero or one
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-6g20.html"><span class="elementtag">&lt;app&gt;</span></a> <a href="n-6g20.html"><span class="elementname">Appendix</span></a>; <a href="n-sh20.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-sh20.html"><span class="elementname">Article Metadata</span></a>; <a href="n-5cc0.html"><span class="elementtag">&lt;body&gt;</span></a> <a href="n-5cc0.html"><span class="elementname">Body of the Article</span></a>; <a href="n-puc0.html"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-puc0.html"><span class="elementname">Boxed Text</span></a>; <a href="n-mka0.html"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-mka0.html"><span class="elementname">Named Special (Subject) Content</span></a>; <a href="n-tea0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-tea0.html"><span class="elementname">Paragraph</span></a>; <a href="n-hiu0.html"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-hiu0.html"><span class="elementname">Section</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;...&lt;/front&gt;
+&lt;body&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;fig id="F1"&gt;...&lt;/fig&gt;
+<strong><span class="focus">&lt;supplementary-material id="S1" xmlns:xlink="http://www.w3.org/1999/xlink" 
+xlink:title="local_file" xlink:href="1471-2105-1-1-s1.pdf" 
+mimetype="applicationn/pdf"&gt;
+&lt;caption&gt;
+&lt;p&gt;Supplementary PDF file supplied by authors.&lt;/p&gt;
+&lt;/caption&gt;
+&lt;/supplementary-material&gt;</span></strong>
+&lt;p&gt;RNAPs seem to have arisen twice in evolution 
+(see the &lt;inline-supplementary-material  
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xlink:title="local_file" xlink:href="timeline"&gt;
+Timeline&lt;/inline-supplementary-material&gt;. A large 
+family of multisubunit RNAPs includes bacterial 
+enzymes, archeal enzymes, eukaryotic nuclear RNAPs, 
+plastid-encoded chloroplast RNAPs, and RNAPs from 
+some eukaryotic viruses. ...&lt;/p&gt;
+...&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/article&gt; 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">display.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

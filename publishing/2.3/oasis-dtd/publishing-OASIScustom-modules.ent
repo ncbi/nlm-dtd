@@ -1,0 +1,56 @@
+
+<!-- ============================================================= -->
+<!--                    CUSTOMIZATION MODULES DECLARED             -->
+<!-- ============================================================= -->
+
+
+<!--                    DTD-SPECIFIC CLASS CUSTOMIZATIONS MODULE   -->
+<!--                    Set up the Parameter Entities and element
+                        class definitions that will be used to
+                        over-ride some element classes in the
+                        DTD Suite.                                 -->
+<!ENTITY % publishing-OASIScustom-classes.ent 
+                        PUBLIC
+"-//NLM//DTD Journal Publishing DTD-OASIS Customize Mixes Module v2.3 20070813//EN"
+"publishing-OASIScustom-classes.ent"                                       >
+
+
+<!--                    DTD-SPECIFIC MIX CUSTOMIZATIONS MODULE     -->
+<!--                    Set up the Parameter Entities and element
+                        mix definitions that will be used to
+                        over-ride some element mixes in the DTD
+                        Suite.                                     -->
+<!ENTITY % journalpubcustom-mixes.ent 
+                        PUBLIC  
+"-//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.3 20070202//EN"
+"journalpubcustom-mixes.ent"                                         >
+
+
+<!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
+                        MODULE                                     -->
+<!--                    Set up the Parameter Entities for element-
+                        specific element groups, complete content 
+                        models, and attribute list and value over-
+                        rides. These PEs will over-ride selected
+                        content models and attribute lists for the 
+                        Journal Archiving and Interchange DTD.     -->
+<!ENTITY % journalpubcustom-models.ent 
+                        PUBLIC  
+"-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.3 20070202//EN"
+"journalpubcustom-models.ent"                                        >
+
+
+<!--                    NLM CITATION MODULE                        -->
+<!--                    The only new element created for the 
+                        Publishing DTD, the highly structured NLM
+                        citation, to enforce a slightly loose version
+                        of an NLM-structured bibliographic reference.
+                        Sequence is enforced and interior punctuation
+                        is expected to be generated.               -->
+<!ENTITY % nlmcitation.ent 
+                        PUBLIC  
+"-//NLM//DTD NLM Citation v2.3 20070202//EN"
+"nlmcitation.ent"                                                    >
+
+
+<!-- =================== End Publishing DTD Module of Modules ==== -->

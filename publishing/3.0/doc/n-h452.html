@@ -1,0 +1,53 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Audience or Use Alternatives</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h4 class="header">Audience or Use Alternatives</h4>
+         <p class="para">The <a href="n-g520.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> element names processing alternatives for a single display object such as a graphic or a table. It does not, however, accommodate
+            versions of semantically equivalent material intended for different audiences (for patients versus for doctors). Typical cases
+            of this type of multiple version include: 
+         </p>
+         <ul class="bullist">
+            <li>Two versions of a section, a short one for print to save paper and a significantly longer one for online display;</li>
+            <li>A paragraph that is only in the online version and not the in print version of the same article;</li>
+            <li>Two or more versions of a section of semantically equivalent material prepared at different levels for different audiences
+               (top secret versus secret versus publicly disseminated or doctor/nurses/patients);  or
+            </li>
+            <li>Alternative versions of a <a href="n-8w30.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a> for different print products (one for the magazine and one for the journal).
+            </li>
+         </ul>
+         <p class="para">These textual/semantic alternatives are very different from the case of multiple formats of the same graphic, in part because
+            there is a structural difference; a given section does or does not contain this paragraph. The is also a slight difference
+            in complexity between this case and that of the graphic in that, for the multiple formats graphic, software picks one alternative
+            and, for the structure, the software must build a different structural tree. While this Tag Suite does not support alternate
+            trees, it does include an attribute (<a href="n-vky0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a>) to record these distinctions.
+         </p>
+         <p class="para">The <a href="n-vky0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> could be used to record that certain paragraphs were for print-only:
+         </p>
+         <div class="codeblock"><pre>
+   &lt;p specific-use="print-only"&gt;See the latest updates on our website:
+   http://www.mulberrytech.com&lt;/p&gt;
+</pre></div>
+         <p class="para">The <a href="n-vky0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> attribute can be placed on all the block-level structures, that is, on paragraphs, figures, sections, and all the block display
+            objects. There is no recommended set of values, but publishers have used  “print-only”, “web-only”. “online-only”, “voice-only”,
+            “specific-product-name”, etc.
+         </p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

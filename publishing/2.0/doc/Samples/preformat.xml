@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for Preformat Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+</article-meta>
+</front>
+<body><?mtl /hellip?>
+<p>As you can see in the following excerpt, use of literal
+result elements is very convenient:
+<preformat>
+&lt;xsl:template match="div/divhead" priority="2"&gt;
+  &lt;<bold>h2</bold>&gt;
+    &lt;xsl:apply-templates/&gt;
+  &lt;<bold>/h2</bold>&gt;
+&lt;/xsl:template&gt;
+</preformat></p>
+<?mtl hellip?></body>
+</article><?mtl /hellip?>

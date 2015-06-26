@@ -1,0 +1,307 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Table Wrapper</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;table-wrap&gt;</h1>
+         <h1 class="elementname">Table Wrapper</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Used to hold a complete table, that is, not only the rows and
+                   columns that make up a table, but also the table&#8217;s caption or title, list of
+                   table footnotes, alternative descriptions of the table for purposes of accessibility, etc.
+         </p>
+         <p class="para">This element has also been designed to capture a
+                   construct named &#8220;table&#8221; that contains just a graphic or a list, rather than the explicit rows and columns of a table
+            element such as the XHTML <a href="n-5e60.html"><span class="elementtag">&lt;table&gt;</span></a> because many publishers associate table captions and numbers with material that is not explicitly tabular.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Within the <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> element,
+                   the row and column tags that describe the table cells are defined by the XHTML table
+                   model. (In the original draft of this Tag Set, both the XHTML table model and the OASIS Exchange (CALS) table model
+            were included to illustrate how multiple table models could be used in one archival Tag Set.)
+         </p>
+         <p class="para">Conversion Note: Many journal Tag Sets use an element
+                   called &#8220;Table Footnote&#8221; (with a tag such as <tt>&lt;tblfn&gt;</tt>) for footnotes inside a table. This Tag Set
+                   uses <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a> inside tables, as well as everywhere
+                   else, relying instead on context to differentiate table footnotes. Footnotes
+                   inside a <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> are assumed to be
+                   footnotes to the table and, as part of the table, are displayed at the bottom of
+                   the table, usually as part of  the <a href="n-fh60.html"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a>, rather than at the bottom of the page or otherwise separated from the display of the table.
+         </p>
+         <p class="para">The <a href="n-iej0.html"><span class="attrtag">position</span></a> attribute may be used to
+                          indicate whether a <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> must be anchored at its exact location within the
+                          text or whether it may float, for example, to the top of the next page, into the next column, to the end of
+            a logical file, or within a separate window.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-iej0.html"><span class="attrtag">position</span></a> <a href="n-iej0.html"><span class="attrname">Position</span></a></h5>
+         <h5 class="header"><a href="n-dcq0.html"><span class="attrtag">xml:lang</span></a> <a href="n-dcq0.html"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The <a href="n-5e60.html"><span class="elementtag">&lt;table&gt;</span></a> element is an element defined by the public XHTML table model. This element is not, in itself, a full table, but only the
+            rows and columns portions of a table. A full table may have other features, such as a title, caption, table footnotes, etc.
+            The <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> element contains the full table, that is, both rows and columns as well as captions and footers. A full table (<a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a>) may or may not include an actual <a href="n-5e60.html"><span class="elementtag">&lt;table&gt;</span></a> element within it, since other constructions, such as 2-part lists, may also be given table titles, captions, etc.
+                
+         </p>
+         <p class="para">XHTML Table Processing Note: The standard XHMTL model has been modified to remove the <a href="n-3y30.html"><span class="elementtag">&lt;caption&gt;</span></a> element from within the <a href="n-5e60.html"><span class="elementtag">&lt;table&gt;</span></a> element, because, in the modular Archiving and Interchange Suite, the <a href="n-3y30.html"><span class="elementtag">&lt;caption&gt;</span></a>
+                   element has been made part of the <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> element.
+         </p>
+         <p class="para">OASIS Table Processing Note: In the original draft of this Tag Set, when the OASIS Exchange model was also part of the Tag
+            Set, the <tt>%titles;</tt> Parameter Entity for the OASIS table model was set to
+                   the null string (<tt>""</tt>), since the table title <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a> was considered to be part of this Tag Set&#8217;s <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> element. The OASIS model was also given a namespace prefix to differentiate it from the XHTML table model element names.
+            No other changes were necessary
+                   to the OASIS table content model. 
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  table-wrap   %table-wrap-model;                           &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-5kt0.html"><span class="elementname">Object Identifier</span></a> <a href="n-5kt0.html"><span class="elementtag">&lt;object-id&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> <a href="n-pg40.html"><span class="elementtag">&lt;label&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-3y30.html"><span class="elementname">Caption of a Figure, Table, Etc.</span></a> <a href="n-3y30.html"><span class="elementtag">&lt;caption&gt;</span></a>, zero or one
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>All the accessibility elements:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-bb20.html"><span class="elementname">Alternate Text Name (For a Figure, Etc.)</span></a> <a href="n-bb20.html"><span class="elementtag">&lt;alt-text&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-gj40.html"><span class="elementname">Long Description</span></a> <a href="n-gj40.html"><span class="elementtag">&lt;long-desc&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>All the address linking elements:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-chu0.html"><span class="elementname">Email Address</span></a> <a href="n-chu0.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-ekw0.html"><span class="elementname">External Link</span></a> <a href="n-ekw0.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-8yr0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-8yr0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-jsu0.html"><span class="elementname">Quote, Displayed</span></a> <a href="n-jsu0.html"><span class="elementtag">&lt;disp-quote&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-qgg0.html"><span class="elementname">Speech</span></a> <a href="n-qgg0.html"><span class="elementtag">&lt;speech&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-36g0.html"><span class="elementname">Statement, Formal</span></a> <a href="n-36g0.html"><span class="elementtag">&lt;statement&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-k9r0.html"><span class="elementname">Verse Form for Poetry</span></a> <a href="n-k9r0.html"><span class="elementtag">&lt;verse-group&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-pku0.html"><span class="elementname">Definition List</span></a> <a href="n-pku0.html"><span class="elementtag">&lt;def-list&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ai40.html"><span class="elementname">List</span></a> <a href="n-ai40.html"><span class="elementtag">&lt;list&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-sj30.html"><span class="elementname">Chemical Structure (Display)</span></a> <a href="n-sj30.html"><span class="elementtag">&lt;chem-struct&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-eqx0.html"><span class="elementname">Graphic</span></a> <a href="n-eqx0.html"><span class="elementtag">&lt;graphic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-wb40.html"><span class="elementname">Media Object</span></a> <a href="n-wb40.html"><span class="elementtag">&lt;media&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-wa70.html"><span class="elementname">Preformatted Text</span></a> <a href="n-wa70.html"><span class="elementtag">&lt;preformat&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-5e60.html"><span class="elementname">Table (XHTML table model)</span></a> <a href="n-5e60.html"><span class="elementtag">&lt;table&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-fh60.html"><span class="elementname">Table Wrapper Footer</span></a> <a href="n-fh60.html"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-mk30.html"><span class="elementname">Attribution</span></a> <a href="n-mk30.html"><span class="elementtag">&lt;attrib&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-haa0.html"><span class="elementname">Copyright Statement</span></a> <a href="n-haa0.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-2qt0.html"><span class="elementname">Permissions</span></a> <a href="n-2qt0.html"><span class="elementtag">&lt;permissions&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-8a20.html"><span class="elementtag">&lt;abstract&gt;</span></a> <a href="n-8a20.html"><span class="elementname">Abstract</span></a>; <a href="n-us20.html"><span class="elementtag">&lt;ack&gt;</span></a> <a href="n-us20.html"><span class="elementname">Acknowledgments</span></a>; <a href="n-quc0.html"><span class="elementtag">&lt;app&gt;</span></a> <a href="n-quc0.html"><span class="elementname">Appendix</span></a>; <a href="n-2sc0.html"><span class="elementtag">&lt;app-group&gt;</span></a> <a href="n-2sc0.html"><span class="elementname">Appendix Group</span></a>; <a href="n-yv30.html"><span class="elementtag">&lt;body&gt;</span></a> <a href="n-yv30.html"><span class="elementname">Body of the Article</span></a>; <a href="n-pn30.html"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-pn30.html"><span class="elementname">Boxed Text</span></a>; <a href="n-jsu0.html"><span class="elementtag">&lt;disp-quote&gt;</span></a> <a href="n-jsu0.html"><span class="elementname">Quote, Displayed</span></a>; <a href="n-h4w0.html"><span class="elementtag">&lt;fig&gt;</span></a> <a href="n-h4w0.html"><span class="elementname">Figure</span></a>; <a href="n-ynw0.html"><span class="elementtag">&lt;floats-wrap&gt;</span></a> <a href="n-ynw0.html"><span class="elementname">Floats Wrapper</span></a>; <a href="n-z8x0.html"><span class="elementtag">&lt;gloss-group&gt;</span></a> <a href="n-z8x0.html"><span class="elementname">Glossary Group</span></a>; <a href="n-vxx0.html"><span class="elementtag">&lt;glossary&gt;</span></a> <a href="n-vxx0.html"><span class="elementname">Glossary Elements List</span></a>; <a href="n-ifs0.html"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-ifs0.html"><span class="elementname">Named Special (Subject) Content</span></a>; <a href="n-kbs0.html"><span class="elementtag">&lt;notes&gt;</span></a> <a href="n-kbs0.html"><span class="elementname">Notes</span></a>; <a href="n-7st0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-7st0.html"><span class="elementname">Paragraph</span></a>; <a href="n-awe0.html"><span class="elementtag">&lt;ref-list&gt;</span></a> <a href="n-awe0.html"><span class="elementname">Reference List (Bibliographic)</span></a>; <a href="n-z5f0.html"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-z5f0.html"><span class="elementname">Section</span></a>; <a href="n-4a60.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-4a60.html"><span class="elementname">Supplementary Material</span></a>; <a href="n-zi60.html"><span class="elementtag">&lt;table-wrap-group&gt;</span></a> <a href="n-zi60.html"><span class="elementname">Table Wrapper Group</span></a>; <a href="n-2zd0.html"><span class="elementtag">&lt;trans-abstract&gt;</span></a> <a href="n-2zd0.html"><span class="elementname">Translated Abstract</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+<strong><span class="focus">&lt;table-wrap id="TN0.170"&gt;
+&lt;label&gt;Table&lt;/label&gt;
+&lt;caption&gt;
+&lt;p&gt;Numbers of patients receiving institutional
+care at the end of scheduled follow up and
+use of hospital beds among those allocated
+to day hospital or alternative services&lt;/p&gt;
+&lt;/caption&gt;
+
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="3" align="center"
+rowspan="1"&gt;Institutional care&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="2" align="center"
+rowspan="1"&gt;&amp;#x2003;Bed use (days)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="3"&gt;&lt;hr/&gt;&lt;/td&gt;
+&lt;td colspan="2"&gt;&lt;hr/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;Control group&lt;/th&gt;
+&lt;th align="center"&gt;Day hospital&lt;/th&gt;
+&lt;th align="center"&gt;Control&lt;/th&gt;
+&lt;th align="center"&gt;Odds ratio (95&amp;#x0025; CI)&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align="center"&gt;Day hospital&lt;/th&gt;
+&lt;th align="center"&gt;Control&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="7"&gt;&lt;hr/&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Comprehensive care (5 trials)&lt;/td&gt;
+&lt;td align="center"&gt;151/597&lt;xref ref-type="table-fn"
+rid="TF1-150"&gt;&lt;/xref&gt;&lt;/td&gt;
+&lt;td align="center"&gt;159/584&lt;/td&gt;
+&lt;td align="center"&gt;0.91 (0.70 to 1.19)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;20.5&lt;/td&gt;
+&lt;td align="center"&gt;21.4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Domiciliary care (4 trials)&lt;/td&gt;
+&lt;td align="center"&gt;20/216&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;19/227&lt;/td&gt;
+&lt;td align="center"&gt;1.61 (0.30 to 8.55)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;7.7&lt;/td&gt;
+&lt;td align="center"&gt;11.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;No comprehensive care (3 trials)&lt;/td&gt;
+&lt;td align="center"&gt;37/411&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;66/403&lt;/td&gt;
+&lt;td align="center"&gt;0.50&lt;xref ref-type="table-fn"
+rid="TF1-151"&gt;&lt;/xref&gt; (0.26 to 0.96)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;11.2&lt;/td&gt;
+&lt;td align="center"&gt;11.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td align="center"&gt;208/1224&lt;/td&gt;
+&lt;td align="center"&gt;244/1214&lt;/td&gt;
+&lt;td align="center"&gt;0.77 (0.52 to 1.13)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;15.0&lt;/td&gt;&lt;td align="center"&gt;16.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table-wrap-foot&gt;
+&lt;fn id="TF1-150"&gt;&lt;p&gt;Data not available for 1 trial.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;fn id="TF1-151"&gt;&lt;p&gt;P&amp;#x003C;0.05 (random effects
+model).&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;</span></strong>
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">display.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

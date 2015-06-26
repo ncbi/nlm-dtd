@@ -1,0 +1,47 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Parameter entity: Article Model with Sub-article or Response</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="petag">%article-full-model;</h1>
+         <h1 class="pename">Article Model with Sub-article or Response</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Content model for a full journal article, that is, one which may contain not only the text in its front, body, and back matter
+            components, but may also contain sub-articles or responses to the article
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-ynw0.html"><span class="elementtag">&lt;floats-wrap&gt;</span></a> element used in this model is a wrapper to hold the floating objects (figures, tables, text boxes, graphics, etc.) that occur
+            anywhere in the article proper (not a subarticle or response, each of which is modeled to contain its own <a href="n-ynw0.html"><span class="elementtag">&lt;floats-wrap&gt;</span></a>), where these floating objects are collected together rather than interspersed throughout the article proper where they are
+            referenced. This element was added to accommodate publishers who like to group all such floating objects together.
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header">Declaration</h2><pre class="contentdesc">&lt;!ENTITY % article-full-model
+                        "(front, body?, back?, floats-wrap?,
+                          (sub-article* | response*) )"              &gt;</pre></div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">archivearticle.dtd</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../../../NCBI/ArchivingDTD/DTD/Working/archivearticle.dtd">
+<article>
+<front>
+<article-meta>
+<kwd-group><?mtl hellip?><kwd></kwd><?mtl /hellip?></kwd-group>
+<contract-num>NSF DBI-0317510</contract-num>
+<contract-sponsor>ARDA AQUAINT</contract-sponsor>
+<counts><?mtl hellip?><?mtl /hellip?></counts>
+</article-meta>
+</front>
+<body><?mtl hellip?><p></p><?mtl /hellip?></body>
+<back>
+<ack>
+<p>... Part of the research at Stanford was supported by NIH GM61374. 
+The Berkeley portion of this research was supported by NSF DBI-0317510, 
+an ARDA AQUAINT contract, and a gift from Genentech Corp.</p>
+</ack>
+<?mtl hellip?><ref-list><ref><citation></citation></ref></ref-list><?mtl /hellip?>
+</back>
+</article>

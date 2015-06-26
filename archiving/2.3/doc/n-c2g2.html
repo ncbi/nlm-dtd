@@ -1,0 +1,407 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Default Element Mixes Module</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Default Element Mixes Module</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Default Element Mixes Module                      --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Default Element Mixes Module v2.3 20070202//EN"
+Delivered as file "default-mixes.ent"                              --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Journal Archiving and Interchange DTD of the      --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    Declares default values for all the element mixes --&gt;
+&lt;!--             used in the content models of the DTD Suite       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Mixes are Or-groups of classes, used in many      --&gt;
+&lt;!--             different content models. Mixes should not use    --&gt;
+&lt;!--             element names directly, only through classes.     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Note: Since PEs must be declared before they      --&gt;
+&lt;!--             are used, this module must be called after the    --&gt;
+&lt;!--             customize mixes module (if any).                  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) PEs that define the element mixes (such as     --&gt;
+&lt;!--                phrase-level elements, para-level elements,    --&gt;
+&lt;!--                inside-a-table-cell elements)                  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital Archive of Journal Articles               --&gt;
+&lt;!--             National Center for Biotechnology Information     --&gt;
+&lt;!--                (NCBI)                                         --&gt;
+&lt;!--             National Library of Medicine (NLM)                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             August 2004                                       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             this DTD should be sent in email to:              --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  6. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by NCBI   
+          
+  5. Minor, non-functional changes to wording in comments as part 
+     of 2.1 release.
+          
+  4. Updated public identifier to "v2.3 20070202" 
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-07-30)
+     
+     
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+
+  3. INLINE MATH CLASS - Added to everywhere %inline-display; was 
+     including:
+      - %simple-text; (via %all-phrase;)
+      - %emphasized-text; (via %all-phrase;)
+      
+  2. PARAMETER ENTITY CLEANUP AND REGULARIZATION
+
+     a. RENAME EXISTING CLASSES
+        ### Customization Alert ###
+        Some classes did not have the ".class" suffix. Changed the 
+        names to add the class suffix:
+        - %block-math.class; used in 
+           - %para-level;
+           - %inside-cell; 
+           - %inside-para; [now renamed -%p-elements;] 
+        - %inline-math.class; used in 
+           - %emphasized-text;
+           - %inside-cell; 
+           - %simple-phrase; and
+           - %inside-para; [now renamed -%p-elements;])
+ 
+     b. MODIFY PARA-LEVEL MIX
+        ### Customization Alert ###
+        New Parameter Entities in %para-level; (No model change.)
+        - %para.class; is replaced by the combination of:
+           - %just-para.class; and
+           - %rest-of-para.class;
+
+     c. LINK CLASSES
+        - Replaced %link.class; with the following classes (no DTD 
+          change):
+           - %address-link.class;  (external links in addresses)
+           - %article-link.class;  (links for journal article)
+           - %simple-link.class;   (the internal links)
+          in the following Parameter Entities:
+            - %emphasized-text;
+            - %inside-cell;
+            - %p-elements;
+            - %simple-phrase;
+        - Deleted -%inpara-address; from -%inside-para;
+          (which has been modified and renamed -%p-elements;) 
+          (No DTD change, -%address-link.class; covers it.)
+
+     d. INLINE PARAMETER MIXES
+         ### Customization Alert ###
+        Changed the inline-mix Parameter Entities to use the 
+        OR-bar-first mechanism. This requires changing not
+        only the Parameter Entity, but all content models that
+        use the entity.
+        - %emphasized-text; (used in most of the format
+            elements)
+
+     e. -ELEMENT AND -MODEL SUFFIXES
+         ### Customization Alert ###
+         RENAME ELEMENT MIXES NOT TO END IN "-elements", since that
+         suffix is reserved for mixes that are added to #PCDATA for
+         a particular element
+         - %doc-back-matter-elements; ==&gt; -%doc-back-matter-mix;
+         - %sec-back-matter-elements; ==&gt; -%sec-back-matter-mix;
+         - Deleted the element mix "inside-para" and replaced it
+           with "%p-elements;"
+                
+  1. Created this module as version "v2.3 20070202"                --&gt;
+                          
+                        
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    ELEMENT MIXES FOR USE IN CONTENT MODELS    --&gt;
+&lt;!--                    (MIXES ARE COMPOSED USING CLASSES)         --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    SECTION-LEVEL ELEMENTS                     --&gt;
+&lt;!--                    Elements that may be used at the same
+                        structural level as a Section for example
+                        inside the Body &lt;body&gt;                     --&gt;
+&lt;!ENTITY % sec-level    "%sec.class;"                                &gt;
+                         
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    BACK MATTER ELEMENT MIXES(%backmatter.ent;)--&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    DOCUMENT BACK MATTER ELEMENTS              --&gt;
+&lt;!--                    Back Matter Elements used by a full document
+                        such as a journal article. This is an element
+                        grouping rather than a class. These 
+                        elements may also appear in the content models 
+                        of structural elements, such as back matter.
+                        (Note: Technically this should have used
+                        %sec.class;, but %sec-level; was used in an
+                        earlier release and backwards compatibility
+                        must be maintained.                        --&gt;
+&lt;!ENTITY % doc-back-matter-mix
+                        "%back.class; | %front-back.class; | 
+                         %sec-level;"                                &gt;
+
+
+&lt;!--                    SECTION BACK MATTER ELEMENTS               --&gt;
+&lt;!--                    Back matter elements used inside smaller
+                        structures, such as sections and sidebars  --&gt;
+&lt;!ENTITY % sec-back-matter-mix
+                        "%front-back.class; | %sec-back.class;"      &gt;
+                         
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PARAGRAPH-LEVEL ELEMENT MIXES              --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    PARAGRAPH-LEVEL ELEMENTS                   --&gt;
+&lt;!--                    Elements that may be used at the same
+                        structural level as a paragraph, for 
+                        example inside a Section
+                        Note: There a major overlap between this
+                        parameter entity and that for the elements
+                        that are at the same level as a paragraph.
+                        Inline elements appear only inside a 
+                        paragraph, but block elements such as quotes 
+                        and lists may appear either within a 
+                        paragraph or at the same level as a 
+                        paragraph. This serves a requirement in a 
+                        repository DTD, since some incoming material 
+                        will have restricted such elements to only 
+                        inside a paragraph,  some incoming material 
+                        will have restricted them to only outside a 
+                        paragraph and some may allow them in both
+                        places. Thus the DTD must allow for them to
+                        be in either or both.                      --&gt;
+&lt;!ENTITY % para-level   "%block-display.class; | %block-math.class; | 
+                         %just-para.class; | %list.class; | 
+                         %math.class; | %related-article.class; |
+                         %rest-of-para.class;"                       &gt;
+
+                         
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    TABLE ELEMENT MIXES                        --&gt;
+&lt;!-- ============================================================= --&gt;
+                          
+
+&lt;!--                    INSIDE TABLE CELL ELEMENTS                 --&gt;
+&lt;!--                    Mixed with #PCDATA inside a table cell, such
+                        as a &lt;td&gt; or &lt;th&gt; element in the XHTML table
+                        model, the &lt;entry&gt; element in the OASIS CALS
+                        table model, etc.  This PE will be used as the
+                        value of %Flow.mix;, %paracon;, etc.
+                        ### Usage Alert ###
+                        Design Note: Inside cell is an exception, an
+                        inline mix that does not start with an OR
+                        bar. This is because is used within the
+                        PE -%Flow.mix;, which is an inline mix
+                        defined in the course of the XHTML Table DTD,
+                        a DTD not under control of this DTD Suite. --&gt;
+&lt;!ENTITY % inside-cell  "%address-link.class; |  %appearance.class; |
+                         %article-link.class; |
+                         %block-math.class; | %break.class; |
+                         %chem-struct-wrap.class; |
+                         %citation.class; | %emphasis.class; | 
+                         %inline-display.class; |
+                         %inline-math.class; | 
+                         %list.class; | %math.class; | 
+                         %phrase.class; | %simple-display.class; | 
+                         %simple-link.class; | %subsup.class;"       &gt;
+
+
+&lt;!--                    INSIDE TABLE WRAPPER ELEMENTS              --&gt;
+&lt;!--                    Usually a Table Wrapper contains a table,
+                        properly tagged with rows and columns, but
+                        sometimes, a structure that is labeled as
+                        a "table" is actually a list, or two
+                        paragraphs.  This Parameter Entity names
+                        all the alternatives to table that may 
+                        occur inside a table wrapper.              --&gt;
+&lt;!ENTITY % inside-table-wrapper
+                        "%intable-para.class; | %list.class; | 
+                         %simple-intable-display.class;  |  
+                         %table.class;"                              &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    INLINE ELEMENT MIXES                       --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    EMPHASIS MIX ELEMENTS                      --&gt;
+&lt;!--                    Elements that may be used inside most of the
+                        emphasis class elements                    
+                        Design Note: Inline mixes begin with an
+                        OR bar                                     --&gt;
+&lt;!ENTITY % emphasized-text  
+                        "| %address-link.class; | 
+                         %article-link.class; |  %emphasis.class;  | 
+                         %inline-display.class; | 
+                         %inline-math.class; |  
+                         %math.class; |  %phrase.class; | 
+                         %simple-link.class; | %subsup.class;"       &gt;
+                         
+
+&lt;!--                    JUST RENDITION                             --&gt;
+&lt;!--                    Only the simplest of the typographic 
+                        emphasis elements, as well as subscript and
+                        superscript.  Usually used in a model that
+                        allows #PCDATA and this restricted mixture.
+                        This mix may be stripped down to only
+                        subscript and superscript by some, more
+                        restrictive DTDs.                         
+                        DTD Maintenance Note: This Parameter Entity
+                        and the related PE "rendition-plus" have
+                        been put in place to restrict the amount of
+                        variability that a person modifying the DTD
+                        through PE redefinition can achieve. Some
+                        elements have been set #PCDATA plus one PE
+                        and some have been set to #PCDATA plus the
+                        other in an effort to allow designers to
+                        modify entire groups of elements, but not
+                        to change similar models individually .   
+                        Design Note: Inline mixes begin with an
+                        OR bar                                     --&gt;
+&lt;!ENTITY % just-rendition
+                        "| %emphasis.class;  | %subsup.class;"       &gt;
+                         
+
+&lt;!--                    RENDITION MARKUP PLUS                      --&gt;
+&lt;!--                    Only the simplest of the typographic 
+                        emphasis elements, as well as subscript and
+                        superscript.  Usually used in a model that
+                        allows #PCDATA and this restricted mixture.
+                        This mix may be enhanced slightly in some
+                        more permissive DTDs, and should always
+                        contain at least typographic emphasis, 
+                        subscript, and superscript.  
+                        DTD Maintenance Note: This Parameter Entity
+                        and the related PE "just-rendition" have
+                        been put in place to restrict the amount of
+                        variability that a person modifying the DTD
+                        through PE redefinition can achieve. Some
+                        elements have been set #PCDATA plus one PE
+                        and some have been set to #PCDATA plus the
+                        other in an effort to allow designers to
+                        modify entire groups of elements, but not
+                        to individually change similar models. 
+                        modify entire groups of elements, but not
+                        to change similar models individually .     
+                        Design Note: Inline mixes begin with an
+                        OR bar                                     --&gt;
+&lt;!ENTITY % rendition-plus                             
+                        "| %emphasis.class;  | %subsup.class;"       &gt;
+
+
+&lt;!--                    SIMPLE PHRASE-LEVEL TEXTUAL ELEMENTS       --&gt;
+&lt;!--                    Elements that may be used almost anywhere
+                        text is used, for example, inside a title.
+                        Simple text plus inline display and math 
+                        elements.                                  
+                        Design Note: Inline mixes begin with an
+                        OR bar                                     --&gt;
+&lt;!ENTITY % simple-phrase
+                        "| %address-link.class; |
+                         %article-link.class; | 
+                         %emphasis.class; | %inline-display.class; | 
+                         %inline-math.class; | %math.class; | 
+                         %phrase.class; | 
+                         %simple-link.class; | %subsup.class;"       &gt;
+
+
+&lt;!--                    SIMPLE TEXTUAL CONTENT                     --&gt;
+&lt;!--                    Elements that may be used inside elements
+                        that are really expected to be #PCDATA and
+                        not to contain any of these things.
+                        Note that there is no math and no links.
+                        Simpler even than %simple-phrase;        
+                        Design Note: Inline mixes begin with an
+                        OR bar                                     --&gt;
+&lt;!ENTITY % simple-text  "| %emphasis.class; | %inline-display.class; |
+                         %inline-math.class; | %phrase.class; | 
+                         %subsup.class; "                            &gt;
+
+
+&lt;!-- ================== End Archiving DTD Mixes Customization ==== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,128 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Author Note Group</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2003-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;author-notes&gt;</h1>
+         <h1 class="elementname">Author Note Group</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Collection of footnotes to, or correspondence notes about,
+            authors (and potentially about other contributors). Such footnotes/notes
+            typically name one of the authors as a corresponding author, provide the author
+                   affiliation or current contact information, explain that the person has changed
+                   organizations, or provide other contributor-related material.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">References to these footnotes <a href="n-2j80.html"><span class="elementtag">&lt;fn&gt;</span></a>,
+                   as to any other footnote, should be made using the
+                   <a href="n-s8t0.html"><span class="elementtag">&lt;xref&gt;</span></a> element.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-hq70.html"><span class="attrtag">id</span></a> <a href="n-hq70.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-xuf0.html"><span class="attrtag">rid</span></a> <a href="n-xuf0.html"><span class="attrname">Reference to an Identifier</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Conversion Note: In current DTD practice, information naming one contributor as the corresponding contributor may be tagged
+            explicitly using a <a href="n-2e50.html"><span class="elementtag">&lt;corresp&gt;</span></a> element or may just be one of many footnotes <a href="n-2j80.html"><span class="elementtag">&lt;fn&gt;</span></a> concerning the contributor. While this DTD Suite supports both practices, best practice is to tag the correspondent information
+            using the <a href="n-2e50.html"><span class="elementname">Correspondence Information</span></a> <a href="n-2e50.html"><span class="elementtag">&lt;corresp&gt;</span></a> element.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  author-notes %author-notes-model;                         &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-kts0.html"><span class="elementname">Title</span></a> <a href="n-kts0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                  </li>
+                  <li>One or more of any of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-2e50.html"><span class="elementname">Correspondence Information</span></a> <a href="n-2e50.html"><span class="elementtag">&lt;corresp&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-2j80.html"><span class="elementname">Footnote</span></a> <a href="n-2j80.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-p5c0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-p5c0.html"><span class="elementname">Article Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;&lt;journal-meta&gt;
+...
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;&lt;name&gt;&lt;surname&gt;Hajnsdorf&lt;/surname&gt;&lt;given-names&gt;Eliane&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;&lt;name&gt;&lt;surname&gt;R&amp;#x00E9;gnier&lt;/surname&gt;&lt;given-names&gt;Philippe&lt;/given-names&gt;&lt;/name&gt;&lt;xref ref-type="author-notes" rid="FN150"&gt;&amp;#x002A;&lt;/xref&gt;&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff&gt;Institut de Biologie Physico-Chimique, 13 rue Pierre et Marie Curie, 75005 Paris,
+France&lt;/aff&gt;
+<strong><span class="focus">&lt;author-notes&gt;
+&lt;fn id="FN150"&gt;&lt;p&gt;To whom reprint requests should be addressed. E-mail:
+&lt;email&gt;regnier@ibpc.fr&lt;/email&gt;.&lt;/p&gt;&lt;/fn&gt;
+&lt;fn fn-type="com"&gt;&lt;p&gt;Communicated by Marianne Grunberg-Manago, Institute of Physico-Chemical Biology, Paris,
+France&lt;/p&gt;&lt;/fn&gt;
+&lt;/author-notes&gt;</span></strong>
+...
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;
+...
+&lt;/back&gt;
+&lt;/article&gt; 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="pubdate">Version of 20041115</h4>
+      </div>
+   </body>
+</html>

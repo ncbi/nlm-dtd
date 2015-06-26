@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher>
+<publisher-name>...</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">WES-10092260</article-id>
+<title-group>
+<article-title>Systematic review of day hospital care for 
+elderly people</article-title>
+</title-group>
+<contrib-group>
+<contrib>
+<name><surname>...</surname>
+<given-names>...</given-names></name>
+</contrib>
+</contrib-group> 
+<aff> </aff>
+<pub-date pub-type="pub"><day>27</day>
+<month>3</month><year>1999</year></pub-date>
+<fpage>...</fpage>
+<copyright-year>1999</copyright-year>
+</article-meta>
+</front>
+<body>
+<sec>
+<title>Results</title> 
+<p>We identified .... </p><?mtl /hellip?>
+<table-wrap id="TX0.180"> 
+<label>Table 3</label>
+<caption><p>Patient costs for institutional 
+care at the end of scheduled follow up</p></caption>
+<table border="1">
+<colgroup>
+<col span="1"/>
+<col align="char" char="," charoff="50%" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th>Year</th>
+<th>Cost per patient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1997</td>
+<td>$8,250</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>$31,400</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>$125,600</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<?mtl hellip?></sec>
+</body>
+</article><?mtl /hellip?>

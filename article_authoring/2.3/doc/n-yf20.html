@@ -1,0 +1,109 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Anonymous</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;anonymous&gt;</h1>
+         <h1 class="elementname">Anonymous</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Place holder for the name of a contributor where the actual name is unknown or not disclosed</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Design Note: Most journal tag sets model this place holder as an <tt>EMPTY</tt> element, typically used to generate text such as &#8220;anon.&#8221;. That is the design choice this Authoring Tag Set has made. However,
+            a few journal tag sets expect content for this element, with such text as &#8220;Anonymous but assumed to be Francis Bacon&#8221;. Therefore,
+            as implemented in the Base Suite Version 2.3 and used in the Archiving Tag Set, the element <a href="n-yf20.html"><span class="elementtag">&lt;anonymous&gt;</span></a> uses a mixed content model  where it may be necessary to preserve content.  (As of version 2.3, the element <a href="n-yf20.html"><span class="elementtag">&lt;anonymous&gt;</span></a> is an <tt>EMPTY</tt> element in the more prescriptive Publishing and Authoring Tag Sets.)
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  anonymous    %anonymous-model;                            &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">This is an EMPTY element</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-gt30.html"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-gt30.html"><span class="elementname">Contributor</span></a>; <a href="n-cja0.html"><span class="elementtag">&lt;person-group&gt;</span></a> <a href="n-cja0.html"><span class="elementname">Person Group for a Cited Publication</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference (punctuation and spacing removed):</p><pre class="taggedtext">
+
+...
+&lt;ref id="pbiob001a"&gt;
+&lt;citation citation-type="journal"&gt;
+&lt;person-group person-group-type="author"&gt;
+<strong><span class="focus">&lt;anonymous/&gt;</span></strong>
+&lt;/person-group&gt;
+&lt;article-title&gt;A clinical evaluation of the International 
+Lymphoma Study Group classification of non-Hodgkin&amp;rsquo;s 
+lymphoma. The Non-Hodgkin&amp;rsquo;s Lymphoma Classification 
+Project&lt;/article-title&gt;
+&lt;source&gt;Blood&lt;/source&gt;
+&lt;year&gt;1997&lt;/year&gt; 
+&lt;volume&gt;89&lt;/volume&gt;
+&lt;fpage&gt;3909&lt;/fpage&gt;
+&lt;lpage&gt;3918&lt;/lpage&gt;
+&lt;pub-id pub-id-type="pmid"&gt;9166827&lt;/pub-id&gt;
+&lt;/citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference (punctuation and spacing preserved):</p><pre class="taggedtext">
+
+...
+&lt;ref id="pbiob001a"&gt;
+&lt;citation citation-type="journal"&gt;
+&lt;person-group person-group-type="author"&gt;
+<strong><span class="focus">&lt;anonymous/&gt;</span></strong>
+&lt;/person-group&gt;.
+&lt;article-title&gt;A clinical evaluation of the International 
+Lymphoma Study Group classification of non-Hodgkin&amp;rsquo;s 
+lymphoma. The Non-Hodgkin&amp;rsquo;s Lymphoma Classification 
+Project&lt;/article-title&gt;.
+&lt;source&gt;Blood&lt;/source&gt;
+&lt;year&gt;1997&lt;/year&gt;; 
+&lt;volume&gt;89&lt;/volume&gt;:
+&lt;fpage&gt;3909&lt;/fpage&gt;&amp;ndash;
+&lt;lpage&gt;3918&lt;/lpage&gt;.
+&lt;pub-id pub-id-type="pmid"&gt;9166827&lt;/pub-id&gt;.
+&lt;/citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

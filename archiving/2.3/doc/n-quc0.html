@@ -1,0 +1,238 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Appendix</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;app&gt;</h1>
+         <h1 class="elementname">Appendix</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Additional material added to &#8212; and usually following &#8212; an
+                   article, for example, a table (or set of tables), maps, notes, etc. This is ancillary or supporting material, not a
+            direct continuation of the text of an article.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">In previous versions of this tag set, a <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a> element was required on each appendix. A title was considered to be the basic requirement for producing an automated Table
+            of Contents for online viewing of an article; so a title was required. However, as nice as it would be to keep that requirement,
+            this is a conversion target tag set, and conversion experience has shown that not all appendices in the wild have either titles
+            (e.g., &#8220;Conversion Tables)&#8221; or labels (&#8220;Appendix 6&#8221;). Without true section-level headings it will be difficult to create automatic
+            Tables of Contents and high-quality web and print displays.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  app          %app-model;                                  &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>The following, in order:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-fxf0.html"><span class="elementname">Section Metadata</span></a> <a href="n-fxf0.html"><span class="elementtag">&lt;sec-meta&gt;</span></a>, zero or one
+                        </li>
+                        <li>
+                                                      <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> <a href="n-pg40.html"><span class="elementtag">&lt;label&gt;</span></a>, zero or one
+                        </li>
+                        <li>
+                                                      <a href="n-tid0.html"><span class="elementname">Title</span></a> <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                        </li>
+                        <li>Any combination of:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-6ec0.html"><span class="elementname">Array (Simple Tabular Array)</span></a> <a href="n-6ec0.html"><span class="elementtag">&lt;array&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-pn30.html"><span class="elementname">Boxed Text</span></a> <a href="n-pn30.html"><span class="elementtag">&lt;boxed-text&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-sj30.html"><span class="elementname">Chemical Structure (Display)</span></a> <a href="n-sj30.html"><span class="elementtag">&lt;chem-struct&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-az30.html"><span class="elementname">Chemical Structure Wrapper</span></a> <a href="n-az30.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-h4w0.html"><span class="elementname">Figure</span></a> <a href="n-h4w0.html"><span class="elementtag">&lt;fig&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-rfw0.html"><span class="elementname">Figure Group</span></a> <a href="n-rfw0.html"><span class="elementtag">&lt;fig-group&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-eqx0.html"><span class="elementname">Graphic</span></a> <a href="n-eqx0.html"><span class="elementtag">&lt;graphic&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-wb40.html"><span class="elementname">Media Object</span></a> <a href="n-wb40.html"><span class="elementtag">&lt;media&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-wa70.html"><span class="elementname">Preformatted Text</span></a> <a href="n-wa70.html"><span class="elementtag">&lt;preformat&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-4a60.html"><span class="elementname">Supplementary Material</span></a> <a href="n-4a60.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-tn60.html"><span class="elementname">Table Wrapper</span></a> <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-zi60.html"><span class="elementname">Table Wrapper Group</span></a> <a href="n-zi60.html"><span class="elementtag">&lt;table-wrap-group&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-wuu0.html"><span class="elementname">Formula, Display</span></a> <a href="n-wuu0.html"><span class="elementtag">&lt;disp-formula&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-7st0.html"><span class="elementname">Paragraph</span></a> <a href="n-7st0.html"><span class="elementtag">&lt;p&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-pku0.html"><span class="elementname">Definition List</span></a> <a href="n-pku0.html"><span class="elementtag">&lt;def-list&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-ai40.html"><span class="elementname">List</span></a> <a href="n-ai40.html"><span class="elementtag">&lt;list&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-f7d0.html"><span class="elementname">Tex Math Equation</span></a> <a href="n-f7d0.html"><span class="elementtag">&lt;tex-math&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-6xs0.html"><span class="elementname">Math (Mathml 2.0 Tag Set)</span></a> <a href="n-6xs0.html"><span class="elementtag">&lt;mml:math&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a> <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-us20.html"><span class="elementname">Acknowledgments</span></a> <a href="n-us20.html"><span class="elementtag">&lt;ack&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-jsu0.html"><span class="elementname">Quote, Displayed</span></a> <a href="n-jsu0.html"><span class="elementtag">&lt;disp-quote&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-qgg0.html"><span class="elementname">Speech</span></a> <a href="n-qgg0.html"><span class="elementtag">&lt;speech&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-36g0.html"><span class="elementname">Statement, Formal</span></a> <a href="n-36g0.html"><span class="elementtag">&lt;statement&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-k9r0.html"><span class="elementname">Verse Form for Poetry</span></a> <a href="n-k9r0.html"><span class="elementtag">&lt;verse-group&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-bsh0.html"><span class="elementname">X - Generated Text and Punctuation</span></a> <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-z5f0.html"><span class="elementname">Section</span></a> <a href="n-z5f0.html"><span class="elementtag">&lt;sec&gt;</span></a>, zero or more
+                        </li>
+                        <li>Any combination of:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-kbs0.html"><span class="elementname">Notes</span></a> <a href="n-kbs0.html"><span class="elementtag">&lt;notes&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-ghw0.html"><span class="elementname">Footnote Group</span></a> <a href="n-ghw0.html"><span class="elementtag">&lt;fn-group&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-vxx0.html"><span class="elementname">Glossary Elements List</span></a> <a href="n-vxx0.html"><span class="elementtag">&lt;glossary&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-awe0.html"><span class="elementname">Reference List (Bibliographic)</span></a> <a href="n-awe0.html"><span class="elementtag">&lt;ref-list&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-2qt0.html"><span class="elementname">Permissions</span></a> <a href="n-2qt0.html"><span class="elementtag">&lt;permissions&gt;</span></a>, zero or one
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-2sc0.html"><span class="elementtag">&lt;app-group&gt;</span></a> <a href="n-2sc0.html"><span class="elementname">Appendix Group</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;
+...&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;
+&lt;app-group&gt;
+<strong><span class="focus">&lt;app&gt;&lt;title&gt;Appendix&lt;/title&gt;
+&lt;sec&gt;&lt;title&gt;The Bipolar Seesaw.&lt;/title&gt;
+&lt;p&gt;The evidence for the antiphasing of the millennial-duration climate
+changes occurring on the Antarctic continent ...&lt;/p&gt;...
+&lt;/app&gt;</span></strong>
+&lt;/app-group&gt;
+&lt;ref-list&gt;...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">backmatter.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

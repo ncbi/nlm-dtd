@@ -1,0 +1,227 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Element: Table (XHTML table model)</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;table&gt;</h1>
+         <h1 class="elementname">Table (XHTML table model)</h1>
+      </div>
+      <div class="definition">
+         <p class="para">The rows and columns part of a full table. The standard XHTML table model has been used to take advantage of existing software
+            for table handling. For more complete information on this table model, see the documentation for the XHTML table model.
+            
+         </p>
+         <p class="para">Note: This element contains <em>only</em> the rows and columns of the table, which is typically just part of what would be called a “table” in print or display. A
+            full table might also include a table number (label), a table title, a table caption, table notes and footnotes, introductory
+            paragraphs, etc., so a full table is tagged using the <a href="n-4cg0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element. IF the complex table contains rows and columns, <a href="n-4cg0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> will contain a <span class="elementtag">&lt;table&gt;</span> as well as other content.)
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">For a detailed discussion on the table formatting, see <a href="n-cm32.html#tag-table-format">Table Formatting</a>. For a detailed discussion on the use of <span class="elementtag">&lt;table&gt;</span>s inside <a href="n-4cg0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> and for related groups of tables, see <a href="n-cm32.html#tag-table-wrap">Table, Table Wrapper, and Table Group</a>.
+            
+         </p>
+         <p class="para">The standard XHMTL model has been modified to remove the <a href="n-a730.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a> element from within the <a href="n-dmf0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> element, because, in the base Suite, the <a href="n-a730.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a> element has been made part of the <a href="n-4cg0.html" target="main" title="<table-wrap&gt;"><span class="elementname">Table Wrapper</span></a><a href="n-4cg0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element.
+            
+         </p>
+         <p class="para">Historical Note: CALS Tables — As part of the 0.1 version of this Tag Set, the OASIS Interchange (CALS) table model was also
+            included in the Suite, to prove that it was possible, though not easy, to include two different table models, by using pseudo-namespaces
+            with a fixed prefix to differentiate any name clashes. Since there were indeed name clashes, the XHTML model was taken as
+            primary (no name spaces) and the OASIS Exchange CALS model was set up to use pseudo-namespaces (prefix “oasis”. Although the
+            OASIS/CALS model has been removed from this Tag Set, the modules to include the OASIS/CALS model in the Tag Set are still
+            shipped with the base Suite. For organizations that choose to use the OASIS model instead of or in addition to the XHTML table
+            model, there is a separate <a href="http://dtd.nlm.nih.gov/options/OASIS/tag-library/19990315/index.html" target="_new" class="external">http://dtd.nlm.nih.gov/options/OASIS/tag-library/19990315/index.html</a>Tag Library describing the OASIS elements, attributes, and parameter entities.
+            
+         </p>
+         <p class="para">The following changes were made to the OASIS table model:
+            
+            <ul class="bullist">
+               <li>the <tt>%titles;</tt> parameter entity for the OASIS table model has been set to the null string (<tt>""</tt>), since the table title <a href="n-hxn0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> is also part of the <a href="n-4cg0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>;
+                  
+               </li>
+               <li>The OASIS pseudo-namespace with a prefix of “oasis” has been added to each element.
+                  
+               </li>
+            </ul>
+            
+         </p>
+         <p class="para">No other changes were made to the OASIS table content model.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-u4d0.html" target="main"><span class="attrtag">border</span></a> <a href="n-u4d0.html" target="main"><span class="attrname">Border (Frame) around a Table (XHTML table model)</span></a></h5>
+         <h5 class="header"><a href="n-2sd0.html" target="main"><span class="attrtag">cellpadding</span></a> <a href="n-2sd0.html" target="main"><span class="attrname">Cell Padding (XHTML table model)</span></a></h5>
+         <h5 class="header"><a href="n-psd0.html" target="main"><span class="attrtag">cellspacing</span></a> <a href="n-psd0.html" target="main"><span class="attrname">Cell Spacing (XHTML table model)</span></a></h5>
+         <h5 class="header"><a href="n-cdd0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-cdd0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-adr0.html" target="main"><span class="attrtag">frame</span></a> <a href="n-adr0.html" target="main"><span class="attrname">Frame (XHTML table model)</span></a></h5>
+         <h5 class="header"><a href="n-gyr0.html" target="main"><span class="attrtag">id</span></a> <a href="n-gyr0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-2ri0.html" target="main"><span class="attrtag">rules</span></a> <a href="n-2ri0.html" target="main"><span class="attrname">Rules (XHTML table model)</span></a></h5>
+         <h5 class="header"><a href="n-k3y0.html" target="main"><span class="attrtag">style</span></a> <a href="n-k3y0.html" target="main"><span class="attrname">Style (XHTML table model; MathML 2.0 Tag Set)</span></a></h5>
+         <h5 class="header"><a href="n-m8y0.html" target="main"><span class="attrtag">summary</span></a> <a href="n-m8y0.html" target="main"><span class="attrname">Summary (XHTML table model)</span></a></h5>
+         <h5 class="header"><a href="n-wey0.html" target="main"><span class="attrtag">width</span></a> <a href="n-wey0.html" target="main"><span class="attrname">Width (XHTML table model; MathML 2.0 Tag Set)</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The <a href="n-dmf0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> element is an element defined by a public table model such as the XHTML table model. This element is not, in itself, a full
+            table, but only the rows and columns portions of a table. A full table may have other features, such as a title, caption,
+            table footnotes, etc. The <a href="n-4cg0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element contains the full table. A full table may or may not include a <a href="n-dmf0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> element within it, since other constructions, such as two-part lists, may also be given table titles, captions, etc.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Expanded Content Model</h2><pre class="contentdesc">((col* | colgroup*), 
+((thead?, tfoot?, tbody+) | (tr+)))</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>Any one of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-wq30.html" target="main" title="Table Column (XHTML table model)"><span class="elementtag">&lt;col&gt;</span></a> <a href="n-wq30.html" target="main" title="<col&gt;"><span class="elementname">Table Column (XHTML table model)</span></a>, zero or more
+                     </li>
+                     <li>
+                        <a href="n-cb30.html" target="main" title="Table Column Group (XHTML table model)"><span class="elementtag">&lt;colgroup&gt;</span></a> <a href="n-cb30.html" target="main" title="<colgroup&gt;"><span class="elementname">Table Column Group (XHTML table model)</span></a>, zero or more
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>Any one of:
+                  <ul class="bullist">
+                     <li>The following, in order:
+                        <ul class="bullist">
+                           <li>
+                              <a href="n-pun0.html" target="main" title="Table Header (XHTML table model)"><span class="elementtag">&lt;thead&gt;</span></a> <a href="n-pun0.html" target="main" title="<thead&gt;"><span class="elementname">Table Header (XHTML table model)</span></a>, zero or one
+                           </li>
+                           <li>
+                              <a href="n-mkn0.html" target="main" title="Table Footer (XHTML table model)"><span class="elementtag">&lt;tfoot&gt;</span></a> <a href="n-mkn0.html" target="main" title="<tfoot&gt;"><span class="elementname">Table Footer (XHTML table model)</span></a>, zero or one
+                           </li>
+                           <li>
+                              <a href="n-xsg0.html" target="main" title="Table Body (XHTML table model)"><span class="elementtag">&lt;tbody&gt;</span></a> <a href="n-xsg0.html" target="main" title="<tbody&gt;"><span class="elementname">Table Body (XHTML table model)</span></a>, one or more
+                           </li>
+                        </ul>
+                        
+                     </li>
+                     <li>
+                        <a href="n-hfn0.html" target="main" title="Table Row (XHTML table model)"><span class="elementtag">&lt;tr&gt;</span></a> <a href="n-hfn0.html" target="main" title="<tr&gt;"><span class="elementname">Table Row (XHTML table model)</span></a>, one or more
+                     </li>
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-g520.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a>, <a href="n-4cg0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="TN0.170"&gt;
+&lt;caption&gt;
+&lt;p&gt;Numbers of patients receiving institutional
+care at the end of scheduled follow up and
+use of hospital beds among those allocated
+to day hospital or alternative services&lt;/p&gt;
+&lt;/caption&gt;
+<strong><span class="focus">&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="3" align="center"
+rowspan="1"&gt;Institutional care&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="2" align="center"
+rowspan="1"&gt;&amp;#x2003;Bed use (days)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="3"&gt;&lt;hr/&gt;&lt;/td&gt;
+&lt;td colspan="2"&gt;&lt;hr/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;Control group&lt;/th&gt;
+&lt;th align="center"&gt;Day hospital&lt;/th&gt;
+&lt;th align="center"&gt;Control&lt;/th&gt;
+&lt;th align="center"&gt;Odds ratio (95&amp;#x0025; CI)&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align="center"&gt;Day hospital&lt;/th&gt;
+&lt;th align="center"&gt;Control&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="7"&gt;&lt;hr/&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Comprehensive care (5 trials)&lt;/td&gt;
+&lt;td align="center"&gt;151/597&lt;xref ref-type="table-fn"
+rid="TF1-150"&gt;&lt;/xref&gt;&lt;/td&gt;
+&lt;td align="center"&gt;159/584&lt;/td&gt;
+&lt;td align="center"&gt;0.91 (0.70 to 1.19)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;20.5&lt;/td&gt;
+&lt;td align="center"&gt;21.4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Domiciliary care (4 trials)&lt;/td&gt;
+&lt;td align="center"&gt;20/216&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;19/227&lt;/td&gt;
+&lt;td align="center"&gt;1.61 (0.30 to 8.55)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;7.7&lt;/td&gt;
+&lt;td align="center"&gt;11.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;No comprehensive care (3 trials)&lt;/td&gt;
+&lt;td align="center"&gt;37/411&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;66/403&lt;/td&gt;
+&lt;td align="center"&gt;0.50&lt;xref ref-type="table-fn"
+rid="TF1-151"&gt;&lt;/xref&gt; (0.26 to 0.96)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;11.2&lt;/td&gt;
+&lt;td align="center"&gt;11.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td align="center"&gt;208/1224&lt;/td&gt;
+&lt;td align="center"&gt;244/1214&lt;/td&gt;
+&lt;td align="center"&gt;0.77 (0.52 to 1.13)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;15.0&lt;/td&gt;&lt;td align="center"&gt;16.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</span></strong>
+&lt;table-wrap-foot&gt;
+&lt;fn-group&gt;
+&lt;fn id="TF1-150"&gt;&lt;p&gt;Data not available for 1 trial.&lt;/p&gt;&lt;/fn&gt;
+&lt;fn id="TF1-151"&gt;&lt;p&gt;P&amp;#x003C;0.05 (random effects model).&lt;/p&gt;&lt;/fn&gt;
+&lt;/fn-group&gt;
+&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">xhtml-table-1.mod</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

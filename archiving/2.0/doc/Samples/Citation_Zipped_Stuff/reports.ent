@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+<no>IV.</no>
+   <title>Scientific and Technical Reports</title>
+   <reflist>
+      <reflist>
+         <title>1. US Government issued report, with separate performing organization</title>
+         <ref>
+            <citation citation-type="gov">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Norman</surname>
+                     <given-names>John C</given-names>
+                  </name>
+                  <aff>Texas Heart Institute, Houston, TX</aff>
+               </person-group>
+               <gov>Report No.: NIH-N01-HV-5-3006-4-VI. Contract No. N01-HV-5-3006</gov>
+               <source>ALVAD: 1980. A comprehensive final report to NHLI</source>
+               <year>1980</year>
+               <month>Jan</month>
+               <volume>Vol. 1</volume>
+               <publisher-loc>Bethesda (MD)</publisher-loc>
+               <publisher-name>National Institutes of Health, National Heart and Lung Institute, Devices and Services Branch</publisher-name>
+               <lpage>340</lpage>
+               <other-ref>Available from: NTIS, Springfield, VA; PB80-148810</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+   </reflist>
+</chapter>

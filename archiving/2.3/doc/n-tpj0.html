@@ -1,0 +1,239 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Type of Cross Reference</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">ref-type</h1>
+         <h1 class="attrname">Type of Cross Reference</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Indicates the type of element to which a cross reference is
+                   pointing (e.g., to a figure, an author note, a bibliographic reference
+                   citation, etc.). These values may be used for type-specific processing or
+                   validation.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a> element may be used to reference anything that has an <a href="n-jdy0.html"><span class="attrname">Identifier</span></a> <a href="n-jdy0.html"><span class="attrtag">id</span></a> attribute. This single element takes the place of the many named types of references (such as figure references, table references,
+            and footnote references) that are common in many journal Tag Sets. This attribute preserves the information from such Tag
+            Sets concerning the type of element to which the cross-reference is pointing.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5 class="heading"><a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-beh0.html"><span class="elementname">X(cross) Reference</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">The element to which the reference points, for example &#8220;<tt>fig</tt>&#8221;. This attribute may take any value, but see the list of suggested values below.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+            <h4 class="header"><span class="headerlabel">Suggested usage</span></h4>
+                         
+            <p class="para">Although designed to accept any text as its value, potential
+                             values for this attribute might include:
+                             
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>aff</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Affiliation</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>app</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Appendix</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>author-note</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Author notes</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>bibr</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Bibliographic reference (to a <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a>, <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, or <a href="n-h8e0.html"><span class="elementtag">&lt;ref&gt;</span></a> element)
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>boxed-text</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Textbox or sidebar</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>chem</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Chemical structure (to a <a href="n-sj30.html"><span class="elementtag">&lt;chem-struct&gt;</span></a> or <a href="n-az30.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a> element)
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>contrib</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributor</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>corresp</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Corresponding author</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>disp-formula</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Display formula</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>fig</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Figure or group of figures (to a <a href="n-h4w0.html"><span class="elementtag">&lt;fig&gt;</span></a> or <a href="n-rfw0.html"><span class="elementtag">&lt;fig-group&gt;</span></a> element)
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>fn</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Footnote</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>kwd</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Keyword</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>list</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">List or list item (to a <a href="n-ai40.html"><span class="elementtag">&lt;list&gt;</span></a> or <a href="n-8y40.html"><span class="elementtag">&lt;list-item&gt;</span></a> element; also, possibly to a <a href="n-pku0.html"><span class="elementtag">&lt;def-list&gt;</span></a> or <a href="n-vza0.html"><span class="elementtag">&lt;def-item&gt;</span></a> element)
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>plate</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Plate</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>scheme</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Scheme</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>sec</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Section</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>statement</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Statement</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>supplementary-material</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Supplementary information</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>table</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Table or group of tables (to a <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> or <a href="n-zi60.html"><span class="elementtag">&lt;table-wrap-group&gt;</span></a> element)
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>table-fn</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Table footnote</p>
+                        </td>
+                     </tr>
+                  </table>
+               </div> 
+            </p>
+                
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

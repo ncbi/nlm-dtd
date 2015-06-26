@@ -1,0 +1,66 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Parameter entity: Article Metadata Model</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="petag">%article-meta-model;</h1>
+         <h1 class="pename">Article Metadata Model</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Full content model for the metadata that is specific to the
+                   article; this includes both metadata that directly describes the article
+                   (such as the article title, abstract, or article <tt>ID</tt>), as well as the metadata
+                   that many MAJOUR-style DTDs call the
+                   issue metadata (such as the issue number and title)
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">MAJOUR-style DTDs split the metadata into three
+                   categories: journal metadata, article metadata, and issue metadata. In this Suite, the related element <a href="n-vc40.html"><span class="elementtag">&lt;journal-meta&gt;</span></a> holds the metadata specific to the journal.
+                
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header">Declaration</h2><pre class="contentdesc">&lt;!ENTITY % article-meta-model
+                        "(article-id*, article-categories?,
+                         title-group?,
+                         (contrib-group | aff | %x.class;)*,
+                         author-notes?, pub-date*,
+                         volume?, volume-id*,
+                         issue?, issue-id*, issue-title*,
+                         supplement?,
+                         ( ( (fpage, lpage?)?, page-range?) |
+                           elocation-id )?,
+                         (%address-link.class; | product |
+                          supplementary-material)*,
+                         history?, copyright-statement?,
+                         copyright-year?, license?, permissions?,
+                         self-uri*, related-article*, abstract*,
+                         trans-abstract*, kwd-group*,
+                         contract-num*, contract-sponsor*,
+                         grant-num*, grant-sponsor*,
+                         conference*, counts?, custom-meta-wrap?)"   &gt;</pre></div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">archivecustom-models.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

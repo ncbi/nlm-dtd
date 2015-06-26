@@ -1,0 +1,257 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Response</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;response&gt;</h1>
+         <h1 class="elementname">Response</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Reply, response, or commentary concerning the journal article. In the typical case, the response is included in the same XML
+            package as the original article, attached at the end of the article proper. Metadata that differs from that of original article
+            (e.g., title, author), may be captured using the <a href="n-6zw0.html"><span class="elementtag">&lt;front-stub&gt;</span></a> element; if the <a href="n-6zw0.html"><span class="elementtag">&lt;front-stub&gt;</span></a> element is used, any metadata not specifically tagged is inherited from the original article.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Conversion Note: Frequently, a reply or response is an article in its own right, not included as part of the original article.
+            Such an article could use the <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> element in the article metadata to record the metadata for the original article.
+         </p>
+         <p class="para">Conversion Note: The response construction can also be used for the pathological case, rarely seen, in which several responses
+            to an article are lumped together in a single container which is not the original article, merely a collection of responses.
+            (In one example we examined, the first two responses were to an original article which was elsewhere, and the third response
+            was a response to the first two responses.)
+         </p>
+         <p class="para">A journal article <a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a> may be divided into several components:
+            
+            <ol class="olist">
+               <li>the <a href="n-i9w0.html"><span class="elementname">Front Matter</span></a> (the article metadata or header information, which contains both journal and article metadata);
+               </li>
+               <li>the <a href="n-yv30.html"><span class="elementname">Body of the Article</span></a> (the textual and graphical content of the article);
+               </li>
+               <li>any <a href="n-gu30.html"><span class="elementname">Back Matter</span></a> (any ancillary information such as a glossary, reference list, or appendix);
+               </li>
+               <li>a  <a href="n-ynw0.html"><span class="elementname">Floats Wrapper</span></a> (single container element some publishers and archives use to hold all floating elements such as figures and tables that
+                  are referenced in the article body or back matter); and
+               </li>
+               <li>either a series of <a href="n-yde0.html"><span class="elementname">Response</span></a> elements (A response is a commentary on the article itself.) or a series of <a href="n-a4n0.html"><span class="elementname">Sub-article</span></a> elements (Sub-articles are smaller articles completely contained within the article.).
+               </li>
+            </ol>
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-a2p0.html"><span class="attrtag">response-type</span></a> <a href="n-a2p0.html"><span class="attrname">Type of Response</span></a></h5>
+         <h5 class="header"><a href="n-dcq0.html"><span class="attrtag">xml:lang</span></a> <a href="n-dcq0.html"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  response     %article-short-model;                        &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>Any one of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-i9w0.html"><span class="elementname">Front Matter</span></a> <a href="n-i9w0.html"><span class="elementtag">&lt;front&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-6zw0.html"><span class="elementname">Stub Front Metadata</span></a> <a href="n-6zw0.html"><span class="elementtag">&lt;front-stub&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ynw0.html"><span class="elementname">Floats Wrapper</span></a> <a href="n-ynw0.html"><span class="elementtag">&lt;floats-wrap&gt;</span></a>, zero or one
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-yv30.html"><span class="elementname">Body of the Article</span></a> <a href="n-yv30.html"><span class="elementtag">&lt;body&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-gu30.html"><span class="elementname">Back Matter</span></a> <a href="n-gu30.html"><span class="elementtag">&lt;back&gt;</span></a>, zero or one
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a> <a href="n-4nc0.html"><span class="elementname">Article</span></a>; <a href="n-a4n0.html"><span class="elementtag">&lt;sub-article&gt;</span></a> <a href="n-a4n0.html"><span class="elementname">Sub-article</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="publisher"&gt;JCM&lt;/journal-id&gt;
+&lt;issn&gt;0095-1137&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;JCM&lt;/publisher-name&gt;&lt;/publisher&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;0547&lt;/article-id&gt;
+&lt;article-categories&gt;
+&lt;subj-group&gt;&lt;subject&gt;Letter to the Editor&lt;/subject&gt;
+&lt;/subj-group&gt;
+&lt;/article-categories&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;&lt;italic&gt;Acrophialophora fusispora&lt;/italic&gt;
+Misidentified as &lt;italic&gt;Scedosporium prolificans&lt;/italic&gt;
+&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;&lt;name&gt;
+&lt;surname&gt;Guarro&amp;ast;&lt;/surname&gt;
+&lt;given-names&gt;Josep&lt;/given-names&gt;&lt;/name&gt;
+&lt;xref ref-type="aff"&gt;
+&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Gen&amp;eacute;&lt;/surname&gt;
+&lt;given-names&gt;Josepa&lt;/given-names&gt;&lt;/name&gt;
+&lt;xref ref-type="aff"&gt;
+&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;
+&lt;year&gt;2002&lt;/year&gt;&lt;/pub-date&gt;
+&lt;volume&gt;40&lt;/volume&gt;
+&lt;issue&gt;9&lt;/issue&gt;
+&lt;fpage&gt;000&lt;/fpage&gt;&lt;lpage&gt;000&lt;/lpage&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 2002, British
+Medical Journal
+&lt;/copyright-statement&gt;
+&lt;/permissions&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;
+&lt;sec&gt;
+&lt;title&gt;Comment Letter 1&lt;/title&gt;
+&lt;p&gt;Arthur et al. reported an interesting case of human keratouveitis
+associated with the intraocular long-term retention of a contact lens,
+...&lt;/p&gt;
+&lt;/sec&gt;
+&lt;/body&gt;
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+
+<strong><span class="focus">&lt;response response-type="reply"&gt;
+&lt;front&gt;
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Comment Letter 2&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;&lt;name&gt;
+&lt;surname&gt;Sigler&amp;ast;&lt;/surname&gt;
+&lt;given-names&gt;Lynne&lt;/given-names&gt;&lt;/name&gt;
+&lt;xref ref-type="aff"&gt;
+&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Sutton&lt;/surname&gt;
+&lt;given-names&gt;Deanna A.&lt;/given-names&gt;&lt;/name&gt;
+&lt;xref ref-type="aff"&gt;
+&lt;sup&gt;&lt;italic&gt;b&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff&gt;...&lt;/aff&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;
+&lt;p&gt;We are writing concerning the identification of the fungus causing
+keratouveitis ...&lt;/p&gt;
+&lt;/body&gt;
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/response&gt;</span></strong>
+
+<strong><span class="focus">&lt;response response-type="reply"&gt;
+&lt;front&gt;
+&lt;article-meta&gt;
+&lt;title-group&gt;&lt;article-title&gt;Authors&amp;apos; Reply&lt;/article-title&gt;&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;&lt;name&gt;&lt;surname&gt;Arthur&amp;ast;&lt;/surname&gt;
+&lt;given-names&gt;Stella&lt;/given-names&gt;&lt;/name&gt;
+&lt;xref ref-type="aff"&gt;
+&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Steed&lt;/surname&gt;&lt;given-names&gt;Lisa L.&lt;/given-names&gt;&lt;/name&gt;
+&lt;xref ref-type="aff"&gt;
+&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;Center for Research on Ocular Therapeutics
+and Biodevices&lt;break/&gt;Department of Ophthalmology&lt;break/&gt;
+Storm Eye Institute&lt;break/&gt;Department of Pathology and Laboratory Medicine&lt;break/&gt;
+Medical University of South Carolina&lt;break/&gt;Charleston, South Carolina&lt;break/&gt;
+&amp;ast;Phone: (843) 792-2393&lt;break/&gt;Fax: (843) 792-1014&lt;break/&gt;
+&lt;email&gt;E-mail: &amp;bull;&amp;bull;&amp;bull;&lt;/email&gt;&lt;/aff&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;
+&lt;p&gt;We read with great interest and much chagrin the letters to the editor by
+Drs. Sigler and Sutton and Drs. Guarro and Gene correcting our misidentification
+of &lt;italic&gt;Acrophialophora fusispora&lt;/italic&gt; as &lt;italic&gt;Scedosporium
+prolificans&lt;/italic&gt; (&lt;xref rid="R7" ref-type="bibr"&gt;1&lt;/xref&gt;). The original
+identification was indeed made by an inexperienced technologist, although it
+was confirmed by a more experienced person. However, both were unaware of the
+existence of &lt;italic&gt;A. fusispora&lt;/italic&gt;, as were the authors.&lt;/p&gt;
+&lt;p&gt;In defense of our reviewers, Fig. 2 was added to the manuscript at the
+recommendation of one of the reviewers. We don&amp;apos;t know if the reviewers
+were given the opportunity to examine the added figure prior to publication.&lt;/p&gt;
+&lt;p&gt;Should we be so fortunate as to grow either organism again, we will not make
+this same mistake. Our error emphasizes the need for technical staff trained in
+mycology to keep up with recent journal publications. We hope others will learn
+from our error.&lt;/p&gt;
+&lt;p&gt;On the bright side, the literature now contains the first report of
+&lt;italic&gt;A. fusispora&lt;/italic&gt; keratouveitis in association with a contact lens
+retained intraocularly over a long term.&lt;/p&gt;
+&lt;/body&gt;
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/response&gt;</span></strong>
+&lt;/article&gt;
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">archivearticle.dtd</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

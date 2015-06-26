@@ -1,0 +1,179 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Abstract</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;abstract&gt;</h1>
+         <h1 class="elementname">Abstract</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Summarized description of the content of a journal article
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Most journal publishers use the abstract as a very short summary of the major findings or conclusions of an article and limit
+            its contents to a paragraph or two. But some publishers require “long” or “summary” abstracts that summarize each section
+            of the paper in a separate abstract section that has the same section title as the article section. Such abstracts may be
+            extensive, incorporating figures and tables. While the model for the element <a href="n-n600.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a> has been made flexible enough to allow for these titled sections, it is expected that most abstracts will be much simpler
+            and will contain one or more paragraphs.
+            
+         </p>
+         <p class="para">The <a href="n-gw70.html" target="main" title="Type of Abstract"><span class="attrtag">@abstract-type</span></a> attribute may be used to identify special types of abstracts required by some publishers, for example, graphical abstracts,
+            stereochemical abstracts, ASCII abstracts for sending to small devices, and Table-of-Contents abstracts that are so short
+            they are inserted as annotations into a Table of Contents. See the attribute page for <a href="n-gw70.html" target="main" title="Type of Abstract"><span class="attrtag">@abstract-type</span></a> for a more complete list of types. If the abstract is not one of the special types listed, the <a href="n-gw70.html" target="main" title="Type of Abstract"><span class="attrtag">@abstract-type</span></a> attribute should not be used.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-gw70.html" target="main"><span class="attrtag">abstract-type</span></a> <a href="n-gw70.html" target="main"><span class="attrname">Type of Abstract</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-vwn0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-vwn0.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+         <h5 class="header"><a href="n-fzn0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fzn0.html" target="main"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  abstract     <a href="n-tt60.html" target="main" title="Abstract Model"><span class="petag">%abstract-model;</span></a>                             &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(title?, p*, sec*)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-yut0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-yut0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-s4w0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, zero or more
+               </li>
+               <li>
+                  <a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-ngv0.html" target="main" title="<sec&gt;"><span class="elementname">Section</span></a>, zero or more
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-n420.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">A typical abstract:
+            
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;
+&lt;article-meta&gt;
+...
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 2000, The National Academy of
+Sciences&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;2000&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+<strong><span class="focus">&lt;abstract&gt;
+&lt;p&gt;We describe a method for cloning nucleic acid molecules onto the 
+surfaces of 5-&amp;#x03BC;m microbeads rather than in biological hosts. A
+unique tag sequence is attached to each molecule, and the tagged 
+library is amplified. Unique tagging of the molecules is achieved by 
+sampling a small fraction (1&amp;#x0025;) of a very large repertoire of 
+tag sequences. The resulting library is hybridized to microbeads that 
+each carry &amp;#x2248;10&lt;sup&gt;6&lt;/sup&gt; strands complementary to one of the 
+tags. About 10&lt;sup&gt;5&lt;/sup&gt; copies of each molecule are collected on 
+each microbead. ...&lt;/p&gt;
+&lt;/abstract&gt;</span></strong>
+&lt;kwd-group kwd-group-type="author"&gt;
+...
+&lt;/kwd-group&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+...
+&lt;/article&gt; 
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <p class="para">An abstract with summarized sections:
+            
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;
+&lt;article-meta&gt;
+...
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British
+Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+<strong><span class="focus">&lt;abstract&gt;
+&lt;sec&gt;
+&lt;title&gt;Objective&lt;/title&gt;
+&lt;p&gt;To examine the effectiveness of
+day hospital attendance in prolonging independent living for elderly
+people.&lt;/p&gt;&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Design&lt;/title&gt;
+&lt;p&gt;Systematic review of 12 controlled clinical trials (available
+by January 1997) comparing day hospital care with
+comprehensive care (five trials), domiciliary care (four trials),
+or no comprehensive care (three trials).&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Subjects&lt;/title&gt;
+&lt;p&gt;2867 elderly people.&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Main outcome measures&lt;/title&gt;
+&lt;p&gt;Death, institutionalisation, disability, global &amp;#x201C;poor
+outcome,&amp;#x201D; and use of resources.&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Results&lt;/title&gt;
+&lt;p&gt;Overall, there was no significant difference between day hospitals and
+alternative services ...&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Conclusions&lt;/title&gt;
+&lt;p&gt;Day hospital care seems to be an effective service for elderly
+people ...&lt;/p&gt;
+&lt;p&gt;&lt;boxed-text position="float"&gt;
+&lt;sec&gt;&lt;title&gt;Key messages&lt;/title&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/sec&gt;
+&lt;/boxed-text&gt;&lt;/p&gt;
+&lt;/sec&gt;
+&lt;/abstract&gt;</span></strong>
+&lt;/article-meta&gt;
+&lt;/front&gt;
+...
+&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

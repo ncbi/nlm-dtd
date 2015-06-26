@@ -1,0 +1,273 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Series Title</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;series-title&gt;</h1>
+         <h1 class="elementname">Series Title</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Title of the journal series (bibliographic) or series of articles
+                   internal to one issue of a journal 
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The word &#8220;series&#8221; is used in journal publishing with two very different meanings. The element <a href="n-y7f0.html"><span class="elementtag">&lt;series&gt;</span></a> is used for only one of those meanings, and the two elements <a href="n-cdf0.html"><span class="elementtag">&lt;series-text&gt;</span></a> and <a href="n-myf0.html"><span class="elementtag">&lt;series-title&gt;</span></a> are used only for the other.
+            
+            <ul class="bullist">
+               <li>Some issues of journals are part of a publishing series. These journals will have series information (just as they have an
+                  issue number), as part of the article metadata, to describe the series of the journal in which the article is published. Within
+                  a bibliographic reference citation (<a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>), this series information can be tagged using the <a href="n-y7f0.html"><span class="elementtag">&lt;series&gt;</span></a> element.
+               </li>
+               <li>The second usage for the word &#8220;series&#8221; is to record groupings of articles within a single issue of a journal. For example,
+                  in some journals, articles are grouped into series such as &#8220;From the Cover&#8221; and identified as part of that series. These internal
+                  series can be described through the use of the <a href="n-myf0.html"><span class="elementtag">&lt;series-title&gt;</span></a> and <a href="n-cdf0.html"><span class="elementtag">&lt;series-text&gt;</span></a> elements, which are similar in name to the <a href="n-y7f0.html"><span class="elementtag">&lt;series&gt;</span></a> element, but which are completely unrelated.  Within an article&#8217;s metadata, the element <a href="n-myf0.html"><span class="elementtag">&lt;series-title&gt;</span></a> can hold the title of such an in-journal series, and the element <a href="n-cdf0.html"><span class="elementtag">&lt;series-text&gt;</span></a> can hold the description (if any) of the series. 
+               </li>
+            </ul>
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Within the article metadata, the <a href="n-myf0.html"><span class="elementtag">&lt;series-title&gt;</span></a> element names a publishing or
+                   in-journal series and the <a href="n-cdf0.html"><span class="elementtag">&lt;series-text&gt;</span></a> element
+                   provides textual description (if any) of the series. The similarly named
+                   but unrelated element <a href="n-y7f0.html"><span class="elementtag">&lt;series&gt;</span></a> is a wrapper element to hold any
+                   series data mentioned in a bibliographic reference (<a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>).
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  series-title (#PCDATA %series-title-elements;)*           &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-chu0.html"><span class="elementname">Email Address</span></a> <a href="n-chu0.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ekw0.html"><span class="elementname">External Link</span></a> <a href="n-ekw0.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-8yr0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-8yr0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the article linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-6xv0.html"><span class="elementname">Inline Supplementary Material</span></a> <a href="n-6xv0.html"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a> <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-4iw0.html"><span class="elementname">Font</span></a> <a href="n-4iw0.html"><span class="elementtag">&lt;font&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-g3v0.html"><span class="elementname">Horizontal Rule</span></a> <a href="n-g3v0.html"><span class="elementtag">&lt;hr&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-n730.html"><span class="elementname">Bold</span></a> <a href="n-n730.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-c9v0.html"><span class="elementname">Italic</span></a> <a href="n-c9v0.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cvs0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-cvs0.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-y8t0.html"><span class="elementname">Overline</span></a> <a href="n-y8t0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-w4t0.html"><span class="elementname">Overline Start</span></a> <a href="n-w4t0.html"><span class="elementtag">&lt;overline-start&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cvt0.html"><span class="elementname">Overline End</span></a> <a href="n-cvt0.html"><span class="elementtag">&lt;overline-end&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hqe0.html"><span class="elementname">Sans Serif</span></a> <a href="n-hqe0.html"><span class="elementtag">&lt;sans-serif&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-bze0.html"><span class="elementname">Small Caps</span></a> <a href="n-bze0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-gyg0.html"><span class="elementname">Strike Through</span></a> <a href="n-gyg0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-fgr0.html"><span class="elementname">Underline</span></a> <a href="n-fgr0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cir0.html"><span class="elementname">Underline Start</span></a> <a href="n-cir0.html"><span class="elementtag">&lt;underline-start&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-zrr0.html"><span class="elementname">Underline End</span></a> <a href="n-zrr0.html"><span class="elementtag">&lt;underline-end&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-dwv0.html"><span class="elementname">Graphic, Inline</span></a> <a href="n-dwv0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-3t70.html"><span class="elementname">Private Character (Custom or Unicode)</span></a> <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-x5v0.html"><span class="elementname">Formula, Inline</span></a> <a href="n-x5v0.html"><span class="elementtag">&lt;inline-formula&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-f7d0.html"><span class="elementname">Tex Math Equation</span></a> <a href="n-f7d0.html"><span class="elementtag">&lt;tex-math&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-6xs0.html"><span class="elementname">Math (Mathml 2.0 Tag Set)</span></a> <a href="n-6xs0.html"><span class="elementtag">&lt;mml:math&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-5900.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-5900.html"><span class="elementtag">&lt;abbrev&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-tws0.html"><span class="elementname">Milestone End</span></a> <a href="n-tws0.html"><span class="elementtag">&lt;milestone-end&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-kxs0.html"><span class="elementname">Milestone Start</span></a> <a href="n-kxs0.html"><span class="elementtag">&lt;milestone-start&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-ifs0.html"><span class="elementname">Named Special (Subject) Content</span></a> <a href="n-ifs0.html"><span class="elementtag">&lt;named-content&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the simple link/cross-referencing elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-crw0.html"><span class="elementname">Footnote</span></a> <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hj60.html"><span class="elementname">Target of an Internal Link</span></a> <a href="n-hj60.html"><span class="elementtag">&lt;target&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-beh0.html"><span class="elementname">X(cross) Reference</span></a> <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-pan0.html"><span class="elementname">Subscript</span></a> <a href="n-pan0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-w9n0.html"><span class="elementname">Superscript</span></a> <a href="n-w9n0.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-udc0.html"><span class="elementtag">&lt;article-categories&gt;</span></a> <a href="n-udc0.html"><span class="elementname">Article Grouping Data</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+      
+&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="pmc"&gt;jcm&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="pubmed"&gt;J Clin Microbiol&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="publisher"&gt;J CLIN MICROBIOL&lt;/journal-id&gt;
+&lt;issn&gt;0095-1137&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;American Society for Microbiology&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="publisher-id"&gt;1037&lt;/article-id&gt;
+&lt;article-id pub-id-type="doi"&gt;10.1128/JCM.39.7.2634-2636.2001&lt;/article-id&gt;
+&lt;article-id pub-id-type="pmid"&gt;11427581&lt;/article-id&gt;
+&lt;article-categories&gt;
+&lt;subj-group&gt;
+&lt;subject&gt;Mycobacteriology and Aerobic Actinomycetes&lt;/subject&gt;
+&lt;/subj-group&gt;
+<strong><span class="focus">&lt;series-title&gt;Note&lt;/series-title&gt;</span></strong>
+&lt;/article-categories&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Molecular Identification of a &lt;italic&gt;Dietzia
+maris&lt;/italic&gt; Hip Prosthesis Infection Isolate&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;...
+&lt;/contrib-group&gt;...
+&lt;/article-meta&gt;
+&lt;/front&gt;
+...&lt;/article&gt;
+
+
+      </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

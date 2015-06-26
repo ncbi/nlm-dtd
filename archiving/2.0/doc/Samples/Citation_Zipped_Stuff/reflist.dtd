@@ -1,0 +1,139 @@
+<!ELEMENT book (part+)>
+<!ELEMENT part (no?, title, chapter*)>
+<!ELEMENT chapter (no, title, reflist*)>
+<!ELEMENT no (#PCDATA)>
+<!ELEMENT reflist (title?, ref*, reflist*)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT ref (label?, citation+)>
+<!ATTLIST ref
+   id ID #IMPLIED
+>
+<!ELEMENT label (#PCDATA)>
+<!ELEMENT citation ((person-group | collab)*, (atitle | transtitle | gov)*, source?, patent?, trans-source?, year?, ((month?, day?, time-stamp?) | season?), access-date?, volume?, edition?, conf-name?, conf-date?, conf-loc?, (issue | supplement)*, publisher-loc?, publisher-name?, fpage?, lpage?, series?, other-ref?, annotation?)>
+<!ATTLIST citation
+   citation-type (journal | book | confproc | commun | discussion | web | patent | gov | list | thesis | other) #IMPLIED
+>
+<!--         citation-type
+                        Defines the type of work being referenced.
+                        Values could include
+                          journal      Journal article
+                          book         Book 
+                          confproc     Conference proceedings
+                          commun       Personal communication
+                          web          Website
+                          patent       Patent or patent application
+                          gov          Government publication
+                          list         Listserv
+                          thesis      dissertation or thesis
+                          other        None of the listed types  -->
+<!ELEMENT person-group (name | aff | etal)*>
+<!ATTLIST person-group
+   person-group-type (author | editor | guest-editor | inventor | assignee | translator | transed | allauthors | compiler) #IMPLIED
+>
+<!ELEMENT name (surname, given-names?, suffix?)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT given-names (#PCDATA)>
+<!ELEMENT suffix (#PCDATA)>
+<!ELEMENT aff (#PCDATA)>
+<!ELEMENT etal EMPTY>
+<!ELEMENT collab (#PCDATA)>
+<!ATTLIST collab
+   collab-type (authors | editors | guest-editors | inventors | translators | compilers | assignee) #IMPLIED
+>
+<!ELEMENT source (#PCDATA)>
+<!ATTLIST source
+   xml:lang NMTOKEN #IMPLIED
+>
+<!ELEMENT trans-source (#PCDATA)>
+<!ATTLIST trans-source
+   xml:lang NMTOKEN #IMPLIED
+>
+<!ELEMENT atitle (#PCDATA)>
+<!ATTLIST atitle
+   xml:lang NMTOKEN #IMPLIED
+>
+<!ELEMENT transtitle (#PCDATA)>
+<!ATTLIST transtitle
+   xml:lang NMTOKEN #IMPLIED
+>
+<!ELEMENT gov (#PCDATA)>
+
+<!ELEMENT access-date (#PCDATA)>
+<!ELEMENT patent (#PCDATA)>
+<!ELEMENT volume (#PCDATA)>
+<!ELEMENT edition (#PCDATA)>
+<!ELEMENT conf-date (#PCDATA)>
+<!ELEMENT conf-loc (#PCDATA)>
+<!ELEMENT conf-name (#PCDATA)>
+<!ELEMENT publisher-loc (#PCDATA)>
+<!ELEMENT publisher-name (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT time-stamp (#PCDATA)>
+<!ELEMENT season (#PCDATA)>
+<!ELEMENT issue (#PCDATA)>
+<!ELEMENT supplement (#PCDATA)>
+<!ELEMENT fpage (#PCDATA)>
+<!ELEMENT lpage (#PCDATA)>
+<!ELEMENT series (#PCDATA)>
+<!ELEMENT other-ref (#PCDATA | exlnk)*>
+<!ELEMENT annotation (#PCDATA)>
+<!-- ============================================================= -->
+<!--                    EXTERNAL LINK ELEMENTS                     -->
+<!-- ============================================================= -->
+<!--                    EXTERNAL LINK                              -->
+<!--                    Link to an external file, such as Medline, 
+                        Genbank, etc.  Linking may be accomplished
+                        using the XLink linking attributes.        -->
+<!ELEMENT exlnk (#PCDATA)>
+<!--         exlnk-type Type of external link. Use this attribute
+                        if the type of external link is one of the
+                        ones below or another named type.
+                            ec          Enzyme nomenclature - see
+                              http://www.chem.qmw.ac.uk/iubmb/enzyme/
+                            gen         GenBank identifier
+                            genpept     Translated Protein-encoding
+                                        sequence Database
+                            highwire    HighWire press intrajournal 
+                            medline     Medline or pubmed id
+                            pdb         Protein data bank. See 
+                                        http://www.rcsb.org/pdb/
+                            pgr         Plant gene register. See
+                                        http://www.tarweed.com/pgr/
+                            pir         Protein Information Resource
+                                        see http://pir.georgetown.edu
+                            pirdb       Protein Information Resource 
+                                        see http://pir.georgetown.edu
+                            pmc         Used to link between articles  
+                                        in PubMedCentral access is 
+                                        PMID
+                            sprot       Swiss-Prot. See
+                                    http://www.ebi.ac.uk/swissprot/
+                            aoi         Astronomical Object Identifier 
+                            doi         Digital Object Identifier
+                            ftp         File transfer protocol
+                            uri         Website or web service    
+             xlink:href Provides an address or identifier of the
+                        object to which the link points, for
+                        example a URI or a filename                -->
+<!ATTLIST exlnk
+   exlnk-type CDATA #IMPLIED
+   href CDATA #IMPLIED
+>
+<!--
+1. Need to add a person group so that we can tag groups of people with their type (author, inventor, editor, translator, etc).
+2. For translated titles - Foreign language goes in <atitle> and <transtitle> is the English version.
+3. Add "season" to references.class.
+4. Need a way to handle month/day ranges. see J22.
+5. Added <other-ref> to handle oddball content.
+6. Added xml:lang attribute to <source>
+7. Added <trans-source>
+8. For translated sources - non-english goes in <source> and <trans-source> is the English version.
+9. Added "thesis" as a citation type.
+10.Added collab-type to <collab>
+11. Added "cited" for cited date in internet references.
+12. Added "time" for electronic communications.
+13. Added "discussion" as a citation-type
+
+-->

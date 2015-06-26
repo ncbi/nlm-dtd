@@ -1,0 +1,129 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Introduction to Attributes</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="intro">
+         <h1 class="header">Introduction to Attributes</h1>
+         <p class="para">This section describes each attribute used in the Journal Archiving Tag Set. Although the attributes are declared in many
+            different modules, they are described here in alphabetical order of their tag names
+             (i.e., attribute type names). The tag name is the shorter machine-readable name used in
+              tagged documents, DTD fragments and schemas, and by software; for example, the
+              tag name &#8220;<a href="n-99i0.html"><span class="attrtag">corresp</span></a>&#8221; is used for the attribute named
+               &#8220;<a href="n-99i0.html"><span class="attrname">Corresponding Author</span></a>&#8221;.
+         </p>
+         <p class="para">Each attribute is described by a separate HTML page, where the heading for the page displays the attribute&#8217;s tag name followed
+            by its longer descriptive name. The rest of the attribute description page discusses aspects of the attribute, its usage,
+            and the elements to which it can be attached. These sections within the page always appear in the following order although
+            any given attribute description may not contain all the sections:
+         </p>
+         <div class="deflist">
+            <table class="deflisttable">
+               <tr class="row1">
+                  <td class="dterm">
+                     <p>Definition</p>
+                  </td>
+                  <td class="ddef">
+                     <p class="para">Contains a narrative description of the attribute. This is not a formal dictionary definition, but more an explanation of
+                        what the attribute  means,
+                         what type of information it provides, or how it can be used.
+                     </p>
+                  </td>
+               </tr>
+               <tr class="row0">
+                  <td class="dterm">
+                     <p>Usage</p>
+                  </td>
+                  <td class="ddef">
+                     <p class="para">Discusses expected uses for the attribute, such as
+                         when or why it might be used or how to determine its value
+                     </p>
+                  </td>
+               </tr>
+               <tr class="row1">
+                  <td class="dterm">
+                     <p>Remarks</p>
+                  </td>
+                  <td class="ddef">
+                     <p class="para">Provides additional
+                         information about the attribute, such as similar or contrasting attributes, processing information,  or material about the
+                        base element
+                     </p>
+                     <p class="para">Conversion Notes are usage instructions aimed at persons converting from another journal article tag set to this one, for
+                        example, information concerning the problems associated with embedding TeX or LaTeX in XML and the need, therefore, to surround
+                        TeX or LaTeX with a <tt>CDATA</tt> section.
+                     </p>
+                     <p class="para">Implementor&#8217;s Notes are instructions written to persons creating or maintaining DTDs or schemas based on the Suite.</p>
+                  </td>
+               </tr>
+               <tr class="row0">
+                  <td class="dterm">
+                     <p>Values</p>
+                  </td>
+                  <td class="ddef">
+                     <p class="para">Performs three functions: 
+                        <ol class="olist">
+                           <li>Naming the elements which can take the attribute;</li>
+                           <li>Describing the specific values and defaults for the attribute; and </li>
+                           <li>Optionally, providing a list of suggested values for those attributes whose value is any character data (i.e., not a specific
+                              list of values).
+                           </li>
+                        </ol>
+                     </p>
+                     <p class="para"><em>Elements</em> &#8212; The elements that may take the attribute are named following the phrase &#8220;In elements:&#8221;. For each element, both the tag
+                        name (the shorter element type name) and
+                         the longer descriptive name are given.
+                     </p>
+                     <p class="para">If the attribute can be used
+                         in more than one way, or with several slightly different meanings, there will be
+                         more than one &#8220;In elements:&#8221; section. Each &#8220;In elements:&#8221; section is followed by a value
+                         table that describes the attribute&#8217;s values when it is used with the specific elements just listed. For example, the attribute
+                        may have exactly the same meaning whenever
+                         it is used, but sometimes it is required while other times it is optional, so there
+                         will be two &#8220;In elements:&#8221; sections, one naming all the elements for which the attribute is required, and one naming all
+                        the elements for which the attribute is optional.
+                     </p>
+                     <p class="para"><em>Values</em> &#8212; Following each &#8220;In elements:&#8221; section is an Attribute Value Table that lists the possible values of the attribute and explains
+                        selected values. When the attribute originates in the Archiving Tag Set or the base Suite, the Values table also explains
+                        the meaning of each value. Attributes defined in PUBLIC tag sets that have been incorporated into the Archiving Tag Set or
+                        base Suite (such as the MathML Tag Set) do not have their values explained, since those values are not established in this
+                        Tag Set and may change without notice.
+                     </p>
+                     <p class="para">The Attribute Value Table typically contains two columns although a third column titled &#8220;Behavior&#8221; may be present. Each row
+                        in the table describes one value, where:
+                     </p>
+                     <ul class="bullist">
+                        <li>The entry in the column titled &#8220;Value&#8221; names or describes the value,</li>
+                        <li>The entry in the column titled &#8220;Meaning&#8221; explains the meaning of the attribute
+                            value or describes potential content for the value, and
+                        </li>
+                        <li>Where present, the entry in the column titled &#8220;Behavior&#8221; describes what an XML application might do with the attribute value.</li>
+                     </ul>
+                     <p class="para">The last row of the table begins with the word &#8220;Restriction:&#8221;. This row indicates whether the attribute <em>must</em> be supplied when the relevant element is
+                         used or is optional and <em>may</em> be supplied. A default value, if any exists, is also provided.
+                     </p>
+                     <p class="para"><em>Suggested Values</em> &#8212; For those attributes whose value is defined as text (letters, numbers, or special characters), the Tag Set does not enforce
+                        any particular value(s), but a list of suggested values may be provided.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

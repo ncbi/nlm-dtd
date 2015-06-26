@@ -1,0 +1,313 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Article Metadata</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;article-meta&gt;</h1>
+         <h1 class="elementname">Article Metadata</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Metadata is (loosely) &#8220;data about the data&#8221;. The metadata for an article is information concerning the article, for example,
+            bibliographic data such as authorship, article title, copyright year, and publication date; descriptive material such as keywords
+            and abstracts; or any article identifying numbers. The article metadata is not part of the body text or
+                   graphics of the article proper, but serves to
+                   identify or describe the article.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Some journal DTDs/schemas identify three types of metadata: that
+                   concerning the specific article, that concerning the journal, and that
+                   concerning the issue of the journal that contains the article. In this Tag Set, the
+                   metadata for the issue and the article has been placed together inside the <a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> and the journal metadata into the <a href="n-vc40.html"><span class="elementtag">&lt;journal-meta&gt;</span></a> element.
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Older, MAJOUR-style journal DTDs split the metadata in a journal article into three
+             categories: journal metadata, article metadata, and issue metadata. In this Suite, the metadata specific to the journal is
+            within the
+             element <a href="n-vc40.html"><span class="elementname">Journal Metadata</span></a> <a href="n-vc40.html"><span class="elementtag">&lt;journal-meta&gt;</span></a> and the metadata specific both to the article and to the particular issue of the journal (if any) is within the <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a> <a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> element.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  article-meta %article-meta-model;                         &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-hrc0.html"><span class="elementname">Article Identifier</span></a> <a href="n-hrc0.html"><span class="elementtag">&lt;article-id&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-udc0.html"><span class="elementname">Article Grouping Data</span></a> <a href="n-udc0.html"><span class="elementtag">&lt;article-categories&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-7bd0.html"><span class="elementname">Title Group</span></a> <a href="n-7bd0.html"><span class="elementtag">&lt;title-group&gt;</span></a>, zero or one
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-k3a0.html"><span class="elementname">Contributor Group</span></a> <a href="n-k3a0.html"><span class="elementtag">&lt;contrib-group&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-gi20.html"><span class="elementname">Affiliation</span></a> <a href="n-gi20.html"><span class="elementtag">&lt;aff&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-bsh0.html"><span class="elementname">X - Generated Text and Punctuation</span></a> <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-ca30.html"><span class="elementname">Author Note Group</span></a> <a href="n-ca30.html"><span class="elementtag">&lt;author-notes&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-ay70.html"><span class="elementname">Publication Date</span></a> <a href="n-ay70.html"><span class="elementtag">&lt;pub-date&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-23h0.html"><span class="elementname">Volume Number</span></a> <a href="n-23h0.html"><span class="elementtag">&lt;volume&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-juh0.html"><span class="elementname">Volume Identifier</span></a> <a href="n-juh0.html"><span class="elementtag">&lt;volume-id&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-i6v0.html"><span class="elementname">Issue Number</span></a> <a href="n-i6v0.html"><span class="elementtag">&lt;issue&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-wyv0.html"><span class="elementname">Issue Identifier</span></a> <a href="n-wyv0.html"><span class="elementtag">&lt;issue-id&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-byv0.html"><span class="elementname">Issue Title</span></a> <a href="n-byv0.html"><span class="elementtag">&lt;issue-title&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-d260.html"><span class="elementname">Supplement Information</span></a> <a href="n-d260.html"><span class="elementtag">&lt;supplement&gt;</span></a>, zero or one
+                  </li>
+                  <li>Optionally any one of:
+                     <ul class="bullist">
+                        <li>The following, in order:
+                           <ul class="bullist">
+                              <li>Optionally, the following sequence (in order):
+                                 <ul class="bullist">
+                                    <li>
+                                                                                    <a href="n-gqw0.html"><span class="elementname">First Page</span></a> <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a>
+                                                                                 
+                                    </li>
+                                    <li>
+                                                                                    <a href="n-ap40.html"><span class="elementname">Last Page</span></a> <a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a>, zero or one
+                                    </li>
+                                 </ul>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-art0.html"><span class="elementname">Page Ranges</span></a> <a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a>, zero or one
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-pdu0.html"><span class="elementname">Electronic Location Identifier</span></a> <a href="n-pdu0.html"><span class="elementtag">&lt;elocation-id&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>All the address linking elements:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-chu0.html"><span class="elementname">Email Address</span></a> <a href="n-chu0.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-ekw0.html"><span class="elementname">External Link</span></a> <a href="n-ekw0.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-8yr0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-8yr0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-z770.html"><span class="elementname">Product Information</span></a> <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-4a60.html"><span class="elementname">Supplementary Material</span></a> <a href="n-4a60.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-emx0.html"><span class="elementname">History: Document History</span></a> <a href="n-emx0.html"><span class="elementtag">&lt;history&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-haa0.html"><span class="elementname">Copyright Statement</span></a> <a href="n-haa0.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-n4a0.html"><span class="elementname">Copyright Year</span></a> <a href="n-n4a0.html"><span class="elementtag">&lt;copyright-year&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-vh40.html"><span class="elementname">License Information</span></a> <a href="n-vh40.html"><span class="elementtag">&lt;license&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-2qt0.html"><span class="elementname">Permissions</span></a> <a href="n-2qt0.html"><span class="elementtag">&lt;permissions&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-vvf0.html"><span class="elementname">URI for This Same Article Online</span></a> <a href="n-vvf0.html"><span class="elementtag">&lt;self-uri&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a> <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-8a20.html"><span class="elementname">Abstract</span></a> <a href="n-8a20.html"><span class="elementtag">&lt;abstract&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-2zd0.html"><span class="elementname">Translated Abstract</span></a> <a href="n-2zd0.html"><span class="elementtag">&lt;trans-abstract&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-yf40.html"><span class="elementname">Keyword Group</span></a> <a href="n-yf40.html"><span class="elementtag">&lt;kwd-group&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-vi80.html"><span class="elementname">Contract Number</span></a> <a href="n-vi80.html"><span class="elementtag">&lt;contract-num&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-fq80.html"><span class="elementname">Contract Sponsor</span></a> <a href="n-fq80.html"><span class="elementtag">&lt;contract-sponsor&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-bnx0.html"><span class="elementname">Grant Number</span></a> <a href="n-bnx0.html"><span class="elementtag">&lt;grant-num&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-5ix0.html"><span class="elementname">Grant Sponsor</span></a> <a href="n-5ix0.html"><span class="elementtag">&lt;grant-sponsor&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-dr80.html"><span class="elementname">Conference Information</span></a> <a href="n-dr80.html"><span class="elementtag">&lt;conference&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-c6a0.html"><span class="elementname">Counts</span></a> <a href="n-c6a0.html"><span class="elementtag">&lt;counts&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-6ra0.html"><span class="elementname">Custom Metadata Wrapper</span></a> <a href="n-6ra0.html"><span class="elementtag">&lt;custom-meta-wrap&gt;</span></a>, zero or one
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-i9w0.html"><span class="elementtag">&lt;front&gt;</span></a> <a href="n-i9w0.html"><span class="elementname">Front Matter</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="pmc"&gt;BMJ&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="pubmed"&gt;BMJ&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="publisher"&gt;BR MED J&lt;/journal-id&gt;
+&lt;abbrev-journal-title&gt;BR MED J&lt;/abbrev-journal-title&gt;
+&lt;issn&gt;0959-8138&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;British Medical Journal&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;/journal-meta&gt;
+<strong><span class="focus">&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;10092260&lt;/article-id&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital care for elderly
+people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;xref ref-type="aff"&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Young&lt;/surname&gt;
+&lt;given-names&gt;John G.&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;consultant physician&lt;/role&gt;
+&lt;xref ref-type="aff"&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Langhorne&lt;/surname&gt;
+&lt;given-names&gt;Peter Parker ("Spider")&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;senior lecturer&lt;/role&gt;
+&lt;xref ref-type="aff"&gt;&lt;sup&gt;&lt;italic&gt;b&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;
+&lt;author-comment&gt;&lt;p&gt;on behalf of the Day Hospital Group&lt;/p&gt;
+&lt;/author-comment&gt;&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5
+0NA, &lt;sup&gt;&lt;italic&gt;b&lt;/italic&gt;&lt;/sup&gt;Academic Section
+of Geriatric Medicine, Royal Infirmary, Glasgow G4 0SF&lt;/aff&gt;
+&lt;author-notes&gt;
+&lt;fn fn-type="con"&gt;
+&lt;p&gt;Contributors: AF planned and initiated the
+review,...&lt;/p&gt;
+&lt;/fn&gt;
+&lt;fn&gt;&lt;p&gt;Correspondence to: Dr Forster
+&lt;email&gt;a.forster@leeds.ac.uk&lt;/email&gt;&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/author-notes&gt;
+&lt;pub-date pub-type="pub"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;&lt;year&gt;1999&lt;/year&gt;&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted"&gt;
+&lt;day&gt;29&lt;/day&gt;&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British Medical
+Journal&lt;/copyright-statement&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;...
+&lt;/abstract&gt;
+&lt;/article-meta&gt;</span></strong>
+&lt;/front&gt;
+&lt;body&gt;...
+&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/article&gt;
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

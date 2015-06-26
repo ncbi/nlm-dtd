@@ -1,0 +1,137 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Publication Date</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;pub-date&gt;</h1>
+         <h1 class="elementname">Publication Date</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Date this article was published or released in one particular
+                   format, for example, as an preprint electronic document
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">As part of the article metadata, the <a href="n-ay70.html"><span class="elementtag">&lt;pub-date&gt;</span></a> is allowed to repeat; each repetition can take a <a href="n-iij0.html"><span class="attrtag">pub-type</span></a> attribute to distinguish which form of
+                   publication, for example, print publication, preprint distribution, electronic
+                   publication, etc.
+         </p>
+         <p class="para">While most publication dates will either be a season and a year (e.g., Spring 1999) or a year with a possible day and month
+            (e.g., January 1, 1999), sometimes the publication date will identify both the season and date.  A publication date of &#8220;Spring
+            1999; January 29, 1999&#8221; should be tagged:
+         </p>
+         <div class="codeblock"><pre>
+&lt;pub-date pub-type="pub"&gt;
+&lt;season&gt;Spring&lt;/season&gt;
+&lt;day&gt;29&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;
+</pre></div>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-iij0.html"><span class="attrtag">pub-type</span></a> <a href="n-iij0.html"><span class="attrname">Type of Publication</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  pub-date     %pub-date-model;                             &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-35f0.html"><span class="elementname">Season</span></a> <a href="n-35f0.html"><span class="elementtag">&lt;season&gt;</span></a>, zero or one
+                  </li>
+                  <li>Optionally, the following sequence (in order):
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-nya0.html"><span class="elementname">Day</span></a> <a href="n-nya0.html"><span class="elementtag">&lt;day&gt;</span></a>, zero or one
+                        </li>
+                        <li>
+                                                      <a href="n-s7s0.html"><span class="elementname">Month</span></a> <a href="n-s7s0.html"><span class="elementtag">&lt;month&gt;</span></a>, zero or one
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-edh0.html"><span class="elementname">Year</span></a> <a href="n-edh0.html"><span class="elementtag">&lt;year&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-ybg0.html"><span class="elementname">Date as a String</span></a> <a href="n-ybg0.html"><span class="elementtag">&lt;string-date&gt;</span></a>, zero or one
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+<strong><span class="focus">&lt;pub-date pub-type="pub"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;</span></strong>
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;
+&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted"&gt;
+&lt;day&gt;29&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British
+Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of day hospital 
+attendance in prolonging independent living for 
+elderly people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+...
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

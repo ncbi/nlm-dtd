@@ -1,0 +1,228 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Table Wrapper</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;table-wrap&gt;</h1>
+         <h1 class="elementname">Table Wrapper</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Used to hold a complete table, that is, not only the rows and columns that make up a table, but also the table’s caption or
+            title, list of table footnotes, alternative descriptions of the table for purposes of accessibility, etc.
+            
+         </p>
+         <p class="para">This element has also been designed to capture a construct named “table” that contains just a graphic or a list, rather than
+            the explicit rows and columns of a table element such as the XHTML <a href="n-m5s0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> because many publishers associate table captions and numbers with material that is not explicitly tabular.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">For a detailed discussion on the use of <span class="elementtag">&lt;table-wrap&gt;</span>, see <a href="n-sdb0.html#tag-table-wrap">Table and Table Wrapper</a>.
+            
+         </p>
+         <p class="para">Within the <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element, the row and column tags that describe the table cells are defined by the XHTML table model.
+            
+         </p>
+         <p class="para">Many journal tag sets use an element called “Table Footnote” (with a tag such as <tt>&lt;tblfn&gt;</tt>) for footnotes inside a table. This Tag Set uses <a href="n-bv80.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> inside tables, as well as everywhere else, relying instead on context to differentiate table footnotes. Footnotes inside
+            a <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> are assumed to be footnotes to the table and, as part of the table, are displayed at the bottom of the table, usually as
+            part of the <a href="n-jvs0.html" target="main" title="Table Wrapper Footer"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a>, rather than at the bottom of the page or otherwise separated from the display of the table. In fact, an author can put both
+            referenced footnotes and unreferenced paragraphs directly into the <a href="n-jvs0.html" target="main" title="Table Wrapper Footer"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a>.
+            
+         </p>
+         <p class="para">The <a href="n-65g0.html" target="main" title="Position"><span class="attrtag">@position</span></a> attribute may be used to indicate whether a <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> must be anchored at its exact location within the text or whether it may float, for example, to the top of the next page,
+            into the next column, to the end of a logical file, or within a separate window.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-hmf0.html" target="main"><span class="attrtag">Orientation</span></a> <a href="n-hmf0.html" target="main"><span class="attrname">Orientation</span></a></h5>
+         <h5 class="header"><a href="n-65g0.html" target="main"><span class="attrtag">position</span></a> <a href="n-65g0.html" target="main"><span class="attrname">Position</span></a></h5>
+         <h5 class="header"><a href="n-vwn0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-vwn0.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+         <h5 class="header"><a href="n-fzn0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fzn0.html" target="main"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The <a href="n-m5s0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> element is an element defined by the public XHTML table model. This element is not, in itself, a full table, but only the
+            rows and columns portions of a table. A full table may have other features, such as a title, caption, table footnotes, etc.
+            The <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element contains the full table, that is, both rows and columns as well as captions and footers. A full table (<a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>) may or may not include an actual <a href="n-m5s0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> element within it, because other constructions, such as 2-part lists, may also be given table titles, captions, etc.
+            
+         </p>
+         <p class="para">XHTML Table Processing Note: The standard XHMTL model has been modified to remove the <a href="n-5vc0.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a> element from within the <a href="n-m5s0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> element, because, in the base Suite, the <a href="n-5vc0.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a> element has been made part of the <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  table-wrap   <a href="n-tnp0.html" target="main" title="Table Wrapper Content Model"><span class="petag">%table-wrap-model;</span></a>                           &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">((object-id)*, (caption)?, 
+(alt-text | long-desc)*, 
+(disp-quote | speech | statement | verse-group | def-list | list | 
+alternatives | chem-struct-wrap | graphic | media | preformat | table)*, 
+table-wrap-foot?, attrib?, permissions?)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-g3w0.html" target="main" title="Object Identifier"><span class="elementtag">&lt;object-id&gt;</span></a> <a href="n-g3w0.html" target="main" title="<object-id&gt;"><span class="elementname">Object Identifier</span></a>, zero or more
+               </li>
+               <li>
+                  <a href="n-5vc0.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a> <a href="n-5vc0.html" target="main" title="<caption&gt;"><span class="elementname">Caption of a Figure, Table, Etc.</span></a>, zero or one
+               </li>
+               <li>Any combination of:
+                  <ul class="bullist">
+                     <li>All the accessibility elements:
+                        <ul class="bullist">
+                           <li>
+                              <a href="n-nc20.html" target="main" title="Alternate Title Text (For a Figure, Etc.)"><span class="elementtag">&lt;alt-text&gt;</span></a> <a href="n-nc20.html" target="main" title="<alt-text&gt;"><span class="elementname">Alternate Title Text (For a Figure, Etc.)</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-jku0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a> <a href="n-jku0.html" target="main" title="<long-desc&gt;"><span class="elementname">Long Description</span></a>
+                              
+                           </li>
+                        </ul>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>Any combination of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-tf50.html" target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a> <a href="n-tf50.html" target="main" title="<disp-quote&gt;"><span class="elementname">Quote, Displayed</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-smv0.html" target="main" title="Speech"><span class="elementtag">&lt;speech&gt;</span></a> <a href="n-smv0.html" target="main" title="<speech&gt;"><span class="elementname">Speech</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-bzv0.html" target="main" title="Statement, Formal"><span class="elementtag">&lt;statement&gt;</span></a> <a href="n-bzv0.html" target="main" title="<statement&gt;"><span class="elementname">Statement, Formal</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-rpt0.html" target="main" title="Verse Form for Poetry"><span class="elementtag">&lt;verse-group&gt;</span></a> <a href="n-rpt0.html" target="main" title="<verse-group&gt;"><span class="elementname">Verse Form for Poetry</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-wu50.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> <a href="n-wu50.html" target="main" title="<def-list&gt;"><span class="elementname">Definition List</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-fma0.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a> <a href="n-fma0.html" target="main" title="<list&gt;"><span class="elementname">List</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-7k20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> <a href="n-7k20.html" target="main" title="<alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> <a href="n-jnc0.html" target="main" title="<chem-struct-wrap&gt;"><span class="elementname">Chemical Structure Wrapper</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-tb80.html" target="main" title="<graphic&gt;"><span class="elementname">Graphic</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-f3u0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-f3u0.html" target="main" title="<media&gt;"><span class="elementname">Media Object</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-t9w0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-t9w0.html" target="main" title="<preformat&gt;"><span class="elementname">Preformatted Text</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-m5s0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> <a href="n-m5s0.html" target="main" title="<table&gt;"><span class="elementname">Table (XHTML table model)</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-jvs0.html" target="main" title="Table Wrapper Footer"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a> <a href="n-jvs0.html" target="main" title="<table-wrap-foot&gt;"><span class="elementname">Table Wrapper Footer</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-6n20.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-6n20.html" target="main" title="<attrib&gt;"><span class="elementname">Attribution</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-nyw0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-nyw0.html" target="main" title="<permissions&gt;"><span class="elementname">Permissions</span></a>, zero or one
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-b820.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-hq20.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-im20.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-xya0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-myu0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-sx40.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+<strong><span class="focus">&lt;table-wrap id="TN0.170"&gt;
+&lt;caption&gt;&lt;p&gt;Numbers of patients receiving institutional
+care ...&lt;/p&gt;
+&lt;/caption&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="3" align="center"
+rowspan="1"&gt;Institutional care&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="2" align="center"
+rowspan="1"&gt;&amp;#x2003;Bed use (days)&lt;/th&gt;
+&lt;/tr&gt;
+
+...
+
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td align="center"&gt;208/1224&lt;/td&gt;
+&lt;td align="center"&gt;244/1214&lt;/td&gt;
+&lt;td align="center"&gt;0.77 (0.52 to 1.13)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;15.0&lt;/td&gt;&lt;td align="center"&gt;16.4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table-wrap-foot&gt;
+&lt;fn-group&gt;
+&lt;fn id="TF1-150"&gt;&lt;p&gt;Data not available for 1 trial.&lt;/p&gt;&lt;/fn&gt;
+&lt;fn id="TF1-151"&gt;&lt;p&gt;P&amp;#x003C;0.05 (random effects model).&lt;/p&gt;&lt;/fn&gt;
+&lt;/fn-group&gt;
+&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;</span></strong>
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">display3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

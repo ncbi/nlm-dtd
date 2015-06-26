@@ -1,0 +1,63 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Parameter entity: Related Object Elements</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="petag">%related-object-elements;</h1>
+         <h1 class="pename">Related Object Elements</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Elements that can be included along with data characters inside the content model of the <a href="n-2q60.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a> element 
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Note: The parameter entity <a href="n-yg32.html" target="main" title="All Phrase-Level Elements"><span class="petag">%all-phrase;</span></a> was replicated and not used directly inside this parameter entity because the <a href="n-pz32.html" target="main" title="Journal Article Link Class Elements"><span class="petag">%article-link.class;</span></a> elements are repeated in <a href="n-2kv2.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a> and would therefore cause duplication. 
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ENTITY % related-object-elements 
+                        "| <a href="n-pz32.html" target="main" title="Journal Article Link Class Elements"><span class="petag">%article-link.class;</span></a> | 
+                         <a href="n-7y32.html" target="main" title="Appearance Class Elements"><span class="petag">%appearance.class;</span></a> | <a href="n-k752.html" target="main" title="Forced Break Formatting Class Elements"><span class="petag">%break.class;</span></a> |
+                         <a href="n-4sa2.html" target="main" title="Emphasis Rendition Class Elements"><span class="petag">%emphasis.class;</span></a>  |
+                         <a href="n-yuu2.html" target="main" title="Inline Display Class Elements"><span class="petag">%inline-display.class;</span></a> | 
+                         <a href="n-w4u2.html" target="main" title="Inline Mathematical Expressions Class Elements"><span class="petag">%inline-math.class;</span></a> | <a href="n-f4w2.html" target="main" title="Label Class Elements"><span class="petag">%label.class;</span></a> |
+                         <a href="n-drw2.html" target="main" title="Mathematical Expressions Class Elements"><span class="petag">%math.class;</span></a> | <a href="n-cnx2.html" target="main" title="Phrase Class Elements"><span class="petag">%phrase.class;</span></a> | 
+                         <a href="n-2kv2.html" target="main" title="Reference Elements (Bibliographic Citation) Class Elements"><span class="petag">%references.class;</span></a> |
+                         <a href="n-3qv2.html" target="main" title="Simple Links/Cross-References Class Elements"><span class="petag">%simple-link.class;</span></a> |
+                         <a href="n-r442.html" target="main" title="Up/Down Rendition Class Elements"><span class="petag">%subsup.class;</span></a> | <a href="n-fgs2.html" target="main" title="X - Generated Text/Punctuation Class Elements"><span class="petag">%x.class;</span></a>"                 &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">| inline-supplementary-material | related-article | related-object | hr | break | bold | italic | monospace | overline | overline-start
+            | overline-end | roman | sans-serif | sc | strike | underline | underline-start | underline-end | alternatives | inline-graphic
+            | private-char | chem-struct | inline-formula | label | tex-math | mml:math | abbrev | milestone-end | milestone-start | named-content
+            | styled-content | annotation | article-title | chapter-title | collab | comment | conf-date | conf-loc | conf-name | conf-sponsor
+            | date | date-in-citation | day | edition | email | elocation-id | etal | ext-link | fpage | gov | institution | isbn | issn
+            | issue | issue-id | issue-part | issue-title | lpage | month | name | object-id | page-range | part-title | patent | person-group
+            | pub-id | publisher-loc | publisher-name | role | season | series | size | source | std | string-name | supplement | trans-source
+            | trans-title | uri | volume | volume-id | volume-series | year | fn | target | xref | sub | sup | x
+         </p>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">archivecustom-models3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

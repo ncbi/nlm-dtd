@@ -1,0 +1,141 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Glossary Elements List</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;glossary&gt;</h1>
+         <h1 class="elementname">Glossary Elements List</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A section whose content is typically a
+                   list of terms and definitions, usually tagged as one or more two-part
+                   lists called <a href="n-2930.html"><span class="elementname">Definition List</span></a>s <a href="n-2930.html"><span class="elementtag">&lt;def-list&gt;</span></a>s. Typically part of the back matter of an article.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Authoring Note: A typical glossary might contain an optional
+                   introductory paragraph, followed by a <a href="n-2930.html"><span class="elementtag">&lt;def-list&gt;</span></a> or
+                   <a href="n-wh50.html"><span class="elementtag">&lt;gloss-group&gt;</span></a>, where glossary groups are headed
+                   sections of glossaries, each of which contains a <a href="n-2930.html"><span class="elementtag">&lt;def-list&gt;</span></a>.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-pv40.html"><span class="attrtag">content-type</span></a> <a href="n-pv40.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-t2s0.html"><span class="attrtag">id</span></a> <a href="n-t2s0.html"><span class="attrname">Identifier</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  glossary     %glossary-model;                             &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-3rx0.html"><span class="elementname">Title</span></a> <a href="n-3rx0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-tea0.html"><span class="elementname">Paragraph</span></a> <a href="n-tea0.html"><span class="elementtag">&lt;p&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-wh50.html"><span class="elementname">Glossary Group</span></a> <a href="n-wh50.html"><span class="elementtag">&lt;gloss-group&gt;</span></a>, zero or more
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-mz20.html"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-mz20.html"><span class="elementname">Back Matter</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+...
+&lt;back&gt;
+<strong><span class="focus">&lt;glossary&gt;
+&lt;title&gt;Glossary Terms, Acronyms, and Abbreviations&lt;/title&gt;
+
+&lt;gloss-group&gt;
+&lt;title&gt;Abbreviations&lt;/title&gt;
+&lt;def-list&gt;
+&lt;def-item&gt;
+&lt;term id="G15"&gt;F&lt;/term&gt;
+&lt;def&gt;&lt;p&gt;female&lt;/p&gt;&lt;/def&gt;
+&lt;/def-item&gt;
+&lt;def-item&gt;
+&lt;term id="G29"&gt;gnty&lt;/term&gt;
+&lt;def&gt;&lt;p&gt;genotype&lt;/p&gt;&lt;/def&gt;
+&lt;/def-item&gt;
+&lt;def-item&gt;
+&lt;term id="G43"&gt;M&lt;/term&gt;
+&lt;def&gt;&lt;p&gt;male&lt;/p&gt;&lt;/def&gt;
+&lt;/def-item&gt;
+&lt;/def-list&gt;
+&lt;/gloss-group&gt;
+
+&lt;gloss-group&gt;
+&lt;title&gt;Acronyms&lt;/title&gt;
+&lt;def-list&gt;
+&lt;def-item&gt;
+&lt;term id="G62"&gt;NIH&lt;/term&gt;
+&lt;def&gt;&lt;p&gt;National Institutes of
+Health&lt;/p&gt;&lt;/def&gt;
+&lt;/def-item&gt;
+&lt;def-item&gt;
+&lt;term id="G12"&gt;XML&lt;/term&gt;
+&lt;def&gt;&lt;p&gt;Extensible Markup Language&lt;/p&gt;&lt;/def&gt;
+&lt;/def-item&gt;
+&lt;/def-list&gt;
+&lt;/gloss-group&gt;
+
+&lt;gloss-group&gt;
+&lt;title&gt;Virology Terms and Phrases&lt;/title&gt;
+&lt;def-list&gt;
+&lt;def-item&gt;
+&lt;term id="G71"&gt;HBV&lt;/term&gt;
+&lt;def&gt;&lt;p&gt;hepatitis B virus&lt;/p&gt;&lt;/def&gt;
+&lt;/def-item&gt;
+&lt;def-item&gt;
+&lt;term id="G33"&gt;HBsAg&lt;/term&gt;
+&lt;def&gt;&lt;p&gt;hepatitis B surface antigen&lt;/p&gt;&lt;/def&gt;
+&lt;/def-item&gt;
+&lt;/def-list&gt;
+&lt;/gloss-group&gt;
+&lt;/glossary&gt;</span></strong>
+...
+&lt;ref-list&gt;...&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt; 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">backmatter.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,111 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Attribute: Type of Citation</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">citation-type</h1>
+         <h1 class="attrname">Type of Citation</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Defines the type of work being referenced (type of
+                    citation), for example, a book is being cited or a journal article is being cited
+         </p>
+      </div>
+      <h2 class="header">Usage</h2>
+      <p class="para">Some journal DTDs make a distinction between different types of
+                 references, for example, using different names and distinct content models for
+                 book references, journal references, patent references, etc. This attribute was
+                 designed to preserve the information about the type of reference, for those
+                 tagged references that explicitly describe their type.
+      </p>
+      <p class="para">Conversion Note: If the type of reference (<a href="n-jt30.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>)
+                 is not named in the source file, it need not be identified using this
+                 attribute.
+      </p>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5 class="heading"><a href="n-jt30.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-jt30.html"><span class="elementname">Citation</span></a></h5>
+            <h5 class="heading"><a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-6vw0.html"><span class="elementname">NLM Citation Model</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">book</td>
+                  <td class="attrmeaning">Book or book series</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">commun</td>
+                  <td class="attrmeaning">Informal or personal communication, such as a phone call or an email message</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">confproc</td>
+                  <td class="attrmeaning">Conference proceedings</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">discussion</td>
+                  <td class="attrmeaning">Discussion among a group in some forum &#8212; public,
+                                        private, or electronic &#8212; which may or may not be moderated, for example, a single discussion thread in
+                     a listserv
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">gov</td>
+                  <td class="attrmeaning">Government publication or government standard</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">journal</td>
+                  <td class="attrmeaning">Journal article</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">list</td>
+                  <td class="attrmeaning">Listserv or discussion group (as an entity, as opposed to a single discussion thread which uses the value &#8220;<tt>discussion</tt>&#8221;)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">other</td>
+                  <td class="attrmeaning">None of the listed types.</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">patent</td>
+                  <td class="attrmeaning">Patent or patent application</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">thesis</td>
+                  <td class="attrmeaning">Work written as part of the completion of an advanced
+                                 degree
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">web</td>
+                  <td class="attrmeaning">Website</td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Publisher</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2003-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Archive 2.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;publisher&gt;</h1>
+         <h1 class="elementname">Publisher</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Wrapper element for information about the person, company, or
+                   other entity which published a work
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  publisher    (publisher-name, publisher-loc?)             &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-3at0.html"><span class="elementname">Publisher&#8217;s Name</span></a> <a href="n-3at0.html"><span class="elementtag">&lt;publisher-name&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-g2t0.html"><span class="elementname">Publisher&#8217;s Location</span></a> <a href="n-g2t0.html"><span class="elementtag">&lt;publisher-loc&gt;</span></a>, zero or one
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-5mx0.html"><span class="elementtag">&lt;journal-meta&gt;</span></a> <a href="n-5mx0.html"><span class="elementname">Journal Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="pmc"&gt;BMJ&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="publisher"&gt;BR MED J&lt;/journal-id&gt;
+&lt;issn&gt;0959-8138&lt;/issn&gt;
+<strong><span class="focus">&lt;publisher&gt;
+&lt;publisher-name&gt;British Medical Journal&lt;/publisher-name&gt;
+&lt;/publisher&gt;</span></strong>
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;10092260&lt;/article-id&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital 
+care for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;...
+&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;...
+&lt;/pub-date&gt;...
+&lt;/article-meta&gt;... 
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">journalmeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Archive 2.0</h2>
+         <h4 class="pubdate">Version of 20040927</h4>
+      </div>
+   </body>
+</html>

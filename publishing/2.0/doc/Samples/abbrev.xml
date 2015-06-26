@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article article-type="research-article">
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for License Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta><?mtl /hellip?>
+<article-meta>
+<article-categories><?mtl hellip?><?mtl /hellip?></article-categories>
+<title-group>
+<article-title>The disabilities of the arm, shoulder and hand 
+(<abbrev>DASH</abbrev>) outcome questionnaire: longitudinal 
+construct validity and measuring self-rated health change after 
+surgery</article-title>
+</title-group>
+<contrib-group><?mtl hellip?><contrib></contrib><?mtl /hellip?></contrib-group>
+<?mtl hellip?>
+<pub-date><year>2003</year></pub-date>
+<fpage>Fake Page Info</fpage>
+<?mtl /hellip?>
+<copyright-statement>&copy;2003 Gummesson et al; licensee BioMed Central 
+Ltd.</copyright-statement>
+<copyright-year>2003</copyright-year>
+<license license-type="open-access">
+<p>This is an Open Access article: verbatim copying ...</p>
+</license>
+<abstract>
+<p><bold>Background:</bold> The disabilities of the arm, shoulder and 
+hand (<abbrev>DASH</abbrev>) questionnaire is a self-administered 
+region-specific outcome instrument developed as a measure of self-rated 
+upper-extremity disability and symptoms. The <abbrev>DASH</abbrev> 
+consists mainly of a 30-item disability/symptom scale, scored 0 (no 
+disability) to 100. The main purpose of this study was to assess 
+the <italic>longitudinal construct validity</italic> of the 
+<abbrev>DASH</abbrev> among patients undergoing surgery. The second 
+phase purpose was to quantify self-rated <italic>treatment 
+effectiveness</italic> after surgery.</p>
+<?mtl hellip?><p></p><?mtl /hellip?>
+</abstract>
+</article-meta>
+<?mtl hellip?></front>
+</article><?mtl /hellip?>

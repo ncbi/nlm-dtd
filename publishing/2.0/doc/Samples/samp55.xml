@@ -1,0 +1,127 @@
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<article>
+<front>
+<?mtl hellip?>
+<!--   Supplementary Material in the body -->
+<journal-meta>
+      <journal-id journal-id-type="pmc">pnas</journal-id>
+      <abbrev-journal-title abbrev-type="pubmed">Proc Natl Acad Sci U S
+A</abbrev-journal-title>
+      <abbrev-journal-title abbrev-type="publisher">PNAS</abbrev-journal-title>
+      <issn>0027-8424</issn>
+      <publisher>
+        <publisher-name>The National Academy of
+Sciences</publisher-name>
+      </publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">071034098</article-id>
+      <article-id pub-id-type="publisher-id">0340</article-id>
+      <article-id pub-id-type="doi">10.1073/pnas.071034098</article-id>
+<article-id pub-id-type="pmid">11274384</article-id>
+<article-categories>
+<subj-group>
+<subject>Physical Sciences</subject>
+<subj-group>
+<subject>Chemistry</subject>
+</subj-group>
+</subj-group>
+<subj-group>
+<subject>Biological Sciences</subject>
+<subj-group>
+<subject>Biophysics</subject>
+</subj-group>
+</subj-group>
+</article-categories>
+<title-group>
+        <article-title>Free energy reconstruction from nonequilibrium
+single-molecule pulling experiments</article-title>
+</title-group>
+<contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hummer</surname>
+            <given-names>Gerhard</given-names>
+          </name>
+          <xref ref-type="author-notes" rid="FN150">&#x002A;</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Szabo</surname>
+            <given-names>Attila</given-names>
+          </name>
+        </contrib>
+      </contrib-group>
+      <aff>Laboratory of Chemical Physics, National Institute of
+Diabetes and Digestive and Kidney Diseases, National Institutes of
+Health, Bethesda, MD 20892-0520</aff>
+      <author-notes>
+        <fn id="FN150">
+          <p>To whom reprint requests should be addressed at:
+LCP&#x002F;NIDDK, Bldg. 5, Rm. 132, National Institutes of Health,
+Bethesda, MD 20892-0520. E-mail:
+<email>hummer@helix.nih.gov</email>.</p>
+        </fn>
+        <fn fn-type="com">
+          <p>Communicated by David Chandler, University of California,
+Berkeley, CA</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="pub">
+        <day>27</day>
+        <month>3</month>
+        <year>2001</year>
+      </pub-date>
+      <volume>98</volume>
+      <issue>7</issue>
+      <fpage>3658</fpage>
+      <lpage>3661</lpage>
+      <history>
+        <date date-type="received">
+          <day>28</day>
+          <month>11</month>
+          <year>2000</year>
+        </date>
+        <date date-type="accepted">
+          <day>22</day>
+          <month>1</month>
+          <year>2001</year>
+        </date>
+      </history>
+      <copyright-statement>Copyright &#x00A9; 2001, The National Academy
+of Sciences</copyright-statement>
+<copyright-year>2001</copyright-year>
+      <related-article xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="11274379" related-article-type="commentary" vol="98"
+page="3636">See commentary on page 3636.</related-article>
+      <abstract>
+        <p>Laser tweezers and atomic force microscopes are increasingly
+used to probe the interactions and mechanical properties of individual
+molecules. Unfortunately, using such time-dependent perturbations to
+force rare molecular events also drives the system away from
+equilibrium. Nevertheless, we show how equilibrium free energy profiles
+can be extracted rigorously from repeated nonequilibrium force
+measurements on the basis of an extension of Jarzynski's remarkable
+identity between free energies and the irreversible work.</p>
+      </abstract>
+</article-meta>
+<?mtl /hellip?>
+</front>
+<body>
+<boxed-text>
+<title>Supplemental Material</title>
+<supplementary-material>
+<p>Movie clips to supplement this article are available 
+online at <ext-link ext-link-type="uri">radiographics.rsnajnls.org/cgi/content/full/21/4/943/DC1
+</ext-link>.
+</p>
+</supplementary-material>
+</boxed-text>
+<p>Anterior fontanelle imaging has traditionally 
+been the mainstay of neonatal cranial ultrasonography 
+(US). However, this traditional approach has limited 
+diagnostic accuracy, ...</p><?mtl hellip?>
+<?mtl /hellip?>
+</body>
+<?mtl hellip?>
+</article><?mtl /hellip?> 

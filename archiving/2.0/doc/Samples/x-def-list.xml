@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../../../NCBI/ArchivingDTD/DTD/Working/archivearticle.dtd">
+<?mtl hellip?><article>
+<front><article-meta></article-meta></front>
+<body><?mtl /hellip?>
+<def-list list-type="simple">
+<def-item>
+<term>AFLP</term><x>, </x>
+<def><p>Amplified Length Polymorphism</p></def>
+</def-item><x>; </x>
+<def-item>
+<term>AG</term><x>, </x>
+<def><p>Anastomosis Groups</p></def>
+</def-item><x>; </x>
+<def-item>
+<term>BSC</term><x>, </x>
+<def><p>Biological Species Concept</p></def>
+</def-item><x>; </x>
+<def-item>
+<term>EDH</term><x>, </x>
+<def><p>Enviromental Deterministic Hypothesis</p></def>
+</def-item><x>; </x>
+<def-item>
+<term>FS</term><x>, </x>
+<def><p>Female-Sterile</p></def>
+</def-item><x>.</x>
+</def-list>
+<?mtl hellip?></body>
+</article><?mtl /hellip?>

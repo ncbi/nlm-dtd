@@ -1,0 +1,145 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Type of Section</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">sec-type</h1>
+         <h1 class="attrname">Type of Section</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Identifies the semantic content of a section, where that is
+                   known, for example, a section on &#8220;Materials&#8221; or a &#8220;Conclusions&#8221;
+         </p>
+      </div>
+      <h2 class="header">Usage</h2>
+      <p class="para">This attribute is typically provided as part of conversion when the semantic information is explicit in the source documents.
+         Although designed to accept any text as its value, for best practice, this attribute should be used only if the section is
+         one of the types listed below and should otherwise be omitted. This is a way to provide information classing to structural
+         sections, for searching and grouping purposes.
+      </p>
+      <p class="para">A section that contains content of more than one type should have the type <tt>ID</tt>s combined (e.g., &#8220;Materials and Methods&#8221; would be tagged &#8220;<tt>type="materials|methods"</tt>&#8221;).
+      </p>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5 class="heading"><a href="n-z5f0.html"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-z5f0.html"><span class="elementname">Section</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">Names the main semantic type of section content. This attribute may take any value, but is really only meaningful when a list
+                     of values is maintained and articles are tagged accordingly. See the list of suggested values such as &#8220;<tt>conclusions</tt>&#8221; below.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+            <h4 class="header"><span class="headerlabel">Suggested usage</span></h4>
+                         
+            <p class="para">Recommended section type values are:
+                             
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>cases</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Cases/Case Reports</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>conclusions</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Conclusions/Comment</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>discussion</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Discussion/Interpretation</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>intro</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Introduction/Synopsis/Overview</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>materials</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Materials</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>methods</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Methods/Methodology/Procedures</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>results</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Results/Statement of Findings</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>subjects</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Subjects/Participants/Patients</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>supplementary-material</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Supplementary materials</p>
+                        </td>
+                     </tr>
+                  </table>
+               </div> 
+            </p>
+                   
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

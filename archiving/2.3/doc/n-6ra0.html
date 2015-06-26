@@ -1,0 +1,80 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Custom Metadata Wrapper</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;custom-meta-wrap&gt;</h1>
+         <h1 class="elementname">Custom Metadata Wrapper</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Some Tag Sets allow for metadata above and beyond that which can be specified by this Tag Set. This element is a wrapper element
+            used to contain all these additional metadata elements.
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The element <a href="n-6ra0.html"><span class="elementtag">&lt;custom-meta-wrap&gt;</span></a> acts as a wrapper element to contain an infinite number of <a href="n-gda0.html"><span class="elementtag">&lt;custom-meta&gt;</span></a> elements.  Each <a href="n-gda0.html"><span class="elementtag">&lt;custom-meta&gt;</span></a> element houses a name/value pair, <a href="n-wz40.html"><span class="elementtag">&lt;meta-name&gt;</span></a> and <a href="n-p3s0.html"><span class="elementtag">&lt;meta-value&gt;</span></a> respectively, which name and provide a value for a single metadata field.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  custom-meta-wrap
+                        %custom-meta-wrap-model;                     &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">
+                        <a href="n-gda0.html"><span class="elementname">Custom Metadata</span></a> <a href="n-gda0.html"><span class="elementtag">&lt;custom-meta&gt;</span></a>, one or more
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-vc40.html"><span class="elementtag">&lt;journal-meta&gt;</span></a> <a href="n-vc40.html"><span class="elementname">Journal Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-title&gt;Biodiversity &amp;amp; Mutation&lt;/journal-title&gt;
+...
+<strong><span class="focus">&lt;custom-meta-wrap&gt;
+&lt;custom-meta&gt;
+&lt;meta-name&gt;journalsubtitle&lt;/meta-name&gt;
+&lt;meta-value&gt;for biotechnology professionals&lt;/meta-value&gt;
+&lt;/custom-meta&gt;
+&lt;/custom-meta-wrap&gt;</span></strong>
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;...&lt;/article-meta&gt;
+&lt;/front&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

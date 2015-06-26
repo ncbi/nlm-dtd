@@ -1,0 +1,46 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Parameter entity: History Date Types</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2003-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="petag">%date-types;</h1>
+         <h1 class="pename">History Date Types</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Names the values that may be used with the <a href="n-dv70.html"><span class="attrtag">date-type</span></a> attribute of the <a href="n-kh50.html"><span class="elementtag">&lt;date&gt;</span></a> element.  This attribute should only be used if the date is one of the known types.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-57a0.html"><span class="elementtag">&lt;history&gt;</span></a> element contains one
+                       or more <a href="n-kh50.html"><span class="elementtag">&lt;date&gt;</span></a> elements that record events in the
+                       life of a publication. Values for the <a href="n-dv70.html"><span class="attrtag">date-type</span></a> attribute include: &#8220;<tt>accepted</tt>&#8221; (the date the manuscript was accepted), &#8220;<tt>received</tt>&#8221; (the date manuscript received), &#8220;<tt>rev-request</tt>&#8221; (the date revisions were requested or manuscript was returned), and &#8220;<tt>rev-recd</tt>&#8221; (the date
+                       revised manuscript was received).
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header">Declaration</h2><pre class="contentdesc">&lt;!ENTITY % date-types   "accepted | received | rev-request | 
+                         rev-recd"                                   &gt;</pre></div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="pubdate">Version of 20041115</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,111 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Element: Custom Metadata</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;custom-meta&gt;</h1>
+         <h1 class="elementname">Custom Metadata</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Some journal tag sets allow for metadata above and beyond that which can be specified by this Tag Set. This element is used
+            to capture a metadata element that has not been defined explicitly in the models for this Tag Set, so that the intellectual
+            content will not be lost. 
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-dfu0.html" target="main" title="Custom Metadata"><span class="elementtag">&lt;custom-meta&gt;</span></a> element allows for an infinite variety of name/value pairs, with few constraints on the length or content of the value. This
+            element will probably be used for special cases, product-specific material, or other unusual metadata, for example, the journal-history
+            information preserved in at least one publisher’s Tag Set. 
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-3hz0.html" target="main"><span class="attrtag">id</span></a> <a href="n-3hz0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-cm22.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-cm22.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+         <h5 class="header"><a href="n-a7c2.html" target="main"><span class="attrtag">xlink:actuate</span></a> <a href="n-a7c2.html" target="main"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-afc2.html" target="main"><span class="attrtag">xlink:href</span></a> <a href="n-afc2.html" target="main"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-8nc2.html" target="main"><span class="attrtag">xlink:role</span></a> <a href="n-8nc2.html" target="main"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-h6c2.html" target="main"><span class="attrtag">xlink:show</span></a> <a href="n-h6c2.html" target="main"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-prc2.html" target="main"><span class="attrtag">xlink:title</span></a> <a href="n-prc2.html" target="main"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-7ic2.html" target="main"><span class="attrtag">xlink:type</span></a> <a href="n-7ic2.html" target="main"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-dpc2.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-dpc2.html" target="main"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The element <a href="n-qgu0.html" target="main" title="Custom Metadata Group"><span class="elementtag">&lt;custom-meta-group&gt;</span></a> is a grouping element that holds one or more <a href="n-dfu0.html" target="main" title="Custom Metadata"><span class="elementtag">&lt;custom-meta&gt;</span></a> elements. Each <a href="n-dfu0.html" target="main" title="Custom Metadata"><span class="elementtag">&lt;custom-meta&gt;</span></a> element contains a name/value pair, <a href="n-xq70.html" target="main" title="Metadata Data Name for Custom Metadata"><span class="elementtag">&lt;meta-name&gt;</span></a> and <a href="n-nke0.html" target="main" title="Metadata Data Value for Custom Metadata"><span class="elementtag">&lt;meta-value&gt;</span></a> respectively, which name and provide a value for a single metadata field.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  custom-meta  <a href="n-6i82.html" target="main" title="Custom Metadata Model"><span class="petag">%custom-meta-model;</span></a>                          &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(meta-name, meta-value)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-xq70.html" target="main" title="Metadata Data Name for Custom Metadata"><span class="elementtag">&lt;meta-name&gt;</span></a> <a href="n-xq70.html" target="main" title="<meta-name&gt;"><span class="elementname">Metadata Data Name for Custom Metadata</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-nke0.html" target="main" title="Metadata Data Value for Custom Metadata"><span class="elementtag">&lt;meta-value&gt;</span></a> <a href="n-nke0.html" target="main" title="<meta-value&gt;"><span class="elementname">Metadata Data Value for Custom Metadata</span></a>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-qgu0.html" target="main" title="Custom Metadata Group"><span class="elementtag">&lt;custom-meta-group&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-title-group&gt;
+&lt;journal-title&gt;Biodiversity &amp;amp; Mutation&lt;/journal-title&gt;
+&lt;/journal-title-group&gt;
+...
+&lt;custom-meta-group&gt;
+<strong><span class="focus">&lt;custom-meta&gt;
+&lt;meta-name&gt;prev-journal-title&lt;/meta-name&gt;
+&lt;meta-value&gt;Evolution of Biodiversity&lt;/meta-value&gt;
+&lt;/custom-meta&gt;</span></strong>
+&lt;/custom-meta-group&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;...&lt;/article-meta&gt;
+&lt;/front&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

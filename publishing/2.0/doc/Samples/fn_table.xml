@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher>
+<publisher-name>...</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">WES-10092260</article-id>
+<title-group>
+<article-title>Systematic review of day hospital care for 
+elderly people</article-title>
+</title-group>
+<contrib-group>
+<contrib>
+<name><surname>...</surname>
+<given-names>...</given-names></name>
+</contrib>
+</contrib-group> 
+<aff> </aff>
+<pub-date pub-type="pub"><day>27</day>
+<month>3</month><year>1999</year></pub-date>
+<fpage>...</fpage>
+<copyright-year>1999</copyright-year>
+</article-meta>
+</front>
+<body>
+<sec>
+<title>Results</title> 
+<p>We identified .... </p><?mtl /hellip?>
+   <table-wrap id="TN0.170">
+   <label>Table</label>
+   <caption><p>Numbers of patients receiving institutional 
+   care at the end of scheduled follow up and use of hospital 
+   beds among those allocated to day hospital or alternative 
+   services</p></caption> 
+   <table> 
+   <tr>
+   <?mtl hellip?><td> </td> <?mtl /hellip?>
+   </tr>
+   <?mtl hellip?> <?mtl /hellip?>
+   <tr>
+   <td>No comprehensive care (3 trials)</td> 
+   <td align="center">37/411</td> 
+   <td align="center">&amp;#x2002;66/403</td> 
+   <td align="center">0.50<xref ref-type="table-fn" rid="TF1-151"></xref>
+   (0.26 to 0.96)</td> 
+   <?mtl hellip?> <?mtl /hellip?>
+   </tr>
+   </table>
+   <table-wrap-foot>
+<fn id="TF1-150"><p>Data not available for 1 trial.</p></fn> 
+<fn id="TF1-151"><p>P&amp;#x003C;0.05 (random effects model).</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<?mtl hellip?></sec>
+</body>
+</article><?mtl /hellip?>

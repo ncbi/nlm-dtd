@@ -1,0 +1,199 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Alternatives For Processing</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;alternatives&gt;</h1>
+         <h1 class="elementname">Alternatives For Processing</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Container element used to hold a group of processing alternatives, for example, a single <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> that ships in different formats (tif, gif, jpeg) or different resolutions. This element is a physical grouping to contain
+            multiple logically equivalent (substitutable) versions of the same information object. Typically these are processing alternatives
+            and the reader is expected to see only one version of the object.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para"><a href="n-7k20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> is not inherently block nor inline in nature, because that is determined by context and usage. Typical examples for this
+            element are a <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> that ships with an article in multiple versions (for example, .tif, .jpeg, and SVG-file); or an <a href="n-xka0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a> that is available as a .tif (<a href="n-33a0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a>), encoded in MathML, or encoded in TeX.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  alternatives <a href="n-4h60.html" target="main" title="Alternatives Model"><span class="petag">%alternatives-model;</span></a>                         &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(chem-struct | graphic | inline-graphic | inline-supplementary-material | media | textual-form | preformat | supplementary-material
+            | table | mml:math)+
+         </p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">One or more of any of:
+            <ul class="bullist">
+               <li>
+                  <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-57c0.html" target="main" title="<chem-struct&gt;"><span class="elementname">Chemical Structure (Display)</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-tb80.html" target="main" title="<graphic&gt;"><span class="elementname">Graphic</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-33a0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a> <a href="n-33a0.html" target="main" title="<inline-graphic&gt;"><span class="elementname">Graphic, Inline</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-x5a0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> <a href="n-x5a0.html" target="main" title="<inline-supplementary-material&gt;"><span class="elementname">Inline Supplementary Material</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-f3u0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-f3u0.html" target="main" title="<media&gt;"><span class="elementname">Media Object</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-89s0.html" target="main" title="Textual Form"><span class="elementtag">&lt;textual-form&gt;</span></a> <a href="n-89s0.html" target="main" title="<textual-form&gt;"><span class="elementname">Textual Form</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-t9w0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-t9w0.html" target="main" title="<preformat&gt;"><span class="elementname">Preformatted Text</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-jz40.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-jz40.html" target="main" title="<supplementary-material&gt;"><span class="elementname">Supplementary Material</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-m5s0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> <a href="n-m5s0.html" target="main" title="<table&gt;"><span class="elementname">Table (XHTML table model)</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-dfu0.html" target="main" title="Math (MathML 2.0 Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> <a href="n-dfu0.html" target="main" title="<mml:math&gt;"><span class="elementname">Math (MathML 2.0 Tag Set)</span></a>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-6t20.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a>, <a href="n-6n20.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a>, <a href="n-j2c0.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a>, <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-cqc0.html" target="main" title="Comment in a Citation"><span class="elementtag">&lt;comment&gt;</span></a>, <a href="n-rs30.html" target="main" title="Conference Theme"><span class="elementtag">&lt;conf-theme&gt;</span></a>, <a href="n-7c50.html" target="main" title="Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a>, <a href="n-ev50.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-xka0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a>, <a href="n-ita0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a>, <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-dgu0.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a>, <a href="n-yuw0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a>, <a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-hwv0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a>, <a href="n-fsv0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a>, <a href="n-x340.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a>, <a href="n-te40.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a>, <a href="n-s640.html" target="main" title="Article Subtitle"><span class="elementtag">&lt;subtitle&gt;</span></a>, <a href="n-9y40.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a>, <a href="n-qb40.html" target="main" title="Supplement Information"><span class="elementtag">&lt;supplement&gt;</span></a>, <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-ers0.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>, <a href="n-njs0.html" target="main" title="Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a>, <a href="n-yut0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a>, <a href="n-bft0.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a>, <a href="n-pdt0.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a>, <a href="n-abt0.html" target="main" title="Line of a Verse"><span class="elementtag">&lt;verse-line&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">Alternatives to a table inside <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="pbio-0020328-t003" position="float"&gt;
+&lt;caption&gt;
+&lt;title&gt;Systematic Inactivation of SpoIIID-Activated Genes&lt;/title&gt;
+&lt;/caption&gt;
+<strong><span class="focus">&lt;alternatives&gt;
+&lt;graphic xlink:href="pbio.0020328.t003.tif"&gt;
+&lt;object-id pub-id-type="doi" content-type="image"&gt;10.0020328/2007SS000314(2007)&lt;/object-id&gt;
+&lt;/graphic&gt;
+&lt;graphic xlink:href="pbio.0020328.t003.gif"&gt;
+&lt;object-id pub-id-type="doi" content-type="image"&gt;10.0020328a/2007SS000314(2007)&lt;/object-id&gt;
+&lt;/graphic&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;td&gt;Strain&lt;/td&gt;
+&lt;td&gt;Description&lt;/td&gt;
+&lt;td&gt;Sporulation Efficiency (Percent)&lt;sup&gt;a&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+...
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/alternatives&gt;</span></strong>
+&lt;table-wrap-foot&gt;
+&lt;fn id="nt301"&gt;
+&lt;p&gt;&lt;sup&gt;a&lt;/sup&gt;&amp;thinsp;Sporulation efficiency is defined as the
+number of heat-resistant spores ...&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <p class="para">Alternatives to an equation, including MathML and a graphic:</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;disp-formula id="pbio-0020328-e001"&gt;
+<strong><span class="focus">&lt;alternatives&gt;
+&lt;mml:math display='block'&gt;&lt;mml:mrow&gt;&lt;mml:msub&gt;
+&lt;mml:mrow&gt;&lt;mml:mtext&gt;Strength&lt;/mml:mtext&gt;&lt;/mml:mrow&gt;
+&lt;mml:mi&gt;i&lt;/mml:mi&gt;&lt;/mml:msub&gt;
+&lt;mml:mo&gt;=&lt;/mml:mo&gt;
+&lt;mml:mi&gt;log&lt;/mml:mi&gt;
+&lt;mml:mo&gt;&amp;ApplyFunction;&lt;/mml:mo&gt;
+&lt;mml:mfrac&gt;
+...
+&lt;/mml:mfrac&gt;
+...
+&lt;/mml:math&gt;
+
+&lt;graphic xlink:href="pbio.0020328.e001.gif"/&gt;
+&lt;/alternatives&gt;</span></strong>
+&lt;/disp-formula&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 3</h3>
+         <p class="para">Alternatives to a table including supplementary material</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="pbio-0020328-t002" position="float"&gt;
+&lt;caption&gt;
+&lt;title&gt;Genes Activated in the Mother-Cell Line of Gene Expression&lt;/title&gt;
+&lt;/caption&gt;
+<strong><span class="focus">&lt;alternatives&gt;
+&lt;graphic xlink:href="pbio.0020328.t002.tif"&gt;
+&lt;object-id pub-id-type="doi" content-type="image"&gt;10.0020328/2007SS000314(2007)&lt;/object-id&gt;
+&lt;/graphic&gt;
+&lt;table&gt;
+...
+&lt;/table&gt;
+&lt;supplementary-material id="S1" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:title="local_file" xlink:href="pbio-0020328-t002.xls"
+mimetype="application/vnd.ms-excel"&gt;
+&lt;caption&gt;
+&lt;p&gt;Supplementary Microsoft Excel file (raw study data) supplied by authors.&lt;/p&gt;
+&lt;/caption&gt;
+&lt;/supplementary-material&gt;
+&lt;/alternatives&gt;</span></strong>
+&lt;table-wrap-foot&gt;...&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

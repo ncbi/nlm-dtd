@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<article>
+<?mtl hellip?><front><journal-meta>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher><publisher-name>...</publisher-name></publisher>
+</journal-meta>
+<article-meta><article-id>...</article-id>
+<title-group><article-title>...</article-title></title-group>
+<pub-date><day>...</day><month>...</month><year>...</year>
+</pub-date>
+<fpage>...</fpage><lpage>...</lpage>
+<copyright-statement>...</copyright-statement>
+<copyright-year>...</copyright-year></article-meta>
+</front><?mtl /hellip?>
+<back>
+<ref-list>
+<ref>
+<nlm-citation>
+<person-group>
+<?mtl hellip?><name><surname>...</surname><given-names>...</given-names></name><?mtl /hellip?>
+</person-group>
+<source>Nature (London)</source>
+<year>2001</year>
+<volume>411</volume>
+<fpage>498</fpage>
+<lpage>501</lpage>
+<pub-id pub-id-type="pmid">11373685</pub-id>
+</nlm-citation>
+</ref>
+</ref-list>
+<fn-group>
+<fn>
+<p>This paper was submitted directly (Track II) to the PNAS
+office.</p>
+</fn>
+<fn id="FN153">
+<p>&#x00A7; Barta, A., Dorner, S., Polacek, N., Berg, J. M.,
+Lorsch, J. R., Nissen, P., Hansen, J., Muth, G. W. &#x0026; Ban, N. (2000) <italic>Science</italic> <bold>291</bold>, 203a (abstr.).</p>
+</fn>
+</fn-group>
+</back>
+</article> 

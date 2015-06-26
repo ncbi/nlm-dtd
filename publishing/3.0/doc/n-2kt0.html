@@ -1,0 +1,158 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Element: Reference Item</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;ref&gt;</h1>
+         <h1 class="elementname">Reference Item</h1>
+      </div>
+      <div class="definition">
+         <p class="para">One item in a bibliographic list
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">A <a href="n-2kt0.html" target="main" title="Reference Item"><span class="elementtag">&lt;ref&gt;</span></a> is typically a citation describing a referenced work (see <a href="n-5332.html#tag-citation">Tagging References</a>).  This Tag Set allows notes as well as citations in a bibliographic list, but best practice is to place notes in an <a href="n-u4u0.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a> or <a href="n-w840.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a> section and use <a href="n-k3t0.html" target="main" title="Reference List (Bibliographic Reference List)"><span class="elementtag">&lt;ref-list&gt;</span></a> only for bibliographic citations.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-cdd0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-cdd0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-gyr0.html" target="main"><span class="attrtag">id</span></a> <a href="n-gyr0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-vky0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-vky0.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  ref          <a href="n-22k2.html" target="main" title="Reference Item Model"><span class="petag">%ref-model;</span></a>                                  &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">(label?, 
+(element-citation | mixed-citation | nlm-citation | note)+)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-axx0.html" target="main" title="Label (Of a Figure, Reference, Etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-axx0.html" target="main" title="<label&gt;"><span class="elementname">Label (Of a Figure, Reference, Etc.)</span></a>, zero or one
+               </li>
+               <li>One or more of any of:
+                  <ul class="bullist">
+                     <li>All the citation elements:
+                        <ul class="bullist">
+                           <li>
+                              <a href="n-8xa0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> <a href="n-8xa0.html" target="main" title="<element-citation&gt;"><span class="elementname">Element Citation</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-t5v0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> <a href="n-t5v0.html" target="main" title="<mixed-citation&gt;"><span class="elementname">Mixed Citation</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-hzv0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-hzv0.html" target="main" title="<nlm-citation&gt;"><span class="elementname">NLM Citation</span></a>
+                              
+                           </li>
+                        </ul>
+                        
+                     </li>
+                     <li>
+                        <a href="n-8540.html" target="main" title="Note in a Reference List"><span class="elementtag">&lt;note&gt;</span></a> <a href="n-8540.html" target="main" title="<note&gt;"><span class="elementname">Note in a Reference List</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-k3t0.html" target="main" title="Reference List (Bibliographic Reference List)"><span class="elementtag">&lt;ref-list&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">Including an element-style bibliographic reference (punctuation and spacing removed): </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;back&gt;&lt;ack&gt;...&lt;/ack&gt;
+&lt;ref-list&gt;
+<strong><span class="focus">&lt;ref id="B1"&gt;
+&lt;element-citation publication-type="commun" publication-format="web"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Harris&lt;/surname&gt;
+&lt;given-names&gt;Pat&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;New Z39.50 resource&lt;/article-title&gt;
+&lt;comment&gt;[Internet]&lt;/comment&gt;
+&lt;source&gt;Message to: Karen Patrias&lt;/source&gt;
+&lt;year&gt;1998&lt;/year&gt;
+&lt;month&gt;02&lt;/month&gt;
+&lt;day&gt;27&lt;/day&gt;
+&lt;date-in-citation content-type="time-stamp"&gt;1:18 pm&lt;/date-in-citation&gt;
+&lt;date-in-citation content-type="access-date"&gt;[cited 1998
+Feb 28]&lt;/date-in-citation&gt;
+&lt;comment&gt;[about 2 screens]&lt;/comment&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;</span></strong>
+<strong><span class="focus">&lt;ref id="B2"&gt;
+...
+&lt;/ref&gt;</span></strong>
+...
+&lt;/ref-list&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <p class="para">Including a mixed-style bibliographic reference (punctuation and spacing preserved): </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;back&gt;&lt;ack&gt;...&lt;/ack&gt;
+&lt;ref-list&gt;
+<strong><span class="focus">&lt;ref id="B1"&gt;
+&lt;mixed-citation publication-type="commun" publication-format="web"&gt;
+&lt;string-name&gt;
+&lt;surname&gt;Harris&lt;/surname&gt;, 
+&lt;given-names&gt;Pat&lt;/given-names&gt;
+&lt;/string-name&gt;, &lt;role&gt;author&lt;/role&gt;.
+&lt;article-title&gt;New Z39.50 resource&lt;/article-title&gt; [Internet].
+&lt;source&gt;Message to: Karen Patrias&lt;/source&gt;.
+&lt;year&gt;1998&lt;/year&gt; &lt;month&gt;02&lt;/month&gt; &lt;day&gt;27&lt;/day&gt;; 
+&lt;date-in-citation content-type="time-stamp"&gt;1:18 pm&lt;/date-in-citation&gt;
+[cited &lt;date-in-citation content-type="access-date"&gt;1998
+Feb 28&lt;/date-in-citation&gt;] [about 2 screens]
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;</span></strong>
+<strong><span class="focus">&lt;ref id="B2"&gt;
+...
+&lt;/ref&gt;</span></strong>
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

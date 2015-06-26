@@ -1,0 +1,1417 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Tag Library Introduction</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="intro">
+         <h1 class="header">General Introduction</h1>
+         <ul class="bullist">
+            <li><a href="n-j000.html#version2.3">Changes in Publishing Version 2.3</a></li>
+            <li><a href="n-j000.html#dtddesign">Tag Set Design Principles</a>
+                
+               <ul class="bullist">
+                  <li><a href="n-j000.html#dtddesign">Purpose: Preservation of Intellectual Content</a></li>
+                  <li><a href="n-j000.html#dtdscope">Scope: Journal Articles Plus</a></li>
+                  <li><a href="n-j000.html#intronlm">Introduction to the Journal Archiving and Interchange Tag Set</a></li>
+                  <li><a href="n-j000.html#modular">Modular DTD Design</a></li>
+                  <li><a href="n-j000.html#potential">Potential DTDs from This Suite of Modules</a></li>
+                  <li><a href="n-j000.html#accessibility">Accessibility</a></li>
+               </ul>
+            </li>
+            <li><a href="n-j000.html#howto">How To Read This Tag Library</a>
+                
+               <ul class="bullist">
+                  <li><a href="n-j000.html#terms">Terms and Definitions</a></li>
+                  <li><a href="n-j000.html#howtostart">How To Start Using This Tag Library</a></li>
+                  <li><a href="n-j000.html#structure">Structure of This Tag Library</a></li>
+                  <li><a href="n-j000.html#typog">Tag Library Typographic Conventions</a></li>
+               </ul>
+            </li>
+            <li><a href="n-j000.html#howtodtds">How To Make New DTDs from These Modules (Implementors Only)</a>
+                
+               <ul class="bullist">
+                  <li><a href="n-j000.html#modulardesign">Modular DTD Design</a></li>
+                  <li><a href="n-j000.html#pes">Parameter Entities Modules To Customize and Change</a></li>
+                  <li><a href="n-j000.html#classes">Element Classes Concept</a></li>
+                  <li><a href="n-j000.html#howtobuild">How To Build a New DTD</a></li>
+                  <li><a href="n-j000.html#modules">Modules in the Archiving and Interchange Suite</a></li>
+                  <li><a href="n-j000.html#dtdsuite">Tag Set Suite Naming Conventions</a></li>
+                  <li><a href="n-j000.html#filenaming">File Naming Conventions</a></li>
+                  <li><a href="n-j000.html#phaseII">Future Tag Set Work</a></li>
+               </ul>
+            </li>
+            <li><a href="n-j000.html#thanks">Acknowledgments</a></li>
+         </ul>
+         <p class="para">The Journal Archiving and Interchange Tag Set (hereafter Journal Archiving Tag Set) defines elements and attributes that describe
+            the content of journal articles (including some non-article material
+             found in journals, such as letters, editorials, and book and product reviews). The Tag Set is intended for use by archives
+            as a repository tag set, as well as for transferring journal articles among publishers and archives. The Tag Set is very loose,
+            flexible, and permissive in an attempt to capture nearly anything a publisher might have tagged. The philosophy for the Archiving
+            Tag Set was to accept as many varied forms of many structures as possible unchanged.
+         </p>
+         <p class="para">The Journal Archiving Document Type Definition (DTD) is the foundational constraint language for the tag set. The DTD comprises
+            a few Archiving-DTD-specific modules and uses (by reference) the base modules of the Journal Archiving and Interchange Suite.
+            The modules of that Suite were developed as part of an effort to create XML applications through which materials on health-related
+            disciplines could be shared and reused electronically. The Suite can be (and has been) used to construct many tag sets in
+            addition to this one. Although the full Suite was developed to support electronic production, the structures should be adequate
+            to support some print production as well.
+         </p>
+         <p class="para">This Tag Library describes the Archiving Tag Set and the Journal Archiving and Interchange Suite, by providing:
+            <ul class="bullist">
+               <li>An introduction to the design principles for the whole modular
+                   Archiving and Interchange Suite;
+               </li>
+               <li>An explanation of how to read and use this Tag Library;</li>
+               <li>A top-level introduction to this Journal Archiving Tag Set (the preservationist archival Tag Set);</li>
+               <li>An explanation of how to build new DTDs from the modules in the
+                   Suite;
+               </li>
+               <li>Large reference sections that describe the elements,
+                   attributes, and Parameter Entities defined in the tag set (This part of
+                   the Tag Library also provides individual definitions and tagged examples for most of
+                   the elements and attributes defined in the full Suite.);
+               </li>
+               <li>Tree-like hierarchical diagrams that show the structures in the
+                   Journal Archiving Tag Set;
+               </li>
+               <li>Tables and appendices useful for reference on the fine points
+                   of the Tag Set; and 
+               </li>
+               <li>Reading copies of the DTD modules of the Journal Archiving DTD as well as the modules that make up the full modular Suite.</li>
+            </ul> 
+         </p>
+         <hr class="hrule">
+         <div class="section"><a name="version2.3"></a><h2 class="header">Changes in Version 2.3</h2>
+            <p class="para">
+               Version 2.3 was an enhancement release that made changes requested by the Working Group based on operational concerns. All
+               changes to content models and attribute lists have been made backward compatible. As an example, a new XHTML &#8220;style&#8221; attribute
+               was added to all the elements inside <a href="n-5e60.html"><span class="elementtag">&lt;table&gt;</span></a>and the  &#8220;content-type&#8221; attribute was distributed widely to add or preserve semantic information. The Archiving 2.3 Change
+               Report may be accessed through the following page:<a href="http://dtd.nlm.nih.gov/archiving/2.3/index.html" target="_new">http://dtd.nlm.nih.gov/archiving/2.3/index.html</a>.
+            </p>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name="dtddesign"></a><h2 class="header">Tag Set Design Principles</h2>
+            <hr class="hrule">
+            <div class="section"><a name="purpose"></a><h2 class="header">Purpose: Preservation of Intellectual Content</h2>
+               <p class="para">The intent of this Tag Set Suite is to &#8220;preserve the
+                   intellectual content of journals independent of the form in which that content
+                   was originally delivered&#8221;. The tags defined here will be used to describe
+                   journal articles that originate with many publishers and societies but whose
+                   content will be stored in repositories such as the NLM PubMed Central repository. Therefore,
+                   the Suite has been optimized for conversion from a variety of journal source
+                   tag sets, with the intent of providing a single format in which publishers can
+                   deliver their content to a wide range of archives. There are so many journal
+                   tag sets currently in use by publishers, repositories, content-aggregators,
+                   scientific societies, and compositors that this Suite cannot possibly
+                   incorporate all the variation to be found in such diverse models. But a wide
+                   variety of structures can be accommodated, since the content models for the
+                   elements have been made very flexible, including a wide range of elements with
+                   nearly all content structures optional.
+               </p>
+               <p class="para">The conversion focus also means that this is a larger, more
+                   inclusive tag set than might have been necessary if the intent had been, for
+                   example, to create only a Journal Authoring Tag Set. Many elements have been
+                   created explicitly so that information tagged by publishers would not be
+                   discarded when they converted material from another tag set into the Archival Tag Set created from this Suite. Because of
+                  the broad
+                   scope of the several proposed electronic archives, this Suite contains elements
+                   and attributes that may only occur in a very few journals. Attribute values
+                   that a particular tag set would probably restrict to a list of explicit options were declared as
+                   data character values, so that all options could be accepted. Care has been
+                   taken to provide several mechanisms (frequently, information classing
+                   &#8220;type&#8221; attributes) to preserve the intellectual content of a document structure when
+                   that structure is converted from another DTD or schema to this tag set, even if
+                   there is no exact element equivalent of the structure.
+               </p>
+               <p class="para">The exact replication of the look and feel of any particular
+                   journal has not been a consideration. Therefore, many purely formatting
+                   mechanisms have not been included in the tag set.
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="dtdscope"></a><h2 class="header">Scope: Journal Articles Plus</h2>
+               <p class="para">Although the  Suite aims at much broader application, this Journal Archiving Tag Set models journal articles, where a journal
+                  article is defined as the typical research article found in an STM journal. By design, the definition of an article includes
+                  some article-like material
+                   also found in journals, for example, letters, editorials, short new pieces, obituaries, meeting reports, and book and product
+                  reviews.
+               </p>
+               <p class="para">By design, this is a model for journal articles, not for complete journals. Thus, there is no overarching model for a collection
+                  of articles. In addition, the following journal material has not been described by this tag set:
+                  <ul class="bullist">
+                     <li>Company or product display advertising;</li>
+                     <li>Job search or classified advertising;</li>
+                     <li>Calendars, meeting schedules, and conference announcements (except as
+                         these can be handled as ordinary articles or sections within articles); and
+                     </li>
+                     <li>Material specific to an individual journal, such as Author Guidelines, Policy and Scope statements, Editorial or advisory
+                        boards, detailed indicia, etc.
+                     </li>
+                  </ul>
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="intronlm"></a><h2 class="header">Introduction to the Journal Archiving Tag Set</h2>
+               <p class="para">The Journal Archiving Tag Set defines a document that is a top-level component of a journal such as an article, a book or
+                  product review, or a letter to the editor. Each
+                   such document is composed of one or more parts; if there is more than one part, they must appear in the
+                   following order:
+                   
+                  <ul class="bullist">
+                     <li>Front matter (required). The article front matter contains
+                         the metadata for the article (also called article header information), for example,  the article title, the journal in which
+                        it appears, the date and issue of publication for that issue of that journal, a copyright statement, etc. This is not textual
+                        front matter as in books, this is bibliographic information about the article and the journal in which it was published.
+                     </li>
+                     <li>Body of the article (optional). The body of the article is
+                         the main textual and graphic content of the article. This usually consists of
+                         paragraphs and sections, which may themselves contain figures, tables, sidebars
+                         (boxed text), etc. The body of the article is optional to accommodate those repositories that just keep article header information
+                        and do not tag the textual content.
+                     </li>
+                     <li>Back matter for the article (optional). If present,
+                         the article back matter contains information that is ancillary to the main text, such as a glossary,
+                         appendix, or list of cited references.
+                     </li>
+                     <li>Floating Material (optional). A publisher may choose to place all the floating objects in an article and its back matter (such
+                        as tables, figures, boxed text sidebars, etc.) into a separate container element outside the narrative flow for convenience
+                        of processing.
+                     </li>
+                     <li>Following the front, body, back,  and (optional) floating material, there may be either one or more responses to the article
+                        or one or more
+                         subordinate articles:
+                         
+                        <ul class="bullist">
+                           <li>Response (rarely used). A response is a commentary on
+                               the article itself, for example, an opinion from an editor on the importance of
+                               the article or a reply from the original author to a letter concerning his
+                               article.
+                           </li>
+                           <li>Sub-article. A sub-article is a small
+                               article that is completely contained inside another article, for example, a series of small news stories on the same topic
+                               where there is a single introduction, followed by small news pieces.
+                           </li>
+                        </ul>
+                     </li>
+                  </ul> 
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="modular"></a><h2 class="header">Modular DTD Design</h2>
+               <p class="para">The Archiving and Interchange Suite has been written as a set of XML DTD &#8220;modules&#8221;, each of which is a separate physical file.
+                  No module
+                   is an entire DTD by itself, but these modules can be combined into a number of
+                   different DTDs, for example, both an Archival and Interchange DTD and an
+                   Archival Authoring DTD. Modules are primarily intended for maintenance; all
+                   the elements of the same &#8220;type&#8221; (class) are stored together.
+                   
+               </p>
+               <p class="para">The Journal Article  Archival and Interchange DTD for the National
+                   Library of Medicine has been built from these modules; both this DTD and
+                   the individual modules will be described in this Tag Library.
+               </p>
+               <p class="para">The major disadvantage of a modular system is the longer learning
+                   curve, since it may not be immediately obvious <em>where</em>
+                   within the system to find a particular element or attribute cluster. To help
+                   with this, the description of each element in the Element Section of this
+                   documentation names the module in which that element is defined.
+               </p>
+               <p class="para">There are many advantages to such a modular approach. The smaller
+                   units are written once, maintained in one place, and used in many different
+                   DTDs. This makes it much easier to keep lower level structures consistent
+                   across document types, while allowing for any real differences that analysis
+                   identifies. A DTD for a new function (such as an authoring DTD) or a new
+                   publication type can be built quickly, since most of the necessary components
+                   will already be defined in the Suite. Editorial and production personnel
+                   can bring the experience gained on one tagging project directly to the next
+                   with very little loss or retraining. Customized software (including authoring,
+                   typesetting, and electronic display tools) can be written once, shared among
+                   projects, and modified only for real distinctions.
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="potential"></a><h2 class="header">Tag Sets Developed from the Suite</h2>
+               <p class="para">As of this writing, the following publicly available Tag Sets have been created from
+                   this Suite:
+                   
+                  <ul class="bullist">
+                     <li>Journal Archiving and Interchange Tag Set (Archiving) &#8212; A public Tag Set into which
+                         publishers&#8217; original XML (or SGML) content can be converted, providing a
+                         common format for storing this material and for transferring content to any one of a number of archives. This Tag Set has
+                        been designed to be open and
+                         inclusive, to allow journal articles to be translated from a wide variety of
+                         proprietary journal article DTDs and schemas. It is permissive by design, intended to capture whatever warts and wrinkles
+                        exist in Publishers&#8217; content.
+                     </li>
+                     <li>Journal Publishing Tag Set (Publishing) &#8212; A public Tag Set for use as a repository tag set by archives which desire consistent
+                        processing and searching capability. The Publishing Tag Set is a more prescriptive and restrictive subset of the Journal Archiving
+                        and Interchange Suite than the Journal Archiving Tag Set (above). This Tag Set may also be used to transfer content between
+                        archives or as a base tag set for Publishers.
+                     </li>
+                     <li>Article Authoring Tag Set (Authoring) &#8212; A public Tag Set intended for writing and editing <em>new</em> journal articles. The Authoring Tag Set has been  designed to enable &#8220;good&#8221; journal coding and to provide assistance to authors
+                        and editors through more restricted models than the interchange and repository tag sets allow.
+                     </li>
+                     <li>NCBI Book, Book Collection, and Historical Book Tag Sets &#8212; The NCBI Book Tag Set defines elements and attributes that describe
+                        the content of books such as pamphlets and monographs. The NCBI Book Collection Tag Set describes a document that contains
+                        metadata for a grouping or &#8220;collection&#8221; of books, potentially followed by textual information about the books in the collection,
+                        and a listing of the books; the content of the books is not included. The NCBI Historical Book Tag Set  is a layer on top
+                        of the NCBI Book Tag Set  specifically
+                           designed to describe historical materials by adding structures relevant to the digitization of historical works, for example
+                        metadata concerning the digital edition. The three  NCBI book tag sets were written to specific NCBI book requirements and
+                        are therefore not generic tag sets in the same way that all the journal article tag sets are generic. 
+                     </li>
+                  </ul>
+               </p>
+               <p class="para">Information about these tag sets may be found at the following site:<a href="ttp://ddd.nlm.nih.gov" target="_new">http://ddd.nlm.nih.gov</a></p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="accessibility"></a><h2 class="header">Accessibility</h2>
+               <p class="para">Because access for a wide range of output devices, as well as for
+                         the visually impaired, is becoming more and more important in the STM journal
+                         community, the modules in this Suite were designed to follow, as much as
+                         possible, the W3C <a href="http://www.w3.org/TR/2002/WD-WCAG20-20020822/"><span class="citetitle">Web Content Accessibility Guidelines
+                               2.0</span></a> working draft (22 August 2002), which was the latest accessibility specification
+                         available when the Suite was initially constructed. This Specification specifies
+                         accessibility guidelines on many levels from design through application. The
+                         guidelines which pertain to the modeling of materials were followed to at least
+                         Level-2 compliance. For example, a <a href="n-gj40.html"><span class="elementname">Long Description</span></a> <a href="n-gj40.html"><span class="elementtag">&lt;long-desc&gt;</span></a> element was defined as part of many
+                         other elements, such as <a href="n-h4w0.html"><span class="elementname">Figure</span></a> <a href="n-h4w0.html"><span class="elementtag">&lt;fig&gt;</span></a>, so it can be added
+                         not only to all figures and other graphical objects, but to any section of the
+                         text (for example, to a <a href="n-pn30.html"><span class="elementname">Boxed Text</span></a> <a href="n-pn30.html"><span class="elementtag">&lt;boxed-text&gt;</span></a>) to
+                         provide an accessible description of the object. The <a href="n-dcq0.html"><span class="attrtag">xml:lang</span></a> attribute was added to all
+                         section-level elements and many paragraph-level elements to permit explicit
+                         indication of the language of the content, as required by these guidelines. The <a href="n-5900.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-5900.html"><span class="elementtag">&lt;abbrev&gt;</span></a> element (also to be used for acronyms) was added to meet Checkpoint 4.3.
+               </p>
+            </div>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name="howto"></a><h2 class="header">How To Read This Tag Library</h2>
+            <hr class="hrule">
+            <div class="section"><a name="terms"></a><h2 class="header">Terms and Definitions</h2>
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Element</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Elements are nouns, like &#8220;<a href="n-qgg0.html"><span class="elementname">Speech</span></a>&#8221; and &#8220;<a href="n-ctg0.html"><span class="elementname">Speaker</span></a>&#8221;, that represent components of journal
+                                         articles, the articles themselves, and accompanying metadata.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Attribute</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Attributes hold facts about an element, such as which type
+                                         of list (e.g., numbered, bulleted, or plain) is being requested when using the <a href="n-ai40.html"><span class="elementname">List</span></a> <a href="n-ai40.html"><span class="elementtag">&lt;list&gt;</span></a> tag,
+                                         or the name of a pointer to an external file that contains an image. Each
+                                         attribute has both a name (e.g., <a href="n-42j0.html"><span class="attrtag">list-type</span></a> ) and
+                                         a value (e.g., &#8220;bulleted&#8221;).
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Metadata</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Data <em>about</em> the data, for example, bibliographic information. The distinction is between metadata elements which <em>describe</em> an article (such as the name of the journal in which an article was published) versus elements which contain the textual
+                              and graphical content of the article.
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="howtostart"></a><h2 class="header">How To Start Using This Tag Library</h2>
+               <p class="para">The NCBI Archiving Tag Set is available on the NLM Journal Archiving and Interchange Tag Suite website including: the Tag
+                  Set models expressed as DTDs, XSD schemas, and RELAX NG schemas; one or more tagged sample documents; and this Tag Library
+                  documentation (a set of linked HTML files). The DTD file delivery includes the Archiving DTD; the DTD customization files
+                  needed for Archiving to over-ride the declarations in the NLM modular Suite, any new modules that define DTD-specific elements,
+                  and the modules that comprise the full Suite. 
+               </p>
+               <p class="para">How you use the documentation will depend on what you need to learn about the modules and the DTD.</p>
+               <p class="para">If you want to learn about the elements and the attributes in this Tag Set, so that you can tag documents or to learn how
+                  the journal article model is constructed, here is a good way to start.
+                         
+                  <ul class="bullist">
+                     <li>Read the Tag Library General Introduction, taking
+                                   particular note of the next section which describes the parts of the Tag
+                                   Library, so you will know what resources are available. Stop just before the
+                                   section &#8220;<a href="n-j000.html#howtodtds">How To Make New DTDs From These Modules</a>&#8221;.
+                     </li>
+                     <li>Next, if you do not know the symbols used in the Document
+                                   Hierarchy diagrams, read the &#8220;<a href="n-itf2.html#nearfar-key">Key to the Near &amp; Far&reg; Diagrams</a>&#8221;.
+                     </li>
+                     <li>Scan the Document Hierarchy diagrams to get a good sense of the top-level elements and their contents. (Find what is inside
+                        an <a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a>, now what is inside each of the four large pieces of an article, keep working your way down.)
+                     </li>
+                     <li>Pick an element from one of the diagrams. (Look up the
+                        element in the Elements Section to find the full name of the element, its definition, usage notes, content allowed, and any
+                        attributes. Look up one of the attributes to find its full name, usage notes, and potential values.).
+                     </li>
+                     <li>Finally, if you are interested in conversion from a
+                                   particular source:
+                                   
+                        <ul class="bullist">
+                           <li>Look at an article in a printed or online journal or look at the DTD/schema for the other journal. Can all the information
+                              you want to store from an article fit into the models shown in the diagrams? Do you have, or know how to get, all the information
+                              the models require? Will that information always be available for documents that are complete and correct? How difficult will
+                              it be to identify the parts of the information using the elements and attributes described in these models? Would changes
+                              to one or more models make this easier?
+                           </li>
+                           <li>Now look at some non-article content, such as a news
+                                             column, a book review, or some letters to the editor. Are there tags to handle
+                                             all these article types and all their components?
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </p>
+               <p class="para">If you want to learn about the Suite in order to write a new DTD:
+                         
+                  <ul class="bullist">
+                     <li>Skim the Tag Library General Introduction. (Start really
+                                   reading at the section &#8220;<a href="n-j000.html#howtodtds">How To Make New DTDs From These Modules</a>&#8221;.
+                                   Scan the DTD
+                                   modules.)
+                     </li>
+                     <li>If you do not know the symbols used in the Document
+                                   Hierarchy diagrams, then read the &#8220;<a href="n-itf2.html#nearfar-key">Key to the Near &amp; Far&reg; Diagrams</a>&#8221;.
+                     </li>
+                     <li>Use the Document Hierarchy diagrams to give you a good
+                                   sense of the top-level elements and their contents.
+                     </li>
+                     <li>Pick an element from one of the diagrams (Look up the
+                                   element in the Elements Section to find the full name of the element, the
+                                   definition, usage notes, content allowed, and attributes list. Look up one of
+                                   the attributes to find its full name, usage notes, and potential values.).
+                                   
+                     </li>
+                     <li>Read the DTD Modules, given at the end of this
+                                   documentation. <br class="br">New DTDs are created by writing a new DTD module and new
+                                   customization modules, so you might want to read (in order) the DTD module
+                                   (<tt>archivearticle.dtd</tt>), the module that names all the other modules
+                                   (<a href="n-kdz0.html"><span class="petag">%modules.ent;</span></a>), the module that names all customization modules (<a href="n-d9q0.html"><span class="petag">%archivecustom-modules.ent;</span></a>), and the customization modules themselves (<a href="n-4bq0.html"><span class="petag">%archivecustom-classes.ent;</span></a>, <a href="n-ybq0.html"><span class="petag">%archivecustom-mixes.ent;</span></a>, <a href="n-89q0.html"><span class="petag">%archivecustom-models.ent;</span></a>, and <a href="n-hhz0.html"><span class="petag">%nlmcitation.ent;</span></a>). (You might also wish to familiarize yourself with the relationship between the &#8220;customization&#8221; modules and the &#8220;default&#8221;
+                        modules for classes, mixes, and models.) Those can be followed by any one of the class modules (although the Suite has been
+                        designed to have the <a href="n-76b0.html"><span class="petag">%common.ent;</span></a> module precede any other class module).
+                     </li>
+                  </ul>
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="structure"></a><h2 class="header">Structure of This Tag Library</h2>
+               <p class="para">This Tag Library contains the following sections:</p>
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Introduction</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">This introduction to the contents of this Tag Library, to the design philosophy and intended usage of the Archiving and Interchange
+                              Suite, and to the Journal Archiving Tag Set.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Elements Section</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Descriptions of the elements used in the Journal
+                                         Archiving Tag Set and the base Suite. The element descriptions are listed in
+                                         alphabetical order by tag name. (Note: Each element has two names: a &#8220;tag
+                                         name&#8221; (formally called an element-type name) that is used in tagged
+                                         documents, in the DTDs/schemas, and by XML software, and an &#8220;element name&#8221;
+                                         (usually longer) that provides a fuller, more descriptive name for the benefit
+                                         of human readers. For example, a tag name might be <a href="n-jsu0.html"><span class="elementtag">&lt;disp-quote&gt;</span></a> with the corresponding element name <a href="n-jsu0.html"><span class="elementname">Quote, Displayed</span></a> or a tag name might be <a href="n-k9r0.html"><span class="elementtag">&lt;verse-group&gt;</span></a> with the corresponding element name <a href="n-k9r0.html"><span class="elementname">Verse Form for Poetry</span></a>.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Attributes Section</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Descriptions of the attributes in the Journal
+                                         Archiving Tag Set. Like
+                                         elements, attributes also have two names: the shorter machine-readable one and
+                                         a (usually longer) human-readable one. Attributes are listed in order by the
+                                         shorter machine-readable names, for example, the attribute short name <a href="n-42j0.html"><span class="attrtag">list-type</span></a> instead of the more
+                                         informal, easier to read: <a href="n-42j0.html"><span class="attrname">Type of List</span></a>.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Parameter Entity Section <em>(For Implementors
+                                           Only)</em></p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Names (with occasional descriptions) and contents of the
+                                         Parameter Entities in the DTD modules.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Context Table</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Listings of where each element may be used. All elements
+                                         in the Tag Set are given in a simple alphabetical list.
+                           </p>
+                           <p class="para">The Context Table is formatted in two columns. The first
+                                         column lists an element&#8217;s tag name as well as its descriptive name, and the second column lists the tag and name
+                              pairs of all the elements in which the listed element may occur. For example, if
+                                         the first column contains the front matter element <a href="n-i9w0.html"><span class="elementtag">&lt;front&gt;</span></a> and the second column contains only the article element <a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a>, this means that the <a href="n-i9w0.html"><span class="elementtag">&lt;front&gt;</span></a> (<a href="n-i9w0.html"><span class="elementname">Front Matter</span></a>)
+                                         element may only be used inside an <a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a>
+                                         (<a href="n-4nc0.html"><span class="elementname">Article</span></a>) element.
+                           </p>
+                           <p class="para">Most elements may be used inside more than one other
+                                         element. For example, the element <a href="n-rv20.html"><span class="elementtag">&lt;access-date&gt;</span></a> (<a href="n-rv20.html"><span class="elementname">Access Date for Cited Work</span></a>) may be used inside the <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a>, <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a>, and <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> elements.
+                           </p>
+                           <p class="para">Note: These Context Table listings (which list <em>where</em> an
+                                         element may be used) are the inverse of the content
+                                         definition that is given as a part of each element description,
+                                         which lists what can be <em>inside</em> the named element.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Document Hierarchy Diagrams</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Tree-like graphical representations of the content of many
+                                         elements. This can be a fast visual way to determine the structure of an
+                                         article or of any element within an article.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Archiving and Suite Naming Rules </p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">How to build element, attribute, Parameter Entity and file names when adding to the Suite</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>DTD Section</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Reference copy of the DTD module, the Archiving customization modules, and the modules of the Suite</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Index By Element Name</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Index of element descriptions, alphabetically by element
+                                         name (the longer, more descriptive name)
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Index By Tag Name</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Index of element descriptions, alphabetically by tag name
+                                         (element-type name)
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="typog"></a><h2 class="header">Tag Library Typographic Conventions</h2>
+               <table xmlns:mtl="http://www.mulberrytech.com/taglib" xmlns:xsd="http://www.w3.org/2000/10/XMLSchema" frame="hsides">
+                         
+                  <colgroup span="1"> 
+                     <col width="10%" span="1"> 
+                     <col width="90%" span="1">
+                            
+                  </colgroup>
+                         
+                  <tbody>
+                             
+                     <tr>
+                                  
+                        <td rowspan="1" colspan="1"> <a href="n-bb20.html"><span class="elementtag">&lt;alt-text&gt;</span></a> 
+                        </td>
+                                  
+                        <td rowspan="1" colspan="1">The tag name of an element (Written in lower case with the
+                                      entire name surrounded by &#8220;&lt; &gt;&#8221;)
+                        </td>
+                                
+                     </tr>
+                             
+                     <tr>
+                                  
+                        <td rowspan="1" colspan="1"> <a href="n-bb20.html"><span class="elementname">Alternate Text Name (For a Figure, Etc.)</span></a> 
+                        </td>
+                                  
+                        <td rowspan="1" colspan="1">The element name (long descriptive name of an element) or the
+                                      descriptive name of an attribute (Written in title case, that is, with
+                                      important words capitalized, and the words separated by spaces)
+                        </td>
+                                
+                     </tr>
+                             
+                     <tr>
+                                  
+                        <td rowspan="1" colspan="1"> <em>must not</em> 
+                        </td>
+                                  
+                        <td rowspan="1" colspan="1">Emphasis to stress a point</td>
+                                
+                     </tr>
+                            
+                  </tbody>
+                        
+               </table>
+            </div>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name="howtodtds"></a><h2 class="header">How To Make New DTDs from These Modules (For Implementors
+                     Only)
+            </h2>
+            <hr class="hrule">
+            <div class="section"><a name="modulardesign"></a><h2 class="header">Modular DTD Design</h2>
+               <p class="para">This Suite has been written as a series of XML DTD modules
+                         that can be combined into a number of different DTDs. The modules are separate
+                         physical files that, taken together, define all element structures (such as
+                         tables, math, chemistry, paragraphs, sections, figures, footnotes, and
+                         reference elements), as well as attributes and entities in the Suite.
+               </p>
+               <p class="para">Modules in the Suite are primarily intended to group elements for maintenance.
+                         There are different kinds of modules. A module may either:
+                         
+                  <ul class="bullist">
+                     <li>Be a building block for a base DTD (such as the <a href="n-kdz0.html"><span class="pename">Module to Name the Modules</span></a> module)
+                     </li>
+                     <li>Define the elements inside a particular structure. For
+                                   example, the <a href="n-77k2.html"><span class="pename">Bibliography References (Citation) Elements Module</span></a> module names all the potential components of
+                                   bibliographic reference lists.
+                     </li>
+                     <li>Name the members of a &#8220;class&#8221; of elements,
+                                   where class is a named grouping of elements that share a similar usage or
+                                   potential location. For example, the <a href="n-v5k2.html"><span class="pename">Phrase-Level Content Elements Module</span></a> module defines small floating
+                                   elements that may occur within text, such as inside a paragraph or a title, or
+                                   that describe textual content, for example, a disease name, drug name, or the
+                                   name of a discipline.
+                     </li>
+                     <li>Be a module of &#8220;editorial convenience&#8221;. For
+                                   example, the <a href="n-76b0.html"><span class="pename">Common (Shared) Element Declarations Module</span></a> module holds elements and attributes used in the
+                                   content models of the various class elements.
+                     </li>
+                  </ul> 
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="pes"></a><h2 class="header">Parameter Entities Modules to Customize and Change</h2>
+               <p class="para">Parameter Entities are the
+                         major mechanism for customizing a DTD or creating a new DTD from the modules in
+                         the Suite. Individual DTDs will be constructed by 1) establishing element and
+                         attribute combinations and content models using Parameter Entities in one of the DTD-specific customizing modules and
+                  2) choosing appropriate modules from the Suite that declare the elements needed.
+                         For example, if the base DTD contained 6 kinds of lists
+                         and 2 table models, a more specific DTD, such as an authoring DTD, might use a
+                         Customize Classes Module to redefine the List Class to name only 3 lists and
+                         redefine the Display Class to allow only one table model.
+               </p>
+               <p class="para">The standard modules to create a customized DTD are: the DTD itself, a module to name its components, and as many over-ride
+                  modules and  new elements modules as necessary. Typical modules for a new DTD are:
+                  <ul class="bullist">
+                     <li>DTD &#8212; The DTD module (<tt>.dtd</tt>) for the new DTD base DTD (At a minimum, this module declares the top-level element (such as article, book, or report) and
+                        any other structural elements
+                                   unique to the new document type.)
+                     </li>
+                     <li>DTD-specific Module of Modules &#8212; The DTD-specific module of modules, to name all the new modules created expressly for the
+                        new DTD
+                     </li>
+                     <li>Class Over-rides &#8212; DTD-specific over-rides of the Suite default element classes</li>
+                     <li>Mix Over-rides &#8212; DTD-specific over-rides of the Suite default class mixes</li>
+                     <li>Model Over-rides &#8212; DTD-specific content model over-rides for the content
+                           models in the modules of the suite (using &#8220;<tt>-elements</tt>&#8221; and &#8220;<tt>-model</tt>&#8221; Parameter Entities)
+                     </li>
+                     <li>New Models &#8212; DTD-specific new elements (for example, a new Book DTD might add book-specific metadata elements)</li>
+                  </ul>
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="classes"></a><h2 class="header">Element Classes Concept</h2>
+               <p class="para">Many of the elements in the Journal Archiving DTD have been
+                         grouped into loose element classes. There is no hard and fast rule for what constitutes a class; each one is a design
+                  decision, a matter of judgment. These classes are designed to ease customization to meet the particular needs of new DTDs.
+                  Base classes for the Suite are defined in a separate <a href="n-gt90.html"><span class="pename">Default Element Classes Module</span></a> (<a href="n-gt90.html"><span class="petag">%default-classes.ent;</span></a>).
+               </p>
+               <p class="para">Content models are built using sequences of elements, and OR groups that are classes (typically) or mixes. As an example,
+                  the content model for a <a href="n-7st0.html"><span class="elementname">Paragraph</span></a>  element is declared to be an OR group (that is, a choice) of
+                         <em>text, numbers, or special characters</em> and any of the elements named in the <a href="n-49z0.html"><span class="pename">Paragraph Elements</span></a> mix. The mix <a href="n-49z0.html"><span class="petag">%p-elements;</span></a> is
+                         declared to be a large OR group of many other element-defining classes: the <a href="n-5wb0.html"><span class="pename">Block Display Class Elements</span></a>, the <a href="n-g7z0.html"><span class="pename">Mathematical Expressions Class Elements</span></a>, the <a href="n-8sz0.html"><span class="pename">List Class Elements</span></a>, the <a href="n-nfb0.html"><span class="pename">Citation Class Elements</span></a>, et al.
+               </p>
+               <p class="para">These element classes can be viewed as building blocks that will
+                         be used to build larger Parameter Entities for element mixes. (Note: A mix describes a
+                         usage circumstance for a group of elements, such as all the paragraph-level
+                         elements, all the elements allowed inside a table cell, all the elements inside
+                         a paragraph, or all the inline elements). For example, to add another block display item to the <a href="n-5wb0.html"><span class="pename">Block Display Class Elements</span></a>, you
+                         would edit the <a href="n-5wb0.html"><span class="petag">%block-display.class;</span></a> Parameter Entity in the
+                         DTD-specific Archive Class Over-ride Module to override the default Parameter Entity in the Suite&#8217;s <a href="n-gt90.html"><span class="pename">Default Element Classes Module</span></a> module and create a new module containing the Element Declaration of the new block display item.
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="howtobuild"></a><h2 class="header">How To Build a New Custom DTD</h2>
+               <hr class="hrule">
+               <div class="section"><a name=""></a><h2 class="header">The Concept</h2>
+                  <p class="para">The basic idea for a new DTD is that all lower-level elements (paragraphs, lists,
+                     figures, etc.) will be defined in modules &#8212; either the modules of the base Suite or in new DTD-specific modules rather than
+                     in the DTD itself. The new DTD
+                     will be fairly short and include only definitions of the topmost elements, at least the document element and maybe its children.
+                  </p>
+                  <p class="para">Modules are defined (declared) using External Parameter Entities in the Suite&#8217;s <a href="n-kdz0.html"><span class="pename">Module to Name the Modules</span></a> or in the DTD-specific Module of Modules. Modules are called (referenced) in the DTD proper, <em>in the order needed</em> to
+                     define the Parameter Entities in sequence.
+                  </p>
+                  <p class="para">Version 2.3 of this Journal Archiving DTD was written as an example of the new best-practice customization technique. A new
+                     variant DTD that follows this plan will probably consist of the following modules:
+                     
+                     <ul class="bullist">
+                        <li>A DTD module to define the top-level elements (for example, <tt>archivearticle.dtd</tt>);
+                        </li>
+                        <li>A DTD-specific Module of Modules to name new non-Suite modules in the DTD (for example, <tt>%archivecustom-modules.ent;</tt>);
+                        </li>
+                        <li>A DTD-specific definition of element classes to add new classes and over-ride the Suite default classes (for example, <tt>%archivecustom-classes.ent;</tt>);
+                        </li>
+                        <li>A DTD-specific definition of element mixes to add new mixes and over-ride the default mixes (for example, <tt>%archivecustom-mixes.ent;</tt>);
+                        </li>
+                        <li>A DTD-specific module of content model over-rides (for example, <tt>%archivecustom-models.ent;</tt>);
+                        </li>
+                        <li>DTD-specific modules to hold new element declarations; and</li>
+                        <li>All or most of the modules in the Suite.</li>
+                     </ul>
+                     
+                  </p>
+               </div>
+               <hr class="hrule">
+               <div class="section"><a name=""></a><h2 class="header">Making a Variant DTD</h2>
+                  <p class="para">To show the process, here is a series of instructions for making a new DTD, illustrated by showing how the Journal Archiving
+                     DTD was created from the modules of the whole Suite.
+                     <ol class="olist">
+                        <li><strong>Modules</strong> &#8212; Write a new DTD-specific Module of Modules which defines all new customization modules the DTD needs. (As an example, 
+                           the Archiving DTD created the module <tt>%archivecustom-modules.ent;</tt>, which contains the definitions of the class-over-ride module <tt>%archivecustom-classes.ent;</tt>, the mix-over-ride module <tt>%archivecustom-mixes.ent;</tt>, and the models-over-ride module <tt>%archivecustom-models.ent;</tt>.)
+                        </li>
+                        <li><strong>Class Over-rides</strong> &#8212; Write a DTD-specific class-over-ride module, defining any over-rides
+                           to the Suite classes, which are defined in the default classes module, <tt>%default-classes.ent;</tt>.  (As an example,  the Archiving DTD created the module <tt>%archivecustom-classes.ent;</tt>, in which a new model for <tt>%contrib-info.class;</tt> was declared and an entirely new class <tt>%x.class;</tt> was added.)
+                        </li>
+                        <li><strong>Mix Over-rides</strong> &#8212; Write a DTD-specific mix-over-ride module defining any over-rides
+                           to the Suite mixes, which are defined in the default mixes module, <tt>%default-mixes.ent;</tt>.  (As an example,  the Archiving DTD created the module <tt>%archivecustom-mixes.ent;</tt>, in which  a new mix <tt>%all-phrase;</tt> was declared and then used in many existing mixes such as <tt>%simple-phrase;</tt>.)
+                        </li>
+                        <li><strong>Model Over-rides</strong> &#8212; Create a DTD-specific content-model-over-ride module defining any over-rides
+                           to the  content models and
+                           attribute lists for the Suite. (As an example, the Archiving DTD created the module <tt>%archivecustom-models.ent;</tt>, in which element collections (suffixed &#8220;<tt>-elements</tt>&#8221;) that will be mixed with <tt>#PCDATA</tt> were redefined,   full content models over-rides (suffixed &#8220;<tt>-model</tt>&#8221;) were redefined, and some new attributes and attribute lists were added.) 
+                        </li>
+                        <li><strong>New Elements</strong> &#8212; Write any new element modules needed. These will define any new block-level or phrase-level elements. (As an example, the
+                           Archiving Tag Set did not need any new elements not in the Suite, but the new NLM Book Tag Set added modules for book metadata
+                           and book component parts.)
+                        </li>
+                        <li><strong>DTD Module</strong> &#8212; With those modules in place, construct a new DTD module. Within that module:
+                           
+                           
+                           <ul class="bullist">
+                              <li>Use an External Parameter Entity Declaration to name and then call the DTD-specific modules of modules. (For the Archiving
+                                 DTD, the module <tt>%archivecustom-modules.ent;</tt>)
+                              </li>
+                              <li>Use an External Parameter Entity Declaration to name and then call
+                                 the Suite Modules of Modules, which names all the potential
+                                 modules. (For the Archiving DTD, the module <tt>%modules.ent;</tt>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call
+                                 the DTD-specific class over-rides. (For the Archiving DTD, the module <tt>%archivecustom-classes.ent;</tt>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call
+                                 the Suite default classes. (For the Archiving DTD, the module <tt>%default-classes.ent;</tt>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call
+                                 the DTD-specific mix over-rides. (For the Archiving DTD, the module <tt>%archivecustom-mixes.ent;</tt>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call
+                                 the Suite default mixes. (For the Archiving DTD, the module <tt>%default-mixes.ent;</tt>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call
+                                 the DTD-specific content models and attribute list over-rides. (For the Archiving DTD, the module <tt>%archivecustom-models.ent;</tt>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call in the
+                                 standard Common Module (<tt>%common.ent;</tt>) that defines elements and attributes so
+                                 common they are used by many modules.
+                              </li>
+                              <li>Use an External Parameter Entity reference to call any new DTD-specific module defining new block-level or phrase-level elements.
+                                 (For the Archiving DTD, the module <a href="n-hhz0.html"><span class="petag">%nlmcitation.ent;</span></a> in which a more prescriptive citation element, <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, is declared) 
+                              </li>
+                              <li>Select, from the Module of Modules, those modules which
+                                 contain the elements needed for the DTD (for instance, selecting lists and not
+                                 selecting math elements) and calling in each of the modules needed. (The Archiving DTD calls these in alphabetical order,
+                                 since the order does not matter.)
+                              </li>
+                              <li>Define the document element and any other unique
+                                 elements and entities needed for this Tag Set. (For example, the Archiving DTD declares only a few elements &#8212; <a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a>  [the top-level element] and its potential components:  <a href="n-i9w0.html"><span class="elementtag">&lt;front&gt;</span></a>, <a href="n-yv30.html"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-gu30.html"><span class="elementtag">&lt;back&gt;</span></a>, <a href="n-ynw0.html"><span class="elementtag">&lt;floats-wrap&gt;</span></a>,  <a href="n-a4n0.html"><span class="elementtag">&lt;sub-article&gt;</span></a>, and <a href="n-yde0.html"><span class="elementtag">&lt;response&gt;</span></a>.)
+                              </li>
+                           </ul> 
+                        </li>
+                     </ol>
+                  </p>
+               </div>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="modules"></a><h2 class="header">Modules in the Archiving and Interchange Suite</h2>
+               <p class="para">The Suite was created to allow a multiplicity of Tag Sets, based on the needs of the intended use, for example, an authoring
+                  Tag Set versus one for a repository.  The Journal Archiving Tag Set (<tt>archivearticle.dtd</tt>) and its specific
+                         customization modules (<a href="n-4bq0.html"><span class="petag">%archivecustom-classes.ent;</span></a>, <a href="n-ybq0.html"><span class="petag">%archivecustom-mixes.ent;</span></a>, <a href="n-89q0.html"><span class="petag">%archivecustom-models.ent;</span></a>, and <a href="n-d9q0.html"><span class="petag">%archivecustom-modules.ent;</span></a>) define an archival and interchange focused
+                         Tag Set. The following modules are critical for the customization process that
+                         creates that DTD:
+                         
+                  <div class="deflist">
+                     <table class="deflisttable">
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Journal Archiving and Interchange DTD</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(File name <tt>archivearticle.dtd</tt>) The top-level Journal Archiving Tag Set DTD Module that declares the document element (<a href="n-4nc0.html"><span class="elementname">Article</span></a>) and the other top-level elements that define a journal article (front matter, back matter, and sub-articles or responses).
+                                 All elements but these few &#8212; and the element <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> &#8212; are declared in the modules of the Suite. The DTD invokes all the other modules it uses, by reference, as external Parameter
+                                 Entities: first the Archiving DTD-Specific Module of Modules is called to name all Archive-specific customized modules, then
+                                 the Suite Module of Modules is called to name all the potential modules from the Suite, then customized and default modules
+                                 are called (for Parameter Entities naming element classes, mixes, and models), then the Common Module for shared elements
+                                 and attribute lists is called, and finally all the other modules are called as needed, including the DTD-specific element
+                                 module, <a href="n-hhz0.html"><span class="petag">%nlmcitation.ent;</span></a>.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Module to Name Archiving DTD-Specific Modules</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-d9q0.html"><span class="petag">%archivecustom-modules.ent;</span></a>) Defines all the external modules that are specific to the Archiving DTD (except itself, which must be both named and called
+                                 inside a DTD). A DTD selects from these modules by referencing the module names through external Parameter Entities. The entities
+                                 are declared in the Archiving DTD-Specific Module of Modules (<a href="n-d9q0.html"><span class="petag">%archivecustom-modules.ent;</span></a>), but referenced (or not) in the DTD proper. To include a set of elements (such as all the lists or all the MathML elements),
+                                 a DTD references the external Parameter Entity of the module that contains these declarations.
+                              </p>
+                              <p class="para">Note: The Archiving DTD-Specific Module of Modules and the Suite Module to Name the Modules need to be the first two external
+                                 modules called by the Archiving DTD. Customization modules for classes, mixes, and models will typically be called following
+                                 the Archiving DTD-Specific Modules and the Module to Name the Modules.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Suite Module to Name the Modules</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-kdz0.html"><span class="petag">%modules.ent;</span></a>) Defines all the external modules that are part of the modular Archiving and Interchange Suite (except itself, it must be
+                                 both named and called inside a DTD). A DTD selects from the Suite modules by referencing the module names through external
+                                 Parameter Entities. The entities are declared in the Module to Name the Modules (<a href="n-kdz0.html"><span class="petag">%modules.ent;</span></a>), but referenced (or not) in the DTD proper. To include a set of elements (such as all the article metadata or all the display
+                                 elements) a DTD references the external Parameter Entity of the module that contains these declarations.
+                              </p>
+                              <p class="para">Note: The Archiving DTD-Specific Modules of Modules and the Suite Module to Name the Modules need to be the first two external
+                                 modules called by the Archiving DTD. Customization modules for classes, mixes, and models will typically be called next, following
+                                 these two.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Archiving DTD-Specific Class Customizations Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-4bq0.html"><span class="petag">%archivecustom-classes.ent;</span></a>) Sets up Parameter Entities that will be used to override default classes prescribed by the <a href="n-gt90.html"><span class="petag">%default-classes.ent;</span></a> module
+                              </p>
+                              <p class="para">Note: This module must be called after the Archiving DTD-Specific Modules (<a href="n-d9q0.html"><span class="petag">%archivecustom-modules.ent;</span></a>) and the Suite Module to Name the Modules (<a href="n-kdz0.html"><span class="petag">%modules.ent;</span></a>) but before any other module, including specifically the <a href="n-gt90.html"><span class="petag">%default-classes.ent;</span></a> module (which this module overrides) and the <a href="n-ybq0.html"><span class="petag">%archivecustom-mixes.ent;</span></a> and <a href="n-89q0.html"><span class="petag">%archivecustom-models.ent;</span></a> modules (which build on this module).
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Suite Default Element Classes Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-gt90.html"><span class="petag">%default-classes.ent;</span></a>) Sets up the Parameter Entities that name the element members of each class that will be used to establish the content models
+                              </p>
+                              <p class="para">Note: This module must be called before the Archiving Customize Mixes Module (<a href="n-ybq0.html"><span class="petag">%archivecustom-mixes.ent;</span></a>) and the Default Element Mixes Module (<a href="n-2790.html"><span class="petag">%default-mixes.ent;</span></a>), as well as the Archiving Customize Models Module, <a href="n-89q0.html"><span class="petag">%archivecustom-models.ent;</span></a> (which builds on those modules).
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Archiving DTD-Specific Mix Customizations Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-ybq0.html"><span class="petag">%archivecustom-mixes.ent;</span></a>) Sets up Parameter Entities that will be used to override default mixes (groupings made of &#8220;classes&#8221;) prescribed by the <a href="n-2790.html"><span class="petag">%default-mixes.ent;</span></a> module
+                              </p>
+                              <p class="para">Note: This module must be called after the Archiving Customize Classes Module (<a href="n-4bq0.html"><span class="petag">%archivecustom-classes.ent;</span></a>) and the Default Classes Module (<a href="n-gt90.html"><span class="petag">%default-classes.ent;</span></a>) but before any other module, including specifically the <a href="n-2790.html"><span class="petag">%default-mixes.ent;</span></a> module (which this module overrides) and the <a href="n-89q0.html"><span class="petag">%archivecustom-models.ent;</span></a> module (which builds on this module).
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Suite Default Element Mixes Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-2790.html"><span class="petag">%default-mixes.ent;</span></a>) Sets up the Parameter Entities that name mixes (groupings made of &#8220;classes&#8221;) that will be used to establish the content
+                                 models
+                              </p>
+                              <p class="para">Note: This module must be called before the Archiving Customize Models Module (<a href="n-89q0.html"><span class="petag">%archivecustom-models.ent;</span></a>) or any &#8220;base&#8221; module of the interchange Suite.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Archiving DTD-Specific Models/Attributes Customizations Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-89q0.html"><span class="petag">%archivecustom-models.ent;</span></a>) Sets up Parameter Entities that will be used to override default content model Parameter Entities set elsewhere in the Suite.
+                                 Also defines customizable attribute Declared Values and attribute lists for the DTD being defined.
+                              </p>
+                              <p class="para">Note: This module must be called after the Archiving DTD Customize Mixes Module (<a href="n-ybq0.html"><span class="petag">%archivecustom-mixes.ent;</span></a>) and Default Mixes Module (<a href="n-2790.html"><span class="petag">%default-mixes.ent;</span></a>) but before any &#8220;base&#8221; module of the interchange Suite.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>NLM Citation Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-hhz0.html"><span class="petag">%nlmcitation.ent;</span></a>) Adds the model for the NLM structured bibliographic citation element (<a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>). This model for a cited reference loosely reflects the NLM&#8217;s formal bibliographic style. The model allows the tagging of
+                                 all &#8220;legal&#8221; NLM citations and enforces the sequence in which content must appear. However, this model does not provide guidance
+                                 on what information is required for each type of cited content; such guidance must be controlled editorially.
+                              </p>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+                         
+               </p>
+               <p class="para">The modules comprising the rest of the Suite are:
+                         
+                  <div class="deflist">
+                     <table class="deflisttable">
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Common (Shared) Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-76b0.html"><span class="petag">%common.ent;</span></a>) Declarations for
+                                             elements, attributes, entities, and notations that are shared by more than one
+                                             class module
+                              </p>
+                              <p class="para">Note: This module must be called before any of the modules comprising the interchange Suite.</p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Article Metadata Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-ycb0.html"><span class="petag">%articlemeta.ent;</span></a>) Declares the
+                                             metadata elements (issue elements and article header elements) used to
+                                             describe a journal article
+                              </p>
+                              <p class="para">Note: Metadata elements that describe the journal
+                                             are in the Journal Metadata Module, <a href="n-6cz0.html"><span class="petag">%journalmeta.ent;</span></a>.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Back Matter Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-qab0.html"><span class="petag">%backmatter.ent;</span></a>) Declares
+                                             elements that are not part of the main textual flow of a work, but are
+                                             considered to be ancillary material such as appendices, glossaries, and
+                                             bibliographic reference lists
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Display Class Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-3690.html"><span class="petag">%display.ent;</span></a>) Declares the
+                                             display-related elements, such as figures, graphics, math, chemical expressions and structures, tables, etc.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Format Class Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-7cm0.html"><span class="petag">%format.ent;</span></a>) Declares elements
+                                             concerned with rendition of output, for example, printing on a page or display
+                                             on a screen. This module includes the elements in the Appearance Class, the
+                                             Break Class, and the Emphasis Class.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Journal Metadata Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-6cz0.html"><span class="petag">%journalmeta.ent;</span></a>) Declares the
+                                             elements used to describe the journal in which a journal article is published
+                              </p>
+                              <p class="para">Note: The issue and article metadata is defined in the Article Metadata
+                                             module, <a href="n-ycb0.html"><span class="petag">%articlemeta.ent;</span></a>.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Link Class Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-kvz0.html"><span class="petag">%link.ent;</span></a>) Declares elements that are links (internal or
+                                             external) by definition, such as URLs (<a href="n-8yr0.html"><span class="elementtag">&lt;uri&gt;</span></a>) and internal
+                                             cross references (<a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a>)
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>List Class Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-rsz0.html"><span class="petag">%list.ent;</span></a>) Declares the
+                                             elements in the List Class; these are all lists except the lists of
+                                             bibliographic references (citations). Lists are considered to be composed of
+                                             items.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Math Class Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-m7z0.html"><span class="petag">%math.ent;</span></a>) Declares the
+                                             elements in the math classes such as display equations
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Paragraph-Like Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-bmz0.html"><span class="petag">%para.ent;</span></a>) Declares structural,
+                                             non-display elements that may appear in the same places as a paragraph. These
+                                             elements are named in the various paragraph class Parameter Entities.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Subject Phrase Class Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-v5k2.html"><span class="petag">%phrase.ent;</span></a>) Declares the
+                                  Phrase Class elements, that is, names the inline, subject-specific elements.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Bibliographic Reference (Citation) Class Elements
+                                            Module
+                              </p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-77k2.html"><span class="petag">%references.ent;</span></a>) Declares the
+                                             bibliographic reference elements
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Journal Publishing DTD NLM Citation Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-hhz0.html"><span class="petag">%nlmcitation.ent;</span></a>) Adds the model for the NLM structured bibliographic citation element (<a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>). This model for a cited reference loosely reflects the NLM&#8217;s formal bibliographic style. The model allows the tagging of
+                                 all &#8220;legal&#8221; NLM citations and enforces the sequence in which content must appear. However,    this model does not provide
+                                 guidance on what information is required for each type of cited content; such guidance must be controlled editorially. The
+                                 modules name reflects the fact that this module was originally written for the Journal Publishing DTD and only later added
+                                 to this DTD. 
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Section Class Elements Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-fik2.html"><span class="petag">%section.ent;</span></a>) Declares the
+                                             elements of the Section Class, that is, declares all section-level elements in
+                                             the Journal Archiving Tag Set.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>MathML Setup Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-jfz0.html"><span class="petag">%mathmlsetup.ent;</span></a>) Invokes the
+                                             MathML modules
+                              </p>
+                              <p class="para">DTD Creation Note: To include the MathML elements, a DTD must
+                                             reference this module. This module sets up all Parameter Entities needed to use
+                                             the MathML Tag Set and references (invokes) the MathML 2.0 DTD Module, which, in
+                                             turn, invokes all the other MathML modules.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>MathML 2.0 DTD Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-yez0.html"><span class="petag">%mathml.dtd;</span></a>) Mathematical
+                                             Markup Language (MathML) 2.0, an XML application for describing mathematical
+                                             notation and capturing both its structure and content
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>MathML 2.0 Qualified Names 1.0</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-4ez0.html"><span class="petag">%mathml-qname.mod;</span></a>) Declares
+                                             Parameter Entities to support namespace-qualified names, namespace
+                                             declarations, and name prefixing for MathML, as well as declares the Parameter
+                                             Entities used to provide namespace-qualified names for all MathML element
+                                             types
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Extra Entities for MathML 2.0</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-cy90.html"><span class="petag">%ent-mmlextra;</span></a>) Used for MathML
+                                             processing
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Aliases for MathML 2.0</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-ri90.html"><span class="petag">%ent-mmlalias;</span></a>) Used for MathML
+                                             processing
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>XHTML Table Setup Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-gkc2.html"><span class="petag">%XHTMLtablesetup.ent;</span></a>) Sets all
+                                             Parameter Entities needed by the XHTML table model, and then invokes
+                                             the module containing that model
+                              </p>
+                              <p class="para">DTD Creation Note: To include the XHTML
+                                             table model in a tag set, a DTD must reference this module. This module sets up all
+                                             Parameter Entities needed to use the XHTML table model and references (invokes)
+                                             the XHTML Table Model Module. (See next item.)
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>XHTML Table Model Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-ckc2.html"><span class="petag">%xhtml-table-1.mod;</span></a>) The public XML
+                                             DTD version of the XHTML table model. This module is invoked from the module <a href="n-gkc2.html"><span class="petag">%XHTMLtablesetup.ent;</span></a>. (See previous item.) This is the default table model for this tag set.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>XHTML Table Style Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-6z22.html"><span class="petag">%xhtml-inlstyle-1.mod;</span></a>) Declares the <a href="n-z4p0.html"><span class="attrtag">style</span></a> attribute, which supports inline style markup for elements such as <a href="n-nm60.html"><span class="elementtag">&lt;td&gt;</span></a>and <a href="n-2md0.html"><span class="elementtag">&lt;tr&gt;</span></a> elements within XHTML tables.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>OASIS XML Table Setup Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-spz0.html"><span class="petag">%oasis-tablesetup.ent;</span></a>) Note: Not used in the current Archiving DTD. Sets all Parameter Entities needed by the OASIS (CALS) Exchange table model,
+                                 and then invokes the module containing that model
+                              </p>
+                              <p class="para">DTD Creation Note: To include the OASIS table model, a DTD must reference this module. This module sets up all Parameter Entities
+                                 needed to use the OASIS table model and references (invokes) the OASIS XML Exchange Table Model Module. This module has been
+                                 modified to use a namespace prefix of &#8220;oasis&#8221; for all table elements, to permit both the CALS and XHTML table models to be
+                                 used in one tag set. There is a separate Tag Library describing the OASIS elements, attributes, and Parameter Entities. 
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>OASIS XML Exchange Table Model Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-bjz0.html"><span class="petag">%oasis-exchange.ent;</span></a>)  Note: Not used in the current Archiving DTD. The OASIS (CALS) Exchange table model. This module is invoked in <a href="n-spz0.html"><span class="petag">%oasis-tablesetup.ent;</span></a>.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>XML Special Characters Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-d2c2.html"><span class="petag">%xmlspecchars.ent;</span></a>) Standard ISO
+                                             XML special character entities used in this DTD
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p>Custom Special Characters Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-gsb0.html"><span class="petag">%chars.ent;</span></a>) Custom special
+                                             character entities created specifically for use in this DTD
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p>Notation Declarations Module</p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">(Parameter Entity <a href="n-8iz0.html"><span class="petag">%notat.ent;</span></a>) Container module
+                                             for the Notation Declarations to be used with this Suite. These notations
+                                             have been placed in their own module for easy expansion or replacement.
+                              </p>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="dtdsuite"></a><h2 class="header">Archiving and Suite Naming Rules</h2>
+               <hr class="hrule">
+               <div class="section"><a name="componentnaming"></a><h2 class="header">XML Component Naming Conventions</h2>
+                  <hr class="hrule">
+                  <div class="section"><a name="elem-name-rules"></a><h2 class="header">Basic Element and Attribute Naming Rules</h2>
+                     <ul class="bullist">
+                        <li>CASE &#8212; Element, attribute, and entity names that originate with Archiving and Interchange Suite are in all lower case. Element
+                           and attribute names taken from PUBLIC DTDs and schemas (e.g., MathML and various table modules) incorporated into this Tag
+                           Set are in the case in which they were found in the original module.
+                        </li>
+                        <li>TWO-WORD NAMES &#8212; Elements named with two words are separated by a hyphen, for example, <a href="n-pku0.html"><span class="elementtag">&lt;def-list&gt;</span></a> and <a href="n-5vd0.html"><span class="elementtag">&lt;term-head&gt;</span></a>.
+                        </li>
+                        <li>WORD STANDARDIZATION &#8212; Abbreviations are standardized so that, for example, &#8220;figure&#8221; is always used as &#8220;fig&#8221; (as in the element
+                           <a href="n-rfw0.html"><span class="elementtag">&lt;fig-group&gt;</span></a>) and group is not abbreviated (as in the elements <a href="n-rfw0.html"><span class="elementtag">&lt;fig-group&gt;</span></a>, <a href="n-yf40.html"><span class="elementtag">&lt;kwd-group&gt;</span></a>, and <a href="n-ghw0.html"><span class="elementtag">&lt;fn-group&gt;</span></a>). The naming rules are described in the <a href="n-zhf2.html#naming-rules">Archiving and Interchange Suite Naming Rules</a> section of this Tag Library.
+                        </li>
+                     </ul>
+                  </div>
+                  <hr class="hrule">
+                  <div class="section"><a name="pes-class-mix"></a><h2 class="header">Parameter Entity Names for Classes and Mixes</h2>
+                     <p class="para">PARAMETER ENTITY: SAME FUNCTION, SAME NAME &#8212; The Suite modules and initial DTDs have used a series of Parameter Entity naming
+                        conventions consistently. While parsing software cannot enforce these Parameter Entity naming or usage conventions, these
+                        conventions can make it much easier for a person to know how the content models work and what must be modified to make a DTD
+                        change.
+                     </p>
+                     <p class="para"><strong>CLASSES</strong> &#8212; Classes are functional groupings of elements used together in an OR group. Each class is named with a Parameter Entity,
+                        and all class Parameter Entity names end in the suffix &#8220;<tt>.class</tt>&#8221;:
+                     </p>
+                     <div class="codeblock"><pre> &lt;!ENTITY % list.class "def-list | list"&gt;</pre></div>
+                     <p class="para">A class, by definition, should never be made &#8220;empty&#8221;; the class should be removed from all models where you do not want the
+                        class elements included.
+                     </p>
+                     <p class="para"><strong>MIXES</strong> &#8212; Mixes are functional OR groups of classes; mixes should never contain element names directly.  All mixes must be
+                           declared after all classes, since mixes are composed of
+                           classes. Mix names have no set suffix; for example, they may end in &#8220;<tt>-mix</tt>&#8221; or &#8220;<tt>-elements</tt>&#8221;. Content models and content model over-rides use mixes
+                           and classes for all OR groups. Only content model sequences are made
+                           up of element names directly.
+                     </p>
+                     <p class="para"><strong>MODEL OVER-RIDES</strong> &#8212; Parameter Entity mixes for over-riding a content model are of two styles:
+                          1) inline mixes and 2) full content model replacements. These two groupings have been defined
+                           and named separately to preserve the mixed-content or element-
+                           content nature of the models in Tag Sets derived from the Suite.
+                     </p>
+                     <p class="para">The inline Parameter
+                          Entities to be intermingled with character data (<tt>#PCDATA</tt>)
+                          in a mixed content model are named with a suffix &#8220;<tt>-elements</tt>&#8221;. For example, &#8220;<tt>%access-date-elements;</tt>&#8221; would be used in the content model for the element <a href="n-rv20.html"><span class="elementtag">&lt;access-date&gt;</span></a>:
+                     </p>
+                     <div class="codeblock"><pre>
+ &lt;!ENTITY % access-date-elements "| %date-parts.class; | %x.class;" &gt;
+ &lt;!ELEMENT  access-date (#PCDATA %access-date-elements;)* &gt;
+</pre></div>
+                     <p class="para">All inline mixes begin with an OR bar, so that the mix can be removed leaving just character data (<tt>#PCDATA</tt>):
+                     </p>
+                     <div class="codeblock"><pre>
+ &lt;!ENTITY % rendition-plus "| %all-phrase;" &gt;
+</pre></div>
+                     <p class="para">The over-ride of a complete content model will be
+                              named with a suffix &#8220;<tt>-model</tt>&#8221; and should include
+                              the entire content model, including the enclosing
+                              parentheses:
+                     </p>
+                     <div class="codeblock"><pre>
+ &lt;!ENTITY % kwd-group-model "(title?, (%kwd.class; | %x.class;)+ )" &gt;
+ &lt;!ELEMENT  kwd-group %kwd-group-model; &gt;
+ </pre></div>
+                  </div>
+               </div>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="filenaming"></a><h2 class="header">File Naming Conventions</h2>
+               <p class="para">DTD &#8212; This Tag Library describes the components for the Journal Archiving Tag Set. This
+                          Tag Set is described in a DTD, an XSD schema, and a RELAX NG schema. For the DTDs, the base DTD module (delivered
+                  as the file <tt>journalpublishing.dtd</tt>) calls in all the other DTD fragment modules as External Parameter Entities. Each module specific to this DTD (therefore,
+                  not part of the Suite) takes the prefix &#8220;<tt>journalpubcustom-</tt>&#8221;. The same prefix has been followed in the other two constraint languages schemas.
+               </p>
+               <p class="para">Each DTD and DTD fragment module has been assigned a unique formal public identifier (fpi). File names are never referenced
+                  directly in the comments in the DTD; the file is referred to by the name of the external Parameter Entity, which names the
+                  fpi and a system name for the file. The external Parameter Entity has been set to the initial delivery filename.
+               </p>
+               <p class="para">The Publishing DTD, the individual DTD-fragment modules of the DTD and the Suite, the XSD schema modules, and the RELAX NG
+                  schema modules  have been given
+                          DOS/Windows 3-digit suffixes indicating their type:
+                          
+                  <div class="deflist">
+                     <table class="deflisttable">
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p><tt>*.dtd</tt></p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">A module that can be used as the top level of an XML
+                                               hierarchy. Used for the Journal Publishing DTD top level, <tt>journalpublishing.dtd</tt>, but also taken unchanged for public
+                                               DTD modules that have been included in this DTD such as the MathML DTD and the
+                                               XHTML table model.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p><tt>*.ent</tt></p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">A DTD fragment for incorporation into a full DTD. May
+                                               contain element declarations, entity declarations, etc., for example, <tt>articlemeta.ent</tt>.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p><tt>*.mod</tt></p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">A DTD fragment for incorporation into a full DTD. May contain element declarations, entity declarations, etc. This extension
+                                 has the same meaning as <tt>*.ent</tt> and is only used to maintain the extension names dictated by the inclusion of PUBLIC DTD and/or schema fragments, for example,
+                                               <tt>mathml2-qname-1.mod</tt>.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p><tt>*.xsd</tt></p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">A W3C XML Schema (XSD) schema or schema module, for example,
+                                               <tt>journalpublishing.xsd</tt>.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p><tt>*.rng</tt></p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">A RELAX NG schema module, for example,
+                                               <tt>journalpublishing.rng</tt> and <tt>articlemeta.ent.rng</tt>.
+                              </p>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+               </p>
+               <p class="para">While the tag set cannot dictate graphic file names, the comments do suggest that best practice for naming graphic files in
+                  documents tagged according to this Suite would be to limit the names and path names to these characters: letters (both upper
+                  and lower case), numbers, underscore, hyphen, and period. All such names will be assumed to be case sensitive. DOS-style file
+                  extensions may be used.
+                          
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="phaseII"></a><h2 class="header">Later Version Work</h2>
+               <p class="para">Modeling several structures and functions that might appropriately be part of a DTD using this Suite has been delayed until
+                  a later version of the Suite. Such components include: 
+                  <ul class="bullist">
+                     <li>Questions and Answers (except as they can be modeled with
+                         the current DTD by using paragraphs and lists);
+                     </li>
+                     <li>Proper systematic identification keys (except as they can be tagged using regular list structures);</li>
+                     <li>Continuing Medical Education material;</li>
+                     <li>Forms and fill-in-the-blank areas;</li>
+                     <li>Conflict of Interest statements and Financial Disclosures (except as they can be modeled using paragraphs and footnotes);</li>
+                     <li>Electronic and Digital Rights Management material;</li>
+                     <li>Advertising included in a journal (for example, employment listings, classified advertising, and display advertising);</li>
+                     <li>Calendars, meeting schedules, and announcements (except as
+                         these can be handled as ordinary articles or sections within articles); and
+                     </li>
+                     <li>Material specific to an individual journal such as Author Guidelines, Policy and Scope statements, Editorial or advisory boards,
+                        detailed indicia, etc.
+                     </li>
+                  </ul> 
+               </p>
+            </div>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name="thanks"></a><h2 class="header">Acknowledgments</h2>
+            <p class="para">We thank <em>bmj.com</em>, <em>Molecular Biology of the Cell</em>, and <em>The Proceedings of the National Academy of Sciences of the U.S.A.</em> for providing the sample articles used in this tag library.
+            </p>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

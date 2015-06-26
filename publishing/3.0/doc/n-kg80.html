@@ -1,0 +1,160 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Element: Day</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;day&gt;</h1>
+         <h1 class="elementname">Day</h1>
+      </div>
+      <div class="definition">
+         <p class="para">The numeric value of a day of the month, in two-digit form as it would be stated as the “DD” in the international date format
+            YYYY-MM-DD, for example, “03”, “25”
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">For a detailed discussion on the use of <span class="elementtag">&lt;day&gt;</span>, see <a href="n-5t32.html#tag-cite-dates">Dates in Citations</a>.
+            
+         </p>
+         <p class="para">Used in both article metadata and within bibliographic references (<a href="n-8xa0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-t5v0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>).
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-cdd0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-cdd0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Within citations (<a href="n-8xa0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-t5v0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), this element is used to name the date of publication. The elements <a href="n-x660.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-at80.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>, <a href="n-kg80.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-ddv0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-uv70.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> may all be used to describe the date a cited resource was published. Other dates inside a citation, such as a copyright date,
+            the date on which the author accessed the resource, or a withdrawal date, should be tagged using <a href="n-ce80.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> with the <a href="n-cdd0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute used to name the type of date (copyright, access-date, time-stamp, etc.).
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  day          (#PCDATA)                                    &gt;</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Text, numbers, or special characters</p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-at80.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>, <a href="n-ce80.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a>, <a href="n-8xa0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-t5v0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-hzv0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-nfs0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-mjs0.html" target="main" title="Publication Date"><span class="elementtag">&lt;pub-date&gt;</span></a>, <a href="n-wut0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-6et0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">In article metadata:
+            
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;
+<strong><span class="focus">&lt;day&gt;27&lt;/day&gt;</span></strong>&lt;month&gt;03&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;
+&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted"&gt;
+<strong><span class="focus">&lt;day&gt;29&lt;/day&gt;</span></strong>
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British 
+Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of
+day hospital attendance in prolonging independent living for elderly
+people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+... 
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;element-citation publication-type="book" publication-format="web"&gt;
+&lt;source&gt;Fact sheet: AIDS information resources&lt;/source&gt;
+&lt;comment&gt;[Internet]&lt;/comment&gt;
+&lt;publisher-loc&gt;Bethesda (MD)&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;National Library of Medicine
+(US)&lt;/publisher-name&gt;
+&lt;year&gt;2003&lt;/year&gt;
+&lt;month&gt;May&lt;/month&gt;
+<strong><span class="focus">&lt;day&gt;2&lt;/day&gt;</span></strong>
+&lt;date-in-citation content-type="updated"&gt;updated 2005 Jul 14&lt;/date-in-citation&gt;
+&lt;date-in-citation content-type="access-date"&gt;cited 2006 Nov 15&lt;/date-in-citation&gt;
+&lt;size units="screen"&gt;[about 3 screens]&lt;/size&gt;
+&lt;comment&gt;Available from:
+&lt;uri&gt;http://www.nlm.nih.gov/pubs/factsheets/aidsinfs.html&lt;/uri&gt;
+&lt;/comment&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 3</h3>
+         <p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;mixed-citation publication-type="book" publication-format="web"&gt;
+&lt;source&gt;Fact sheet: AIDS information resources&lt;/source&gt;
+[Internet]. &lt;publisher-loc&gt;Bethesda
+(MD)&lt;/publisher-loc&gt;: &lt;publisher-name&gt;National
+Library of Medicine (US)&lt;/publisher-name&gt;;
+&lt;year&gt;2003&lt;/year&gt; &lt;month&gt;May&lt;/month&gt; <strong><span class="focus">&lt;day&gt;2&lt;/day&gt;</span></strong>
+[updated &lt;date-in-citation  content-type="updated"&gt;2005 Jul 14
+&lt;/date-in-citation&gt;; cited  &lt;date-in-citation 
+content-type="access-date"&gt;2006 Nov 15&lt;/date-in-citation&gt;].
+&lt;size units="screen"&gt;[about 3 screens]&lt;/size&gt;.
+Available from:
+&lt;uri&gt;http://www.nlm.nih.gov/pubs/factsheets/aidsinfs.html&lt;/uri&gt;.
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

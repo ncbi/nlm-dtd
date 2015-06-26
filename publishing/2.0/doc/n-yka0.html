@@ -1,0 +1,91 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Given (First) Names</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2003-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;given-names&gt;</h1>
+         <h1 class="elementname">Given (First) Names</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">All given names of a person, such as the first name, middle
+                   names, maiden name if used as part of the married name, etc., for example, in the name &#8220;John Q. Delancey Public&#8221;, the
+            given names would be &#8220;John Q. Delancey&#8221; and the <a href="n-v440.html"><span class="elementtag">&lt;surname&gt;</span></a> would be &#8220;Public&#8221;.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  given-names  (#PCDATA %given-names-elements;)*            &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters, zero or more</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7ju0.html"><span class="elementtag">&lt;name&gt;</span></a> <a href="n-7ju0.html"><span class="elementname">Name of Person</span></a>; <a href="n-3sv0.html"><span class="elementtag">&lt;speaker&gt;</span></a> <a href="n-3sv0.html"><span class="elementname">Speaker</span></a>; <a href="n-.html"><span class="elementtag">&lt;&gt;</span></a> <a href="n-.html"><span class="elementname"></span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+<strong><span class="focus">&lt;given-names&gt;Anne Williams&lt;/given-names&gt;</span></strong>
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;xref ref-type="aff" rid="StLukes"/&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Young&lt;/surname&gt;
+<strong><span class="focus">&lt;given-names&gt;John G.&lt;/given-names&gt;</span></strong>&lt;/name&gt;
+&lt;role&gt;consultant physician&lt;/role&gt;
+&lt;xref ref-type="aff" rid="RoyalInf"/&gt;
+&lt;author-comment&gt;&lt;p&gt;on behalf of the Day Hospital 
+Group&lt;/p&gt;&lt;/author-comment&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;
+&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5 
+0NA&lt;/aff&gt;
+&lt;aff id="RoyalInf"&gt;
+&lt;sup&gt;&lt;italic&gt;b&lt;/italic&gt;&lt;/sup&gt;Academic Section
+of Geriatric Medicine, Royal Infirmary, Glasgow 
+G4 0SF&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;...&lt;/pub-date&gt;
+...
+&lt;/article-meta&gt;
+... 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="pubdate">Version of 20041115</h4>
+      </div>
+   </body>
+</html>

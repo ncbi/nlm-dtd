@@ -1,0 +1,162 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>NLM Citation</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">NLM Citation</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    NLM Citation                                      --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD NLM Citation v2.3 20070202//EN"
+Delivered as file "nlmcitation.ent"                                --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Journal Publishing DTD of the                     --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    This new DTD Suite module adds the model for the  --&gt;
+&lt;!--             NLM Structured bibliographic citation. This model --&gt;
+&lt;!--             The model loosely reflects the NLM's style, in    --&gt;
+&lt;!--             that it allows the tagging of all "legal" NLM     --&gt; 
+&lt;!--             citations and enforces the sequence in which      --&gt;
+&lt;!--             content must appear if it is present. However,    --&gt;
+&lt;!--             this model does not provide guidance on what      --&gt;
+&lt;!--             information is required for each type of cited    --&gt;
+&lt;!--             content.                                          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) Content model for &lt;nlm-citation&gt;               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital Archive of Journal Articles               --&gt;
+&lt;!--             National Center for Biotechnology Information     --&gt;
+&lt;!--                (NCBI)                                         --&gt;
+&lt;!--             National Library of Medicine (NLM)                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             September 2004                                    --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Jeff Beck       (NCBI)                            --&gt;
+&lt;!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             Deborah A. Lapeyre (Mulberry Technologies, Inc.)  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             The Journal Publishing DTD is built from the      --&gt;
+&lt;!--             Archiving and Interchange DTD Suite.              --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             this DTD should be sent in email to:              --&gt;
+&lt;!--                 publishing-dtd@ncbi.nlm.nih.gov               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+  Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  2. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-07-30)
+         
+     
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+
+  1. Created this module from material previously in the single
+     journal publishing customization module (journalpubcustomize.ent)
+     Created at version "v2.3 20070202"                            --&gt;
+             
+             
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    NEW ELEMENT DECLARATIONS                   --&gt;
+&lt;!--                    Declarations of elements that are new to   --&gt;
+&lt;!--                    this DTD.                                  --&gt;
+&lt;!--                    NOTE: All new structures must be mappable  --&gt;
+&lt;!--                    to the archiving/interchange DTD and the   --&gt;
+&lt;!--                    mapping should be described when the new   --&gt;
+&lt;!--                    element is declared.                       --&gt;
+&lt;!-- ============================================================= --&gt;
+
+                                                   
+&lt;!--                    NLM CITATION MODEL                         --&gt;
+&lt;!--                    This structured citation model is provided
+                        to assist users how are creating new content.
+                        It loosely reflects the NLM's style, in that
+                        it allows the tagging of all "legal" NLM 
+                        citations and enforces the sequence in which
+                        content must appear if it is present. However,
+                        this model does not provide guidance on what
+                        information is required for each type of 
+                        cited content. 
+                        
+                        This model assumes that punctuation between
+                        the parts of a citation will be generated 
+                        on display or on export from the XML tagged
+                        according to this DTD to XML for another use.
+                        
+                        In converting documents tagged to this
+                        publishing DTD to the archiving/interchange
+                        DTD the &lt;nlm-citation&gt; tag must be changed to
+                        &lt;citation&gt; and all of the punctuation between
+                        elements inside the citation must be inserted.
+                                                                   --&gt;
+&lt;!ELEMENT  nlm-citation   
+                        ((person-group | collab)*, 
+                         (article-title | trans-title)*, 
+                         source?, patent?, trans-source?, year?, 
+                         ((month?, day?, time-stamp?) | season?), 
+                         access-date?, volume?, edition?, 
+                         conf-name?, conf-date?, conf-loc?, 
+                         (issue | supplement)*, publisher-loc?, 
+                         publisher-name?, (fpage?, lpage?)*, 
+                         page-count?, series?, comment*, pub-id*, 
+                         annotation?)                                &gt; 
+
+&lt;!ATTLIST  nlm-citation
+             %citation-atts;                                         &gt;
+
+
+&lt;!-- ================== End NLM Citation Module ================== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

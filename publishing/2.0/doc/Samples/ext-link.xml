@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher>
+<publisher-name>...</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">WES-10092260</article-id>
+<title-group>
+<article-title>Systematic review of day hospital care for 
+elderly people</article-title>
+</title-group>
+<contrib-group>
+<contrib>
+<name><surname>...</surname>
+<given-names>...</given-names></name>
+</contrib>
+</contrib-group> 
+<aff> </aff>
+<pub-date pub-type="pub"><day>27</day>
+<month>3</month><year>1999</year></pub-date>
+<fpage>...</fpage>
+<copyright-year>1999</copyright-year>
+</article-meta>
+</front>
+<body><?mtl /hellip?>
+<sec sec-type="intro">
+<title>Introduction</title>
+<p>... The highest 16S rDNA sequence similarity 
+value of 98&amp;amp;#x0025; was obtained for the 
+<italic>D. maris</italic> 16S rDNA sequence 
+(GenBank accession no. <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="Y18883"/>) 
+and for the <italic>D. maris</italic> DSM 43672<sup>T</sup> 
+16S rDNA sequence (GenBank accession no. <ext-link 
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X79290"/>) ....</p>
+</sec>
+<?mtl hellip?></body>
+</article><?mtl /hellip?>

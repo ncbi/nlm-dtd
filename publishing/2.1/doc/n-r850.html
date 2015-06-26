@@ -1,0 +1,97 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Contract/Grant Number</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;contract-num&gt;</h1>
+         <h1 class="elementname">Contract/Grant Number</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Contract or grant number of the supported work described in an
+                    article
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Conversion Note: If an acronym for the sponsor is
+                    available, insert it before the number.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-5we0.html"><span class="attrtag">id</span></a> <a href="n-5we0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-sdf0.html"><span class="attrtag">rid</span></a> <a href="n-sdf0.html"><span class="attrname">Reference to an Identifier</span></a></h5>
+         <h5 class="header"><a href="n-hug0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-hug0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-txg0.html"><span class="attrtag">xlink:href</span></a> <a href="n-txg0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-54g0.html"><span class="attrtag">xlink:role</span></a> <a href="n-54g0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-esg0.html"><span class="attrtag">xlink:show</span></a> <a href="n-esg0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-v7g0.html"><span class="attrtag">xlink:title</span></a> <a href="n-v7g0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-ieg0.html"><span class="attrtag">xlink:type</span></a> <a href="n-ieg0.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-erg0.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-erg0.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  contract-num
+                        (#PCDATA %contract-elements;)*               &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters, zero or more</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-58c0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-58c0.html"><span class="elementname">Article Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;...
+&lt;article-meta&gt;...
+&lt;pub-date&gt;&lt;year&gt;2004&lt;/year&gt;&lt;/pub-date&gt;
+&lt;fpage&gt;00&lt;/fpage&gt;
+&lt;kwd-group&gt;...&lt;/kwd-group&gt;
+<strong><span class="focus">&lt;contract-num&gt;NSF DBI-0317510&lt;/contract-num&gt;</span></strong>
+&lt;contract-sponsor&gt;ARDA AQUAINT&lt;/contract-sponsor&gt;
+&lt;counts&gt;...&lt;/counts&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;
+&lt;ack&gt;
+&lt;p&gt;... Part of the research at Stanford was supported by NIH GM61374. 
+The Berkeley portion of this research was supported by NSF DBI-0317510, 
+an ARDA AQUAINT contract, and a gift from Genentech Corp.&lt;/p&gt;
+&lt;/ack&gt;
+...
+&lt;/back&gt;
+&lt;/article&gt;
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

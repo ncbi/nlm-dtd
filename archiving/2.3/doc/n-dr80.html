@@ -1,0 +1,134 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Conference Information</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;conference&gt;</h1>
+         <h1 class="elementname">Conference Information</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A wrapper element to contain information about a single
+                   conference and its proceedings
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Design Note: This element and all the contained conference elements were largely based on the original elements from the CrossRef
+            schema.
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The container element <a href="n-dr80.html"><span class="elementname">Conference Information</span></a> <a href="n-dr80.html"><span class="elementtag">&lt;conference&gt;</span></a> holds all the elements that may be
+                   used to describe a conference, where an article was originally presented at a
+                   conference. Those elements include: <a href="n-qb50.html"><span class="elementname">Conference Date</span></a>, <a href="n-8w80.html"><span class="elementname">Conference Number</span></a>, <a href="n-hm50.html"><span class="elementname">Conference Location</span></a>, <a href="n-is80.html"><span class="elementname">Conference Sponsor</span></a>, <a href="n-ug80.html"><span class="elementname">Conference Theme</span></a>, and <a href="n-vy50.html"><span class="elementname">Conference Acronym</span></a>.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  conference   %conference-model;                           &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-qb50.html"><span class="elementname">Conference Date</span></a> <a href="n-qb50.html"><span class="elementtag">&lt;conf-date&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-7380.html"><span class="elementname">Conference Name</span></a> <a href="n-7380.html"><span class="elementtag">&lt;conf-name&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-8w80.html"><span class="elementname">Conference Number</span></a> <a href="n-8w80.html"><span class="elementtag">&lt;conf-num&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-hm50.html"><span class="elementname">Conference Location</span></a> <a href="n-hm50.html"><span class="elementtag">&lt;conf-loc&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-is80.html"><span class="elementname">Conference Sponsor</span></a> <a href="n-is80.html"><span class="elementtag">&lt;conf-sponsor&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-ug80.html"><span class="elementname">Conference Theme</span></a> <a href="n-ug80.html"><span class="elementtag">&lt;conf-theme&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-vy50.html"><span class="elementname">Conference Acronym</span></a> <a href="n-vy50.html"><span class="elementtag">&lt;conf-acronym&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-bsh0.html"><span class="elementname">X - Generated Text and Punctuation</span></a> <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;abstract&gt;...
+&lt;/abstract&gt;
+<strong><span class="focus">&lt;conference&gt;
+&lt;conf-date&gt;1999&lt;/conf-date&gt;
+&lt;conf-name&gt;The 27th annual ACM SI/GUCCS
+conference&lt;/conf-name&gt;
+&lt;conf-num&gt;27&lt;/conf-num&gt;
+&lt;conf-loc&gt;Denver, Colorado, United States&lt;/conf-loc&gt;
+&lt;conf-sponsor&gt;ACM, Assoc. for Computing
+Machinery&lt;/conf-sponsor&gt;
+&lt;conf-theme&gt;User services conference for
+university and college computing service
+organizations&lt;/conf-theme&gt;
+&lt;conf-acronym&gt;SIGUCCS&lt;/conf-acronym&gt;
+&lt;/conference&gt;</span></strong>
+&lt;counts&gt;
+&lt;fig-count count="5"/&gt;
+&lt;table-count count="3"/&gt;
+&lt;equation-count count="10"/&gt;
+&lt;ref-count count="26"/&gt;
+&lt;page-count count="6"/&gt;
+&lt;word-count count="2847"/&gt;
+&lt;/counts&gt;
+&lt;/article-meta&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

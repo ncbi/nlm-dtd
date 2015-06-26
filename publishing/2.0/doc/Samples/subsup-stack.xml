@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for NLM Citation Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+</article-meta>
+</front><?mtl /hellip?>
+<body>
+<p>The <italic>Escherichia coli argU</italic> gene encodes a minor arginine 
+tRNA, tRNA<sup arrange="stack">Arg</sup><sub arrange="stack">UCU</sub>, 
+which corresponds to the rare codon AGA and possibly AGG ....</p>
+<?mtl hellip?><?mtl /hellip?>
+</body>
+<?mtl hellip?></article><?mtl /hellip?>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article><?mtl /hellip?>
+<front>
+<?mtl hellip?>
+<journal-meta>
+<journal-id>Fake Journal ID for NLM Citation Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta><?mtl /hellip?>
+<article-meta><?mtl hellip?>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+<?mtl /hellip?></article-meta>
+<notes>
+<p>Helpful comments from two anonymous referees on earlier 
+version of the paper are gratefully acknowledged. Email: 
+<email>kuse&commat;udel.edu</email></p>
+</notes>
+</front><?mtl hellip?>
+<body><p></p></body>
+</article><?mtl /hellip?>

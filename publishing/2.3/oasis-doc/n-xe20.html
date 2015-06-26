@@ -1,0 +1,235 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Using OASIS CALS Tables</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">OASIS Open Exchange CALS Table Model (XML version)</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <h1 class="sectiontitle">Using OASIS CALS Tables</h1>
+      <p class="para"><strong>Two Ways to Use OASIS CALS</strong>. There are two ways in which the OASIS CALS table model can be used with the NLM Suite. The simplest way is to use the OASIS
+         CALS table model instead of the XHTML table model. Replace the module for the XHTML table and its setup module with the module
+         for the CALS table and its setup module, and 95% of the work is done. The second way &#8212; where a publisher or archive wishes
+         to support both table models &#8212; is slightly more complicated. 
+      </p>
+      <p class="para"><strong>Table Context</strong>. Tables are not used directly in the NLM Suite tag sets; they are embedded in larger structures. The element <tt>&lt;table&gt;</tt> is embedded in <tt>&lt;table-wrap&gt;</tt>, which contains the label, caption, table footer, etc. for the table. The element <tt>&lt;tbody&gt;</tt> (a part of the table) is used within  <tt>&lt;array&gt;</tt>. 
+      </p>
+      <hr class="hrule">
+      <div class="section"><a name=""></a><h2 class="header">Changes to the Modules</h2>
+         <p class="para">Whether the OASIS CALS table is to be added to an NLM tag set as the only table model or as an additional table model to a
+            tag set that already contains the XHTML table tag set, the majority of the changes required in the NLM models and setup are
+            very similar. However, if the two table models are used in  one tag set, there will be namespace collisions; a practical solution
+            is to add a namespace and namespace prefix to the OASIS elements. The discussion below assumes that this technique is the
+            one chosen to integrate the OASIS table elements.
+         </p>
+         <p class="para">The following changes may need  to be made to incorporate a new table model:</p>
+         <ul class="bullist">
+            <li>Change classes (to use the new elements);</li>
+            <li>Add new modules to the DTD (to declare the new elements);</li>
+            <li>Differentiate the two table models (by setting the pseudo namespace); and</li>
+            <li>Customize the OASIS setup module.</li>
+         </ul>
+         <hr class="hrule">
+         <div class="section"><a name=""></a><h2 class="header">Class Changes</h2>
+            <p class="para">Classes are used to define where an element may be used. The class is defined as one or more elements, and then the class
+               is used instead of the specific element names in content models. If only one table model is used in the tag set, it may not
+               be necessary to change the default classes, but they should be checked to be sure.
+            </p>
+            <p class="para"><strong>Table Classes</strong>. The table element(s) are named in the <tt>%table.class;</tt> Parameter Entity and used in models and mixes as needed. In either the default-classes module or the DTD-specific class over-ride
+               module, set  <tt>%table.class;</tt> to one of the following values:
+                  
+               <ul class="bullist">
+                  <li><tt>table</tt> &#8212; when there is only one table model, whether XHTML or CALS
+                  </li>
+                  <li><tt>table | oasis:table</tt> &#8212; when both table models are to be used in the same tag set
+                  </li>
+               </ul>
+            </p>
+            <p class="para"><strong>Tbody Classes</strong>. The <tt>&lt;tbody&gt;</tt> element is named in the <tt>%tbody.class;</tt> Parameter Entity and used in models and mixes as needed. In either the default-classes module or the DTD-specific class over-ride
+               module, set <tt>%tbody.class;</tt> to one of the following values:
+                  
+               <ul class="bullist">
+                  <li><tt>tbody</tt> &#8212; where there is only one table model, whether XHTML or CALS
+                  </li>
+                  <li><tt>tbody | oasis:tbody</tt> &#8212; where both table models are to be used in the same tag set
+                  </li>
+               </ul>
+            </p>
+            <p class="para"><strong>Other Classes and Models</strong>. Any given tag set may use the <tt>&lt;table&gt;</tt> and <tt>&lt;tbody&gt;</tt> elements in other classes and content models. Use global searches over your DTD modules (or the equivalent) to see if these
+               elements are used anywhere else.
+            </p>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name=""></a><h2 class="header">New Modules</h2>
+            <p class="para"><strong>OASIS CALS Table Model Addition</strong>. To include the OASIS CALS table model in the tag set:
+                  
+               <ul class="bullist">
+                  <li>Make sure that the following still exist in the Module of Modules (<tt>%modules.ent;</tt>):
+                     <div class="codeblock"><pre>&lt;!--                    OASIS XML TABLE SETUP MODULE               --&gt;
+&lt;!--                    Set all Parameter Entities needed by the
+                        OASIS (CALS) Table Exchange table model, and 
+                        then call the module containing that model.                           
+                        Authoring Note: If wanted, this module
+                        will be invoked in the DTD module          --&gt;
+&lt;!ENTITY % oasis-tablesetup.ent 
+                        PUBLIC
+"-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.2 20040830//EN"
+"oasis-tablesetup.ent"                                               &gt;
+
+
+&lt;!--                    OASIS XML TABLE MODEL                      --&gt;
+&lt;!--                    The OASIS (CALS) Table Exchange table model
+                        This module is invoked in 
+                        %OASIStablesetup.ent;                      --&gt;
+&lt;!ENTITY % oasis-exchange.ent 
+                        PUBLIC
+"-//OASIS//DTD XML Exchange Table Model 19990315//EN" 
+"oasis-exchange.ent"                                                 &gt;
+</pre></div>
+                  </li>
+                  <li>Then insert the following in the DTD file:
+                     <div class="codeblock"><pre>&lt;!--                    OASIS EXCHANGE (CALS) TABLE SETUP MODULE   --&gt;
+&lt;!--                    Set up the necessary Parameter Entity values
+                        and then invokes OASIS Exchange table 
+                        module                                     --&gt;
+%oasis-tablesetup.ent; 
+</pre></div>
+                  </li>
+               </ul>
+               
+            </p>
+            <p class="para"><strong>XHTML Table Model Removal</strong>. Remember that it is possible to use both the XHTML and CALS models in the same tag set. But if the XHTML table model is
+               <em>not</em> to be included in the DTD, perform the following:
+               
+               <ul class="bullist">
+                  <li>Remove or comment out the following in the Module of Modules (<tt>%modules.ent;</tt>):
+                     <div class="codeblock"><pre>&lt;!--                    XHTML TABLE SETUP MODULE                   --&gt;
+&lt;!--                    Set all Parameter Entities needed by the
+                        HTML 4.0 (XHTML) table model, and then
+                        call the module containing that model.                           
+                        Authoring Note: If wanted, this module
+                        will be invoked in the DTD module          --&gt;
+&lt;!ENTITY % XHTMLtablesetup.ent 
+                        PUBLIC
+"-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.3 20070202//EN"
+"XHTMLtablesetup.ent"                                                &gt;
+
+
+&lt;!--                    XHTML TABLE MODEL                          --&gt;
+&lt;!--                    The public XML version of the XHTML 1.1
+                        table model. This module is invoked in the
+                         module %XHTMLtablesetup.ent;              --&gt;
+&lt;!ENTITY % xhtml-table-1.mod 
+                        PUBLIC
+"-//W3C//ELEMENTS XHTML Tables 1.0//EN"
+"xhtml-table-1.mod"                                                  &gt;
+
+
+&lt;!--                    XHTML TABLE INLINE STYLE MODULE            --&gt;
+&lt;!--                    The public XML version of the XHTML 1.1
+                        inline style module for use in XHTML tables.
+                        This module is invoked in the
+                         module %XHTMLtablesetup.ent;              --&gt;
+&lt;!ENTITY % xhtml-inlstyle-1.mod 
+                        PUBLIC
+"-//W3C//ENTITIES XHTML Inline Style 1.0//EN"
+"xhtml-inlstyle-1.mod"                                                  &gt;
+</pre></div>
+                  </li>
+                  <li>Then remove or comment out the following in the DTD file:
+                     <div class="codeblock"><pre>&lt;!--                    XHTML TABLE SETUP MODULE                   --&gt;
+&lt;!--                    Set up the necessary Parameter Entity values
+                        and then invoke XHTML (HTML 4.0) table 
+                        module                                     --&gt;
+%XHTMLtablesetup.ent;
+</pre></div>
+                  </li>
+               </ul>
+            </p>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name=""></a><h2 class="header">One or Two <tt>&lt;table&gt;</tt> Models &#8212; Table Differentiation
+            </h2>
+            <p class="para">If two table models are to be used in one tag set, it is convenient to namespace one of them (see Pseudo Namespace below).
+               The two OASIS modules have been set up assuming this namespacing. Hence, if only the OASIS table model is to be used, it will
+               not be necessary to add a namespace or namespace prefix to the OASIS elements, and the instructions in <a href="n-xe20.html#noprefix">Only OASIS: Removing the Prefix</a> may be followed.
+            </p>
+            <hr class="hrule">
+            <div class="section"><a name=""></a><h2 class="header">Two Tables: The Pseudo Namespace</h2>
+               <p class="para">In order to use both the XHTML and OASIS CALS table models in the same tag set, it is necessary to give the OASIS elements
+                  a namespace, since there are known name collisions. (Actually either table model could be given a namespace, but since the
+                  XHTML is the default table model, the OASIS CALS model is considered the secondary model.) Since namespaces do not work well
+                  in the DTD world, this will require putting an actual prefix in front of each OASIS CALS table model element name as well
+                  as declaring the namespace and prefix. The element <tt>&lt;table&gt;</tt> will be named <a href="n-mx00.html"><span class="elementtag">&lt;oasis:table&gt;</span></a>, <tt>&lt;tgroup&gt;</tt> will be <a href="n-q400.html"><span class="elementtag">&lt;oasis:tgroup&gt;</span></a>, etc.
+               </p>
+               <p class="para">To insert the namespace pseudo-attribute, add the following to the Article Attributes Parameter Entity (<tt>%article-atts;</tt>):
+               </p>
+               <div class="codeblock"><pre>             %oasis.xmlns.attrib;</pre></div>
+               <p class="para">This namespace is declared in the OASIS Table Setup Module (<tt>%oasis-tablesetup.ent;</tt>) and should always be used on the <tt>&lt;article&gt;</tt> element.
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="noprefix"></a><h2 class="header">Only OASIS: Removing the Prefix</h2>
+               <p class="para">If only one table model is to be used, it is not necessary to prefix the OASIS elements or to use the &#8220;<tt>xmlns</tt>&#8221; psuedo-attribute. If a tag set is built using only the OASIS model and not the XHTML model, the OASIS modules may be left
+                  intact. But a DTD designer will probably find it more convenient to make the following changes to the OASIS modules as delivered:
+                  <ul class="bullist">
+                     <li>Namespace removal &#8212; Remove the Parameter Entity declaration for <tt>oasis.xmlns.attrib</tt> from the OASIS Table Setup Module and from the <a href="n-vx20.html"><span class="petag">%tbl.table.att;</span></a> declaration.
+                     </li>
+                     <li>Prefix  removal &#8212; Remove the prefix &#8220;oasis:&#8221; from all the elements mentioned in the Table Setup Module (<a href="n-t320.html"><span class="petag">%oasis-tablesetup.ent;</span></a>) and in the OASIS module (<a href="n-9c20.html"><span class="petag">%oasis-exchange.ent;</span></a>) so that, for example, <a href="n-kx00.html"><span class="elementtag">&lt;oasis:row&gt;</span></a> becomes <tt>&lt;row&gt;</tt>.
+                     </li>
+                  </ul>  
+               </p>
+            </div>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name=""></a><h2 class="header">The OASIS Setup Module and Customization</h2>
+            <p class="para">The OASIS Table Setup Module (<tt>%oasis-tablesetup.ent;</tt>) provides overrides to standard parameter entities used  in the OASIS-Open exchange CALS table model and then invokes the
+               OASIS-Open table exchange model module. This module should be read to ensure that no additional changes are needed.
+            </p>
+            <p class="para"><strong>Inside Table Cells</strong>. The <a href="n-g520.html"><span class="petag">%paracon;</span></a> Parameter Entity sets up the content of a table cell (<tt>&lt;entry&gt;</tt>). This Parameter Entity, in turn, is set to the <tt>%inside-cell;</tt> Parameter Entity; consequently, the <tt>%inside-cell;</tt> Parameter Entity must be declared before the OASIS Table Setup Module is called.  A default value for the Parameter Entity
+               is established in the <tt>%default-mixes;</tt> module of the NLM Suite:
+            </p>
+            <div class="codeblock"><pre>&lt;!ENTITY % paracon      "#PCDATA | %inside-cell;"                    &gt;
+</pre></div>
+            <p class="para"><strong>NLM Added Attributes</strong>. The NLM Suite has added several attributes to the <tt>&lt;table&gt;</tt> element:
+               
+               <ul class="bullist">
+                  <li><tt>alternate-form-of</tt> &#8212; Where multiple formats of an item (e.g., 
+                                             graphic file, media object, chemical 
+                                             structure) are available, this attribute 
+                                             indicates that a format is a secondary 
+                                             one and provides a link to the primary 
+                                             format, so that only one format of an
+                                             item is displayed.
+                                  
+                  </li>
+                  <li><tt>content-type</tt> &#8212; This attribute identifies the subject, type of
+                                             content, or reason that a word or phrase
+                                             is considered semantically special, as a 
+                                             means of preserving the semantic intent of 
+                                             any original tagging for a conversion or adding new semantic distinction.
+                  </li>
+                  <li><a href="n-np00.html"><span class="attrtag">id</span></a> &#8212; This attribute provides a unique identifier for the table. Best practice is to use the unique identifier for the <tt>&lt;table-wrap&gt;</tt> element that contains the table and to use this attribute on the <tt>&lt;table&gt;</tt> element only when there are multiple tables within a <tt>&lt;table-wrap&gt;</tt>.
+                  </li>
+               </ul>
+                                       
+            </p>
+            <p class="para"><strong>Other Changes</strong>. If you want to further customize the OASIS CALS table model, modifications should be added to the OASIS Table Setup Module
+               (<tt>%oasis-tablesetup.ent;</tt>).
+            </p>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">OASIS Open Exchange CALS Table Model (XML version)</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

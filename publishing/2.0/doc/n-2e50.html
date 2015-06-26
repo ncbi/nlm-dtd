@@ -1,0 +1,208 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Correspondence Information</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2003-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;corresp&gt;</h1>
+         <h1 class="elementname">Correspondence Information</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Information concerning which of the authors (or other
+                   contributors) is the corresponding contributor, to whom information requests
+                   should be addressed
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">A cross-reference element (<a href="n-s8t0.html"><span class="elementtag">&lt;xref&gt;</span></a>) 
+                   may point to the this element&#8217;s <a href="n-hq70.html"><span class="attrtag">id</span></a>
+                   attribute.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-hq70.html"><span class="attrtag">id</span></a> <a href="n-hq70.html"><span class="attrname">Identifier</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Conversion Note: In current journal DTD practice,
+                   information naming one contributor as the corresponding contributor may be
+                   tagged explicitly using a <a href="n-2e50.html"><span class="elementtag">&lt;corresp&gt;</span></a> element or
+                   may just be one of many footnotes <a href="n-2j80.html"><span class="elementtag">&lt;fn&gt;</span></a> concerning
+                   the contributor. Although this DTD Suite supports both practices, if possible, the
+                   correspondence information should be tagged using the
+                   <a href="n-2e50.html"><span class="elementname">Correspondence Information</span></a> <a href="n-2e50.html"><span class="elementtag">&lt;corresp&gt;</span></a> element.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  corresp      (#PCDATA %corresp-elements;)*                &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the address elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-ex20.html"><span class="elementname">Address Line</span></a> <a href="n-ex20.html"><span class="elementtag">&lt;addr-line&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-qg50.html"><span class="elementname">Country: in an Address</span></a> <a href="n-qg50.html"><span class="elementtag">&lt;country&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-4g80.html"><span class="elementname">Fax Number: in an Address</span></a> <a href="n-4g80.html"><span class="elementtag">&lt;fax&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ara0.html"><span class="elementname">Institution Name: in an Address</span></a> <a href="n-ara0.html"><span class="elementtag">&lt;institution&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-yyw0.html"><span class="elementname">Phone Number: in an Address</span></a> <a href="n-yyw0.html"><span class="elementtag">&lt;phone&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-3v80.html"><span class="elementname">Email Address</span></a> <a href="n-3v80.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-5t80.html"><span class="elementname">External Link</span></a> <a href="n-5t80.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-q9s0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-q9s0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-jjc0.html"><span class="elementname">Bold</span></a> <a href="n-jjc0.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hja0.html"><span class="elementname">Italic</span></a> <a href="n-hja0.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-9du0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-9du0.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-24w0.html"><span class="elementname">Overline</span></a> <a href="n-24w0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ujx0.html"><span class="elementname">Small Caps</span></a> <a href="n-ujx0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-vgv0.html"><span class="elementname">Strike Through</span></a> <a href="n-vgv0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-eps0.html"><span class="elementname">Underline</span></a> <a href="n-eps0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-gdv0.html"><span class="elementname">Subscript</span></a> <a href="n-gdv0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-e240.html"><span class="elementname">Superscript</span></a> <a href="n-e240.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-zgc0.html"><span class="elementtag">&lt;author-notes&gt;</span></a> <a href="n-zgc0.html"><span class="elementname">Author Note Group</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Genton&lt;/surname&gt;
+&lt;given-names&gt;Blaise&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;senior scientist&lt;/role&gt;
+&lt;xref ref-type="aff"&gt;
+&lt;sup&gt;
+&lt;italic&gt;a&lt;/italic&gt;
+&lt;/sup&gt;
+&lt;/xref&gt;
+&lt;xref ref-type="corresp" rid="cor1"&gt;&amp;#x2010;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff&gt;
+&lt;sup&gt;
+&lt;italic&gt;a&lt;/italic&gt;
+&lt;/sup&gt;Policlinique M&amp;#x00E9;dicale Universitaire, 1005 Lausanne,
+Switzerland, &lt;sup&gt;
+&lt;italic&gt;b&lt;/italic&gt;
+&lt;/sup&gt;Swiss Federal Office of Public Health, Bern,
+Switzerland&lt;/aff&gt;
+&lt;author-notes&gt;
+&lt;fn fn-type="con"&gt;
+&lt;p&gt;&amp;#x2003; Contributors: VD'A was responsible for data entry,
+management and analysis, interpretation of results, and writing the manuscript. PL was responsible for clinical supervision, data
+collection, and interpretation of results.&lt;/p&gt;
+&lt;/fn&gt;
+<strong><span class="focus">&lt;corresp id="cor1"&gt;&amp;#x2010; Correspondence to: B Genton
+&lt;email&gt;Blaise.Genton@hospvd.ch&lt;/email&gt;&lt;/corresp&gt;</span></strong>
+&lt;/author-notes&gt;
+&lt;pub-date pub-type="pub"&gt;
+&lt;day&gt;13&lt;/day&gt;
+&lt;month&gt;4&lt;/month&gt;
+&lt;year&gt;2002&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;fpage&gt;65&lt;/fpage&gt;
+&lt;/article-meta&gt;...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="pubdate">Version of 20041115</h4>
+      </div>
+   </body>
+</html>

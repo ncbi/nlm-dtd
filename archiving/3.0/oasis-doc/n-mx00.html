@@ -1,0 +1,177 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Table (OASIS Table Model)</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">OASIS Open Exchange CALS Table Model (XML version)</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;oasis:table&gt;</h1>
+         <h1 class="elementname">Table (OASIS Table Model)</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Data presented structurally in rows and columns</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para"><strong>Note:</strong> The <a href="n-mx00.html"><span class="elementtag">&lt;oasis:table&gt;</span></a> element is usually just part of what would be called a &#8220;table&#8221; in print; a full table may include a table title, table footnotes,
+            introductory paragraphs, etc., and is created using the <tt>&lt;table-wrap&gt;</tt> element.
+         </p>
+         <p class="para">For purposes of the NLM Archiving and Interchange Tag Sets, the OASIS (CALS) Table Exchange part of the OASIS table model
+            has been over-ridden to remove the
+                        <tt>&lt;title&gt;</tt> element from
+                        <a href="n-mx00.html"><span class="elementtag">&lt;oasis:table&gt;</span></a> because, in the NLM Suite,  <tt>&lt;title&gt;</tt>
+                        has been made part of <tt>&lt;table-wrap&gt;</tt>.
+         </p>
+         <p class="para">The official OASIS Exchange CALS Table Model documentation can be found 
+              at <a href="http://www.oasis-open.org/specs/a502.htm" target="_new">http://www.oasis-open.org/specs/a502.htm</a></p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-hh00.html"><span class="attrtag">colsep</span></a> <a href="n-hh00.html"><span class="attrname">Column Separator (OASIS Table Model)</span></a></h5>
+         <h5 class="header"><a href="n-aj00.html"><span class="attrtag">frame</span></a> <a href="n-aj00.html"><span class="attrname">Frame (OASIS Table Model)</span></a></h5>
+         <h5 class="header"><a href="n-np00.html"><span class="attrtag">id</span></a> <a href="n-np00.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-tm00.html"><span class="attrtag">rowsep</span></a> <a href="n-tm00.html"><span class="attrname">Row Separator (OASIS Table Model)</span></a></h5>
+         <h5 class="header"><a href="n-rk20.html"><span class="attrtag">xmlns:oasis</span></a> <a href="n-rk20.html"><span class="attrname">OASIS Namespace Declaration</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The row and column tags that describe the table cells are defined by the OASIS (CALS) Table Exchange table model <a href="n-mx00.html"><span class="elementtag">&lt;oasis:table&gt;</span></a> element. This element is not, in itself, a full table, but only the rows and columns portions of a table. A full table may
+            have other features, such as a title, table footnotes, etc. The <tt>&lt;table-wrap&gt;</tt> element contains the full table, that is, both rows and columns as well as such features as a title, footnotes, etc.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT %tbl.table.name; (%tbl.table.mdl;)&gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">
+                        <a href="n-q400.html"><span class="elementname">Table Group (OASIS Table Model)</span></a> <a href="n-q400.html"><span class="elementtag">&lt;oasis:tgroup&gt;</span></a>, one or more
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This top-level element may not be contained in any other elements.</h3>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;table-wrap id="TN0.170"&gt;
+&lt;label&gt;Table&lt;/label&gt;
+&lt;caption&gt;
+&lt;p&gt;Numbers of patients receiving institutional
+care at the end of scheduled follow up and
+use of hospital beds among those allocated
+to day hospital or alternative services&lt;/p&gt;
+&lt;/caption&gt;
+
+<strong><span class="focus">&lt;oasis:table&gt;
+&lt;oasis:tgroup cols="7"&gt;
+&lt;oasis:colspec colnum="1" colname="col1" align="center" colsep="1"/&gt;
+&lt;oasis:colspec colnum="2" colname="col2" align="center" colsep="1"/&gt;
+&lt;oasis:colspec colnum="3" colname="col3" align="center" colsep="1"/&gt;
+&lt;oasis:colspec colnum="4" colname="col4" align="center" colsep="1"/&gt;
+&lt;oasis:colspec colnum="5" colname="col5" align="center" colsep="1"/&gt;
+&lt;oasis:colspec colnum="6" colname="col6" align="center" colsep="1"/&gt;
+&lt;oasis:colspec colnum="7" colname="col7" align="char" 
+charoff="30" char="." colsep="1"/&gt;
+&lt;oasis:thead&gt;
+&lt;oasis:row&gt;
+&lt;oasis:entry namest="2" nameend="4" align="center"
+morerows="1"&gt;Institutional care&lt;/oasis:entry&gt;
+&lt;oasis:entry namest="6" nameend="7" align="center"
+morerows="1"&gt;&amp;#x2003;Bed use (days)&lt;/oasis:entry&gt;
+&lt;/oasis:row&gt;
+&lt;oasis:row&gt;
+&lt;oasis:entry namest="col3" nameend="col5"&gt;&lt;hr/&gt;&lt;/oasis:entry&gt;
+&lt;oasis:entry  namest="col6" nameend="col7"&gt;&lt;hr/&gt;&lt;/oasis:entry&gt;
+&lt;/oasis:row&gt;
+&lt;oasis:row&gt;&lt;oasis:entry&gt;Control group&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;Day hospital&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;Control&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;Odds ratio (95&amp;#x0025; CI)&lt;/oasis:entry&gt;
+&lt;oasis:entry&gt;&lt;/oasis:entry&gt;
+&lt;oasis:entry&gt;&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;Day hospital&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;Control&lt;/oasis:entry&gt;
+&lt;/oasis:row&gt;
+&lt;/oasis:thead&gt;
+&lt;oasis:tbody&gt;
+&lt;oasis:row&gt;
+&lt;oasis:entry namest="1" nameend="7"&gt;&lt;hr/&gt;&lt;/oasis:entry&gt;&lt;/oasis:row&gt;
+&lt;oasis:row&gt;
+&lt;oasis:entry&gt;Comprehensive care (5 trials)&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;151/597&lt;xref ref-type="table-fn"
+rid="TF1-150"&gt;&lt;/xref&gt;&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;159/584&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;0.91 (0.70 to 1.19)&lt;/oasis:entry&gt;
+&lt;oasis:entry&gt;&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;20.5&lt;/oasis:entry&gt;
+&lt;oasis:entry align="char" char="." charoff="30"&gt;21.4&lt;/oasis:entry&gt;&lt;/oasis:row&gt;
+&lt;oasis:row&gt;
+&lt;oasis:entry&gt;Domiciliary care (4 trials)&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;20/216&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;&amp;#x2002;19/227&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;1.61 (0.30 to 8.55)&lt;/oasis:entry&gt;
+&lt;oasis:entry&gt;&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;&amp;#x2002;7.7&lt;/oasis:entry&gt;
+&lt;oasis:entry align="char" char="." charoff="30"&gt;11.1&lt;/oasis:entry&gt;
+&lt;/oasis:row&gt;
+&lt;oasis:row&gt;
+&lt;oasis:entry&gt;No comprehensive care (3 trials)&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;37/411&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;&amp;#x2002;66/403&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;0.50&lt;xref ref-type="table-fn"
+rid="TF1-151"&gt;&lt;/xref&gt; (0.26 to 0.96)&lt;/oasis:entry&gt;
+&lt;oasis:entry&gt;&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;11.2&lt;/oasis:entry&gt;
+&lt;oasis:entry align="char" char="." charoff="30"&gt;11.7&lt;/oasis:entry&gt;
+&lt;/oasis:row&gt;
+&lt;oasis:row&gt;
+&lt;oasis:entry&gt;Total&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;208/1224&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;244/1214&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;0.77 (0.52 to 1.13)&lt;/oasis:entry&gt;
+&lt;oasis:entry&gt;&lt;/oasis:entry&gt;
+&lt;oasis:entry align="center"&gt;15.0&lt;/oasis:entry&gt;
+&lt;oasis:entry align="char" char="." charoff="30"&gt;16.4&lt;/oasis:entry&gt;
+&lt;/oasis:row&gt;
+&lt;/oasis:tbody&gt;
+&lt;/oasis:tgroup&gt;
+&lt;/oasis:table&gt;</span></strong>
+&lt;table-wrap-foot&gt;
+&lt;fn id="TF1-150"&gt;&lt;p&gt;Data not available for 1 trial.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;fn id="TF1-151"&gt;&lt;p&gt;P&amp;#x003C;0.05 (random effects
+model).&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">oasis-exchange.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">OASIS Open Exchange CALS Table Model (XML version)</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

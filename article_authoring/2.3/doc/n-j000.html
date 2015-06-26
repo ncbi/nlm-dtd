@@ -1,0 +1,182 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Tag Library Introduction</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="intro">
+         <h1 class="header">General Introduction</h1>
+         <ul class="bullist">
+            <li><a href="n-j000.html#dtddesign">Tag Set Design Principles
+                   </a><ul class="bullist">
+                  <li><a href="n-j000.html#purpose">Purpose and Characteristics</a></li>
+                  <li><a href="n-j000.html#dtdscope">Scope: Journal Articles</a></li>
+                  <li><a href="n-j000.html#accessibility">Accessibility</a></li>
+               </ul>
+            </li>
+            <li><a href="n-j800.html#authordoc">Documentation for Authors</a><ul class="bullist">
+                  <li><a href="n-j800.html#articleintro">Introduction to Article</a></li>
+                  <li><a href="n-j800.html#howto">How to Read This Tag Library</a><ul class="bullist">
+                        <li><a href="n-j800.html#terms">Terms and Definitions</a></li>
+                        <li><a href="n-j800.html#howtostart">How To Start Using This Tag Library</a></li>
+                        <li><a href="n-j800.html#structure">Tag Library Organization</a></li>
+                        <li><a href="n-j800.html#typog">Typographic Conventions</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li><a href="n-6v00.html#impledoc">Documentation for Implementors</a><ul class="bullist">
+                  <li><a href="n-6v00.html#modulardesign">Modular DTD Design</a></li>
+                  <li><a href="n-6v00.html#developed">Tag Sets from the Base Suite</a></li>
+                  <li><a href="n-6v00.html#learnDTD">Learning the DTD</a></li>
+                  <li><a href="n-6v00.html#DTDstructure">Structure of the Authoring DTD</a><ul class="bullist">
+                        <li><a href="n-6v00.html#classes">Element Classes</a></li>
+                        <li><a href="n-6v00.html#elementclasses">Element Classes in the Suite</a></li>
+                        <li><a href="n-6v00.html#modules">Modules in the DTD and Suite</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="n-6v00.html#howtodtds">How To Make New DTDs</a><ul class="bullist">
+                        <li><a href="n-6v00.html#pes">Parameter Entity Modules to Customize and Change</a></li>
+                        <li><a href="n-6v00.html#concept">Concept</a></li>
+                        <li><a href="n-6v00.html#variant">Making a Variant DTD</a></li>
+                        <li><a href="n-6v00.html#howtobuild">How To Build a New Custom DTD</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="n-6v00.html#naming">Suite Naming Conventions</a><ul class="bullist">
+                        <li><a href="n-6v00.html#elemnamerules">Element and Attribute Naming Rules</a></li>
+                        <li><a href="n-6v00.html#pesclassmix">Parameter Entity Names for Classes and Mixes</a></li>
+                        <li><a href="n-6v00.html#filenaming">File Naming Conventions</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="n-6v00.html#phaseII">Later Version Work</a></li>
+               </ul>
+            </li>
+         </ul>
+         <p class="para">The Article Authoring Tag Set (hereafter Authoring Tag Set) can be used to create new journal articles tagged with XML elements.
+            The Tag Set defines the elements (and their attributes) that describe the content of most journal articles, as well the content
+            of some non-article journal material, such as editorials and book reviews. A person using this Tag Set is typically one of
+            the article&#8217;s authors or someone (such as a copyeditor) to whom the author has sent the XML files. The Tag Set is intended
+            for use with XML-aware software or text-editors to guide the writer in choosing tags correctly. This Tag Set is a simplified
+            version of the Journal Publishing (Blue) Tag Set, which describes the biological and medical journal articles archived in
+            PubMed Central.
+         </p>
+         <p class="para">This Tag Library provides the documentation for the Authoring Tag Set including examples of element and attribute usage. The
+            documentation is divided in to two levels: 1) author documentation for the person writing or editing textual material who
+            wants to use the tags and 2) implementor documentation, which is more detailed for people who need to modify or maintain the
+            DTDs or schemas. The author-level reference material includes:
+             
+            <ul class="bullist">
+               <li>This brief introduction;</li>
+               <li>An explanation of how to read and use this Tag Library;</li>
+               <li>A top-level introduction to the <a href="n-3r20.html"><span class="elementtag">&lt;article&gt;</span></a> tag;
+               </li>
+               <li>Large reference sections describing all the elements and attributes. (This part of
+                   the Tag Library provides individual definitions and tagged examples for most of
+                   the elements and attributes used in the Tag Set.);
+               </li>
+               <li>Tree-like hierarchical diagrams that show the structures in the Authoring Tag Set; and </li>
+               <li>A full article sample, which has been tagged as an XML file valid to this Tag Set.</li>
+            </ul> Implementor-level material is also included:
+            <ul class="bullist">
+               <li>A separate reference section describing the Parameter Entities;</li>
+               <li>An introduction to the design principles for the whole modular
+                   Archiving and Interchange Suite from which this Tag Set was constructed;
+               </li>
+               <li>An explanation of how to build new DTDs from the modules in the
+                    Suite;
+               </li>
+               <li>Tables and appendices useful for reference on the fine points
+                   of the Tag Set (such as naming conventions); and 
+               </li>
+               <li>Reading copies of the DTD modules of the Article Authoring DTD as well as the modules that make up the full modular Suite.</li>
+            </ul>
+         </p>
+         <hr class="hrule">
+         <div class="section"><a name="dtddesign"></a><h2 class="header">Tag Set Design Principles</h2>
+            <hr class="hrule">
+            <div class="section"><a name="purpose"></a><h2 class="header">Purpose and Characteristics</h2>
+               <p class="para">This Authoring Tag Set is an XML vocabulary designed to describe new journal articles. These tags can be used by authors to
+                  submit publications to journals and to archives such as PubMed Central. The focus on authoring means that this is a smaller,
+                  tighter, less inclusive tag set than would have been necessary to create a journal <em>archiving</em> tag set. An archiving tag set needs to accommodate a wide variety of structures and offers very flexible content models for
+                  elements, whereas this Authoring Tag Set is more prescriptive than descriptive and includes many elements whose content must
+                  occur in a specified order. This is a tag set optimized for authorship of new journal articles, where regularization and control
+                  of content is important, and where it is useful rather than harmful to have only one way to tag a structure.
+               </p>
+               <p class="para">Since no assumptions can be made concerning the processing software and editorial situation that will receive an article authored
+                  in this Tag Set, tagging that forces specific formatting has been avoided. There is no way for an author to number his/her
+                  lists explicitly, for example, or to manually number the cited references, since many journals have their own citation policies.
+                  Numbers for the cited references must be generated by software to match editorial policy. For proofing purposes, the stlyesheets
+                  that may be used to produce PDF from these tagged articles number the references as counting numbers and the stylesheets that
+                  produce HTML for proofing display the identifier of the <a href="n-cxu0.html"><span class="elementtag">&lt;ref&gt;</span></a> as the number.
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="dtdscope"></a><h2 class="header">Scope: Journal Articles</h2>
+               <ul class="bullist">
+                  <li><em>Articles</em>. This is not a Tag Set for complete journals. The Authoring Tag Set models journal articles, where such an article is defined
+                     as the typical research article found in an STM journal. By design, the definition of an article is broad enough to include
+                     other article-like material found in journals, for example, editorials, short new pieces, obituaries, meeting reports, and
+                     book or product reviews. 
+                  </li>
+                  <li><em>Header and Body</em>. This Tag Set describes both the metadata for a journal article and the content of the article. Both are required to make
+                     a complete article.
+                  </li>
+                  <li><em>Multidisciplinary</em>.  Although designed for biomedical journals, this Tag Set should be sufficiently general to describe not only STM journals
+                     but technical journals in any field.
+                  </li>
+               </ul>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="version2.3"></a><h2 class="header">Changes in Version 2.3</h2>
+               <p class="para">
+                                Version 2.3 was an enhancement release that made changes requested by the Working Group based on operational
+                  concerns. All changes to content models and attribute lists have been made backward compatible. As an example, a new XHTML
+                  &#8220;style&#8221; attribute was added to all the elements inside &lt;table&gt; and the  &#8220;content-type&#8221; attribute was distributed widely to
+                  add or preserve semantic information The Authoring 2.3 Change Report may be accessed through the following page:<a href="http://dtd.nlm.nih.gov/articleauthoring/2.3/index.html" target="_new">http://dtd.nlm.nih.gov/articleauthoring/2.3/index.html</a>.
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="accessibility"></a><h2 class="header">Accessibility</h2>
+               <p class="para">Because access for a wide range of output devices, as well as for
+                         the visually impaired, is becoming more and more important in the STM journal
+                         community, the modules in the Archiving and Interchange Suite were designed to follow, as much as
+                         possible, the W3C <a href="http://www.w3.org/TR/2002/WD-WCAG20-20020822/"><span class="citetitle">Web Content Accessibility Guidelines
+                               2.0</span></a> working draft.  This Tag Set is based on the Archiving and Interchange Suite, which used the August 2002 specification, which
+                  was the latest accessibility specification
+                         available when the Suite was initially constructed. This Specification specifies
+                         accessibility guidelines on many levels from design through application. The
+                         guidelines which pertain to the modeling of materials were followed to at least
+                         Level-2 compliance. For example, a <a href="n-xh80.html"><span class="elementname">Long Description</span></a>
+                         <a href="n-xh80.html"><span class="elementtag">&lt;long-desc&gt;</span></a> element was defined as part of many
+                         other elements, such as <a href="n-zs50.html"><span class="elementname">Figure</span></a> <a href="n-zs50.html"><span class="elementtag">&lt;fig&gt;</span></a>, so it can be added not only to all figures and other graphical objects, but to any section of the text (for example, to
+                  a <a href="n-puc0.html"><span class="elementname">Boxed Text</span></a> <a href="n-puc0.html"><span class="elementtag">&lt;boxed-text&gt;</span></a>) to provide an accessible description of the object. The <a href="n-ec70.html"><span class="attrtag">xml:lang</span></a> attribute was added to all
+                         section-level elements and many paragraph-level elements to permit explicit
+                         indication of the language of the content, as required by these guidelines. The <a href="n-7320.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-7320.html"><span class="elementtag">&lt;abbrev&gt;</span></a> element (also to be used for acronyms) was added to meet Checkpoint 4.3.
+               </p>
+            </div>
+         </div>
+         <h3 class="header">Subsidiary sections:</h3>
+         <h4 class="header"><a href="n-j800.html">Documentation for Authors</a></h4>
+         <h4 class="header"><a href="n-6v00.html">Documentation for Implementors</a></h4>
+         <hr class="hrule">
+         <div class="section"><a name="thanks"></a><h2 class="header">Acknowledgments</h2>
+            <p class="para">We thank <em>bmj.com</em>, <em>Molecular Biology of the Cell</em>, and <em>The Proceedings of the National Academy of Sciences of the U.S.A.</em> for providing the sample articles used in this tag Library.
+            </p>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

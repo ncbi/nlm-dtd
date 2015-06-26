@@ -1,0 +1,205 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Type of Abstract</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">abstract-type</h1>
+         <h1 class="attrname">Type of Abstract</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Names the type of abstract. This attribute is intended to preserve the names of the various styles of abstracts that publishers
+            identify, such as &#8220;<tt>short</tt>&#8221; abstract, &#8220;<tt>graphic</tt>&#8221; abstract, &#8220;<tt>ASCII</tt>&#8221; abstract, &#8220;<tt>stereochemical</tt>&#8221; abstract, etc. 
+         </p>
+      </div>
+      <h2 class="header">Usage</h2>
+      <p class="para">The Tag Set does not prescribe values for this attribute, so any type
+                of abstract that a publisher records can be preserved. The values
+                described below are merely examples of the types of values that are possible,
+                as an illustration of why such information might be recorded. If the publisher
+                has not chosen to identify the type of abstract, this attribute should not be
+                used.
+      </p>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5 class="heading"><a href="n-8a20.html"><span class="elementtag">&lt;abstract&gt;</span></a> <a href="n-8a20.html"><span class="elementname">Abstract</span></a></h5>
+            <h5 class="heading"><a href="n-2zd0.html"><span class="elementtag">&lt;trans-abstract&gt;</span></a> <a href="n-2zd0.html"><span class="elementname">Translated Abstract</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">Brief name for the type
+                                of abstract, such as &#8220;<tt>short</tt>&#8221;. This attribute may take any value, but see the list of suggested values below.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+            <h4 class="header"><span class="headerlabel">Suggested usage</span></h4>
+                         
+            <p class="para">Some commonly used abstract types
+                             for use as this attribute are shown below. The list is not intended to be exhaustive; there may well be other
+                             named types of abstracts.
+                             
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>ASCII</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">A &#8220;plain text&#8221; abstract, i.e., without special characters or equations, so the abstract can be sent
+                                                 in email or displayed on primitive browsers
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>executive-summary</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">A non-technical summation of the major findings of the
+                                                 article
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>graphical</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">A pictorial representation such as a
+                                                 picture or a video
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>editor</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">An abstract written by an editor, not an
+                                                 author
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>key-points</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">An abstract which lists the key points made by the
+                                                 article
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>objectives</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">An abstract used for Learning Objectives or article
+                                                 objectives
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>section</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">An abstract containing the titles of an article&#8217;s sections; following each title, that section is summarized.</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>short</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">An abbreviated form of the abstract, for example, for use
+                                                 inside a generated Table of Contents, or to be returned in addition to the
+                                                 article title during a search
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>stereochemical</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">An abstract containing only the details of a chemical
+                                                 compound, for example, the &#8220;<tt>stereochem</tt>&#8221; type from the Elsevier DTD
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>summary</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Summation of the article, typically used in conjunction
+                                                 with other types of abstracts
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>teaser</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">A short abstract specifically written to create interest
+                                                 in the reader
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>toc</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">A very short abstract, usually only a line or two long,
+                                                 that is displayed in a Table of Contents
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>web-summary</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Short summary intended for distribution on a
+                                                 website
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div> 
+            </p>
+                   
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

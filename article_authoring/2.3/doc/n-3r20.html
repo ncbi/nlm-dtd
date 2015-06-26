@@ -1,0 +1,133 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Article</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;article&gt;</h1>
+         <h1 class="elementname">Article</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A journal article; the top-level element (document element) of the Article Authoring Tag Set, which contains all the metadata
+            and content for the article
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element can be used to describe not only typical journal articles (research articles)
+                   but also much of the non-article content within a journal, such as book and product reviews, editorials, commentaries,
+            and news summaries.
+         </p>
+         <p class="para">A journal article <a href="n-3r20.html"><span class="elementtag">&lt;article&gt;</span></a> may be divided into three parts:
+            
+            <ol class="olist">
+               <li>the <a href="n-nd50.html"><span class="elementtag">&lt;front&gt;</span></a> (the article metadata or header information, for the article);
+               </li>
+               <li>the <a href="n-5cc0.html"><span class="elementtag">&lt;body&gt;</span></a> (textual and graphical content of the article); and
+               </li>
+               <li>any <a href="n-mz20.html"><span class="elementtag">&lt;back&gt;</span></a> (ancillary information such as a glossary, reference list, or appendix).
+               </li>
+            </ol>
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-kyv0.html"><span class="attrtag">article-type</span></a> <a href="n-kyv0.html"><span class="attrname">Type of Article</span></a></h5>
+         <h5 class="header"><a href="n-nr40.html"><span class="attrtag">dtd-version</span></a> <a href="n-nr40.html"><span class="attrname">Version of the DTD</span></a></h5>
+         <h5 class="header"><a href="n-ec70.html"><span class="attrtag">xml:lang</span></a> <a href="n-ec70.html"><span class="attrname">Language</span></a></h5>
+         <h5 class="header"><a href="n-t870.html"><span class="attrtag">xmlns:mml</span></a> <a href="n-t870.html"><span class="attrname">MathML Namespace Declaration</span></a></h5>
+         <h5 class="header"><a href="n-aa70.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-aa70.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+         <h5 class="header"><a href="n-iu70.html"><span class="attrtag">xmlns:xsi</span></a> <a href="n-iu70.html"><span class="attrname">XML Schema Namespace Declaration</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  article      %article-short-model;                        &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-nd50.html"><span class="elementname">Front Matter</span></a> <a href="n-nd50.html"><span class="elementtag">&lt;front&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-5cc0.html"><span class="elementname">Body of the Article</span></a> <a href="n-5cc0.html"><span class="elementtag">&lt;body&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-mz20.html"><span class="elementname">Back Matter</span></a> <a href="n-mz20.html"><span class="elementtag">&lt;back&gt;</span></a>, zero or one
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This top-level element may not be contained in any other elements.</h3>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+<strong><span class="focus">&lt;article&gt;
+&lt;front&gt;
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital care
+for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;aff&gt;Department of Health Care for the Elderly, 
+St Luke&amp;#x2019;s Hospital, Bradford BD5 0NA&lt;/aff&gt;
+&lt;author-comment&gt;
+&lt;p&gt;Competing interests: None declared.&lt;/p&gt;
+&lt;p&gt;Funding: NHS Executive Northern and
+Yorkshire Region, Stroke Association.&lt;/p&gt;
+...
+&lt;/author-comment&gt;
+&lt;/contrib&gt;
+...
+&lt;/contrib-group&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British Medical 
+Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;...&lt;/abstract&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/article&gt;</span></strong> 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articleauthoring.dtd</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

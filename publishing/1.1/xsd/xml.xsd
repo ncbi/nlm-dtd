@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ============================================================= -->
+<!--  MODULE:    Journal Publishing W3C XML Schema                 -->
+<!--             XML namespace module (full version)               -->
+<!--             namespace "http://www.w3.org/XML/1998/namespace"  -->
+<!--                                                               -->
+<!--  VERSION:   1.1 (corresponds to the Journal Publishing        -->
+<!--             DTD version 1.1)                                  -->
+<!--  DATE:      January 2004                                      -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--                                                               -->
+<!-- The schema is typically invoked with attributes appearing on  -->
+<!-- the document root element, as in:                             -->
+<!--                                                               -->
+<!-- <article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="journalpublishing.xsd">  -->
+<!--                                                               -->
+<!-- (The value of 'noNamespaceSchemaLocation' is a relative or    -->
+<!-- absolute URI pointing to the Schema. Other attributes and     -->
+<!-- namespace declarations are removed here for clarity.)         -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI Journal Publishing XML Schema                -->
+<!--                                                               -->
+<!-- PURPOSE:    W3C XML Schema version of the DTD for creation    --> 
+<!--             of new journal articles                           -->
+<!--                                                               -->
+<!--             The Journal Publishing DTD (of which this is a    --> 
+<!--             derived version in W3C XML Schema syntax) is a    --> 
+<!--             subset of the Journal Archiving and Interchange   --> 
+<!--             DTD optimized for the authoring (or initial XML   --> 
+<!--             tagging) of journal articles and some non-article --> 
+<!--             material such as product and book reviews. It     -->
+<!--             describes both the metadata for a journal article -->
+<!--             and the full content of the article.              -->
+<!--                                                               -->
+<!--             This Schema was generated using automated methods -->
+<!--             from the corresponding version of the Journal     -->
+<!--             Publishing DTD. It is not intended to support     -->
+<!--             modification, extension, or maintenance of        -->
+<!--             document content models.                          -->
+<!--                                                               -->
+<!-- CONTAINS:   1) import main module (journalpublishing.xsd)     -->
+<!--             2) import XLink namespace module                  -->
+<!--             3) import MathML 2.0 XML Schema                   -->
+<!--                (see http://www.w3.org/Math/XMLSchema/)        -->
+<!--             4) element and attribute type declarations        -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             Digital Archive of Journal Articles               -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             January 2004                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Wendell Piez (Mulberry Technologies, Inc.)        -->
+<!--                                                               -->
+<!--             Derived from the NLM/NCBI Journal Publishing DTD, -->
+<!--             available from http://dtd.nlm.nih.gov/publishing/ -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             the DTD, or this W3C XML Schema version of it,    -->
+<!--             should be sent in email to:                       -->
+<!--                 publishing-dtd@ncbi.nlm.nih.gov               -->
+<!-- ============================================================= -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.w3.org/XML/1998/namespace" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <xs:import schemaLocation="journalpublishing.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="mathml2/mathml2.xsd"/>
+  <xs:attribute name="lang" type="xs:NMTOKEN"/>
+  <xs:attribute name="space">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="preserve"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:schema>

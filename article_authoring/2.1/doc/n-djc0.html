@@ -1,0 +1,160 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Collaborative (Group) Author</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;collab&gt;</h1>
+         <h1 class="elementname">Collaborative (Group) Author</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A group of authors (contributors) credited under one name, either as a
+                    collaboration in the strictest sense, or when an organization, institution, or
+                    corporation is the author
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Not to be confused with the element
+                    <a href="n-ms30.html"><span class="elementtag">&lt;contrib-group&gt;</span></a>, which is just a wrapper element that
+                    holds information such as the names and affiliations of a group of individual
+                    contributors.
+         </p>
+         <p class="para">This element may be used within bibliographic references <a href="n-efc0.html"><span class="elementtag">&lt;citation&gt;</span></a> and <a href="n-hb80.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>. For extensive examples of formatted <a href="n-hb80.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-djc0.html"><span class="elementtag">&lt;collab&gt;</span></a>s in <a href="n-hb80.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-vyv0.html"><span class="attrtag">collab-type</span></a> <a href="n-vyv0.html"><span class="attrname">Type of Collaboration</span></a></h5>
+         <h5 class="header"><a href="n-kt40.html"><span class="attrtag">id</span></a> <a href="n-kt40.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-9kt0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-9kt0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-dct0.html"><span class="attrtag">xlink:href</span></a> <a href="n-dct0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-45t0.html"><span class="attrtag">xlink:role</span></a> <a href="n-45t0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-h8t0.html"><span class="attrtag">xlink:show</span></a> <a href="n-h8t0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-gut0.html"><span class="attrtag">xlink:title</span></a> <a href="n-gut0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-mwt0.html"><span class="attrtag">xlink:type</span></a> <a href="n-mwt0.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-f7t0.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-f7t0.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  collab       (#PCDATA %collab-elements;)*                 &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-bcc0.html"><span class="elementname">Bold</span></a> <a href="n-bcc0.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-t380.html"><span class="elementname">Italic</span></a> <a href="n-t380.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-dn80.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-dn80.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-s3a0.html"><span class="elementname">Overline</span></a> <a href="n-s3a0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-zwu0.html"><span class="elementname">Small Caps</span></a> <a href="n-zwu0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-fpu0.html"><span class="elementname">Strike Through</span></a> <a href="n-fpu0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-66x0.html"><span class="elementname">Underline</span></a> <a href="n-66x0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-79u0.html"><span class="elementname">Subscript</span></a> <a href="n-79u0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-n5w0.html"><span class="elementname">Superscript</span></a> <a href="n-n5w0.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-ic50.html"><span class="elementname">Email Address</span></a> <a href="n-ic50.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-p350.html"><span class="elementname">External Link</span></a> <a href="n-p350.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hhx0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-hhx0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-efc0.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-efc0.html"><span class="elementname">Citation</span></a>; <a href="n-yv30.html"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-yv30.html"><span class="elementname">Contributor</span></a>; <a href="n-hb80.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-hb80.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-fea0.html"><span class="elementtag">&lt;person-group&gt;</span></a> <a href="n-fea0.html"><span class="elementname">Person Group for a Cited Publication</span></a>; <a href="n-qda0.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-qda0.html"><span class="elementname">Product Information</span></a>; <a href="n-vku0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-vku0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+</pre><p class="examp.desc">In a NLM-style bibliographic citation:</p><pre class="taggedtext">
+
+...
+&lt;ref&gt;
+&lt;nlm-citation citation-type="journal"&gt;
+<strong><span class="focus">&lt;collab&gt;The Royal Marsden Hospital Bone-Marrow Transplantation Team&lt;/collab&gt;</span></strong>
+&lt;article-title&gt;Failure of syngeneic bone-marrow graft without preconditioning 
+in post-hepatitis marrow aplasia&lt;/article-title&gt;
+&lt;source&gt;Lancet&lt;/source&gt;
+&lt;year&gt;1977&lt;/year&gt;
+&lt;month&gt;10&lt;/month&gt;
+&lt;day&gt;08&lt;/day&gt;
+&lt;volume&gt;2&lt;/volume&gt;
+&lt;issue&gt;8041&lt;/issue&gt;
+&lt;fpage&gt;742&lt;/fpage&gt;
+&lt;lpage&gt;744&lt;/lpage&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

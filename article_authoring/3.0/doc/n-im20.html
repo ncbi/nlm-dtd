@@ -1,0 +1,190 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Body of the Article</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;body&gt;</h1>
+         <h1 class="elementname">Body of the Article</h1>
+      </div>
+      <div class="definition">
+         <p class="para">The main textual portion of the article that conveys the content
+            
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">A journal article <a href="n-2v20.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a> may be divided into three parts:
+            
+            <ol class="olist">
+               <li>the <a href="n-2e80.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> (the article metadata or header information, for the article);
+                  
+               </li>
+               <li>the <a href="n-im20.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a> (textual and graphical content of the article); and
+                  
+               </li>
+               <li>any <a href="n-cp20.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a> (ancillary information such as a glossary, reference list, or appendix).
+                  
+               </li>
+            </ol>
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  body         <a href="n-9xd0.html" target="main" title="Body Model"><span class="petag">%body-model;</span></a>                                 &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">((boxed-text | chem-struct-wrap | fig | graphic | media | preformat | 
+supplementary-material | table-wrap | disp-formula | disp-formula-group | p | def-list | list | 
+disp-quote | speech | statement | verse-group)*, 
+(sec)*)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>Any combination of:
+                  <ul class="bullist">
+                     <li>All the block display elements:
+                        <ul class="bullist">
+                           <li>
+                              <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-68c0.html" target="main" title="<boxed-text&gt;"><span class="elementname">Boxed Text</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> <a href="n-jnc0.html" target="main" title="<chem-struct-wrap&gt;"><span class="elementname">Chemical Structure Wrapper</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> <a href="n-vu80.html" target="main" title="<fig&gt;"><span class="elementname">Figure</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-tb80.html" target="main" title="<graphic&gt;"><span class="elementname">Graphic</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-f3u0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-f3u0.html" target="main" title="<media&gt;"><span class="elementname">Media Object</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-t9w0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-t9w0.html" target="main" title="<preformat&gt;"><span class="elementname">Preformatted Text</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-jz40.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-jz40.html" target="main" title="<supplementary-material&gt;"><span class="elementname">Supplementary Material</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> <a href="n-5us0.html" target="main" title="<table-wrap&gt;"><span class="elementname">Table Wrapper</span></a>
+                              
+                           </li>
+                        </ul>
+                        
+                     </li>
+                     <li>
+                        <a href="n-ev50.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a> <a href="n-ev50.html" target="main" title="<disp-formula&gt;"><span class="elementname">Formula, Display</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-7750.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a> <a href="n-7750.html" target="main" title="<disp-formula-group&gt;"><span class="elementname">Formula, Display Group</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-s4w0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-wu50.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> <a href="n-wu50.html" target="main" title="<def-list&gt;"><span class="elementname">Definition List</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-fma0.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a> <a href="n-fma0.html" target="main" title="<list&gt;"><span class="elementname">List</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-tf50.html" target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a> <a href="n-tf50.html" target="main" title="<disp-quote&gt;"><span class="elementname">Quote, Displayed</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-smv0.html" target="main" title="Speech"><span class="elementtag">&lt;speech&gt;</span></a> <a href="n-smv0.html" target="main" title="<speech&gt;"><span class="elementname">Speech</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-bzv0.html" target="main" title="Statement, Formal"><span class="elementtag">&lt;statement&gt;</span></a> <a href="n-bzv0.html" target="main" title="<statement&gt;"><span class="elementname">Statement, Formal</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-rpt0.html" target="main" title="Verse Form for Poetry"><span class="elementtag">&lt;verse-group&gt;</span></a> <a href="n-rpt0.html" target="main" title="<verse-group&gt;"><span class="elementname">Verse Form for Poetry</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-ngv0.html" target="main" title="<sec&gt;"><span class="elementname">Section</span></a>, zero or more
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-2v20.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;...&lt;/front&gt;
+<strong><span class="focus">&lt;body&gt;
+&lt;sec sec-type="intro"&gt;
+&lt;title&gt;Introduction&lt;/title&gt;
+&lt;p&gt;Geriatric day hospitals developed rapidly in the United Kingdom in the 1960s
+as an important component of care provision. The model has since been widely
+applied in several Western countries. Day hospitals provide multidisciplinary
+assessment and rehabilitation in an outpatient setting and have a pivotal
+position between hospital and home based services. Although there is
+considerable descriptive literature on day hospital care,&lt;xref ref-type="bibr"
+rid="B1"&gt;1&lt;/xref&gt; concern has been expressed that evidence for effectiveness is
+equivocal and that day hospital care is expensive.&lt;xref ref-type="bibr"
+rid="B2"&gt;2&lt;/xref&gt; We therefore undertook a systematic review of the randomised
+trials of day hospital care.&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec sec-type="methods"&gt;
+&lt;title&gt;Methods&lt;/title&gt;
+&lt;p&gt;The primary question addressed was ...&lt;/p&gt;
+&lt;sec&gt;
+&lt;title&gt;Inclusion criteria&lt;/title&gt;
+&lt;p&gt;We set out to identify all ...&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Search strategy&lt;/title&gt;
+&lt;p&gt;We searched for ...&lt;/p&gt;
+&lt;/sec&gt;
+...
+&lt;/sec&gt;
+...
+&lt;/body&gt;</span></strong>
+...&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articleauthoring3.dtd</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

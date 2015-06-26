@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<article>
+<front><?mtl hellip?>
+<journal-meta>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher>
+<publisher-name>...</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">WES-10092260</article-id>
+<title-group>
+<article-title>Systematic review of day hospital care for 
+elderly people</article-title>
+</title-group>
+<contrib-group>
+<contrib>
+<name><surname>...</surname>
+<given-names>...</given-names></name>
+</contrib>
+</contrib-group> 
+<aff></aff>
+<pub-date pub-type="pub"><day>27</day>
+<month>3</month><year>1999</year></pub-date>
+<fpage>...</fpage>
+<copyright-year>1999</copyright-year>
+</article-meta>
+<?mtl /hellip?></front>
+<body><?mtl hellip?>
+<?mtl /hellip?></body>
+<back>
+<ref-list>
+<?mtl hellip?> <?mtl /hellip?>
+<ref id="B7"><label>7</label>
+<citation><name><surname>Woodford-Williams</surname>
+<given-names>E</given-names></name>
+<name><surname>McKeon</surname>
+<given-names>JA</given-names></name>
+<name><surname>Trotter</surname>
+<given-names>IS</given-names></name>
+<name><surname>Watson</surname>
+<given-names>D</given-names></name>
+<name><surname>Bushby</surname>
+<given-names>C</given-names></name>
+<article-title>The day hospital in the community care
+of the elderly.</article-title>
+<source>Gerontology Clinic</source>
+<volume>4</volume><year>1962</year>
+<fpage>241</fpage><lpage>256</lpage>.
+</citation>
+</ref>
+<?mtl hellip?> <?mtl /hellip?>
+</ref-list>
+</back>
+</article>

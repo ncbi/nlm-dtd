@@ -1,0 +1,117 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Table Wrapper Footer</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;table-wrap-foot&gt;</h1>
+         <h1 class="elementname">Table Wrapper Footer</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Container element to hold the footnotes, general notes, or other paragraphs at the end of a table
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Footnotes referenced in a table may be stored here, as may general notes to the table which are not explicitly called out
+            in the table, or merely paragraphs of information about the table that appear after the last row.
+            
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">This element should not be confused with the XHTML <a href="n-nzs0.html" target="main" title="Table Footer (XHTML table model)"><span class="elementtag">&lt;tfoot&gt;</span></a> element (<a href="n-nzs0.html" target="main" title="Table Footer (XHTML table model)"><span class="elementtag">&lt;tfoot&gt;</span></a>), which contains rows and columns similarly to the rest of a table.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  table-wrap-foot      
+                        <a href="n-jgp0.html" target="main" title="Table Wrap Footer Model"><span class="petag">%table-wrap-foot-model;</span></a>                      &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">(title?, 
+(p | fn-group | fn | attrib | permissions)+)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-yut0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-yut0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one
+               </li>
+               <li>One or more of any of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-s4w0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-us80.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a> <a href="n-us80.html" target="main" title="<fn-group&gt;"><span class="elementname">Footnote Group</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-bv80.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-bv80.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-6n20.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-6n20.html" target="main" title="<attrib&gt;"><span class="elementname">Attribution</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-nyw0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-nyw0.html" target="main" title="<permissions&gt;"><span class="elementname">Permissions</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="TN0.170"&gt;
+&lt;caption&gt;
+...
+&lt;/caption&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+...
+&lt;/tbody&gt;
+&lt;/table&gt;
+<strong><span class="focus">&lt;table-wrap-foot&gt;
+&lt;fn-group&gt;
+&lt;fn id="TF1-150"&gt;&lt;p&gt;Data not available for 1 trial.&lt;/p&gt;&lt;/fn&gt;
+&lt;fn id="TF1-151"&gt;&lt;p&gt;P&amp;#x003C;0.05 (random effects model).&lt;/p&gt;&lt;/fn&gt;
+&lt;/fn-group&gt;
+&lt;/table-wrap-foot&gt;</span></strong>
+&lt;/table-wrap&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">display3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,171 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Element: Footnote</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;fn&gt;</h1>
+         <h1 class="elementname">Footnote</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Additional information tied to a particular location in the text, which is not considered to be part of the body of the text,
+            but is a note instead of, in addition to, as a source for, or as a commentary on either some body text or on an element in
+            the metadata such as an author
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">In print, footnotes are traditionally displayed at the bottom of a printed page or in a list at the end of the article (<a href="n-u4u0.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a>); each footnote reference is marked by a number or symbol, and the text of the footnote is prefixed by the same number or
+            symbol to help the reader associate the text with its reference(s). On screen, footnotes may appear as clickable icons, in
+            a separate pop-up window, in a list with links at the end of an article (<a href="n-u4u0.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a>), or in a separate footnote area.
+            
+         </p>
+         <p class="para">A reference to a <a href="n-7xu0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> is made with the <a href="n-qf60.html" target="main" title="X(cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> element.
+            
+         </p>
+         <p class="para">To describe a footnote that is not in the same language as the original document (for example, a Latin or Greek footnote for
+            a document in English), use the <a href="n-6qy0.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attribute on the footnote.
+            
+         </p>
+         <p class="para">Conversion Note: When footnotes are grouped at the end of an article, wrap them in a <a href="n-u4u0.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a> and use an <a href="n-qf60.html" target="main" title="X(cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> element in the text, as usual, to tie each footnote in the list to a particular location in the text.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-q7r0.html" target="main"><span class="attrtag">fn-type</span></a> <a href="n-q7r0.html" target="main"><span class="attrname">Type of Footnote</span></a></h5>
+         <h5 class="header"><a href="n-gyr0.html" target="main"><span class="attrtag">id</span></a> <a href="n-gyr0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-puy0.html" target="main"><span class="attrtag">symbol</span></a> <a href="n-puy0.html" target="main"><span class="attrname">Symbol</span></a></h5>
+         <h5 class="header"><a href="n-6qy0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-6qy0.html" target="main"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">A footnote <span class="elementtag">&lt;fn&gt;</span> usually contains material that cannot stand alone: material that is related to a word, phrase, or paragraph already in the
+            basic textual material.
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  fn           <a href="n-uhb0.html" target="main" title="Footnote Model"><span class="petag">%fn-model;</span></a>                                   &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(label?, (p)+)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-axx0.html" target="main" title="Label (Of a Figure, Reference, Etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-axx0.html" target="main" title="<label&gt;"><span class="elementname">Label (Of a Figure, Reference, Etc.)</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-f640.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-f640.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-9z00.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, <a href="n-pu20.html" target="main" title="Alternate Title"><span class="elementtag">&lt;alt-title&gt;</span></a>, <a href="n-5ac0.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a>, <a href="n-vsc0.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a>, <a href="n-5nc0.html" target="main" title="Author Note Group"><span class="elementtag">&lt;author-notes&gt;</span></a>, <a href="n-q330.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a>, <a href="n-hn30.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a>, <a href="n-bb30.html" target="main" title="Collaborative (Group) Author or Editor"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-vc50.html" target="main" title="Comment in a Citation"><span class="elementtag">&lt;comment&gt;</span></a>, <a href="n-td80.html" target="main" title="Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a>, <a href="n-u4u0.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a>, <a href="n-8qw0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a>, <a href="n-bsx0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-8mx0.html" target="main" title="Metadata Data Value for Custom Metadata"><span class="elementtag">&lt;meta-value&gt;</span></a>, <a href="n-8fv0.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a>, <a href="n-uyv0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-ve40.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a>, <a href="n-f640.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-nfs0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-w9t0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a>, <a href="n-d270.html" target="main" title="Sans Serif"><span class="elementtag">&lt;sans-serif&gt;</span></a>, <a href="n-b870.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a>, <a href="n-6ae0.html" target="main" title="Speaker"><span class="elementtag">&lt;speaker&gt;</span></a>, <a href="n-yte0.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a>, <a href="n-vde0.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-aqe0.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a>, <a href="n-mwf0.html" target="main" title="Article Subtitle"><span class="elementtag">&lt;subtitle&gt;</span></a>, <a href="n-jef0.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a>, <a href="n-gag0.html" target="main" title="Table Wrapper Footer"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a>, <a href="n-ctg0.html" target="main" title="Table Data Cell (XHTML table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-b6g0.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>, <a href="n-3jg0.html" target="main" title="Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a>, <a href="n-q2n0.html" target="main" title="Table Header Cell (XHTML table model)"><span class="elementtag">&lt;th&gt;</span></a>, <a href="n-hxn0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a>, <a href="n-prn0.html" target="main" title="Translated Subtitle"><span class="elementtag">&lt;trans-subtitle&gt;</span></a>, <a href="n-zpn0.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a>, <a href="n-g260.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">In the footer of a table:
+            
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="TN0.170"&gt;
+&lt;label&gt;Table&lt;/label&gt;
+&lt;caption&gt;...&lt;/caption&gt;
+&lt;table&gt;
+&lt;tr&gt;
+...
+&lt;/tr&gt;
+...
+&lt;tr&gt;...
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;table-wrap-foot&gt;
+&lt;fn-group&gt;
+<strong><span class="focus">&lt;fn id="TF1-150"&gt;&lt;p&gt;Data not available for 1 trial.&lt;/p&gt;&lt;/fn&gt;</span></strong>
+<strong><span class="focus">&lt;fn id="TF1-151"&gt;&lt;p&gt;P&amp;amp;#x003C;0.05 (random effects model).&lt;/p&gt;&lt;/fn&gt;</span></strong>
+&lt;/fn-group&gt;
+&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <p class="para">In author notes:
+            
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;10092260&lt;/article-id&gt;
+...
+&lt;contrib-group&gt;
+...
+&lt;/contrib-group&gt;
+&lt;aff&gt;
+...
+&lt;/aff&gt;
+&lt;author-notes&gt;
+<strong><span class="focus">&lt;fn fn-type="con"&gt;&lt;p&gt;Contributors: AF planned and initiated
+the review, conducted literature searches, ...&lt;/p&gt;&lt;/fn&gt;</span></strong>
+<strong><span class="focus">&lt;fn&gt;&lt;p&gt;Correspondence to: Dr Forster
+&lt;email&gt;a.forster@leeds.ac.uk&lt;/email&gt;&lt;/p&gt;&lt;/fn&gt;</span></strong>
+<strong><span class="focus">&lt;fn&gt;&lt;p&gt;Competing interests: None declared.&lt;/p&gt;&lt;/fn&gt;</span></strong>
+&lt;/author-notes&gt;
+...
+&lt;/article-meta&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 3</h3>
+         <p class="para">In a footnote group:
+            
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;...&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;
+...
+&lt;ref-list&gt;...&lt;/ref-list&gt;
+&lt;fn-group&gt;
+<strong><span class="focus">&lt;fn&gt;
+&lt;p&gt;Competing interests: None declared.&lt;/p&gt;
+&lt;/fn&gt;</span></strong>
+&lt;/fn-group&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">link3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

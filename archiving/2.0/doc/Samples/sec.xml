@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../ArchivingDTDforTaglib/archivearticle.dtd">
+<article>
+<?mtl hellip?><front><article-meta></article-meta></front><?mtl /hellip?>
+<body>
+<sec sec-type="intro">
+<title>Introduction</title>
+<p>Geriatric day hospitals developed rapidly in the United Kingdom
+in the 1960s as an important component of care provision. The model
+has since been widely applied in several Western countries. Day
+hospitals provide multidisciplinary assessment and rehabilitation
+in an outpatient setting and have a pivotal position between hospital
+and home based services. ... We therefore undertook a systematic
+review of the randomized trials of day hospital care.
+</p>
+</sec>
+<sec sec-type="methods">
+<title>Methods</title>
+<p>The primary question addressed was ...</p>
+<sec>
+<title>Inclusion criteria</title>
+<p>We set out to identify all ...</p>
+</sec>
+<sec>
+<title>Search strategy</title>
+<p>We searched for ...</p>
+</sec>
+<?mtl hellip?><sec><title></title><p></p></sec>
+<sec><title></title><p></p></sec>
+<sec><title></title><p></p></sec><?mtl /hellip?>
+</sec>
+<?mtl hellip?><?mtl /hellip?>
+</body>
+<back><?mtl hellip?><ref-list><ref><citation></citation></ref></ref-list><?mtl /hellip?></back>
+</article>

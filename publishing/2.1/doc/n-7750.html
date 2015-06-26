@@ -1,0 +1,177 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Copyright Statement</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;copyright-statement&gt;</h1>
+         <h1 class="elementname">Copyright Statement</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Copyright notice or statement, suitable for printing or
+                   display
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Best practice is to use the <a href="n-7750.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a> and <a href="n-kg50.html"><span class="elementtag">&lt;copyright-year&gt;</span></a> elements only within the container element <a href="n-pbw0.html"><span class="elementtag">&lt;permissions&gt;</span></a>. The  <a href="n-7750.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a> and <a href="n-kg50.html"><span class="elementtag">&lt;copyright-year&gt;</span></a> elements are allowed outside the permissions wrapper only for reasons of backwards compatibility.
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">There are three copyright elements which may be contained in the <a href="n-pbw0.html"><span class="elementtag">&lt;permissions&gt;</span></a> wrapper:
+            <ul class="bullist">
+               <li><a href="n-7750.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a> , which is the
+                                          textual statement of the copyright intended for print and display (The full statement usually contains
+                  the copyright holder&#8217;s name and the year among other information.);
+               </li>
+               <li><a href="n-kg50.html"><span class="elementtag">&lt;copyright-year&gt;</span></a>,  a metadata element that names just the copyright year; (This is intended for metadata searching and aggregation and is
+                  typically not displayed.);
+                                           and 
+               </li>
+               <li><a href="n-zs50.html"><span class="elementtag">&lt;copyright-holder&gt;</span></a>, also a  metadata element that is typically not displayed.  
+               </li>
+            </ul>
+                                    
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  copyright-statement
+                        (#PCDATA %copyright-statement-elements;)*    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-zt80.html"><span class="elementname">Email Address</span></a> <a href="n-zt80.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-8g80.html"><span class="elementname">External Link</span></a> <a href="n-8g80.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-2vt0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-2vt0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-apc0.html"><span class="elementname">Bold</span></a> <a href="n-apc0.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-2ma0.html"><span class="elementname">Italic</span></a> <a href="n-2ma0.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-3pu0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-3pu0.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-sfw0.html"><span class="elementname">Overline</span></a> <a href="n-sfw0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-qzx0.html"><span class="elementname">Small Caps</span></a> <a href="n-qzx0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-vyv0.html"><span class="elementname">Strike Through</span></a> <a href="n-vyv0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-rat0.html"><span class="elementname">Underline</span></a> <a href="n-rat0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-gqv0.html"><span class="elementname">Subscript</span></a> <a href="n-gqv0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-fw40.html"><span class="elementname">Superscript</span></a> <a href="n-fw40.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-rm20.html"><span class="elementtag">&lt;array&gt;</span></a> <a href="n-rm20.html"><span class="elementname">Array (Simple Tabular Array)</span></a>; <a href="n-58c0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-58c0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-f9c0.html"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-f9c0.html"><span class="elementname">Boxed Text</span></a>; <a href="n-ru30.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a> <a href="n-ru30.html"><span class="elementname">Chemical Structure Wrapper</span></a>; <a href="n-tw80.html"><span class="elementtag">&lt;disp-quote&gt;</span></a> <a href="n-tw80.html"><span class="elementname">Quote, Displayed</span></a>; <a href="n-th80.html"><span class="elementtag">&lt;fig&gt;</span></a> <a href="n-th80.html"><span class="elementname">Figure</span></a>; <a href="n-eea0.html"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-eea0.html"><span class="elementname">Graphic</span></a>; <a href="n-3eu0.html"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-3eu0.html"><span class="elementname">Media Object</span></a>; <a href="n-pbw0.html"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-pbw0.html"><span class="elementname">Permissions</span></a>; <a href="n-tkx0.html"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-tkx0.html"><span class="elementname">Preformatted Text</span></a>; <a href="n-grv0.html"><span class="elementtag">&lt;statement&gt;</span></a> <a href="n-grv0.html"><span class="elementname">Statement, Formal</span></a>; <a href="n-s740.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-s740.html"><span class="elementname">Supplementary Material</span></a>; <a href="n-4h40.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> <a href="n-4h40.html"><span class="elementname">Table Wrapper</span></a>; <a href="n-xp40.html"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a> <a href="n-xp40.html"><span class="elementname">Table Wrapper Footer</span></a>; <a href="n-v4t0.html"><span class="elementtag">&lt;verse-group&gt;</span></a> <a href="n-v4t0.html"><span class="elementname">Verse Form for Poetry</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;
+&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted"&gt;
+&lt;day&gt;29&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;
+&lt;permissions&gt;
+<strong><span class="focus">&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British 
+Medical Journal&lt;/copyright-statement&gt;</span></strong>
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of
+day hospital attendance in prolonging independent living for elderly
+people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+... 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

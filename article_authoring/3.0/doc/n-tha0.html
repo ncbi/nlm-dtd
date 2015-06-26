@@ -1,0 +1,78 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Label (Of a Statement)</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;label&gt;</h1>
+         <h1 class="elementname">Label (Of a Statement)</h1>
+      </div>
+      <div class="definition">
+         <p class="para">The number and any prefix word associated with the title of a <a href="n-bzv0.html" target="main" title="Statement, Formal"><span class="elementtag">&lt;statement&gt;</span></a>, such as “Postulate 3.” or “Theorem 2.”
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  label        (#PCDATA <a href="n-qqi0.html" target="main" title="Label Elements"><span class="petag">%label-elements;</span></a>)*                  &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(#PCDATA)*</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Text, numbers, or special characters, zero or more</p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-ev50.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-7750.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-bzv0.html" target="main" title="Statement, Formal"><span class="elementtag">&lt;statement&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;
+...
+&lt;/front&gt;
+&lt;body&gt;
+...
+&lt;p&gt;Industrial buyers categorise foreign countries 
+according to their level of technological achievement 
+and subsequently differentiate their perceptions of 
+these countries accordingly. 
+... The following 
+hypothesis is posited:
+&lt;statement&gt;<strong><span class="focus">&lt;label&gt;Hypothesis 1&lt;/label&gt;</span></strong>
+&lt;p&gt;Buyer preferences for companies are influenced by 
+factors extrinsic to the firm attributable to, and 
+determined by, country-of-origin effects.&lt;/p&gt;
+&lt;/statement&gt;
+&lt;/p&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;
+...
+&lt;/back&gt;
+&lt;/article&gt; 
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

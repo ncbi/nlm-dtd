@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<article>
+<front><?mtl hellip?>
+<journal-meta>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher>
+<publisher-name>...</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">WES-10092260</article-id>
+<title-group>
+<article-title>Systematic review of day hospital care for 
+elderly people</article-title>
+</title-group>
+<contrib-group>
+<contrib>
+<name><surname>...</surname>
+<given-names>...</given-names></name>
+</contrib>
+</contrib-group> 
+<aff> </aff>
+<pub-date pub-type="pub"><day>27</day>
+<month>3</month><year>1999</year></pub-date>
+<fpage>...</fpage>
+<copyright-year>1999</copyright-year>
+</article-meta>
+<?mtl /hellip?></front>
+<body>
+<sec sec-type="intro">
+<title>Introduction</title>
+<p>Geriatric day hospitals developed rapidly in the United Kingdom 
+in the 1960s as an important component of care provision. The model 
+has since been widely applied in several Western countries. Day 
+hospitals provide multidisciplinary assessment and rehabilitation 
+in an outpatient setting and have a pivotal position between hospital 
+and home based services .... We therefore undertook a systematic 
+review of the randomized trials of day hospital care.</p>
+</sec> 
+<sec sec-type="methods">
+<title>Methods</title> 
+<p>The primary question addressed was ....</p> 
+<sec>
+<title>Inclusion criteria</title> 
+<p>We set out to identify all ....</p>
+</sec> 
+<sec>
+<title>Search strategy</title> 
+<p>We searched for ....</p> 
+</sec>
+<?mtl hellip?> <?mtl /hellip?>
+</sec>
+</body>
+<?mtl hellip?> <?mtl /hellip?>
+</article>

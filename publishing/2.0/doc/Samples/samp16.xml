@@ -1,0 +1,976 @@
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<?mtl hellip?>
+<article>
+<front>
+<journal-meta><journal-id journal-id-type="pmc">jcm</journal-id><journal-id journal-id-type="pubmed">J Clin
+Microbiol</journal-id><journal-id journal-id-type="publisher">J CLIN
+MICROBIOL</journal-id><issn>0095-1137</issn><publisher><publisher-name>American Society for
+Microbiology</publisher-name></publisher></journal-meta><article-meta><article-id
+pub-id-type="publisher-id">1513</article-id><article-id
+pub-id-type="doi">10.1128/JCM.39.7.2485-2493.2001</article-id><article-id
+pub-id-type="pmid">11427558</article-id>
+<article-categories><subj-group><subject>Mycobacteriology and Aerobic
+Actinomycetes</subject></subj-group></article-categories><title-group><article-title>Serological
+Expression Cloning and Immunological Evaluation of MTB48, a Novel
+<italic>Mycobacterium tuberculosis</italic>
+Antigen</article-title></title-group><contrib-group><contrib
+contrib-type="author"><name><surname>Lodes</surname><given-names>Michael J.</given-names></name><xref
+ref-type="aff"><sup>1</sup></xref><xref ref-type="author-notes"
+rid="FN150">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Dillon</surname><given-names>Davin C.</given-names></name><xref
+ref-type="aff"><sup>1</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>Mohamath</surname><given-names>Raodoh</given-names></name><xref
+ref-type="aff"><sup>1</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>Day</surname><given-names>Craig H.</given-names></name><xref
+ref-type="aff"><sup>1</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>Benson</surname><given-names>Darin R.</given-names></name><xref
+ref-type="aff"><sup>1</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>Reynolds</surname><given-names>Lisa D.</given-names></name><xref
+ref-type="aff"><sup>1</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>McNeill</surname><given-names>Patricia</given-names></name><xref
+ref-type="aff"><sup>1</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>Sampaio</surname><given-names>Diana
+Pedral</given-names></name><xref ref-type="aff"><sup>2</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>Skeiky</surname><given-names>Yasir A.
+W.</given-names></name><xref ref-type="aff"><sup>1</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>Badaro</surname><given-names>Roberto</given-names></name><xref
+ref-type="aff"><sup>2</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>Persing</surname><given-names>David H.</given-names></name><xref
+ref-type="aff"><sup>1</sup></xref><xref
+ref-type="aff"><sup>3</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>Reed</surname><given-names>Steven G.</given-names></name><xref
+ref-type="aff"><sup>1</sup></xref><xref ref-type="aff"><sup>3</sup></xref><xref
+ref-type="aff"><sup>4</sup></xref></contrib><contrib
+contrib-type="author"><name><surname>Houghton</surname><given-names>Raymond
+L.</given-names></name><xref
+ref-type="aff"><sup>1</sup></xref></contrib></contrib-group><aff><sup>1</sup>Corixa
+Corporation<sup>1</sup> and<sup>3</sup> Infectious Disease Research
+Institute,<sup>3</sup> Seattle, Washington 98104; <sup>4</sup>Department of
+Pathobiology, University of Washington, Seattle, Washington 98195<sup>4</sup>;
+and <sup>2</sup>University of Bahia, Salvador,
+Brazil<sup>2</sup></aff><author-notes><fn id="FN150"><p>Corresponding author. Mailing address: Corixa Corporation,
+1124 Columbia St., Suite 200, Seattle, WA 98104. Phone: (206) 754-5797. Fax:
+(206) 754-5715. E-mail:
+<email>lodes@corixa.com</email>.</p></fn></author-notes><pub-date
+pub-type="pub"><day>1</day><month>7</month><year>2001</year></pub-date><volume>39
+</volume><issue>7</issue><fpage>2485</fpage><lpage>2493</lpage><history><date
+date-type="received"><day>22</day><month>11</month><year>2000</year></date><date
+date-type="rev-request"><day>27</day><month>3</month><year>2001</year></date>
+<date
+date-type="accepted"><day>23</day><month>4</month><year>2001</year></date>
+</history><copyright-statement>Copyright &#x00A9; 2001, American Society for
+Microbiology</copyright-statement>
+<copyright-year>2001</copyright-year>
+<abstract><p>Improved diagnostics are needed for the detection of
+<italic>Mycobacterium tuberculosis,</italic> especially for patients with smear-negative
+disease. To address this problem, we have screened <italic>M. tuberculosis</italic>
+(H37Rv and Erdman strains) genomic expression libraries with pooled sera from
+patients with extrapulmonary disease and with sera from patients with elevated
+reactivity with <italic>M. tuberculosis</italic> lysate. Both serum pools were reactive
+with clones expressing a recombinant protein referred to here as MTB48. The
+genomic sequence of the resulting clones was identical to that of the <italic>M.
+tuberculosis</italic> H37Rv isolate and showed 99&#x0025; identity to the
+<italic>Mycobacterium bovis</italic> and <italic>M. bovis</italic> BCG isolate sequences. The
+genomic location of this sequence is 826 bp upstream of a region containing the
+<italic>esat-6</italic> gene that is deleted in the <italic>M. bovis</italic> BCG isolate. The
+<italic>mtb48</italic> 1,380-bp open reading frame encodes a predicted 47.6-kDa
+polypeptide with no known function. Southern and Western blot analyses indicate
+that this sequence is present in a single copy and is conserved in the <italic>M.
+tuberculosis</italic> and <italic>M. bovis</italic> isolates tested but not in other
+mycobacterial species tested, including <italic>Mycobacterium leprae</italic> and
+<italic>Mycobacterium avium</italic>. In addition, the native protein was detected in
+the cytoplasm, as was a processed form that was also shed into the medium during
+culture. Serological analysis of recombinant MTB48 and the <italic>M.
+tuberculosis</italic> 38-kDa antigen with a panel of patient and control sera
+indicates that the inclusion of recombinant MTB48 in a prototype serodiagnostic
+test increases assay sensitivity for <italic>M. tuberculosis</italic> infection when it
+is combined with other known immunodominant antigens, such as the 38-kDa
+antigen.</p></abstract></article-meta></front><body><sec><title>Introduction</title><p><italic>
+Mycobacterium tuberculosis</italic> continues to be the major infectious cause of
+human death in developing countries and has reemerged in industrialized
+countries (<xref ref-type="bibr" rid="B6">6</xref>, <xref ref-type="bibr"
+rid="B14">14</xref>, <xref ref-type="bibr" rid="B17">17</xref>, <xref
+ref-type="bibr" rid="B21">21</xref>, <xref ref-type="bibr" rid="B22">22</xref>,
+<xref ref-type="bibr" rid="B27">27</xref>, <xref ref-type="bibr"
+rid="B28">28</xref>). This reemergence is due, in part, to infection with the
+human immunodeficiency virus (HIV), which has led to increased susceptibility to
+<italic>M. tuberculosis</italic> and active disease (<xref ref-type="bibr"
+rid="B15">15</xref>, <xref ref-type="bibr" rid="B35">35</xref>), development of
+new strains of multiple-drug-resistant <italic>M. tuberculosis</italic> (<xref
+ref-type="bibr" rid="B10">10</xref>, <xref ref-type="bibr" rid="B30">30</xref>),
+and reduced resources for treatment and surveillance of patients (<xref
+ref-type="bibr" rid="B3">3</xref>, <xref ref-type="bibr" rid="B22">22</xref>).
+Control of this infection will depend on new antibiotic therapy, improved early
+detection for both smear-positive and -negative cases, and the development of an
+effective vaccine. The development of a sensitive rapid serodiagnostic test
+would complement present methods of diagnosis, including skin testing, DNA
+amplification, bacterial culture, and radiological imaging and has become a
+major research goal (<xref ref-type="bibr" rid="B4">4</xref>, <xref
+ref-type="bibr" rid="B11">11</xref>, <xref ref-type="bibr" rid="B12">12</xref>,
+<xref ref-type="bibr" rid="B13">13</xref>, <xref ref-type="bibr"
+rid="B14">14</xref>, <xref ref-type="bibr" rid="B16">16</xref>). A rapid and
+inexpensive assay could reduce the need for the more expensive tests, possibly
+reducing the cost of diagnosis, and would be of value in an emergency room
+setting, where early knowledge of a patient's disease status would be helpful.
+Finally, an inexpensive diagnostic test is needed in developing countries, where
+more expensive diagnostic tools are not available. To date, many <italic>M.
+tuberculosis</italic> antigens, such as the 38-kDa lipoglycoprotein (<xref
+ref-type="bibr" rid="B1">1</xref>), MTC28 (<xref ref-type="bibr"
+rid="B25">25</xref>), MPT32 (<xref ref-type="bibr" rid="B31">31</xref>), MTB81
+(<xref ref-type="bibr" rid="B20">20</xref>), CFP-10 (<xref ref-type="bibr"
+rid="B9">9</xref>), and the 19-kDa (<xref ref-type="bibr" rid="B2">2</xref>) and
+14-kDa (<xref ref-type="bibr" rid="B33">33</xref>) antigens, have been tested
+for their utilities in the development of a rapid serodiagnostic test (<xref
+ref-type="bibr" rid="B5">5</xref>, <xref ref-type="bibr" rid="B23">23</xref>,
+<xref ref-type="bibr" rid="B32">32</xref>). However, the sensitivity needed for
+a useful test has not been achieved due to the heterogeneous human response to
+<italic>M. tuberculosis</italic> antigens (<xref ref-type="bibr" rid="B23">23</xref>)
+and to the low seroreactivities of problematic groups, such as HIV-positive
+patients or those with smear-negative disease (<xref ref-type="bibr"
+rid="B12">12</xref>, <xref ref-type="bibr" rid="B19">19</xref>, <xref
+ref-type="bibr" rid="B32">32</xref>). Here we describe the cloning of
+<italic>mtb48</italic> by screening a <italic>M. tuberculosis</italic> genomic expression
+library with pooled sera from patients with extrapulmonary disease and with sera
+from patients with elevated reactivity with <italic>M. tuberculosis</italic> lysate. The
+<italic>mtb48</italic> 1,380-bp open reading frame (ORF) encodes a predicted 47.6-kDa
+polypeptide with no known function. Southern blot and bioinformatic analyses
+indicate that this sequence is present as a single copy and is highly conserved
+in the <italic>M. tuberculosis</italic> and <italic>Mycobacterium bovis</italic> isolates tested
+but not in other mycobacterial species tested, including <italic>Mycobacterium
+leprae</italic> and <italic>Mycobacterium avium.</italic> Western blot analysis shows that
+the native protein is cytoplasmic and not membrane bound. A truncated form of
+the native protein is found both in the cytoplasm and in the culture filtrate
+(culture filtrate protein &#x005B;CFP&#x005D;), indicating that this form could
+be shed. Because serological reactivity to MTB48 is complementary to that of
+other <italic>M. tuberculosis</italic> antigens, this new antigen adds significantly to
+the antigen pool that will be needed for a highly sensitive and specific
+serodiagnostic test.</p></sec><sec sec-type="materials/methods"><title>MATERIALS AND
+METHODS</title><sec><title>Mycobacterial strains.</title><p>Sean Skerritt
+(Seattle Veterans Affairs Hospital, Seattle, Wash.) provided <italic>M.
+tuberculosis</italic> strains H37Ra (ATCC 25177), H37Rv, and Erdman (ATCC 35801).
+<italic>M. tuberculosis</italic> strain C is a clinical isolate provided by Lee Riley
+(University of California, Berkeley). Pelleted samples of <italic>M. bovis</italic> BCG
+and <italic>M. leprae</italic> were provided by Paul Tan (Genesis Corp., Auckland, New
+Zealand). Other species of mycobacteria, including <italic>Mycobacterium
+scrofulaceum</italic> (ATCC 19981), <italic>Mycobacterium smegmatis</italic> (ATCC 19420),
+<italic>Mycobacterium fortuitum</italic> (ATCC 6841), <italic>Mycobacterium malmoense</italic>
+(ATCC 29571), and <italic>Mycobacterium gordonae</italic> (ATCC 14470), were obtained
+from the American Type Culture Collection (ATCC; Manassas,
+Va.).</p></sec><sec><title>Library preparation and serological expression
+screening.</title><p><italic>M. tuberculosis</italic> cells were lysed in phenol with a
+cell disrupter (Mini-Beadbeater; type BX-4; Biospec Products, Bartlesville,
+Okla.) following the manufacturer's instructions. After the addition of TE
+buffer (10 mM Tris, 1 mM EDTA &#x005B;pH 8&#x005D;), the lysate was extracted
+two times with phenol, followed by extraction with phenol-chloroform-isoamyl
+alcohol and chloroform. Twenty micrograms each of <italic>M. tuberculosis</italic>
+Erdman and H37Rv strain genomic DNA was sheared with a sonicator (B. Braun
+Biotech, Inc., Allentown, Pa.) to generate fragments of approximately 0.5 to 5.0
+kbp. DNA fragments were blunted with T4 DNA polymerase (Gibco BRL, Grand Island,
+N.Y.) and ligated to <italic>Eco</italic>RI adapters (Stratagene, La Jolla, Calif.).
+Adapted inserts were then phosphorylated with T4 polynucleotide kinase
+(Stratagene) and size selected with a Sephacryl S-400 HR column (Sigma Chemical
+Co., St. Louis, Mo.). Insert DNA was ligated to a Lambda ZAP II,
+<italic>Eco</italic>RI-digested, calf intestinal alkaline phosphatase-treated vector
+(Stratagene), and the ligation mixture was packaged with Gigapack II Gold
+packaging extract (Stratagene).</p><p>Immunoreactive proteins were screened from
+approximately 5 &#x00D7; 10<sup>5</sup> PFU of recombinant lambda phage from
+both the Erdman and the H37Rv genomic expression libraries with nitrocellulose
+filters (Schleicher &#x0026; Schuell, Keene, N.H.). Reactive plaques were
+assessed with two pools of <italic>Escherichia coli</italic>-adsorbed patient sera. The
+first was a pool of three patient serum samples that were strongly reactive with
+<italic>M. tuberculosis</italic> lysate (<xref ref-type="bibr" rid="B20">20</xref>), as
+assessed by enzyme-linked immunosorbent assay (ELISA) (H37Rv library; TbH
+clones), and the second was a pool of five serum samples from <italic>M.
+tuberculosis</italic>-infected patients with extrapulmonary disease (Erdman library;
+XP clones). Positive plaques were visualized with an alkaline
+phosphatase-conjugated goat anti-human immunoglobulin G (IgG), IgA, and IgM
+(heavy and light chain) secondary antibodies (Zymed Laboratories Inc., South San
+Francisco, Calif.) developed with nitroblue
+tetrazolium&#x2013;5-bromo-4-chloro-3-indolylphosphate (Gibco BRL). Excision of
+phagemid was done by the Lambda ZAP II protocol, and the resulting plasmid DNA
+was sequenced with an ABI 377 automated sequencer (Perkin-Elmer/ABI, Foster
+City, Calif.) with M13 forward, reverse, and specific internal DNA sequencing
+primers. Nucleic acid and protein homology searches were performed with software
+from DNASTAR, Inc. (Madison, Wis.) against the EMBL and GenBank database and the
+Swiss and PIR and Translated database. Protein analysis was performed with the
+PSORT program (National Institute for Basic Biology, Okazaki, Japan) and Protean
+analysis software from DNASTAR, Inc., including the Kyte-Doolittle
+hydrophilicity plot, Jameson-Wolf antigenicity index, and Emini surface
+probability plot.</p></sec><sec><title>Expression and purification of
+recombinant antigens.</title><p>Four recombinant antigens were generated,
+including the amino terminus (rTbH4), the carboxy terminus (rXP-1), and the
+full-length sequence (rMTB48) of MTB48, as well as the mature polypeptide for
+the <italic>M. tuberculosis</italic> 38-kDa antigen (r38 kDa). Expression of rTbH4,
+rXP-1, and r38 kDa was accomplished by amplifying a plasmid insert (TbH4 and
+XP-1) or <italic>M. tuberculosis</italic> Erdman genomic DNA (38 kDa) with <italic>Pfu</italic>
+polymerase (Stratagene) and clone-specific primers that included a 5&#x2032;
+<italic>Nde</italic>I restriction site (in italics in the sequences below), an ATG
+initiation codon (underlined in the sequences below), and a nucleotide sequence
+coding for 6 histidines (boldface in the sequences below) and a 3&#x2032; primer
+with a stop codon and a <italic>Hin</italic>dIII or <italic>Eco</italic>RI restriction site
+(italic in the sequences below). 
+<?mtl /hellip?>Oligonucleotide primers for the amplification of TbH4 included
+5&#x2032;-ATTAGGT<italic>CAT</italic><underline><italic>ATG</italic>
+</underline><bold>CACCATCACCATCACCAT</bold>ACGCAGTCGCAGACCGTGACGG and
+3&#x2032;-TATAGG<italic>AAGCTT</italic>CTAATCCTCGGTGTAGAGCGCCTCG. XP-1 was 
+amplified with 5&#x2032;-CAATTA<italic>CAT</italic><underline>
+<italic>ATG</italic></underline><bold>CATCACCATCACCATCAC</bold>
+AACGACGGCGAAGGAACTGTGC and 3&#x2032;-AACCTG<italic>GAATTC</italic>GTCCATGCTCACTTCGAC,
+and the 38-kDa antigen was amplified with 5&#x2032;-CAATTA<italic>CAT</italic>
+<underline><italic>ATG</italic></underline><bold>CATCACCATCACCATCAC</bold>
+TGTGGCTCGAAACCACCGAGC and<?mtl hellip?>3&#x2032;-GTACG<italic>GAATTC</italic>GTGGTCAACGAGGCTAGCTGG. Amplification
+product was digested with the appropriate restriction enzymes, isolated by gel
+electrophoresis, and ligated into a pET17b plasmid vector (Novagen, Madison,
+Wis.) previously cut with <italic>Nde</italic>I and <italic>Hin</italic>dIII or <italic>Eco</italic>RI
+and dephosphorylated. The ligation mixture was transformed into XL1 Blue
+MRF&#x2032; competent cells (Stratagene), and plasmid DNA was prepared for
+sequencing (Qiagen Inc., Valencia, Calif.). Recombinant protein was expressed by
+transforming plasmid DNA into BL21 pLys S competent cells (Novagen) and inducing
+a single-colony cell culture with 2 mM
+isopropyl-&#x03B2;-<sc>d</sc>-thiogalactopyranoside (IPTG; Sigma Chemical Co.).
+Full-length antigen was amplified with primers
+5&#x2032;-CTAGTT<italic>AGTACT</italic>CAGTCGCAGACCGTG and
+3&#x2032;-GCAGTGAC<italic>GAATTC</italic>ACTTCGACTCC by using 200 ng of total genomic
+<italic>M. tuberculosis</italic> Erdman strain DNA and Accuzyme (Intermountain
+Scientific Corporation, Inc., Kaysville, Utah) polymerase. The PCR product was
+digested with <italic>Sca</italic>I and <italic>Eco</italic>RI and ligated into a pET28 vector
+modified to include an in-frame methionine and a 6-histidine tag at the amino
+terminus. The full-length construct was sequenced and transformed into the
+HMS174 pLys S cell line (Novagen), and a single-colony culture was induced with
+IPTG. Cultures were disrupted by sonication and recombinant protein was
+recovered from cell lysate with an Ni-nitrilotriacetic acid agarose matrix
+(Qiagen Inc.). Purified protein was then passed over a Q anion-exchange column
+(rXP-1 and rMTB48) (Bio-Rad, Hercules, Calif.), following the manufacturer's
+instructions, and was finally dialyzed in 10 mM Tris (pH 8.0). Recombinant
+proteins were quality checked for purity by sodium dodecyl sulfate
+(SDS)-polyacrylamide gel electrophoresis (PAGE), followed by staining with
+Coomassie blue stain and N-terminal protein sequencing (<xref ref-type="bibr"
+rid="B26">26</xref>), and were quantified by a Micro BCA assay (Pierce,
+Rockford, Ill.). Recombinants were assayed for endotoxin contamination by the
+<italic>Limulus</italic> assay (Bio Whittaker, Walkersville,
+Md.).</p></sec><sec><title>Rabbit antiserum.</title><p>Rabbit antiserum to
+recombinant antigens was prepared by injecting 200 &#x03BC;g of protein in 1 ml
+of incomplete Freund's adjuvant (IFA; Sigma Chemical Co.) and 100 &#x03BC;g of
+muramyl dipeptide subcutanously. Six weeks later, the animals were boosted with
+100 &#x03BC;g of protein in IFA, followed by a final boost with 50 &#x03BC;g
+administered intravenously 1 month later. Animals were killed 1 week after the
+final boost, and sera were stored in aliquots at
+&#x2212;20&#x00B0;C.</p></sec><sec><title>Study population.</title><p>Serum
+samples were obtained from individuals who had pulmonary tuberculosis alone
+prior to treatment (culture and/or acid-fast bacillus smear positive) or who had
+documented coinfections with HIV, as evidenced by a positive HIV type 1- and HIV
+type 2-specific antibody ELISA. These included samples from Brazil (Roberto
+Badaro, Federal University of Bahia, Salvador, Brazil), Uganda and South Africa
+(Milton Tam, Program for Appropriate Technology in Health, Seattle, Wash.), and
+the Philippines (Babi Tan, American Leprosy Foundation, Cebu City, Philippines)
+and sera from patients with tuberculosis (Nevin Turgay, Bornova-Izmir, Turkey).
+Samples from patients with lung cancer and pneumonia (China) were obtained from
+Robert Cole (ICT Diagnostics, Frenchs Forest, Australia). To further evaluate
+the specificity of the MTB48 antigen, we obtained sera from individuals who were
+purified protein derivative (PPD) positive (induration, &#x003E;10 mm) (culture,
+clinically, and radiographically negative for tuberculosis) and individuals who
+were PPD negative (King County Tuberculosis Clinic, Seattle, Wash.). Sera from
+healthy blood donors (from the United States) were obtained from Boston
+Biomedica (West Bridgewater, Mass.), and sera from individuals who were HIV
+seropositive alone were obtained from Robert Ackridge (Fred Hutchinson Cancer
+Research Institute, Seattle, Wash.).</p></sec><sec><title>Southern blot
+analysis.</title><p>Genomic DNA was prepared by standard techniques and digested
+with <italic>Pst</italic>I (Gibco BRL). One microgram of each digest was run on a
+1.0&#x0025; agarose gel and stained with ethidium bromide to confirm the
+equivalent loading of each lane prior to overnight transfer to a Nytran nylon
+membrane (Schleicher &#x0026; Schuell). Insert DNA isolated by gel
+electrophoresis was labeled by random hexamer primer extension with
+&#x005B;<sup>32</sup>P&#x005D;dCTP and hybridized with blots overnight at
+65&#x00B0;C. Blots were washed at 65&#x00B0;C twice for 15 min each time with
+2&#x00D7; SSC (1&#x00D7; SSC is 0.15 M NaCl plus 0.015 M sodium citrate) and
+0.1&#x00D7; SSC containing 0.1&#x0025; SDS and exposed to X-ray film (Kodak,
+XAR-5).</p></sec><sec><title>Western blot analysis.</title><p>Recombinant
+antigens and native <italic>M. tuberculosis</italic> proteins were subjected to SDS-PAGE
+analysis with 15&#x0025; polyacrylamide minigels. A total of 200 ng of rMTB48
+per lane was used for screening of patient serum by Western blot analysis.
+Cellular localization of native protein was determined by loading 10 &#x03BC;g
+of an <italic>M. tuberculosis</italic> cytoplasm preparation; 2.5 &#x03BC;g each of
+<italic>M. tuberculosis</italic> cell membrane fraction, cell wall fraction, and CFPs
+(provided by John Belisle, Colorado State University, produced through National
+Institute of Allergy and Infectious Diseases-National Institutes of Health
+Tuberculosis Research Materials contract N01-AI-25147); and 25 ng of recombinant
+protein. The proteins were transferred to nitrocellulose (BA-85; Schleicher
+&#x0026; Schuell) and blocked for 1 h at room temperature with
+phosphate-buffered saline (PBS) containing 1&#x0025; Tween 20. The blots were
+then washed three times for 10 min each time in PBS containing 0.1&#x0025; Tween
+20 and 0.5 M sodium chloride (wash buffer). Next, the blots were probed for 1 h
+at room temperature with serum diluted 1:500 in wash buffer, followed by three
+washes (10 min each time) in wash buffer. The blots were then incubated for 45
+min at room temperature with protein A-horseradish peroxidase diluted 1:20,000
+in wash buffer and again washed three times (10 min each time) in wash buffer.
+Finally, the blots were incubated in chemiluminescent substrate (ECL; Amersham
+Plc, Little Charlton, United Kingdom) for &#x2248;1 min and were then exposed to
+X-ray film (XAR5) for 10 to 60 s, as required. The integrity of the protein in
+<italic>M. tuberculosis</italic> cellular protein fractions was confirmed by probing a
+Western blot with a rabbit antitubulin
+antiserum.</p></sec><sec><title>ELISA.</title><p>Ninety-six-well microtiter
+plates (Corning Costar, Cambridge, Mass.) were coated overnight at 4&#x00B0;C
+with recombinant proteins (200 ng/well). The plates were then aspirated and
+blocked with PBS containing 1&#x0025; (wt/vol) bovine serum albumin for 2 h at
+room temperature. This was followed by washing in PBS containing 0.1&#x0025;
+Tween 20 (PBST). A dilution of serum (1/100) in PBS containing 0.1&#x0025;
+bovine serum albumin was added to the wells, and the plates were incubated for
+30 min at room temperature, followed by washing six times with PBST and then
+incubation with protein A-horseradish peroxidase conjugate (1/20,000 dilution;
+Sigma Chemical Co.) for 30 min. The plates were then washed six times in PBST
+and were then incubated with tetramethylbenzidine substrate (Kirkegaard &#x0026;
+Perry Laboratories, Inc., Gaithersburg, Md.) for 15 min. The reaction was
+stopped by the addition of 1 N sulfuric acid, and the plates were read at 450 nm
+with an ELISA plate reader (EL311; Biotek Instruments, Hyland Park, Va.). The
+cutoff for the assays was determined from the mean for the negative population
+plus 3 standard deviations of the mean. For the data in Table <xref
+ref-type="table" rid="T1">1</xref>, the signal-to-cutoff ratio was determined by
+dividing the sample ELISA value by the cutoff value.</p><table-wrap
+id="T1"><caption><p>Comparison of the seroreactivities of
+recombinant proteins TbH4 and XP-1 with full-length
+MTB48</p></caption><table><tr><th rowspan="3">Patient identification</th><th
+colspan="2">ELISA result<xref ref-type="table-fn"
+rid="TF1-A"></xref></th></tr><tr><td
+colspan="2"><hr/></td></tr><tr><th>rXP-1</th><th>rTbH4</th><th>rMTB48</th></tr>
+<tr><td
+colspan="4"><hr/></td></tr><tr><td>383004</td><td>0.956</td><td><bold>1.942</bold></td
+><td><bold>2.349</bold></td></tr><tr><td>392004</td><td><bold>7.446</bold></td><td><bold>4.375
+</bold></td><td><bold>5.287</bold></td></tr><tr><td>393004</td><td><bold>1.515</bold>
+</td><td>
+<bold>3.994</bold></td><td><bold>4.379</bold></td></tr><tr><td>395004</td><td><bold>2.392</bold></td
+><td><bold>1.494</bold></td><td><bold>1.591</bold></td></tr><tr><td>396004</td><td>0.621</td
+><td><bold>1.990</bold></td><td><bold>2.158</bold></td></tr><tr><td>398004</td><td>0.902</td
+><td><bold>1.737</bold></td><td><bold>2.241</bold></td></tr><tr><td>407004</td><td><bold>1.201
+</bold></td><td><bold>1.625</bold></td><td><bold>2.145</bold></td></tr><tr><td>416004</td><td>0.
+830</td><td><bold>1.628</bold></td><td><bold>1.917</bold></td></tr><tr><td>445004</td>
+<td><bold>3.642</bold></td><td><bold>3.387</bold></td><td><bold>4.076</bold></td></tr><tr><td>454004</td
+><td><bold>1.070</bold></td><td><bold>1.085</bold></td><td><bold>1.005</bold></td></tr><tr><td>
+465004</td><td>0.856</td><td><bold>2.431</bold></td><td><bold>2.796</bold></td></tr><tr><td>
+470004</td><td><bold>1.595</bold></td><td><bold>2.795</bold></td><td><bold>3.455</bold></td></tr>
+<tr><td>476004</td><td><bold>1.204</bold></td><td><bold>3.117</bold></td><td><bold>3.662</bold></td
+></tr><tr><td>482004</td><td><bold>2.119</bold></td><td><bold>4.313</bold></td><td><bold>4.386
+</bold></td></tr><tr><td>487004</td><td>0.626</td><td><bold>1.795</bold></td><td><bold>2.080
+</bold></td></tr><tr><td>489004</td><td><bold>2.667</bold></td><td><bold>4.578</bold>
+</td><td><bold>4.405</bold></td></tr><tr><td>490004</td><td>0.502</td>
+<td><bold>1.613</bold></td><td><bold>1.491</bold></td></tr><tr><td>506004</td>
+<td>0.452</td><td><bold>1.444</bold></td><td><bold>1.524</bold></td></tr><tr><td>514004</td><td><bold>2.720</bold></td><td><bold>4.778</bold></td
+><td><bold>4.881</bold></td></tr></table><table-wrap-foot>
+<fn id="TF1-A">
+<p>Data are
+normalized to a cutoff value (based on the mean plus 3 standard deviations) of
+1.0 to allow comparison among groups. Positive results are shown in boldface
+type.</p>
+</fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec><title>Nucleotide sequence accession
+number.</title><p>The GenBank accession number for <italic>mtb48</italic> is <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="AY029285"/>.</p></sec></sec><sec
+sec-type="results"><title>RESULTS</title><sec><title>Expression cloning and molecular
+characterization of <italic>mtb48</italic></title><p>Two genomic expression libraries,
+constructed with randomly sheared <italic>M. tuberculosis</italic> Erdman strain and
+H37Rv strain genomic DNA, were screened with two pools of patient sera. The
+first pool consisted of sera from five patients with extrapulmonary disease
+(Erdman library), and the second pool consisted of sera from three patients
+whose sera were strongly reactive with the <italic>M. tuberculosis</italic> lysate
+(H37Rv library). These screenings resulted in the cloning of <italic>mtb48</italic> in
+two sections (clone <italic>tbh4</italic> from the H37Rv library and clone <italic>xp-1</italic>
+from the Erdman library) that overlap with 100&#x0025; identity by 1,041 bp
+(Fig. <xref ref-type="fig" rid="F1">1</xref>). Clone <italic>tbh4</italic> contains the
+amino-terminal 1,319 bp, while clone <italic>xp-1</italic> contains the carboxy 1,101-bp
+terminus of a 1,380-bp ORF. The cloned inserts contain a predicted
+ribosome-binding site (Shine-Dalgarno sequence; Fig. <xref ref-type="fig"
+rid="F1">1</xref>) 17 bp upstream from the predicted ATG start codon and an ORF
+that represents a predicted polypeptide of 47.6 kDa. The predicted polypeptide
+contains no hydrophobic leader sequence, nor does it contain predicted
+transmembrane domains, as determined by the PSORT program. However, analysis of
+hydrophilicity indicates three hydrophobic stretches in the carboxy-terminal
+half of the polypeptide that could serve as transmembrane regions (Fig. <xref
+ref-type="fig" rid="F2">2</xref>).</p><fig id="F1"><caption><p>Relationship of full-length MTB48 to partial ORFs from
+genomic clones <italic>tbh4</italic> and <italic>xp-1</italic>. Partial ORFs for TbH4 (upper
+line in the underlines) and XP-1 (lower line in the underlines) are underlined,
+and a double line indicates their overlap. The indicated polypeptide sequences
+were used to develop constructs for rTbH4, rXP-1, and rMTB48 protein expression.
+A potential ribosome-binding site (RB) is indicated by a thick bar, and the
+predicted ATG initiation codon is shown in bold and underlined. The nucleotide
+sequence number is shown on the right.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jm0711513001"
+alt-version="yes"></graphic></fig><fig id="F2"><caption><p>Protein sequence analysis of MTB48 including hydrophilicity
+(A), antigenic index (B), and surface probability (C). Analysis was performed
+with DNA Star protein analysis software (Protean 4.0) by using the
+Kyte-Doolittle hydrophilicity plot, the Jameson-Wolf antigenic index, and the
+Emini surface probability plot. A thick bar indicates a region proposed to be
+cleaved from the native protein to allow release from the cell. Protein amino
+acid numbers are shown above and below the plots, while the relative peak
+heights are shown to the left.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jm0711513002"
+alt-version="yes"></graphic></fig></sec><sec><title>Genomic organization of
+<italic>mtb48</italic></title><p>Database searches with the nucleotide and predicted
+protein sequences for <italic>mtb48</italic> resulted in a 100&#x0025; match with <italic>M.
+tuberculosis</italic> H37Rv genomic DNA (GenBank accession number <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="AL022120"/>) and hypothetical protein Rv3881c (GenBank accession
+number <ext-link ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="G70803"/>), a 99&#x0025; match with <italic>M. bovis</italic> (GenBank
+accession number <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="U34848"/>) and <italic>M.
+bovis</italic> BCG (GenBank accession number <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="U35019"/>) strain DNA,
+and a 98.7&#x0025; match with the <italic>M. bovis</italic> and <italic>M. bovis</italic> BCG
+predicted protein sequences. Of interest, a partial genomic sequence (GenBank
+accession number <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AF001303"/>) from an
+Indian <italic>M. tuberculosis</italic> clinical isolate (isolate NTI 64719) shows at
+least 98.8 to 99.6&#x0025; identity to the <italic>mtb48</italic> sequence, given the
+degenerate bases contained in this sequence. Together, this information
+indicates that the <italic>mtb48</italic> sequence is well conserved between species
+(<italic>M. tuberculosis</italic> and <italic>M. bovis</italic>) and between geographically
+isolated strains from the United States and India. The genomic location of
+<italic>mtb48</italic> is 826 bp upstream from a 9,504-bp sequence (which contains the
+<italic>esat-6</italic> &#x005B;accession number <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="U34848"/>&#x005D; gene)
+that is deleted in the BCG strain of <italic>M. bovis</italic> (<xref ref-type="bibr"
+rid="B24">24</xref>). Southern blot analysis was performed with genomic DNA from
+both clinical and environmental <italic>Mycobacterium</italic> isolates. An
+<italic>mtb48</italic>-specific probe hybridized to 5.5-kbp reactive <italic>Pst</italic>I
+fragments in <italic>M. tuberculosis</italic> isolates, including strains H37Ra, H37Rv,
+Erdman (data not shown), and C (data not shown), and to a 6.5-kbp fragment in
+the <italic>M. bovis</italic> BCG isolate (Fig. <xref ref-type="fig" rid="F3">3</xref>).
+No reactivity was seen with <italic>M. leprae, M. smegmatis, Mycobacterium vaccae,
+M. gordonae, Mycobacterium chelonae, M. fortuitum, M. scrofulaceum</italic>, or
+<italic>M. avium</italic>. The <italic>Pst</italic>I fragments correspond in size to those of
+the fragments predicted from the genomic DNA sequence. The difference in
+fragment size between <italic>M. tuberculosis</italic> isolates and the <italic>M.
+bovis</italic> BCG isolate can be attributed to a deletion event in BCG which
+removes the <italic>Pst</italic>I site that is found in the <italic>M. tuberculosis</italic>
+isolates.</p><fig id="F3"><caption><p>Southern blot
+analysis of <italic>mtb48</italic> showing hybridization of a labeled <italic>tbh4</italic>
+nucleotide probe with <italic>Pst</italic>I-digested genomic DNA from the <italic>M.
+tuberculosis</italic> and <italic>M. bovis</italic> BCG isolates tested but not from <italic>M.
+leprae</italic> or the environmental mycobacteria tested. Arrows indicate the
+migration of a labeled 6.5-kbp fragment from the BCG strain of <italic>M. bovis</italic>
+(top arrow) and 5.5-kbp DNA fragments from <italic>M. tuberculosis</italic> isolates
+(bottom arrow).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="jm0711513003"
+alt-version="yes"></graphic></fig></sec><sec><title>Recombinant protein
+expression and purification.</title><p>Four recombinant proteins representing
+the amino (rTbH4) and caroxy (rXP-1) termini and the full-length sequence
+(rMTB48) for MTB48 and the mature polypeptide for the <italic>M. tuberculosis</italic>
+38-kDa antigen (r38 kDa) were overexpressed and purified by using a 6-histidine
+tag and metal affinity chromatography. Recombinant constructs were 1,341, 1,125,
+1,404, and 1,080 bp, including the ATG start codon, 6-histidine tag, and stop
+codon, for rTbH4, rXP-1, rMTB48, and the 38-kDa antigen, respectively, and
+expressed recombinant proteins were 46.0, 38.6, 48.6, and 36.8 kDa for rTbH4,
+rXP-1, rMTB48, and the 38-kDa antigen, respectively. All recombinant proteins
+were tested for purity by N-terminal sequencing, Western blotting, and Coomassie
+blue staining and were determined to be over 95&#x0025;
+pure.</p></sec><sec><title>Western blot analysis.</title><p>The cellular
+localization of native protein was determined by probing a Western blot with
+rabbit rMTB48 antiserum. The blot contained fractionated <italic>M.
+tuberculosis</italic> proteins, including cytoplasmic, membrane, and cell wall
+fractions; CFPs; and rMTB48. Two major bands of approximately equal reactivity
+at 43 and 55 kDa were seen in the cytoplasmic fraction, while bands with little
+or no reactivity were observed in the membrane or cell wall fractions. A single
+band of 43 kDa was seen in the CFP lane, while two bands of 38 and 55 kDa were
+seen in the recombinant protein lane (Fig. <xref ref-type="fig"
+rid="F4">4</xref>). The 43-kDa form found in the CFP fraction appears to be
+identical in size to the 43-kDa truncated or processed form of MTB48 seen in the
+cytoplasmic fraction. Both the cytoplasmic native protein and the recombinant
+protein each show a processed form, with the said forms being of approximately
+equal molar concentrations, indicating that the two proteins might be processed
+by the same or a similar process.</p><fig id="F4"><caption><p>Western blot analysis indicates that the cellular
+localization of native MTB48 protein is in the cytoplasm and the culture
+filtrate (CFP). Ten micrograms of an <italic>M. tuberculosis</italic> cytoplasm
+preparation, 2.5 &#x03BC;g each of cell membrane, cell wall, and CFPs, and 25 ng
+of recombinant MTB48 were separated by SDS-PAGE, transferred to nitrocellulose,
+and probed with an MTB48 rabbit polyclonal antibody. A 55-kDa band (top arrow)
+is seen in both the cytoplasm and the recombinant protein lanes, while a 43-kDa
+band (middle arrow) is seen in both the cytoplasm and the CFP lanes. A second
+band of reactivity at approximately 38 kDa is shown in the recombinant protein
+lane (bottom arrow).</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jm0711513004"
+alt-version="yes"></graphic></fig></sec><sec><title>ELISA evaluation of
+recombinant proteins XP-1, TbH4, and MTB48.</title><p>Nineteen MTB48-positive
+patient serum samples were assayed with rXP-1 and rTbH4 to determine the general
+location of antigenic epitopes on rMTB48 (Table <xref ref-type="table"
+rid="T1">1</xref>). rTbH4 was reactive with 19 of 19 serum samples, while rXP-1
+was reactive with 11 of 19 serum samples. These data indicate that approximately
+42&#x0025; of MTB48-positive patient serum samples are reactive only with an
+amino-terminal epitope(s), while 58&#x0025; of the serum samples are reactive
+with a central epitope(s) and, potentially, an additional amino-terminal
+epitope(s).</p></sec><sec><title>ELISA evaluation of sera from patients with
+tuberculosis and controls.</title><p>Sera from individuals with tuberculosis in
+the presence or absence of HIV infection, PPD-positive individuals with no
+evidence of disease, and PPD-negative individuals were tested by ELISA with
+tuberculosis lysate, r38 kDa, and rMTB48 (Table <xref ref-type="table"
+rid="T2">2</xref>). The sensitivities of recombinant proteins with serum samples
+from HIV-infected individuals in Africa with <italic>M. tuberculosis</italic>
+coinfections were 44.4 and 66.7&#x0025; for rMTB48 and r38 kDa, respectively.
+The sensitivity of rMTB48 and r38 kDa used in combination was 74.1&#x0025; (a
+gain of 7.4&#x0025; over that obtained with r38 kDa only), indicating that the
+reactivities of the two recombinant antigens were complementary. Overall
+sensitivities for patients with only <italic>M. tuberculosis</italic> infection were
+29.8 and 43.4&#x0025; for rMTB48 and r38 kDa, respectively. The sensitivity for
+the antigens used in combination, however, was 56.3&#x0025;, indicating a
+greater contribution (a gain of 12.9&#x0025;) of rMTB48 with these serum
+samples. Among the 419 serum samples from patients with only tuberculosis
+evaluated by ELISA, rMTB48 was reactive with 32.1&#x0025; of the serum samples
+from patients with smear-positive tuberculosis and 17.2&#x0025; of patients with
+smear-negative disease; and r38 kDa was reactive with 47 and 23.4&#x0025; of
+smear-positive and smear-negative patients, respectively. Comparison of the
+ELISA values for serum samples from <italic>M. tuberculosis</italic>-infected patients
+in Brazil and Africa (smear positive) shows a similar sensitivity. rMTB48
+detected <italic>M. tuberculosis</italic> in 32.7&#x0025; of the Brazilian samples and
+30.3&#x0025; of the African samples, while r38 kDa detected <italic>M.
+tuberculosis</italic> in 48.4 and 40.9&#x0025; of these samples, respectively. Also,
+the gain in sensitivity with rMTB48 over that with r38 kDa was similar for both:
+13.7 versus 12.1&#x0025;, respectively. The specificities for rMTB48 and r38
+kDa, including all control sera, were 97.8 and 96.1&#x0025;, respectively, while
+the specificity for rMTB48 and r38 kDa in combination was 94&#x0025;. No
+antibody reactivity with rMTB48 was seen for sera from the non-<italic>M.
+tuberculosis</italic>-infected control groups, including sera from HIV-positive
+patients, lung cancer patients, and pneumonia patients. Specificities of 98.2
+and 93.1&#x0025; were determined for MTB48 with class II (PPD positive) and
+class 0/I (PPD negative) <italic>M. tuberculosis</italic>-infected sera, respectively.
+ELISA results for a subset of 248 smear-positive and 52 smear-negative Brazilian
+<italic>M. tuberculosis</italic> patient serum samples are displayed graphically in Fig.
+<xref ref-type="fig" rid="F5">5</xref>. Taken together, these data indicate that
+rMTB48 adds to the sensitivity of a 38-kDa antigen-based serological test for
+<italic>M. tuberculosis</italic> in a variety of diverse clinical and geographic
+settings.</p><table-wrap id="T2"><caption><p>ELISA reactivities
+of <italic>M. tuberculosis</italic> lysate, rMTB48, and r38 kDa with HIV-positive and
+-negative sera from patients with tuberculosis and controls<xref
+ref-type="table-fn" rid="TF2-A"></xref></p></caption><table><tr><th
+rowspan="3">Serum group and patient status</th><th rowspan="3">Origin</th><th
+rowspan="3">No. of serum samples</th><th rowspan="3">HIV status</th><th
+rowspan="3">Smear result</th><th colspan="4">No. of samples positive by
+ELISA</th></tr><tr><td
+colspan="4"><hr/></td></tr><tr><th>Lysate</th><th>MTB48</th><th>38
+kDa</th><th>38 kDa &#x002B; MTB48 </th></tr><tr><td
+colspan="9"><hr/></td></tr><tr><td>Sera from patients
+with:</td><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td>&#x2003;TB,<xref
+ref-type="table-fn" rid="TF2-B"></xref> HIV, and <italic>M. tuberculosis</italic>
+coinfection</td><td
+align="left">Uganda</td><td>17</td><td>&#x002B;</td><td>&#x002B;</td><td>7</td>
+<td>8</td><td>12</td><td>13</td></tr><tr><td/><td
+align="left">Uganda</td><td>2<xref ref-type="table-fn"
+rid="TF2-C"></xref></td><td>&#x002B;</td><td>&#x2212;</td><td>1</td><td>0</td>
+<td>1</td><td>1</td></tr><tr><td/><td align="left">South
+Africa</td><td>8</td><td>&#x002B;</td><td>&#x002B;</td><td>6</td><td>4</td><td>5
+</td><td>6</td></tr><tr><td>&#x2003;Total</td><td
+align="left"/><td>27</td><td/><td/><td>14</td><td>12</td><td>18</td><td>20</td>
+</tr><tr><td>&#x2003;TB</td><td
+align="left">Brazil</td><td>248</td><td>&#x2212;</td><td>&#x002B;</td><td>165
+</td><td>81</td><td>120</td><td>154</td></tr><tr><td/><td
+align="left"/><td>52</td><td>&#x2212;</td><td>&#x2212;</td><td>24</td><td>9</td>
+<td>11</td><td>16</td></tr><tr><td/><td
+align="left">Uganda</td><td>15</td><td>&#x2212;</td><td>&#x002B;</td><td>10</td>
+<td>10</td><td>12</td><td>12 </td></tr><tr><td/><td align="left">South
+Africa</td><td>51</td><td>&#x2212;</td><td>&#x002B;</td><td>47</td><td>10</td>
+<td>15</td><td>23</td></tr><tr><td/><td
+align="left">Turkey</td><td>11</td><td>&#x2212;</td><td>&#x002B;</td><td>8</td>
+<td>3</td><td>9</td><td>9</td></tr><tr><td/><td
+align="left">Philippines</td><td>31</td><td>&#x2212;</td><td>&#x002B;</td><td>24
+</td><td>10</td><td>11</td><td>17</td></tr><tr><td/><td
+align="left"/><td>11</td><td>&#x2212;</td><td>&#x2212;</td><td>7</td><td>2</td>
+<td>4</td><td>5</td></tr><tr><td>&#x2003;Total</td><td
+align="left"/><td>419</td><td/><td/><td>285</td><td>125</td><td>182</td><td>236
+</td></tr><tr><td>Control sera</td><td
+align="left"/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td>&#x2003;HIV
+infection</td><td align="left">United
+States</td><td>11</td><td>&#x002B;</td><td/><td>0</td><td>0</td><td>0</td><td>0
+</td></tr><tr><td>&#x2003;Class II TB (PPD positive)</td><td
+align="left">Africa</td><td>3</td><td>&#x2212;</td><td/><td>1</td><td>0</td><td>
+0</td><td>0</td></tr><tr><td/><td align="left">Europe<xref ref-type="table-fn"
+rid="TF2-D"></xref></td><td>6</td><td>&#x2212;</td><td/><td>0</td><td>0</td><td>
+0</td><td>0</td></tr><tr><td/><td align="left">Southeast
+Asia</td><td>7</td><td>&#x2212;</td><td/><td>1</td><td>0</td><td>2</td><td>2</td
+></tr><tr><td/><td align="left">United States-Latin
+America</td><td>41</td><td>&#x2212;</td><td/><td>4</td><td>1</td><td>3</td><td>4
+</td></tr><tr><td>&#x2003;Total</td><td
+align="left"/><td>57</td><td/><td/><td>6</td><td>1</td><td>5</td><td>6</td></tr>
+<tr><td>&#x2003;Class 0/I TB (PPD negative)</td><td
+align="left">Africa</td><td>1</td><td>&#x2212;</td><td/><td>0</td><td>0</td><td>
+0</td><td>0</td></tr><tr><td/><td align="left">Europe<xref ref-type="table-fn"
+rid="TF2-D"></xref></td><td>3</td><td>&#x2212;</td><td/><td>2</td><td>0</td><td>
+0</td><td>0</td></tr><tr><td/><td align="left">Southeast
+Asia</td><td>3</td><td>&#x2212;</td><td/><td>0</td><td>0</td><td>0</td><td>0</td
+></tr><tr><td/><td align="left">United States-Latin
+America</td><td>22</td><td>&#x2212;</td><td/><td>0</td><td>2</td><td>1</td><td>3
+</td></tr><tr><td>&#x2003;Total</td><td
+align="left"/><td>29</td><td/><td/><td>2</td><td>2</td><td>1</td><td>3</td></tr>
+<tr><td>&#x2003;Other</td></tr><tr><td>&#x2003;&#x2003;Lung cancer</td><td
+align="left">China</td><td>13</td><td>&#x2212;</td><td/><td>2</td><td>0</td><td>
+0</td><td>0</td></tr><tr><td>&#x2003;&#x2003;Pneumonia</td><td
+align="left">China</td><td>18</td><td>&#x2212;</td><td/><td>5</td><td>0</td><td>
+1</td><td>1</td></tr><tr><td>&#x2003;&#x2003;Healthy controls</td><td
+align="left">China
+(Caucasian)</td><td>9</td><td>&#x2212;</td><td/><td>2</td><td>0</td><td>0</td>
+<td>0 </td></tr><tr><td/><td align="left">United
+States</td><td>95</td><td>&#x2212;</td><td/><td>1</td><td>2</td><td>2</td><td>4
+</td></tr><tr><td>&#x2003;Total</td><td
+align="left"/><td>135</td><td/><td/><td>10</td><td>2</td><td>3</td><td>5</td>
+</tr></table><table-wrap-foot><fn id="TF2-A"><p>Control sera were from HIV-positive,
+PPD-positive, and PPD-negative individuals, healthy controls, and patients with
+lung cancer and pneumonia.</p></fn><fn id="TF2-B"><p>TB,
+tuberculosis.</p></fn><fn id="TF2-C"><p>One individual was positive for
+tuberculosis by X ray.</p></fn><fn id="TF2-D"><p>Primarily from Russia and its
+satellite regions where tuberculosis is endemic.</p></fn></table-wrap-foot></table-wrap><fig
+id="F5"><caption><p>Distribution of MTB48 ELISA
+reactivity among sera from healthy blood donors (<italic>n</italic> = 95), PPD-positive
+individuals (<italic>n</italic> = 57), PPD-negative individuals (<italic>n</italic> = 29), and
+Brazilian tuberculosis patients who were smear (acid-fast bacillus
+&#x005B;AFB&#x005D;) positive (<italic>n</italic> = 248) and negative (<italic>n</italic> = 52).
+The assay cutoff value (horizontal bar) was determined from the mean for the
+healthy donor population plus 3 standard deviations of the mean. OD 450, optical
+density at 450 nm.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jm0711513005"
+alt-version="yes"></graphic></fig></sec></sec><sec
+sec-type="discussion"><title>DISCUSSION</title><p>The development of a serodiagnostic
+assay for <italic>M. tuberculosis</italic> with high degrees of sensitivity and
+specificity will most likely require a panel of several recombinant antigens or
+a fusion polyprotein that comprises the critical epitopes. This is due to the
+highly heterogeneous nature of antigen recognition by infected individuals that
+results, in part, from diverse genetic backgrounds, exposure to different
+stage-specific or strain-specific antigens, bacillary loads, patient health, and
+individual treatments (<xref ref-type="bibr" rid="B23">23</xref>). Data
+presented in this report indicate that MTB48 is an important component of the
+antigen cocktail that will be required for diagnostic assay development. MTB48,
+which was cloned from both the Erdman and the H37Rv strains of <italic>M.
+tuberculosis</italic> by serological expression screening with <italic>M.
+tuberculosis</italic>-infected patient serum, encodes a predicted 47.6-kDa
+polypeptide (approximately 54 kDa under reducing conditions, possibly due to the
+high proline content &#x005B;7.6&#x0025;&#x005D;) with no known function and is
+restricted to virulent and avirulent strains of the <italic>M. tuberculosis</italic>
+complex and <italic>M. bovis. mtb48</italic> genomic nucleotide sequences from the
+Erdman (clone <italic>xp-1</italic>) and H37Rv strains (clone <italic>tbh4</italic>) were
+identical, and database searches showed that the <italic>mtb48</italic> genomic sequence
+(Erdman strain) was identical to the H37Rv genomic sequence (GenBank accession
+number <ext-link ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="AL022120"/>) and 99&#x0025; identical to the corresponding <italic>M.
+bovis</italic> sequence (GenBank accession number <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="U34848"/>). A partial
+genomic sequence from an <italic>M. tuberculosis</italic> clinical isolate from India
+(GenBank accession number <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AF001303"/>) also shows
+approximately 99&#x0025; identity to <italic>mtb48</italic>. Taken together, this
+information indicates that the <italic>mtb48</italic> sequence is well conserved between
+species and between geographically isolated strains from the United States and
+India. The native MTB48 protein is cytoplasmic and appears to be cleaved near
+the carboxy terminus to form a 43-kDa protein that is then shed. One cannot rule
+out the possibility, however, that in the culture filtrate the protein is
+degraded to the smaller fragment by secreted or shed proteases. The
+carboxy-terminal segment contains hydrophobic regions that could be removed upon
+processing, thus allowing secretion or shedding of the antigen. Preliminary
+epitope mapping shows that of the MTB48-positive patient serum samples tested,
+42&#x0025; recognize an amino-terminal epitope(s), which is missing in rXP-1,
+while 58&#x0025; recognize one or more central epitopes, indicating the
+possibility of several B-cell epitopes along the molecule. Protein analysis
+(Fig. <xref ref-type="fig" rid="F2">2</xref>) shows that the amino terminus and
+central region of the protein are hydrophilic and are predicted to be highly
+antigenic. Surface probability predictions also indicate clusters of
+surface-exposed regions in the amino-terminal region and in the midregion of the
+molecule.</p><p>The serodiagnostic potential of rMTB48 compared to that of r38
+kDa was evaluated by ELISA. The 38-kDa <italic>M. tuberculosis</italic> antigen was
+chosen for comparison because of its relatively high degrees of sensitivity and
+specificity, as determined in numerous studies (<xref ref-type="bibr"
+rid="B8">8</xref>, <xref ref-type="bibr" rid="B9">9</xref>, <xref
+ref-type="bibr" rid="B18">18</xref>, <xref ref-type="bibr" rid="B20">20</xref>,
+<xref ref-type="bibr" rid="B31">31</xref>, <xref ref-type="bibr"
+rid="B34">34</xref>). Serological sensitivity for the 38-kDa antigen ranges from
+16 to 89&#x0025;, and specificity ranges from 93 to 100&#x0025; (<xref
+ref-type="bibr" rid="B5">5</xref>, <xref ref-type="bibr" rid="B8">8</xref>,
+<xref ref-type="bibr" rid="B18">18</xref>, <xref ref-type="bibr"
+rid="B22">22</xref>, <xref ref-type="bibr" rid="B29">29</xref>, <xref
+ref-type="bibr" rid="B34">34</xref>), depending largely upon the selection of
+patient populations in each study. In the present study, overall sensitivity
+values for rMTB48 and r38 kDa, including those for samples from patients with
+HIV coinfection and smear-positive and -negative patients, were 30.7 and
+44.8&#x0025;, respectively, with a sensitivity of 57.4&#x0025; when both
+antigens were used in combination. Samples from patients with HIV coinfection
+alone resulted in higher values (44.4, 66.7, and 74.1&#x0025;, respectively), as
+did samples from smear-positive patients (32.1, 47, and 60.6&#x0025;,
+respectively). Values for samples from smear-negative patients were 17.2, 23.4,
+and 32.8&#x0025;, respectively. Thus, MTB48 is a highly conserved antigen and
+its serological reactivity complements that of the 38-kDa antigen in the
+detection of <italic>M. tuberculosis</italic> infection.</p><p>Although rMTB48 adds to
+the overall sensitivity of the 38-kDa antigen, an <italic>M. tuberculosis</italic>
+serodiagnostic reagent with high degrees of sensitivity and specificity will
+depend on the use of several antigens, including r38 kDa and rMTB48. Detection
+of problematic infections, such as smear-negative infections, depends on a
+combination of techniques, including serology, detection of clinical symptoms,
+and radiography. Additional effort must be directed toward the serological
+detection of smear-negative infections. Although patients with smear-negative
+infections are less infectious and have a lower mortality rate than patients
+with smear-positive infections, the number of patients with smear-negative
+infections is estimated to exceed the number of patients with smear-positive
+infections, and over half of the patients with smear-negative infections will
+progress to active disease (<xref ref-type="bibr" rid="B7">7</xref>). In
+addition, coinfections with HIV have disproportionately increased the number of
+smear-negative cases. Our studies continue to be directed toward the development
+of a rapid serodiagnostic assay that uses an optimized set of recombinant
+antigens that will be expressed as one or more fusion
+polyproteins.</p></sec></body><back><ack><title>ACKNOWLEDGMENTS</title><p>We thank
+Thomas Vedvick and Darrick Carter for protein sequence data, Dan Hoppe and Joe
+Parsons for assistance with DNA sequencing, and Stephan Johnson and Rhea Coler
+for providing genomic DNA for Southern blot analysis. We also thank Jonathan
+Clapper for performing lipopolysaccharide assays with purified recombinant
+antigens and John Belisle, who provided fractionated <italic>M. tuberculosis</italic>
+cellular proteins (Tuberculosis Research Materials contract N01-AI-25147). We
+also acknowledge Robert Akridge (Fred Hutchinson Cancer Research Institute) for
+providing the serum samples from U.S. HIV-positive patients and Charles Nolan at
+the King County Tuberculosis Clinic for providing PPD-positive and -negative
+samples.</p><p>M.J.L. and D.C.D. contributed equally to the data presented in
+this report.</p><p>This work was partially supported by NIH grants AI-39879 (to
+R.L.H.) and AI-44373 (to
+S.G.R.).</p></ack><ref-list><title>REFERENCES</title><ref
+id="B1"><citation><name><surname>Andersen</surname><given-names>A.
+B.</given-names></name><name><surname>Hansen</surname><given-names>E.
+B.</given-names></name><article-title>Structure and mapping of antigenic domains of protein
+antigen b, a 38,000-molecular-weight protein of <italic>Mycobacterium
+tuberculosis</italic></article-title><source>Infect.
+Immun.</source><year>1989</year><volume>57</volume><fpage>2481</fpage><lpage>
+2488</lpage></citation></ref><ref
+id="B2"><citation><name><surname>Ashbridge</surname><given-names>K.
+R.</given-names></name><name><surname>Prestidge</surname><given-names>R.
+L.</given-names></name><name><surname>Booth</surname><given-names>R.
+J.</given-names></name><name><surname>Watson</surname><given-names>J. D.</given-names></name><article-title>The
+mapping of an antibody-binding region on the Mycobacterium tuberculosis 19
+kilodalton antigen</article-title><source>J.
+Immunol.</source><year>1990</year><volume>144</volume><fpage>3137</fpage><lpage>
+3142</lpage></citation></ref><ref
+id="B3"><citation><name><surname>Barry</surname><given-names>S.
+M.</given-names></name><name><surname>Lipman</surname><given-names>M.
+C.</given-names></name><name><surname>Johnson</surname><given-names>M.
+A.</given-names></name><name><surname>Prentice</surname><given-names>H.
+G.</given-names></name><article-title>Respiratory infections in immunocompromised
+patients</article-title><source>Curr. Opin. Pulm.
+Med.</source><year>1999</year><volume>5</volume><fpage>168</fpage><lpage>173
+</lpage></citation></ref><ref
+id="B4"><citation><name><surname>Bergmann</surname><given-names>J.
+S.</given-names></name><name><surname>Yuoh</surname><given-names>G.</given-names></name><name><surname>Fish</surname>
+<given-names>G.</given-names></name><name><surname>Woods</surname><given-names>G.
+L.</given-names></name><article-title>Clinical evaluation of the enhanced Gen-Probe Amplified
+Mycobacterium Tuberculosis Direct Test for rapid diagnosis of tuberculosis in
+prison inmates</article-title><source>J. Clin.
+Microbiol.</source><year>1999</year><volume>37</volume><fpage>1419</fpage><lpage
+>1425</lpage></citation></ref><ref
+id="B5"><citation><name><surname>Chan</surname><given-names>E.
+D.</given-names></name><name><surname>Heifets</surname><given-names>L.</given-names></name><name><surname>Iseman
+</surname><given-names>M. D.</given-names></name><article-title>Immunologic diagnosis of tuberculosis: a
+review</article-title><source>Tuber. Lung
+Dis.</source><year>2000</year><volume>80</volume><fpage>131</fpage><lpage>140
+</lpage></citation></ref><ref
+id="B6"><citation><name><surname>Chou</surname><given-names>T.</given-names></name><article-title>Emerging infectious diseases and pathogens</article-title><source>Nurs. Clin.
+N.
+Am.</source><year>1999</year><volume>34</volume><fpage>427</fpage><lpage>442
+</lpage></citation></ref><ref
+id="B7"><citation><name><surname>Colebunders</surname><given-names>R.</given-names>
+</name><name><surname>Bastian</surname><given-names>I.</given-names></name><article-title>A review of the
+diagnosis and treatment of smear-negative pulmonary
+tuberculosis</article-title><source>Int. J. Tuberc. Lung
+Dis.</source><year>2000</year><volume>4</volume><fpage>97</fpage><lpage>107
+</lpage></citation></ref><ref
+id="B8"><citation><name><surname>Demkow</surname><given-names>U.</given-names></name>
+<name><surname>Zielonka</surname><given-names>T.
+M.</given-names></name><name><surname>Strzalkowski</surname><given-names>J.</given-names></name><name><surname>
+Michalowska-Mitczuk</surname><given-names>D.</given-names></name><name><surname>Augustynowicz-Kopec
+</surname><given-names>E.</given-names></name><name><surname>Bialas-Chromiec</surname><given-names>B.</given-names></name>
+<name><surname>Kus</surname><given-names>J.</given-names></name><name><surname>Skopinska-Rozewska</surname>
+<given-names>E.</given-names></name><name><surname>Zwolska</surname><given-names>Z.</given-names></name><article-title>
+Diagnostic value of IgG antibody levels against 38 kDa mycobacterial
+antigen</article-title><source>Pneumonol. Alergol.
+Pol.</source><year>1998</year><volume>66</volume><fpage>509</fpage><lpage>516
+</lpage></citation></ref><ref
+id="B9"><citation><name><surname>Dillon</surname><given-names>D.
+C.</given-names></name><name><surname>Alderson</surname><given-names>M.
+R.</given-names></name><name><surname>Day</surname><given-names>C.
+H.</given-names></name><name><surname>Bement</surname><given-names>T.</given-names></name><name><surname>Campos-
+Neto</surname><given-names>A.</given-names></name><name><surname>Skeiky</surname><given-names>Y. A.
+W.</given-names></name><name><surname>Vedvick</surname><given-names>T.</given-names></name><name><surname>Badaro
+</surname><given-names>R.</given-names></name><name><surname>Reed</surname><given-names>S.
+G.</given-names></name><name><surname>Houghton</surname><given-names>R.</given-names></name><article-title>Molecular
+and immunological characterization of <italic>Mycobacterium tuberculosis</italic>
+CFP-10, an immunodiagnostic antigen missing in <italic>Mycobacterium bovis</italic>
+BCG</article-title><source>J. Clin.
+Microbiol.</source><year>2000</year><volume>38</volume><fpage>3285</fpage><lpage
+>3290</lpage></citation></ref><ref
+id="B10"><citation><name><surname>Eltringham</surname><given-names>I.
+J.</given-names></name><name><surname>Drobniewski</surname><given-names>F.</given-names></name><article-title>
+Multiple drug resistant tuberculosis: aetiology, diagnosis and
+outcome</article-title><source>Br. Med.
+Bull.</source><year>1998</year><volume>54</volume><fpage>569</fpage><lpage>578
+</lpage></citation></ref><ref
+id="B11"><citation><name><surname>Felix</surname><given-names>R.</given-names></name>
+<name><surname>Bittner</surname><given-names>R. C.</given-names></name><article-title>Tuberculosis and
+radiologic diagnosis 100 years after W.C.
+Roentgen</article-title><source>Pneumologie</source><year>1995
+</year><volume>49</volume><fpage>657</fpage><lpage>662</lpage></citation></ref><ref
+id="B12"><citation><name><surname>Foulds</surname><given-names>J.</given-names></name
+><name><surname>O'Brien</surname><given-names>R.</given-names></name><article-title>New tools for the
+diagnosis of tuberculosis: the perspective of developing
+countries</article-title><source>Int. J. Tuberc. Lung
+Dis.</source><year>1998</year><volume>2</volume><fpage>778</fpage><lpage>783
+</lpage></citation></ref><ref
+id="B13"><citation><name><surname>Gillespie</surname><given-names>S.</given-names>
+</name><article-title>Molecular techniques for the diagnosis of respiratory bacterial
+infection</article-title><source>Curr. Opin. Pulm.
+Med.</source><year>1999</year><volume>5</volume><fpage>174</fpage><lpage>178
+</lpage></citation></ref><ref
+id="B14"><citation><name><surname>Ginsberg</surname><given-names>A.
+M.</given-names></name><article-title>The tuberculosis epidemic. Scientific challenges and
+opportunities</article-title><source>Public Health
+Rep.</source><year>1998</year><volume>113</volume><fpage>128</fpage><lpage>136
+</lpage></citation></ref><ref
+id="B15"><citation><name><surname>Glynn</surname><given-names>J.
+R.</given-names></name><article-title>Resurgence of tuberculosis and the impact of HIV
+infection</article-title><source>Br. Med.
+Bull.</source><year>1998</year><volume>54</volume><fpage>579</fpage><lpage>593
+</lpage></citation></ref><ref
+id="B16"><citation><name><surname>Gupta</surname><given-names>S.</given-names></name>
+<name><surname>Bhatia</surname><given-names>R.</given-names></name><name><surname>Datta</surname><given-names>K.
+K.</given-names></name><article-title>Serodiagnosis of tuberculosis</article-title><source>J.
+Commun.
+Dis.</source><year>1995</year><volume>27</volume><fpage>208</fpage><lpage>214
+</lpage></citation></ref><ref
+id="B17"><citation><name><surname>Hageman</surname><given-names>J.
+R.</given-names></name><article-title>Congenital and perinatal tuberculosis: discussion of
+difficult issues in diagnosis and management</article-title><source>J.
+Perinatol.</source><year>1998</year><volume>18</volume><fpage>389</fpage><lpage>
+394</lpage></citation></ref><ref
+id="B18"><citation><name><surname>Harboe</surname><given-names>M.</given-names></name
+><name><surname>Wiker</surname><given-names>H. G.</given-names></name><article-title>The 38-kDa protein of
+Mycobacterium tuberculosis: a review</article-title><source>J. Infect.
+Dis.</source><year>1992</year><volume>166</volume><fpage>874</fpage><lpage>884
+</lpage></citation></ref><ref
+id="B19"><citation><name><surname>Harries</surname><given-names>A.
+D.</given-names></name><name><surname>Maher</surname><given-names>D.</given-names></name><name><surname>Nunn</surname
+><given-names>P.</given-names></name><article-title>An approach to the problems of diagnosing and
+treating adult smear-negative pulmonary tuberculosis in high-HIV-prevalence
+settings in sub-Saharan Africa</article-title><source>Bull. W. H.
+O.</source><year>1998</year><volume>76</volume><fpage>651</fpage><lpage>662
+</lpage></citation></ref><ref
+id="B20"><citation><name><surname>Hendrickson</surname><given-names>R.
+C.</given-names></name><name><surname>Douglass</surname><given-names>J.
+F.</given-names></name><name><surname>Reynolds</surname><given-names>L.
+D.</given-names></name><name><surname>McNeill</surname><given-names>P.
+D.</given-names></name><name><surname>Carter</surname><given-names>D.</given-names></name><name><surname>Reed
+</surname><given-names>S. G.</given-names></name><name><surname>Houghton</surname><given-names>R.
+L.</given-names></name><article-title>Mass spectrometric identification of Mtb81, a novel
+serological marker for tuberculosis</article-title><source>J. Clin.
+Microbiol.</source><year>2000</year><volume>38</volume><fpage>2354</fpage><lpage
+>2361</lpage></citation></ref><ref
+id="B21"><citation><name><surname>Hirsch</surname><given-names>C.
+S.</given-names></name><name><surname>Johnson</surname><given-names>J.
+L.</given-names></name><name><surname>Ellner</surname><given-names>J.
+J.</given-names></name><article-title>Pulmonary tuberculosis</article-title><source>Curr. Opin.
+Pulm.
+Med.</source><year>1999</year><volume>5</volume><fpage>143</fpage><lpage>150
+</lpage></citation></ref><ref
+id="B22"><citation><name><surname>Kamholz</surname><given-names>S.
+L.</given-names></name><article-title>Resurgence of tuberculosis: the perspective a dozen
+years later</article-title><source>J. Assoc. Acad. Minor
+Phys.</source><year>1996</year><volume>7</volume><fpage>83</fpage><lpage>86
+</lpage></citation></ref><ref
+id="B23"><citation><name><surname>Lyashchenko</surname><given-names>K.</given-names>
+</name><name><surname>Colangeli</surname><given-names>R.</given-names></name><name><surname>Houde</surname>
+<given-names>M.</given-names></name><name><surname>Al
+Jahdali</surname><given-names>H.</given-names></name><name><surname>Menzies</surname><given-names>D.</given-names></name
+><name><surname>Gennaro</surname><given-names>M. L.</given-names></name><article-title>Heterogeneous antibody
+responses in tuberculosis</article-title><source>Infect.
+Immun.</source><year>1998</year><volume>66</volume><fpage>3936</fpage><lpage>
+3940</lpage></citation></ref><ref
+id="B24"><citation><name><surname>Mahairas</surname><given-names>G.
+G.</given-names></name><name><surname>Sabo</surname><given-names>P.
+J.</given-names></name><name><surname>Hickey</surname><given-names>M.
+J.</given-names></name><name><surname>Singh</surname><given-names>D.
+C.</given-names></name><name><surname>Stover</surname><given-names>C.
+K.</given-names></name><article-title>Molecular analysis of genetic differences between
+<italic>Mycobacterium bovis</italic> BCG and virulent <italic>M.
+bovis</italic></article-title><source>J.
+Bacteriol.</source><year>1996</year><volume>178</volume><fpage>1274</fpage>
+<lpage>1282</lpage></citation></ref><ref
+id="B25"><citation><name><surname>Manca</surname><given-names>C.</given-names></name>
+<name><surname>Lyashchenko</surname><given-names>K.</given-names></name><name><surname>Colangeli</surname>
+<given-names>R.</given-names></name><name><surname>Gennaro</surname><given-names>M.
+L.</given-names></name><article-title>MTC28, a novel 28-kilodalton proline-rich secreted
+antigen specific for the <italic>Mycobacterium tuberculosis</italic>
+complex</article-title><source>Infect.
+Immun.</source><year>1997</year><volume>65</volume><fpage>4951</fpage><lpage>
+4957</lpage></citation></ref><ref
+id="B26"><citation><name><surname>Matsudaira</surname><given-names>P.</given-names>
+</name><article-title>Sequence from picomole quantities of proteins electroblotted onto
+polyvinylidene difluoride membranes</article-title><source>J. Biol.
+Chem.</source><year>1987</year><volume>262</volume><fpage>10035</fpage><lpage>
+10038</lpage></citation></ref><ref
+id="B27"><citation><name><surname>Migliori</surname><given-names>G.
+B.</given-names></name><name><surname>Ambrositti</surname><given-names>M.</given-names></name><article-title>
+Epidemiology of tuberculosis in Europe</article-title><source>Monaldi Arch. Chest
+Dis.</source><year>1998</year><volume>53</volume><fpage>681</fpage><lpage>687
+</lpage></citation></ref><ref
+id="B28"><citation><name><surname>Netto</surname><given-names>E.
+M.</given-names></name><name><surname>Dye</surname><given-names>C.</given-names></name><name><surname>Raviglione
+</surname><given-names>M. C.</given-names></name><article-title>Progress in global tuberculosis control
+1995&#x2013;1996, with emphasis on 22 high-incidence countries. Global
+monitoring and surveillance project</article-title><source>Int. J. Tuberc. Lung
+Dis.</source><year>1999</year><volume>3</volume><fpage>310</fpage><lpage>320
+</lpage></citation></ref><ref
+id="B29"><citation><name><surname>Pottumarthy</surname><given-names>S.</given-names>
+</name><name><surname>Wells</surname><given-names>V.
+C.</given-names></name><name><surname>Morris</surname><given-names>A. J.</given-names></name><article-title>A
+comparison of seven tests for serological diagnosis of
+tuberculosis</article-title><source>J. Clin.
+Microbiol.</source><year>2000</year><volume>38</volume><fpage>2227</fpage><lpage
+>2231</lpage></citation></ref><ref
+id="B30"><citation><name><surname>Rattan</surname><given-names>A.</given-names></name
+><name><surname>Kalia</surname><given-names>A.</given-names></name><name><surname>Ahmad</surname><given-names>N.
+</given-names></name><article-title>Multidrug-resistant Mycobacterum tuberculosis: molecular
+perspectives</article-title><source>Emerg. Infect.
+Dis.</source><year>1998</year><volume>4</volume><fpage>195</fpage><lpage>209
+</lpage></citation></ref><ref
+id="B31"><citation><name><surname>Samanich</surname><given-names>K.
+M.</given-names></name><name><surname>Keen</surname><given-names>M.
+A.</given-names></name><name><surname>Vissa</surname><given-names>V.
+D.</given-names></name><name><surname>Harder</surname><given-names>J.
+D.</given-names></name><name><surname>Spencer</surname><given-names>J.
+S.</given-names></name><name><surname>Belisle</surname><given-names>J.
+T.</given-names></name><name><surname>Zolla-Pazner</surname><given-names>S.</given-names></name><name><surname>
+Laal</surname><given-names>S.</given-names></name><article-title>Serodiagnostic potential of culture
+filtrate antigens of <italic>Mycobacterium tuberculosis</italic></article-title><source>Clin.
+Diagn. Lab.
+Immunol.</source><year>2000</year><volume>7</volume><fpage>662</fpage><lpage>668
+</lpage></citation></ref><ref
+id="B32"><citation><name><surname>Verbon</surname><given-names>A.</given-names></name><article-title>Development of a serological test for tuberculosis. Problems and
+potential</article-title><source>Trop. Geogr.
+Med.</source><year>1994</year><volume>46</volume><fpage>275</fpage><lpage>279
+</lpage></citation></ref><ref
+id="B33"><citation><name><surname>Verbon</surname><given-names>A.</given-names></name
+><name><surname>Hartskeerl</surname><given-names>R.
+A.</given-names></name><name><surname>Schuitema</surname><given-names>A.</given-names></name><name><surname>Kolk
+</surname><given-names>A. H. J.</given-names></name><name><surname>Young</surname><given-names>D.
+B.</given-names></name><name><surname>Lathigra</surname><given-names>R.</given-names></name><article-title>The
+14,000-molecular-weight antigen of <italic>Mycobacterium tuberculosis</italic> is
+related to the alpha-crystallin family of low-molecular-weight heat shock
+proteins</article-title><source>J.
+Bacteriol.</source><year>1992</year><volume>174</volume><fpage>1352</fpage>
+<lpage>1359</lpage></citation></ref><ref
+id="B34"><citation><name><surname>Wilkinson</surname><given-names>R.
+J.</given-names></name><name><surname>Haslov</surname><given-names>K.</given-names></name><name><surname>Rappuoli
+</surname><given-names>R.</given-names></name><name><surname>Giovannoni</surname><given-names>F.</given-names></name>
+<name><surname>Narayanan</surname><given-names>P. R.</given-names></name><name><surname>Desai</surname><given-names>C.
+R.</given-names></name><name><surname>Vordermeier</surname><given-names>H.
+M.</given-names></name><name><surname>Paulsen</surname><given-names>J.</given-names></name><name><surname>Pasvol
+</surname><given-names>G.</given-names></name><name><surname>Ivanyi</surname><given-names>J.</given-names></name><name>
+<surname>Singh</surname><given-names>M.</given-names></name><article-title>Evaluation of the recombinant
+38-kilodalton antigen of <italic>Mycobacterium tuberculosis</italic> as a potential
+immunodiagnostic reagent</article-title><source>J. Clin.
+Microbiol.</source><year>1997</year><volume>35</volume><fpage>553</fpage><lpage>
+557</lpage></citation></ref><ref
+id="B35"><citation><name><surname>Zumla</surname><given-names>A.</given-names></name>
+<name><surname>Malon</surname><given-names>P.</given-names></name><name><surname>Henderson</surname><given-names>J.
+</given-names></name><name><surname>Grange</surname><given-names>J. M.</given-names></name><article-title>Impact of
+HIV infection on tuberculosis</article-title><source>Postgrad. Med.
+J.</source><year>2000</year><volume>76</volume><fpage>259</fpage><lpage>268
+</lpage></citation></ref></ref-list></back></article> <?mtl /hellip?>

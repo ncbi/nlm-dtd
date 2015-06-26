@@ -1,0 +1,180 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Element: Contributor Group</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;contrib-group&gt;</h1>
+         <h1 class="elementname">Contributor Group</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Container element for information concerning a grouping of contributors, such as primary authors, editors, sponsors, translators,
+            illustrators, etc. The members of the group are contributors who worked individually, not as a group. 
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-8fm0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute should be used to name the type of contributor, “authors”, “editors”, “translators”, etc.
+            
+         </p>
+         <p class="para">The <span class="elementtag">&lt;contrib-group&gt;</span>, should not be confused with the element <a href="n-4z50.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, which is used for groups of authors, editors, etc. who are credited under a single name, either as a collaboration in the
+            strictest sense, or when an organization, institution, or corporation is given as a contributor. 
+            
+         </p>
+         <p class="para">If issue contributors (as opposed to contributors to a particular article), are part of the metadata for an article, they
+            should be listed in a separate <span class="elementtag">&lt;contrib-group&gt;</span> with a <a href="n-8fm0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute such as “issue-editors”. 
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-8fm0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-8fm0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-3hz0.html" target="main"><span class="attrtag">id</span></a> <a href="n-3hz0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">This element is for grouping individual contributors in the metadata of an article. The <a href="n-6hg0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> element performs a similar function of grouping individual contributors, such as authors and editors, within a bibliographic
+            reference (<a href="n-5bw0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-sue0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>). 
+            
+         </p>
+         <p class="para">The element <a href="n-4z50.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a> is used where the individuals are not the contributors, the contribution was made by the group as a whole, for example a
+            report which has a laboratory or department as the official author.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  contrib-group
+                        <a href="n-e782.html" target="main" title="Contributor Group Model"><span class="petag">%contrib-group-model;</span></a>                        &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(contrib | address | aff | author-comment | bio | email | etal | ext-link | fn | on-behalf-of | role | uri | xref | x)+</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">One or more of any of:
+            <ul class="bullist">
+               <li>
+                  <a href="n-5ya0.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-5ya0.html" target="main" title="<contrib&gt;"><span class="elementname">Contributor</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-rw20.html" target="main" title="Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a> <a href="n-rw20.html" target="main" title="<address&gt;"><span class="elementname">Address/Contact Information</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-fg20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> <a href="n-fg20.html" target="main" title="<aff&gt;"><span class="elementname">Affiliation</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-u430.html" target="main" title="Author Comment"><span class="elementtag">&lt;author-comment&gt;</span></a> <a href="n-u430.html" target="main" title="<author-comment&gt;"><span class="elementname">Author Comment</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-ni30.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a> <a href="n-ni30.html" target="main" title="<bio&gt;"><span class="elementname">Biography</span></a>
+                  
+               </li>
+               <li>All the address linking elements:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-bxx0.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-bxx0.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-rrx0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-rrx0.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-qwb0.html" target="main" title="Uniform Resource Indicator (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-qwb0.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Indicator (URI)</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-tfx0.html" target="main" title="Et Al."><span class="elementtag">&lt;etal&gt;</span></a> <a href="n-tfx0.html" target="main" title="<etal&gt;"><span class="elementname">Et Al.</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-wtv0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-wtv0.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-hgf0.html" target="main" title="On Behalf of"><span class="elementtag">&lt;on-behalf-of&gt;</span></a> <a href="n-hgf0.html" target="main" title="<on-behalf-of&gt;"><span class="elementname">On Behalf of</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-pud0.html" target="main" title="Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a> <a href="n-pud0.html" target="main" title="<role&gt;"><span class="elementname">Role or Function Title of Contributor</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-cv90.html" target="main" title="X(cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-cv90.html" target="main" title="<xref&gt;"><span class="elementname">X(cross) Reference</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-xa90.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-xa90.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-pjc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-4z50.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-ndv0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a>, <a href="n-n3r0.html" target="main" title="Section Metadata"><span class="elementtag">&lt;sec-meta&gt;</span></a>, <a href="n-bpy0.html" target="main" title="Supplement Information"><span class="elementtag">&lt;supplement&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <p class="para">This example shows a <span class="elementtag">&lt;contrib-group&gt;</span> with two author contributors:
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;10092260&lt;/article-id&gt; 
+&lt;article-categories&gt;...&lt;/article-categories&gt;
+&lt;title-group&gt;&lt;article-title&gt;Systematic review of day hospital care for elderly
+people&lt;/article-title&gt;&lt;/title-group&gt;
+<strong><span class="focus">&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;&lt;given-names&gt;Anne&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;&lt;xref
+ref-type="aff"&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Young&lt;/surname&gt;&lt;given-names&gt;John&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;consultant physician&lt;/role&gt;&lt;xref ref-type="aff"&gt;
+&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Langhorne&lt;/surname&gt;&lt;given-names&gt;Peter&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;senior lecturer&lt;/role&gt;&lt;xref ref-type="aff"&gt;&lt;sup&gt;&lt;italic&gt;b&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;
+&lt;author-comment&gt;&lt;p&gt;on behalf of the
+Day Hospital Group&lt;/p&gt;&lt;/author-comment&gt;&lt;/contrib&gt;&lt;/contrib-group&gt;</span></strong>
+&lt;aff&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;Department of Health Care for the Elderly, St
+Luke&amp;#x2019;s Hospital, Bradford BD5 0NA, &lt;sup&gt;&lt;italic&gt;b&lt;/italic&gt;&lt;/sup&gt;Academic Section
+of Geriatric Medicine, Royal Infirmary, Glasgow G4 0SF&lt;/aff&gt;
+...
+&lt;/article-meta&gt;
+&lt;/front&gt;&lt;body&gt;&lt;/body&gt;
+&lt;back&gt;&lt;/back&gt;
+...
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

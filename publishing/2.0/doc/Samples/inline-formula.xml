@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for Inline Formula Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+</article-meta>
+</front>
+<body>
+<?mtl /hellip?><sec>
+<title>Coimmunoprecipitation.</title>
+<p>EM4 cells, stably transfected with Flag-HA-DAT, Myc-His-DAT,
+or both, were reacted with cross-linker and solubilized in Triton X-100
+as above. There is no reason to have this formula, <inline-formula>
+<mml:math><mml:semantics><mml:mrow><mml:msub><mml:mi>Q</mml:mi>
+<mml:mrow><mml:mn>10</mml:mn></mml:mrow></mml:msub><mml:mo>=
+</mml:mo><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow>
+<mml:mfrac><mml:mrow><mml:msub><mml:mi>M</mml:mi><mml:mn>2</mml:mn></mml:msub>
+</mml:mrow><mml:mrow><mml:msub><mml:mi>M</mml:mi><mml:mn>1</mml:mn>
+</mml:msub></mml:mrow></mml:mfrac></mml:mrow><mml:mo>)</mml:mo></mml:mrow>
+</mml:mrow><mml:mrow><mml:mn>10</mml:mn><mml:mo>/</mml:mo><mml:msub><mml:mi>T
+</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>-</mml:mo><mml:msub><mml:mi>
+T</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:msup></mml:mrow>
+</mml:semantics></mml:math></inline-formula> here. Five microliters of
+anti-Myc 9E10 (Santa Cruz Biotechnology) was added to 0.2 ml of Triton
+X-100 extracts, and the mixture was incubated for 1 h at 4&#x00B0;C.
+Twenty microliters of rec-protein G Sepharose (Zymed) was added, and the
+mixture was incubated for 1 h at 4&#x00B0;C, washed three times in 0.5
+ml of lysis buffer, and eluted in 45 &#x03BC;l of 2&#x00D7; Laemmli
+sample buffer without reducing agent.</p>
+</sec><?mtl hellip?>
+</body>
+</article><?mtl /hellip?>

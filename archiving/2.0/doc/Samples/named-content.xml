@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../../../NCBI/ArchivingDTD/DTD/Working/archivearticle.dtd">
+<?mtl hellip?><article>
+<front>
+<article-meta></article-meta>
+</front>
+<body><p></p></body>
+<back>
+<ref-list><?mtl /hellip?>
+<ref>
+<citation citation-type="other">
+<person-group person-group-type="author">
+<name><surname>Yamazaki</surname>
+<given-names>Y</given-names></name>
+</person-group>
+<source>Profiling of 
+<named-content content-type="genus-species">Escherichia 
+coli</named-content> chromosome (PEC)</source>
+<year>2003</year>
+<comment>Database version 2.27. Last update 17 September 
+2003. Available at <ext-link ext-link-type="uri" 
+xlink:href="http://shigen.lab.nig.ac.jp/ecoli/
+pec">http://shigen.lab.nig.ac.jp/ecoli/pec</ext-link> 
+via the Internet Accessed: 5 November 2003</comment>
+</citation>
+</ref>
+<?mtl hellip?></ref-list>
+</back>
+</article><?mtl /hellip?>

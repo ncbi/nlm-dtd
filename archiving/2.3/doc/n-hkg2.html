@@ -1,0 +1,279 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Journal Archiving DTD Customize Classes Module</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Journal Archiving DTD Customize Classes Module</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Journal Archiving DTD Customize Classes Module    --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Journal Archiving DTD Customize Classes Module v2.3 20070202//EN"
+Delivered as file "archivecustom-classes.ent"                      --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Journal Archiving and Interchange DTD of the      --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    To declare the Parameter Entities (PEs) used to   --&gt;
+&lt;!--             over-ride the named element classes               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Note: Since PEs must be declared before they      --&gt;
+&lt;!--             are used, this module must be called before the   --&gt;
+&lt;!--             content modules that declare elements, and before --&gt;
+&lt;!--             the default classes module.                       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) PEs for changing the contents of the default   --&gt;
+&lt;!--                element classes                                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital Archive of Journal Articles               --&gt;
+&lt;!--             National Center for Biotechnology Information     --&gt;
+&lt;!--                (NCBI)                                         --&gt;
+&lt;!--             National Library of Medicine (NLM)                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             August 2004                                       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             this DTD should be sent in email to:              --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+ 21. REFERENCES CLASS - Added &lt;date&gt; and &lt;string-date&gt; to the
+     default -%references.class;
+     
+ 20. REST OF PARAGRAPH CLASS - Added the more typically inline element
+     &lt;x&gt; for use with larger generated structures, such as standard
+     disclaimers.
+     
+ 19. CONTRIB CLASS - Created a new class (contrib.class) for use
+     inside &lt;contrib-group&gt;
+     
+ 18. CITATION CLASS - Added &lt;nlm-citation&gt; as an alternative to
+     unstructured &lt;citation&gt;s by adding &lt;nlm-citation&gt;
+     to -%citation.class;. This changed the models for:
+      - &lt;ref&gt;, which uses %citation.class; inside %ref-model;
+  
+ 17. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by the online list     
+
+          
+ 16. PERMISSIONS - Added &lt;permissions&gt; to display back matter class
+     then compared this one to the default. The default also
+     allowed &lt;copyright&gt; (not best practice now), but there is no
+     reason that the default should be looser than Green, so removed
+     display back matter class from this module, the default will
+     be used.
+               
+ 15. Updated public identifier to "v2.3 20070202" 
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+          
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+
+  6. STRING-NAME
+     Added &lt;string-name&gt; everywhere &lt;name&gt; was allowed before
+
+  5. CONTRIBUTOR / CONTRIBUTOR GROUP
+     a. &lt;etal&gt; added to %contrib-info.class;, strict sequence after
+        the contributor name no longer enforced.
+        
+     b. &lt;uri&gt; and &lt;fn&gt; added to %contrib-info.class;
+        
+     c. Added &lt;x&gt; (generated punctuation) to:
+         - &lt;contributor&gt; (through %x.class;)
+         - &lt;contributor-group&gt;  (through %x.class;)
+     
+  4. &lt;x&gt; GENERATED TEXT AND PUNCTUATION ELEMENT ADDED TO
+     - &lt;kwd-group&gt; by way of %keyword-group-model;
+     - &lt;def-list&gt; by way of %def-list-model;
+     - &lt;def-item&gt; by way of %def-item-model;
+     - &lt;article-meta&gt; by way of %article-meta-model;
+     - &lt;contributor&gt; and &lt;contributor-group&gt; (via %contrib-model;
+       and %contrib-group-model;)
+     - &lt;person-group&gt; by way of %person-group-model;
+     - &lt;x&gt; was added to everywhere the %references.class; was used, 
+       though NOT by adding it to the class itself.
+      
+  3. DOI/ID - in view of the larger role that some publishers
+     are giving to DOIs, a new class Parameter Entity %id.class;
+     was established that holds the new element Object Identifier
+     &lt;object-id&gt;, which can be used to capture any publisher's or 
+     archive's ID. This was modeled as an element rather than as 
+     an attribute to allow for multiple IDs. Used in:
+      - %references.class (therefore inside &lt;citation&gt;, 
+           &lt;related-article&gt;, and &lt;product&gt;)
+        
+  2. RENAME EXISTING CLASSES
+     ### Customization Alert ###
+     Some classes did not have the ".class" suffix. Changed the names 
+     to add the class suffix:
+      - %contrib-info.class;
+                
+  1. Created this module as version "v2.3 20070202"                --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    METADATA CLASSES (articlemeta.ent)         --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    CITATION CLASS ELEMENTS                    --&gt;
+&lt;!--                    Reference to an external document, as used 
+                        within, for example, the text of a 
+                        paragraph                                  --&gt;
+&lt;!ENTITY % citation.class   
+                        "citation | nlm-citation"                    &gt;
+
+
+&lt;!--                    CONTRIBUTOR CLASS ELEMENTS                    --&gt;
+&lt;!--                    The &lt;contrib&gt; element for use inside
+                        &lt;contrib-group&gt;                            --&gt;
+&lt;!ENTITY % contrib.class   
+                        "contrib"                                    &gt;
+
+
+&lt;!--                    CONTRIBUTOR INFORMATION CLASS              --&gt;
+&lt;!--                    Metadata about a contributor               
+                        Added &lt;fn&gt;                                 --&gt;
+&lt;!ENTITY % contrib-info.class
+                        "address | aff | author-comment | bio | 
+                         email |  etal | ext-link | fn | 
+                         on-behalf-of | role | uri | xref"           &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    CITATION CLASSES (references.ent)          --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    BIBLIOGRAPHIC REFERENCE (CITATION) CLASS   --&gt;
+&lt;!--                    The elements that may be included inside a
+                        Citation (bibliographic reference)
+                        Added &lt;date&gt; and &lt;string-date&gt;             --&gt;
+&lt;!ENTITY % references.class
+                        "access-date | annotation | article-title | 
+                         collab | comment | conf-date | conf-loc | 
+                         conf-name | conf-sponsor | date | day | 
+                         edition |email | elocation-id | etal | 
+                         ext-link | fpage |  gov | institution | 
+                         isbn | issn | 
+                         issue | issue-id | issue-title | 
+                         lpage | month | name | object-id |  
+                         page-count | page-range | 
+                         patent | person-group | pub-id | 
+                         publisher-loc | publisher-name | role |
+                         season | series | source | std | 
+                         string-date | string-name | supplement | 
+                         time-stamp | trans-source | trans-title | 
+                         uri | volume | volume-id | year"            &gt;
+                         
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PRESENTATION INFO CLASSES                  --&gt;
+&lt;!-- ============================================================= --&gt;
+                        
+                        
+&lt;!--                    X-GENERATED PUNCTUATION CLASS              --&gt;
+&lt;!--                    Class containing a single element that will
+                        hold generated punctuation or other 
+                        generatable text, for example, the commas or
+                        semicolons between keywords.
+                        This textual material element has been 
+                        created:
+                         - to match existing input DTDs
+                         - to identify such material, so that it
+                             can be processed (such as removed)
+                         - to try to remove look-and-feel material
+                             from semantic material such as keywords.
+                                                                   --&gt;
+&lt;!ENTITY % x.class      "x"                                          &gt;
+                         
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    STRUCTURAL ELEMENT CLASSES                 --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    REST OF PARAGRAPH CLASS                    --&gt;
+&lt;!--                    Information for the reader that is at the
+                        same structural level as a Paragraph.
+                        Contains all paragraph-level objects that are
+                        not also used inside tables and excepting
+                        also the paragraph element itself.
+                        Added &lt;x&gt;                                  --&gt;
+&lt;!ENTITY % rest-of-para.class   
+                        "ack | disp-quote | speech | statement | 
+                         verse-group | x"                            &gt;
+              
+&lt;!-- ================== End Archiving Classes Customization ====== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

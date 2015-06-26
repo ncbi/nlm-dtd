@@ -1,0 +1,133 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Speaker</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;speaker&gt;</h1>
+         <h1 class="elementname">Speaker</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">One who utters one segment of a speech (a dialog), for example, the
+                   computer &#8220;HAL&#8221; in the exchange &#8220;HAL: &#8216;Hi
+                   Dave&#8217;&#8221;
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-pv40.html"><span class="attrtag">content-type</span></a> <a href="n-pv40.html"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">A <a href="n-vcw0.html"><span class="elementtag">&lt;speech&gt;</span></a> is a container element that names the person, object or group speaking (<a href="n-dkw0.html"><span class="elementtag">&lt;speaker&gt;</span></a> element), followed by one complete utterance, modeled as one or more paragraphs (<a href="n-tea0.html"><span class="elementtag">&lt;p&gt;</span></a>). These paragraphs need not be long text constructions, but may contain only a few words, as in the example &#8220;Hi Dave&#8221; above.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  speaker      (#PCDATA %speaker-elements;)*                &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>
+                                       <a href="n-7m30.html"><span class="elementname">Degree(s)</span></a> <a href="n-7m30.html"><span class="elementtag">&lt;degrees&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-hr50.html"><span class="elementname">Given (First) Names</span></a> <a href="n-hr50.html"><span class="elementtag">&lt;given-names&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-fqa0.html"><span class="elementname">Prefix</span></a> <a href="n-fqa0.html"><span class="elementtag">&lt;prefix&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-hyw0.html"><span class="elementname">Surname</span></a> <a href="n-hyw0.html"><span class="elementtag">&lt;surname&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-yew0.html"><span class="elementname">Suffix</span></a> <a href="n-yew0.html"><span class="elementtag">&lt;suffix&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the simple link/cross-referencing elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-ze50.html"><span class="elementname">Footnote</span></a> <a href="n-ze50.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-9zw0.html"><span class="elementname">Target of an Internal Link</span></a> <a href="n-9zw0.html"><span class="elementtag">&lt;target&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-qxv0.html"><span class="elementname">X(cross) Reference</span></a> <a href="n-qxv0.html"><span class="elementtag">&lt;xref&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-vcw0.html"><span class="elementtag">&lt;speech&gt;</span></a> <a href="n-vcw0.html"><span class="elementname">Speech</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;body&gt;
+...
+&lt;p&gt;The participants understood the purpose of their peer 
+response groups to be finding mistakes or problems in each 
+other&amp;rsquo;s essays. ...Clara, one of the Chinese-speakers, 
+explains why she no longer believes the initial positive comments:
+&lt;speech&gt;
+<strong><span class="focus">&lt;speaker&gt;S:&lt;/speaker&gt;</span></strong>
+&lt;p&gt;I think Aeenoy start this way. I think she always do 
+this way, like say some good thing first. And then I know 
+the bad thing is coming.&lt;/p&gt;
+&lt;/speech&gt;
+&lt;speech&gt;
+<strong><span class="focus">&lt;speaker&gt;I:&lt;/speaker&gt;</span></strong>
+&lt;p&gt;So, why doe she do that?&lt;/p&gt;
+&lt;/speech&gt;
+&lt;speech&gt;
+<strong><span class="focus">&lt;speaker&gt;S:&lt;/speaker&gt;</span></strong>
+&lt;p&gt;I think it gives somebody self-esteem ...&lt;/p&gt;&lt;/speech&gt;
+&lt;/p&gt;
+...
+&lt;/body&gt;
+... 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">para.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta><journal-id journal-id-type="pmc">BMJ</journal-id>
+<journal-id journal-id-type="pubmed">BMJ</journal-id>
+<journal-id journal-id-type="publisher">BR MED J</journal-id>
+<issn>0959-8138</issn>
+<publisher><publisher-name>British Medical Journal</publisher-name></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">10092260</article-id> <article-categories>
+<subj-group><subject>Papers</subject><subject>271</subject></subj-group>
+<subj-group><subject>Papers</subject><subject>218</subject></subj-group>
+<subj-group><subject>Papers</subject><subject>209</subject></subj-group>
+</article-categories>
+<title-group><article-title>Systematic review of day hospital care for elderly
+people</article-title></title-group>
+<contrib-group>
+<contrib contrib-type="author"><name><surname>Forster</surname><given-names>Anne</given-names></name>
+<role>research physiotherapist</role><xref
+ref-type="aff"><sup><italic>a</italic></sup></xref></contrib>
+<contrib contrib-type="author">
+<name><surname>Young</surname><given-names>John</given-names></name>
+<role>consultant physician</role><xref ref-type="aff">
+<sup><italic>a</italic></sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Langhorne</surname><given-names>Peter</given-names></name>
+<role>senior lecturer</role><xref ref-type="aff"><sup><italic>b</italic></sup></xref>
+<author-comment><p>on behalf of the 
+Day Hospital Group</p></author-comment></contrib></contrib-group>
+<aff><sup><italic>a</italic></sup>Department of Health Care for the Elderly, St
+Luke&#x2019;s Hospital, Bradford BD5 0NA, <sup><italic>b</italic></sup>Academic Section
+of Geriatric Medicine, Royal Infirmary, Glasgow G4 0SF</aff>
+<author-notes><fn fn-type="con"><p>Contributors: AF planned and initiated the
+review, conducted literature searches, assessed the trials, drafted
+and redrafted the final report. JY planned and initiated the review, assessed
+trials, and redrafted the final report. PL planned the review, assessed trials,
+provided methodological support, and redrafted the final report. The day
+hospital group is formed from the authors of this systematic review and the
+authors of the original trials who provided additional information about trial
+procedures and data: S Burch, J Longbottom, M Mckay, C Borland, T Prevost
+(Huntingdon); Kaisu Pitkala (Helsinki); John Gladman (Nottingham); Susan
+Hedrick, M L Rothman, M K Chapko, J L Ehreth, P Diehr, T S Inui, R T Connis, P L
+Grover, J R Kelly (United States); E Hui, C Lum, R L C Kay, J Woo, K H Or (Hong
+Kong); N Vetter (Cardiff). Victor Cummings, Joan Eagle, and S J Ogle also
+supported the review. J Baskett provided additional information and T K Kong
+identified a relevant trial.</p></fn><fn><p>Correspondence to: Dr
+Forster <email>a.forster@leeds.ac.uk</email></p></fn></author-notes>
+<pub-date pub-type="pub"><day>27</day><month>3</month><year>1999</year></pub-date>
+<volume>318</volume><issue>7187</issue><fpage>837</fpage><lpage>841</lpage>
+<history><date date-type="accepted"><day>29</day><month>1</month>
+<year>1999</year></date></history>
+<copyright-statement>Copyright &#x00A9; 1999, British Medical Journal</copyright-statement>
+<copyright-year>1999</copyright-year>
+<abstract><sec><title>Objective</title><p>To examine the effectiveness of
+day hospital attendance in prolonging independent living for elderly
+people.</p></sec><sec><title>Design</title><p>Systematic review of 12 controlled
+clinical trials (available by January 1997) comparing day hospital care with
+comprehensive care (five trials), domiciliary care (four trials), or no
+comprehensive care (three trials).</p></sec><sec><title>Subjects</title><p>2867
+elderly people.</p></sec><sec><title>Main outcome measures</title><p>Death,
+institutionalisation, disability, global &#x201C;poor outcome,&#x201D; and use
+of resources.</p></sec><sec><title>Results</title><p>Overall, there was no
+significant difference between day hospitals and alternative services for death,
+disability, or use of resources. However, compared with subjects receiving no
+comprehensive care, patients attending day hospitals had a lower odds of death
+or &#x201C;poor&#x201D; outcome (0.72, 95&#x0025; confidence interval 0.53 to
+0.99; P&#x003C;0.05) and functional deterioration (0.61, 0.38 to 0.97;
+P&#x003C;0.05). The day hospital group showed trends towards reductions in
+hospital bed use and placement in institutional care. Eight trials reported
+treatment costs, six of which reported that day hospital attendance was more
+expensive than other care, although only two analyses took into account cost of
+long term care.</p></sec><sec><title>Conclusions</title><p>Day hospital care
+seems to be an effective service for elderly people who need rehabilitation but
+may have no clear advantage over other comprehensive care. Methodological
+problems limit these conclusions, and further randomised trials are
+justifiable.</p><p><boxed-text><sec><title>Key messages</title><p>
+<list list-type="bullet"><list-item><p>The benefits of geriatric day hospital care have been
+controversial for many years</p></list-item><list-item><p>This systematic review of 12
+randomised trials comparing a variety of day hospitals with a range of
+alternative services found no overall advantage for day hospital
+care</p></list-item><list-item><p>Day hospitals had a possible advantage over no comprehensive
+care in terms of death or poor outcome, disability, and use of
+resources</p></list-item><list-item><p>The costs of day hospital care may be partly offset by
+a reduced use of hospital beds and institutional care among
+survivors</p></list-item></list></p></sec></boxed-text></p>
+</sec></abstract></article-meta>
+</front>
+<body><p>Geriatric day
+hospitals developed rapidly in the United Kingdom in the 1960s as an important
+component of care provision. The model has since been widely applied in several
+Western countries. Day hospitals provide multidisciplinary assessment and
+rehabilitation in an outpatient setting and have a pivotal position between
+hospital and home based services. Although there is considerable descriptive
+literature on day hospital care,<xref ref-type="bibr" rid="B1">1</xref> concern
+has been expressed that evidence for effectiveness is equivocal and that day
+hospital care is expensive.<xref ref-type="bibr" rid="B2">2</xref> We therefore
+undertook a systematic review of the randomised trials of day hospital
+care.</p>
+</body><?mtl /hellip?>
+<back>
+<ref-list>
+<?mtl hellip?><ref id="B1">
+<citation><collab>Research Unit of the Royal College of Physicians and British
+Geriatric Society</collab>
+<source>Geriatric day hospitals: their role and guidelines for good
+practice</source>
+<year>1994</year>
+<publisher-loc>London</publisher-loc><publisher-name>RCP</publisher-name></citation></ref>
+
+<ref id="B2">
+<citation><collab>National Audit
+Office</collab><source>National health service day hospitals for elderly people
+in England</source>
+<year>1994</year><publisher-loc>London</publisher-loc><publisher-name>HMSO</publisher-name></citation>
+</ref>
+
+<ref
+id="B3"><citation><name><surname>Siu</surname><given-names>AL</given-names></name>
+<name><surname>Morishita</surname><given-names>L</given-names></name><name><surname>Blaustein</surname><given-names>J
+</given-names></name><article-title>Comprehensive geriatric assessment in a day
+hospital</article-title><source>J Am Ger
+Soc</source><year>1994</year><volume>42</volume><fpage>1094</fpage><lpage>1099
+</lpage></citation></ref>
+<ref
+id="B4"><citation><name><surname>Donaldson</surname><given-names>C</given-names></name
+><name><surname>Wright</surname><given-names>KG</given-names></name><name><surname>Maynard</surname><given-names>AK
+</given-names></name><name><surname>Hamill</surname><given-names>JD</given-names></name><name><surname>Sutcliffe
+</surname><given-names>E</given-names></name><article-title>Day hospitals for the elderly: utilisation and
+performance</article-title><source>Community
+Med</source><year>1987</year><volume>9</volume><fpage>55</fpage><lpage>61</lpage
+></citation></ref>
+<ref
+id="B5"><citation><name><surname>Peto</surname><given-names>R</given-names></name>
+<article-title>Why do we need systematic overviews of randomized
+trials?</article-title><source>Stat
+Med</source><year>1987</year><volume>6</volume><fpage>233</fpage><lpage>240
+</lpage></citation></ref><ref
+id="B6"><citation><name><surname>DerSimonian</surname><given-names>R</given-names>
+</name><name><surname>Laird</surname><given-names>N</given-names></name><article-title>Meta-analysis in
+clinical trials</article-title><source>Controlled Clin
+Trials</source><year>1986</year><volume>7</volume><fpage>177</fpage><lpage>188
+</lpage></citation></ref><ref
+id="B7"><citation><name><surname>Woodford-Williams</surname><given-names>E
+</given-names></name><name><surname>McKeon</surname><given-names>JA</given-names></name><name><surname>Trotter</surname
+><given-names>IS</given-names></name><name><surname>Watson</surname><given-names>D</given-names></name><name><surname>
+Bushby</surname><given-names>C</given-names></name><article-title>The day hospital in the community care
+of the elderly</article-title><source>Gerontology
+Clinic</source><year>1962</year><volume>4</volume><fpage>241</fpage><lpage>256
+</lpage></citation></ref><ref
+id="B8"><citation><name><surname>Weissert</surname><given-names>W</given-names></name>
+<name><surname>Wan</surname><given-names>T</given-names></name><name><surname>Livieratos</surname><given-names>B
+</given-names></name><name><surname>Katz</surname><given-names>S</given-names></name><article-title>Effects and costs
+of day-care services for the chronically ill: a randomized
+experiment</article-title><source>Medical
+Care</source><year>1980</year><volume>18</volume><fpage>567</fpage><lpage>584
+</lpage></citation></ref>
+<ref
+id="B9"><citation><name><surname>Tucker</surname><given-names>MA</given-names></name>
+<name><surname>Davison</surname><given-names>JG</given-names></name><name><surname>Ogle</surname><given-names>SJ</given-names
+></name><article-title>Day hospital rehabilitation&#x2014;effectiveness and cost in the
+elderly: a randomised controlled
+trial</article-title><source>BMJ</source><year>1984</year><volume>289</volume><fpage>
+1209</fpage><lpage>1212</lpage>
+</citation></ref><ref
+id="B10"><citation><name><surname>Cummings</surname><given-names>V</given-names>
+</name><name><surname>Kerner</surname><given-names>JF</given-names></name><name><surname>Arones</surname><given-names>S
+</given-names></name><name><surname>Steinbock</surname><given-names>C</given-names></name><article-title>Day
+hospital service in rehabilitation medicine: an evaluation</article-title><source>Arch
+Phys Med
+Rehabil</source><year>1985</year><volume>66</volume><fpage>86</fpage><lpage>91
+</lpage></citation></ref><ref
+id="B11"><citation><name><surname>Vetter</surname><given-names>NJ</given-names></name
+><name><surname>Smith</surname><given-names>A</given-names></name><name><surname>Sastry</surname><given-names>D</given-names
+></name><name><surname>Tinker</surname><given-names>G</given-names></name><source>Day hospital pilot
+study report</source><year>1989</year><publisher-loc>Cardiff </publisher-loc><publisher-name>Department of Geriatrics, St
+David&#x2019;s Hospital</publisher-name></citation></ref><ref
+id="B12"><citation><name><surname>Pitkala</surname><given-names>K</given-names></name
+><name><surname>Winell</surname><given-names>K</given-names></name><name><surname>Tilvis</surname><given-names>RS
+</given-names></name><article-title>Effects of geriatric day hospital care for home care
+patients</article-title><source>Arch Gerontol Geriatric</source><year>1991</year><volume>suppl
+2</volume><fpage>51</fpage><lpage>54</lpage>
+</citation></ref><ref
+id="B13"><citation><name><surname>Eagle</surname><given-names>DJ</given-names></name>
+<name><surname>Guyatt</surname><given-names>GH</given-names></name><name><surname>Patterson</surname><given-names>C
+</given-names></name><name><surname>Turpie</surname><given-names>I</given-names></name><name><surname>Sackett</surname>
+<given-names>B</given-names></name><name><surname>Singer</surname><given-names>J</given-names></name><article-title>
+Effectiveness of a geriatric day hospital</article-title><source>Can Med Assoc
+J</source><year>1991</year><volume>144</volume><fpage>699</fpage><lpage>704
+</lpage>
+</citation></ref><ref
+id="B14"><citation><name><surname>Young</surname><given-names>JB</given-names></name>
+<name><surname>Forster</surname><given-names>A</given-names></name><article-title>The Bradford community
+stroke trial: results at six
+months</article-title><source>BMJ</source><year>1992</year><volume>304</volume><fpage>
+1085</fpage><lpage>1089</lpage>
+</citation></ref><ref id="B15"><citation><name><surname>Branch</surname><given-names>LG</given-names></name><article-title>Adult day
+health care evaluation study</article-title><source>Medical
+Care</source><year>1993</year><volume>31(suppl)
+</volume><fpage>SS1</fpage><lpage>124</lpage>
+</citation></ref><ref
+id="B16"><citation><name><surname>Gladman</surname><given-names>JRF</given-names>
+</name><name><surname>Lincoln</surname><given-names>NB</given-names></name><name><surname>Barer</surname><given-names>
+DH</given-names></name><article-title>A randomised controlled trial of domiciliary and
+hospital-based rehabilitation for stroke patients after discharge from
+hospital.</article-title><source>J Neurol Neurosurg
+Psychiatry</source><year>1993</year><volume>56</volume><fpage>960</fpage><lpage>
+966</lpage></citation></ref><ref
+id="B17"><citation><name><surname>Hui</surname><given-names>E</given-names></name>
+<name><surname>Lum</surname><given-names>CM</given-names></name><name><surname>Woo</surname><given-names>J</given-names>
+</name><name><surname>Or</surname><given-names>KH</given-names></name><name><surname>Kay</surname><given-names>RLC
+</given-names></name><article-title>Outcomes of elderly stroke patients day hospital versus
+conventional medical
+management</article-title><source>Stroke</source><year>1995</year><volume>26</volume>
+<fpage>1616</fpage><lpage>1619</lpage>
+</citation></ref><ref id="B18"><citation>Burch S, Longbottom J, McKay M, Borland C, Prevost T <article-title>A randomised controlled trial of day hospital and
+day centre therapy</article-title><source>Clin Rehab</source> (in press)</citation></ref>
+<ref
+id="B19"><citation><name><surname>Weiler</surname><given-names>PG</given-names></name
+><name><surname>Kim</surname><given-names>P</given-names></name><name><surname>Pickard</surname><given-names>LS</given-names
+></name><article-title>Health care for elderly Americans: evaluation of an adult day
+health care model</article-title><source>Medical
+Care</source><year>1976</year><volume>14</volume><fpage>700</fpage><lpage>708
+</lpage></citation></ref><ref
+id="B20"><citation><name><surname>Sherwood</surname><given-names>S</given-names>
+</name><name><surname>Morris</surname><given-names>JN</given-names></name><name><surname>Ruchlin</surname><given-names>
+HS</given-names></name><article-title>Alternative paths to long-term care: nursing home,
+geriatric day hospital, senior center, and domiciliary care
+options</article-title><source>Am J Public
+Health</source><year>1986</year><volume>76</volume><fpage>38</fpage><lpage>44
+</lpage></citation></ref><ref
+id="B21"><citation><name><surname>Skellie</surname><given-names>FA</given-names>
+</name><name><surname>Mobley</surname><given-names>GM</given-names></name><name><surname>Coan</surname><given-names>RE
+</given-names></name><article-title>Cost-effectiveness of community-based long-term care:
+current findings of Georgia&#x2019;s alternative health services
+project</article-title><source>Am J Public
+Health</source><year>1982</year><volume>72</volume><fpage>353</fpage><lpage>358
+</lpage></citation></ref><ref
+id="B22"><citation><name><surname>Young</surname><given-names>J</given-names></name>
+<name><surname>Forster</surname><given-names>A</given-names></name><article-title>Day hospital and home
+physiotherapy for stroke patients: a comparative cost-effectiveness
+study</article-title><source>J R Coll Phys
+Lond</source><year>1993</year><volume>27</volume><fpage>252</fpage><lpage>257
+</lpage></citation></ref><ref
+id="B23"><citation><name><surname>Gladman</surname><given-names>J</given-names></name
+><name><surname>Whynes</surname><given-names>D</given-names></name><name><surname>Lincoln</surname><given-names>N
+</given-names></name><article-title>Cost comparison of domiciliary and hospital-based stroke
+rehabilitation</article-title><source>Age
+Ageing</source><year>1994</year><volume>23</volume><fpage>241</fpage><lpage>245
+</lpage></citation></ref><ref
+id="B24"><citation><name><surname>Egger</surname><given-names>M</given-names></name>
+<name><surname>Smith</surname><given-names>GD</given-names></name><name><surname>Schneider</surname><given-names>M
+</given-names></name><name><surname>Minder</surname><given-names>C</given-names></name><article-title>Bias in
+meta-analysis detected by a simple, graphical
+test</article-title><source>BMJ</source><year>1997</year><volume>315</volume><fpage>
+629</fpage><lpage>634</lpage></citation></ref><ref
+id="B25"><citation><name><surname>Stuck</surname><given-names>AE</given-names></name>
+<name><surname>Siu</surname><given-names>AL</given-names></name><name><surname>Wieland</surname><given-names>GD</given-names
+></name><name><surname>Adams</surname><given-names>J</given-names></name><name><surname>Rubenstein</surname>
+<given-names>LZ</given-names></name><article-title>Comprehensive geriatric assessment: a meta-analysis
+of controlled
+trials</article-title><source>Lancet</source><year>1993</year><volume>342</volume>
+<fpage>1032</fpage><lpage>1036</lpage>
+</citation></ref>
+<ref
+id="B26"><citation><name><surname>Parker</surname><given-names>SG</given-names></name
+><name><surname>Du</surname><given-names>X</given-names></name><name><surname>Bardsley</surname><given-names>MJ</given-names
+></name><name><surname>Goodfellow</surname><given-names>J</given-names></name><name><surname>Cooper</surname>
+<given-names>RG</given-names></name><name><surname>Cleary</surname><given-names>R</given-names></name><etal/><article-title>
+Measuring outcomes in care of the elderly</article-title><source>J R Coll Phys
+Lond</source><year>1994</year><volume>28</volume><fpage>428</fpage><lpage>433
+</lpage>
+</citation></ref><?mtl /hellip?>
+<ref id="B27">
+<label>27</label>
+<citation>
+<name><surname>Hughes</surname>
+<given-names>TR</given-names></name>
+<name><surname>Marton</surname>
+<given-names>MJ</given-names></name>
+<name><surname>Jones</surname>
+<given-names>AC</given-names></name>
+<etal/>
+<article-title>Functional discovery via a compendium 
+of expression profiles.</article-title>
+<source>Cell</source>
+<volume>102</volume>
+<year>2000</year>
+<fpage>109</fpage>
+<lpage>126</lpage>.
+<annotation>
+<p>This report is the most extensive DNA expression 
+profile of yeast genes. It examines the expression 
+pattern of the whole yeast genome in 300 mutant 
+strains. It infers the function of many unknown 
+genes comparing profiles among the different 
+mutants.</p>
+</annotation> 
+</citation>
+</ref>
+</ref-list>
+</back><?mtl hellip?></article><?mtl /hellip?> 

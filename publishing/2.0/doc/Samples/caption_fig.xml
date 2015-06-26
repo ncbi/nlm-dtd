@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher>
+<publisher-name>...</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">WES-10092260</article-id>
+<title-group>
+<article-title>Systematic review of day hospital care for 
+elderly people</article-title>
+</title-group>
+<contrib-group>
+<contrib>
+<name><surname>...</surname>
+<given-names>...</given-names></name>
+</contrib>
+</contrib-group> 
+<aff> </aff>
+<pub-date pub-type="pub"><day>27</day>
+<month>3</month><year>1999</year></pub-date>
+<fpage>...</fpage>
+<copyright-year>1999</copyright-year>
+</article-meta>
+</front>
+<body><?mtl /hellip?>
+<sec>
+<title>Results</title> 
+<p>We identified .... Details of randomization procedures, 
+treatment schedules, and numbers of patients followed up 
+are given on the <italic>BMJ</italic> website.</p>
+<fig id="F1"> 
+<label>Figure 1</label> 
+<caption><p>Deaths among patients receiving day hospital 
+care or alternative services. Odds ratios of death by 
+end of follow up were calculated by fixed effects model. 
+Heterogeneity between trials is presented as
+&amp;#x03C7;<sup>2</sup></p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" 
+xlink:href="fors2662.f1" alt-version="yes"></graphic> 
+</fig>
+<p><?mtl hellip?> <?mtl /hellip?></p>
+</sec>
+<?mtl hellip?></body>
+</article><?mtl /hellip?>

@@ -1,0 +1,125 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Abbreviation or Acronym</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;abbrev&gt;</h1>
+         <h1 class="elementname">Abbreviation or Acronym</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">An abbreviation or acronym used in the text of a document,
+                   possibly including an expansion of the acronym
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The linking attributes (with the standard <tt>XLink</tt> attributes) may be used to provide a live
+                   link to an expansion, definition, or additional explanation. 
+         </p>
+         <p class="para">This element was added explicitly to meet &#8220;Checkpoint
+                   4.3 Annotate complex, abbreviated, or unfamiliar information with
+                   summaries and definitions&#8221; from the W3C <a href="http://www.w3.org/TR/2002/WD-WCAG20-20020822/"><span class="citetitle">Web Content Accessibility Guidelines
+                         2.0</span></a> working draft (22 August 2002).
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-9740.html"><span class="attrtag">id</span></a> <a href="n-9740.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-mct0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-mct0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-r5t0.html"><span class="attrtag">xlink:href</span></a> <a href="n-r5t0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-sat0.html"><span class="attrtag">xlink:role</span></a> <a href="n-sat0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-iut0.html"><span class="attrtag">xlink:show</span></a> <a href="n-iut0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-nxt0.html"><span class="attrtag">xlink:title</span></a> <a href="n-nxt0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-zvt0.html"><span class="attrtag">xlink:type</span></a> <a href="n-zvt0.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-gft0.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-gft0.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The <a href="n-dr30.html"><span class="elementtag">&lt;def&gt;</span></a> may be used within an <a href="n-m320.html"><span class="elementtag">&lt;abbrev&gt;</span></a> to contain, for example,  the expansion of the acronym.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  abbrev       (#PCDATA %abbrev-elements;)*                 &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>
+                                       <a href="n-dr30.html"><span class="elementname">Definition List: Definition</span></a> <a href="n-dr30.html"><span class="elementtag">&lt;def&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-hi20.html"><span class="elementtag">&lt;article-title&gt;</span></a> <a href="n-hi20.html"><span class="elementname">Article Title</span></a>; <a href="n-tq20.html"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-tq20.html"><span class="elementname">Attribution</span></a>; <a href="n-55c0.html"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-55c0.html"><span class="elementname">Bold</span></a>; <a href="n-a9c0.html"><span class="elementtag">&lt;comment&gt;</span></a> <a href="n-a9c0.html"><span class="elementname">Comment in a Citation</span></a>; <a href="n-ma30.html"><span class="elementtag">&lt;conf-theme&gt;</span></a> <a href="n-ma30.html"><span class="elementname">Conference Theme</span></a>; <a href="n-8i30.html"><span class="elementtag">&lt;def-head&gt;</span></a> <a href="n-8i30.html"><span class="elementname">Definition List: Definition Head</span></a>; <a href="n-r580.html"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-r580.html"><span class="elementname">Italic</span></a>; <a href="n-b680.html"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-b680.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a>; <a href="n-uj80.html"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-uj80.html"><span class="elementname">Named Special (Subject) Content</span></a>; <a href="n-d5a0.html"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-d5a0.html"><span class="elementname">Overline</span></a>; <a href="n-nua0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-nua0.html"><span class="elementname">Paragraph</span></a>; <a href="n-s6a0.html"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-s6a0.html"><span class="elementname">Preformatted Text</span></a>; <a href="n-wha0.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-wha0.html"><span class="elementname">Product Information</span></a>; <a href="n-i2u0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-i2u0.html"><span class="elementname">Related Article Information</span></a>; <a href="n-svu0.html"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-svu0.html"><span class="elementname">Small Caps</span></a>; <a href="n-9qu0.html"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-9qu0.html"><span class="elementname">Strike Through</span></a>; <a href="n-qmu0.html"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-qmu0.html"><span class="elementname">Subscript</span></a>; <a href="n-z2w0.html"><span class="elementtag">&lt;subtitle&gt;</span></a> <a href="n-z2w0.html"><span class="elementname">Article Subtitle</span></a>; <a href="n-z8w0.html"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-z8w0.html"><span class="elementname">Superscript</span></a>; <a href="n-3xw0.html"><span class="elementtag">&lt;supplement&gt;</span></a> <a href="n-3xw0.html"><span class="elementname">Supplement Information</span></a>; <a href="n-eiw0.html"><span class="elementtag">&lt;td&gt;</span></a> <a href="n-eiw0.html"><span class="elementname">Table Data Cell (XHTML table model)</span></a>; <a href="n-ybw0.html"><span class="elementtag">&lt;term&gt;</span></a> <a href="n-ybw0.html"><span class="elementname">Definition List: Term</span></a>; <a href="n-2kx0.html"><span class="elementtag">&lt;term-head&gt;</span></a> <a href="n-2kx0.html"><span class="elementname">Definition List: Term Head</span></a>; <a href="n-j3x0.html"><span class="elementtag">&lt;th&gt;</span></a> <a href="n-j3x0.html"><span class="elementname">Table Header Cell (XHTML table model)</span></a>; <a href="n-9xx0.html"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-9xx0.html"><span class="elementname">Title</span></a>; <a href="n-rgx0.html"><span class="elementtag">&lt;trans-title&gt;</span></a> <a href="n-rgx0.html"><span class="elementname">Translated Title</span></a>; <a href="n-krx0.html"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-krx0.html"><span class="elementname">Underline</span></a>; <a href="n-jpx0.html"><span class="elementtag">&lt;verse-line&gt;</span></a> <a href="n-jpx0.html"><span class="elementname">Line of a Verse</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;The disabilities of the arm, shoulder and hand 
+(<strong><span class="focus">&lt;abbrev&gt;DASH&lt;/abbrev&gt;</span></strong>) outcome questionnaire: longitudinal 
+construct validity and measuring self-rated health change after 
+surgery&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;&amp;copy;2003 Gummesson et al; licensee BioMed Central 
+Ltd.&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;2003&lt;/copyright-year&gt;
+&lt;license license-type="open-access"&gt;
+&lt;p&gt;This is an Open Access article: verbatim copying ...&lt;/p&gt;
+&lt;/license&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;&lt;bold&gt;Background:&lt;/bold&gt; The disabilities of the arm, shoulder and 
+hand (<strong><span class="focus">&lt;abbrev&gt;DASH&lt;/abbrev&gt;</span></strong>) questionnaire is a self-administered 
+region-specific outcome instrument developed as a measure of self-rated 
+upper-extremity disability and symptoms. The <strong><span class="focus">&lt;abbrev&gt;DASH&lt;/abbrev&gt;</span></strong> 
+consists mainly of a 30-item disability/symptom scale, scored 0 (no 
+disability) to 100. The main purpose of this study was to assess 
+the &lt;italic&gt;longitudinal construct validity&lt;/italic&gt; of the 
+<strong><span class="focus">&lt;abbrev&gt;DASH&lt;/abbrev&gt;</span></strong> among patients undergoing surgery. The second 
+phase purpose was to quantify self-rated &lt;italic&gt;treatment 
+effectiveness&lt;/italic&gt; after surgery.&lt;/p&gt;
+...
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">phrase.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

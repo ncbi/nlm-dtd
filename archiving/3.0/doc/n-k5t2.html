@@ -1,0 +1,150 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Tagging Keywords</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h3 class="header">Tagging Keywords</h3>
+         <p class="para">Keywords are words and phrases used to name an article’s key concepts for search and retrieval purposes. Typically an author
+            or a publisher will assign a small number of key terms to expand lookup beyond full text or to point up the most important
+            topics described in an article. Indexers assigning keywords can make sure that someone searching for “this topic” will find
+            this article, even if the exact words are not present in the article’s text.
+         </p>
+         <p class="para">In this Tag Set, keywords come in sets (<a href="n-i270.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>), each of which may come from a particular source or ontology (such as “author-created” or the “MeSH Subject Headings”),
+            which is named using the <a href="n-skk2.html" target="main" title="@kwd-group-type"><span class="attrname">Keyword Authority</span></a> attribute. Here are some sample tagged keywords that a contributor chose as best describing an article:
+         </p>
+         <div class="codeblock"><pre>&lt;kwd-group kwd-group-type="author-created"&gt;
+   &lt;kwd&gt;acid precipitation&lt;/kwd&gt;
+   &lt;kwd&gt;acid rainfall&lt;/kwd&gt;    
+   &lt;kwd&gt;smelting region&lt;/kwd&gt;
+   &lt;kwd&gt;Aluminum residues&lt;/kwd&gt;
+   &lt;kwd&gt;Sulphur dioxide&lt;/kwd&gt;
+   &lt;kwd&gt;Copper-nickel smelters&lt;/kwd&gt;
+&lt;/kwd-group&gt;</pre></div>
+         <p class="para">Versions of this Tag Set prior to 3.0 have allowed for multiple sets of keywords, but the individual keywords in the set had
+            no structure; they were just text, words, and phrases — possibly with face markup, superscripts, and subscripts (such as “<tt>&lt;kwd&gt;XML&lt;/kwd&gt;</tt>”, “<tt>&lt;kwd&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/kwd&gt;</tt>”, and “<tt>&lt;kwd&gt;blood-brain barrier&lt;/kwd&gt;</tt>”). Version 3.0 now accommodates more elaborate keyword structures.
+         </p>
+         <div class="section"><a name="kwd-compound-kwds"></a><h4 class="header">Tagging Complex/Compound/Nested Keywords</h4>
+            <p class="para">Some keywords possess an internal structure of their own, for example, a keyword may include both a textual phrase and its
+               corresponding code (“863 Icelandic sagas”). Many styles of such compound keywords can be handled in this Tag Set with the
+               <a href="n-u480.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a> element, which is modeled as a series of repeatable parts (<a href="n-6s80.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a>). These parts can differentiate a text/code pair, divide a coded keyword into multiple code segments, describe a hierarchy,
+               and name a variety of other compound structures. The <a href="n-8fm0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute on the <a href="n-6s80.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a> element is used to name each part, describe the role it plays, or otherwise define how each part functions within the keyword
+               as a whole.
+            </p>
+            <div class="section"><a name="kwd-compound-codes"></a><h4 class="header">Keywords with Codes</h4>
+               <p class="para">The simplest case of a compound keyword is a keyword that includes both a textual phrase and its corresponding code, for example,
+                  “863 Icelandic sagas”. Both the code and the text can be tagged as keywords parts (<a href="n-6s80.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a>) inside the element <a href="n-u480.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a>, with the <a href="n-8fm0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute used to name the role or type of each part:
+               </p>
+               <div class="codeblock"><pre>
+ &lt;kwd-group kwd-group-type="ISO-463"&gt;
+   &lt;compound-kwd&gt;
+     &lt;compound-kwd-part 
+        content-type="ISO-463-code"&gt;863&lt;/compound-kwd-part&gt;
+     &lt;compound-kwd-part
+        content-type="ISO-463-text"&gt;Icelandic sagas&lt;/compound-kwd-part&gt;
+   &lt;/compound-kwd&gt;
+   ...
+ &lt;/kwd-group&gt;</pre></div>
+            </div>
+            <div class="section"><a name="kwd-compound-abbr"></a><h4 class="header">Abbreviation and Expansion Keywords</h4>
+               <p class="para">Compound keywords can also be used to handle keywords that hold an abbreviation and its expansion. Both the abbreviation and
+                  the expansion are tagged as <a href="n-6s80.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a> in a single <a href="n-u480.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a>. The <a href="n-skk2.html" target="main" title="Keyword Authority"><span class="attrtag">@kwd-group-type</span></a> attribute on <a href="n-i270.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>, which is sometimes used to name the source or the descriptor for the keywords, can be used instead to name the type of information,
+                  such as “abbreviations”. For example:
+               </p>
+               <div class="codeblock"><pre>
+ &lt;kwd-group kwd-group-type="abbreviations"&gt;
+    &lt;compound-kwd&gt;
+      &lt;compound-kwd-part content-type="abbrev"&gt;WT&lt;/compound-kwd-part&gt;
+      &lt;compound-kwd-part content-type="expansion"&gt;WildType&lt;/compound-kwd-part&gt;
+    &lt;/compound-kwd&gt;
+    &lt;compound-kwd&gt;
+      &lt;compound-kwd-part content-type="abbrev"&gt;CFU&lt;/compound-kwd-part&gt;
+      &lt;compound-kwd-part content-type="expansion"&gt;Colony-forming unit&lt;/compound-kwd-part&gt;
+    &lt;/compound-kwd&gt;
+ &lt;/kwd-group&gt;
+</pre></div>
+            </div>
+            <div class="section"><a name="kwd-compound-hier"></a><h4 class="header">Keywords vs. Subjects</h4>
+               <p class="para">Some publishers assign hierarchical topics to articles. For example, a publisher might tag selected topics (“Blood brain barrier”),
+                  nested inside themes (“Cellular and Molecular Biology”), grouped into larger units like “Neuroscience”, and grouped into still
+                  larger units such as “Biological Sciences”, forming the following hierarchy:
+               </p>
+               <div class="codeblock"><pre>Biological Sciences
+   Neuroscience
+      Cellular and Molecular Biology
+         Blood–brain barrier</pre></div>
+               <p class="para">This kind of structure places an article in context or sorts articles into categories. This is commonly seen in Tables of
+                  Contents, where all the Neuroscience articles are grouped together and all the Biochemistry articles are grouped, etc. Since
+                  keywords are intended for searching, exact lookup, and retrieval of an article rather than establishing an article’s context,
+                  best practice, is to tag this topic structure as subject groups:
+               </p>
+               <div class="codeblock"><pre>
+&lt;article-categories&gt;
+  &lt;subj-group subj-group-type="keywords"&gt; 
+     &lt;subject&gt;Biological Sciences&lt;/subject&gt;
+     &lt;subj-group subj-group-type="keywords"&gt;
+        &lt;subject&gt;Neuroscience&lt;/subject&gt;
+        &lt;subj-group subj-group-type="keywords"&gt;
+            &lt;subject&gt;Cellular and Molecular Biology&lt;/subject&gt;  
+          &lt;subj-group subj-group-type="keywords"&gt;
+               &lt;subject&gt;Blood–brain barrier&lt;/subject&gt;
+            &lt;/subj-group&gt;
+        &lt;/subj-group&gt;
+     &lt;/subj-group&gt;
+  &lt;/subj-group&gt; 
+&lt;/article-categories&gt;</pre></div>
+               <p class="para">If an archive wishes to tag these hierarchical structures as keywords, the following tagging would still be adequate to this
+                  Tag Set. Although <a href="n-6s80.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a> is not recursive, the hierarchy may be preserved by setting the <a href="n-skk2.html" target="main" title="Keyword Authority"><span class="attrtag">@kwd-group-type</span></a> to “<tt>hierarchical</tt>”, “<tt>topical</tt>”, or “<tt>subject hierarchy</tt>”, and using the <a href="n-8fm0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute on each part to indicate hierarchical level:
+               </p>
+               <div class="codeblock"><pre>
+&lt;kwd-group kwd-group-type="hierarchical"&gt;   
+  &lt;compound-kwd&gt;
+    &lt;compound-kwd-part content-type="level1"&gt;Biological Sciences&lt;/compound-kwd-part&gt;
+    &lt;compound-kwd-part content-type="level2"&gt;Neuroscience&lt;/compound-kwd-part&gt;
+    &lt;compound-kwd-part content-type="level3"&gt;Cellular and Molecular Biology&lt;/compound-kwd-part&gt; 
+    &lt;compound-kwd-part content-type="level4"&gt;Blood–brain barrier&lt;/compound-kwd-part&gt;
+  &lt;/compound-kwd&gt;
+&lt;/kwd-group&gt;</pre></div>
+            </div>
+         </div>
+         <div class="section"><a name="kwd-string-kwds"></a><h4 class="header">String Keywords</h4>
+            <p class="para">Although it is not considered best practice, in some tag sets a single keyword element has been used to hold an entire list
+               of keywords, with connecting punctuation used to mark the boundary between individual keywords rather than distinguishing
+               individual keywords with markup. To untangle this single list into individual keywords might require publisher-specific string
+               parsing or even human judgement, so some receiving archives have chosen not to break the list into single keywords. The element
+               <a href="n-j3b0.html" target="main" title="Unstructured Keyword Group"><span class="elementtag">&lt;unstructured-kwd-group&gt;</span></a> has been added as an alternative to <a href="n-4bt0.html" target="main" title="Keyword"><span class="elementtag">&lt;kwd&gt;</span></a> inside <a href="n-i270.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a> to handle these lists. The element is named <a href="n-j3b0.html" target="main" title="Unstructured Keyword Group"><span class="elementtag">&lt;unstructured-kwd-group&gt;</span></a> to indicate that it is a grouping of keywords and not a single keyword. Such lists can then be tagged as shown in the following
+               examples:
+            </p>
+            <div class="codeblock"><pre>
+      &lt;kwd-group&gt;
+         &lt;unstructured-kwd-group&gt;XML, DTD, schema, RELAX NG, XSD, models, 
+         UML, Schematron&lt;/unstructured-kwd-group&gt;
+      &lt;/kwd-group&gt;
+    
+     &lt;kwd-group&gt;
+        &lt;unstructured-kwd-group&gt;molecular chaperones; surface plasmon resonance; 
+        dynamic light scattering; trypsin digestion; citrate synthase;
+        &lt;italic&gt;Neurospora crassa&lt;/italic&gt;; protéines chaperonnes, 
+        résonance des plasmons de surface; diffusion dynamique 
+        de la lumière; digestion par la trypsine; citrate synthase;
+        &lt;italic&gt;Neurospora crassa&lt;/italic&gt;&lt;/unstructured-kwd-group&gt;
+     &lt;/kwd-group&gt;
+    </pre></div>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,142 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Element: Footnote Group</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;fn-group&gt;</h1>
+         <h1 class="elementname">Footnote Group</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Container element for footnotes that have been grouped at the end of an article
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Footnotes that are scattered throughout the text, at the places they occur, do not use this container element.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-cdd0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-cdd0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-gyr0.html" target="main"><span class="attrtag">id</span></a> <a href="n-gyr0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-vky0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-vky0.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  fn-group     <a href="n-urb0.html" target="main" title="Footnote Group Model"><span class="petag">%fn-group-model;</span></a>                             &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(label?, title?, (fn)+)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-axx0.html" target="main" title="Label (Of a Figure, Reference, Etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-axx0.html" target="main" title="<label&gt;"><span class="elementname">Label (Of a Figure, Reference, Etc.)</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-hxn0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-hxn0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-7xu0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-7xu0.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a>, one or more
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-7e20.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-vyc0.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a>, <a href="n-3qc0.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-8w30.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-w840.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a>, <a href="n-n470.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-gag0.html" target="main" title="Table Wrapper Footer"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a>, <a href="n-5en0.html" target="main" title="Title Group"><span class="elementtag">&lt;title-group&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;back&gt;
+&lt;ack&gt;
+&lt;p&gt;We are grateful to Uri Alon, Harley McAdams, Lee Kroos,
+Patrick Piggot, and Patrick Stragier for critical comments
+of the manuscript. ...&lt;/p&gt;
+...
+&lt;/ack&gt;
+<strong><span class="focus">&lt;fn-group&gt;
+&lt;fn id="n1" fn-type="conflict"&gt;
+&lt;p&gt;&lt;bold&gt;Conflicts of interest.&lt;/bold&gt; The 
+authors have declared that no conflicts of interest 
+exist.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;fn id="n2" fn-type="con"&gt;
+&lt;p&gt;&lt;bold&gt;Author contributions.&lt;/bold&gt; PE, MF, STJ, 
+EMC, DZR, TS, JSL, and RL conceived and designed the 
+experiments. PE, MF, DZR, STW, CF, and KH performed 
+the experiments. PE, MF, STJ, EMC, DZR, and JSL 
+analyzed the data. PE, MF, STJ, EMC, DZR, and JSL 
+contributed reagents/materials/analysis tools. PE, 
+MF, STJ, EMC, JSL, and RL wrote the paper.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/fn-group&gt;</span></strong>
+...
+&lt;/back&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+...
+&lt;back&gt;
+&lt;ref-list&gt;
+&lt;ref&gt;
+&lt;element-citation&gt;
+&lt;person-group&gt;
+...
+&lt;/person-group&gt;
+&lt;source&gt;Nature (London)&lt;/source&gt;
+&lt;year&gt;2001&lt;/year&gt;
+&lt;volume&gt;411&lt;/volume&gt;
+&lt;fpage&gt;498&lt;/fpage&gt;
+&lt;lpage&gt;501&lt;/lpage&gt;
+&lt;pub-id pub-id-type="pmid"&gt;11373685&lt;/pub-id&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+&lt;/ref-list&gt;
+<strong><span class="focus">&lt;fn-group&gt;
+&lt;fn&gt;
+&lt;p&gt;This paper was submitted directly (Track II) to the PNAS
+office.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;fn id="FN153"&gt;
+&lt;p&gt;&amp;#x00A7; Barta, A., Dorner, S., Polacek, N., Berg, J. M.,
+Lorsch, J. R., Nissen, P., Hansen, J., Muth, G. W. &amp;#x0026; Ban, N. 
+(2000) &lt;italic&gt;Science&lt;/italic&gt; &lt;bold&gt;291&lt;/bold&gt;, 203a (abstr.).&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/fn-group&gt;</span></strong>
+&lt;/back&gt;
+&lt;/article&gt; 
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">backmatter3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

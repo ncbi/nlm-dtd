@@ -1,0 +1,263 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Role or Function Title of Contributor</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2003-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Archive 2.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;role&gt;</h1>
+         <h1 class="elementname">Role or Function Title of Contributor</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The title or role of a contributor (such as an author) to a work,
+                   for example, &#8220;Editor-in-Chief&#8221;, &#8220;Contributor&#8221;,
+                   &#8220;Chief Scientist&#8221;, &#8220;Photographer&#8221;, &#8220;Research
+                   Associate&#8221;, etc.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Information on the role or type of contribution is collected in two places, in the <a href="n-qed0.html"><span class="attrtag">contrib-type</span></a> attribute on the <a href="n-hd80.html"><span class="elementtag">&lt;contrib&gt;</span></a> element and in the <a href="n-2jt0.html"><span class="elementtag">&lt;role&gt;</span></a> element (which is part of the contributor information inside a <a href="n-hd80.html"><span class="elementtag">&lt;contrib&gt;</span></a> element). For example, the <a href="n-hd80.html"><span class="elementtag">&lt;contrib&gt;</span></a> element&#8217;s <a href="n-qed0.html"><span class="attrtag">contrib-type</span></a> attribute might have a value of &#8220;<tt>editor</tt>&#8221;, whereas the content of the <a href="n-2jt0.html"><span class="elementtag">&lt;role&gt;</span></a> element could be &#8220;Associate Editor&#8221;.
+            As another example, the <a href="n-hd80.html"><span class="elementtag">&lt;contrib&gt;</span></a> element&#8217;s <a href="n-qed0.html"><span class="attrtag">contrib-type</span></a> attribute might be &#8220;<tt>author</tt>&#8221;, and the <a href="n-2jt0.html"><span class="elementtag">&lt;role&gt;</span></a> element might contain &#8220;Principle Author&#8221;.
+         </p>
+         <p class="para">The <a href="n-2jt0.html"><span class="elementtag">&lt;role&gt;</span></a> element is more likely to appear on screen or in print than the <a href="n-hd80.html"><span class="elementtag">&lt;contrib&gt;</span></a> element&#8217;s <a href="n-qed0.html"><span class="attrtag">contrib-type</span></a> attribute value.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  role         (#PCDATA %role-elements;)*                   &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-q5u0.html"><span class="elementname">Email Address</span></a> <a href="n-q5u0.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-87u0.html"><span class="elementname">External Link</span></a> <a href="n-87u0.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-brn0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-brn0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the article linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-vux0.html"><span class="elementname">Inline Supplementary Material</span></a> <a href="n-vux0.html"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-iet0.html"><span class="elementname">Related Article Information</span></a> <a href="n-iet0.html"><span class="elementtag">&lt;related-article&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-m2w0.html"><span class="elementname">Font</span></a> <a href="n-m2w0.html"><span class="elementtag">&lt;font&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-t2x0.html"><span class="elementname">Horizontal Rule</span></a> <a href="n-t2x0.html"><span class="elementtag">&lt;hr&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-bv30.html"><span class="elementname">Bold</span></a> <a href="n-bv30.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-wjx0.html"><span class="elementname">Italic</span></a> <a href="n-wjx0.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-5mv0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-5mv0.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-h640.html"><span class="elementname">Overline</span></a> <a href="n-h640.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-py40.html"><span class="elementname">Overline Start</span></a> <a href="n-py40.html"><span class="elementtag">&lt;overline-start&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-di40.html"><span class="elementname">Overline End</span></a> <a href="n-di40.html"><span class="elementtag">&lt;overline-end&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-n9t0.html"><span class="elementname">Small Caps</span></a> <a href="n-n9t0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hae0.html"><span class="elementname">Strike Through</span></a> <a href="n-hae0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-6en0.html"><span class="elementname">Underline</span></a> <a href="n-6en0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-jdn0.html"><span class="elementname">Underline Start</span></a> <a href="n-jdn0.html"><span class="elementtag">&lt;underline-start&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-h6n0.html"><span class="elementname">Underline End</span></a> <a href="n-h6n0.html"><span class="elementtag">&lt;underline-end&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-uax0.html"><span class="elementname">Graphic, Inline</span></a> <a href="n-uax0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-dds0.html"><span class="elementname">Private Character (Custom or Unicode)</span></a> <a href="n-dds0.html"><span class="elementtag">&lt;private-char&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-8cx0.html"><span class="elementname">Formula, Inline</span></a> <a href="n-8cx0.html"><span class="elementtag">&lt;inline-formula&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-jdg0.html"><span class="elementname">Tex Math Equation</span></a> <a href="n-jdg0.html"><span class="elementtag">&lt;tex-math&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-69v0.html"><span class="elementname">Math (MathML 2.0 DTD)</span></a> <a href="n-69v0.html"><span class="elementtag">&lt;mml:math&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-f320.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-f320.html"><span class="elementtag">&lt;abbrev&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-a540.html"><span class="elementname">Named Special (Subject) Content</span></a> <a href="n-a540.html"><span class="elementtag">&lt;named-content&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the simple link/cross-referencing elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-rzu0.html"><span class="elementname">Footnote</span></a> <a href="n-rzu0.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-f2g0.html"><span class="elementname">Target of an Internal Link</span></a> <a href="n-f2g0.html"><span class="elementtag">&lt;target&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-vv60.html"><span class="elementname">X(cross) Reference</span></a> <a href="n-vv60.html"><span class="elementtag">&lt;xref&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-j6e0.html"><span class="elementname">Subscript</span></a> <a href="n-j6e0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-4uf0.html"><span class="elementname">Superscript</span></a> <a href="n-4uf0.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-4930.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-4930.html"><span class="elementname">Citation</span></a>; <a href="n-hd80.html"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-hd80.html"><span class="elementname">Contributor</span></a>; <a href="n-ii80.html"><span class="elementtag">&lt;contrib-group&gt;</span></a> <a href="n-ii80.html"><span class="elementname">Contributor Group</span></a>; <a href="n-fhs0.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-fhs0.html"><span class="elementname">Product Information</span></a>; <a href="n-iet0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-iet0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">Inside article metadata:</p><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;
+&lt;/name&gt;
+<strong><span class="focus">&lt;role&gt;research physiotherapist&lt;/role&gt;</span></strong>
+&lt;xref ref-type="aff" rid="StLukes"/&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Young&lt;/surname&gt;
+&lt;given-names&gt;John G.&lt;/given-names&gt;&lt;/name&gt;
+<strong><span class="focus">&lt;role&gt;consultant physician&lt;/role&gt;</span></strong>
+&lt;xref ref-type="aff" rid="RoyalInf"/&gt;
+&lt;author-comment&gt;&lt;p&gt;on behalf of the Day Hospital 
+Group&lt;/p&gt;&lt;/author-comment&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;
+&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5 
+0NA&lt;/aff&gt;
+...
+&lt;pub-date pub-type="pub"&gt;...
+&lt;/pub-date&gt;...
+&lt;/article-meta&gt;... 
+
+
+    </pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference:</p><pre class="taggedtext">
+...
+&lt;citation&gt;
+&lt;person-group&gt;
+&lt;name&gt;&lt;surname&gt;Johnson&lt;/surname&gt;
+&lt;given-names&gt;D. H.&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;O'Neil&lt;/surname&gt;
+&lt;given-names&gt;T. A.&lt;/given-names&gt;&lt;/name&gt;
+&lt;/person-group&gt;
+<strong><span class="focus">&lt;role&gt;managing directors.&lt;/role&gt;</span></strong>
+&lt;year&gt;2001&lt;/year&gt; Wildlife habitat relationships in Oregon 
+and Washington. Oregon State University Press, Corvallis, 
+Oregon, USA&lt;/citation&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Archive 2.0</h2>
+         <h4 class="pubdate">Version of 20040927</h4>
+      </div>
+   </body>
+</html>

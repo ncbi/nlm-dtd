@@ -1,0 +1,98 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Title Group</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;title-group&gt;</h1>
+         <h1 class="elementname">Title Group</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Container element to hold an article’s various titles
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">A footnote or other reference inside a title should be placed within the title tag.
+            
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">There are two elements concerned with the title of an article, both contained within the container element <a href="n-8st0.html" target="main" title="Title Group"><span class="elementtag">&lt;title-group&gt;</span></a> in the article metadata. The <a href="n-6t20.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a> is the full title of the article. The <a href="n-s640.html" target="main" title="Article Subtitle"><span class="elementtag">&lt;subtitle&gt;</span></a> is a subordinate or auxiliary title that adds information to the full title or modifies the full title.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  title-group  <a href="n-82q0.html" target="main" title="Title Group Model"><span class="petag">%title-group-model;</span></a>                          &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(article-title, subtitle?)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-6t20.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a> <a href="n-6t20.html" target="main" title="<article-title&gt;"><span class="elementname">Article Title</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-s640.html" target="main" title="Article Subtitle"><span class="elementtag">&lt;subtitle&gt;</span></a> <a href="n-s640.html" target="main" title="<subtitle&gt;"><span class="elementname">Article Subtitle</span></a>, zero or one
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-n420.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+<strong><span class="focus">&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital 
+care for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;</span></strong>
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;aff&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5 
+0NA&lt;/aff&gt;
+&lt;/contrib&gt;
+...
+&lt;/contrib-group&gt;
+...
+&lt;/article-meta&gt;
+... 
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Glyph Data Character Being Referenced</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">glyph-data</h1>
+         <h1 class="attrname">Glyph Data Character Being Referenced</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">An <tt>IDREF</tt>-type attribute that points to the <a href="n-jdy0.html"><span class="attrname">Identifier</span></a> attribute of the <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> character inside a <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> element.
+             The idea is to use the full <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> with its name and bitmap once,
+             then point to an existing character instead
+             of defining the entire <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> element repeatedly.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Once a private character has been declared
+             using a <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> element, the character
+             can be reused by using this attribute on a <a href="n-ptx0.html"><span class="elementtag">&lt;glyph-ref&gt;</span></a> element to
+             point to the existing full <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> element (bitmap included).
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5 class="heading"><a href="n-ptx0.html"><span class="elementtag">&lt;glyph-ref&gt;</span></a> <a href="n-ptx0.html"><span class="elementname">Glyph Reference for a Private Character</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">An identifier (IDREF)</td>
+                  <td class="attrmeaning">The pointing uses the <tt>ID/IDREF</tt> mechanism,
+                      using the <a href="n-any0.html"><span class="attrtag">glyph-data</span></a> attribute of the <a href="n-ptx0.html"><span class="elementtag">&lt;glyph-ref&gt;</span></a> element to point to the <a href="n-jdy0.html"><span class="attrtag">id</span></a> attribute of
+                      an existing <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> element.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Parameter entity: All Phrase-Level Elements</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="petag">%all-phrase;</h1>
+         <h1 class="pename">All Phrase-Level Elements</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">This Parameter Entity contains all of the phrase-level elements in the entire Archival Tag Set <strong>except for the</strong> <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a> <strong>and</strong> <a href="n-4i30.html"><span class="elementtag">&lt;break&gt;</span></a> <strong>elements</strong>.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This change results from the version 2.0 split of the NCBI Archiving and Publishing Tag Sets into three DTDs. The restrictions
+            in the phrase-level content models were in place to help regularize the archive. However, they have no place in the more descriptive,
+            open archival Tag Set that the Archiving (Green) Tag Set is becoming. The cleanest way to accomplish this change was to relax
+            the fairly clean class/mix structure that the base Suite and the old Archiving Tag Set used and create one layer of &#8220;onion&#8221;
+            entities. Thus, individual entities such as <a href="n-ui90.html"><span class="petag">%emphasized-text;</span></a> will continue to exist, but they will contain all the phrase-level elements, through the use of the <a href="n-xhq0.html"><span class="petag">%all-phrase;</span></a> Parameter Entity.
+         </p>
+         <p class="para">Developer&#8217;s Note: At the moment, the <a href="n-4i30.html"><span class="elementtag">&lt;break&gt;</span></a> and <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a> elements are not considered to be &#8220;ordinary&#8221; phrase-level elements and are not part of the <a href="n-xhq0.html"><span class="petag">%all-phrase;</span></a> parameter entity.
+         </p>
+         <p class="para">Design Notes:
+                     
+            <ul class="bullist">
+               <li>Since this parameter entity is used in other mixes, <a href="n-xhq0.html"><span class="petag">%all-phrase;</span></a> must be declared first, <em>before</em> any other mix.
+               </li>
+               <li>Since it acts as a class (i.e., is used in mixes), <a href="n-xhq0.html"><span class="petag">%all-phrase;</span></a> does not start with an OR bar, as all other inline mixes do.
+               </li>
+            </ul>
+                     
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header">Declaration</h2><pre class="contentdesc">&lt;!ENTITY % all-phrase   "%address-link.class; | %article-link.class; |
+                         %appearance.class; | %emphasis.class;  |
+                         %inline-display.class; |
+                         %inline-math.class; | %math.class; |
+                         %phrase.class; | %simple-link.class; |
+                         %subsup.class;"                             &gt;</pre></div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">archivecustom-mixes.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

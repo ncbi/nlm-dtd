@@ -1,0 +1,205 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: First Page</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;fpage&gt;</h1>
+         <h1 class="elementname">First Page</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The page number on which an article starts, for print journals that have page numbers</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> element is used in two contexts:
+            
+            <ol class="olist">
+               <li>As a part of the metadata concerning the article itself; and</li>
+               <li>As part of bibliographic reference metadata inside a bibliographic citation (<a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>).
+               </li>
+            </ol>
+         </p>
+         <p class="para">For extensive examples of formatted <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a>s in <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+         <p class="para">Electronic-only journals traditionally do not have page numbers and use the <a href="n-pdu0.html"><span class="elementtag">&lt;elocation-id&gt;</span></a> element instead of using the <a href="n-gqw0.html"><span class="elementname">First Page</span></a> <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> or <a href="n-ap40.html"><span class="elementname">Last Page</span></a> <a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a> elements.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-9xp0.html"><span class="attrtag">seq</span></a> <a href="n-9xp0.html"><span class="attrname">Sequence</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">A number of elements in the Suite relate to page numbers:
+                   
+            <ul class="bullist">
+               <li><a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> names the page number
+                             on which the article begins;
+               </li>
+               <li><a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a> names the page number on which the article ends (which should be the same page number or a number larger than the starting
+                  page number);
+               </li>
+               <li><a href="n-pdu0.html"><span class="elementtag">&lt;elocation-id&gt;</span></a> replaces the start and end page elements just described for electronic-only journals;
+               </li>
+               <li><a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> records discontinuous page ranges (See note below.); and
+               </li>
+               <li><a href="n-w6t0.html"><span class="elementtag">&lt;page-count&gt;</span></a> holds the total page count, if the publisher has provided one. Typically this element records what the publisher said and
+                  makes no validity claim.
+               </li>
+            </ul> 
+         </p>
+         <p class="para">Note: The <a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> is intended to record supplementary information and should <em>not</em> be used in the place of  the <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> and <a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a> elements, which are typically needed for citation matching. The <a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> element is merely a text string, containing such material as &#8220;8-11, 14-19, 40&#8221;,
+                                    which would mean that the article began on page
+                                    8, ran 8 through 11, skipped to page 14, ran
+                                    through 19, and concluded on page 40.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  fpage        (#PCDATA)                                    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-6zw0.html"><span class="elementtag">&lt;front-stub&gt;</span></a> <a href="n-6zw0.html"><span class="elementname">Stub Front Metadata</span></a>; <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-2is0.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In article metadata:</p><pre class="taggedtext">
+
+&lt;article&gt;&lt;front&gt;
+&lt;journal-meta&gt;...&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;10092260&lt;/article-id&gt;
+&lt;title-group&gt;&lt;article-title&gt;Systematic review of day hospital care
+for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+...
+&lt;pub-date pub-type="pub"&gt;&lt;day&gt;27&lt;/day&gt;
+&lt;month&gt;03&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+<strong><span class="focus">&lt;fpage&gt;837&lt;/fpage&gt;</span></strong>
+&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;...&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;...&lt;/copyright-statement&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;...&lt;/abstract&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+...
+&lt;/article&gt;
+
+
+    </pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference (punctuation and spacing removed):</p><pre class="taggedtext">
+
+&lt;article&gt;
+...
+&lt;back&gt;
+...
+&lt;ref-list&gt;
+...
+&lt;ref id="B8"&gt;&lt;label&gt;8&lt;/label&gt;
+&lt;citation&gt;
+&lt;person-group&gt;
+&lt;name&gt;&lt;surname&gt;Weissert&lt;/surname&gt;
+&lt;given-names&gt;W&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Wan&lt;/surname&gt;
+&lt;given-names&gt;T&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Livieratos&lt;/surname&gt;
+&lt;given-names&gt;B&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Katz&lt;/surname&gt;
+&lt;given-names&gt;S&lt;/given-names&gt;&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;Effects and costs of day-care services for the
+chronically ill: a randomized experiment&lt;/article-title&gt;
+&lt;source&gt;Medical Care&lt;/source&gt;
+&lt;year&gt;1980&lt;/year&gt;
+&lt;volume&gt;18&lt;/volume&gt;
+<strong><span class="focus">&lt;fpage&gt;567&lt;/fpage&gt;</span></strong>
+&lt;lpage&gt;584&lt;/lpage&gt;
+&lt;pub-id pub-id-type="pmid"&gt;6772889&lt;/pub-id&gt;
+&lt;/citation&gt;&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+...
+&lt;/back&gt;
+&lt;/article&gt;
+
+
+   </pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 3</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference (punctuation and spacing preserved):</p><pre class="taggedtext">
+
+&lt;article&gt;
+...
+&lt;back&gt;
+...
+&lt;ref-list&gt;
+...
+&lt;ref id="B8"&gt;&lt;label&gt;8&lt;/label&gt;
+&lt;citation&gt;
+&lt;name&gt;&lt;surname&gt;Weissert&lt;/surname&gt;
+&lt;given-names&gt;W&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Wan&lt;/surname&gt;
+&lt;given-names&gt;T&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Livieratos&lt;/surname&gt;
+&lt;given-names&gt;B&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Katz&lt;/surname&gt;
+&lt;given-names&gt;S&lt;/given-names&gt;&lt;/name&gt;.
+&lt;article-title&gt;Effects and costs of day-care services for the
+chronically ill: a randomized experiment&lt;/article-title&gt;.
+&lt;source&gt;Medical Care&lt;/source&gt;
+&lt;year&gt;1980&lt;/year&gt;;
+&lt;volume&gt;18&lt;/volume&gt;:
+<strong><span class="focus">&lt;fpage&gt;567&lt;/fpage&gt;</span></strong>&amp;ndash;
+&lt;lpage&gt;584&lt;/lpage&gt;.
+&lt;pub-id pub-id-type="pmid"&gt;6772889&lt;/pub-id&gt;.
+&lt;/citation&gt;&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+...
+&lt;/back&gt;
+&lt;/article&gt;
+
+
+   </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,246 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Translated Title</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;trans-title&gt;</h1>
+         <h1 class="elementname">Translated Title</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Within a bibliographic reference (<a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), an article title (<a href="n-6t20.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a>) that has been translated into a language other than that of the original article title. For example, if an article is originally
+            in French, the <a href="n-6t20.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a> element would contain the French title, and the <a href="n-bft0.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a> might contain, for example, the equivalent English title.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Translated <em>book titles</em> in bibliographic references are tagged with the <a href="n-47t0.html" target="main" title="Translated Source"><span class="elementtag">&lt;trans-source&gt;</span></a> element.
+            
+         </p>
+         <p class="para">Within bibliographic references (<a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), translated subtitles should be tagged with the translated titles.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-fzn0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fzn0.html" target="main"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  trans-title  (#PCDATA <a href="n-tkq0.html" target="main" title="Elements Used in Titles"><span class="petag">%title-elements;</span></a>)*                  &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(#PCDATA | email | ext-link | uri | bold | italic | monospace | overline | roman | sc | strike | underline | alternatives
+            | inline-graphic | chem-struct | inline-formula | abbrev | named-content | styled-content | fn | target | xref | sub | sup
+            | break)*
+         </p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Any combination of:
+            <ul class="bullist">
+               <li>Text, numbers, or special characters</li>
+               <li>All the address linking elements:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-gm50.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-gm50.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-c280.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-c280.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-yyt0.html" target="main" title="Uniform Resource Indicator (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-yyt0.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Indicator (URI)</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>All the emphasis elements:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-j2c0.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-j2c0.html" target="main" title="<bold&gt;"><span class="elementname">Bold</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-ita0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-ita0.html" target="main" title="<italic&gt;"><span class="elementname">Italic</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-dgu0.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-dgu0.html" target="main" title="<monospace&gt;"><span class="elementname">Monospace Text (Typewriter Text)</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-yuw0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-yuw0.html" target="main" title="<overline&gt;"><span class="elementname">Overline</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-hwv0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a> <a href="n-hwv0.html" target="main" title="<roman&gt;"><span class="elementname">Roman</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-fsv0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-fsv0.html" target="main" title="<sc&gt;"><span class="elementname">Small Caps</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-x340.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-x340.html" target="main" title="<strike&gt;"><span class="elementname">Strike Through</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-pdt0.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-pdt0.html" target="main" title="<underline&gt;"><span class="elementname">Underline</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-7k20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> <a href="n-7k20.html" target="main" title="<alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-33a0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a> <a href="n-33a0.html" target="main" title="<inline-graphic&gt;"><span class="elementname">Graphic, Inline</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-57c0.html" target="main" title="<chem-struct&gt;"><span class="elementname">Chemical Structure (Display)</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-xka0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a> <a href="n-xka0.html" target="main" title="<inline-formula&gt;"><span class="elementname">Formula, Inline</span></a>
+                  
+               </li>
+               <li>All the inline elements used to surround “special” content:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-un00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a> <a href="n-un00.html" target="main" title="<abbrev&gt;"><span class="elementname">Abbreviation or Acronym</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-myu0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-myu0.html" target="main" title="<named-content&gt;"><span class="elementname">Named Special (Subject) Content</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-sx40.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a> <a href="n-sx40.html" target="main" title="<styled-content&gt;"><span class="elementname">Styled Special (Subject) Content</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>All the simple link/cross-referencing elements:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-bv80.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-bv80.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-vss0.html" target="main" title="Target of an Internal Link"><span class="elementtag">&lt;target&gt;</span></a> <a href="n-vss0.html" target="main" title="<target&gt;"><span class="elementname">Target of an Internal Link</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-2c70.html" target="main" title="X(cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-2c70.html" target="main" title="<xref&gt;"><span class="elementname">X(cross) Reference</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-te40.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-te40.html" target="main" title="<sub&gt;"><span class="elementname">Subscript</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-9y40.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-9y40.html" target="main" title="<sup&gt;"><span class="elementname">Superscript</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-xxc0.html" target="main" title="Line Break"><span class="elementtag">&lt;break&gt;</span></a> <a href="n-xxc0.html" target="main" title="<break&gt;"><span class="elementname">Line Break</span></a>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-czu0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;element-citation publication-type="journal" publication-format="print"&gt;
+&lt;person-group&gt;
+&lt;name&gt;&lt;surname&gt;Pinet&lt;/surname&gt;
+&lt;given-names&gt;LM&lt;/given-names&gt;&lt;/name&gt;
+&lt;aff&gt;Departamento de Servicios de Salud de
+Emergencia, Escuela de Posgrado, Universidad
+de Maryland, Condado de Baltimore, USA.
+&lt;email&gt;lpinetl@umbc.edu&lt;/email&gt;
+&lt;/aff&gt;
+&lt;/person-group&gt;
+<strong><span class="focus">&lt;trans-title xml:lang="en"&gt;Prehospital emergency
+care in Mexico City: the opportunities of the
+healthcare system&lt;/trans-title&gt;</span></strong>
+&lt;source&gt;Salud Publica Mex&lt;/source&gt;
+&lt;year&gt;2005&lt;/year&gt;
+&lt;month&gt;Jan-Feb&lt;/month&gt;
+&lt;volume&gt;47&lt;/volume&gt;
+&lt;issue&gt;1&lt;/issue&gt;
+&lt;fpage&gt;64&lt;/fpage&gt;
+&lt;lpage&gt;71&lt;/lpage&gt;
+&lt;comment&gt;Spanish&lt;/comment&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;mixed-citation publication-type="journal" publication-format="print"&gt;
+&lt;string-name&gt;&lt;surname&gt;Pinet&lt;/surname&gt;
+&lt;given-names&gt;LM&lt;/given-names&gt;&lt;/string-name&gt; (Departamento
+de Servicios de Salud de Emergencia, Escuela de Posgrado,
+Universidad de Maryland, Condado de Baltimore, USA.
+&lt;email&gt;lpinetl@umbc.edu&lt;/email&gt;).
+[<strong><span class="focus">&lt;trans-title xml:lang="en"&gt;Prehospital emergency care
+in Mexico City: the opportunities of the healthcare
+system&lt;/trans-title&gt;</span></strong>]. &lt;source&gt;Salud Publica Mex&lt;/source&gt;.
+&lt;year&gt;2005&lt;/year&gt; &lt;month&gt;Jan-Feb&lt;/month&gt;;&lt;volume&gt;47&lt;/volume&gt;
+(&lt;issue&gt;1&lt;/issue&gt;):&lt;fpage&gt;64&lt;/fpage&gt;-&lt;lpage&gt;71&lt;/lpage&gt;.
+Spanish.&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

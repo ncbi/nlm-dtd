@@ -1,0 +1,706 @@
+<!DOCTYPE article SYSTEM "../../../../Ncbi/ArchivingDTD/DTD/Working/archivearticle.dtd">
+<article>
+  <front><?mtl hellip?>
+    <journal-meta>
+      <journal-id journal-id-type="pmc">pnas</journal-id>
+      <journal-id journal-id-type="pubmed">Proc Natl Acad Sci U S A</journal-id>
+      <journal-id journal-id-type="publisher">PNAS</journal-id>
+      <issn>0027-8424</issn>
+      <publisher>
+        <publisher-name>The National Academy of Sciences</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">021535298</article-id>
+      <article-id pub-id-type="publisher-id">5352</article-id>
+      <article-id pub-id-type="pmid">11120893</article-id>
+      <article-categories>
+        <subj-group>
+          <subject>Commentary</subject>
+        </subj-group>
+        <series-title>Commentary</series-title>
+      </article-categories>
+      <title-group>
+        <article-title>T7 RNA polymerase transcription complex: What you see is not what you get</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Severinov</surname>
+            <given-names>Konstantin</given-names>
+          </name>
+        </contrib>
+      </contrib-group>
+      <aff>Waksman Institute for Microbiology, Department of Genetics, 190 Frelinghuysen Road, Rutgers University, Piscataway, NJ 08854</aff>
+      <pub-date pub-type="pub">
+        <day>2</day>
+        <month>1</month>
+        <year>2001</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>19</day>
+        <month>12</month>
+        <year>2000</year>
+      </pub-date>
+      <volume>98</volume>
+      <issue>1</issue>
+      <fpage>5</fpage>
+      <lpage>7</lpage>
+      <copyright-statement>Copyright &#x00A9; 2001, The National Academy of Sciences</copyright-statement>
+      <related-article xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="11095736" related-article-type="commentary_art" vol="97" page="14109">See companion article on page 14109 in issue 26 of volume 97.</related-article>
+    </article-meta>
+  <?mtl /hellip?></front>
+  <body>
+  <p><?mtl hellip?>Transcription, the first step of gene expression, is carried out by DNA-dependent RNA polymerases (RNAPs). RNAP catalyzes processive polymerization of RNA messages from NTP precursors by using one strand of DNA as a template. Although the reaction is similar to DNA polymerization (catalyzed by DNA polymerases), important differences exist. First, RNAPs are able to initiate synthesis of RNA from a nucleoside triphosphate, i.e., they do not require oligonucleotide primers. Second, the newly synthesized RNA chain is displaced normally from the DNA template. Thus, during transcription, the DNA strands are separated only in a short region around the catalytic center of the enzyme, the so-called transcription bubble. Because Watson&#x2013;Crick interactions are required for template-dependent RNA synthesis, a transient RNA&#x00B7;DNA hybrid should exist inside the transcription bubble.</p>
+    <p>After promoter-complex formation, all RNAPs undergo abortive initiation&#x2013;a catalytic synthesis of short, 2- to 8-nt-long, RNA oligomers that are rapidly synthesized and released from the complex. When the nascent RNA chain reaches a critical length of about 9 bases, it becomes stably associated with the transcription complex. RNAP then clears the promoter and elongates the nascent RNA chain in a fully processive manner. Despite its tight grip on nucleic acids, the elongating RNAP moves rapidly along the DNA and RNA chains until it encounters a termination signal, which typically consists of an RNA hairpin followed by a run of uridines. At such sites, RNAP transiently pauses, the stability of the elongation complex suddenly decreases, and the enzyme releases nucleic acids. The enzyme is now available to initiate transcription from promoters again.</p>
+    <p>The molecular determinants of transcription-complex stability and processivity are understood poorly. Several competing mechanistic models of RNAP function have been proposed in recent years. Much of the controversy centered around the length of RNA&#x00B7;DNA hybrid and its role (or lack thereof) in transcription. If the hybrid were relatively long, say, 8&#x2013;9 base pairs, then the relative instability of the initial transcribing complex and the complex paused at a terminator could be explained by suboptimal hybrid length (refs. <xref ref-type="bibr" rid="B1">1</xref> and <xref ref-type="bibr" rid="B2">2</xref>; Fig. <xref ref-type="fig" rid="F1">1</xref>). Conversely, the establishment of a full-length hybrid could explain the stabilization of the nascent RNA in transcription complex during promoter clearance. In contrast, if the hybrid remains short (less than 3 base pairs) throughout elongation, then complex stability should be determined primarily by the strength of the protein-nucleic acid interactions and&#x002F;or conformational changes (refs. <xref ref-type="bibr" rid="B2">2</xref> and <xref ref-type="bibr" rid="B3">3</xref>; Fig. <xref ref-type="fig" rid="F1">1</xref>). Establishment of the actual length of the hybrid might contribute also to our understanding of mechanisms of action of regulatory factors that modulate the rates of abortive initiation and promoter escape and the efficiency of transcription termination. <?mtl /hellip?></p>
+    <fig id="F1"><?mtl hellip?>
+      <label>Figure 1</label>
+      <caption>
+        <p>Comparison of short (<italic>Upper</italic>) and long (<italic>Lower</italic>) RNA&#x00B7;DNA hybrid models of transcription complex. The stabilization of RNA (red) in the ternary transcription results from protein&#x2013;RNA contacts (<italic>Upper</italic>) or is caused primarily by the establishment of full-length RNA&#x00B7;DNA hybrids (<italic>Lower</italic>). The crystal structure of transcribing T7 RNAP (<xref ref-type="bibr" rid="B12">12</xref>) looks like the schematic structure (<italic>Upper Left</italic>). Temiakov <italic>et al</italic>. (<xref ref-type="bibr" rid="B15">15</xref>) present data that the elongating T7 RNAP&#x2013;transcription complex looks like the structure presented (<italic>Bottom Center</italic>) and, thus, is similar to the <italic>Escherichia coli</italic> RNAP (<xref ref-type="bibr" rid="B7">7</xref>). It is suggested that the structure (<italic>Upper Center</italic>) may correspond to transcription complex engaged in unproductive reiterative slippage synthesis.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="pq0215352001" alt-version="yes">
+      </graphic>
+    <?mtl /hellip?></fig>
+ <supplementary-material id="S1" 
+ xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xlink:title="local_file" 
+ xlink:href="1471-2105-1-1-s1.pdf" 
+ mimetype="applicationn/pdf">
+ <label>Additional material</label>
+ <caption>
+ <p>Supplementary PDF file supplied by authors.</p>
+ </caption>
+ </supplementary-material>
+<p>RNAPs seem to have arisen twice in evolution 
+(see the <inline-supplementary-material  
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xlink:title="local_file" xlink:href="timeline">
+Timeline</inline-supplementary-material>. A large 
+family of multisubunit RNAPs includes bacterial 
+enzymes, archeal enzymes, eukaryotic nuclear RNAPs, 
+plastid-encoded chloroplast RNAPs, and RNAPs from 
+some eukaryotic viruses. 
+<?mtl hellip?>Members of this family exhibit extensive sequence and structural similarities (<xref ref-type="bibr" rid="B4">4</xref>, <xref ref-type="bibr" rid="B5">5</xref>), suggesting that the mechanism of transcription is conserved highly within this group. The RNAP from <italic>E. coli</italic> (subunit composition of the catalytic core &#x03B1;<sup>I</sup>&#x03B1;<sup>II</sup>&#x03B2;&#x03B2;&#x2032;&#x03C9;, molecular mass &#x2248;380 kDa; it requires the specificity &#x03C2; subunit to recognize and melt promoter DNA) is the best-studied enzyme of this family. An unrelated family of single-subunit RNAPs includes enzymes from bacteriophages and mitochondria as well as nuclear-encoded RNAPs of chloroplasts. Members of the latter family are related also to DNA polymerases and to reverse transcriptases (<xref ref-type="bibr" rid="B6">6</xref>). RNAP from bacteriophage T7 (<italic>M</italic>
+      <sub>r</sub>, &#x2248;100 kDa, does not require additional factors for promoter recognition) is the best-studied member of this family.
+      <?mtl /hellip?></p>
+    <?mtl hellip?><p>Considerable evidence suggests that the hybrid length is &#x2248;8 base pairs during transcription by <italic>E. coli</italic> RNAP. For example, RNA&#x2013;DNA crosslinking experiments have established that only 8&#x2013;9 bases closest to the 3&#x2032; end of the nascent RNA remain close to the template DNA strand in active elongation complex (<xref ref-type="bibr" rid="B7">7</xref>). Similarly, during initiation, the 5&#x2032; end of the nascent RNA remains close to DNA for about 8&#x2013;9 bases and then branches away (<xref ref-type="bibr" rid="B8">8</xref>). Studies of the effects of base-analogue substitutions that either strengthen or weaken Watson&#x2013;Crick interactions on elongation complex stability and termination efficiency also point to 8- to 9-bp hybrids (<xref ref-type="bibr" rid="B7">7</xref>). The upstream portion of the hybrid contributes the most to transcription complex stability (<xref ref-type="bibr" rid="B8">8</xref>, <xref ref-type="bibr" rid="B9">9</xref>). Furthermore, a structural model of bacterial RNAP-elongation complex built by superimposing the positions of protein-nucleic acid crosslinks onto a high-resolution structure neatly accommodates an 8-bp hybrid (<xref ref-type="bibr" rid="B10">10</xref>).</p>
+    <p>Despite a lack of sequence similarity between the two RNAP families, the essential elements of the transcription cycle seem to be conserved (<xref ref-type="bibr" rid="B11">11</xref>). Thus, if the nucleic acid scaffold plays an essential role in transcription, one would expect that the sizes of the transcription bubble and RNA&#x00B7;DNA hybrid would be similar in transcription complexes formed by enzymes of both classes. It was surprising, therefore, when the structure of T7 RNAP complexed with a synthetic promoter and a trinucleotide RNA transcript revealed that only two RNA nucleotides closest to the catalytic center made Watson&#x2013;crick interactions with the template strand of DNA (<xref ref-type="bibr" rid="B12">12</xref>). The 5&#x2032;-proximal base of RNA appeared to peel away from the template, suggesting that in this system, the hybrid may be as short as 2&#x2013;3 base pairs. Structural analysis suggested that (<italic>i</italic>) further extension of the hybrid would result in severe clashes with the T7 RNAP N-terminal domain, and (<italic>ii</italic>) a surface-exposed channel between the T7 RNAP thumb and the N-terminal domains is positioned appropriately to serve as an exit channel for the displaced RNA. If the difference between the RNA&#x00B7;DNA hybrid length in <italic>E. coli</italic> and T7 RNAP complexes is real, it has important mechanistic implications. For example, although both <italic>E. coli</italic> and T7 enzymes recognize identical terminators (<xref ref-type="bibr" rid="B13">13</xref>, <xref ref-type="bibr" rid="B14">14</xref>), the mechanisms involved must be different (Fig. <xref ref-type="fig" rid="F1">1</xref>). <boxed-text>
+        <p>
+          <bold>Thus, if the nucleic acid scaffold plays an essential role in transcription, one would expect that the sizes of the transcription bubble and RNA&#x00B7;DNA hybrid would be similar in transcription complexes formed by enzymes of both classes.</bold>
+</p>
+      </boxed-text>
+</p>
+    <p>The ultimate way to resolve this impasse is to characterize structurally various intermediates of transcription cycle formed by both types of RNAPs. In the absence of such data, protein&#x2013;RNA crosslinking and molecular modeling can provide useful information. In a recent issue of PNAS, Temiakov <italic>et al</italic>. (<xref ref-type="bibr" rid="B15">15</xref>) used RNA&#x2013;DNA and RNA&#x2013;protein crosslinking to study transcript elongation by T7 RNAP. Temiakov <italic>et al</italic>. incorporated a crosslinkable analogue of UMP, U*, into defined positions of the nascent RNA of artificially stalled, active T7 RNAP elongation complexes. The flexible spacer arm between the derivatized nucleotide base and the crosslinking group is long enough to allow the crosslinker to reach the complementary strand of a double-stranded nucleic acid. Thus, by following the appearance of RNA&#x2013;DNA crosslinks between the derivatized nascent RNA and the template DNA strand, one can estimate the length of the RNA&#x00B7;DNA hybrid. The results are unambiguous and indicate that RNA&#x2013;DNA crosslinks persist until the crosslinker is 9 base pairs upstream of the catalytic site (by convention, this position is referred to as &#x2212;9). When the crosslinker is moved further away from the catalytic center, RNA&#x2013;DNA crosslinks disappear, and RNA-protein crosslinks become prominent.</p>
+    <p>The RNA&#x2013;DNA crosslinking experiment suggests a hybrid that is longer than observed in the structure of initiating T7 RNAP (<xref ref-type="bibr" rid="B12">12</xref>). To model the position of the hybrid in an elongating complex, Temiakov <italic>et al</italic>. (<xref ref-type="bibr" rid="B15">15</xref>) mapped the site of a crosslink between a short-range crosslinker incorporated into the nascent RNA 9 base pairs upstream of the catalytic center and RNAP. This critical position, where RNA is displaced from the hybrid, seems to contribute to elongation complex stability. By using a panel of chemical-mapping techniques in combination with RNAP mutants, the crosslink site was localized to within 7 T7 RNAP amino acids in the so-called specificity loop (<xref ref-type="bibr" rid="B16">16</xref>). The specificity loop is a phage RNAP-specific feature, which in the open promoter complex recognizes the double-stranded DNA 10&#x2013;12 base pairs upstream of the transcription initiation start point. Strikingly, 2 amino acids within the 7-aa fragment that harbors the crosslink site are known to contact the promoter at positions &#x2212;7, &#x2212;10, and &#x2212;11 and are critical in specific promoter recognition (<xref ref-type="bibr" rid="B16">16</xref>, <xref ref-type="bibr" rid="B17">17</xref>). Thus, it seems that during promoter clearance, the contacts between the specificity loop and the upstream-promoter DNA are broken, and new contacts with RNA and possibly DNA at the upstream edge of the transcription bubble are established. The latter contacts may prevent collapse of the transcription bubble and thus stabilize RNA in the elongation complex. In addition, continued interactions between the specificity loop and DNA during elongation may contribute to sequence-specific pausing by T7 RNAP (<xref ref-type="bibr" rid="B18">18</xref>).</p>
+    <p>Localization of the position of ribonucleotide at the end of the hybrid allowed modeling of the overall position of the hybrid in the elongation complex (the 3&#x2032; end of the RNA in the hybrid is constrained, because the position of the catalytic center of the enzyme is known; ref. <xref ref-type="bibr" rid="B16">16</xref>). The proposed trajectory results in few clashes, is consistent with much of the biochemical and genetic data, and is not consistent with the RNA-exit pathway suggested by the structure of the T7 RNAP initiation complex (<xref ref-type="bibr" rid="B12">12</xref>). In an independent study, Shen and Kang (<xref ref-type="bibr" rid="B19">19</xref>) mapped T7 RNAP&#x2013;RNA crosslinks from either the derivatized 3&#x2032; end of the nascent RNA or from the &#x2212;9 position of the nascent RNA in several stalled elongation complexes. Their results are in agreement with those of Temiakov <italic>et al</italic>. (<xref ref-type="bibr" rid="B15">15</xref>).</p>
+    <p>The picture of the T7 RNAP elongation complex that emerges from these studies is remarkably similar to our view of elongation complexes formed by multisubunit RNAPs. The RNA&#x2013;DNA crosslinking result is superimposable with that obtained by Nudler <italic>et al</italic>. (<xref ref-type="bibr" rid="B7">7</xref>), who used the same experimental approach with <italic>E. coli</italic> RNAP. Thus, during elongation, the RNA&#x00B7;DNA hybrid appears to be 8&#x2013;9 bp in length in both types of RNAP. In the T7 RNAP elongation complex, the specificity loop is proposed to act as a wedge that both separates the nascent RNA from the DNA template and possibly maintains the upstream edge of the transcription bubble. In the structural model of bacterial RNAP elongation complex (<xref ref-type="bibr" rid="B10">10</xref>), an evolutionarily conserved feature of the largest subunit, the so-called &#x201C;rudder,&#x201D; seems to play an analogous role. Interestingly, the rudder may also be involved in promoter recognition, because it is close to a region of the specificity subunit &#x03C2; that recognizes promoter positions &#x2212;9&#x002F;&#x2212;12 (<xref ref-type="bibr" rid="B20">20</xref>). Site-directed deletion mutagenesis reveals that the rudder indeed contributes to bacterial RNAP elongation-complex stability by preventing the displacement of the nascent RNA by the nontemplate DNA strand (K. Kuznedelou, N. Korzheva, A. Mustaev, and K.S., unpublished observations). Unfortunately, similar experiments to demonstrate the role of specificity loop in T7 RNAP elongation and complex stability are complicated, because the specificity loop is required strictly for promoter recognition.</p>
+    <p>The inconsistency between the structure of the T7 RNAP initiation complex obtained by x-ray crystallography and the view that emerges from biochemical studies could be explained by large conformational changes that may occur during the transition from an unstable-initiation complex to a stable-elongation complex. A more likely explanation is that in the crystal structure, T7 RNAP had been captured in an act of unproductive synthesis. When the initial transcribed sequence codes for three Gs in RNA, T7 RNAP can synthesize long chains of poly(G) through repetitive cycles of slippage of the nascent RNA along the template strand and addition of the next GMP (<xref ref-type="bibr" rid="B21">21</xref>). During such reiterative synthesis, RNAP does not leave the promoter, and naturally the hybrid can be only 3 bp or less. The addition of the nucleoside triphosphate specified by the fourth position of the template (provided it does not code for a G) inhibits slippage and leads to productive initiation. The crystals of transcribing T7 RNAP complex were obtained in the presence of GTP and chain-terminating &#x03B1;,&#x03B2;-methylene-ATP. Thus, the expected RNA product should have been GGGA. However, the adenosine nucleotide is not present in the structure, and subsequent biochemical data indicate that the ATP analogue has no effect on the slippage reaction (<xref ref-type="bibr" rid="B22">22</xref>). Thus, the exit pathway suggested by the early peeling RNA could be that of a slipped transcript and may not be used during productive elongation.</p>
+    <p>Multisubunit RNAPs also undergo transcript slippage, and the strength of some promoters is regulated by variation of productive vs. unproductive, reiterative initiation events (<xref ref-type="bibr" rid="B23">23</xref>). As is the case with T7 RNAP, the slippage reaction in <italic>E. coli</italic> occurs at the end of a run of three or more identical base pairs in the initial transcribed sequence. Thus, during slippage, the RNA&#x2013;DNA hybrid is short, suggesting that the RNA-exit pathway of the complex engaged in the slippage synthesis is different from that in the productive complex (<xref ref-type="bibr" rid="B10">10</xref>). Interestingly, in bacterial RNAP a surface-exposed channel between the two domains of the second largest subunit exists (<xref ref-type="bibr" rid="B4">4</xref>) that is positioned analogously to the putative RNA-exit channel seen on the T7 RNAP transcribing complex (<xref ref-type="bibr" rid="B12">12</xref>). Consistent with this idea, in bacterial RNAP, mutations that alter the position of one of the second largest subunit domains or change residues that lie between the two domains result in dramatic changes in the efficiency of reiterative synthesis (<xref ref-type="bibr" rid="B24">24</xref>, <xref ref-type="bibr" rid="B25">25</xref>). Future comparative structural analysis of transcription intermediates, in conjunction with biochemical and genetic analyses, should determine the true extent of functional convergence that nature has come up with and solve an identical problem of transcribing a defined fragment of DNA with two different protein machines.</p>
+  <?mtl /hellip?></body>
+  <back><?mtl hellip?>
+    <ack>
+      <p>I thank Dr. Karen Adelman for her comments. This paper was supported by National Institutes of Health Grant RO1 59295.</p>
+    </ack>
+    <ref-list>
+      <ref id="B1">
+        <label>1</label>
+        <citation>
+          <name>
+            <surname>Yager</surname>
+            <given-names>T. D.</given-names>
+          </name>
+          <name>
+            <surname>von Hippel</surname>
+            <given-names>P. H.</given-names>
+          </name>
+          <source>Biochemistry</source>
+          <volume>30</volume>
+          <year>1991</year>
+          <fpage>1097</fpage>
+          <lpage>1118</lpage>.<pub-id pub-id-type="pmid">1703438</pub-id>
+        </citation>
+      </ref>
+      <ref id="B2">
+        <label>2</label>
+        <citation>
+          <name>
+            <surname>Nudler</surname>
+            <given-names>E.</given-names>
+          </name>
+          <source>J. Mol. Biol.</source>
+          <volume>288</volume>
+          <year>1999</year>
+          <fpage>1</fpage>
+          <lpage>12</lpage>.<pub-id pub-id-type="pmid">10329121</pub-id>
+        </citation>
+      </ref>
+      <ref id="B3">
+        <label>3</label>
+        <citation>
+          <name>
+            <surname>Uptain</surname>
+            <given-names>S. M.</given-names>
+          </name>
+          <name>
+            <surname>Kane</surname>
+            <given-names>C. M.</given-names>
+          </name>
+          <name>
+            <surname>Chamberlin</surname>
+            <given-names>M. J.</given-names>
+          </name>
+          <source>Annu. Rev. Biochem.</source>
+          <volume>66</volume>
+          <year>1997</year>
+          <fpage>117</fpage>
+          <lpage>172</lpage>.<pub-id pub-id-type="pmid">9242904</pub-id>
+        </citation>
+      </ref>
+      <ref id="B4">
+        <label>4</label>
+        <citation>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>G.</given-names>
+          </name>
+          <name>
+            <surname>Campbell</surname>
+            <given-names>E. A.</given-names>
+          </name>
+          <name>
+            <surname>Minakhin</surname>
+            <given-names>L.</given-names>
+          </name>
+          <name>
+            <surname>Richter</surname>
+            <given-names>C.</given-names>
+          </name>
+          <name>
+            <surname>Severinov</surname>
+            <given-names>K.</given-names>
+          </name>
+          <name>
+            <surname>Darst</surname>
+            <given-names>S. A.</given-names>
+          </name>
+          <source>Cell</source>
+          <volume>98</volume>
+          <year>1999</year>
+          <fpage>811</fpage>
+          <lpage>824</lpage>.<pub-id pub-id-type="pmid">10499798</pub-id>
+        </citation>
+      </ref>
+      <ref id="B5">
+        <label>5</label>
+        <citation>
+          <name>
+            <surname>Cramer</surname>
+            <given-names>P.</given-names>
+          </name>
+          <name>
+            <surname>Bushnell</surname>
+            <given-names>D. A.</given-names>
+          </name>
+          <name>
+            <surname>Fu</surname>
+            <given-names>J.</given-names>
+          </name>
+          <name>
+            <surname>Gnatt</surname>
+            <given-names>A. L.</given-names>
+          </name>
+          <name>
+            <surname>Maier-Davis</surname>
+            <given-names>B.</given-names>
+          </name>
+          <name>
+            <surname>Thompson</surname>
+            <given-names>N. E.</given-names>
+          </name>
+          <name>
+            <surname>Burgess</surname>
+            <given-names>R. R.</given-names>
+          </name>
+          <name>
+            <surname>Edwards</surname>
+            <given-names>A. M.</given-names>
+          </name>
+          <name>
+            <surname>David</surname>
+            <given-names>P. R.</given-names>
+          </name>
+          <name>
+            <surname>Kornberg</surname>
+            <given-names>R. D.</given-names>
+          </name>
+          <source>Science</source>
+          <volume>288</volume>
+          <year>2000</year>
+          <fpage>640</fpage>
+          <lpage>649</lpage>.<pub-id pub-id-type="pmid">10784442</pub-id>
+        </citation>
+      </ref>
+      <ref id="B6">
+        <label>6</label>
+        <citation>
+          <name>
+            <surname>McAllister</surname>
+            <given-names>W. T.</given-names>
+          </name>
+          <name>
+            <surname>Raskin</surname>
+            <given-names>C. A.</given-names>
+          </name>
+          <source>Mol. Microbiol.</source>
+          <volume>10</volume>
+          <year>1993</year>
+          <fpage>1</fpage>
+          <lpage>6</lpage>.<pub-id pub-id-type="pmid">7526118</pub-id>
+        </citation>
+      </ref>
+      <ref id="B7">
+        <label>7</label>
+        <citation>
+          <name>
+            <surname>Nudler</surname>
+            <given-names>E.</given-names>
+          </name>
+          <name>
+            <surname>Mustaev</surname>
+            <given-names>A.</given-names>
+          </name>
+          <name>
+            <surname>Lukhtanov</surname>
+            <given-names>E.</given-names>
+          </name>
+          <name>
+            <surname>Goldfarb</surname>
+            <given-names>A.</given-names>
+          </name>
+          <source>Cell</source>
+          <volume>89</volume>
+          <year>1997</year>
+          <fpage>33</fpage>
+          <lpage>41</lpage>.<pub-id pub-id-type="pmid">9094712</pub-id>
+        </citation>
+      </ref>
+      <ref id="B8">
+        <label>8</label>
+        <citation>
+          <name>
+            <surname>Korzheva</surname>
+            <given-names>N.</given-names>
+          </name>
+          <name>
+            <surname>Mustaev</surname>
+            <given-names>A.</given-names>
+          </name>
+          <name>
+            <surname>Nudler</surname>
+            <given-names>E.</given-names>
+          </name>
+          <name>
+            <surname>Nikiforov</surname>
+            <given-names>V.</given-names>
+          </name>
+          <name>
+            <surname>Goldfarb</surname>
+            <given-names>A.</given-names>
+          </name>
+          <source>Cold Spring Harbor Symp. Quant. Biol.</source>
+          <volume>63</volume>
+          <year>1998</year>
+          <fpage>337</fpage>
+          <lpage>345</lpage>.<pub-id pub-id-type="pmid">10384298</pub-id>
+        </citation>
+      </ref>
+      <ref id="B9">
+        <label>9</label>
+        <citation>
+          <name>
+            <surname>Kireeva</surname>
+            <given-names>M. L.</given-names>
+          </name>
+          <name>
+            <surname>Komissarova</surname>
+            <given-names>N.</given-names>
+          </name>
+          <name>
+            <surname>Waugh</surname>
+            <given-names>D. S.</given-names>
+          </name>
+          <name>
+            <surname>Kashlev</surname>
+            <given-names>M.</given-names>
+          </name>
+          <source>J. Biol. Chem.</source>
+          <volume>275</volume>
+          <year>2000</year>
+          <fpage>6530</fpage>
+          <lpage>6536</lpage>.<pub-id pub-id-type="pmid">10692458</pub-id>
+        </citation>
+      </ref>
+      <ref id="B10">
+        <label>10</label>
+        <citation>
+          <name>
+            <surname>Korzheva</surname>
+            <given-names>N.</given-names>
+          </name>
+          <name>
+            <surname>Mustaev</surname>
+            <given-names>A.</given-names>
+          </name>
+          <name>
+            <surname>Kozlov</surname>
+            <given-names>M.</given-names>
+          </name>
+          <name>
+            <surname>Malhotra</surname>
+            <given-names>A.</given-names>
+          </name>
+          <name>
+            <surname>Nikiforov</surname>
+            <given-names>V.</given-names>
+          </name>
+          <name>
+            <surname>Goldfarb</surname>
+            <given-names>A.</given-names>
+          </name>
+          <name>
+            <surname>Darst</surname>
+            <given-names>S. A.</given-names>
+          </name>
+          <source>Science</source>
+          <volume>289</volume>
+          <year>2000</year>
+          <fpage>619</fpage>
+          <lpage>625</lpage>.<pub-id pub-id-type="pmid">10915625</pub-id>
+        </citation>
+      </ref>
+      <ref id="B11">
+        <label>11</label>
+        <citation>
+          <name>
+            <surname>McAllister</surname>
+            <given-names>W. T.</given-names>
+          </name>
+          <source>Nuceic Acids Mol. Biol.</source>
+          <volume>11</volume>
+          <year>1997</year>
+          <fpage>15</fpage>
+          <lpage>24</lpage>. </citation>
+      </ref>
+      <ref id="B12">
+        <label>12</label>
+        <citation>
+          <name>
+            <surname>Cheetham</surname>
+            <given-names>G. M.</given-names>
+          </name>
+          <name>
+            <surname>Steitz</surname>
+            <given-names>T. A.</given-names>
+          </name>
+          <source>Science</source>
+          <volume>286</volume>
+          <year>1999</year>
+          <fpage>2305</fpage>
+          <lpage>2309</lpage>.<pub-id pub-id-type="pmid">10600732</pub-id>
+        </citation>
+      </ref>
+      <ref id="B13">
+        <label>13</label>
+        <citation>
+          <name>
+            <surname>Christiansen</surname>
+            <given-names>J.</given-names>
+          </name>
+          <source>Nucleic Acids Res.</source>
+          <volume>16</volume>
+          <year>1988</year>
+          <fpage>7457</fpage>
+          <lpage>7476</lpage>.<pub-id pub-id-type="pmid">3045757</pub-id>
+        </citation>
+      </ref>
+      <ref id="B14">
+        <label>14</label>
+        <citation>
+          <name>
+            <surname>Macdonald</surname>
+            <given-names>L. E.</given-names>
+          </name>
+          <name>
+            <surname>Durbin</surname>
+            <given-names>R. K.</given-names>
+          </name>
+          <name>
+            <surname>Dunn</surname>
+            <given-names>J. J.</given-names>
+          </name>
+          <name>
+            <surname>McAllister</surname>
+            <given-names>W. T.</given-names>
+          </name>
+          <source>J. Mol. Biol.</source>
+          <volume>238</volume>
+          <year>1994</year>
+          <fpage>145</fpage>
+          <lpage>158</lpage>.<pub-id pub-id-type="pmid">8158645</pub-id>
+        </citation>
+      </ref>
+      <ref id="B15">
+        <label>15</label>
+        <citation>
+          <name>
+            <surname>Temiakov</surname>
+            <given-names>D.</given-names>
+          </name>
+          <name>
+            <surname>Mentesana</surname>
+            <given-names>P. E.</given-names>
+          </name>
+          <name>
+            <surname>Ma</surname>
+            <given-names>K.</given-names>
+          </name>
+          <name>
+            <surname>Mustaev</surname>
+            <given-names>A.</given-names>
+          </name>
+          <name>
+            <surname>Borukhov</surname>
+            <given-names>S.</given-names>
+          </name>
+          <name>
+            <surname>McAllister</surname>
+            <given-names>W. T.</given-names>
+          </name>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <volume>97</volume>
+          <year>2000</year>
+          <fpage>14109</fpage>
+          <lpage>14114</lpage>. (First Published November 28, 2000; 10.1073&#x002F;pnas.250473197)<pub-id pub-id-type="pmid">11095736</pub-id>
+        </citation>
+      </ref>
+      <ref id="B16">
+        <label>16</label>
+        <citation>
+          <name>
+            <surname>Cheetham</surname>
+            <given-names>G. M.</given-names>
+          </name>
+          <name>
+            <surname>Jeruzalmi</surname>
+            <given-names>D.</given-names>
+          </name>
+          <name>
+            <surname>Steitz</surname>
+            <given-names>T. A.</given-names>
+          </name>
+          <source>Nature (London)</source>
+          <volume>399</volume>
+          <year>1999</year>
+          <fpage>80</fpage>
+          <lpage>83</lpage>.<pub-id pub-id-type="pmid">10331394</pub-id>
+        </citation>
+      </ref>
+      <ref id="B17">
+        <label>17</label>
+        <citation>
+          <name>
+            <surname>Raskin</surname>
+            <given-names>C. A.</given-names>
+          </name>
+          <name>
+            <surname>Diaz</surname>
+            <given-names>G.</given-names>
+          </name>
+          <name>
+            <surname>Joho</surname>
+            <given-names>K.</given-names>
+          </name>
+          <name>
+            <surname>McAllister</surname>
+            <given-names>W. T.</given-names>
+          </name>
+          <source>J. Mol. Biol.</source>
+          <volume>228</volume>
+          <year>1992</year>
+          <fpage>506</fpage>
+          <lpage>515</lpage>.<pub-id pub-id-type="pmid">1453460</pub-id>
+        </citation>
+      </ref>
+      <ref id="B18">
+        <label>18</label>
+        <citation>
+          <name>
+            <surname>He</surname>
+            <given-names>B.</given-names>
+          </name>
+          <name>
+            <surname>Kukarin</surname>
+            <given-names>A.</given-names>
+          </name>
+          <name>
+            <surname>Temiakov</surname>
+            <given-names>D.</given-names>
+          </name>
+          <name>
+            <surname>Chin-Bow</surname>
+            <given-names>S. T.</given-names>
+          </name>
+          <name>
+            <surname>Lyakhov</surname>
+            <given-names>D.</given-names>
+          </name>
+          <name>
+            <surname>Rong</surname>
+            <given-names>M.</given-names>
+          </name>
+          <name>
+            <surname>Durbin</surname>
+            <given-names>R. K.</given-names>
+          </name>
+          <name>
+            <surname>McAllister</surname>
+            <given-names>W. T.</given-names>
+          </name>
+          <source>J. Biol. Chem.</source>
+          <volume>273</volume>
+          <year>1998</year>
+          <fpage>18802</fpage>
+          <lpage>18811</lpage>.<pub-id pub-id-type="pmid">9668054</pub-id>
+        </citation>
+      </ref>
+      <ref id="B19">
+        <label>19</label>
+        <citation>Shen, H. &#x0026; Kang, C. (2000) <italic>J. Biol. Chem.</italic>, in press.</citation>
+      </ref>
+      <ref id="B20">
+        <label>20</label>
+        <citation>
+          <name>
+            <surname>Arthur</surname>
+            <given-names>T. M.</given-names>
+          </name>
+          <name>
+            <surname>Burgess</surname>
+            <given-names>R. R.</given-names>
+          </name>
+          <source>J. Biol. Chem.</source>
+          <volume>273</volume>
+          <year>1998</year>
+          <fpage>31381</fpage>
+          <lpage>31387</lpage>.<pub-id pub-id-type="pmid">9813048</pub-id>
+        </citation>
+      </ref>
+      <ref id="B21">
+        <label>21</label>
+        <citation>Martin, C. T., Muller, D. K. &#x0026; Coleman, J. E. (1988) <bold>27,</bold> 3966&#x2013;3974.</citation>
+      </ref>
+      <ref id="B22">
+        <label>22</label>
+        <citation>
+          <name>
+            <surname>Imburgio</surname>
+            <given-names>D.</given-names>
+          </name>
+          <name>
+            <surname>Rong</surname>
+            <given-names>M.</given-names>
+          </name>
+          <name>
+            <surname>Ma</surname>
+            <given-names>K.</given-names>
+          </name>
+          <name>
+            <surname>McAllister</surname>
+            <given-names>W. T.</given-names>
+          </name>
+          <source>Biochemistry</source>
+          <volume>29</volume>
+          <year>2000</year>
+          <fpage>10419</fpage>
+          <lpage>10430</lpage>. </citation>
+      </ref>
+      <ref id="B23">
+        <label>23</label>
+        <citation>
+          <name>
+            <surname>Liu</surname>
+            <given-names>C.</given-names>
+          </name>
+          <name>
+            <surname>Heath</surname>
+            <given-names>L. S.</given-names>
+          </name>
+          <name>
+            <surname>Turnbough</surname>
+            <given-names>C. L.</given-names>
+            <suffix>Jr.</suffix>
+          </name>
+          <source>Genes Dev.</source>
+          <volume>8</volume>
+          <year>1994</year>
+          <fpage>2904</fpage>
+          <lpage>2912</lpage>.<pub-id pub-id-type="pmid">7527789</pub-id>
+        </citation>
+      </ref>
+      <ref id="B24">
+        <label>24</label>
+        <citation>
+          <name>
+            <surname>Martin</surname>
+            <given-names>E.</given-names>
+          </name>
+          <name>
+            <surname>Sagitov</surname>
+            <given-names>V.</given-names>
+          </name>
+          <name>
+            <surname>Burova</surname>
+            <given-names>E.</given-names>
+          </name>
+          <name>
+            <surname>Nikiforov</surname>
+            <given-names>V.</given-names>
+          </name>
+          <name>
+            <surname>Goldfarb</surname>
+            <given-names>A.</given-names>
+          </name>
+          <source>J. Biol. Chem.</source>
+          <volume>267</volume>
+          <year>1992</year>
+          <fpage>20175</fpage>
+          <lpage>20180</lpage>.<pub-id pub-id-type="pmid">1400337</pub-id>
+        </citation>
+      </ref>
+      <ref id="B25">
+        <label>25</label>
+        <citation>
+          <name>
+            <surname>Jin</surname>
+            <given-names>D. J.</given-names>
+          </name>
+          <source>J. Biol. Chem.</source>
+          <volume>271</volume>
+          <year>1996</year>
+          <fpage>11659</fpage>
+          <lpage>11667</lpage>.<pub-id pub-id-type="pmid">8662641</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <fn-group>
+      <fn>
+        <p>Article published online before print: <italic>Proc. Natl. Acad. Sci. USA</italic>, 10.1073/pnas.021535298.</p>
+      </fn>
+      <fn>
+        <p>Article and publication date are at www.pnas.org/cgi/doi/10.1073/pnas.021535298</p>
+      </fn>
+    </fn-group>
+  <?mtl /hellip?></back>
+</article> 
+

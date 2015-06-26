@@ -1,0 +1,244 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>How To Make New Tag Sets</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h3 class="header">How To Make New Tag Sets</h3>
+         <div class="section"><a name="pes"></a><h4 class="header">Parameter Entities Modules to Customize and Change</h4>
+            <p class="para">Parameter entities are the major mechanism for customizing a tag set or creating a new tag set from the modules in the Suite.
+               Individual Tag Sets will be constructed by 1) establishing element and attribute combinations and content models using parameter
+               entities in one of the Tag-Set-specific customizing modules and 2) choosing appropriate modules from the Suite that declare
+               the elements needed. For example, if the base Tag Set contained 6 kinds of lists and 2 table models, a more specific Tag Set,
+               such as an authoring Tag Set, might use a Customize Classes Module to redefine the List Class to name only 3 lists and redefine
+               the Display Class to allow only one table model.
+               
+            </p>
+            <p class="para">The standard modules to create a customized tag set are: the DTD itself, a module to name its components, and as many override
+               modules and new elements modules as necessary. Typical modules for a new Tag Set are:
+               
+               <ul class="bullist">
+                  <li>DTD — The DTD module (<tt>.dtd</tt>) for the new base Tag Set (At a minimum, this module declares the top-level element (such as article, book, or report) and
+                     any other structural elements unique to the new document type.)
+                     
+                  </li>
+                  <li>Tag-Set-specific Module of Modules — Module to name all the new modules created expressly for the new Tag Set
+                     
+                  </li>
+                  <li>Class overrides — Tag-set-specific overrides of the Suite default element classes
+                     
+                  </li>
+                  <li>Mix overrides — Tag-set-specific overrides of the Suite default class mixes
+                     
+                  </li>
+                  <li>Model overrides — Tag-set-specific content model overrides for the content models in the modules of the suite (using “<tt>-elements</tt>” and “<tt>-model</tt>” parameter entities)
+                     
+                  </li>
+                  <li>New Models — Tag-set-specific new elements (for example, a new Book Tag Set might add book-specific metadata elements)
+                     
+                  </li>
+               </ul>
+               
+            </p>
+         </div>
+         <div class="section"><a name="classes"></a><h4 class="header">Element Classes Concept</h4>
+            <p class="para">Many of the elements in the Journal Archiving Tag Set have been grouped into loose element classes. There is no hard and fast
+               rule for what constitutes a class; each one is a design decision, a matter of judgment. These classes are designed to ease
+               customization to meet the particular needs of new Tag Sets. Base classes for the Suite are defined in a separate <a href="n-sb82.html" target="main" title="%default-classes.ent;"><span class="pename">Default Element Classes Module</span></a> (<a href="n-sb82.html" target="main" title="Default Element Classes Module"><span class="petag">%default-classes.ent;</span></a>).
+               
+            </p>
+            <p class="para">Content models are built using sequences of elements, and OR groups that are classes (typically) or mixes. As an example,
+               the content model for a <a href="n-bzf0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a> element is declared to be an OR group (that is, a choice) of <em>text, numbers, or special characters</em> and any of the elements named in the <a href="n-ctx2.html" target="main" title="%p-elements;"><span class="pename">Paragraph Elements</span></a> mix. The mix <a href="n-ctx2.html" target="main" title="Paragraph Elements"><span class="petag">%p-elements;</span></a> is declared to be a large OR group of many other element-defining classes: the <a href="n-mv52.html" target="main" title="%block-display.class;"><span class="pename">Block Display Class Elements</span></a>, the <a href="n-drw2.html" target="main" title="%math.class;"><span class="pename">Mathematical Expressions Class Elements</span></a>, the <a href="n-ggw2.html" target="main" title="%list.class;"><span class="pename">List Class Elements</span></a>, the <a href="n-3j52.html" target="main" title="%citation.class;"><span class="pename">Citation Class Elements</span></a>, et al.
+               
+            </p>
+            <p class="para">These element classes can be viewed as building blocks that will be used to build larger parameter entities for element mixes.
+               (Note: A mix describes a usage circumstance for a group of elements, such as all the paragraph-level elements, all the elements
+               allowed inside a table cell, all the elements inside a paragraph, or all the inline elements). For example, to add another
+               block display item to the <a href="n-mv52.html" target="main" title="%block-display.class;"><span class="pename">Block Display Class Elements</span></a>, you would edit the <a href="n-mv52.html" target="main" title="Block Display Class Elements"><span class="petag">%block-display.class;</span></a> parameter entity in the Tag-Set-specific Archive Class override Module to override the default parameter entity in the Suite’s
+               <a href="n-sb82.html" target="main" title="%default-classes.ent;"><span class="pename">Default Element Classes Module</span></a> module and create a new module containing the Element Declaration of the new block display item.
+               
+            </p>
+         </div>
+         <div class="section"><a name="pes-class-mix"></a><h4 class="header">Parameter Entity Names for Classes and Mixes</h4>
+            <p class="para">PARAMETER ENTITY: SAME FUNCTION, SAME NAME — The Suite modules and initial Tag Sets have used a series of parameter entity
+               naming conventions consistently. While parsing software cannot enforce these parameter entity naming or usage conventions,
+               these conventions can make it much easier for a person to know how the content models work and what must be modified to make
+               a change to this Tag Set.
+               
+            </p>
+            <p class="para"><strong>CLASSES</strong> — Classes are functional groupings of elements used together in an OR group. Each class is named with a parameter entity,
+               and all class parameter entity names end in the suffix “<tt>.class</tt>”:
+               
+            </p>
+            <div class="codeblock"><pre> &lt;!ENTITY % list.class "def-list | list"&gt;</pre></div>
+            <p class="para">A class, by definition, should never be made empty; the class should be removed from all models where you do not want the
+               class elements included.
+               
+            </p>
+            <p class="para"><strong>MIXES</strong> — Mixes are functional OR groups of classes; mixes should never contain element names directly. All mixes must be declared
+               after all classes, since mixes are composed of classes. Mix names have no set suffix; for example, they may end in “<tt>-mix</tt>” or “<tt>-elements</tt>”. Content models and content model overrides use mixes and classes for all OR groups. Only content model sequences are made
+               up of element names directly.
+               
+            </p>
+            <p class="para"><strong>MODEL OVERRIDES</strong> — parameter entity mixes for overriding a content model are of two styles: 1) inline mixes and 2) full content model replacements.
+               These two groupings have been defined and named separately to preserve the mixed-content or element- content nature of the
+               models in Tag Sets derived from the Suite.
+               
+            </p>
+            <p class="para">The inline parameter entities to be intermingled with character data (<tt>#PCDATA</tt>) in a mixed content model are named with a suffix “<tt>-elements</tt>”. For example, “<tt>%access-date-elements;</tt>” would be used in the content model for the element <a href="n-4c20.html" target="main" title="Access Date for Cited Work"><span class="elementtag">&lt;access-date&gt;</span></a>:
+               
+            </p>
+            <div class="codeblock"><pre>
+      &lt;!ENTITY % access-date-elements "| %date-parts.class; | %x.class;" &gt;
+      &lt;!ELEMENT  access-date (#PCDATA %access-date-elements;)* &gt;
+    </pre></div>
+            <p class="para">All inline mixes begin with an OR bar, so that the mix can be removed leaving just character data (<tt>#PCDATA</tt>):
+               
+            </p>
+            <div class="codeblock"><pre>
+      &lt;!ENTITY % rendition-plus "| %all-phrase;" &gt;
+    </pre></div>
+            <p class="para">The override of a complete content model will be named with a suffix “<tt>-model</tt>” and should include the entire content model, including the enclosing parentheses:
+               
+            </p>
+            <div class="codeblock"><pre>
+      &lt;!ENTITY % kwd-group-model "(title?, (%kwd.class; | %x.class;)+ )" &gt;
+      &lt;!ELEMENT  kwd-group %kwd-group-model; &gt;
+    </pre></div>
+         </div>
+         <div class="section"><a name="howtobuild"></a><h4 class="header">How To Build a New Custom Tag Set</h4>
+            <div class="section"><a name=""></a><h4 class="header">The Concept</h4>
+               <p class="para">The basic idea for a new Tag Set is that all lower-level elements (paragraphs, lists, figures, etc.) will be defined in modules
+                  — either the modules of the base Suite or in new Tag-Set-specific modules rather than in the DTD itself. The new DTD will
+                  be fairly short and include only definitions of the topmost elements, at least the document element and maybe its children.
+                  
+               </p>
+               <p class="para">Modules are defined (declared) using external parameter entities in the Suite’s <a href="n-2mw2.html" target="main" title="%modules.ent;"><span class="pename">Module to Name the Modules</span></a> or in the Tag-Set-specific Module of Modules. Modules are referenced in the DTD proper, <em>in the order needed</em> to define the parameter entities in sequence.
+                  
+               </p>
+               <p class="para">This Journal Archiving Tag Set was written as an example of the new best-practice customization technique. A new variant tag
+                  set, written as a DTD that follows this plan, will probably consist of the following modules: 
+                  
+                  <ul class="bullist">
+                     <li>A DTD module to define the top-level elements (for example, <tt>archivearticle.dtd</tt>);
+                        
+                     </li>
+                     <li>A tag-set-specific Module of Modules to name new non-Suite modules in the Tag Set (for example, <tt>%archivecustom-modules.ent;</tt>);
+                        
+                     </li>
+                     <li>A tag-set-specific definition of element classes to add new classes and override the Suite default classes (for example, <tt>%archivecustom-classes.ent;</tt>);
+                        
+                     </li>
+                     <li>A tag-set-specific definition of element mixes to add new mixes and override the default mixes (for example, <tt>%archivecustom-mixes.ent;</tt>);
+                        
+                     </li>
+                     <li>A tag-set-specific module of content model overrides (for example, <tt>%archivecustom-models.ent;</tt>);
+                        
+                     </li>
+                     <li>Tag-set-specific modules to hold new element declarations; and
+                        
+                     </li>
+                     <li>All or most of the modules in the Suite.
+                        
+                     </li>
+                  </ul>
+                  
+               </p>
+            </div>
+            <div class="section"><a name=""></a><h4 class="header">Making a Variant Tag Set</h4>
+               <p class="para">To show the process, here is a series of instructions for making a new tag set as a DTD, illustrated by showing how the Journal
+                  Archiving Tag Set was created from the modules of the whole Suite.
+                  
+                  <ol class="olist">
+                     <li><strong>Modules</strong> — Write a new tag-set-specific Module of Modules which defines all new customization modules the Tag Set needs. As an example,
+                        the Archiving Tag Set created the module <tt>%archivecustom-modules.ent;</tt>, which contains the definitions of the class-override module <tt>%archivecustom-classes.ent;</tt>, the mix-override module <tt>%archivecustom-mixes.ent;</tt>, and the models-override module <tt>%archivecustom-models.ent;</tt>.
+                        
+                     </li>
+                     <li><strong>Class overrides</strong> — Write a tag-set-specific class-override module, defining any overrides to the Suite classes, which are defined in the default
+                        classes module, <tt>%default-classes.ent;</tt>. As an example, the Archiving Tag Set created the module <tt>%archivecustom-classes.ent;</tt>, in which a new model for <tt>%contrib-info.class;</tt> was declared and an entirely new class <tt>%x.class;</tt> was added.
+                        
+                     </li>
+                     <li><strong>Mix overrides</strong> — Write a tag-set-specific mix-override module defining any overrides to the Suite mixes, which are defined in the default
+                        mixes module, <tt>%default-mixes.ent;</tt>. As an example, the Archiving Tag Set created the module <tt>%archivecustom-mixes.ent;</tt>, in which a new mix <tt>%all-phrase;</tt> was declared and then used in many existing mixes such as <tt>%simple-phrase;</tt>.
+                        
+                     </li>
+                     <li><strong>Model overrides</strong> — Create a tag-set-specific content-model-override module defining any overrides to the content models and attribute lists
+                        for the Suite. As an example, the Archiving Tag Set created the module <a href="n-7q32.html" target="main" title="Tag-Set-Specific Models/Attributes Customizations Module"><span class="petag">%archivecustom-models.ent;</span></a>, in which element collections (suffixed “<tt>-elements</tt>”) that will be mixed with <tt>#PCDATA</tt> were redefined, full content models overrides (suffixed “<tt>-model</tt>”) were redefined, and some new attributes and attribute lists were added. 
+                        
+                     </li>
+                     <li><strong>New Elements</strong> — Write any new element modules needed. These will define any new block-level or phrase-level elements. As an example, the
+                        Archiving Tag Set did not need any new elements not in the Suite, but the new Book Tag Set added modules for book metadata
+                        and book component parts.
+                        
+                     </li>
+                     <li><strong>DTD Module</strong> — With those modules in place, construct a new DTD module. Within that module: 
+                        
+                        <ul class="bullist">
+                           <li>Use an external parameter entity Declaration to name and then call the tag-set-specific modules of modules, for the Archiving
+                              Tag Set, the module <tt>%archivecustom-modules.ent;</tt>.
+                              
+                           </li>
+                           <li>Use an external parameter entity Declaration to name and then call the Suite Modules of Modules (which names all the potential
+                              modules), for the Archiving Tag Set, the module <tt>%modules.ent;</tt>.
+                              
+                           </li>
+                           <li>Use an external parameter entity reference to call the tag-set-specific class overrides, for the Archiving Tag Set, the module
+                              <tt>%archivecustom-classes.ent;</tt>.
+                              
+                           </li>
+                           <li>Use an external parameter entity reference to call the Suite default classes, for the Archiving Tag Set, the module <tt>%default-classes.ent;</tt>.
+                              
+                           </li>
+                           <li>Use an external parameter entity reference to call the tag-set-specific mix overrides, for the Archiving Tag Set, the module
+                              <tt>%archivecustom-mixes.ent;</tt>.
+                              
+                           </li>
+                           <li>Use an external parameter entity reference to call the Suite default mixes, for the Archiving Tag Set, the module <tt>%default-mixes.ent;</tt>.
+                              
+                           </li>
+                           <li>Use an external parameter entity reference to call the tag-set-specific content models and attribute list overrides, for the
+                              Archiving Tag Set, the module <tt>%archivecustom-models.ent;</tt>.
+                              
+                           </li>
+                           <li>Use an external parameter entity reference to call in the standard Common Module (<tt>%common.ent;</tt>) that defines elements and attributes so common they are used by many modules.
+                              
+                           </li>
+                           <li>Use external parameter entity references to call any new tag-set-specific modules that define new block-level or phrase-level
+                              elements. For the Archiving Tag Set, there are no such modules, but, for example, the Book Tag Set made from this Tag Suite
+                              calls a module that declares the book-specific metadata.
+                              
+                           </li>
+                           <li>Select, from the Module of Modules, those modules which contain the elements needed for the tag set (for instance, selecting
+                              lists and not selecting math elements) and calling in each of the modules needed. (The Archiving Tag Set calls these in alphabetical
+                              order, since the order does not matter.)
+                              
+                           </li>
+                           <li>Define the document element and any other unique elements and entities needed for this Tag Set. For example, the Archiving
+                              Tag-Set declares only a few elements — <a href="n-q6c0.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a> (the top-level element) and its potential components: <a href="n-7nv0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a>, <a href="n-4b30.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-jd30.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a>, <a href="n-rvv0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a>, <a href="n-dmi0.html" target="main" title="Sub-article"><span class="elementtag">&lt;sub-article&gt;</span></a>, and <a href="n-g8d0.html" target="main" title="Response"><span class="elementtag">&lt;response&gt;</span></a>.
+                              
+                           </li>
+                        </ul>
+                        
+                     </li>
+                  </ol>
+                  
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,450 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Documentation for Implementors</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h1 class="sectiontitle">Documentation for Implementors</h1>
+         <p class="para">This Authoring DTD comprises a handful of DTD-specific modules that set up Parameter Entity over-rides and uses (by reference)
+            the base modules of the full Journal Archiving and Interchange DTD Suite. The modules of that Suite were developed as part
+            of an effort to create XML applications through which materials on health-related disciplines could be shared and reused electronically.
+            Although the full Suite was developed to support electronic production, the structures should be adequate to support some
+            print production as well.  The Suite has been used to construct many DTDs in addition to this one.
+         </p>
+         <p class="para">Because this is a authoring DTD, thus optimized for creating new content, the DTD is far smaller (fewer elements, and fewer
+            choices in many contexts) than either the Archiving or the Publishing DTDs. Where, in the Archiving DTD, there may have been
+            several ways to express the same information, the goal was to allow only one way in this authoring DTD. It was not the intention
+            to limit the expressive power licensed by this DTD, but rather to limit the meaningless choices that a full interchange DTD
+            needs to make to accommodate conversion from as wide a variety of formats as possible. The philosophy for the Archiving DTD
+            was to accept as many varied forms of many structures as possible unchanged. The philosophy for the Publishing DTD was to
+            accept a wide variety of structures and to regularize those that matter to the archive. The philosophy of this Authoring DTD
+            is to prefer a single structural form, or at least a single style of tagging, whenever possible. Similarly the Archiving and
+            Publishing DTDs allow for formatting such as list numbering and citation references to be preserved. This DTD assumes that
+            such objects will need to be generated as part of production.
+         </p>
+         <hr class="hrule">
+         <div class="section"><a name="modulardesign"></a><h2 class="header">Modular DTD Design</h2>
+            <p class="para">This DTD Suite has been written as a series of XML DTD modules
+                      that can be combined into a number of different DTDs. The modules are separate
+                      physical files that, taken together, define all element structures (such as
+                      tables, math, chemistry, paragraphs, sections, figures, footnotes, and
+                      reference elements), as well as attributes and entities in the Suite.
+            </p>
+            <p class="para">Modules in the Suite are primarily intended to group elements for maintenance.
+                      There are different kinds of modules. A module may either:
+                      
+               <ul class="bullist">
+                  <li>Be a building block for a base DTD (such as the <a href="n-37f0.html"><span class="pename">Module to Name the Modules</span></a> module)
+                  </li>
+                  <li>Define the elements inside a particular structure. For
+                                example, the <a href="n-uzf0.html"><span class="pename">Bibliography References (Citation) Elements Module</span></a> module names all the potential components of
+                                bibliographic reference lists.
+                  </li>
+                  <li>Name the members of a &#8220;class&#8221; of elements,
+                                where class is a named grouping of elements that share a similar usage or
+                                potential location. For example, the <a href="n-gif0.html"><span class="pename">Phrase-Level Content Elements Module</span></a> module defines small floating
+                                elements that may occur within text, such as inside a paragraph or a title, or
+                                that describe textual content, for example, a disease name, drug name, or the
+                                name of a discipline.
+                  </li>
+                  <li>Be a module of &#8220;editorial convenience&#8221;. For
+                                example, the <a href="n-re70.html"><span class="pename">Common (Shared) Element Declarations Module</span></a> module holds elements and attributes used in the
+                                content models of the various class elements.
+                  </li>
+               </ul> 
+            </p>
+            <p class="para">There are many advantages to such a modular approach. The smaller
+                units are written once, maintained in one place, and used in many different
+                DTDs. This makes it much easier to keep lower level structures consistent
+                across document types, while allowing for any real differences that analysis
+                identifies. A DTD for a new function (such as a repository DTD) or a new
+                publication type can be built quickly, since most of the necessary components
+                will already be defined in the DTD Suite. Editorial and production personnel
+                can bring the experience gained on one tagging project directly to the next
+                with very little loss or retraining. Customized software (including authoring,
+                typesetting, and electronic display tools) can be written once, shared among
+                projects, and modified only for real distinctions.
+            </p>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name="developed"></a><h2 class="header">DTDs from the Base Suite</h2>
+            <p class="para">A number of DTDs have already been developed from
+                the modules in the full Archiving and Interchange DTD Suite and more are being developed. The DTDs produced for the National
+               Library of Medicine include:
+                
+               <ul class="bullist">
+                  <li>Archiving and Interchange DTD &#8212; (Journal Archiving and Interchange DTD, nicknamed &#8220;Green&#8221;) A DTD into which
+                      publishers&#8217; original XML (or SGML) content can be converted, providing a
+                      common format for storing this material and for transferring content to any one of a number of archives. This DTD has been
+                     designed to be very open and
+                      inclusive&#8212;to allow journal articles to be translated from a wide variety of
+                      proprietary journal article DTDs. It is permissive by design, intended to capture whatever warts and wrinkles exist in a
+                     Publishers&#8217; content.
+                  </li>
+                  <li>Publishing DTD &#8212; (Journal Publishing DTD, nicknamed &#8220;Blue&#8221;) A DTD for use as a repository DTD by archives which desire consistent
+                     processing and searching capability. The Journal Publishing DTD is a more prescriptive and restrictive subset of the Journal
+                     Archiving and Interchange DTD Suite than the Archiving DTD (above). This DTD may also be used to transfer content between
+                     archives.
+                  </li>
+                  <li>Authoring DTD &#8212; (Authoring DTD, nicknamed &#8220;Pumpkin&#8221;) A DTD intended for writing and editing <em>new</em> journal articles. The Authoring DTD will be designed to enable &#8220;good&#8221; journal coding and to provide assistance to authors
+                     and editors through more restricted models than the interchange and repository DTDs allow.
+                  </li>
+                  <li>Book DTD &#8212; (nicknamed &#8220;Purple&#8221;) A DTD intended for preserving book and monograph content for use in electronic websites.</li>
+               </ul>
+            </p>
+            <p class="para">There is one and only one element in the authoring DTD that is not in the Archiving DTD (although it is in the Publishing
+               DTD): the <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> element. This citation model, although loose enough to accommodate the full range of citation types in the NLM Guidelines,
+               is far more prescriptive than the <a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a> model of the base Suite. The NLM citation model and the extensive examples of tagged citations provided are intended to encourage
+               the creation of citations according to NLM&#8217;s guidelines.
+            </p>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name="learnDTD"></a><h2 class="header">Learning the DTD</h2>
+            <p class="para">If you want to learn about the DTD Suite in order to write a new DTD or to modify this one:
+                      
+               <ul class="bullist">
+                  <li>Skim the Tag Library General Introduction.
+                               
+                     <ul class="bullist">
+                        <li>Start really reading at the section &#8220;<a href="n-b400.html#impledoc">Documentation for Implementors</a>&#8221;;
+                        </li>
+                        <li>Read the Parameter Entities that name the classes; and </li>
+                     </ul>
+                  </li>
+                  <li>If you do not already know the symbols used in the Document
+                                Hierarchy diagrams, then read the &#8220;<a href="n-v7h0.html#nearfar-key">Key to the Near &amp; Far&reg; Diagrams</a>&#8221;.
+                  </li>
+                  <li>Use the Document Hierarchy diagrams to give you a good
+                                sense of the top-level elements and their contents.
+                  </li>
+                  <li>Pick an element from one of the diagrams (Look up the
+                                element in the <em>Elements Section</em> to find the full name of the element, the
+                                definition, usage notes, content allowed, and attributes list. Look up or link to one of
+                                the attributes to find its full name, usage notes, and potential values.).
+                                
+                  </li>
+                  <li>Scan the DTD Modules, given at the end of this
+                                documentation. <br class="br">New DTDs are created by writing a new DTD module and new
+                                customization modules, so you might want to read (in order):
+                                
+                     <ul class="bullist">
+                        <li>The DTD module
+                                      (<tt>articleauthoring.dtd</tt>);
+                        </li>
+                        <li>The module that names all the other modules
+                                      (<a href="n-37f0.html"><span class="petag">%modules.ent;</span></a>);
+                        </li>
+                        <li>The customization modules that names all DTD-specific changes to the Suite
+                                     modules (<a href="n-5c70.html"><span class="petag">%articleauthcustom-modules.ent;</span></a>); and
+                        </li>
+                        <li>The customization modules themselves (<a href="n-9k70.html"><span class="petag">%articleauthcustom-classes.ent;</span></a>,
+                                       <a href="n-v270.html"><span class="petag">%articleauthcustom-mixes.ent;</span></a>, and <a href="n-i270.html"><span class="petag">%articleauthcustom-models.ent;</span></a>), as well as any modules being added by this DTD (<a href="n-qef0.html"><span class="petag">%nlmcitation.ent;</span></a>). <br class="br">You might also wish to familiarize yourself with the relationship between the &#8220;customization&#8221; modules and the &#8220;default&#8221; modules
+                           for classes, mixes, and models.) Those can be followed by any one of the class modules (although the DTD Suite has been designed
+                           to have the <a href="n-re70.html"><span class="petag">%common.ent;</span></a> module precede any other class module).
+                        </li>
+                     </ul> 
+                  </li>
+               </ul>
+            </p>
+         </div>
+         <h3 class="header">Subsidiary section:</h3>
+         <h4 class="header"><a href="n-4700.html">Structure of the Authoring DTD</a></h4>
+         <hr class="hrule">
+         <div class="section"><a name="howtodtds"></a><h2 class="header">How To Make New DTDs</h2>
+            <hr class="hrule">
+            <div class="section"><a name="pes"></a><h2 class="header">Parameter Entities Modules to Customize and Change</h2>
+               <p class="para">Parameter Entities are the
+                         major mechanism for customizing a DTD or creating a new DTD from the modules in
+                         the full Suite. Individual DTDs will be constructed by 1) establishing element and
+                         attribute combinations and content models using Parameter Entities in one of the DTD-specific customizing modules and
+                  2) choosing appropriate modules from the Suite that declare the elements needed.
+                         For example, if the base DTD contained 6 kinds of lists
+                         and 2 table models, a more specific DTD might use a
+                         Customize Classes Module to redefine the List Class to name only 3 lists and
+                         redefine the Display Class to allow only one table model.
+               </p>
+               <p class="para">The standard modules to create a customized DTD are: 1) the DTD itself, 2) a module to name its component modules, and 3)
+                  as many over-ride modules (class, mix, and/or model) and  new elements modules as necessary. Thus, typical modules for a new
+                  DTD are:
+                  <ul class="bullist">
+                     <li>DTD &#8212; The DTD module (<tt>articleauthoring.dtd</tt>) for the new DTD base DTD (At a minimum, this module declares the top-level element (such as article, book, help-topic, or
+                        report) and any other structural elements
+                                   unique to the new document type.);
+                     </li>
+                     <li>DTD-specific Module of Modules &#8212; The DTD-specific module of modules, to name all the new modules created expressly for the
+                        new DTD;
+                     </li>
+                     <li>Class Over-rides &#8212; DTD-specific over-rides of the Suite default element classes;</li>
+                     <li>Mix Over-rides &#8212; DTD-specific over-rides of the Suite default class mixes;</li>
+                     <li>Model Over-rides &#8212; DTD-specific content model over-rides for the content
+                           models in the modules of the suite (using &#8220;<tt>-elements</tt>&#8221; and &#8220;<tt>-model</tt>&#8221; Parameter Entities); and 
+                     </li>
+                     <li>New Model Modules &#8212; DTD-specific new elements (for example, a new Book DTD might add book-specific metadata elements or a
+                        DTD for historical material might add a module to define annotations.)
+                     </li>
+                  </ul>
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="howtobuild"></a><h2 class="header">How To Build a New Custom DTD</h2>
+               <hr class="hrule">
+               <div class="section"><a name="concept"></a><h2 class="header">The Concept</h2>
+                  <p class="para">The basic idea for a new DTD is that all lower-level elements (paragraphs, lists,
+                     figures, etc.) will be defined in modules &#8212; either the modules of the base DTD Suite or in new DTD-specific modules rather
+                     than in the DTD itself. The new DTD
+                     will be fairly short and include only definitions of the topmost elements, at least the document element and maybe its children.
+                  </p>
+                  <p class="para">Modules are defined (declared) using External Parameter Entities in the Suite&#8217;s <a href="n-37f0.html"><span class="pename">Module to Name the Modules</span></a> or in the DTD-specific Module of Modules. Modules are called (referenced) in the DTD proper, <em>in the order needed</em> to define the Parameter Entities in sequence.
+                  </p>
+                  <p class="para">This Authoring DTD was written as an example of the new best-practice customization technique. A new variant DTD that follows
+                     this plan will probably consist of the following modules:
+                     
+                     <ul class="bullist">
+                        <li>A DTD module to define the top-level elements (for example, <tt>articleauthoring.dtd</tt>);
+                        </li>
+                        <li>A DTD-specific Module of Modules to name new non-Suite modules in the DTD (for example, <a href="n-5c70.html"><span class="petag">%articleauthcustom-modules.ent;</span></a>);
+                        </li>
+                        <li>A DTD-specific definition of element classes to add new classes and over-ride the default classes (for example, <a href="n-9k70.html"><span class="petag">%articleauthcustom-classes.ent;</span></a>);
+                        </li>
+                        <li>A DTD-specific definition of element mixes to add new mixes and over-ride the default mixes (for example, <a href="n-9k70.html"><span class="petag">%articleauthcustom-classes.ent;</span></a>);
+                        </li>
+                        <li>A DTD-specific module of content model over-rides (for example, <a href="n-i270.html"><span class="petag">%articleauthcustom-models.ent;</span></a>);
+                        </li>
+                        <li>DTD-specific modules to hold new element declarations; and</li>
+                        <li>All or most of the modules in the Suite.</li>
+                     </ul>
+                     
+                  </p>
+               </div>
+               <hr class="hrule">
+               <div class="section"><a name="variant"></a><h2 class="header">Making a Variant DTD</h2>
+                  <p class="para">To show the process, here is a series of instructions for making a new DTD, illustrated by showing how the Authoring DTD was
+                     created from the modules of the whole Suite.
+                     <ol class="olist">
+                        <li><strong>Modules</strong> &#8212; Write a new DTD-specific Module of Modules, which
+                           defines all new customization modules the DTD needs. (As an example,  the Authoring DTD created the
+                           module <a href="n-5c70.html"><span class="petag">%articleauthcustom-modules.ent;</span></a>, which contains the definitions of the class-over-ride module <a href="n-9k70.html"><span class="petag">%articleauthcustom-classes.ent;</span></a>, the mix-over-ride module <a href="n-v270.html"><span class="petag">%articleauthcustom-mixes.ent;</span></a>, and the models-over-ride module <a href="n-i270.html"><span class="petag">%articleauthcustom-models.ent;</span></a>.)
+                        </li>
+                        <li><strong>Class Over-rides</strong> &#8212; Write a DTD-specific class-over-ride module, defining any over-rides
+                           to the Suite classes. These classes are defined in the default classes module, <tt>%default-classes.ent;</tt>.  (As an example, the Authoring DTD created the module <a href="n-9k70.html"><span class="petag">%articleauthcustom-classes.ent;</span></a>, in which several new models, including <tt>%rest-of-para.class.class;</tt> and <tt>%name.class;</tt>, were declared.)
+                        </li>
+                        <li><strong>Mix Over-rides</strong> &#8212; Write a DTD-specific mix-over-ride module, defining any over-rides
+                           to the Suite mixes. These mixes are defined in the default mixes module, <tt>%default-mixes.ent;</tt>.  (As an example, the Authoring DTD created the module <a href="n-v270.html"><span class="petag">%articleauthcustom-mixes.ent;</span></a>, in which mixes such as <tt>%emphasized-text;</tt> and <tt>%simple-phrase;</tt> were declared.)
+                        </li>
+                        <li><strong>Model Over-rides</strong> &#8212; Create a DTD-specific content-model-over-ride module, defining any over-rides
+                           to the  content models and
+                           attribute lists for the DTD Suite. (As an example, the Authoring DTD created the module <a href="n-i270.html"><span class="petag">%articleauthcustom-models.ent;</span></a>, in which element collections (suffixed &#8220;<tt>-elements</tt>&#8221;) that will be mixed with <tt>#PCDATA</tt> were redefined, full content models over-rides (suffixed &#8220;<tt>-model</tt>&#8221;) were redefined, and some new attributes and attribute lists were added.) 
+                        </li>
+                        <li><strong>New Elements</strong> &#8212; Write any new element modules needed. These will define any new block-level or phrase-level elements. (As an example, the
+                           Authoring DTD includes the module <tt>%nlmcitation.ent;</tt>, in which a more prescriptive citation element, <tt>&lt;nlm-citation&gt;</tt>, is declared. The module <tt>%nlmcitation.ent;</tt> was initially written as part of the Journal Publishing DTD and is used without change by this DTD.)
+                        </li>
+                        <li><strong>DTD Module</strong> &#8212; With those modules in place, construct a new DTD module. Within that module:
+                           
+                           
+                           <ul class="bullist">
+                              <li>Use an External Parameter Entity Declaration to name and then call the DTD-specific
+                                 modules of modules. (For the Authoring DTD, the
+                                 module <a href="n-5c70.html"><span class="petag">%articleauthcustom-modules.ent;</span></a>)
+                              </li>
+                              <li>Use an External Parameter Entity Declaration to name and then call
+                                 the DTD Suite Modules of Modules, which names all the potential
+                                 modules. (For the Authoring DTD, the module <tt>%modules.ent;</tt>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call
+                                 the DTD-specific class over-rides. (For the Authoring DTD, the
+                                 module <a href="n-9k70.html"><span class="petag">%articleauthcustom-classes.ent;</span></a>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call
+                                 the DTD Suite default classes. (For the Authoring DTD, the
+                                 module <tt>%default-classes.ent;</tt>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call
+                                 the DTD-specific mix over-rides. (For the Authoring DTD, the
+                                 module <a href="n-v270.html"><span class="petag">%articleauthcustom-mixes.ent;</span></a>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call
+                                 the DTD Suite default mixes. (For the Authoring DTD, the
+                                 module <tt>%default-mixes.ent;</tt>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call
+                                 the DTD-specific content models and attribute list over-rides. (For the
+                                 Authoring DTD, the module <a href="n-i270.html"><span class="petag">%articleauthcustom-models.ent;</span></a>)
+                              </li>
+                              <li>Use an External Parameter Entity reference to call in the
+                                 standard Common Module (<tt>%common.ent;</tt>) that defines elements and attributes so
+                                 common they are used by many modules.
+                              </li>
+                              <li>Use an External Parameter Entity reference to call any DTD-specific module defining block-level or phrase-level elements.
+                                 (For the Authoring DTD, the module <tt>%nlmcitation.ent;</tt> in which a more prescriptive citation element, <tt>&lt;nlm-citation&gt;</tt>, is declared)
+                              </li>
+                              <li>Select, from the Module of Modules, those modules which
+                                 contain the elements needed for the DTD (for instance, selecting lists and not
+                                 selecting math elements) and calling in each of the modules needed. (The Authoring DTD calls these in alphabetical order,
+                                 since the order does not matter.)
+                              </li>
+                              <li>Define the document element and any other unique
+                                 elements and entities needed for this DTD. (For example, the Authoring DTD declares only four elements &#8212; <tt>&lt;article&gt;</tt> [the top-level element] and its components: <tt>&lt;front&gt;</tt>,
+                                 <tt>&lt;body&gt;</tt>, and <tt>&lt;back&gt;</tt>.)
+                              </li>
+                           </ul> 
+                        </li>
+                     </ol>
+                  </p>
+               </div>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="naming"></a><h2 class="header">DTD and Suite Naming Conventions</h2>
+               <hr class="hrule">
+               <div class="section"><a name="elemnamerules"></a><h2 class="header">Element and Attribute Naming Rules</h2>
+                  <ul class="bullist">
+                     <li>CASE &#8212; Element, attribute, and entity names that originate with this DTD or with the Suite are in all lower case. Element
+                        and attribute names taken from PUBLIC modules (e.g., MathML and various table modules) incorporated into these DTDs are in
+                        the case in which they were found in the original module.
+                     </li>
+                     <li>TWO-WORD NAMES &#8212; Elements named with two words are separated by a hyphen, for example, <a href="n-aq30.html"><span class="elementtag">&lt;def-list&gt;</span></a> and <a href="n-2kx0.html"><span class="elementtag">&lt;term-head&gt;</span></a>.
+                     </li>
+                     <li>WORD STANDARDIZATION &#8212; Abbreviations are standardized so that, for example, &#8220;keyword&#8221; is always used as &#8220;kwd&#8221; (as in the element
+                        <a href="n-fx80.html"><span class="elementtag">&lt;kwd-group&gt;</span></a>) and group is not abbreviated (as in the element <a href="n-fx80.html"><span class="elementtag">&lt;kwd-group&gt;</span></a>). The naming rules are described in the <a href="n-nrh0.html#naming-rules">Authoring DTD and Suite Naming Rules</a> section of this Tag Library.
+                     </li>
+                  </ul>
+               </div>
+               <hr class="hrule">
+               <div class="section"><a name="pesclassmix"></a><h2 class="header">Parameter Entity Names for Classes and Mixes</h2>
+                  <p class="para">PARAMETER ENTITY: SAME FUNCTION, SAME NAME &#8212; The Suite modules and initial DTDs have used a series of Parameter Entity naming
+                     conventions consistently. While parsing software cannot enforce these Parameter Entity naming or usage conventions, these
+                     conventions can make it much easier for a person to know how the content models work and what must be modified to make a DTD
+                     change.
+                  </p>
+                  <p class="para"><strong>CLASSES</strong> &#8212; Classes are functional groupings of elements used together in an OR group. Each class is named with a Parameter Entity,
+                     and all class Parameter Entity names end in the suffix &#8220;<tt>.class</tt>&#8221;:
+                  </p>
+                  <div class="codeblock"><pre> &lt;!ENTITY % list.class "def-list | list"&gt;</pre></div>
+                  <p class="para">A class, by definition, should never be made &#8220;empty&#8221;; the class should be removed from all models where you do not want the
+                     class elements included.
+                  </p>
+                  <p class="para"><strong>MIXES</strong> &#8212; Mixes are functional OR groups of classes; mixes should never contain element names directly.  All mixes must be declared
+                     after all classes, since mixes are composed of classes. Mix names have no set suffix; for example, they may end in &#8220;<tt>-mix</tt>&#8221; or &#8220;<tt>-elements</tt>&#8221;. Content models and content model over-rides use mixes and classes for all OR groups. Only content model sequences are made
+                     up of element names directly.
+                  </p>
+                  <p class="para"><strong>MODEL OVER-RIDES</strong> &#8212; Parameter Entity mixes for over-riding a content model are of two styles: 1) inline mixes and 2) full content model replacements.
+                     These two groupings have been defined and named separately to preserve the mixed-content or element-content nature of the
+                     models in DTDs derived from the Suite.
+                  </p>
+                  <p class="para">The inline Parameter Entities to be intermingled with character data (<tt>#PCDATA</tt>) in a mixed content model are named with a suffix &#8220;<tt>-elements</tt>&#8221;. For example, &#8220;<tt>%institution-elements;</tt>&#8221; would be used in the content model for the element <a href="n-6z50.html"><span class="elementtag">&lt;institution&gt;</span></a>:
+                  </p>
+                  <div class="codeblock"><pre>
+ &lt;!ENTITY % institution-elements "| %break.class; | %emphasis.class; | %subsup.class;" &gt;
+ &lt;!ELEMENT  institution (#PCDATA %institution-elements;)* &gt;
+</pre></div>
+                  <p class="para">All inline mixes begin with an OR bar, so that the mix can be removed leaving just character data (<tt>#PCDATA</tt>):
+                  </p>
+                  <div class="codeblock"><pre>
+ &lt;!ENTITY % rendition-plus "| %emphasis.class;  | %subsup.class;" &gt;
+</pre></div>
+                  <p class="para">The over-ride of a complete content model will be named with a suffix &#8220;<tt>-model</tt>&#8221; and should include the entire content model, including the enclosing parentheses:
+                  </p>
+                  <div class="codeblock"><pre>
+ &lt;!ENTITY % kwd-group-model "(title?, (%kwd.class;)+ )" &gt;
+ &lt;!ELEMENT  kwd-group %kwd-group-model; &gt;
+ </pre></div>
+               </div>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="filenaming"></a><h2 class="header">File Naming Conventions</h2>
+               <p class="para">DTD &#8212; This Tag Library describes the components for the Authoring DTD. This
+                          DTD consists of a base DTD module (delivered as the file <tt>articleauthoring.dtd</tt>) which calls in all the other modules as External Parameter Entities. Each module specific to this DTD (therefore, not part
+                  of the Suite) takes the prefix &#8220;<tt>articleauthcustom-</tt>&#8221;.
+               </p>
+               <p class="para">Each DTD and module has been assigned a unique formal public identifier (fpi). File names are never referenced directly in
+                  the comments in the DTD; the file is referred to by the name of the external Parameter Entity, which names the fpi and a system
+                  name for the file. The external Parameter Entity has been set to the initial delivery filename.
+               </p>
+               <p class="para">The individual modules of both the Suite and the DTD (as delivered) have been given
+                          DOS/Windows 3-digit suffixes indicating their type:
+                          
+                  <div class="deflist">
+                     <table class="deflisttable">
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p><tt>*.dtd</tt></p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">A module that can be used as the top level of an XML
+                                               hierarchy. Used for the Authoring DTD top level, <tt>articleauthoring.dtd</tt>, but also taken unchanged for public
+                                               DTD modules that have been included in this DTD such as the MathML DTD and the
+                                               XHTML table model.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row0">
+                           <td class="dterm">
+                              <p><tt>*.ent</tt></p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">A DTD fragment for incorporation into a full DTD. May
+                                               contain element declarations, entity declarations, etc.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr class="row1">
+                           <td class="dterm">
+                              <p><tt>*.mod</tt></p>
+                           </td>
+                           <td class="ddef">
+                              <p class="para">A DTD fragment for incorporation into a full DTD. May contain element declarations, entity declarations, etc. This extension
+                                 has the same meaning as <tt>*.ent</tt> and is only used to maintain the extension names dictated by the inclusion of PUBLIC DTD fragments, for example, <tt>mathml2-qname-1.mod</tt>.
+                              </p>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+               </p>
+               <p class="para">While the DTD cannot dictate graphic file names, the comments do suggest that best practice for naming graphic files in documents
+                  tagged according to this DTD Suite would be to limit the names and path names to these characters: letters (both upper and
+                  lower case), numbers, underscore, hyphen, and period. All such names will be assumed to be case sensitive. DOS-style file
+                  extensions may be used.
+                          
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="phaseII"></a><h2 class="header">Phase II DTD Work</h2>
+               <p class="para">Modeling several structures and functions that might appropriately be part of a DTD using this Suite has been delayed until
+                  a later version of the Suite. Such components include: 
+                  <ul class="bullist">
+                     <li>Questions and Answers (except as they can be modeled with
+                         the current DTD by using paragraphs and lists);
+                     </li>
+                     <li>Proper systematic identification keys (except as they can be tagged using regular list structures);</li>
+                     <li>Continuing Medical Education material;</li>
+                     <li>Forms and fill-in-the-blank areas;</li>
+                     <li>Conflict of Interest statements and Financial Disclosures (except as they can be modeled using paragraphs and footnotes);</li>
+                     <li>Electronic and Digital Rights Management material;</li>
+                     <li>Advertising included in a journal (for example, employment listings, classified advertising, and display advertising);</li>
+                     <li>Calendars, meeting schedules, and announcements (except as
+                         these can be handled as ordinary articles or sections within articles); and
+                     </li>
+                     <li>Material specific to an individual journal such as Author Guidelines, Policy and Scope statements, Editorial or advisory boards,
+                        detailed indicia, etc.
+                     </li>
+                  </ul> 
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

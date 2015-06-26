@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+   <no>6.</no>
+   <title>Discussion Lists</title>
+   <reflist>
+   <reflist>
+      <title>1. Standard citation to a homepage:</title>
+      <ref>
+         <citation citation-type="discussion">
+            <person-group person-group-type="author">
+               <name>
+                  <surname>Smith</surname>
+                  <given-names>John</given-names>
+               </name>
+            </person-group>
+            <atitle>WebMD</atitle>
+            <source>MEDLIB-L [Internet]</source>
+            <year>1998</year>
+            <month>2</month>
+            <day>23</day>
+            <time-stamp>10:27 am</time-stamp>
+            <access-date>cited 1998 Feb 24</access-date>
+            <publisher-loc>Chicago (IL)</publisher-loc>
+            <publisher-name>Medical Library Association</publisher-name>
+            <other-ref>[about 5 paragraphs]. Available from: MEDLIB-L@LISTSERV.ACSU.BUFFALO.EDU</other-ref>
+         </citation>
+      </ref>
+      <reflist>
+         <title>- with optional initials for author</title>
+         <ref>
+            <citation citation-type="discussion">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Smith</surname>
+                     <given-names>J</given-names>
+                  </name>
+               </person-group>
+               <atitle>WebMD</atitle>
+               <source>MEDLIB-L [Internet]</source>
+               <year>1998</year>
+               <month>2</month>
+               <day>23</day>
+               <time-stamp>10:27 am</time-stamp>
+               <access-date>cited 1998 Feb 24</access-date>
+               <publisher-loc>Chicago (IL)</publisher-loc>
+               <publisher-name>Medical Library Association</publisher-name>
+               <other-ref>[about 5 paragraphs]. Available from: MEDLIB-L@LISTSERV.ACSU.BUFFALO.EDU</other-ref>
+            </citation>
+         </ref>
+       </reflist>
+      <reflist>
+         <title>- with optional content designator</title>
+         <ref>
+            <citation citation-type="discussion">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Smith</surname>
+                     <given-names>J</given-names>
+                  </name>
+               </person-group>
+               <atitle>WebMD</atitle>
+               <source>MEDLIB-L [discussion list on the Internet]</source>
+               <year>1998</year>
+               <month>2</month>
+               <day>23</day>
+               <time-stamp>10:27 am</time-stamp>
+               <access-date>cited 1998 Feb 24</access-date>
+               <publisher-loc>Chicago (IL)</publisher-loc>
+               <publisher-name>Medical Library Association</publisher-name>
+               <other-ref>[about 5 paragraphs]. Available from: MEDLIB-L@LISTSERV.ACSU.BUFFALO.EDU</other-ref>
+            </citation>
+         </ref>
+       </reflist>
+    </reflist>
+    <reflist>
+      <title>2. Author address provided:</title>
+      <ref>
+         <citation citation-type="discussion">
+            <person-group person-group-type="author">
+               <name>
+                  <surname>Manis</surname>
+                  <given-names>David</given-names>
+               </name>
+               <aff>National Institute for Dental and Craniofacial Research, Bethesda, MD</aff>
+            </person-group>
+            <atitle>Food nutrition labels</atitle>
+            <source>NIFL-HEALTH [Internet]</source>
+            <year>1999</year>
+            <month>12</month>
+            <day>23</day>
+            <time-stamp>10:24:37</time-stamp>
+            <access-date>cited 1999 Dec 30</access-date>
+            <publisher-loc>Washington</publisher-loc>
+            <publisher-name>National Institute for Literacy</publisher-name>
+            <other-ref>[about 7 lines]. Available from: nifl-health@literacy.nifl.gov</other-ref>
+         </citation>
+      </ref>
+      <ref>
+         <citation citation-type="discussion">
+            <person-group person-group-type="author">
+               <name>
+                  <surname>Brown</surname>
+                  <given-names>Christine</given-names>
+               </name>
+               <aff>RSNA Technical Assistance Project, Arlington, VA CBrown@rsna.org</aff>
+            </person-group>
+            <atitle>North Carolina website</atitle>
+            <source>DIGITALDIVIDE [Internet]</source>
+            <year>2001</year>
+            <month>1</month>
+            <day>17</day>
+            <time-stamp>6:14 pm</time-stamp>
+            <access-date>cited 2001 Jan 18</access-date>
+            <publisher-loc>Washington</publisher-loc>
+            <publisher-name>Benton Foundation</publisher-name>
+            <other-ref>[about 3 paragraphs]. Available from: digitaldivide@list.benton.org</other-ref>
+         </citation>
+      </ref>
+    </reflist>
+   </reflist>
+</chapter>

@@ -1,0 +1,218 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Contributor</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;contrib&gt;</h1>
+         <h1 class="elementname">Contributor</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Wrapper element to contain the information (such as name and affiliation) about a single
+                   contributor to an article, for example, one author 
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Conversion Note: Use <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a> to point to the institution (<a href="n-gi20.html"><span class="elementname">Affiliation</span></a> <a href="n-gi20.html"><span class="elementtag">&lt;aff&gt;</span></a>), the corresponding information (<a href="n-bsa0.html"><span class="elementname">Correspondence Information</span></a> <a href="n-bsa0.html"><span class="elementtag">&lt;corresp&gt;</span></a>), or any author footnotes in the author note group.
+         </p>
+         <p class="para"><strong>Anonymous.</strong> The name of a contributor that is being withheld or is not known may be recorded using the <tt>EMPTY</tt> element <a href="n-43c0.html"><span class="elementtag">&lt;anonymous&gt;</span></a>, which is expected cause text such an &#8220;Anonymous&#8221; or &#8220;anon.&#8221; to be generated for display or print.
+         </p>
+         <p class="para">Conversion Note: When the ranking or importance of authors is marked as a note (for example, the <tt>&lt;ranking&gt;</tt> element in the Elsevier DTD), the ranking information should be encoded in the <a href="n-hhe0.html"><span class="elementname">Role or Function Title of Contributor</span></a> element. Thus, the Elsevier-tagged text:
+         </p>
+         <div class="codeblock"><pre>
+&lt;ranking&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/ranking&gt;
+</pre></div>
+         <p class="para">would be converted to:</p>
+         <div class="codeblock"><pre>
+&lt;role&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/role&gt;
+</pre></div>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-a9i0.html"><span class="attrtag">contrib-type</span></a> <a href="n-a9i0.html"><span class="attrname">Type of Contribution</span></a></h5>
+         <h5 class="header"><a href="n-99i0.html"><span class="attrtag">corresp</span></a> <a href="n-99i0.html"><span class="attrname">Corresponding Author</span></a></h5>
+         <h5 class="header"><a href="n-n3y0.html"><span class="attrtag">deceased</span></a> <a href="n-n3y0.html"><span class="attrname">Deceased</span></a></h5>
+         <h5 class="header"><a href="n-6uy0.html"><span class="attrtag">equal-contrib</span></a> <a href="n-6uy0.html"><span class="attrname">Equal Contribution</span></a></h5>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-ecp0.html"><span class="attrtag">rid</span></a> <a href="n-ecp0.html"><span class="attrname">Reference to an Identifier</span></a></h5>
+         <h5 class="header"><a href="n-5yp0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-5yp0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-mjp0.html"><span class="attrtag">xlink:href</span></a> <a href="n-mjp0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-yqp0.html"><span class="attrtag">xlink:role</span></a> <a href="n-yqp0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-a9p0.html"><span class="attrtag">xlink:show</span></a> <a href="n-a9p0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-5zp0.html"><span class="attrtag">xlink:title</span></a> <a href="n-5zp0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-dkq0.html"><span class="attrtag">xlink:type</span></a> <a href="n-dkq0.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-naq0.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-naq0.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Use the <a href="n-q750.html"><span class="elementname">Collaborative (Group) Author</span></a> <a href="n-q750.html"><span class="elementtag">&lt;collab&gt;</span></a> element for contributions by organizations or
+                   groups of people. Use the <a href="n-82t0.html"><span class="elementtag">&lt;on-behalf-of&gt;</span></a> element
+                   within the contributor information to indicate that a person has written as a
+                   representative of (on behalf of) an organization or group.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  contrib      %contrib-model;                              &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-43c0.html"><span class="elementname">Anonymous</span></a> <a href="n-43c0.html"><span class="elementtag">&lt;anonymous&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-q750.html"><span class="elementname">Collaborative (Group) Author</span></a> <a href="n-q750.html"><span class="elementtag">&lt;collab&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ees0.html"><span class="elementname">Name of Person</span></a> <a href="n-ees0.html"><span class="elementtag">&lt;name&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-d2n0.html"><span class="elementname">Name of Person (Unstructured)</span></a> <a href="n-d2n0.html"><span class="elementtag">&lt;string-name&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-6cu0.html"><span class="elementname">Degree(s)</span></a> <a href="n-6cu0.html"><span class="elementtag">&lt;degrees&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-3r20.html"><span class="elementname">Address/Contact Information</span></a> <a href="n-3r20.html"><span class="elementtag">&lt;address&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-gi20.html"><span class="elementname">Affiliation</span></a> <a href="n-gi20.html"><span class="elementtag">&lt;aff&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-u830.html"><span class="elementname">Author Comment</span></a> <a href="n-u830.html"><span class="elementtag">&lt;author-comment&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-9x30.html"><span class="elementname">Biography</span></a> <a href="n-9x30.html"><span class="elementtag">&lt;bio&gt;</span></a>
+                                                   
+                        </li>
+                        <li>All the address linking elements:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-chu0.html"><span class="elementname">Email Address</span></a> <a href="n-chu0.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-ekw0.html"><span class="elementname">External Link</span></a> <a href="n-ekw0.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-8yr0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-8yr0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-pqu0.html"><span class="elementname">Et Al.</span></a> <a href="n-pqu0.html"><span class="elementtag">&lt;etal&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-crw0.html"><span class="elementname">Footnote</span></a> <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-82t0.html"><span class="elementname">On Behalf of</span></a> <a href="n-82t0.html"><span class="elementtag">&lt;on-behalf-of&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hhe0.html"><span class="elementname">Role or Function Title of Contributor</span></a> <a href="n-hhe0.html"><span class="elementtag">&lt;role&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-beh0.html"><span class="elementname">X(cross) Reference</span></a> <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-bsh0.html"><span class="elementname">X - Generated Text and Punctuation</span></a> <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-k3a0.html"><span class="elementtag">&lt;contrib-group&gt;</span></a> <a href="n-k3a0.html"><span class="elementname">Contributor Group</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;xref ref-type="aff" rid="StLukes"/&gt;
+&lt;/contrib&gt;</span></strong>
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Young&lt;/surname&gt;
+&lt;given-names&gt;John G.&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;consultant physician&lt;/role&gt;
+&lt;xref ref-type="aff" rid="RoyalInf"/&gt;
+&lt;author-comment&gt;&lt;p&gt;on behalf of the Day Hospital
+Group&lt;/p&gt;&lt;/author-comment&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;
+&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5
+0NA&lt;/aff&gt;
+...
+&lt;pub-date pub-type="pub"&gt;...
+&lt;/pub-date&gt;...
+&lt;/article-meta&gt;...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

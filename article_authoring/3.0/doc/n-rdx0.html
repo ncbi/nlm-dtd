@@ -1,0 +1,146 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Reference List (Bibliographic)</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;ref-list&gt;</h1>
+         <h1 class="elementname">Reference List (Bibliographic)</h1>
+      </div>
+      <div class="definition">
+         <p class="para">List of references (citations) for an article, which is often called “References”, “Bibliography”, or “Additional Reading”
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">No distinction is made between lists of cited references and lists of suggested references.
+            
+         </p>
+         <p class="para">The optional paragraph elements after the title allow for those rare cases where there is explanatory material inside the
+            list, preceding the references.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-vwn0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-vwn0.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  ref-list     <a href="n-4vj0.html" target="main" title="Reference List Model"><span class="petag">%ref-list-model;</span></a>                             &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(title?, p*, ref+)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-yut0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-yut0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-s4w0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, zero or more
+               </li>
+               <li>
+                  <a href="n-x6x0.html" target="main" title="Reference Item"><span class="elementtag">&lt;ref&gt;</span></a> <a href="n-x6x0.html" target="main" title="<ref&gt;"><span class="elementname">Reference Item</span></a>, one or more
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-cp20.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">Reference List for element-style citations</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;back&gt;&lt;ack&gt;...&lt;/ack&gt;
+<strong><span class="focus">&lt;ref-list&gt;
+&lt;ref id="B1"&gt;
+&lt;element-citation publication-type="commun" publication-format="web"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Harris&lt;/surname&gt;
+&lt;given-names&gt;Pat&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;New Z39.50 resource&lt;/article-title&gt;
+&lt;comment&gt;[Internet]&lt;/comment&gt;
+&lt;source&gt;Message to: Karen Patrias&lt;/source&gt;
+&lt;year&gt;1998&lt;/year&gt;
+&lt;month&gt;02&lt;/month&gt;
+&lt;day&gt;27&lt;/day&gt;
+&lt;date-in-citation content-type="time-stamp"&gt;1:18 pm&lt;/date-in-citation&gt;
+&lt;date-in-citation content-type="access-date"&gt;[cited 1998
+Feb 28]&lt;/date-in-citation&gt;
+&lt;comment&gt;[about 2 screens]&lt;/comment&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B2"&gt;
+...
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;</span></strong>
+&lt;/back&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <p class="para">Reference List for mixed-style citations</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;back&gt;&lt;ack&gt;...&lt;/ack&gt;
+<strong><span class="focus">&lt;ref-list&gt;
+&lt;ref id="B1"&gt;
+&lt;mixed-citation publication-type="commun" publication-format="web"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Harris&lt;/surname&gt;
+&lt;given-names&gt;Pat&lt;/given-names&gt;
+&lt;/name&gt;&lt;/person-group&gt;, 
+&lt;article-title&gt;New Z39.50 resource&lt;/article-title&gt; [Internet].
+&lt;source&gt;Message to: Karen Patrias&lt;/source&gt;;
+&lt;year&gt;1998&lt;/year&gt; &lt;month&gt;02&lt;/month&gt; &lt;day&gt;27&lt;/day&gt;;
+&lt;date-in-citation content-type="time-stamp"&gt;1:18 pm&lt;/date-in-citation&gt;
+[cited &lt;date-in-citation content-type="access-date"&gt;1998
+Feb 28&lt;/date-in-citation&gt;] [about 2 screens]
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B2"&gt;
+...
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;</span></strong>
+&lt;/back&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

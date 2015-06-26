@@ -1,0 +1,195 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Publication Identifier for a Cited Publication</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;pub-id&gt;</h1>
+         <h1 class="elementname">Publication Identifier for a Cited Publication</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The identifier of a publication, such as a related journal
+                   article, that is listed within a <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> inside an article&#8217;s <a href="n-awe0.html"><span class="elementtag">&lt;ref-list&gt;</span></a></p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-fdj0.html"><span class="attrtag">pub-id-type</span></a> attribute is used either to identify the type of identifier, or to name the authority, organization, or system that defined
+            this identifier, for example identifying  a DOI, Medline identifier, PII, the publisher&#8217;s identifier, etc. (See <a href="n-fdj0.html"><span class="attrtag">pub-id-type</span></a> for values.)
+         </p>
+         <p class="para">For extensive examples of formatted <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-fj70.html"><span class="elementtag">&lt;pub-id&gt;</span></a>s in <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+         <p class="para">The Archiving Tag Set includes two elements which may be used to record a DOI as an identifier:  <a href="n-5kt0.html"><span class="elementtag">&lt;object-id&gt;</span></a> and <a href="n-fj70.html"><span class="elementtag">&lt;pub-id&gt;</span></a>.  The <a href="n-5kt0.html"><span class="elementtag">&lt;object-id&gt;</span></a> is used to identify parts of an article, e.g., a particular section, a figure, a table, or even a specific citation (as an
+            entity) in the article&#8217;s bibliographic reference list.  The <a href="n-fj70.html"><span class="elementtag">&lt;pub-id&gt;</span></a> element is used inside a citation to identify a cited publication.  Consequently, a bibliographic reference (<a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> could contain both the <a href="n-5kt0.html"><span class="elementtag">&lt;object-id&gt;</span></a> element (with the DOI for that citation) and the <a href="n-fj70.html"><span class="elementtag">&lt;pub-id&gt;</span></a> element (with the DOI for the journal being referenced in the citation) as shown by the example below:
+         </p>
+         <div class="codeblock"><pre>
+&lt;article&gt;
+&lt;front&gt;
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="doi"&gt;MyPub.20070215.03154&lt;/article-id&gt;
+...&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;ref id="B6"&gt;&lt;label&gt;6&lt;/label&gt;
+&lt;citation&gt;
+&lt;object-id pub-id-type="doi"&gt;MyPub.20070215.03154.s433&lt;/object-id&gt;
+...&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B7"&gt;&lt;label&gt;7&lt;/label&gt;
+&lt;citation&gt;
+&lt;object-id pub-id-type="doi"&gt;MyPub.20070215.03154.s434&lt;/object-id&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Brook&lt;/surname&gt;
+&lt;given-names&gt;I.&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;Infant Botulism&lt;/article-title&gt;
+&lt;source&gt;J Perinatol.&lt;/source&gt;
+&lt;year&gt;2007&lt;/year&gt;
+&lt;volume&gt;27&lt;/volume&gt;
+&lt;issue&gt;3&lt;/issue&gt;
+&lt;fpage&gt;175&lt;/fpage&gt;
+&lt;lpage&gt;180&lt;/lpage&gt;
+&lt;pub-id pub-id-type="pmid"&gt;17314986&lt;/pub-id&gt;
+&lt;pub-id pub-id-type="doi"&gt;10.1038/sj.jp.7211651&lt;/pub-id&gt;
+&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B8"&gt;&lt;label&gt;8&lt;/label&gt;
+&lt;citation&gt;
+&lt;object-id pub-id-type="doi"&gt;MyPub.20070215.03154.s435&lt;/object-id&gt;
+...&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B9"&gt;&lt;label&gt;9&lt;/label&gt;
+&lt;citation&gt;
+&lt;object-id pub-id-type="doi"&gt;MyPub.20070215.03154.s436&lt;/object-id&gt;
+...&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+</pre></div>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-fdj0.html"><span class="attrtag">pub-id-type</span></a> <a href="n-fdj0.html"><span class="attrname">Type of Publication Identifier</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  pub-id       (#PCDATA)                                    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-2is0.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference (punctuation and spacing removed):</p><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;...
+&lt;/front&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;...
+&lt;ref-list&gt;...
+&lt;ref id="B8"&gt;
+&lt;label&gt;8&lt;/label&gt;
+&lt;citation&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Weissert&lt;/surname&gt;
+&lt;given-names&gt;W&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Wan&lt;/surname&gt;
+&lt;given-names&gt;T&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Livieratos&lt;/surname&gt;
+&lt;given-names&gt;B&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Katz&lt;/surname&gt;
+&lt;given-names&gt;S&lt;/given-names&gt;&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;Effects and costs of day-care services
+for the chronically ill: a randomized
+experiment&lt;/article-title&gt;
+&lt;source&gt;Medical Care&lt;/source&gt;
+&lt;year&gt;1980&lt;/year&gt;
+&lt;volume&gt;18&lt;/volume&gt;
+&lt;fpage&gt;567&lt;/fpage&gt;
+&lt;lpage&gt;584&lt;/lpage&gt;
+<strong><span class="focus">&lt;pub-id pub-id-type="pmid"&gt;6772889&lt;/pub-id&gt;</span></strong>
+&lt;/citation&gt;
+&lt;/ref&gt;
+...
+
+
+    </pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference (punctuation and spacing preserved):</p><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;...
+&lt;/front&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;...
+&lt;ref-list&gt;...
+&lt;ref id="B8"&gt;
+&lt;label&gt;8&lt;/label&gt;
+&lt;citation&gt;
+&lt;name&gt;&lt;surname&gt;Weissert&lt;/surname&gt;
+&lt;given-names&gt;W&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Wan&lt;/surname&gt;
+&lt;given-names&gt;T&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Livieratos&lt;/surname&gt;
+&lt;given-names&gt;B&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Katz&lt;/surname&gt;
+&lt;given-names&gt;S&lt;/given-names&gt;&lt;/name&gt;.
+&lt;article-title&gt;Effects and costs of day-care services
+for the chronically ill: a randomized
+experiment&lt;/article-title&gt;.
+&lt;source&gt;Medical Care&lt;/source&gt;
+&lt;year&gt;1980&lt;/year&gt;;
+&lt;volume&gt;18&lt;/volume&gt;:
+&lt;fpage&gt;567&lt;/fpage&gt;&amp;ndash;
+&lt;lpage&gt;584&lt;/lpage&gt;.
+<strong><span class="focus">&lt;pub-id pub-id-type="pmid"&gt;6772889&lt;/pub-id&gt;</span></strong>.
+&lt;/citation&gt;
+&lt;/ref&gt;
+...
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

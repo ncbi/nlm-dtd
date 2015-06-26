@@ -1,0 +1,103 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Acknowledgments</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;ack&gt;</h1>
+         <h1 class="elementname">Acknowledgments</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Textual material that names the parties which the author wishes to thank or recognize for their assistance in, for example,
+            producing the work, funding the work, inspiring the work, or assisting in the research on which the work is based
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-xie0.html"><span class="attrtag">content-type</span></a> <a href="n-xie0.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-b6f0.html"><span class="attrtag">id</span></a> <a href="n-b6f0.html"><span class="attrname">Identifier</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  ack          %ack-model;                                  &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-6rt0.html"><span class="elementname">Title</span></a> <a href="n-6rt0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-nkx0.html"><span class="elementname">Paragraph</span></a> <a href="n-nkx0.html"><span class="elementtag">&lt;p&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-fiv0.html"><span class="elementname">Section</span></a> <a href="n-fiv0.html"><span class="elementtag">&lt;sec&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-v5v0.html"><span class="elementname">Reference List (Bibliographic Reference List)</span></a> <a href="n-v5v0.html"><span class="elementtag">&lt;ref-list&gt;</span></a>, zero or more
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-hfc0.html"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-hfc0.html"><span class="elementname">Back Matter</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;...
+&lt;/front&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;
+<strong><span class="focus">&lt;ack&gt;
+&lt;p&gt;We thank B. Beltchev for purification of Hfq, S. Cusack and A. J.
+Carpousis for the gift of PAP I, A. Ishihama for Hfq antibodies used in Hfq
+purification, M. E. Winkler for strains TX2808 and TX2758, I. Boni for reminding
+us that Hfq binds poly(A), M. Springer for suggesting that Hfq might
+relate PAPs to primitive telomerase, Ph. Derreumeaux for help in sequence
+comparisons, M. Grunberg-Manago, C. Condon and R. Buckingham for reading the
+manuscript, and H. Weber for advice. We also acknowledge Minist&amp;#x00E8;re de
+l'Education Nationale de la Recherche et de la Technologie, Centre National de
+la Recherche Scientifique, and Paris7 University for
+support.&lt;/p&gt;
+&lt;/ack&gt;</span></strong>
+&lt;glossary&gt;...
+&lt;/glossary&gt;
+&lt;ref-list&gt;...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt; 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

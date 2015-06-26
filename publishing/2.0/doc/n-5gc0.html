@@ -1,0 +1,111 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Author Comment</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2003-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;author-comment&gt;</h1>
+         <h1 class="elementname">Author Comment</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">An article metadata element that contains extra textual material
+                   associated with a contributor (an author or editor)
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Conversion Note: Although a typical author comment might explain,
+                   for example, some facts about the circumstances under which a contributor wrote
+                   the article material, during conversion the
+                   <a href="n-5gc0.html"><span class="elementtag">&lt;author-comment&gt;</span></a> element can also act as an
+                   escape mechanism to take the content of any contributor-related elements not
+                   anticipated by the DTD Suite.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  author-comment    
+                        %author-comment-model;                       &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-kts0.html"><span class="elementname">Title</span></a> <a href="n-kts0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-w7w0.html"><span class="elementname">Paragraph</span></a> <a href="n-w7w0.html"><span class="elementtag">&lt;p&gt;</span></a>, one or more
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-6u50.html"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-6u50.html"><span class="elementname">Contributor</span></a>; <a href="n-wv50.html"><span class="elementtag">&lt;contrib-group&gt;</span></a> <a href="n-wv50.html"><span class="elementname">Contributor Group</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;xref ref-type="aff" rid="StLukes"/&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Young&lt;/surname&gt;
+&lt;given-names&gt;John G.&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;consultant physician&lt;/role&gt;
+&lt;xref ref-type="aff" rid="RoyalInf"/&gt;
+<strong><span class="focus">&lt;author-comment&gt;&lt;p&gt;on behalf of the Day Hospital 
+Group&lt;/p&gt;&lt;/author-comment&gt;</span></strong>
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;
+&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5 
+0NA&lt;/aff&gt;
+&lt;aff id="RoyalInf"&gt;
+&lt;sup&gt;&lt;italic&gt;b&lt;/italic&gt;&lt;/sup&gt;Academic Section
+of Geriatric Medicine, Royal Infirmary, Glasgow 
+G4 0SF&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;...&lt;/pub-date&gt;
+...
+&lt;/article-meta&gt;
+... 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="pubdate">Version of 20041115</h4>
+      </div>
+   </body>
+</html>

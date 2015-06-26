@@ -1,0 +1,98 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Attribute: Type of Content</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">content-type</h1>
+         <h1 class="attrname">Type of Content</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Identifies a subject or type of content that makes this element
+             semantically special
+         </p>
+      </div>
+      <h2 class="header">Usage</h2>
+      <p class="para">This attribute can be used to name or describe a special function for an associated element, for example, to record that the
+         content of a table cell is a total or subtotal amount, that a side bar (element <a href="n-8uc0.html"><span class="elementtag">&lt;boxed-text&gt;</span></a>) contains a case study, or that a <a href="n-uju0.html"><span class="elementtag">&lt;statement&gt;</span></a> element&#8217;s content is a theorem.
+      </p>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This attribute could identify a drug name, company
+              name, or product name. It could also be used to define systematics terms, such
+              as genus, family, order, or suborder. Similarly, it could be used to identify
+              biological components, such as gene, protein, or peptide. Therefore, the values may
+              include information classes, semantic categories, or types of nouns such as
+              &#8220;<tt>generic-drug-name</tt>&#8221;,
+              &#8220;<tt>genus-species</tt>&#8221;,
+              &#8220;<tt>gene</tt>&#8221;, &#8220;<tt>peptide</tt>&#8221;, &#8220;<tt>product</tt>&#8221;, etc.
+         </p>
+         <p class="para">The presence of a <a href="n-79v0.html"><span class="attrtag">content-type</span></a> attribute may be used to treat its element in a special way, for example, giving the work, phrase, or structure a different
+              look in print or on display. This type of formatting may be guided by the value of the attribute, for example,  putting
+            a background image behind case studies.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5 class="heading"><a href="n-uj80.html"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-uj80.html"><span class="elementname">Named Special (Subject) Content</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">Names/describes the special
+                                function for the <a href="n-uj80.html"><span class="elementtag">&lt;named-content&gt;</span></a> that cannot otherwise be described by the elements in this DTD. For
+                                example, a medical article might use the value &#8220;<tt>body-system</tt>&#8221; or &#8220;<tt>gene</tt>&#8221; while a
+                                management article might use the value &#8220;<tt>product-name</tt>&#8221; or
+                               &#8220;<tt>stock-code</tt>&#8221;.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute must be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4><a href="n-8u20.html"><span class="elementtag">&lt;ack&gt;</span></a> <a href="n-8u20.html"><span class="elementname">Acknowledgments</span></a>; <a href="n-8uc0.html"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-8uc0.html"><span class="elementname">Boxed Text</span></a>; <a href="n-ivc0.html"><span class="elementtag">&lt;caption&gt;</span></a> <a href="n-ivc0.html"><span class="elementname">Caption of a Figure, Table, Etc.</span></a>; <a href="n-b4c0.html"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-b4c0.html"><span class="elementname">Chemical Structure (Display)</span></a>; <a href="n-nec0.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a> <a href="n-nec0.html"><span class="elementname">Chemical Structure Wrapper</span></a>; <a href="n-rjc0.html"><span class="elementtag">&lt;col&gt;</span></a> <a href="n-rjc0.html"><span class="elementname">Table Column (XHTML table model)</span></a>; <a href="n-wpc0.html"><span class="elementtag">&lt;colgroup&gt;</span></a> <a href="n-wpc0.html"><span class="elementname">Table Column Group (XHTML table model)</span></a>; <a href="n-s950.html"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> <a href="n-s950.html"><span class="elementname">Inline Supplementary Material</span></a>; <a href="n-nua0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-nua0.html"><span class="elementname">Paragraph</span></a>; <a href="n-kyu0.html"><span class="elementtag">&lt;speech&gt;</span></a> <a href="n-kyu0.html"><span class="elementname">Speech</span></a>; <a href="n-uju0.html"><span class="elementtag">&lt;statement&gt;</span></a> <a href="n-uju0.html"><span class="elementname">Statement, Formal</span></a>; <a href="n-44w0.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-44w0.html"><span class="elementname">Supplementary Material</span></a>; <a href="n-y7w0.html"><span class="elementtag">&lt;table&gt;</span></a> <a href="n-y7w0.html"><span class="elementname">Table (XHTML table model)</span></a>; <a href="n-6fw0.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> <a href="n-6fw0.html"><span class="elementname">Table Wrapper</span></a>; <a href="n-yhw0.html"><span class="elementtag">&lt;tbody&gt;</span></a> <a href="n-yhw0.html"><span class="elementname">Table Body (XHTML table model)</span></a>; <a href="n-eiw0.html"><span class="elementtag">&lt;td&gt;</span></a> <a href="n-eiw0.html"><span class="elementname">Table Data Cell (XHTML table model)</span></a>; <a href="n-k3x0.html"><span class="elementtag">&lt;tfoot&gt;</span></a> <a href="n-k3x0.html"><span class="elementname">Table Footer (XHTML table model)</span></a>; <a href="n-j3x0.html"><span class="elementtag">&lt;th&gt;</span></a> <a href="n-j3x0.html"><span class="elementname">Table Header Cell (XHTML table model)</span></a>; <a href="n-uwx0.html"><span class="elementtag">&lt;thead&gt;</span></a> <a href="n-uwx0.html"><span class="elementname">Table Header (XHTML table model)</span></a>; <a href="n-v7x0.html"><span class="elementtag">&lt;tr&gt;</span></a> <a href="n-v7x0.html"><span class="elementname">Table Row (XHTML table model)</span></a><table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">Names/describes any special
+                                semantics  of the associated element. This may be used to preserve the semantic intent of prior tagging, for example,
+                     to record that a table cell was a total or subtotal amount. This may also be used to attach information classes to an element
+                     for retrieval purposes.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

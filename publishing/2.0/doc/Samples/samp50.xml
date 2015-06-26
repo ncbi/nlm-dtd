@@ -1,0 +1,650 @@
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<article><?mtl hellip?>
+<front>
+<!--   Glossary and Glossary Group -->
+<journal-meta><journal-id journal-id-type="pmc">pnas</journal-id><journal-id
+journal-id-type="pubmed">Proc Natl Acad Sci U S A</journal-id><journal-id
+journal-id-type="publisher">PNAS</journal-id><issn>0027-8424</issn><publisher><publisher-name>The
+National Academy of Sciences</publisher-name></publisher></journal-meta><article-meta><article-id
+pub-id-type="publisher-id">5340</article-id><article-id pub-id-type="pmid">10677515</article-id>
+<article-categories><subj-group><subject>Biological
+Sciences</subject><subj-group><subject>Evolution</subject></subj-group>
+</subj-group></article-categories><title-group><article-title>Identification of hepatitis B virus
+indigenous to chimpanzees</article-title></title-group><contrib-group><contrib
+contrib-type="author"><name><surname>Hu</surname><given-names>Xiaolei</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Margolis</surname><given-names>Harold
+S.</given-names></name><xref ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Purcell</surname><given-names>Robert H.</given-names></name><xref
+ref-type="aff">&#x2020;</xref></contrib><contrib
+contrib-type="author"><name><surname>Ebert</surname><given-names>James</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Robertson</surname><given-names>Betty
+H.</given-names></name><xref ref-type="aff">&#x002A;</xref><xref ref-type="author-notes"
+rid="FN152">&#x2021;</xref></contrib></contrib-group><aff>&#x002A;Hepatitis Branch
+A33, Division of Viral and Rickettsial Diseases, National Center for Infectious
+Diseases, Centers for Disease Control and Prevention, 1600 Clifton Road NE,
+Atlanta GA 30333; and&#x2020; Hepatitis Viruses Section, Building 7, Room 201,
+Laboratory of Infectious Diseases, National Institute of Allergy and Infectious
+Diseases, National Institutes of Health, Bethesda, MD 20892</aff><author-notes><fn
+id="FN152"><p>To whom reprint requests should be addressed.
+E-mail: <email>bjr1@cdc.gov</email>.</p></fn><fn fn-type="com"><p>Contributed by
+Robert H. Purcell</p></fn>
+<fn><p>Data deposition: The sequences reported in 
+this paper have been deposited in the GenBank 
+database (accession nos.&#x2013;).</p>
+</fn>
+</author-notes><pub-date
+pub-type="pub"><day>15</day><month>2</month><year>2000</year></pub-date><volume>
+97</volume><issue>4</issue><fpage>1661</fpage><lpage>1664</lpage><history><date
+date-type="accepted"><day>9</day><month>12</month><year>1999</year></date>
+</history><copyright-statement>Copyright &#x00A9; 2000, The National Academy of
+Sciences</copyright-statement>
+<copyright-year>2000</copyright-year>
+<abstract><p>Hepatitis B viruses (HBV) and related viruses,
+classified in the <italic>Hepadnaviridae</italic> family, are found in a wide variety of
+mammals and birds. Although the chimpanzee has been the primary experimental
+model of HBV infection, this species has not been considered a natural host for
+the virus. Retrospective analysis of 13 predominantly wild-caught chimpanzees
+with chronic HBV infection identified a unique chimpanzee HBV strain in 11
+animals. Nucleotide and derived amino acid analysis of the complete HBV genome
+and the gene coding for the hepatitis B surface antigen (S gene) identified
+sequence patterns that could be used to reliably identify chimpanzee HBV. This
+analysis indicated that chimpanzee HBV is distinct from known human HBV
+genotypes and is closely related to HBVs previously isolated from a chimpanzee,
+gibbons, gorillas, and
+orangutans.</p></abstract></article-meta>
+</front>
+<body><sec><title>
+Introduction</title><p>Hepatitis B virus (HBV) produces a chronic infection that
+affects a substantial proportion of the world's population and results in death
+from chronic liver disease and hepatocellular carcinoma. HBV is the prototype of
+the <italic>Hepadnaviridae</italic> family, which includes mammalian viruses (genus
+<italic>Orthohepadnavirus</italic>), such as human HBV, woodchuck hepatitis virus (<xref
+ref-type="bibr" rid="B1">1</xref>), Beechey ground squirrel hepatitis virus
+(<xref ref-type="bibr" rid="B2">2</xref>), and Arctic ground squirrel hepatitis
+virus (<xref ref-type="bibr" rid="B3">3</xref>) and avian viruses (genus
+<italic>Avihepadnavirus</italic>) (<xref ref-type="bibr" rid="B4">4</xref>, <xref
+ref-type="bibr" rid="B5">5</xref>). Soon after characterization of human HBV,
+chimpanzees were shown to be susceptible to experimental HBV infection (<xref
+ref-type="bibr" rid="B6">6</xref>). In addition, testing of wild-caught
+chimpanzees revealed that 3&#x2013;6&#x0025; were positive for hepatitis B
+surface antigen (HBsAg) (<xref ref-type="bibr" rid="B7">7</xref>&#x2013;<xref
+ref-type="bibr" rid="B10">10</xref>), a marker of chronic HBV infection, and as
+many as 50&#x0025; of older animals were positive for antibody to HBsAg
+(anti-HBs), a marker of resolved infection (<xref ref-type="bibr"
+rid="B11">11</xref>). However, these HBV infections were not considered
+indigenous to chimpanzees but were thought to be the result of the practice in
+Africa of injecting young, wild-caught animals with human serum to improve
+survival during transit and confinement. The human serum used for this practice
+was thought to be the source of the infection because &#x003E;10&#x0025; of
+persons in Africa have chronic HBV infection (<xref ref-type="bibr"
+rid="B12">12</xref>).</p><p>The subsequent isolation of unique HBV genome
+sequences from selected non-human primates with chronic HBV infections (<xref
+ref-type="bibr" rid="B13">13</xref>&#x2013;<xref ref-type="bibr"
+rid="B16">16</xref>) suggests the existence of HBV strains indigenous to these
+animals. To confirm the existence of a chimpanzee-specific strain of HBV, we
+examined the genetic relatedness of isolates obtained from 13 chimpanzees with
+chronic infection, the majority of which were wild-caught.</p></sec><sec
+sec-type="materials/methods"><title>Materials and Methods</title><sec><title>Chronic Carrier
+Chimpanzees.</title><p>The following wild-caught animals were included in the
+study (identification number, sex, estimated date of birth, institution): NIH28,
+male (M), unknown, National Institutes of Health (NIH); NIH29, female (F), 1970,
+NIH; NIH39, F, 1968, NIH; NIH40, M, 1969, NIH; NIH44, ?, unknown, NIH; NIH56, M,
+1974, NIH; NIH57, F, 1973, NIH; NIH814, 1970, F, NIH; NIH821, M, 1969, NIH;
+CH109, 1958, M, Centers for Disease Control and Prevention; CH926, M, 1974,
+Centers for Disease Control and Prevention. In addition, the following animals
+born in captivity were included: NIH800, F, 1973, NIH; NIH904, M, 1975,
+NIH.</p></sec><sec><title>DNA Extraction, Amplification, and Sequence
+Determination and Analysis.</title><p>HBV DNA was extracted from serum specimens
+by using a modification of the Master Pure procedure (Epicentre Technologies,
+Madison, WI) in which 50 &#x03BC;l of serum was mixed with an equal amount of
+2&#x00D7; T &#x0026; C lysis solution containing 333 &#x03BC;g&#x002F;ml
+proteinase K and incubated at 65&#x00B0;C for 1 hr. After proteinase K
+digestion, samples were placed on ice for 5 min, 50 &#x03BC;l of MPC protein
+precipitation reagent was added, the mixture was vortexed and centrifuged at
+10,000 &#x00D7; <italic>g</italic> for 10 min at 4&#x00B0;C, and the supernatant was
+transferred to a new Eppendorf tube. DNA was precipitated in 500 &#x03BC;l of
+ice-cold isopropanol by centrifugation at 10,000 &#x00D7; <italic>g</italic> for 10 min
+at 4&#x00B0;C. The DNA pellet was rinsed twice with 500 &#x03BC;l of ice-cold
+75&#x0025; ethanol, was air-dried, and was resuspended in 20 &#x03BC;l of
+water.</p><p>The complete HBV genome from CH109 and CH926 was PCR amplified with
+eight primer pairs selected from conserved genome regions such that the
+resulting fragments overlapped adjacent amplicons by at least two-thirds of
+their length. The primers (shown below from 5&#x2032; to 3&#x2032; direction)
+were HBV2853P TCACCATATTCTTGGGAACA; HBV2853N TGTTCCCAAGAATATGGTGA; HBV58P
+CCTGCTGGTGGCTCCAGTTC; HBV58N GAACTGGAGCCACCAGCAGG; HBV409P
+CATCCTGCTGCTATGCCTCATCT; HBV409N AGATGAGGCATAGCAGCAGGATG; HBV730P
+AGTGCCATTTGTTCAGTGGTTCG; HBV730N AGTGCCATTTGTTCAGTGGTTCG; HBV 1101P
+CTCGCCAACTTACAAGGCCTTTC; HBV1101N GAAAGGCCTTGTAAGTTGGCGAG; HBV1450P
+TACGTCCCGTCGGCGCTGAATC; HBV1450N GATTCAGCGCCGACGGGACGTA; HBV1860P
+ACTGTTCAAGCCTCCAAGCTG; HBV1860N CAGCTTGGAGGCTTGAACAGT; HBV2440P
+GCCGCGTCGCAGAAGATCTCAA; HBV2440N TTGAGATCTTCTGCGACGCGGC. The entire 20 &#x03BC;l
+of resuspended HBV viral DNA solution was added to a mixture containing 20
+&#x03BC;l of 5&#x00D7; Invitrogen Buffer, 4 &#x03BC;l of 10 mM dNTPs
+(Invitrogen), 1 &#x03BC;l of 10 uM positive sense primer (HBVxxxxP), 1 &#x03BC;l
+of 10 &#x03BC;M negative sense primer (HBVxxxxN), 1.6 &#x03BC;l of TaqStart
+Dilution Buffer (CLONTECH), 1.6 &#x03BC;l of <italic>Taq</italic> polymerase antibody
+(CLONTECH), 2 units of <italic>Taq</italic> polymerase (Boehringer Mannheim), and 51.6
+&#x03BC;l of water. PCR amplification was performed by using a modification of a
+previously described method (<xref ref-type="bibr" rid="B17">17</xref>) with
+cycling conditions as follows: denaturation at 94&#x00B0;C for 3 min; 45 cycles
+at 94&#x00B0;C for 45 sec and 55&#x00B0;C for 45 sec; ramping to 72&#x00B0;C
+within 1 min and extension at 72&#x00B0;C for 3 min; and a final extension cycle
+at 72&#x00B0;C for 7 min. PCR-amplified products were examined by agarose gel
+electrophoresis and then were purified by using a QIAquick Purification Kit
+(Qiagen, Valencia, CA). Cycle sequencing was performed by using dRhodamine
+terminators, and the products were electrophoresed on a Perkin&#x2013;Elmer 377
+sequencer (PE Biosystems, Foster City, CA). Archived serum specimens from
+chimpanzees NIH28, NIH29, NIH39, NIH40, NIH44, NIH56, NIH57, NIH800, NIH814,
+NIH821, and NIN904 were used to amplify and sequence the S gene as described
+above by using primers HBV2853P or HBV58P and 1101N.</p><p>A consensus nucleic
+acid and amino acid sequence was generated for each of the six human HBV
+genotypes by using the <sc>gcg pretty</sc> program (Genetics Computer Group,
+Madison, WI). These consensus sequences, designated genotype a (gntya) through
+gntyf, were derived by using the individual sequences (Fig. <xref ref-type="fig"
+rid="F1">1</xref>), which are representative of complete genome sequences
+available in GenBank. In addition, a consensus gibbon HBV sequence was derived
+by the same approach.</p><fig id="F1"><caption><p>(<italic>A</italic>) Phylogenetic comparison of complete HBV genome
+nucleotide sequences of chimpanzees, humans, and other non-human primates. The
+respective human genotypes are indicated by the letters A&#x2013;F on the
+corresponding branches. GenBank accession numbers for the representative
+sequences used in the phylogenetic analyses were as follows: Genotype A: <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="V00866"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X51970"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X70185"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="S50225"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="Z35717"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="M57663"/>; Genotype B:
+<ext-link ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="U95551"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="J02203"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X65257"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X85254"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X97848"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X59759"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X02496"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="Y07587"/>, af043593,
+<ext-link ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="Z35716"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X80925"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X97849"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X72702"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="M32138"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="L27106"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X65259"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X68292"/>; Genotype C:
+<ext-link ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X75655"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X76665"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D28880"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D00630"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D23680"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D23681"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D23684"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="M38636"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X01587"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="V00867"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X04615"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D23682"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D23686"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X52939"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D50517"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D50519"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D50520"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D16665"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D50489"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D16666"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D16667"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D12980"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="M12906"/>; Genotype D: <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D50521"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D50522"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D00329"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D23679"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D23678"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D00331"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="M54923"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D00330"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X97851"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X97850"/>; Genotype E: <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X75657"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X75664"/>; Genotype F: <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X75658"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X75663"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="X69798"/>.; Gibbon:
+aj131568, aj131574, aj131569, aj131571, aj131572, aj131573, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="U46935"/>; Gorilla: aj131567; Orangutan: <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="Y17559"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="Y17560"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="Y17561"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="Y17562"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="Y17563"/>, <ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="Y17564"/>, <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="Y17565"/>; Woolly monkey:
+af046996; Chimpanzee: <ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="D00220"/>. (<italic>B</italic>)
+Phylogenetic comparison of the S gene region (nucleotides 157&#x2013;673). It
+includes the additional chimpanzees with chronic HBV infection. The respective
+human genotypes are indicated by the letters A&#x2013;F. The two chimpanzees
+apparently infected with human HBV are indicated by numbers in the
+boxes.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="pq0305340001" alt-version="yes"></graphic></fig><p>Sequence analysis
+and alignments were performed by using the <sc>pileup</sc> program within the
+University of Wisconsin <sc>gcg sequence analysis</sc> computer software package
+(Genetics Computer Group). Genetic distances were calculated by using the Jukes
+and Cantor correction within <sc>dnadist</sc> of <sc>phylip 3.5c</sc> (<xref
+ref-type="bibr" rid="B18">18</xref>), and the results are graphically
+illustrated as a neighbor-joining tree. Boot strap values representing 1,000
+replicates were determined by using <sc>seqboot</sc>, <sc>dnadist</sc>,
+<sc>neighbor</sc>, and <sc>consense</sc> in the <sc>phylip</sc>
+package.</p></sec></sec><sec sec-type="results"><title>Results</title><p>The complete
+genome was sequenced from two animals, and the gene coding for HBsAg was
+sequenced from 11 additional animals. All animals were found to be HBsAg
+positive upon arrival at either the Centers for Disease Control and Prevention
+or the National Institutes of Health (NIH), where they were used for
+experimental transmission of infections with hepatitis viruses. The serum
+samples tested in this study were obtained before experimental inoculation of
+material containing hepatitis viruses. Although the precise date and place of
+birth for most of these animals were unknown, all but two were known to have
+been captured in Africa as infants before chimpanzees were listed as a
+threatened species. Two chimpanzees (CH800 and CH904) were born and reared in
+captivity; their father was HBsAg-positive, but the HBsAg status of the mother
+was unknown.</p><p>The complete HBV genome was amplified and sequenced from
+chimpanzees CH109 and CH926. The complete HBV genome from each animal was
+composed of 3,182 nucleotides and had a genetic organization identical to human
+HBV, with four ORFs encoding the S, X, C, and P genes and a characteristic 11-bp
+direct repeat motif located at positions 1827&#x2013;1837 (DR1) and
+1593&#x2013;1603 (DR2). These two isolates had a 93.7&#x0025; identity with each
+other and a 93&#x2013;98&#x0025; identity with HBV from a wild-caught chimpanzee
+at the London zoo (D00220, Table <xref ref-type="table" rid="T1">1</xref>).
+Chimpanzee HBV isolates had a 87.5&#x2013;91.2&#x0025; nucleotide sequence
+identity with consensus sequences of each of the six human HBV genotypes (<xref
+ref-type="bibr" rid="B19">19</xref>, <xref ref-type="bibr" rid="B20">20</xref>);
+this degree of variation is similar to that observed between the human HBV
+genotypes (Table <xref ref-type="table" rid="T1">1</xref>).</p><table-wrap
+id="T1"><caption><p>Percent nucleotide identity between
+chimpanzee hepatitis B virus strains and consensus sequences for human hepatitis
+B virus genotypes</p></caption><table><tr><th/><th>CH926</th><th><ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D00220"/></th><th>gntya</th><th>gntyb</th><th>gntyc</th><th>gntyd
+</th><th>gntye</th><th>gntyf</th></tr><tr><td
+colspan="9"><hr/></td></tr><tr><td>CH109</td><td>93.7</td><td>93.8</td><td>89.8
+</td><td>89.5</td><td>89.5</td><td>89.8</td><td>90.6</td><td>87.5</td></tr><tr>
+<td>CH926</td><td/><td>98.6</td><td>90.9</td><td>90.8</td><td>90.6</td><td>90.7
+</td><td>91.2</td><td>88.1</td></tr><tr><td><ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D00220"/></td><td/><td/><td>90.7</td><td>90.4</td><td>90.5</td><td>
+90.6</td><td>91.0</td><td>88.1</td></tr><tr><td>Gnty
+A</td><td/><td/><td/><td>92.4</td><td>91.9</td><td>91.2</td><td>90.6</td><td>86.
+8 </td></tr><tr><td>Gnty
+B</td><td/><td/><td/><td/><td>92.1</td><td>91.0</td><td>89.9</td><td>87.5
+</td></tr><tr><td>Gnty
+C</td><td/><td/><td/><td/><td/><td>91.0</td><td>90.3</td><td>87.1
+</td></tr><tr><td>Gnty D</td><td/><td/><td/><td/><td/><td/><td>93.3</td><td>87.4
+</td></tr><tr><td>Gnty
+E</td><td/><td/><td/><td/><td/><td/><td/><td>86.8</td></tr></table></table-wrap><p>The
+phylogenetic relationship of chimpanzee HBV to the six respective human HBV
+genotypes and HBV isolates from other non-human primates is shown in Fig. <xref
+ref-type="fig" rid="F1">1</xref><italic>A</italic>. Each non-human primate HBV clusters
+on a distinct phylogenetic branch, and, with the exception of the wooly monkey
+isolate, all of the non-human primate isolates originate from a node that is
+distinct from any human HBV genotype (Fig. <xref ref-type="fig"
+rid="F1">1</xref><italic>A</italic>).</p><p>When the derived amino acid sequence from
+the three complete chimpanzee genomes were compared with each of the human HBV
+genotypes and the other non-human primate genome sequences, certain patterns
+appeared to identify certain non-human primate HBVs (Figs. <xref ref-type="fig"
+rid="F2">2</xref> and <xref ref-type="fig" rid="F3">3</xref>). These included
+(<italic>i</italic>) a glutamic acid at position 16 of the preS region in chimpanzee,
+gorilla, and gibbon isolates (Fig. <xref ref-type="fig" rid="F2">2</xref>,
+preS); (<italic>ii</italic>) three amino acid changes
+(L<sub>133</sub>-I&#x002F;L&#x002F;Y<sub>134</sub> and A<sub>177</sub>) in the S
+gene of the chimpanzee, gorilla, and gibbon HBV isolates (Fig. <xref
+ref-type="fig" rid="F2">2</xref>, HBsAg); (<italic>iii</italic>) a gluatmine at position
+113 coding for hepatitis B core antigen of the chimpanzee and gorilla HBVs that
+replaced a leucine in human HBV (Fig. <xref ref-type="fig" rid="F2">2</xref>,
+Core); and (<italic>iv</italic>) an 11-amino acid deletion in the polymerase (P) gene in
+the non-human primate isolates that was also found in human genotype D (Fig.
+<xref ref-type="fig" rid="F3">3</xref>). In addition, a precore stop codon (TTG
+&#x2192; TAG) at position 28 (Fig. <xref ref-type="fig" rid="F2">2</xref>, Core)
+was found in two chimpanzees; a leucine was present in the remaining non-human
+primate isolates, in contrast to the tryptophan found in all human isolates.
+Three amino acid changes in the X gene product of chimpanzees (T<sub>11</sub>,
+K<sub>107</sub>, T <sub>110</sub>; Fig. <xref ref-type="fig" rid="F2">2</xref>)
+were found, two of which were also found in the gorilla sequence
+(K<sub>107</sub>, T <sub>110</sub>; Fig. <xref ref-type="fig" rid="F2">2</xref>)
+whereas multiple changes within the preS1 and preS2 overlap region (data not
+shown) were also present.</p><fig id="F2"><caption><p>Comparison of regions from Pre S, HBsAg, Core, and X coding
+regions with translated amino acid sequence differences. The following sequences
+are shown: (<italic>i</italic>) individual sequences from chimpanzees CH109, CH926, and
+<ext-link ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="D00220"/>; (<italic>ii</italic>) gorilla HBV (aj131567); (<italic>iii</italic>) a
+consensus sequence of gibbon HBV (gib); (<italic>iv</italic>) a consensus sequence for
+each genotype (gntya, gntyb, gntyc, gntyd, gntye, and gntyf); and (<italic>v</italic>)
+woolly monkey HBV (af046996) (<xref ref-type="bibr" rid="B15">15</xref>). Dashes
+indicate conserved amino acids while changed positions are indicated in
+lowercase letters. A master sequence based on this comparison is depicted on the
+bottom line in upper-case letters. Shaded regions are discussed in the text. A
+comparison of the complete amino acid sequences is published as supplemental
+data on the PNAS web site, <ext-link ext-link-type="url"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://www.pnas.org">www.pnas.org</ext-link>.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="pq0305340002"
+alt-version="yes"></graphic></fig><fig id="F3"><caption><p>Comparison of the polymerase coding regions with translated
+amino acid sequence differences and deletion. Sequences shown are described in
+the legend to Fig. <xref ref-type="fig" rid="F2">2</xref>. A comparison of the
+complete amino acid sequences is published as supplemental data on the PNAS web
+site, <ext-link ext-link-type="url" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://www.pnas.org">www.pnas.org</ext-link>.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="pq0305340003"
+alt-version="yes"></graphic></fig><p>Nucleotide sequences were obtained from the
+HBsAg coding region (S gene) on an additional 11 chimpanzees with chronic HBV
+infection. The isolates from nine animals were closely related to those of
+CH109, CH926, and D00220 (Fig. <xref ref-type="fig" rid="F1">1</xref><italic>B</italic>)
+whereas two chimpanzees (Fig. <xref ref-type="fig" rid="F1">1</xref><italic>B</italic>,
+NIH28 and NIH44) had isolates related to human HBV genotypes A and C,
+respectively. The derived amino acid sequences indicated that the chimpanzee
+isolates would be classified as subtype <italic>adw</italic> (<xref ref-type="bibr"
+rid="B21">21</xref>) whereas the gibbon and woolly monkey isolates would be
+classified as subtype <italic>ayw</italic>. The translated amino acids from the S gene
+sequences from the additional chimpanzee HBV strains also contained the three
+amino acid substitutions (L<sub>133</sub>-I&#x002F;L<sub>134</sub> and
+A<sub>177</sub>) found in the full-length sequences (Fig. <xref ref-type="fig"
+rid="F2">2</xref>).</p><p>Comparison of the branching order of non-human primate
+strains and human HBV genotypes by using the complete genome and the S gene
+produced different phylogenetic pictures (Fig. <xref ref-type="fig"
+rid="F1">1</xref> <italic>A</italic> and <italic>B</italic>). In the S gene analysis, the gibbon
+HBV does not cluster with the other non-human primate strains whereas comparison
+of the complete genome demonstrated the genetic relatedness of the gibbon
+isolate to the other non-human primate isolates. These data indicate that,
+although the S gene region may be adequate for genotype assignment (<xref
+ref-type="bibr" rid="B18">18</xref>), the complete HBV genome provides
+additional information necessary to derive conclusions concerning phylogenetic
+relatedness. In light of this observation, a complete sequence of HBV from
+orangutans with chronic HBV infection (<xref ref-type="bibr"
+rid="B16">16</xref>) would probably cluster with the gibbon, chimpanzee, and
+gorilla HBV sequences.</p></sec><sec
+sec-type="discussion"><title>Discussion</title><p>The HBVs isolated from 11 of the 13
+chimpanzees with chronic infection appear to be genetically distinct from known
+human HBV genotypes and appear to represent a virus that produces an infection
+indigenous to chimpanzees. The two additional animals with chronic HBV infection
+had human HBV isolates, a finding that could be explained by the practice of
+injecting wild-caught infant animals with human serum. When compared with HBVs
+isolated from other primates, the chimpanzee HBV has unique nucleotide and amino
+acid differences throughout the entire genome and the S gene that allow the
+rapid and precise identification of this strain. In addition, our analysis
+confirms the existence of indigenous non-human primate HBV strains in both Old
+World great apes and New World monkeys.</p><p>The phylogenetic evolution of the
+non-human primate HBVs with respect to human HBV is not clear. The woolly monkey
+HBV and human genotype F appear to be related with respect to their phylogenetic
+and geographic (South American) proximity. However, although such phylogenetic
+patterns and geographic proximity may suggest possible zoonotic transmission of
+HBVs, a number of biologic and epidemiologic inconsistencies argue for
+independent evolution within various geographically separated species or
+populations. These inconsistencies include the following: (<italic>i</italic>) the
+gibbon and chimpanzee nucleic acid sequences are more closely related to each
+other than to human genotypes, and these two types of great apes are widely
+separated geographically (Africa and Asia); (<italic>ii</italic>) the human genotypes
+found in Africa and Asia differ&#x2014;Asia is predominantly B and C, and Africa
+is predominantly A and E; and (<italic>iii</italic>) the possible modes of virus
+transmission between non-human primates and humans are unclear because
+blood-borne viruses are primarily transmitted by sex, birth, or the direct
+inoculation of blood.</p><p>The extent to which chronic HBV infection occurs in
+free living non-human primate populations is unknown. However, it is unlikely
+that the presence of HBVs indigenous to non-human primates would have important
+public health implications. Because gibbon and woolly monkey HBV strains have
+been shown to produce infection in chimpanzees (<xref ref-type="bibr"
+rid="B15">15</xref>, <xref ref-type="bibr" rid="B22">22</xref>), and human HBV
+causes disease in chimpanzees, the potential for zoonotic disease transmission
+exists where blood or body fluid exposure is common. Such scenarios could
+include chronically infected animals kept as family pets, close contact with
+caretakers, or in situations in which chimpanzees are slaughtered and used as
+bushmeat. Human HBV infection can be prevented by immunization with hepatitis B
+vaccine, which contains HBsAg to induce protective immunity through the amino
+acids that comprise the <italic>a</italic> determinant (underlined in Fig. <xref
+ref-type="fig" rid="F2">2</xref>). Among the Old World non-human primate HBVs,
+all contain the immunodominant glycine at position 145 of the <italic>a</italic>
+determinant, and other amino acid changes are limited, which indicates that
+available hepatitis B vaccines would prevent infection in the unlikely event of
+exposure to non-human primate
+HBVs.</p></sec>
+</body><?mtl /hellip?>
+<back>
+<glossary>
+<title>Glossary Terms, Acronyms, and Abbreviations</title>
+
+<gloss-group>
+<title>Abbreviations</title>
+<def-list>
+<def-item>
+<term id="G15">F</term>
+<def><p>female</p></def>
+</def-item>
+<def-item>
+<term id="G29">gnty</term>
+<def><p>genotype</p></def>
+</def-item>
+<def-item>
+<term id="G43">M</term>
+<def><p>male</p></def>
+</def-item>
+</def-list>
+</gloss-group>
+
+<gloss-group>
+<title>Acronyms</title>
+<def-list>
+<def-item>
+<term id="G62">NIH</term>
+<def><p>National Institutes of
+Health</p></def>
+</def-item>
+<def-item>
+<term id="G12">XML</term>
+<def><p>Extensible Markup Language</p></def>
+</def-item>
+</def-list>
+</gloss-group>
+
+<gloss-group>
+<title>Virology Terms and Phrases</title>
+<def-list>
+<def-item>
+<term id="G71">HBV</term>
+<def><p>hepatitis B virus</p></def>
+</def-item>
+<def-item>
+<term id="G33">HBsAg</term>
+<def><p>hepatitis B surface antigen</p></def>
+</def-item>
+</def-list>
+</gloss-group>
+</glossary><?mtl hellip?>
+<notes>
+<sec><title>Note Added in Proof</title>
+<p>Similar sequence information has been obtained in another study (S. Mishiro,
+personal communication) and has been deposited under GenBank accession numbers
+&#x2013;. For the purposes of HBV nomenclature, we have proposed that the
+chimpanzee HBV be abbreviated as ChHBV.</p>
+</sec>
+</notes><?mtl /hellip?>
+<ref-list><?mtl hellip?><ref
+id="B1"><citation><name><surname>Galibert</surname><given-names>F.</given-names></name
+><name><surname>Chen</surname><given-names>T.
+N.</given-names></name><name><surname>Mandart</surname><given-names>E.</given-names></name><source>J.
+Virol.</source><year>1982</year><volume>41</volume><fpage>51</fpage><lpage>65
+</lpage></citation></ref><ref
+id="B2"><citation><name><surname>Seeger</surname><given-names>C.</given-names></name>
+<name><surname>Ganem</surname><given-names>D.</given-names></name><name><surname>Varmus</surname><given-names>H.
+E.</given-names></name><source>J.
+Virol.</source><year>1984</year><volume>51</volume><fpage>367</fpage><lpage>375
+</lpage></citation></ref><ref
+id="B3"><citation><name><surname>Testut</surname><given-names>P.</given-names></name>
+<name><surname>Renard</surname><given-names>C-A.</given-names></name><name><surname>Terradillos</surname><given-names>
+O.</given-names></name><name><surname>Vitvitski-Trepo</surname><given-names>V.</given-names></name><name><surname
+>Tekaia</surname><given-names>F.</given-names></name><name><surname>Degott</surname><given-names>C.</given-names></name>
+<name><surname>Blake</surname><given-names>J.</given-names></name><name><surname>Boyer</surname><given-names>B.</given-names
+></name><name><surname>Buendia</surname><given-names>M. A.</given-names></name><source>J.
+Virol.</source><year>1996</year><volume>70</volume><fpage>4210</fpage><lpage>
+4219</lpage></citation></ref><ref
+id="B4"><citation><name><surname>Mandart</surname><given-names>E.</given-names></name>
+<name><surname>Kay</surname><given-names>A.</given-names></name><name><surname>Galibert</surname><given-names>F.
+</given-names></name><source>J.
+Virol.</source><year>1984</year><volume>49</volume><fpage>782</fpage><lpage>792
+</lpage></citation></ref><ref
+id="B5"><citation><name><surname>Sprengel</surname><given-names>R.</given-names></name
+><name><surname>Kaleta</surname><given-names>F.</given-names></name><name><surname>Will</surname><given-names>H.
+</given-names></name><source>J.
+Virol.</source><year>1988</year><volume>62</volume><fpage>3832</fpage><lpage>
+3839</lpage></citation></ref><ref
+id="B6"><citation><name><surname>Barker</surname><given-names>L.
+F.</given-names></name><name><surname>Maynard</surname><given-names>J.
+E.</given-names></name><name><surname>Purcell</surname><given-names>R.
+H.</given-names></name><name><surname>Hoofnagle</surname><given-names>J.
+H.</given-names></name><name><surname>Berquist</surname><given-names>K.
+R.</given-names></name><name><surname>London</surname><given-names>W.
+T.</given-names></name><name><surname>Gerety</surname><given-names>R.
+J.</given-names></name><name><surname>Krushak</surname><given-names>D. H.</given-names></name><source>J.
+Infect.
+Dis.</source><year>1975</year><volume>132</volume><fpage>451</fpage><lpage>458
+</lpage></citation></ref><ref
+id="B7"><citation><name><surname>Lichter</surname><given-names>E.
+A.</given-names></name><source>Nature
+(London)</source><year>1969</year><volume>224</volume><fpage>810</fpage><lpage>
+811</lpage></citation></ref><ref
+id="B8"><citation><name><surname>Maynard</surname><given-names>J.
+E.</given-names></name><name><surname>Hartwell</surname><given-names>W.
+V.</given-names></name><name><surname>Berquist</surname><given-names>K. R.</given-names></name><source>J.
+Infect.
+Dis.</source><year>1971</year><volume>123</volume><fpage>660</fpage><lpage>664
+</lpage></citation></ref><ref
+id="B9"><citation><name><surname>Prince</surname><given-names>A.
+M.</given-names></name><name><surname>Goldsmith</surname><given-names>E.</given-names></name><name><surname>
+Moor-Jankowski</surname><given-names>J.</given-names></name><source>Medical
+Primatology</source><year>1972</year><publisher-loc>Basel</publisher-loc><publisher-name>Karger</publisher-name><fpage>97</fpage>
+<lpage>109</lpage></citation>
+</ref><ref id="B10"><citation><name><surname>Eichberg</surname><given-names>J.
+W.</given-names></name><name><surname>Kalter</surname><given-names>S. S.</given-names></name><source>Lab.
+Anim.
+Sci.</source><year>1980</year><volume>30</volume><fpage>541</fpage><lpage>543
+</lpage></citation></ref><ref
+id="B11"><citation><name><surname>Lander</surname><given-names>J.
+J.</given-names></name><name><surname>Holland</surname><given-names>P.
+V.</given-names></name><name><surname>Alter</surname><given-names>H.
+J.</given-names></name><name><surname>Chanock</surname><given-names>R.
+M.</given-names></name><name><surname>Purcell</surname><given-names>R. H.</given-names></name><source>J. Am.
+Med.
+Assoc.</source><year>1972</year><volume>220</volume><fpage>1079</fpage><lpage>
+1082</lpage></citation></ref><ref
+id="B12"><citation><name><surname>Ayoola</surname><given-names>E. A.
+.</given-names></name><name><surname>Zuckerman</surname><given-names>A.
+J.</given-names></name><source>Viral Hepatitis and Liver
+Disease</source><year>1988</year><publisher-loc>New York</publisher-loc><publisher-name>
+Liss</publisher-name><fpage>161</fpage><lpage>169</lpage></citation></ref><ref
+id="B13"><citation><name><surname>Vaudin</surname><given-names>M.</given-names></name
+><name><surname>Wolstenholme</surname><given-names>A.
+J.</given-names></name><name><surname>Tsiquaye</surname><given-names>K.
+N.</given-names></name><name><surname>Zuckerman</surname><given-names>A.
+J.</given-names></name><name><surname>Harrison</surname><given-names>T. J.</given-names></name><source>J.
+Gen.
+Virol.</source><year>1988</year><volume>69</volume><fpage>1383</fpage><lpage>
+1389</lpage></citation></ref><ref
+id="B14"><citation><name><surname>Norder</surname><given-names>H.</given-names></name
+><name><surname>Ebert</surname><given-names>J. W.</given-names></name><name><surname>Fields</surname><given-names>H.
+A.</given-names></name><name><surname>Mushahwar</surname><given-names>I.
+K.</given-names></name><name><surname>Magnius</surname><given-names>L.
+O.</given-names></name><source>Virology</source><year>1996</year><volume>218</volume>
+<fpage>214</fpage><lpage>223</lpage>
+</citation></ref><ref
+id="B15"><citation><name><surname>Lanford</surname><given-names>R.
+E.</given-names></name><name><surname>Chaves</surname><given-names>D.</given-names></name><name><surname>Brasky
+</surname><given-names>K. M.</given-names></name><name><surname>Burns</surname><given-names>R.
+B.</given-names></name><name><surname>Rico-Hesse</surname><given-names>R.</given-names></name><source>Proc.
+Natl. Acad. Sci
+USA</source><year>1998</year><volume>95</volume><fpage>5757</fpage><lpage>5761
+</lpage></citation></ref><ref
+id="B16"><citation><name><surname>Warren</surname><given-names>K.
+S.</given-names></name><name><surname>Heeney</surname><given-names>J.
+L.</given-names></name><name><surname>Swan</surname><given-names>R.
+A.</given-names></name><name><surname>Heriyanto</surname></name><name><surname>Verschoor</surname><given-names
+>E. J.</given-names></name><source>J.
+Virol.</source><year>1999</year><volume>73</volume><fpage>7860</fpage><lpage>
+7865</lpage></citation></ref><ref
+id="B17"><citation><name><surname>Nainan</surname><given-names>O.
+V.</given-names></name><name><surname>Cromeans</surname><given-names>T.
+L.</given-names></name><name><surname>Margolis</surname><given-names>H. S.</given-names></name><source>J
+Virol.
+Methods</source><year>1996</year><volume>61</volume><fpage>127</fpage><lpage>134
+</lpage></citation></ref>
+<ref
+id="B18"><citation><name><surname>Felsenstein</surname><given-names>J.</given-names>
+</name><source>phylip Inference
+Package</source><year>1993</year><publisher-loc>Univ. of Washington, Seattle</publisher-loc><publisher-name>Department of
+Genetics</publisher-name>, Version
+3.5</citation></ref>
+<ref
+id="B19"><citation><name><surname>Okamoto</surname><given-names>H.</given-names>
+</name><name><surname>Tsuda</surname><given-names>F.</given-names></name><name><surname>Sakugawa</surname><given-names>
+H.</given-names></name><name><surname>Sastrosoewigjo</surname><given-names>R.
+I.</given-names></name><name><surname>Imai</surname><given-names>M.</given-names></name><name><surname>Miyakawa
+</surname><given-names>Y.</given-names></name><name><surname>Mayumi</surname><given-names>M.</given-names></name><source>J
+. Gen.
+Virol.</source><year>1988</year><volume>69</volume><fpage>2575</fpage><lpage>
+2583</lpage></citation></ref><ref
+id="B20"><citation><name><surname>Norder</surname><given-names>H.</given-names></name
+><name><surname>Courouc&#x00E9;</surname><given-names>A-M.</given-names></name><name><surname>Magnius</surname
+><given-names>L.
+O.</given-names></name><source>Virology</source><year>1994</year><volume>198</volume>
+<fpage>489</fpage><lpage>503</lpage>
+</citation></ref><ref
+id="B21"><citation><name><surname>Norder</surname><given-names>H.</given-names></name
+><name><surname>Hammas</surname><given-names>B.</given-names></name><name><surname>L&#x00F6;fdahl</surname>
+<given-names>S.</given-names></name><name><surname>Courouc&#x00E9;</surname><given-names>A.-M.</given-names></name>
+<name><surname>Magnius</surname><given-names>L. O.</given-names></name><source>J. Gen.
+Virol</source><year>1992</year><volume>73</volume><fpage>1201</fpage><lpage>1208
+</lpage></citation></ref><ref
+id="B22"><citation><name><surname>Gallagher</surname><given-names>M.</given-names>
+</name><name><surname>Fields</surname><given-names>H. A.</given-names></name><name><surname>De La
+Torre</surname><given-names>N.</given-names></name><name><surname>Ebert</surname><given-names>J.
+W.</given-names></name><name><surname>Krawczynski</surname><given-names>K.
+Z.</given-names></name><name><surname>Hollinger</surname><given-names>E.
+B.</given-names></name><name><surname>Lemon</surname><given-names>S.
+M.</given-names></name><name><surname>Margolis</surname><given-names>H.
+S.</given-names></name><source>Viral Hepatitis and Liver
+Disease</source><year>1991</year><publisher-loc>Baltimore</publisher-loc><publisher-name>
+Williams &#x0026;
+Wilkens</publisher-name><fpage>227</fpage><lpage>229</lpage></citation></ref><?mtl /hellip?>
+</ref-list>
+</back>
+</article> 

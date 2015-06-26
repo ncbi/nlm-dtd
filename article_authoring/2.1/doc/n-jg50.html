@@ -1,0 +1,88 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Given (First) Names</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;given-names&gt;</h1>
+         <h1 class="elementname">Given (First) Names</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">All given names of a person, such as the first name, middle
+                   names, maiden name if used as part of the married name, etc., for example, in the name &#8220;John Q. Delancey Public&#8221;, the
+            given names would be &#8220;John Q. Delancey&#8221; and the <a href="n-6sw0.html"><span class="elementtag">&lt;surname&gt;</span></a> would be &#8220;Public&#8221;.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  given-names  (#PCDATA %given-names-elements;)*            &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters, zero or more</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-ph80.html"><span class="elementtag">&lt;name&gt;</span></a> <a href="n-ph80.html"><span class="elementname">Name of Person</span></a>; <a href="n-kru0.html"><span class="elementtag">&lt;speaker&gt;</span></a> <a href="n-kru0.html"><span class="elementname">Speaker</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital 
+care for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+<strong><span class="focus">&lt;given-names&gt;Anne Williams&lt;/given-names&gt;</span></strong>
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;aff id="StLukes"&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5 
+0NA&lt;/aff&gt;
+&lt;/contrib&gt;
+...
+&lt;/contrib-group&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British 
+Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of day hospital attendance 
+in prolonging independent living for elderly people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+... 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

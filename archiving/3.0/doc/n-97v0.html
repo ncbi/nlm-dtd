@@ -1,0 +1,132 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Element: Footnote Group</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;fn-group&gt;</h1>
+         <h1 class="elementname">Footnote Group</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Container element for footnotes that have been grouped at the end of an article 
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Footnotes that are scattered throughout the text, at the places they occur, do not use this container element. 
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-8fm0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-8fm0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-3hz0.html" target="main"><span class="attrtag">id</span></a> <a href="n-3hz0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-cm22.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-cm22.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  fn-group     <a href="n-dya2.html" target="main" title="Footnote Group Model"><span class="petag">%fn-group-model;</span></a>                             &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">(label?, title?, 
+(fn | x)+)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-6370.html" target="main" title="Label (of a Figure, Reference, Etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-6370.html" target="main" title="<label&gt;"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-ebp0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-ebp0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one
+               </li>
+               <li>One or more of any of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-wtv0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-wtv0.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-xa90.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-xa90.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-2900.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a>, <a href="n-c520.html" target="main" title="Acknowledgments"><span class="elementtag">&lt;ack&gt;</span></a>, <a href="n-juc0.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-jd30.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a>, <a href="n-ni30.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-y850.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-yvf0.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a>, <a href="n-8md0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-v6j0.html" target="main" title="Table Wrapper Footer"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a>, <a href="n-ecq0.html" target="main" title="Title Group"><span class="elementtag">&lt;title-group&gt;</span></a>, <a href="n-58q0.html" target="main" title="Translated Abstract"><span class="elementtag">&lt;trans-abstract&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;back&gt;
+&lt;ack&gt;
+&lt;p&gt;We are grateful to Uri Alon, Harley McAdams, Lee Kroos,
+Patrick Piggot, and Patrick Stragier for critical comments
+of the manuscript. ...&lt;/p&gt;
+...
+&lt;/ack&gt;
+<strong><span class="focus">&lt;fn-group&gt;
+&lt;fn id="n1" fn-type="conflict"&gt;
+&lt;p&gt;&lt;bold&gt;Conflicts of interest.&lt;/bold&gt; The 
+authors have declared that no conflicts 
+of interest exist.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;fn id="n2" fn-type="con"&gt;
+&lt;p&gt;&lt;bold&gt;Author contributions.&lt;/bold&gt; PE, MF, 
+STJ, EMC, DZR, TS, JSL, and RL conceived and designed 
+the experiments. PE, MF, DZR, STW, CF, and KH performed 
+the experiments. PE, MF, STJ, EMC, DZR, and JSL 
+analyzed the data. PE, MF, STJ, EMC, DZR, and JSL 
+contributed reagents/materials/analysis tools. PE, MF, STJ, 
+EMC, JSL, and RL wrote the paper.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/fn-group&gt;</span></strong>
+...
+&lt;/back&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;...
+&lt;back&gt;...
+&lt;ref-list&gt;...
+&lt;/ref-list&gt;
+<strong><span class="focus">&lt;fn-group&gt;
+&lt;fn&gt;
+&lt;p&gt;Competing interests: None declared.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/fn-group&gt;</span></strong>
+&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">backmatter3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

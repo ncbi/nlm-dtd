@@ -1,0 +1,135 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Article Metadata</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;article-meta&gt;</h1>
+         <h1 class="elementname">Article Metadata</h1>
+      </div>
+      <div class="definition">
+         <p class="para">The metadata for an article is information concerning the article, for example, bibliographic data such as authorship, article
+            title, and copyright year; descriptive material such as keywords and abstracts; or information about related articles. The
+            article metadata is not part of the body text or graphics of the article proper, but serves to identify or describe the article.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  article-meta <a href="n-kkd0.html" target="main" title="Article Metadata Model"><span class="petag">%article-meta-model;</span></a>                         &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">(title-group, contrib-group, 
+(product | supplementary-material)*, 
+permissions?, self-uri*, related-article*, abstract+, 
+kwd-group?, funding-group*, conference*)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-8st0.html" target="main" title="Title Group"><span class="elementtag">&lt;title-group&gt;</span></a> <a href="n-8st0.html" target="main" title="<title-group&gt;"><span class="elementname">Title Group</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-dn30.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> <a href="n-dn30.html" target="main" title="<contrib-group&gt;"><span class="elementname">Contributor Group</span></a>
+                  
+               </li>
+               <li>Any combination of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-uux0.html" target="main" title="<product&gt;"><span class="elementname">Product Information</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-jz40.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-jz40.html" target="main" title="<supplementary-material&gt;"><span class="elementname">Supplementary Material</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-nyw0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-nyw0.html" target="main" title="<permissions&gt;"><span class="elementname">Permissions</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-idv0.html" target="main" title="URI for This Same Article Online"><span class="elementtag">&lt;self-uri&gt;</span></a> <a href="n-idv0.html" target="main" title="<self-uri&gt;"><span class="elementname">URI for This Same Article Online</span></a>, zero or more
+               </li>
+               <li>
+                  <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-ahx0.html" target="main" title="<related-article&gt;"><span class="elementname">Related Article Information</span></a>, zero or more
+               </li>
+               <li>
+                  <a href="n-n600.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a> <a href="n-n600.html" target="main" title="<abstract&gt;"><span class="elementname">Abstract</span></a>, one or more
+               </li>
+               <li>
+                  <a href="n-9da0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a> <a href="n-9da0.html" target="main" title="<kwd-group&gt;"><span class="elementname">Keyword Group</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-vf80.html" target="main" title="Funding Group"><span class="elementtag">&lt;funding-group&gt;</span></a> <a href="n-vf80.html" target="main" title="<funding-group&gt;"><span class="elementname">Funding Group</span></a>, zero or more
+               </li>
+               <li>
+                  <a href="n-t830.html" target="main" title="Conference Information"><span class="elementtag">&lt;conference&gt;</span></a> <a href="n-t830.html" target="main" title="<conference&gt;"><span class="elementname">Conference Information</span></a>, zero or more
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-2e80.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;
+<strong><span class="focus">&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital care
+for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;aff&gt;Department of Health Care for the Elderly,
+St Luke&amp;#x2019;s Hospital, Bradford BD5 0NA&lt;/aff&gt;
+&lt;author-comment&gt;
+&lt;p&gt;Competing interests: None declared.&lt;/p&gt;
+...
+&lt;/author-comment&gt;
+&lt;/contrib&gt;
+...
+&lt;/contrib-group&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British Medical
+Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;...&lt;/abstract&gt;
+&lt;/article-meta&gt;</span></strong>
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Season</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;season&gt;</h1>
+         <h1 class="elementname">Season</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Season of publication, such as &#8220;Spring&#8221;, &#8220;Third Quarter&#8221;, etc.</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element is used in both
+                   article metadata and inside a bibliographic reference (<a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>).
+         </p>
+         <p class="para">For extensive examples of formatted <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-35f0.html"><span class="elementtag">&lt;season&gt;</span></a>s in <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+         <p class="para">Conversion Note: This is a rarely used element; a season should only be tagged if no other date is available.</p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  season       (#PCDATA)                                    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-rv20.html"><span class="elementtag">&lt;access-date&gt;</span></a> <a href="n-rv20.html"><span class="elementname">Access Date for Cited Work</span></a>; <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-qb50.html"><span class="elementtag">&lt;conf-date&gt;</span></a> <a href="n-qb50.html"><span class="elementname">Conference Date</span></a>; <a href="n-sha0.html"><span class="elementtag">&lt;date&gt;</span></a> <a href="n-sha0.html"><span class="elementname">Date</span></a>; <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-2is0.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-ay70.html"><span class="elementtag">&lt;pub-date&gt;</span></a> <a href="n-ay70.html"><span class="elementname">Publication Date</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a>; <a href="n-ybg0.html"><span class="elementtag">&lt;string-date&gt;</span></a> <a href="n-ybg0.html"><span class="elementname">Date as a String</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+...
+&lt;article-meta&gt;
+...
+&lt;title-group&gt;
+&lt;article-title&gt;Raptor Science&lt;/article-title&gt;
+&lt;subtitle&gt;Capturing Cosmological &amp;ldquo;Winks&amp;rdquo;&lt;/subtitle&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib&gt;
+&lt;name&gt;&lt;surname&gt;Fishbone&lt;/surname&gt;
+&lt;given-names&gt;Brian&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;pub-date pub-type="epub-ppub"&gt;
+<strong><span class="focus">&lt;season&gt;Fall&lt;/season&gt;</span></strong>
+&lt;year&gt;2003&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;...&lt;/volume&gt;
+...
+&lt;/article-meta&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

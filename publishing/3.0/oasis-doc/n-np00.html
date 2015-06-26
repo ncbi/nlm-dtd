@@ -1,0 +1,63 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Identifier</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">OASIS Open Exchange CALS Table Model (XML version)</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">id</h1>
+         <h1 class="attrname">Identifier</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Indicates the unique identifier for an associated element, so
+                   that the element&#8217;s content may be cross-referenced (<tt>ID</tt>s must be unique inside their document (not just within their element type), and the XML parser enforces this.)
+         </p>
+      </div>
+      <h2 class="header">Usage</h2>
+      <p class="para">The <tt>ID</tt> and <tt>IDREF</tt> attribute values constitute a primitive reference mechanism for XML. For example, when an <a href="n-np00.html"><span class="attrtag">id</span></a> attribute has been used on a <a href="n-mx00.html"><span class="elementtag">&lt;oasis:table&gt;</span></a> element, that identifier can be referenced by an <tt>IDREF</tt>-style attribute on a <tt>&lt;xref&gt;</tt> element, so that the full table can be pointed to and need not be repeated every time the character is used.
+      </p>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">An identifier string is typically 1-32 characters in
+                   length and must start with a letter of the alphabet. (It is an XML rule that identifiers may not start with a digit.)
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5 class="heading"><a href="n-mx00.html"><span class="elementtag">&lt;oasis:table&gt;</span></a> <a href="n-mx00.html"><span class="elementname">Table (OASIS Table Model)</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">An XML  identifier (ID)</td>
+                  <td class="attrmeaning">A unique identifier for the element. An XML parser can verify that an <tt>IDREF</tt>-style attribute pointing to one of these is pointing to a valid <tt>ID</tt>.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">OASIS Open Exchange CALS Table Model (XML version)</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,31 @@
+<mml:math><mml:semantics><mml:mrow><mml:mover accent='true'><mml:mi>S</mml:mi><mml:mo>&dot;</mml:mo></mml:mover><mml:mo stretchy='false'>(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy='false'>)</mml:mo><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mtext>d</mml:mtext><mml:mi>S</mml:mi></mml:mrow><mml:mrow><mml:mtext>d</mml:mtext><mml:mi>t</mml:mi></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mo>-</mml:mo><mml:munder><mml:mo>&sum;</mml:mo><mml:mi>m</mml:mi></mml:munder><mml:mrow><mml:msub><mml:mover accent='true'><mml:mi>p</mml:mi><mml:mo>&dot;</mml:mo></mml:mover><mml:mi>m</mml:mi></mml:msub><mml:mo stretchy='false'>(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy='false'>)</mml:mo><mml:mo>ln</mml:mo><mml:msub><mml:mi>p</mml:mi><mml:mi>m</mml:mi></mml:msub><mml:mo stretchy='false'>(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy='false'>)</mml:mo></mml:mrow><mml:mo>-</mml:mo><mml:munder><mml:mo>&sum;</mml:mo><mml:mi>m</mml:mi></mml:munder><mml:mrow><mml:msub><mml:mover accent='true'><mml:mi>p</mml:mi><mml:mo>&dot;</mml:mo></mml:mover><mml:mi>m</mml:mi></mml:msub><mml:mfrac><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>m</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>m</mml:mi></mml:msub></mml:mrow></mml:mfrac></mml:mrow><mml:mo>=</mml:mo><mml:mo>-</mml:mo><mml:munder><mml:mo>&sum;</mml:mo><mml:mi>m</mml:mi></mml:munder><mml:mrow><mml:msub><mml:mover accent='true'><mml:mi>p</mml:mi><mml:mo>&dot;</mml:mo></mml:mover><mml:mi>m</mml:mi></mml:msub><mml:mo>ln</mml:mo><mml:msub><mml:mi>p</mml:mi><mml:mi>m</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:semantics></mml:math>
+
+
+
+<p><?mtl hellip?><?mtl /hellip?> This can be seen in the following summation:
+<mml:math>
+<mml:semantics>
+<mml:mrow>
+<mml:munder>
+<mml:mo>&sum;</mml:mo>
+<mml:mi>m</mml:mi>
+</mml:munder>
+<mml:mrow>
+<mml:msub>
+<mml:mover accent='true'>
+<mml:mi>p</mml:mi>
+<mml:mo>&dot;</mml:mo>
+</mml:mover>
+<mml:mi>m</mml:mi>
+</mml:msub>
+<mml:mo>=</mml:mo>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+</mml:mrow>
+</mml:semantics>
+</mml:math>
+</p>
+
+
+<mml:math><mml:semantics><mml:mrow><mml:msub><mml:mi>w</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo stretchy='false'>(</mml:mo><mml:mi>q</mml:mi><mml:mo stretchy='false'>)</mml:mo><mml:mo>&gt;</mml:mo><mml:mn>0</mml:mn><mml:mtext> and </mml:mtext><mml:msub><mml:msup><mml:mi>w</mml:mi><mml:mo>&prime;</mml:mo></mml:msup><mml:mn>1</mml:mn></mml:msub><mml:mo stretchy='false'>(</mml:mo><mml:mi>q</mml:mi><mml:mo stretchy='false'>)</mml:mo><mml:mo>&gt;</mml:mo><mml:mn>0</mml:mn><mml:mtext> for all </mml:mtext><mml:mi>q</mml:mi></mml:mrow></mml:semantics></mml:math></equation>or<equation><mml:math><mml:semantics><mml:mrow><mml:msub><mml:mi>w</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo stretchy='false'>(</mml:mo><mml:mi>q</mml:mi><mml:mo stretchy='false'>)</mml:mo><mml:mo>&amp;lt;</mml:mo><mml:mn>0</mml:mn><mml:mtext> and </mml:mtext><mml:msub><mml:msup><mml:mi>w</mml:mi><mml:mo>&prime;</mml:mo></mml:msup><mml:mn>1</mml:mn></mml:msub><mml:mo stretchy='false'>(</mml:mo><mml:mi>q</mml:mi><mml:mo stretchy='false'>)</mml:mo><mml:mo>&amp;lt;</mml:mo><mml:mn>0</mml:mn><mml:mtext> for all </mml:mtext><mml:mi>q</mml:mi><mml:mo>.</mml:mo></mml:mrow></mml:semantics></mml:math>
+

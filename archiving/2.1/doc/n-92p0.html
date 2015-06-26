@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Parameter entity: Et Al Elements</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Archive 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="petag">%etal-elements;</h1>
+         <h1 class="pename">Et Al Elements</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Elements that can be included along with data characters inside the content model of an <a href="n-77u0.html"><span class="elementtag">&lt;etal&gt;</span></a> element
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Many journal DTDs model the <a href="n-77u0.html"><span class="elementtag">&lt;etal&gt;</span></a> element as <tt>EMPTY</tt>, that is, the element has no content. Such an  empty element is typically used as a place holder, for example, to generate
+            the text &#8220;et al.&#8221; via a stylesheet. In this DTD, the element is usually used as an empty element, but the DTD also accommodates
+            those journal DTDs (Blackwell&#8217;s, for example) which expect content inside <a href="n-77u0.html"><span class="elementtag">&lt;etal&gt;</span></a>, so the element is modeled with text content instead of as formally EMPTY and may contain text such as &#8220;Associates, co-workers,
+            and colleagues&#8221;.
+         </p>
+         <p class="para">Design Note: All inline mixes begin with an OR bar; since <a href="n-a5q0.html"><span class="petag">%just-rendition;</span></a> is an inline mix, the OR bar is already there and need not be added to <a href="n-92p0.html"><span class="petag">%etal-elements;</span></a>.
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header">Declaration</h2><pre class="contentdesc">&lt;!ENTITY % etal-elements
+                        "%just-rendition; "                          &gt;</pre></div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Archive 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

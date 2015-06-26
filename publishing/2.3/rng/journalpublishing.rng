@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ============================================================= -->
+<!--  MODULE:    Journal Publishing Relax NG Schema                -->
+<!--  VERSION:   2.3 (corresponds to the Journal Publishing DTD    -->
+<!--             version 2.3)                                      -->
+<!--  DATE:      March 2007                                        -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI Journal Publishing Relax NG Schema           -->
+<!--                                                               -->
+<!-- PURPOSE:    Relax NG Schema version of the DTD for creation   --> 
+<!--             of new journal articles                           -->
+<!--                                                               -->
+<!--             The Journal Publishing DTD (of which this is a    --> 
+<!--             derived version in Relax NG Schema XML syntax) is --> 
+<!--             a subset of the Journal Archiving and Interchange --> 
+<!--             DTD optimized for the authoring (or initial XML   --> 
+<!--             tagging) of journal articles and some non-article --> 
+<!--             material such as product and book reviews. It     -->
+<!--             describes both the metadata for a journal article -->
+<!--             and the full content of the article.              -->
+<!--                                                               -->
+<!--             This Schema was generated using automated methods -->
+<!--             from the corresponding version of the Journal     -->
+<!--             Publishing DTD. It is not intended to support     -->
+<!--             modification, extension, or maintenance of        -->
+<!--             document content models.                          -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             Digital Archive of Journal Articles               -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2005                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Wendell Piez (Mulberry Technologies, Inc.)        -->
+<!--                                                               -->
+<!--             Derived from the NLM/NCBI Journal Publishing DTD, -->
+<!--             available from http://dtd.nlm.nih.gov/publishing/ -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             the DTD, or this W3C XML Schema version of it,    -->
+<!--             should be sent in email to:                       -->
+<!--                 publishing-dtd@ncbi.nlm.nih.gov               -->
+<!--                                                               -->
+<!-- ============================================================= -->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <include href="journalpubcustom-classes.ent.rng"/>
+  <include href="default-classes.ent.rng"/>
+  <include href="journalpubcustom-mixes.ent.rng"/>
+  <include href="default-mixes.ent.rng"/>
+  <include href="journalpubcustom-models.ent.rng"/>
+  <include href="common.ent.rng"/>
+  <include href="articlemeta.ent.rng"/>
+  <include href="backmatter.ent.rng"/>
+  <include href="display.ent.rng"/>
+  <include href="format.ent.rng"/>
+  <include href="journalmeta.ent.rng"/>
+  <include href="link.ent.rng"/>
+  <include href="list.ent.rng"/>
+  <include href="math.ent.rng"/>
+  <include href="nlmcitation.ent.rng"/>
+  <include href="para.ent.rng"/>
+  <include href="phrase.ent.rng"/>
+  <include href="references.ent.rng"/>
+  <include href="section.ent.rng"/>
+  <include href="mathmlsetup.ent.rng"/>
+  <include href="XHTMLtablesetup.ent.rng"/>
+  <include href="chars.ent.rng"/>
+  <define name="article-types">
+    <choice>
+      <value>abstract</value>
+      <value>addendum</value>
+      <value>announcement</value>
+      <value>article-commentary</value>
+      <value>book-review</value>
+      <value>books-received</value>
+      <value>brief-report</value>
+      <value>calendar</value>
+      <value>case-report</value>
+      <value>collection</value>
+      <value>correction</value>
+      <value>discussion</value>
+      <value>dissertation</value>
+      <value>editorial</value>
+      <value>in-brief</value>
+      <value>introduction</value>
+      <value>letter</value>
+      <value>meeting-report</value>
+      <value>news</value>
+      <value>obituary</value>
+      <value>oration</value>
+      <value>other</value>
+      <value>partial-retraction</value>
+      <value>product-review</value>
+      <value>rapid-communication</value>
+      <value>reply</value>
+      <value>reprint</value>
+      <value>research-article</value>
+      <value>retraction</value>
+      <value>review-article</value>
+      <value>translation</value>
+    </choice>
+  </define>
+  <define name="dtd-version">
+    <optional>
+      <attribute name="dtd-version" a:defaultValue="2.3">
+        <value type="string" datatypeLibrary="">2.3</value>
+      </attribute>
+    </optional>
+  </define>
+  <define name="article-atts">
+    <optional>
+      <attribute name="article-type">
+        <choice>
+          <ref name="article-types"/>
+        </choice>
+      </attribute>
+    </optional>
+    <ref name="dtd-version"/>
+    <optional>
+      <attribute name="xml:lang" a:defaultValue="EN">
+        <data type="NMTOKEN"/>
+      </attribute>
+    </optional>
+    <ref name="XLINK.xmlns.attrib"/>
+    <ref name="MATHML.xmlns.attrib"/>
+    <ref name="Schema.xmlns.attrib"/>
+  </define>
+  <define name="sub-article-atts">
+    <optional>
+      <attribute name="article-type">
+        <choice>
+          <ref name="article-types"/>
+        </choice>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="id">
+        <data type="ID"/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="xml:lang" a:defaultValue="EN">
+        <data type="NMTOKEN"/>
+      </attribute>
+    </optional>
+  </define>
+  <define name="response-atts">
+    <optional>
+      <attribute name="response-type"/>
+    </optional>
+    <optional>
+      <attribute name="id">
+        <data type="ID"/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="xml:lang" a:defaultValue="EN">
+        <data type="NMTOKEN"/>
+      </attribute>
+    </optional>
+  </define>
+  <define name="article-short-model">
+    <choice>
+      <ref name="front"/>
+      <ref name="front-stub"/>
+    </choice>
+    <optional>
+      <ref name="body"/>
+    </optional>
+    <optional>
+      <ref name="back"/>
+    </optional>
+    <optional>
+      <ref name="floats-wrap"/>
+    </optional>
+  </define>
+  <define name="article-full-model">
+    <ref name="front"/>
+    <optional>
+      <ref name="body"/>
+    </optional>
+    <optional>
+      <ref name="back"/>
+    </optional>
+    <optional>
+      <ref name="floats-wrap"/>
+    </optional>
+    <choice>
+      <zeroOrMore>
+        <ref name="sub-article"/>
+      </zeroOrMore>
+      <zeroOrMore>
+        <ref name="response"/>
+      </zeroOrMore>
+    </choice>
+  </define>
+  <define name="article">
+    <element name="article">
+      <ref name="article-attlist"/>
+      <ref name="article-full-model"/>
+    </element>
+  </define>
+  <define name="article-attlist" combine="interleave">
+    <ref name="article-atts"/>
+  </define>
+  <define name="front-model">
+    <ref name="journal-meta"/>
+    <ref name="article-meta"/>
+    <optional>
+      <ref name="front-back.class"/>
+    </optional>
+  </define>
+  <define name="front">
+    <element name="front">
+      <ref name="front-attlist"/>
+      <ref name="front-model"/>
+    </element>
+  </define>
+  <define name="front-attlist" combine="interleave">
+    <empty/>
+  </define>
+  <define name="body-model">
+    <zeroOrMore>
+      <ref name="para-level"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="sec-level"/>
+    </zeroOrMore>
+    <optional>
+      <ref name="sig-block"/>
+    </optional>
+  </define>
+  <define name="body">
+    <element name="body">
+      <ref name="body-attlist"/>
+      <ref name="body-model"/>
+    </element>
+  </define>
+  <define name="body-attlist" combine="interleave">
+    <empty/>
+  </define>
+  <define name="back-model">
+    <zeroOrMore>
+      <ref name="title"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="doc-back-matter-mix"/>
+    </zeroOrMore>
+  </define>
+  <define name="back">
+    <element name="back">
+      <ref name="back-attlist"/>
+      <ref name="back-model"/>
+    </element>
+  </define>
+  <define name="back-attlist" combine="interleave">
+    <empty/>
+  </define>
+  <define name="sub-article-model">
+    <choice>
+      <ref name="front"/>
+      <ref name="front-stub"/>
+    </choice>
+    <optional>
+      <ref name="body"/>
+    </optional>
+    <optional>
+      <ref name="back"/>
+    </optional>
+    <optional>
+      <ref name="floats-wrap"/>
+    </optional>
+    <choice>
+      <zeroOrMore>
+        <ref name="sub-article"/>
+      </zeroOrMore>
+      <zeroOrMore>
+        <ref name="response"/>
+      </zeroOrMore>
+    </choice>
+  </define>
+  <define name="sub-article">
+    <element name="sub-article">
+      <ref name="sub-article-attlist"/>
+      <ref name="sub-article-model"/>
+    </element>
+  </define>
+  <define name="sub-article-attlist" combine="interleave">
+    <ref name="sub-article-atts"/>
+  </define>
+  <define name="front-stub-model">
+    <zeroOrMore>
+      <ref name="article-id"/>
+    </zeroOrMore>
+    <optional>
+      <ref name="title-group"/>
+    </optional>
+    <zeroOrMore>
+      <choice>
+        <ref name="contrib-group"/>
+        <ref name="aff"/>
+      </choice>
+    </zeroOrMore>
+    <optional>
+      <ref name="author-notes"/>
+    </optional>
+    <optional>
+      <choice>
+        <group>
+          <ref name="fpage"/>
+          <optional>
+            <ref name="lpage"/>
+          </optional>
+          <optional>
+            <ref name="page-range"/>
+          </optional>
+        </group>
+        <ref name="elocation-id"/>
+      </choice>
+    </optional>
+    <optional>
+      <ref name="history"/>
+    </optional>
+    <optional>
+      <ref name="permissions"/>
+    </optional>
+    <zeroOrMore>
+      <ref name="abstract"/>
+    </zeroOrMore>
+  </define>
+  <define name="front-stub">
+    <element name="front-stub">
+      <ref name="front-stub-attlist"/>
+      <ref name="front-stub-model"/>
+    </element>
+  </define>
+  <define name="front-stub-attlist" combine="interleave">
+    <empty/>
+  </define>
+  <define name="response">
+    <element name="response">
+      <ref name="response-attlist"/>
+      <ref name="article-short-model"/>
+    </element>
+  </define>
+  <define name="response-attlist" combine="interleave">
+    <ref name="response-atts"/>
+  </define>
+  <start>
+    <choice>
+      <ref name="article"/>
+      <ref name="overline-start"/>
+      <ref name="string-name"/>
+      <ref name="font"/>
+      <ref name="underline-end"/>
+      <ref name="string-date"/>
+      <ref name="underline-start"/>
+      <ref name="x"/>
+      <ref name="overline-end"/>
+    </choice>
+  </start>
+  <define name="any">
+    <zeroOrMore>
+      <choice>
+        <element>
+          <anyName/>
+          <ref name="any"/>
+        </element>
+        <text/>
+      </choice>
+    </zeroOrMore>
+  </define>
+</grammar>

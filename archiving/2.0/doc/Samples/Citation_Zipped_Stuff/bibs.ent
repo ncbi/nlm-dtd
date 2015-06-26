@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+<no>VI.</no>
+   <title>Bibliographies</title>
+   <reflist>
+      <reflist>
+         <title>1. Standard citation - </title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="compiler">
+                  <name>
+                     <surname>Frayser</surname>
+                     <given-names>Susanne G</given-names>
+                  </name>
+                  <name>
+                     <surname>Whitby</surname>
+                     <given-names>Thomas J</given-names>
+                  </name>
+               </person-group>
+               <atitle>Table 1, Femal age at first marriage, by marriage cohort</atitle>
+               <source>Studies in human sexuality: a selected guide [bibliography]</source>
+               <year>1987</year>
+               <publisher-loc>Littleton (CO)</publisher-loc>
+               <publisher-name>Libraries Unlimited</publisher-name>
+               <lpage>442</lpage>
+               <other-ref>627 citations. Author, title, and subject indexes</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>2. Organization as compiler - </title>
+         <ref>
+            <citation citation-type="book">
+               <collab collab-type="compilers">Coppa &amp; Avery Consultants</collab>
+               <source>Architectural design for hospitals: hospital planning, ward design and efficiency, out-patient, accident and emergency departments [bibliography]</source>
+               <year>1979</year>
+               <month>12</month>
+               <publisher-loc>Monticello (IL)</publisher-loc>
+               <publisher-name>Vance Bibliographies</publisher-name>
+               <lpage>9</lpage>
+               <other-ref>(Architecture series; no. A148). 124 citations</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>3. Compiler and editor - </title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="compiler">
+                  <name>
+                     <surname>Abrams</surname>
+                     <given-names>Estelle</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Patrias</surname>
+                     <given-names>Karen</given-names>
+                  </name>
+               </person-group>
+               <source>AIDS Bibliography 1986-1987</source>
+               <year>1987</year>
+               <month>6</month>
+               <publisher-loc>[Bethesda (MD)]</publisher-loc>
+               <publisher-name>National Library of Medicine, Reference Section</publisher-name>
+               <lpage>200</lpage>
+               <series>Specialized bibliography series; 1987-2</series>
+               <other-ref>Prepared in conjunction with the 3rd International Conference on AIDS, Washington, DC, June 1-5, 1987</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+   </reflist>
+
+</chapter>

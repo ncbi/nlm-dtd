@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<article>
+<front><?mtl hellip?>
+<journal-meta>
+<journal-id>Fake Journal ID for Contract Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta><?mtl /hellip?>
+<article-meta><?mtl hellip?>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group><?mtl /hellip?>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+<kwd-group><?mtl hellip?><kwd></kwd><?mtl /hellip?></kwd-group>
+<contract-num>NSF DBI-0317510</contract-num>
+<contract-sponsor>ARDA AQUAINT</contract-sponsor>
+<counts><?mtl hellip?><?mtl /hellip?></counts>
+</article-meta>
+</front>
+<body><?mtl hellip?><p></p><?mtl /hellip?></body>
+<back>
+<ack>
+<p>... Part of the research at Stanford was supported by NIH GM61374. 
+The Berkeley portion of this research was supported by NSF DBI-0317510, 
+an ARDA AQUAINT contract, and a gift from Genentech Corp.</p>
+</ack>
+<?mtl hellip?><ref-list><ref><citation></citation></ref></ref-list><?mtl /hellip?>
+</back>
+</article>

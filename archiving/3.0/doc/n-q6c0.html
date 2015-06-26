@@ -1,0 +1,155 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Element: Article</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;article&gt;</h1>
+         <h1 class="elementname">Article</h1>
+      </div>
+      <div class="definition">
+         <p class="para">A journal article; the top-level element (document element) of the Archiving Tag Set, which contains all the metadata and
+            content for the article 
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element can be used to describe not only typical journal articles (research articles) but also much of the non-article
+            content within a journal, such as book and product reviews, editorials, commentaries, and news summaries. 
+            
+         </p>
+         <p class="para"> For a detailed discussion on tagging book reviews and similar articles, see <a href="n-v872.html#tag-review">Tagging Book or Product Reviews</a>. For a detailed discussion on the tagging of letters and responses in an article, see <a href="n-wx72.html#tag-letter">Letters and Replies</a>. For a detailed discussion on the use of <span class="elementtag">&lt;sub-article&gt;</span>s within a main article, see <a href="n-av72.html#tag-subarticle">Sub-articles to an Article</a>.
+            
+         </p>
+         <p class="para">A journal article <a href="n-q6c0.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a> may be divided into several components: 
+            
+            <ol class="olist">
+               <li>the <a href="n-7nv0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> (the article metadata or header information, which contains both journal and article metadata); 
+                  
+               </li>
+               <li>the <a href="n-4b30.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a> (the textual and graphical content of the article); 
+                  
+               </li>
+               <li>any <a href="n-jd30.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a> (any ancillary information such as a glossary, reference list, or appendix); 
+                  
+               </li>
+               <li>a <a href="n-rvv0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a> (single container element some publishers and archives use to hold all floating elements such as figures and tables that
+                  are referenced in the article body or back matter); and 
+                  
+               </li>
+               <li>either a series of <a href="n-g8d0.html" target="main" title="Response"><span class="elementtag">&lt;response&gt;</span></a> elements or a series of <a href="n-dmi0.html" target="main" title="Sub-article"><span class="elementtag">&lt;sub-article&gt;</span></a> elements. (A <a href="n-g8d0.html" target="main" title="Response"><span class="elementtag">&lt;response&gt;</span></a> is a commentary on the article itself, such as a summation by an editor, an answer to a letter-article, or words from the
+                  author responding to peer-review comments. Sub-articles are articles such as news pieces, abstracts, or committee reports
+                  that are completely contained within a main article.)
+               </li>
+            </ol>
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-v990.html" target="main"><span class="attrtag">article-type</span></a> <a href="n-v990.html" target="main"><span class="attrname">Type of Article</span></a></h5>
+         <h5 class="header"><a href="n-k8z0.html" target="main"><span class="attrtag">dtd-version</span></a> <a href="n-k8z0.html" target="main"><span class="attrname">Version of the Tag Set (DTD)</span></a></h5>
+         <h5 class="header"><a href="n-jjc2.html" target="main"><span class="attrtag">xmlns:mml</span></a> <a href="n-jjc2.html" target="main"><span class="attrname">MathML Namespace Declaration</span></a></h5>
+         <h5 class="header"><a href="n-dpc2.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-dpc2.html" target="main"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+         <h5 class="header"><a href="n-4bc2.html" target="main"><span class="attrtag">xmlns:xsi</span></a> <a href="n-4bc2.html" target="main"><span class="attrname">XML Schema Namespace Declaration</span></a></h5>
+         <h5 class="header"><a href="n-u9c2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-u9c2.html" target="main"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  article      <a href="n-ym32.html" target="main" title="Article Model with Sub-article or Response"><span class="petag">%article-full-model;</span></a>                         &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">(front, body?, back?, floats-group?, 
+(sub-article* | response*))</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-7nv0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> <a href="n-7nv0.html" target="main" title="<front&gt;"><span class="elementname">Front Matter</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-4b30.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a> <a href="n-4b30.html" target="main" title="<body&gt;"><span class="elementname">Body of the Article</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-jd30.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-jd30.html" target="main" title="<back&gt;"><span class="elementname">Back Matter</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-rvv0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a> <a href="n-rvv0.html" target="main" title="<floats-group&gt;"><span class="elementname">Floating Element Group</span></a>, zero or one
+               </li>
+               <li>Any one of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-dmi0.html" target="main" title="Sub-article"><span class="elementtag">&lt;sub-article&gt;</span></a> <a href="n-dmi0.html" target="main" title="<sub-article&gt;"><span class="elementname">Sub-article</span></a>, zero or more
+                     </li>
+                     <li>
+                        <a href="n-g8d0.html" target="main" title="Response"><span class="elementtag">&lt;response&gt;</span></a> <a href="n-g8d0.html" target="main" title="<response&gt;"><span class="elementname">Response</span></a>, zero or more
+                     </li>
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This top-level element may not be contained in any other elements.</h3>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+<strong><span class="focus">&lt;article&gt;
+&lt;front&gt;
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital care
+for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;aff&gt;Department of Health Care for the Elderly,
+St Luke&amp;#x2019;s Hospital, Bradford BD5 0NA&lt;/aff&gt;
+&lt;author-comment&gt;
+&lt;p&gt;Competing interests: None declared.&lt;/p&gt;
+...
+&lt;/author-comment&gt;
+&lt;/contrib&gt;
+...
+&lt;/contrib-group&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British Medical
+Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;...&lt;/abstract&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/article&gt;</span></strong>
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">archivearticle3.dtd</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for NLM Citation Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+</article-meta>
+</front>
+<body>
+<?mtl /hellip?>
+<p>
+<disp-quote>
+<p>It may metaphorically be said that natural selection is daily
+and hourly scrutinizing, throughout the world, the slightest variations;
+rejecting those that are bad, preserving and adding up all that are
+good; silently and insensibly working, whenever and wherever opportunity
+offers, at the improvement of each organic being in relation to its
+organic and inorganic conditions of life. We see nothing of these slow
+changes in progress, until the hand of time has marked the lapse of
+ages.</p>
+<attrib>&#x2014;Charles Darwin (<xref ref-type="bibr"
+rid="B1">1</xref>)</attrib>
+</disp-quote>
+</p>
+<p>The study of adaptive behaviors ... </p>
+<?mtl hellip?>
+</body>
+<back><ref-list><ref id="B1"><citation>A ref</citation></ref></ref-list></back>
+</article>
+<?mtl /hellip?>
+

@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+<no>II.</no>
+   <title>Books</title>
+   <reflist>
+      <title>A. Entire Books</title>
+      <reflist>
+         <title>1. Authors with full first names given</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Ohlsen</surname>
+                     <given-names>Merle M</given-names>
+                  </name>
+                  <name>
+                     <surname>Horne</surname>
+                     <given-names>Arthur M</given-names>
+                  </name>
+                  <name>
+                     <surname>Lowe</surname>
+                     <given-names>Charles F</given-names>
+                  </name>
+               </person-group>
+               <source>Group counseling</source>
+               <year>1988</year>
+               <publisher-loc>New York</publisher-loc>
+               <publisher-name>Holt, Rinehart, and Winston</publisher-name>
+               <lpage>416</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>2. Authors with optional initials</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Ohlsen</surname>
+                     <given-names>MM</given-names>
+                  </name>
+                  <name>
+                     <surname>Horne</surname>
+                     <given-names>AM</given-names>
+                  </name>
+                  <name>
+                     <surname>Lowe</surname>
+                     <given-names>CF</given-names>
+                  </name>
+               </person-group>
+               <source>Group counseling</source>
+               <year>1988</year>
+               <publisher-loc>New York</publisher-loc>
+               <publisher-name>Holt, Rinehart, and Winston</publisher-name>
+               <lpage>416</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>3. More than three authors -</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Kiloh</surname>
+                     <given-names>Leslie G</given-names>
+                  </name>
+                  <name>
+                     <surname>Smith</surname>
+                     <given-names>John S</given-names>
+                  </name>
+                  <name>
+                     <surname>Johnson</surname>
+                     <given-names>Gordon F</given-names>
+                  </name>
+                  <etal/>
+               </person-group>
+               <source>Physical treatment in psychiatry</source>
+               <year>1988</year>
+               <publisher-loc>Boston</publisher-loc>
+               <publisher-name>Blackwell Scientific Pubs.</publisher-name>
+               <lpage>478</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>4. Editors</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Diener</surname>
+                     <given-names>Hans-Christoph</given-names>
+                  </name>
+                  <name>
+                     <surname>Wilkinson</surname>
+                     <given-names>Marcia</given-names>
+                  </name>
+               </person-group>
+               <source>Drug-induced headache</source>
+               <year>1988</year>
+               <publisher-loc>New York</publisher-loc>
+               <publisher-name>Springer-Verlag</publisher-name>
+               <lpage>173</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>5. Author(s) and editor(s)/translator(s)</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Martin</surname>
+                     <given-names>Eric W</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Ruskin</surname>
+                     <given-names>Arthur</given-names>
+                  </name>
+                  <name>
+                     <surname>Napke</surname>
+                     <given-names>Edward</given-names>
+                  </name>
+                  <name>
+                     <surname>Alexander</surname>
+                     <given-names>Stuart F</given-names>
+                  </name>
+                  <etal/>
+               </person-group>
+               <source>Hazards of medication</source>
+               <year>1978</year>
+               <edition>2nd ed</edition>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Lippincott</publisher-name>
+               <lpage>686</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Grewe</surname>
+                     <given-names>Horst-Eberhard</given-names>
+                  </name>
+                  <name>
+                     <surname>Kremer</surname>
+                     <given-names>Karl</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="translator">
+                  <name>
+                     <surname>Rotzcher</surname>
+                     <given-names>Volker M</given-names>
+                  </name>
+                  <name>
+                     <surname>Zammit</surname>
+                     <given-names>Anthony</given-names>
+                  </name>
+               </person-group>
+               <source>Atlas of surgical operations</source>
+               <year>1980</year>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Saunders</publisher-name>
+               <other-ref>2 vols</other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Richer</surname>
+                     <given-names>Paul M</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="transed">
+                  <name>
+                     <surname>Hale</surname>
+                     <given-names>Robert B</given-names>
+                  </name>
+               </person-group>
+               <source>Artistic anatomy</source>
+               <year>[1971]</year>
+               <publisher-loc>NewYork</publisher-loc>
+               <publisher-name>Watson-Guptill</publisher-name>
+               <lpage>255</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Luzikov</surname>
+                     <given-names>Valentin N</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="translator">
+                  <name>
+                     <surname>Galkin</surname>
+                     <given-names>Alexander V</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Roodyn</surname>
+                     <given-names>Donald B</given-names>
+                  </name>
+               </person-group>
+               <source>Mitochondrial biogenesis and breakdown</source>
+               <year>1985</year>
+               <publisher-loc>NewYork</publisher-loc>
+               <publisher-name>Consultants Bureau</publisher-name>
+               <lpage>362</lpage>
+               <other-ref>Translation of: Reguliatsiia formirovaniia mitokhondrii</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>6. Organization as author, with place added for clarity</title>
+         <ref>
+            <citation citation-type="book">
+               <collab>Beth Israel Hospital (Boston)</collab>
+               <source>Obstetrical decision making</source>
+               <year>1987</year>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>B.C. Decker</publisher-name>
+               <lpage>320</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>7. Organization as author, with subsidiary department/division named</title>
+         <ref>
+            <citation citation-type="book">
+               <collab>American Occupational Therapy Association, Ad Hoc Committee on Occupational Therapy Manpower</collab>
+               <source>Occupational therapy manpower: a plan for progress</source>
+               <year>1985</year>
+               <month>Apr</month>
+               <publisher-loc>Rockville (MD)</publisher-loc>
+               <publisher-name>The Association</publisher-name>
+               <lpage>84</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>8. Organization as author which is also the publisher</title>
+         <ref>
+            <citation citation-type="book">
+               <collab>Virginia Law Foundation</collab>
+               <source>The medical and legal implications of AIDS</source>
+               <year>1987</year>
+               <publisher-loc>Charlottesville</publisher-loc>
+               <publisher-name>The Foundation</publisher-name>
+               <lpage>148</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>10. Multiple organizations as authors</title>
+         <ref>
+            <citation citation-type="book">
+               <collab>National Lawyers Guild AIDS Network</collab>
+               <collab>National Gay Rights Advocates</collab>
+               <source>AIDS practice manual: a legal and educational guide</source>
+               <year>1988</year>
+               <edition>2nd ed</edition>
+               <publisher-loc>San Francisco</publisher-loc>
+               <publisher-name>The Network</publisher-name>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>11. No authors or editors</title>
+         <ref>
+            <citation citation-type="book">
+               <source>Directory of AIDS resources in the metropolitan Washington, D.C. area</source>
+               <year>1998</year>
+               <publisher-loc>Washington</publisher-loc>
+               <publisher-name>WTTG Television</publisher-name>
+               <lpage>30</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>12. Title in a language other than English, with translation</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Hartmeier</surname>
+                     <given-names>Winifried</given-names>
+                  </name>
+               </person-group>
+               <source xml:lang="de">Immobilisierte Biokatalysstoren</source>
+               <trans-source>Immobilized biocatalysts</trans-source>
+               <year>1988</year>
+               <publisher-loc>Berlin</publisher-loc>
+               <publisher-name>Springer-Verlag</publisher-name>
+               <lpage>212</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>14. Edition</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Colson</surname>
+                     <given-names>John H</given-names>
+                  </name>
+                  <name>
+                     <surname>Armour</surname>
+                     <given-names>William J</given-names>
+                  </name>
+               </person-group>
+               <source>Sports injuries and their treatment</source>
+               <year>1986</year>
+               <edition>2nd rev. ed</edition>
+               <publisher-loc>London</publisher-loc>
+               <publisher-name>S. Paul</publisher-name>
+               <lpage>240</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Wicke</surname>
+                     <given-names>Lothar</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="transed">
+                  <name>
+                     <surname>Taylor</surname>
+                     <given-names>Anna N</given-names>
+                  </name>
+               </person-group>
+               <source>Atlas of radiologic anatomy</source>
+               <year>1987</year>
+               <edition>4th English ed</edition>
+               <publisher-loc>Munich</publisher-loc>
+               <publisher-name>Urban &amp; Schwarzenberg</publisher-name>
+               <lpage>288</lpage>
+               <other-ref>Translation of: Atlas der Rontegenanatomie</other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Albers</surname>
+                     <given-names>Josef</given-names>
+                  </name>
+               </person-group>
+               <source>Interaction of color</source>
+               <year>1975</year>
+               <edition>Rev. pocket ed</edition>
+               <publisher-loc>New Haven</publisher-loc>
+               <publisher-name>Yale University Press</publisher-name>
+               <lpage>81</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>15. Place of publication with geographic qualifier added for clarity -</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Bordelon</surname>
+                     <given-names>Luke</given-names>
+                  </name>
+               </person-group>
+               <source>Surgical and conservative foot care</source>
+               <year>1988</year>
+               <publisher-loc>Thorofare (NJ)</publisher-loc>
+               <publisher-name>Stack</publisher-name>
+               <lpage>185</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>16. No place of publication found</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Mueller</surname>
+                     <given-names>FO</given-names>
+                  </name>
+                  <name>
+                     <surname>Schindler</surname>
+                     <given-names>RD</given-names>
+                  </name>
+               </person-group>
+               <source>Annual survey of football injury research 1931-1985</source>
+               <year>1986</year>
+               <publisher-loc>[place unknown]</publisher-loc>
+               <publisher-name>American Football Coaches Assn</publisher-name>
+               <lpage>24</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>17. Publisher with subsidiary department/division named</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Allison</surname>
+                     <given-names>Margaret</given-names>
+                  </name>
+                  <name>
+                     <surname>Hubbard</surname>
+                     <given-names>Robert L</given-names>
+                  </name>
+                  <name>
+                     <surname>Rachal</surname>
+                     <given-names>JV</given-names>
+                  </name>
+               </person-group>
+               <source>Treatment process in methadone, residential, and outpatient drug free programs</source>
+               <year>1985</year>
+               <publisher-loc>Rockville (MD)</publisher-loc>
+               <publisher-name>National Institute on Drug Abue, Division of Clinical Research</publisher-name>
+               <lpage>89</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>18. No publisher found</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Sciarra</surname>
+                     <given-names>C</given-names>
+                  </name>
+               </person-group>
+               <source xml:lang="it">Harvey Cushing fondatore della neurochirurgia</source>
+               <year>1971</year>
+               <publisher-loc>Rome</publisher-loc>
+               <publisher-name>[publisher unknown]</publisher-name>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>19. No date of publication found -</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Lederer</surname>
+                     <given-names>Jean</given-names>
+                  </name>
+               </person-group>
+               <source>Alimentation et cancer</source>
+               <year>[date unknown]</year>
+               <edition>3rd ed</edition>
+               <publisher-loc>Brussels</publisher-loc>
+               <publisher-name>Nauwelaerts</publisher-name>
+               <lpage>315</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>20. No place, publisher, or date of publication found</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Steriu</surname>
+                     <given-names>D</given-names>
+                  </name>
+                  <name>
+                     <surname>Stefanoiu</surname>
+                     <given-names>V</given-names>
+                  </name>
+               </person-group>
+               <source>Terapia si combaterea zoonozelor parazitare</source>
+               <year>[date unknown]</year>
+               <publisher-loc>[place unknown]</publisher-loc>
+               <publisher-name>[publisher unknown]</publisher-name>
+               <lpage>205</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>21. Published in more than one volume</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Reinberg</surname>
+                     <given-names>Ellis L</given-names>
+                  </name>
+               </person-group>
+               <source>Leukocyte typing II</source>
+               <year>1986</year>
+               <publisher-loc>New York</publisher-loc>
+               <publisher-name>Springer-Verlag</publisher-name>
+               <other-ref>3 vol</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>22. Series, with number given</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Loewy</surname>
+                     <given-names>Erich H.</given-names>
+                  </name>
+               </person-group>
+               <source>Ethical dilemmas in modern medicine</source>
+               <year>1986</year>
+               <publisher-loc>Lewiston (NY)</publisher-loc>
+               <publisher-name>E. Mellen Press</publisher-name>
+               <lpage>343</lpage>
+               <series>Studies in health and human services; 8</series>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>23. Published also as a journal article </title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="guest-editor">
+                  <name>
+                     <surname>Fowler</surname>
+                     <given-names>Susan A</given-names>
+                  </name>
+                  <name>
+                     <surname>Baer</surname>
+                     <given-names>Donald M</given-names>
+                  </name>
+                  <name>
+                     <surname>Stolz</surname>
+                     <given-names>Stephanie B</given-names>
+                  </name>
+               </person-group>
+               <source>Self-management tactics for the developmentally disabled</source>
+               <year>1984</year>
+               <publisher-loc>New York</publisher-loc>
+               <publisher-name>Pergamon Press</publisher-name>
+               <lpage>133</lpage>
+               <other-ref>(Analysis and intervention in developmental disabilities: vol. 4, no. 2)</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>24. Series, with editor</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Gottschalk</surname>
+                     <given-names>Alexander</given-names>
+                  </name>
+                  <name>
+                     <surname>Hoffer</surname>
+                     <given-names>Paul B</given-names>
+                  </name>
+                  <name>
+                     <surname>Potchen</surname>
+                     <given-names>E. James</given-names>
+                  </name>
+               </person-group>
+               <source>Diagnostic nuclear medicine</source>
+               <year>1988</year>
+               <edition>2nd ed</edition>
+               <publisher-loc>Baltimore</publisher-loc>
+               <publisher-name>Williams and Wilkins</publisher-name>
+               <other-ref>2 vols. (Harris, John H., Jr., editor. Golden's diagnostic radiology series)</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>25. Microform -</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Allen</surname>
+                     <given-names>William K</given-names>
+                  </name>
+               </person-group>
+               <source>Lactate threshold in masters atheletes as compared to young athletes [microfiche]</source>
+               <year>1983</year>
+               <publisher-loc>Eugene (OR)</publisher-loc>
+               <publisher-name>University of Oregon Microform Publications</publisher-name>
+               <lpage>58</lpage>
+               <other-ref>1 microfiche: 4 x 6 in</other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <collab>Jewish Theological Seminary of America, Library</collab>
+               <source xml:lang="he">The history of science: a collection of manuscripts from the Library of the Jewish Theological Seminary of America [microfilm]</source>
+               <year>1980</year>
+               <publisher-loc>Ann Arbor (MI)</publisher-loc>
+               <publisher-name>University Microfilms International</publisher-name>
+               <other-ref>17 reels: 35mm</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>26. Supplemental note</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>McRae</surname>
+                     <given-names>Jackie</given-names>
+                  </name>
+               </person-group>
+               <source>AIDS, agencies and drug abuse: the Edinburgh experience</source>
+               <year>1989</year>
+               <publisher-loc>Norwich (England)</publisher-loc>
+               <publisher-name>Social Works Monographs</publisher-name>
+               <lpage>40</lpage>
+               <other-ref>Revised version of a dissertation originally submitted as part of an MSc. in applied social studies at Oxford University</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      </reflist>
+      <reflist>
+         <title>B. Parts of Books</title>
+      <reflist>
+         <title>1. One volume of a book cited, in which the volume has no separate title</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Harley</surname>
+                     <given-names>Robinson</given-names>
+                  </name>
+               </person-group>
+               <source>Pediatric opthamology</source>
+               <year>1983</year>
+               <volume>Vol. 1</volume>
+               <edition>2nd ed</edition>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Saunders</publisher-name>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Lennox</surname>
+                     <given-names>William G</given-names>
+                  </name>
+               </person-group>
+               <source>Epilepsy and related disorders</source>
+               <year>1960</year>
+               <volume>Vol. 1</volume>
+               <publisher-loc>Boston</publisher-loc>
+               <publisher-name>Little Brown</publisher-name>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>2. One volume of a book cited, in which the volume has a separate title</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Rombeau</surname>
+                     <given-names>John L</given-names>
+                  </name>
+                  <name>
+                     <surname>Caldwell</surname>
+                     <given-names>Michael D</given-names>
+                  </name>
+               </person-group>
+               <source>Parenteral nutrition</source>
+               <year>1986</year>
+               <volume>Vol. 2, Clinical nutrition</volume>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Saunders</publisher-name>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Leiber</surname>
+                     <given-names>Bernfried</given-names>
+                  </name>
+                  <name>
+                     <surname>Olbrich</surname>
+                     <given-names>Gertrud</given-names>
+                  </name>
+               </person-group>
+               <source xml:lang="DE">Die klinischen Syndrome</source>
+               <trans-source>The clinical syndromes. Vol. 1, Syndromes</trans-source>
+               <year>1966</year>
+               <volume>Vol. 1, Syndrome</volume>
+               <publisher-loc>Munich</publisher-loc>
+               <publisher-name>Urban and Schwarzenberg</publisher-name>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>3. One volume of a book cited, for which editors/translators are listed</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Ramon Cajal</surname>
+                     <given-names>S</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="transed">
+                  <name>
+                     <surname>May</surname>
+                     <given-names>Raoul M</given-names>
+                  </name>
+               </person-group>
+               <source>Degeneration and regenerations of the nervous system</source>
+               <year>1959</year>
+               <volume>Vol. 1</volume>
+               <publisher-loc>New York</publisher-loc>
+               <publisher-name>Hafner</publisher-name>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Grewe</surname>
+                     <given-names>Horst-Eberhard</given-names>
+                  </name>
+                  <name>
+                     <surname>Kremer</surname>
+                     <given-names>Karl</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="translator">
+                  <name>
+                     <surname>Rotzcher</surname>
+                     <given-names>Volker M</given-names>
+                  </name>
+                  <name>
+                     <surname>Zammit</surname>
+                     <given-names>Anthony</given-names>
+                  </name>
+               </person-group>
+               <source>Atlas of surgical operations</source>
+               <year>1980</year>
+               <volume>Vol. 2, Abdomen, urogenital tract, nervous system, vertebral column</volume>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Saunders</publisher-name>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>4. A chapter/part of a book cited, in which the chapter/part has no separate title</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Bagby</surname>
+                     <given-names>George</given-names>
+                  </name>
+               </person-group>
+               <atitle>Chapter 2</atitle>
+               <source>Honest, reliable corpse</source>
+               <year>1969</year>
+               <publisher-loc>Garden City (NY)</publisher-loc>
+               <publisher-name>Doubleday</publisher-name>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>5. A chapter/part of a book cited, in which the chapter/part has a separate title</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cassidy</surname>
+                     <given-names>James T</given-names>
+                  </name>
+                  <name>
+                     <surname>Petty</surname>
+                     <given-names>Ross E</given-names>
+                  </name>
+               </person-group>
+               <atitle>Chapter 3, Basic concepts of drug therapy</atitle>
+               <source>Textbook of pediatric rheumatology</source>
+               <year>1990</year>
+               <edition>2nd ed</edition>
+               <publisher-loc>NewYork</publisher-loc>
+               <publisher-name>Churchill-Livingstone</publisher-name>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Hebel</surname>
+                     <given-names>Rudolf</given-names>
+                  </name>
+                  <name>
+                     <surname>Stromberg</surname>
+                     <given-names>MW</given-names>
+                  </name>
+               </person-group>
+               <atitle>Part C, Digestive system</atitle>
+               <source>Anatomy of the laboratory rat</source>
+               <year>1976</year>
+               <publisher-loc>Baltimore</publisher-loc>
+               <publisher-name>Williams and Wilkins</publisher-name>
+               <fpage>43</fpage>
+               <lpage>54</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Acha</surname>
+                     <given-names>Pedro N</given-names>
+                  </name>
+                  <name>
+                     <surname>Szyfres</surname>
+                     <given-names>Boris</given-names>
+                  </name>
+               </person-group>
+               <atitle>Listeriosis</atitle>
+               <source>Zoonoses and communicable diseases common to man and animals</source>
+               <year>1987</year>
+               <edition>2nd ed</edition>
+               <publisher-loc>Washington</publisher-loc>
+               <publisher-name>Pan American Health Organization</publisher-name>
+               <fpage>105</fpage>
+               <lpage>111</lpage>
+               <series>Scientific Publication; no. 503</series>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Coleman</surname>
+                     <given-names>James C</given-names>
+                  </name>
+                  <name>
+                     <surname>Butcher</surname>
+                     <given-names>James N</given-names>
+                  </name>
+                  <name>
+                     <surname>Carson</surname>
+                     <given-names>Robert C</given-names>
+                  </name>
+               </person-group>
+               <atitle>Peptic ulcers</atitle>
+               <source>Abnormal psychology and modern life</source>
+               <year>1984</year>
+               <edition>7th ed</edition>
+               <publisher-loc>Glenview (IL)</publisher-loc>
+               <publisher-name>Scott, Foresman</publisher-name>
+               <fpage>279</fpage>
+               <lpage>280</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Magalini</surname>
+                     <given-names>Sergio I</given-names>
+                  </name>
+                  <name>
+                     <surname>Magalini</surname>
+                     <given-names>Sabrina C</given-names>
+                  </name>
+                  <name>
+                     <surname>de Francisci</surname>
+                     <given-names>Giovanni</given-names>
+                  </name>
+               </person-group>
+               <atitle>Dean-Barnes</atitle>
+               <source>Dictionary of medical syndromes</source>
+               <year>1990</year>
+               <edition>3rd ed</edition>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Lippincott</publisher-name>
+               <fpage>230</fpage>
+               <lpage>231</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <atitle>Births and dates by states and regions</atitle>
+               <source>The world almanac and book of facts</source>
+               <year>1990</year>
+               <publisher-loc>New York</publisher-loc>
+               <publisher-name>World Almanac</publisher-name>
+               <fpage>835</fpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Berkow</surname>
+                     <given-names>Robert</given-names>
+                  </name>
+                  <name>
+                     <surname>Fletcher</surname>
+                     <given-names>Andrew J</given-names>
+                  </name>
+               </person-group>
+               <atitle>Blood transfusion</atitle>
+               <source>The Merck manual of diagnosis and therapy</source>
+               <year>1987</year>
+               <edition>15th ed</edition>
+               <publisher-loc>Rahway (NJ)</publisher-loc>
+               <publisher-name>Merck Sharp and Dohme Research Laboratories</publisher-name>
+               <fpage>1124</fpage>
+               <lpage>1137</lpage>
+               <annotation>Note: See also Chapter XIII. Classic Material</annotation>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <atitle>Hypoplasia</atitle>
+               <source>Stedman's medical dictionary</source>
+               <year>1989</year>
+               <edition>25th ed</edition>
+               <publisher-loc>Baltimore</publisher-loc>
+               <publisher-name>Williams and Wilkins</publisher-name>
+               <fpage>753</fpage>
+               <annotation>Note: See also Chapter XIII. Classic Material</annotation>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Sissons</surname>
+                     <given-names>Hubert A</given-names>
+                  </name>
+                  <name>
+                     <surname>Murray</surname>
+                     <given-names>Ronald O</given-names>
+                  </name>
+                  <name>
+                     <surname>Kemp</surname>
+                     <given-names>HBS</given-names>
+                  </name>
+               </person-group>
+               <atitle>Figure 1.3, Stress fractures of the spine</atitle>
+               <source>Orthopaedic diagnosis: clinical, radiological, and pathological coordinates</source>
+               <year>1984</year>
+               <publisher-loc>Berlin</publisher-loc>
+               <publisher-name>Springer-Verlag</publisher-name>
+               <fpage>236</fpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Marsden</surname>
+                     <given-names>CD</given-names>
+                  </name>
+                  <name>
+                     <surname>Fowler</surname>
+                     <given-names>Timothy J</given-names>
+                  </name>
+               </person-group>
+               <atitle>Table 3.4, Differences between upper and lower motor neuron lesions</atitle>
+               <source>Clinical neurology</source>
+               <year>1989</year>
+               <publisher-loc>London</publisher-loc>
+               <publisher-name>Edward Arnold</publisher-name>
+               <fpage>79</fpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>6. A chapter/part of a book cited within a separate volume, in which the volume has no separate title</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Turek</surname>
+                     <given-names>Samuel L</given-names>
+                  </name>
+               </person-group>
+               <atitle>Chapter 23, The shoulder</atitle>
+               <source>Orthopaedics: principles and their application</source>
+               <year>1984</year>
+               <volume>Vol. 2</volume>
+               <edition>4th ed</edition>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Lippincott</publisher-name>
+               <fpage>920</fpage>
+               <lpage>966</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>7. A chapter/part of a book cited within a separate volume, in which the volume has a separate title</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Shakelford</surname>
+                     <given-names>Richard T</given-names>
+                  </name>
+               </person-group>
+               <atitle>Chapter 3, Esophagoscopy</atitle>
+               <source>Surgery of the alimentary tract</source>
+               <year>1978</year>
+               <volume>Vol. 1, The esophagus</volume>
+               <edition>2nd ed</edition>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Saunders</publisher-name>
+               <fpage>29</fpage>
+               <lpage>40</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>8. A chapter/part of a book in a microform</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Elanskii</surname>
+                     <given-names>Nikolai N</given-names>
+                  </name>
+               </person-group>
+               <atitle> Ric. 47, Skhema segmentarnoi innervatsii kozhi [Illustration 47, Scheme of the segmented innervation of the skin]</atitle>
+               <source xml:lang="RU">Voenno-polevaia khirurgiia [Military field surgery] [microfilm]</source>
+               <year>1950</year>
+               <edition>5th ed</edition>
+               <publisher-loc>Leningrad</publisher-loc>
+               <publisher-name>Medgiz</publisher-name>
+               <fpage>129</fpage>
+               <annotation>Located at: National Library of Medicine, Bethesda, MD; Film 18, no. 7</annotation>
+            </citation>
+         </ref>
+      </reflist>
+   </reflist>
+      <reflist>
+         <title>C. Contributions to Books</title>
+      <reflist>
+         <title>1. Standard reference to a chapter in a book</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Anderson</surname>
+                     <given-names>Robert J</given-names>
+                  </name>
+                  <name>
+                     <surname>Schrier</surname>
+                     <given-names>Robert W</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Braunswald</surname>
+                     <given-names>Eugene</given-names>
+                  </name>
+                  <name>
+                     <surname>Isselbacher</surname>
+                     <given-names>Kurt J</given-names>
+                  </name>
+                  <name>
+                     <surname>Petersdorf</surname>
+                     <given-names>Robert G</given-names>
+                  </name>
+                  <etal/>
+               </person-group>
+               <atitle>Acute renal failure</atitle>
+               <source>Harrison's principles of internal medicine</source>
+               <year>1987</year>
+               <edition>11th ed</edition>
+               <publisher-loc>New York</publisher-loc>
+               <publisher-name>McGraw-Hill</publisher-name>
+               <fpage>1149</fpage>
+               <lpage>1155</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Fleischer</surname>
+                     <given-names>Arthur C</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="allauthors">
+                  <name>
+                     <surname>Fleischer</surname>
+                     <given-names>Arthur C</given-names>
+                  </name>
+                  <name>
+                     <surname>James</surname>
+                     <given-names>AE</given-names>
+                     <suffix>Jr</suffix>
+                  </name>
+               </person-group>
+               <atitle>Superficial organ sonography and miscellaneous applications</atitle>
+               <source>Diagnostic sonography: principles and clinical applications</source>
+               <year>1989</year>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Saunders</publisher-name>
+               <fpage>700</fpage>
+               <lpage>761</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>2. Alternative reference with initials only for authors</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Weinstein</surname>
+                     <given-names>L</given-names>
+                  </name>
+                  <name>
+                     <surname>Schwartz</surname>
+                     <given-names>MN</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Sodeman</surname>
+                     <given-names>WA</given-names>
+                     <suffix>Jr</suffix>
+                  </name>
+                  <name>
+                     <surname>Sodeman</surname>
+                     <given-names>WA</given-names>
+                  </name>
+               </person-group>
+               <atitle>Pathological properties of invading organisms</atitle>
+               <source>Pathological physiology: mechanisms of disease</source>
+               <year>1974</year>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Saunders</publisher-name>
+               <fpage>457</fpage>
+               <lpage>472</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>3. Contribution in a separate volume of a book</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Merritt</surname>
+                     <given-names>Christopher RB</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Putnam</surname>
+                     <given-names>Charles E</given-names>
+                  </name>
+                  <name>
+                     <surname>Ravin</surname>
+                     <given-names>Carl E</given-names>
+                  </name>
+               </person-group>
+               <atitle>Breast imaging techniques</atitle>
+               <source>Textbook of diagnostic imaging</source>
+               <year>1988</year>
+               <volume>Vol. 3</volume>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Saunders</publisher-name>
+               <fpage>2118</fpage>
+               <lpage>2120</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Kessler</surname>
+                     <given-names>Robert M</given-names>
+                  </name>
+                  <name>
+                     <surname>Freeman</surname>
+                     <given-names>Mark P</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Partain</surname>
+                     <given-names>CL</given-names>
+                  </name>
+                  <name>
+                     <surname>Price</surname>
+                     <given-names>Ronald R</given-names>
+                  </name>
+                  <name>
+                     <surname>Patton</surname>
+                     <given-names>James A</given-names>
+                  </name>
+                  <etal/>
+               </person-group>
+               <atitle>Ishemic cerebrovascular disease</atitle>
+               <source>Magnetic resonance imaging</source>
+               <year>1988</year>
+               <volume>Vol. 1, Clinical Principles</volume>
+               <edition>2nd ed</edition>
+               <publisher-loc>Philadelphia</publisher-loc>
+               <publisher-name>Saunders</publisher-name>
+               <fpage>197</fpage>
+               <lpage>210</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Hazeltine</surname>
+                     <given-names>William A</given-names>
+                  </name>
+               </person-group>
+               <atitle>AIDS</atitle>
+               <source>The encyclopedia Americana</source>
+               <year>1990</year>
+               <volume>Vol. 1</volume>
+               <edition>International ed</edition>
+               <publisher-loc>Danbury (CT)</publisher-loc>
+               <publisher-name>Grolier Incorporated</publisher-name>
+               <fpage>365</fpage>
+               <lpage>366</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>4. Alternative chapter number used instead of pagination </title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Stern</surname>
+                     <given-names>Michael P</given-names>
+                  </name>
+               </person-group>
+               <atitle>Diabetes in Hispanic Americans</atitle>
+               <source>National Institute of Arthritis, Diabetes, and Digestive and Kidney Diseases. Diabetes in America: diabetes data compiled 1984.</source>
+               <year>1985</year>
+               <month>Aug</month>
+               <publisher-loc>[Bethesda (MD)]</publisher-loc>
+               <publisher-name>The Institute</publisher-name>
+               <other-ref>Chapter 9. (NIH publication; no. 86-1468)</other-ref>
+            </citation>
+         </ref>
+    </reflist>
+     </reflist>
+</chapter>

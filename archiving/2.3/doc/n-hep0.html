@@ -1,0 +1,60 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Symbol</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">symbol</h1>
+         <h1 class="attrname">Symbol</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Stores the symbol (such as an asterisk, numeral, or section mark) that was displayed in the original document to identify
+            a specific footnote, if this symbol is to be preserved
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">For example, it might be useful to store the symbol to disambiguate mistagged cases in which an author has stated &#8220;see footnote
+            b&#8221; or &#8220;see footnote 14&#8221; in the text, but the &#8220;see&#8221; note has not been tagged as an <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a> element. When the cross-reference has not been tagged, the normal <tt>ID/IDREF</tt> connection between footnote and reference is missing, and the only connection between the two is the visually matching symbols
+            (&#8220;b&#8221; and &#8220;14&#8221;, respectively).
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5 class="heading"><a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-crw0.html"><span class="elementname">Footnote</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">The symbol used to mark a footnote, such as a section symbol</td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

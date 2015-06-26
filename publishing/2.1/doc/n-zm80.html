@@ -1,0 +1,103 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Footnote Group</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;fn-group&gt;</h1>
+         <h1 class="elementname">Footnote Group</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Wrapper element for footnotes that have been grouped at the end
+                    of an article
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Footnotes that are scattered throughout the text, at the places
+                    they occur, do not use this wrapper element.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  fn-group     %fn-group-model;                             &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-yds0.html"><span class="elementname">Title</span></a> <a href="n-yds0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-v980.html"><span class="elementname">Footnote</span></a> <a href="n-v980.html"><span class="elementtag">&lt;fn&gt;</span></a>, one or more
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-ii20.html"><span class="elementtag">&lt;app&gt;</span></a> <a href="n-ii20.html"><span class="elementname">Appendix</span></a>; <a href="n-d6c0.html"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-d6c0.html"><span class="elementname">Back Matter</span></a>; <a href="n-f9c0.html"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-f9c0.html"><span class="elementname">Boxed Text</span></a>; <a href="n-zxw0.html"><span class="elementtag">&lt;notes&gt;</span></a> <a href="n-zxw0.html"><span class="elementname">Notes</span></a>; <a href="n-55v0.html"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-55v0.html"><span class="elementname">Section</span></a>; <a href="n-qys0.html"><span class="elementtag">&lt;title-group&gt;</span></a> <a href="n-qys0.html"><span class="elementname">Title Group</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+...
+&lt;back&gt;
+&lt;ref-list&gt;
+&lt;ref&gt;
+&lt;nlm-citation&gt;
+&lt;person-group&gt;
+...
+&lt;/person-group&gt;
+&lt;source&gt;Nature (London)&lt;/source&gt;
+&lt;year&gt;2001&lt;/year&gt;
+&lt;volume&gt;411&lt;/volume&gt;
+&lt;fpage&gt;498&lt;/fpage&gt;
+&lt;lpage&gt;501&lt;/lpage&gt;
+&lt;pub-id pub-id-type="pmid"&gt;11373685&lt;/pub-id&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+&lt;/ref-list&gt;
+<strong><span class="focus">&lt;fn-group&gt;
+&lt;fn&gt;
+&lt;p&gt;This paper was submitted directly (Track II) to the PNAS
+office.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;fn id="FN153"&gt;
+&lt;p&gt;&amp;#x00A7; Barta, A., Dorner, S., Polacek, N., Berg, J. M.,
+Lorsch, J. R., Nissen, P., Hansen, J., Muth, G. W. &amp;#x0026; Ban, N. 
+(2000) &lt;italic&gt;Science&lt;/italic&gt; &lt;bold&gt;291&lt;/bold&gt;, 203a (abstr.).&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/fn-group&gt;</span></strong>
+&lt;/back&gt;
+&lt;/article&gt; 
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">backmatter.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

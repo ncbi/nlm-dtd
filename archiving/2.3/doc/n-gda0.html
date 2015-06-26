@@ -1,0 +1,108 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Custom Metadata</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;custom-meta&gt;</h1>
+         <h1 class="elementname">Custom Metadata</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Some journal tag sets allow for metadata above and beyond that which can be specified by this Tag Set. This element is used
+            to capture a metadata element that has not been defined explicitly in the models for this Tag Set, so that the intellectual
+            content will not be lost.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-gda0.html"><span class="elementtag">&lt;custom-meta&gt;</span></a> element allows for an infinite variety of name/value pairs, with few constraints on the length or content of the value. This
+            element will probably be used for special cases, product-specific material, or other unusual metadata, for example, the journal-history
+            information preserved in at least one publisher&#8217;s Tag Set.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-5yp0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-5yp0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-mjp0.html"><span class="attrtag">xlink:href</span></a> <a href="n-mjp0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-yqp0.html"><span class="attrtag">xlink:role</span></a> <a href="n-yqp0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-a9p0.html"><span class="attrtag">xlink:show</span></a> <a href="n-a9p0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-5zp0.html"><span class="attrtag">xlink:title</span></a> <a href="n-5zp0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-dkq0.html"><span class="attrtag">xlink:type</span></a> <a href="n-dkq0.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-naq0.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-naq0.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The element <a href="n-6ra0.html"><span class="elementtag">&lt;custom-meta-wrap&gt;</span></a> acts as a wrapper element to contain an infinite number of <a href="n-gda0.html"><span class="elementtag">&lt;custom-meta&gt;</span></a> elements.  Each <a href="n-gda0.html"><span class="elementtag">&lt;custom-meta&gt;</span></a> element houses a name/value pair, <a href="n-wz40.html"><span class="elementtag">&lt;meta-name&gt;</span></a> and <a href="n-p3s0.html"><span class="elementtag">&lt;meta-value&gt;</span></a> respectively, which name and provide a value for a single metadata field.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  custom-meta  %custom-meta-model;                          &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-wz40.html"><span class="elementname">Metadata Data Name for Custom Metadata</span></a> <a href="n-wz40.html"><span class="elementtag">&lt;meta-name&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-p3s0.html"><span class="elementname">Metadata Data Value for Custom Metadata</span></a> <a href="n-p3s0.html"><span class="elementtag">&lt;meta-value&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-6ra0.html"><span class="elementtag">&lt;custom-meta-wrap&gt;</span></a> <a href="n-6ra0.html"><span class="elementname">Custom Metadata Wrapper</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-title&gt;Biodiversity &amp;amp; Mutation&lt;/journal-title&gt;
+...
+&lt;custom-meta-wrap&gt;
+<strong><span class="focus">&lt;custom-meta&gt;
+&lt;meta-name&gt;journalsubtitle&lt;/meta-name&gt;
+&lt;meta-value&gt;for biotechnology professionals&lt;/meta-value&gt;
+&lt;/custom-meta&gt;</span></strong>
+&lt;/custom-meta-wrap&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;...&lt;/article-meta&gt;
+&lt;/front&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

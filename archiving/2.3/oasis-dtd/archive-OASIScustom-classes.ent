@@ -1,0 +1,105 @@
+<!-- ============================================================= -->
+<!--                    METADATA CLASSES (articlemeta.ent)         -->
+<!-- ============================================================= -->
+
+
+<!--                    CITATION CLASS ELEMENTS                    -->
+<!--                    Reference to an external document, as used 
+                        within, for example, the text of a 
+                        paragraph                                  -->
+<!ENTITY % citation.class   
+                        "citation | nlm-citation"                    >
+
+
+<!--                    CONTRIBUTOR CLASS ELEMENTS                    -->
+<!--                    The <contrib> element for use inside
+                        <contrib-group>                            -->
+<!ENTITY % contrib.class   
+                        "contrib"                                    >
+
+
+<!--                    CONTRIBUTOR INFORMATION CLASS              -->
+<!--                    Metadata about a contributor               
+                        Added <fn>                                 -->
+<!ENTITY % contrib-info.class
+                        "address | aff | author-comment | bio | 
+                         email |  etal | ext-link | fn | 
+                         on-behalf-of | role | uri | xref"           >
+
+
+<!-- ============================================================= -->
+<!--                    CITATION CLASSES (references.ent)          -->
+<!-- ============================================================= -->
+
+
+<!--                    BIBLIOGRAPHIC REFERENCE (CITATION) CLASS   -->
+<!--                    The elements that may be included inside a
+                        Citation (bibliographic reference)
+                        Added <date> and <string-date>             -->
+<!ENTITY % references.class
+                        "access-date | annotation | article-title | 
+                         collab | comment | conf-date | conf-loc | 
+                         conf-name | conf-sponsor | date | day | 
+                         edition |email | elocation-id | etal | 
+                         ext-link | fpage |  gov | institution | 
+                         isbn | issn | 
+                         issue | issue-id | issue-title | 
+                         lpage | month | name | object-id |  
+                         page-count | page-range | 
+                         patent | person-group | pub-id | 
+                         publisher-loc | publisher-name | role |
+                         season | series | source | std | 
+                         string-date | string-name | supplement | 
+                         time-stamp | trans-source | trans-title | 
+                         uri | volume | volume-id | year"            >
+                         
+
+<!-- ============================================================= -->
+<!--                    PRESENTATION INFO CLASSES                  -->
+<!-- ============================================================= -->
+                        
+                        
+<!--                    X-GENERATED PUNCTUATION CLASS              -->
+<!--                    Class containing a single element that will
+                        hold generated punctuation or other 
+                        generatable text, for example, the commas or
+                        semicolons between keywords.
+                        This textual material element has been 
+                        created:
+                         - to match existing input DTDs
+                         - to identify such material, so that it
+                             can be processed (such as removed)
+                         - to try to remove look-and-feel material
+                             from semantic material such as keywords.
+                                                                   -->
+<!ENTITY % x.class      "x"                                          >
+                         
+
+<!-- ============================================================= -->
+<!--                    STRUCTURAL ELEMENT CLASSES                 -->
+<!-- ============================================================= -->
+
+
+<!--                    REST OF PARAGRAPH CLASS                    -->
+<!--                    Information for the reader that is at the
+                        same structural level as a Paragraph.
+                        Contains all paragraph-level objects that are
+                        not also used inside tables and excepting
+                        also the paragraph element itself.
+                        Added <x>                                  -->
+<!ENTITY % rest-of-para.class   
+                        "ack | disp-quote | speech | statement | 
+                         verse-group | x"                            >
+
+
+<!--                    TABLE CLASS ELEMENTS                       -->
+<!--                    Elements that will be used to contain the
+                        rows and columns inside the Table Wrapper 
+                        element <table-wrap>.  The following elements 
+                        can be set up for inclusion:
+                          XHTML Table Model    table               -->
+<!ENTITY % table.class  "table | oasis:table"                        >
+                            
+
+              
+<!-- ================== End Archiving Classes Customization ====== -->

@@ -1,0 +1,111 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Equation Count</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;equation-count&gt;</h1>
+         <h1 class="elementname">Equation Count</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Number of <a href="n-wuu0.html"><span class="elementtag">&lt;disp-formula&gt;</span></a>  elements that appear in an article
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">By convention, both numbered and unnumbered display equations are
+                   counted.
+         </p>
+         <p class="para">Unlike <a href="n-wuu0.html"><span class="elementtag">&lt;disp-formula&gt;</span></a>s, inline equations (<a href="n-x5v0.html"><span class="elementtag">&lt;inline-formula&gt;</span></a>) are not counted.
+         </p>
+         <p class="para">Many elements in this Suite were created explicitly for import conversion, that is, so that the intellectual work of tagging
+            done by publishers would not be discarded when they converted material from another tag set to the Journal Archiving Tag Set.
+            The count elements are a perfect example of this rationale; they are conversion elements, not for authoring, and should only
+            be tagged if present in the original source.
+         </p>
+         <p class="para">The count elements are modeled as <tt>EMPTY</tt> elements (that is, elements that have no content and store their real values in one or more attributes) because the majority
+            of journal tag sets that were examined in the course of preparing this one used this mechanism, an inheritance of the older
+            MAJOUR-header DTD.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-bmi0.html"><span class="attrtag">count</span></a> <a href="n-bmi0.html"><span class="attrname">Count</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Inside the <a href="n-c6a0.html"><span class="elementtag">&lt;counts&gt;</span></a> wrapper element are the counts of various components of the article: the <a href="n-few0.html"><span class="elementtag">&lt;fig-count&gt;</span></a> is the number of figures, the <a href="n-sg60.html"><span class="elementtag">&lt;table-count&gt;</span></a> is the number of tables, the <a href="n-ipu0.html"><span class="elementtag">&lt;equation-count&gt;</span></a> is the number of equations, the <a href="n-5ue0.html"><span class="elementtag">&lt;ref-count&gt;</span></a> is either the number of references or (more properly) the number of citations in the bibliographic reference list, the <a href="n-w6t0.html"><span class="elementtag">&lt;page-count&gt;</span></a> is the page count, and the <a href="n-m4h0.html"><span class="elementtag">&lt;word-count&gt;</span></a> is the number of words in the article.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  equation-count
+                         EMPTY                                       &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">This is an EMPTY element</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-c6a0.html"><span class="elementtag">&lt;counts&gt;</span></a> <a href="n-c6a0.html"><span class="elementname">Counts</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;abstract&gt;...
+&lt;/abstract&gt;
+&lt;conference&gt;
+&lt;conf-date&gt;1999&lt;/conf-date&gt;
+&lt;conf-name&gt;The 27th annual ACM SI/GUCCS
+conference&lt;/conf-name&gt;
+&lt;conf-num&gt;27&lt;/conf-num&gt;
+&lt;conf-loc&gt;Denver, Colorado, United States&lt;/conf-loc&gt;
+&lt;conf-sponsor&gt;ACM, Assoc. for Computing
+Machinery&lt;/conf-sponsor&gt;
+&lt;conf-theme&gt;User services conference for
+university and college computing service
+organizations&lt;/conf-theme&gt;
+&lt;conf-acronym&gt;SIGUCCS&lt;/conf-acronym&gt;
+&lt;/conference&gt;
+&lt;counts&gt;
+&lt;fig-count count="5"/&gt;
+&lt;table-count count="3"/&gt;
+<strong><span class="focus">&lt;equation-count count="10"/&gt;</span></strong>
+&lt;ref-count count="26"/&gt;
+&lt;page-count count="6"/&gt;
+&lt;word-count count="2847"/&gt;
+&lt;/counts&gt;
+&lt;/article-meta&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

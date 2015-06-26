@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher>
+<publisher-name>...</publisher-name>
+</publisher>
+</journal-meta>
+<?mtl /hellip?>
+<article-meta>
+<article-id pub-id-type="pmid">10092260</article-id> 
+<title-group>
+<article-title>Systematic review of day hospital care
+for elderly people</article-title>
+</title-group>
+<contrib-group><?mtl hellip?><contrib>
+<name><surname>...</surname>
+<given-names>...</given-names></name>
+</contrib><?mtl /hellip?></contrib-group>  
+<aff><?mtl hellip?> <?mtl /hellip?></aff>
+<author-notes><?mtl hellip?><fn><p>...</p></fn><?mtl /hellip?></author-notes> 
+<pub-date pub-type="pub"><day>27</day>
+<month>3</month><year>1999</year></pub-date>
+<volume>318</volume>
+<issue>7187</issue>
+<fpage>837</fpage>
+<lpage>841</lpage>
+<history><date date-type="accepted">
+<day>29</day><month>1</month>
+<year>1999</year></date>
+</history>
+<copyright-statement><?mtl hellip?> <?mtl /hellip?></copyright-statement>
+<copyright-year><?mtl hellip?> <?mtl /hellip?></copyright-year>
+<abstract><?mtl hellip?> <?mtl /hellip?></abstract>
+</article-meta>
+<?mtl hellip?>
+</front>
+</article><?mtl /hellip?>

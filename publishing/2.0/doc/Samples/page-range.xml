@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for Page Range Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<?mtl /hellip?>
+<article-meta>
+<?mtl hellip?>
+<title-group>
+<article-title>Made up Title for Example</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<?mtl /hellip?>
+<fpage>100</fpage>
+<lpage>120</lpage>
+<page-range>100-101, 105, 107-120</page-range>
+<?mtl hellip?><?mtl /hellip?>
+</article-meta>
+<?mtl hellip?></front>
+<body><p></p></body>
+</article><?mtl /hellip?>

@@ -1,0 +1,148 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Element: Front Matter</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;front&gt;</h1>
+         <h1 class="elementname">Front Matter</h1>
+      </div>
+      <div class="definition">
+         <p class="para">The metadata for an article, such as the name and issue of the journal in which the article appears and the author(s) of the
+            article 
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">In some journal Tag Sets, this information is called the “header information” or “journal header”. Such a header usually includes
+            the metadata concerning the journal itself (in this Suite tagged as <a href="n-iet0.html" target="main" title="Journal Metadata"><span class="elementtag">&lt;journal-meta&gt;</span></a>), as well as metadata concerning the issue of the journal and the individual article (which in this Suite are both found
+            in the element <a href="n-pjc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>). 
+            
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">A journal article <a href="n-q6c0.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a> may be divided into several components: 
+            
+            <ol class="olist">
+               <li>the <a href="n-7nv0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> (the article metadata or header information, which contains both journal and article metadata); 
+                  
+               </li>
+               <li>the <a href="n-4b30.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a> (the textual and graphical content of the article); 
+                  
+               </li>
+               <li>any <a href="n-jd30.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a> (any ancillary information such as a glossary, reference list, or appendix); 
+                  
+               </li>
+               <li>a <a href="n-rvv0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a> (single container element some publishers and archives use to hold all floating elements such as figures and tables that
+                  are referenced in the article body or back matter); and 
+                  
+               </li>
+               <li>either a series of <a href="n-g8d0.html" target="main" title="Response"><span class="elementtag">&lt;response&gt;</span></a> elements or a series of <a href="n-dmi0.html" target="main" title="Sub-article"><span class="elementtag">&lt;sub-article&gt;</span></a> elements. (A <a href="n-g8d0.html" target="main" title="Response"><span class="elementtag">&lt;response&gt;</span></a> is a commentary on the article itself, such as a summation by an editor, an answer to a letter-article, or words from the
+                  author responding to peer-review comments. Sub-articles are articles such as news pieces, abstracts, or committee reports
+                  that are completely contained within a main article.)
+               </li>
+            </ol>
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  front        <a href="n-rba2.html" target="main" title="Front Matter Model"><span class="petag">%front-model;</span></a>                                &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">(journal-meta?, article-meta, 
+(def-list | list | notes)*)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-iet0.html" target="main" title="Journal Metadata"><span class="elementtag">&lt;journal-meta&gt;</span></a> <a href="n-iet0.html" target="main" title="<journal-meta&gt;"><span class="elementname">Journal Metadata</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-pjc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-pjc0.html" target="main" title="<article-meta&gt;"><span class="elementname">Article Metadata</span></a>
+                  
+               </li>
+               <li>Any combination of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-rcw0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> <a href="n-rcw0.html" target="main" title="<def-list&gt;"><span class="elementname">Definition List</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-ng70.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a> <a href="n-ng70.html" target="main" title="<list&gt;"><span class="elementname">List</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-yvf0.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a> <a href="n-yvf0.html" target="main" title="<notes&gt;"><span class="elementname">Notes</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-q6c0.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a>, <a href="n-g8d0.html" target="main" title="Response"><span class="elementtag">&lt;response&gt;</span></a>, <a href="n-dmi0.html" target="main" title="Sub-article"><span class="elementtag">&lt;sub-article&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+<strong><span class="focus">&lt;front&gt;
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital care
+for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;aff&gt;Department of Health Care for the Elderly,
+St Luke&amp;#x2019;s Hospital, Bradford BD5 0NA&lt;/aff&gt;
+&lt;author-comment&gt;
+&lt;p&gt;Competing interests: None declared.&lt;/p&gt;
+...
+&lt;/author-comment&gt;
+&lt;/contrib&gt;
+...
+&lt;/contrib-group&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British Medical
+Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;...&lt;/abstract&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;</span></strong>
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">archivearticle3.dtd</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

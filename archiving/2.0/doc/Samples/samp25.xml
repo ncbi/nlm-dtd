@@ -1,0 +1,667 @@
+<!DOCTYPE article SYSTEM "../../../../Ncbi/ArchivingDTD/DTD/Working/archivearticle.dtd">
+<?mtl hellip?><article>
+<!-- Monospace --><front><journal-meta><journal-id journal-id-type="pmc">pnas</journal-id><journal-id
+journal-id-type="pubmed">Proc Natl Acad Sci U S A</journal-id><journal-id
+journal-id-type="publisher">PNAS</journal-id><issn>0027-8424</issn><publisher><publisher-name>The
+National Academy of Sciences</publisher-name></publisher></journal-meta><article-meta><article-id
+pub-id-type="publisher-id">5438</article-id><article-id pub-id-type="pmid">10677516</article-id>
+<article-categories><subj-group><subject>Biological
+Sciences</subject><subj-group><subject>Genetics</subject></subj-group>
+</subj-group></article-categories><title-group><article-title><italic>In vitro</italic> cloning of complex
+mixtures of DNA on microbeads: Physical separation of differentially expressed
+cDNAs</article-title></title-group><contrib-group><contrib
+contrib-type="author"><name><surname>Brenner</surname><given-names>Sydney</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Williams</surname><given-names>Steven
+R.</given-names></name><xref ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Vermaas</surname><given-names>Eric H.</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Storck</surname><given-names>Thorsten</given-names></name><xref
+ref-type="aff">&#x2020;</xref></contrib><contrib
+contrib-type="author"><name><surname>Moon</surname><given-names>Keith</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>McCollum</surname><given-names>Christie</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Mao</surname><given-names>Jen-I</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Luo</surname><given-names>Shujun</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Kirchner</surname><given-names>James J.</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Eletr</surname><given-names>Sam</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>DuBridge</surname><given-names>Robert
+B.</given-names></name><xref ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Burcham</surname><given-names>Timothy</given-names></name><xref
+ref-type="aff">&#x002A;</xref></contrib><contrib
+contrib-type="author"><name><surname>Albrecht</surname><given-names>Glenn</given-names></name><xref
+ref-type="aff">&#x002A;</xref><xref ref-type="author-notes"
+rid="FN152">&#x2021;</xref></contrib></contrib-group><aff>&#x002A;Lynx
+Therapeutics, Inc., 25861 Industrial Boulevard, Hayward, CA 94545; and
+&#x2020;BASF-LYNX Bioscience, Im Neuenheimer Feld 515, Heidelberg 69120,
+Germany</aff><author-notes><fn id="FN152" symbol="&#x2021;"><p>To whom reprint
+requests should be addressed. E-mail:
+<email>galbrecht@lynxgen.com</email>.</p></fn><fn fn-type="com"><p>Contributed
+by Sydney Brenner</p></fn></author-notes><pub-date
+pub-type="pub"><day>15</day><month>2</month><year>2000</year></pub-date><volume>
+97</volume><issue>4</issue><fpage>1665</fpage><lpage>1670</lpage><history><date
+date-type="accepted"><day>14</day><month>12</month><year>1999</year></date>
+</history><copyright-statement>Copyright &#x00A9; 2000, The National Academy of
+Sciences</copyright-statement><abstract><p>We describe a method for cloning nucleic acid molecules
+onto the surfaces of 5-&#x03BC;m microbeads rather than in biological hosts. A
+unique tag sequence is attached to each molecule, and the tagged library is
+amplified. Unique tagging of the molecules is achieved by sampling a small
+fraction (1&#x0025;) of a very large repertoire of tag sequences. The resulting
+library is hybridized to microbeads that each carry &#x2248;10<sup>6</sup>
+strands complementary to one of the tags. About 10<sup>5</sup> copies of each
+molecule are collected on each microbead. Because such clones are segregated on
+microbeads, they can be operated on simultaneously and then assayed separately.
+To demonstrate the utility of this approach, we show how to label and extract
+microbeads bearing clones differentially expressed between two libraries by
+using a fluorescence-activated cell sorter (FACS). Because no prior information
+about the cloned molecules is required, this process is obviously useful where
+sequence databases are incomplete or nonexistent. More importantly, the process
+also permits the isolation of clones that are expressed only in given tissues or
+that are differentially expressed between normal and diseased states. Such
+clones then may be spotted on much more cost-effective, tissue- or
+disease-directed, low-density planar microarrays.</p></abstract><kwd-group><kwd>DNA
+analysis</kwd><kwd>gene expression</kwd><kwd>parallel cloning</kwd><kwd>fluid
+microarray</kwd></kwd-group></article-meta></front><body><sec><title>Introduction</title><p>
+Analysis of complex genomes requires methods for generating and fractionating
+many tens of thousands of DNA fragments in quantities and formats amenable to
+biochemical analysis. The difficulty of such analysis is illustrated by human
+gene expression: the human genome is estimated to contain about 100,000 genes,
+of which 10&#x2013;30&#x0025;, or about 20&#x2013;40 Mb, are actively expressed
+in any given tissue (<xref ref-type="bibr" rid="B1">1</xref>&#x2013;<xref
+ref-type="bibr" rid="B2">2</xref>). Such large numbers of expressed genes make
+it difficult to track changes in expression patterns, particularly in view of
+the large fraction of genes that are expressed at very low levels: it has been
+estimated that as much as 30&#x0025; of mammalian messenger RNA consists of many
+thousands of distinct species each making up far less than a few tenths of a
+percent of the total, and typically averaging less than a few tens of copies per
+cell (<xref ref-type="bibr" rid="B3">3</xref>&#x2013;<xref ref-type="bibr"
+rid="B4">4</xref>). Yet relatively minor alterations in gene expression patterns
+are associated with profound changes in cell physiology and, more broadly, in
+the state of an organism's health, its longevity, and its survival (<xref
+ref-type="bibr" rid="B5">5</xref>&#x2013;<xref ref-type="bibr"
+rid="B7">7</xref>). A variety of techniques has been developed for analyzing
+gene expression that differ widely in convenience, expense, and sensitivity.
+Presently, techniques based on direct sequence analysis or specific
+hybridization of complex polynucleotide probes to microarrays of
+oligonucleotides or polynucleotides provide the most comprehensive and sensitive
+analysis of gene expression (<xref ref-type="bibr"
+rid="B8">8</xref>&#x2013;<xref ref-type="bibr" rid="B9">9</xref>). However, in
+both approaches, the sequences to be analyzed must either be known or cloned and
+processed individually beforehand, usually with the article-id of complex robotics
+systems. This makes it difficult to isolate and/or monitor many potentially
+important genes that are differentially expressed at low absolute levels against
+a background of more abundantly expressed genes.</p><p>To address some of these
+problems, we describe an approach that greatly simplifies the handling and
+analysis of complex mixtures of cDNA or genomic fragments. We show how millions
+of nucleic acid molecules, amplified with one set of common primers, can be
+cloned and specifically attached to 5-&#x03BC;m microbeads in a few single-tube
+reactions. Central to the method is the formation of a repertoire of
+oligonucleotide tags assembled combinatorially from a defined set of subunits,
+or &#x201C;words,&#x201D; and their attachment to individual polynucleotides of
+a complex mixture. By making the repertoire of tags large relative to the number
+of polynucleotides in the mixture, samples of the tag&#x2013;polynucleotide
+conjugates may be selected with virtually every polynucleotide having a unique
+tag. Samples of conjugates then may be amplified and specifically hybridized to
+their complementary sequences (anti-tags) on separate microbeads in a single
+reaction to form a library of microbeads, each having attached a clonal
+population of one polynucleotide from the original mixture.</p><p>The key
+advantage of this approach over biological cloning is that the DNA on the
+surface of each microbead is readily accessible for biochemical analysis without
+further processing. In addition, all clones in a microbead library can be
+interrogated simultaneously by analytical probes designed to assay specific
+properties. This enables a broad range of applications in which clones are
+identified or physically fractionated by virtue of their sequence or their
+abundance or their ability to bind particular ligands. Below, we show how such
+&#x201C;microbead clones&#x201D; can be used to extract differentially regulated
+genes, independently of any sequence information, in the human acute monocytic
+leukemia cell line, THP-1, induced by phorbol 12-myristate 13-acetate (PMA) and
+lipopolysaccharide (LPS). After competitive hybridization of cDNA probes from
+the induced and noninduced cells, microbeads sorted on the basis of fluorescence
+intensity ratios were found to carry sequences known to be up-regulated and
+down-regulated in THP-1 cells after induction by PMA and LPS. Further validation
+is provided by plaque hybridization with probes constructed from several genes
+fractionated by our microbead procedure.</p></sec><sec
+sec-type="materials/methods"><title>Materials and Methods</title><sec><title>Construction of
+Oligonucleotide Tag and Anti-Tag Libraries.</title><p>A library of 32-mer tags
+was synthesized based on eight 4-mer &#x201C;words&#x201D; lacking dG described
+in <italic>Results</italic> by eight rounds of &#x201C;mix and divide&#x201D;
+combinatorial synthesis (Fig. <xref ref-type="fig" rid="F1">1</xref>) on 40
+billion 5-&#x03BC;m glycidal methacrylate microbeads (Bangs Laboratories,
+Carmel, IN). The microbeads were prepared with &#x2248;10&#x0025; of the initial
+nucleotides linked by a base-labile group (5&#x2032;-phosphate-ON, CLONTECH). A
+28-mer 3&#x2032; spacer having a primer-binding site and a <italic>Pac</italic>I site
+was synthesized, followed by synthesis of the 32-mer tags and three cytidylate
+residues. Five billion of these microbeads were removed and by further synthesis
+a <italic>Bsp</italic>120I site and a 5&#x2032; primer-binding site were added. Aliquots
+of the remaining 35 billion microbeads were prepared for capturing tagged cDNAs
+as follows: 2.5 &#x00D7; 10<sup>8</sup> microbeads suspended in 100 &#x03BC;l of
+H<sub>2</sub>O were combined with 100 &#x03BC;l of 10&#x00D7; NEB buffer 2 (New
+England Biolabs), 10 &#x03BC;l of 100 mM ATP, 1 &#x03BC;l of 10&#x0025; Tween
+20, 17 &#x03BC;l of T4 polynucleotide kinase (10 units&#x002F;&#x03BC;l), and
+772 of &#x03BC;l H<sub>2</sub>O for a final volume of 1,000 &#x03BC;l. After
+incubating for 2 hr at 37&#x00B0;C with vortexing, the temperature was increased
+to 65&#x00B0;C for 20 min to inactivate the kinase, with continued vortexing.
+After incubation, the microbeads were washed twice by spinning down the
+microbeads and resuspending them in 1 ml of Tris-EDTA containing 0.01&#x0025;
+Tween 20. Postsynthesis analysis of these showed that each microbead carries
+about 10 million copies of a given anti-tag sequence (data not shown).</p><fig
+id="F1"><label>Figure 1</label><caption><p>Tags were synthesized by eight rounds
+of combinatorial synthesis, wherein each word,
+w<sub>1</sub>&#x2013;w<sub>8</sub>, is added in a separate column of a DNA
+synthesizer. In each round, a word was added to each growing tag by four
+conventional base-coupling cycles, after which the microbeads were mixed and
+divided for the next addition. After the eighth round, a portion of the
+microbeads were separated for further synthesis of a 5&#x2032; primer-binding
+site (PBS), followed by cleavage, amplification, and insertion into
+pLCV1.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="pq0305438001" alt-version="yes"></graphic></fig><p>The aliquot of
+five billion microbeads was treated to cleave DNA attached by base-labile
+linkers to yield a total of 1 &#x00D7; 10<sup>16</sup> sequences. After
+deprotection and purification by reverse-phase chromatography, sequences were
+isolated by ethanol precipitation, resuspended, and used as the template for a
+T7 polymerase fill-in reaction with a primer complementary to the 3&#x2032;
+primer-binding site. The entire duplex then was PCR-amplified with primers
+specific for the 3&#x2032; and 5&#x2032; primer-binding sites, after which the
+amplicon was digested with <italic>Pac</italic>I and <italic>Bsp</italic>120I and inserted into
+pLCV1 (Fig. <xref ref-type="fig" rid="F2">2</xref>). The product was
+electroporated into <italic>Escherichia coli</italic> to produce more than 200 million
+independent chloramphenicol-resistant clones, designated pLCV2.</p><fig
+id="F2"><label>Figure 2</label><caption><p>Attachment of tags to
+cDNAs.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="pq0305438002"
+alt-version="yes"></graphic></fig></sec><sec><title>cDNA Synthesis and Attachment
+of Tags.</title><p>mRNA was converted to cDNA, tagged, and loaded onto
+microbeads as described (<xref ref-type="bibr" rid="B10">10</xref>). Briefly,
+poly(A)<sup>&#x002B;</sup> RNA was extracted by using a FastTrack 2.0 kit
+(Invitrogen), using the manufacturer's protocol. Double-stranded cDNA was
+synthesized by using a cDNA Synthesis kit (Stratagene), using the manufacturer's
+protocol with the following modifications: 2.5 &#x03BC;g of mRNA was used for
+each synthesis and the primer for first strand synthesis was
+5&#x2032;-biotin-GACATGCTCGTCTCTGCAT<sub>19</sub>V. After second-strand
+synthesis, the cDNA was size-fractionated on a SizeSep 400 column (Amersham
+Pharmacia) and ethanol-precipitated. The cDNA was resuspended and digested with
+100 units of <italic>Dpn</italic>II at 37&#x00B0;C for 2 hr, after which the
+biotinylated cDNA was purified with Dynal M-280 streptavidin beads. cDNA
+fragments were digested off the beads by using 40 units of <italic>Bsm</italic>BI for 2
+hr in an Eppendorf Thermomixer set at medium speed at 37&#x00B0;C. The
+supernatant was collected, and the beads were resuspended for a second
+<italic>Bsm</italic>BI digestion. cDNA fragments from the first and second digestions
+were pooled, ethanol-precipitated, and resuspended in 10 &#x03BC;l of
+H<sub>2</sub>0. Tag vector pLCV2 was used for loading libraries on microbeads.
+pECV, which lacks tags, was used for probe libraries. The vectors were digested
+with <italic>Bbs</italic>I and <italic>Bam</italic>HI and dephosphorylated, and aliquots of each
+cDNA preparation were ligated with each vector. Sequences adjacent to
+<italic>Bbs</italic>I and <italic>Bsm</italic>BI were chosen to ensure compatible ends. DNA was
+transformed into electro-competent <italic>E. coli</italic> TOP10 cells (Invitrogen).
+Aliquots were titered on LB agar plates containing 30 &#x03BC;g/ml
+chloramphenicol, and library pools were grown in liquid cultures. For the
+microbead libraries, six pools of 160,000 clones each were grown in 50-ml liquid
+cultures. For the probe libraries, 1 &#x00D7; 10<sup>7</sup> clones were grown
+in 1-liter cultures. Plasmid DNA was prepared and used for subsequent
+manipulations.</p></sec><sec><title>Microbead Loading.</title><p>Tagged cDNAs
+(160,000) were amplified in the presence of 5-methyl dCTP using flanking PCR
+primers (designated biotin-PCR-F and FAM (6-carboxyl-fluorescein)-PCR-R;
+labeling reagents from CLONTECH), and the products were digested to completion
+with <italic>Pac</italic>I and affinity-purified. To expose the tags as single strands,
+amplified DNA was treated with T4 polymerase in the presence of 1 mM dGTP for 60
+min, thereby digesting a single strand of the tag to the GC-rich
+<italic>Bsp</italic>120I site. The reaction was stopped with EDTA, and the enzyme was
+denatured by heating (72&#x00B0;C for 15 min). Fifty micrograms of this mixture
+then was combined with an aliquot of 16.7 million microbeads, each having about
+10<sup>6</sup> copies of a single anti-tag, in a 100-&#x03BC;l reaction
+containing 500 mM NaCl, 10 mM sodium phosphate, 0.01&#x0025; Tween 20, and
+3&#x0025; dextran sulfate. The sample was incubated for 3 days at 72&#x00B0;C.
+The microbeads then were washed twice, first in 50 mM Tris, 50 mM NaCl, 3 mM
+Mg<sub>2</sub>Cl, and then in 10 mM Tris&#x00B7;HCl (pH 8), 1 mM EDTA,
+0.01&#x0025; Tween 20, after which the 1&#x0025; brightest beads were sorted on
+a Cytomation MoFlo cytometer. cDNAs (10<sup>4</sup>-10<sup>5</sup> per
+microbead) were loaded, determined by comparing the amount of test probe
+hybridized to saturation to 2,000 identical microbeads with known amounts of the
+test probe after elution and electrophoretic separation (data not shown).
+Loaded, sorted microbeads were treated with T4 DNA polymerase in the presence of
+0.1 mM dNTP for 30 min at 12&#x00B0;C to fill in any gaps between the hybridized
+conjugate and the 5&#x2032; end of the anti-tag. The reaction was stopped by
+washing in buffer containing 10 mM Tris&#x00B7;HCl (pH 8), 1 mM EDTA, and
+0.01&#x0025; Tween 20, after which the microbeads were treated with Pronase
+(Boehringer Mannheim) at a final concentration of 0.14
+&#x03BC;g&#x002F;&#x03BC;l in PBS containing 0.01&#x0025; Tween 20, and
+incubated for 60 min at 37&#x00B0;C. The anti-tag was ligated to the cDNA by
+treating with T4 DNA ligase in the presence of 1 mM ATP for 60 min at
+37&#x00B0;C. After washing and Pronase treatment, the fluorescent label was
+switched to the noncovalently attached strand by digesting the DNA with
+<italic>Dpn</italic>II, treating with Pronase, treating with phosphatase, and ligating
+an adaptor carrying a 3&#x2032; FAM label. A 14-bp adaptor having a
+phosphorylated 5&#x2032; <italic>Dpn</italic>II-compatible end and a 3&#x2032;-FAM label
+was ligated in a conventional ligation reaction, after which the microbeads were
+washed once with PBS containing 1 mM CaCl<sub>2</sub> and treated with Pronase.
+The remaining nick was ligated by treatment with T4 polynucleotide kinase and T4
+DNA ligase, after which the microbeads were washed once with PBS containing 1 mM
+CaCl<sub>2</sub>, treated with Pronase, and washed twice with Tris-EDTA/Tween.
+Noncovalently attached strands were removed by treatment with 150 mM
+NaOH.</p></sec><sec><title>Probe Synthesis and Competitive
+Hybridization.</title><p>cDNA-containing plasmid libraries from induced and
+noninduced THP-1 cells were linearized, and probes were prepared by runoff
+synthesis. Twenty micrograms each of the probe libraries was digested with
+<italic>Sau</italic>3A. Thirty-five rounds of linear amplification with either R110 dUTP
+(Perkin&#x2013;Elmer) or Cy5 dUTP (Amersham Pharmacia) were performed. The
+strands complementary to the DNA covalently attached to reference microbeads
+(described below) were melted off with two 0.5 ml of 150 mM NaOH washes at room
+temperature for 15 min with mild vortexing, after which the microbeads were
+washed twice in 0.5 ml of 4&#x00D7; SSC 0.1&#x0025; SDS. Ten micrograms of each
+probe then was mixed with the microbeads in 50 &#x03BC;l of 4&#x00D7; SSC
+0.1&#x0025; SDS, heated to 80&#x00B0;C for 3 min, and then cooled to
+65&#x00B0;C. After 16 hr with constant mixing, the microbeads were quenched in
+10 ml of Tris-EDTA/Tween on ice, rinsed with 1&#x00D7; SSC/0.1&#x0025; SDS,
+resuspended in 0.5 ml of 1&#x00D7; SSC/0.1&#x0025;SDS, and finally washed in
+0.1&#x00D7; SSC/0.1&#x0025; SDS at 65&#x00B0;C for 15 min. Labeled microbeads
+were sorted with a Coulter EPICS Elite ESP flow
+cytometer.</p></sec><sec><title>PCR, Cloning, and Sequencing of Isolated
+cDNA.</title><p>Sorted microbeads were used directly in a PCR, and the product
+was cloned by using the TA Cloning procedure (Invitrogen) and
+sequenced.</p></sec><sec><title>Cell Culture.</title><p>THP-1 cells (ATCC
+accession no. TIB-202) were grown in DMEM/F-12 media supplemented with
+10&#x0025; heat-inactivated FBS (56&#x00B0;C, 30 min), 5 &#x00D7;
+10<sup>&#x2212;5</sup> M 2-mercaptoethanol, 100 units/ml penicillin, and 100
+&#x03BC;g/ml streptomycin. Cultures seeded with 1 &#x00D7; 10<sup>3</sup> cells
+per ml were grown to a cell density of 1 &#x00D7; 10<sup>6</sup> cells per ml
+(approximately 4 days). Cells were induced by adding PMA (stock concentration 1
+mM in DMSO) to a final concentration of 100 nM and were grown for 48 hr with
+PMA. DMSO was added to noninduced cells. During this period, approximately
+80&#x0025; of the PMA-treated cells became adherent, whereas about 20&#x0025;
+remained in suspension. After 48 hr, the medium and nonadherent cells were
+removed from PMA-induced cells and replaced with fresh medium containing 5
+&#x03BC;g/ml LPS from <italic>E. coli</italic> serotype 0111:B4 (Sigma). Control cells
+were pelleted by centrifugation at 1,400 &#x00D7; <italic>g</italic> for 4 min and
+resuspended in fresh equilibrated medium, and incubation continued. The cells
+were harvested after 4 hr. Adherent PMA- and LPS-treated cells were dislodged by
+using a cell scraper and pelleted by centrifugation at 1,400 &#x00D7;
+<italic>g</italic>. Control cells, which remained in suspension, were simply
+pelleted.</p></sec></sec><sec
+sec-type="results"><title>Results</title><sec><title>Principle of the
+Method.</title><p>Each nucleic acid molecule in a complex mixture first is
+labeled with an oligonucleotide tag, after which a sample of the resulting
+library of tag&#x2013;molecule conjugates is amplified. After amplification, a
+sample of <italic>n</italic> molecules will yield a library containing <italic>n</italic>
+families of clones, each identified by a unique tag. This permits them to be
+collected on a microbead that carries the complement (anti-tag) to a family's
+unique tag. Thus, a mixture of 1,000,000 molecules can be converted into a
+library of about as many microbeads, each carrying about 100,000 copies of one
+of the templates. To achieve this, the nucleic acid sequences used as tags and
+anti-tags must be chosen to maximize the efficiency and discrimination of
+hybridization of a given clone to a given microbead.</p><p>Six criteria were
+used to design the repertoire of tags: (<italic>i</italic>) the repertoire must be
+diverse enough to enable the unique tagging of all (or nearly all) the molecules
+in large libraries; (<italic>ii</italic>) the tags must remain physically attached to
+the tagged molecules after operations such as cleavage by restriction enzymes;
+(<italic>iii</italic>) the melting temperatures (<italic>T</italic><sub>m</sub>) of all
+tag/anti-tag duplexes must be isothermal; (<italic>iv</italic>) the difference in
+<italic>T</italic><sub>m</sub> between any perfectly matched tag/anti-tag duplex and any
+duplex with a single mismatch must be both the same for all sequences and large
+enough to discriminate strongly in favor of the perfect match; (<italic>v</italic>) a
+practical and effective manner must exist to enable construction of such a
+repertoire; and (<italic>vi</italic>) there must be a simple way of applying the method,
+in parallel, and in one reaction, to any ensemble of nucleic acid molecules. A
+library of sequences with these properties can be constructed from a special DNA
+language with a vocabulary made up of eight four-base &#x201C;words&#x201D;:
+TTAC, AATC, TACT, ATCA, ACAT, TCTA, CTTT, and CAAA.</p><p>Each word uses only
+three (A, T, and C) of the DNA bases and differs from all of the other words in
+three of the four bases, and they all form, with their respective complements,
+three A:T and one G:C base pairs. Limiting the composition of the
+four-nucleotide words to three bases eliminates self-complementarity within any
+sequence made up of the words and prevents their cleavage by any restriction
+enzyme with symmetrical recognition sites containing both G and C. The
+repertoire of tags is constructed by a &#x201C;mix and divide&#x201D;
+combinatorial synthesis of all possible eight-word combinations. There are
+8<sup>8</sup> such combinations, forming a tag repertoire of 16,777,216
+sequences 32 bases long. 
+<?mtl /hellip?>An example of one tag and its anti-tag complement is shown 
+below:</p>
+<p><monospace>5&#x2032;-TACT.TTAC.ACAT.ATCA.CTTT.CTTT.CAAA.AATC-3&#x2032; </monospace></p>
+<p><monospace>3&#x2032;-ATGA.AATG.TGTA.TAGT.GAAA.GAAA.GTTT.TTAG-5&#x2032;</monospace>
+</p>
+<p>Because of the words used to construct the tag repertoire<?mtl hellip?>, all
+16,777,216 eight-word tag/anti-tag duplexes have the same base pair composition,
+i.e., 24 A:T and eight G:C base pairs. Consequently, all of the tags in the
+entire repertoire should have about the same <italic>T</italic><sub>m</sub>. Because all
+tag sequences differ from their nearest neighbors by at least one word, or three
+base mismatches, there is good discrimination between perfect matches and
+one-word mismatches. Fig. <xref ref-type="fig" rid="F3">3</xref><italic>A</italic>
+depicts the melting curves of eight-word duplexes that have zero-, one-, or
+two-word mismatches. It shows that at 68&#x00B0;C, a duplex with a single-word
+mismatch dissociates, whereas the duplex with an exact match does not. Fig.
+<xref ref-type="fig" rid="F3">3</xref><italic>B</italic> shows that anti-tags
+immobilized on a solid surface do not lose their ability to discriminate in
+favor of the correct tags in hybridization experiments. To estimate the accuracy
+of loading, we deposited individual microbeads into 96-well microtiter plates by
+using fluorescence-activated cell sorting (FACS) and subjected them to multiple
+rounds of PCR amplification. Ten percent of the wells produced no detectable
+product, 70&#x0025; yielded single bands on an agarose gel, and the remaining
+20&#x0025; yielded more than one band (data not shown). Of this latter category,
+one-fourth were estimated to have contained two microbeads; we estimate,
+therefore, that at least 85&#x0025; of the microbeads contain only one sequence.
+</p><fig id="F3"><label>Figure 3</label><caption><p>Melting curve of tags with
+complements. (<italic>A</italic>) Approximately 0.35 OD units of each double-stranded
+oligonucleotide was resuspended in 10 mM sodium phosphate, pH 7.6/50 mM NaCl/3
+mM MgCl<sub>2</sub>. The samples were heated at 1&#x00B0;C per min, and the OD
+at 260 nm was measured and recorded. Reactions consisted of one common
+oligonucleotide, cccatcactttatcaatcaacatatcacaaaaatctcc, and a second
+oligonucleotide as follows: perfect match, (&#xE00C;)
+ggagatttttgtgatatgttgattgataaagtgatggg; one-word mismatch, (&#x25CB;)
+gga<italic>tgat</italic>tttgtgatatgttgattgataaagtgatggg; two-word mismatch, (&#x25B5;)
+ggagatttttgt<italic>ttga</italic>tgtt<italic>ttgt</italic>gataaagtgatggg. (<italic>B</italic>)
+Microbeads bearing the oligonucleotide ggagatttttgtgatatgttgattgataaagtgatggg
+were loaded with FAM-labeled cDNA tagged with this sequence. In separate tubes,
+three cDNAs whose tags differed at the first, third, or fifth positions also
+were loaded. The samples then were washed in 50 mM Tris/50 mM NaCl/3 mM
+Mg<sub>2</sub>Cl at increasing temperatures as indicated. Microbeads then were
+analyzed by FACS, and the means of fluorescence intensities were plotted for the
+perfect match of the tag (filled bar), the mismatches (gray bars), and the
+ratios (cross-hatched bar) of the perfect signal to the average noise of the
+three mismatches.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="pq0305438003"
+alt-version="yes"></graphic></fig><p>Allocation of tags to individual molecules
+is outlined in Fig. <xref ref-type="fig" rid="F2">2</xref>. First, the complete
+repertoire of tags in a plasmid library is ligated to the entire population of
+cDNAs to give a population of tag&#x2013;cDNA conjugates that contains a
+conjugate between every tag and every cDNA. Next, a sample of 160,000
+tag&#x2013;cDNA conjugates is taken that includes only 1&#x0025; of the full
+repertoire and, thus, the probability that two different cDNAs will have the
+same tag sequence is very small, about 0.01&#x0025;. The vast majority will be
+uniquely tagged. The small sample size also ensures greater specificity in
+hybridization, because most of the sampled tags are likely to differ from one
+another by two or more words. The 160,000 tag&#x2013;cDNA conjugates are
+amplified by PCR to give fluorescently labeled biotinylated amplicons. After
+purification with a streptavidinated support, the DNA is treated with T4 DNA
+polymerase in the presence of dGTP to remove one strand from the tag/anti-tag
+duplex using the 3&#x2032; &#x2192; 5&#x2032; exonuclease and exchange reaction
+activities of the enzyme. The resulting tag&#x2013;cDNA conjugates are loaded
+onto microbeads by mixing them with the full 16.7 million repertoire of
+microbeads, each carrying a specific anti-tag sequence. The loading reaction is
+carried out under equilibrium conditions (i.e., 72 hr at 72&#x00B0;C) to ensure
+that hybridization discrimination is achieved through the higher off-rate of
+mismatched sequences. After separating loaded microbeads from unloaded
+microbeads by FACS, as shown in Fig. <xref ref-type="fig" rid="F4">4</xref>, the
+hybridized DNA is ligated to the anti-tag, covalently attaching one strand of
+the DNA to the microbead's surface. This permits easy removal of the
+noncovalently attached strand.</p><fig id="F4"><label>Figure
+4</label><caption><p>Two-parameter, 530-nm (PMT1) and 666-nm (PMT2), FACS
+contour plot showing separation of loaded microbeads (contour on right) from
+unloaded microbeads (contour on left).</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="pq0305438004"
+alt-version="yes"></graphic></fig></sec><sec><title>Analysis of Differential Gene
+Expression.</title><p>To illustrate the first of several applications of our
+cloning methodology, we describe an experiment for physically extracting clones
+that are differentially represented in two libraries. After melting off the
+noncovalently attached DNA strands from the microbeads, the remaining strands
+are available for competitive hybridization with two probes labeled with
+different fluorophores, to produce, in effect, a fluid microarray of millions of
+microbeads. The ratio of probes hybridizing to each bead can easily be measured
+at high throughput (20,000 beads per sec) by using available FACS equipment.
+Thus, microbeads labeled with more of one fluorophore than the other can be
+easily identified and physically separated from the rest of the
+library.</p><p>The sensitivity of this approach was tested in an experiment
+where two fluorescent probes in ratios of 1:8, 8:1, 1:4, 4:1, 1:2, 2:1, 1:1,
+0:1, and 1:0 were hybridized to a complementary set of microbeads. The results
+(Fig. <xref ref-type="fig" rid="F5">5</xref>) show that the probe ratios can be
+clearly measured and that differences as low as 2-fold can be detected. The
+range of fluorescence intensities exhibited by the microbeads reflects the
+variation in the number of cDNAs loaded on each microbead, which determines the
+total number of probe molecules that can bind.</p><fig id="F5"><label>Figure
+5</label><caption><p>Model system for two-color competitive hybridization. A
+34-mer, ggagatttgataaagtttgatgtgtaatagaggg, was synthesized with a 3&#x2032; FAM
+or Cy5 label. The oligonucleotides were brought to final concentration of 14
+&#x03BC;M in 30 &#x03BC;l. The two labeled oligonucleotides were combined in
+nine separate mixtures in ratios of 1:0, 8:1, 4:1, 2:1, 1:1, 1:2, 1:4, 1:8, and
+0:1. Hybridization of each mixture to 100,000 microbeads bearing the
+complementary oligonucleotide was performed, and 10,000 microbeads from each of
+the mixtures were analyzed with a Coulter Elite Flow Cytometer using 488-nm and
+633-nm lasers.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="pq0305438005" alt-version="yes"></graphic></fig><p>To see whether we
+could enrich for differentially expressed genes by using FACS, we made a
+microbead library with cDNA pooled from THP-1 before and after treatment with
+PMA and LPS. Four cDNA probes were constructed: two from the same library of
+induced cDNAs, which were labeled with either R110 or Cy5, and one each from
+libraries of induced and noninduced cDNAs, which were labeled, respectively,
+with Cy5 and R110. The former were used in a control experiment to compare the
+library with itself. Fig. <xref ref-type="fig" rid="F6">6</xref><italic>A</italic> is a
+FACS plot of the microbead library hybridized with a 1:1 mixture of differently
+labeled probes from the same library, whereas Fig. <xref ref-type="fig"
+rid="F6">6</xref><italic>B</italic> is a plot of the microbead library hybridized with a
+1:1 mixture of cDNA probes from the induced and noninduced cells. The
+distribution of microbeads in Fig. <xref ref-type="fig"
+rid="F6">6</xref><italic>A</italic> allowed us to set gates for collecting microbeads
+that were more heavily labeled with either Cy5 or R110 (Fig. <xref
+ref-type="fig" rid="F6">6</xref><italic>B</italic>). The triangles in Fig. <xref
+ref-type="fig" rid="F6">6</xref><italic>B</italic> represent the gates from which
+microbeads carrying up-regulated or down-regulated clones were collected. Each
+gate was set to collect about 1&#x0025; of the total number of clones in the
+library: gate 1 should collect clones that are 10-fold or more up-regulated,
+whereas gate 2 should collect clones that are 2-fold or more down-regulated.
+</p><fig id="F6"><label>Figure 6</label><caption><p>A reference library of
+2,000,000 microbeads was formed by mixing equal numbers of microbeads with
+attached cDNA derived from induced and noninduced THP-1 cells. Reference
+microbeads (100,000) were hybridized with 10 &#x03BC;g each of Cy5-labeled probe
+and R110-labeled probe, both derived from the same induced library to yield
+<italic>A</italic>. Microbeads (1,600,000) were hybridized with 10 &#x03BC;g of
+Cy5-labeled probe from the induced library and 10 &#x03BC;g of R110-labeled
+probe derived from the noninduced library to yield
+<italic>B</italic>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="pq0305438006" alt-version="yes"></graphic></fig><p>Of the 1,600,100
+microbeads used in this experiment, 13,988 (0.87&#x0025;) were collected in the
+up-regulated fraction, and 17,303 (1.01&#x0025;) in the down-regulated fraction.
+The DNA in these fractions was recovered by PCR, and 956 of the up-regulated
+clones and 985 of the down-regulated clones were sequenced. Clones from the
+up-regulated fraction included 68 known genes, 35 expressed sequence tags, and
+nine novel sequences, whereas clones from the down-regulated fraction included
+209 known genes, 111 expressed sequence tags, and five novel sequences. In the
+up-regulated fraction there were many known PMA-induced genes such as IL-8,
+tumor necrosis factor &#x03B1;, macrophage inflammatory protein 1, and
+superoxide dismutase 2 (<xref ref-type="bibr" rid="B11">11</xref>&#x2013;<xref
+ref-type="bibr" rid="B14">14</xref>). There was very little overlap between the
+up- and down-regulated sets of genes, except for the presence of a small number
+of microbeads bearing up-regulated B94 (M92357) cDNAs in the down-regulated
+fraction and some microbeads bearing down-regulated 23 kDa basic protein
+transcript (X56932) in the up-regulated fraction. These were likely the result
+of sorting errors caused by clustering of microbeads in adjacent
+drops.</p></sec><sec><title>Plaque Hybridizations.</title><p>To validate our
+procedure, we independently cloned cDNA from the induced and noninduced THP-1
+cells in bacteriophage lambda and screened filters each containing 50,000
+plaques with probes derived from 19 of the genes identified by sequencing the
+DNA from the fractionated beads. Table <xref ref-type="table" rid="T1">1</xref>
+summarizes these results. In every case, the sequences derived from beads
+collected in gates 1 or 2 were shown to be either up-regulated 29- to 500-fold
+or down-regulated 2- to 16-fold, respectively. These changes spanned expression
+levels of 0.02&#x2013;2&#x0025;.</p><table-wrap id="T1"><label>Table
+1</label><caption><p>THP-1 expression levels by plaque hybridization
+assays</p></caption><table><tr><th>GeneBank
+Number</th><th>Gene</th><th>Noninduced, replicate counts</th><th>PMA/LPS
+induced, replicate counts</th><th>Up- or down-regulation </th></tr><tr><td
+colspan="5"><hr/></td></tr><tr><td colspan="5">Up-regulated genes (Gate
+1)</td></tr><tr><td>&#x2003;<ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="Y00787"/></td><td>IL-8</td><td>1 /0</td><td>663
+/808</td><td>&#x003E;500&#x00D7;</td></tr><tr><td>&#x2003;<ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X65965"/></td><td>SOD-2</td><td>0 /0</td><td>1636
+/1096</td><td>&#x003E;500&#x00D7;</td></tr><tr><td>&#x2003;<ext-link
+ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="M25315"/></td><td>MIP-1</td><td>0 /0</td><td>1120
+</td><td>&#x003E;500&#x00D7;</td></tr><tr><td>&#x2003;<ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="J04130"/></td><td>Act-2</td><td>0
+/0</td><td>453/542/572/606</td><td>&#x003E;500&#x00D7;</td></tr><tr><td>&#x2003;
+<ext-link ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X02910"/></td><td>TNF-&#x03B1;</td><td>0 /0</td><td>81
+/82</td><td>&#x003E;500&#x00D7;</td></tr><tr><td>&#x2003;<ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="J03210"/></td><td>Collagenase type IV</td><td>0 /0</td><td>92
+/93</td><td>&#x003E;500&#x00D7;</td></tr><tr><td>&#x2003;<ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="M21121"/></td><td>RANTES</td><td>0 /7</td><td>113
+/92</td><td>29&#x00D7;</td></tr><tr><td>&#x2003;<ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="M92357"/></td><td>B94</td><td>7/3/0/2
+</td><td>155/150/124/174</td><td>50&#x00D7;</td></tr><tr><td>Down-regulated
+genes (Gate 2) </td></tr><tr><td>&#x2003;<ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X13546"/></td><td>HMG-17</td><td>75 /83</td><td>6
+/4</td><td>15.8&#x00D7; </td></tr><tr><td>&#x2003;<ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="M17885"/></td><td>Acidic
+ribosomal protein P0</td><td>191 /195</td><td>84 /54</td><td>2.8&#x00D7;
+</td></tr><tr><td>&#x2003;<ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="X16869"/></td><td>Elongation factor 1&#x03B1;</td><td>577
+/607</td><td>268 /270</td><td>2.2&#x00D7;</td></tr></table></table-wrap><p>THP-1 cells
+respond to PMA by first coming out of the cell cycle followed by the induction
+of the genes required for differentiation. The first process should be
+associated with the down-regulation of a large number of genes involved in the
+growth of cells, such as ribosomal protein-coding genes. Plaque hybridization
+with several genes in this class indicates that these are down-regulated between
+2- and 4-fold (Table <xref ref-type="table" rid="T1">1</xref>). Our method detects
+these relatively small changes; we found an enrichment of these cDNAs in the
+pool of microbeads collected in gate 2. Of the 989 clones sequenced, 375 could
+be assigned to 48 ribosomal proteins with recurrences ranging from 1 to 42 and
+an average of 7.8 per gene. We estimate the enrichment to be 5&#x00D7;. In
+addition, the pool of microbeads in gate 2 was not significantly contaminated by
+genes that were unaffected by PMA stimulation (data not
+shown).</p></sec></sec><sec sec-type="discussion"><title>Discussion</title><p>We have
+described a method for cloning libraries of DNA fragments on the surfaces of
+microbeads and have shown how this method facilitates identification and
+physical extraction of genes that are differentially expressed. Microbead clones
+can be processed in parallel in a single tube, and there is no need to handle
+each clone separately for analysis and retrieval. Because the DNA on microbeads
+is accessible for direct interrogation, no further biochemical processing is
+required for various types of analyses, such as hybridization or
+sequencing.</p><p>Our ability to generate a million or more microbeads carrying
+clones from very large cDNA libraries allows the selection of sequences
+differentially regulated at very low levels. All that is necessary is that the
+microbead library be large enough to contain nearly all of the sequences from
+the libraries being compared. No previous knowledge of any of the sequences is
+required. Nucleic acid samples therefore can be from any source. The microbead
+libraries used for comparisons are constructed from a combination of the
+libraries being analyzed. Probes are constructed separately from the libraries
+and are labeled differentially. The ratio with which probes hybridize to the
+microbeads is equally accurate for microbeads carrying rare and abundant
+species, because each microbead responds to the probes independently of how many
+others carry the same cDNA.</p><p>Most importantly, our method allows libraries
+to be probed very deeply, much more deeply than is practical by other methods.
+To attempt identification of differentially expressed clones by deep, random,
+expressed sequence tag sequencing of the libraries being compared would be
+prohibitive. To do so with high-density planar microarrays (chips or gridded
+clones on filters) would require access to chips or filters containing all
+sequences expressed by the system and, even then, might not adequately detect
+low abundance genes. To do so with serial analysis of gene expression
+experiments limited to 2,000 sequencing runs (the same number we used) would be
+equivalent to probing only about 50,000 signatures deep whereas our extracted,
+differentially expressed, clones were the result of probing the libraries
+2,000,000 deep. Because our technique readily selects out a much-reduced set of
+clones relevant to a biological system or an experiment, it can be deployed as a
+discovery tool that enables easier and more effective uses of other
+techniques.</p></sec></body><back><ack><p>We thank Laurie J. Goodman, Holger
+Hiemisch, Hans Christian Kornau, An Lai, Ling Yau, Jason Zeng, and Eugene A.
+Zhukovsky for their assistance in this
+project.</p></ack><glossary><def-list><title>Abbreviations</title><def-item><term
+id="G1">PMA</term><def><p>phorbol 12-myristate
+13-acetate</p></def></def-item><def-item><term
+id="G2">LPS</term><def><p>lipopolysaccharide</p></def></def-item><def-item><term
+id="G3">FACS</term><def><p>fluorescence-activated cell
+sorting</p></def></def-item><def-item><term
+id="G4">FAM</term><def><p>6-carboxyl-fluorescein</p></def></def-item></def-list>
+</glossary><ref-list><ref
+id="B1"><label>1</label><citation><name><surname>Antequera</surname><given-names>F.</given-names>
+</name><name><surname>Bird</surname><given-names>A.</given-names></name><source>Proc. Natl. Acad. Sci.
+USA</source><volume>90</volume><year>1993</year><fpage>11995</fpage><lpage>11999
+</lpage>.<pub-id pub-id-type="pmid">7505451</pub-id> </citation></ref><ref
+id="B2"><label>2</label><citation><name><surname>Rowen</surname><given-names>L.</given-names></name>
+<name><surname>Mahairas</surname><given-names>G.</given-names></name><name><surname>Hood</surname><given-names>L.
+</given-names></name><source>Science</source><volume>278</volume><year>1997</year><fpage>
+605</fpage><lpage>607</lpage>.<pub-id pub-id-type="pmid">9381170</pub-id>
+</citation></ref><ref
+id="B3"><label>3</label><citation><name><surname>Bishop</surname><given-names>J.
+O.</given-names></name><name><surname>Morton</surname><given-names>J.
+G.</given-names></name><name><surname>Rosbash</surname><given-names>M.</given-names></name><name><surname>
+Richardson</surname><given-names>M.</given-names></name><source>Nature
+(London)</source><volume>250</volume><year>1974</year><fpage>199</fpage><lpage>
+204</lpage>.<pub-id pub-id-type="pmid">4855195</pub-id> </citation></ref><ref
+id="B4"><label>4</label><citation><name><surname>Ostrow</surname><given-names>R.
+S.</given-names></name><name><surname>Woods</surname><given-names>W.
+G.</given-names></name><name><surname>Vosika</surname><given-names>G.
+J.</given-names></name><name><surname>Faras</surname><given-names>A. J.</given-names></name><source>Biochim.
+Biophys.
+Acta</source><volume>562</volume><year>1979</year><fpage>92</fpage><lpage>102
+</lpage>.<pub-id pub-id-type="pmid">86365</pub-id> </citation></ref><ref
+id="B5"><label>5</label><citation><name><surname>Lee</surname><given-names>C.</given-names></name>
+<name><surname>Klopp</surname><given-names>R.
+G.</given-names></name><name><surname>Weindruch</surname><given-names>R.</given-names></name><name><surname>
+Prolla</surname><given-names>T.
+A.</given-names></name><source>Science</source><volume>285</volume><year>1999</year>
+<fpage>1390</fpage><lpage>1393</lpage>.<pub-id pub-id-type="pmid">10464095</pub-id>
+</citation></ref><ref
+id="B6"><label>6</label><citation><name><surname>Zhang</surname><given-names>L.</given-names></name>
+<name><surname>Zhou</surname><given-names>W.</given-names></name><name><surname>Velculescu</surname><given-names>V.
+E.</given-names></name><name><surname>Kern</surname><given-names>S.
+E.</given-names></name><name><surname>Hruban</surname><given-names>R.
+H.</given-names></name><name><surname>Hamilton</surname><given-names>S.
+R.</given-names></name><name><surname>Vogelstein</surname><given-names>B.</given-names></name><name><surname>
+Kinzler</surname><given-names>K.
+W.</given-names></name><source>Science</source><volume>276</volume><year>1997</year>
+<fpage>1268</fpage><lpage>1272</lpage>.<pub-id pub-id-type="pmid">9157888</pub-id>
+</citation></ref><ref
+id="B7"><label>7</label><citation><name><surname>Golub</surname><given-names>T.
+R.</given-names></name><name><surname>Slonim</surname><given-names>D.
+K.</given-names></name><name><surname>Tamayo</surname><given-names>P.</given-names></name><name><surname>Huard
+</surname><given-names>C.</given-names></name><name><surname>Gaasenbeek</surname><given-names>M.</given-names></name><name
+><surname>Mesirov</surname><given-names>J.
+P.</given-names></name><name><surname>Coller</surname><given-names>H.</given-names></name><name><surname>Loh</surname
+><given-names>M. L.</given-names></name><name><surname>Downing</surname><given-names>J.
+R.</given-names></name><name><surname>Caligiuri</surname><given-names>M.
+A.</given-names></name><etal/><source>Science</source><volume>286</volume><year>1999
+</year><fpage>531</fpage><lpage>537</lpage>.<pub-id
+pub-id-type="pmid">10521349</pub-id> </citation></ref><ref
+id="B8"><label>8</label><citation><name><surname>Audic</surname><given-names>S.</given-names></name>
+<name><surname>Claverie</surname><given-names>J.</given-names></name><source>Genome
+Res.</source><volume>7</volume><year>1997</year><fpage>986</fpage><lpage>995
+</lpage>.<pub-id pub-id-type="pmid">9331369</pub-id> </citation></ref><ref
+id="B9"><label>9</label><citation><name><surname>DeRisi</surname><given-names>J.
+L.</given-names></name><name><surname>Iyer</surname><given-names>V.
+R.</given-names></name><name><surname>Brown</surname><given-names>P.
+O.</given-names></name><source>Science</source><volume>278</volume><year>1997</year>
+<fpage>680</fpage><lpage>686</lpage>.<pub-id pub-id-type="pmid">9381177</pub-id>
+</citation></ref><ref id="B10"><label>10</label><citation>Albrecht, G., Brenner,
+S. &#x0026; DuBridge, R. (1999) PCT Publication WO
+99/35293.</citation></ref><ref
+id="B11"><label>11</label><citation><name><surname>Wilson</surname><given-names>L.</given-names></name
+><name><surname>Butcher</surname><given-names>C.
+J.</given-names></name><name><surname>Kellie</surname><given-names>S.</given-names></name><source>FEBS
+Lett.</source><volume>325</volume><year>1993</year><fpage>295</fpage><lpage>298
+</lpage>.<pub-id pub-id-type="pmid">8319811</pub-id> </citation></ref><ref
+id="B12"><label>12</label><citation><name><surname>Gatanaga</surname><given-names>T.</given-names>
+</name><name><surname>Hwang</surname><given-names>C.
+D.</given-names></name><name><surname>Gatanaga</surname><given-names>M.</given-names></name><name><surname>
+Cappuccini</surname><given-names>F.</given-names></name><name><surname>Yamamoto</surname><given-names>R.
+S.</given-names></name><name><surname>Granger</surname><given-names>G. A.</given-names></name><source>Cell.
+Immunol.</source><volume>138</volume><year>1991</year><fpage>1</fpage><lpage>10
+</lpage>.<pub-id pub-id-type="pmid">1655285</pub-id> </citation></ref><ref
+id="B13"><label>13</label><citation><name><surname>Nakao</surname><given-names>M.</given-names></name>
+<name><surname>Nomiyama</surname><given-names>H.</given-names></name><name><surname>Shimada</surname><given-names>K.
+</given-names></name><source>Mol. Cell.
+Biol.</source><volume>10</volume><year>1990</year><fpage>646</fpage><lpage>658
+</lpage>.
+</citation></ref><ref
+id="B14"><label>14</label><citation><name><surname>Tian</surname><given-names>L.</given-names></name>
+<name><surname>White</surname><given-names>J. E.</given-names></name><name><surname>Lin</surname><given-names>H.
+Y.</given-names></name><name><surname>Haran</surname><given-names>V.
+S.</given-names></name><name><surname>Sacco</surname><given-names>J.</given-names></name><name><surname>Chikkappa
+</surname><given-names>G.</given-names></name><name><surname>Davis</surname><given-names>F.
+B.</given-names></name><name><surname>Davis</surname><given-names>P.
+J.</given-names></name><name><surname>Tsan</surname><given-names>M. F.</given-names></name><source>Am. J.
+Physiol.</source><volume>275</volume><year>1998</year><fpage>C740</fpage><lpage>
+C747</lpage>.<pub-id pub-id-type="pmid">9730957</pub-id>
+</citation></ref></ref-list><fn-group><fn><p>Data deposition: The sequences reported
+in this paper have been deposited in the GenBank database (accession nos.
+&#x2013;).</p></fn></fn-group></back></article> <?mtl /hellip?>

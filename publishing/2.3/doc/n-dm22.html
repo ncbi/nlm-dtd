@@ -1,0 +1,1056 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Journal Publishing DTD Customize Content and Attributes Module</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Journal Publishing DTD Customize Content and Attributes Module</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Journal Publishing DTD Customize Content and      --&gt;
+&lt;!--             Attributes Module                                 --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.3 20070202//EN"
+Delivered as file "journalpubcustom-models.ent"                    --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Journal Publishing DTD of the                     --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    To declare the Parameter Entities (PEs) used to   --&gt;
+&lt;!--             over-ride content models or parts of content      --&gt;
+&lt;!--             models when making a new DTD from the modules of  --&gt;
+&lt;!--             the Archiving and Interchange DTD Suite.          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Or-groups within models should use mixes or       --&gt;
+&lt;!--             classes rather than name elements directly.       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Note: Since PEs must be declared before they      --&gt;
+&lt;!--             are used, this module must be called before the   --&gt;
+&lt;!--             content modules that declare elements.            --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) PEs that define OR lists of elements to be     --&gt;
+&lt;!--                mixed with #PCDATA in element content models   --&gt;
+&lt;!--                (all PEs are named "yyy-elements", where "yyy" --&gt;
+&lt;!--                is the name of the primary element whose       --&gt;
+&lt;!--                content model will use the declared PE.)       --&gt;
+&lt;!--             2) PEs that define complete content models.       --&gt;
+&lt;!--                (names ending in the suffix "-model")          --&gt;
+&lt;!--             3) PEs that define attribute list or attribute    --&gt;
+&lt;!--                value over-rides                               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital Archive of Journal Articles               --&gt;
+&lt;!--             National Center for Biotechnology Information     --&gt;
+&lt;!--                (NCBI)                                         --&gt;
+&lt;!--             National Library of Medicine (NLM)                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             September 2004                                    --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             this DTD should be sent in email to:              --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+ 40. FIG MODEL ELEMENTS - Added &lt;chem-struct-wrapper&gt; to the 
+     contents of &lt;figure&gt; using -%chem-struct-wrap.class; inside 
+     -%fig-mod; so that you can use a &lt;chem-struct-wrapper&gt; anywhere 
+     you can use a &lt;disp-formula&gt;.
+     
+ 39. CONTENT TYPE - The attribute "content-type" added to the
+     following elements to preserve/add semantic distinctions:
+      - graphic (through graphic-atts)
+      - inline-graphic (through inline-graphic-atts)
+     
+ 38. GRAPHIC ATTS - In the parameter entity -%graphic-atts;
+     made the following changes:
+     
+     a) Unfixed the "mimetype" attribute from
+           mimetype  CDATA   #FIXED 'image'
+        into this:
+           mimetype  CDATA   #IMPLIED
+      
+     b) Made the "mime-subtype" attribute into a CDATA rather 
+        than a list of values
+        
+     c) Added "content-type" attribute to preserve or add semantic
+        distinctions.
+     
+ 37. INLINE GRAPHIC ATTS - In the parameter entity 
+     -%inline-graphic-atts; made the following changes:
+     
+     a) Unfixed the "mimetype" attribute from
+           mimetype  CDATA   #FIXED 'image'
+        into this:
+           mimetype  CDATA   #IMPLIED
+        
+     b) Added "content-type" attribute to preserve or add semantic
+        distinctions.
+        
+     c. Added "baseline-shift" attribute to preserve the positioning
+        of the inline graphic relative to the text baseline.
+     
+ 36. JOURNAL METADATA MODEL - Added &lt;trans-title&gt;* and 
+     &lt;trans-subtitle&gt;* to the contents of &lt;journal-meta&gt;. 
+     This is a temporary insertion for version 2.3. A 
+     more structured model for translated titles may be 
+     introduced in version 3.0.
+     
+ 35. PERSON GROUP ATTRIBUTES
+     a) Added "id" attribute of type ID
+     
+ 34. ARTICLE METADATA MODEL
+     a) Added &lt;grant-num&gt; and &lt;grant-sponsor&gt; to the contents of 
+     &lt;article-meta&gt;. This is a temporary insertion for version 2.3. 
+     A more structured model for grant material and sponsorship 
+     is expected to be introduced in version 3.0.
+     
+ 33. SEC MODEL - Changed model to require that either a &lt;label&gt;
+     or a &lt;title&gt; be required, instead of requiring a &lt;title&gt;.
+     Now there must be one or the other, and there may be both.
+       This changes &lt;sec&gt; and &lt;app&gt;.
+     
+ 32. ANONYMOUS - Set &lt;anonymous&gt; (new element) model to EMPTY
+     
+ 31. NLM CITATION - Added &lt;nlm-citation&gt; as an alternative to
+     unstructured &lt;citation&gt;s by adding &lt;nlm-citation&gt;
+     to -%citation.class;. This changed the models for:
+      - &lt;ref&gt;, which uses -%citation.class; inside %ref-model;
+      
+ 30. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.2                       (DAL/BTU) v2.2 (2006-04-30)
+     
+     Backwards-compatible changes to meet operational needs.
+     Typical changes include adding attribute values and making 
+     required elements optional.
+          
+ 29. PREFORMAT ELEMENTS - Added -%phrase.class; to allow use of
+     &lt;named-content&gt; inside &lt;preformat&gt;.
+          
+ 28. PERSON-GROUP-TYPE ATTRIBUTE VALUES - Added "director"
+          
+ 27. SECTION MODELS
+ 
+     a. Added optional &lt;label&gt; to the start of the
+     content models for section (-%sec-model;) and section optional
+     title model (-%sec-opt-title-model;). The Blue DTD is being
+     used for articles that have already been published.
+     
+     b. Added new element &lt;sec-meta&gt; to the start of the
+     content models for section (-%sec-model;) and section optional
+     title model (-%sec-opt-title-model;). There are sections that
+     are authored independently, even in journal articles, and 
+     this is the start of allowing additional metadata for such
+     sections. The first content for &lt;sec-meta&gt; will be 
+     &lt;contrib-group&gt;
+          
+ 26. PUBLISHER LOC - Allowed &lt;email&gt;, &lt;uri&gt;, and &lt;ext-link&gt;
+     inside &lt;publisher-loc&gt;. Change to %publisher-loc-elements;
+  
+ 25. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by the online list     
+
+ 24. FN TYPES - Made into a parameter entity
+
+ 23. CORRESP MODEL - Added &lt;label&gt; to elements allowed to be
+     inside the &lt;corresp&gt; element, using -%label.class; This made
+     the -%corresp-elements override the same as the basic default,
+     so -%corresp-elements was removed from this module.
+
+ 22. CONFERENCE MODEL - Conference theme was required, which seems
+     to be an error. Is now optional.
+
+ 21. PREFORMAT ELEMENTS - Added %display-back-matter; back to 
+     %preformat-elements; to align Blue with the Suite on
+     permissions.
+
+ 20. PERMISSIONS - Added a new &lt;permissions&gt; wrapper element to
+     consolidate copyright and licensing information. For backwards
+     compatibility, the new element will be added alongside the
+     existing copyright elements. Best practice will be to use the
+     new container, but &lt;copyright-statement&gt;, &lt;copyright-year&gt;,
+     and &lt;license&gt; will be accepted in their old positions inside
+     &lt;article-meta&gt;
+      - Added &lt;permissions&gt; to &lt;article-meta&gt; model
+      - Added &lt;copyright-holder&gt; to &lt;permissions&gt;
+      - Moved &lt;copyright-year&gt; to the common module
+      - Moved &lt;license&gt; to common module
+      - Moved -%license-atts; to common module
+      - Moved -%license-model; to common module
+               
+ 19. JOURNAL TITLES
+       a) Added &lt;journal-subtitle&gt; to &lt;journal-meta&gt; through
+          -%journal-meta-model;. New element defined in -%common.ent;.
+          
+ 18. Updated public identifier to "v2.3 20070202" 
+          
+     =============================================================
+     Version 2.0                  (Beck/DAL/BTU) v2.0 (2004-08-30)
+          
+     Minor tweaks before public release. Decision was made not to
+     change release number
+
+ 17. LIST ITEM - Removed over-ride for &lt;list-item&gt;, which has the
+     effect of adding an optional &lt;label&gt; at front of model
+
+ 16. JOURNAL METADATA MODEL - Made publisher optional
+
+ 15. FOOTNOTE ATTRIBUTES - Added the "symbol" attribute back to
+     Footnote attributes
+
+ 14. DISP-FORMULA - Added -%label.class; therefore removed it 
+     from this module, as it was then the same as in the
+     basic Suite math.ent
+
+ 13. AFF-ELEMENTS - Added -%label.class;; therefore removed it 
+     from this module, as it was then the same as in the
+     basic Suite math.ent
+
+ 12. ARTICLE METADATA MODEL -
+     a. COUNTS - Added to article metadata model
+     b. ARTICLE-ID - Made optional and repeatable (was required
+        and repeatable)
+     c. COPYRIGHT-YEAR - Made optional
+
+ 11. FOOTNOTE - Delete over-ride of content model. This has the
+     effect of making the Publishing DTD the same as base, 
+     adding an optional &lt;label&gt; at the front of footnote.
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+     
+     
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+
+ 10. OVER-RIDE OF ARTICLE-META-MODEL - Added new elements
+     a. &lt;custom-meta-wrap&gt; containing &lt;custom-meta&gt;
+     b. &lt;email&gt;
+     c. &lt;issue-id&gt;
+     d. &lt;issue-title&gt; (for special title or theme)
+     e. &lt;page-range&gt;
+     f. &lt;volume-id&gt;
+     g. &lt;license&gt; (for now, just a bucket into which to
+        dump license-related material until the AIT Workgroup
+        does more analysis)
+
+  9. MOVE AND REMOVE PARAMETER ENTITY DECLARATIONS
+     - Deleted duplicate %might-link-atts; (There were two!)
+     - Collected ATTLIST over-rides into one place.
+     - Deleted all the Parameter Entities which were
+       duplicated in this module ONLY because they were
+       needed to parse subsequent entities.
+
+  8. ADDRESS-ELEMENTS - added &lt;email&gt; and &lt;uri&gt; to everywhere 
+     &lt;ext-link&gt; was allowed, by renaming %ext-link.class; to
+     %address-link.class; and using it:
+        &lt;email&gt; and &lt;uri&gt; should be added to 
+         - %article-meta-model;
+         - %aff-elements;
+         - %p-elements;
+
+  7.  FOOT NOTE ATTRIBUTES
+       - added "symbol"
+
+  6.  Replaced element names in OR groups with the appropriate
+      classes. Not a model change, just entity usage:
+       - %array-model;
+       - %fig-group-model;
+       - %list-item-model;
+ 
+  5. ACCESS CLASS
+        ### Customization Alert ###
+     a. Took &lt;ext-link&gt; out of -%access.class;. It did not belong.
+        It belongs in -%address-link.class;
+     b. Added -%address-link.class; to anywhere regular
+        %access.class; was used.
+
+  4. OVER-RIDE OF ARTICLE-META-MODEL - Added new elements
+     a. &lt;custom-meta-wrap&gt; containing &lt;custom-meta&gt;
+     b. &lt;email&gt;
+     c. &lt;issue-id&gt;
+     d. &lt;issue-title&gt; (for special title or theme)
+     e. &lt;page-range&gt;
+     f. &lt;volume-id&gt;
+
+  3. COMPLETE MODELS WHEN OVER-RIDING A MODEL 
+     (for all Parameter Entities suffixed "-model")
+     ### Customization Alert ###
+     a. Made all the model over-rides consistent. Some included
+        the outer parentheses, some did not. They all do now,
+        as this is the most flexible system, allowing for
+        #PCDATA, mixed, or element content. (This is in direct
+        contrast to the "-element" suffixed models, which are
+        designed to prohibit element content and permit only
+        #PCDATA or mixed content.)
+     -  %article-meta-model; (added parentheses to Parameter
+        Entity and removed them from Element Declaration)
+     - %abstract-model;
+     - %ack-model;
+     - %array-model;
+     - %author-notes-model;
+     - %def-item-model;
+     - %fig-group-model;
+     - %gloss-group-model;
+     - %journal-meta-model;
+     - %list-model;
+     - %ref-model;
+     - %sec-model;
+     - %sec-opt-title-model;
+     - %trans-abstract-model;
+
+  2. PARAMETER ENTITIES FOR CLASSES/MIXES/ATT LISTS
+
+     a. NEW PARAMETER ENTITIES - To correct potential classing 
+        problems,  new Parameter Entities were created. The following
+        PEs and models were changed to use these new PEs:
+             New Content model PEs:
+        - %just-para.class;  used in 
+             - %list-item-model; 
+        - In &lt;author-notes&gt; "(corresp | fn)+" was replaced
+            with the %fn-link.class; and the new class
+            -%corresp.class; and )
+ 
+     b. RENAMED CLASSES
+        ### Customization Alert ###
+        Not all classes ended in the ".class" suffix. Changed the 
+        following to add the class suffix:
+        - %address-elements; (also renamed this one -%address.class;!)
+          used in:
+             - %aff-elements; 
+             - %corresp-elements; 
+        - %block-math.class; and -%inline-math.class; used in 
+             - %p-elements;
+        - %display-back-matter.class; used in 
+             - %array-model;
+        - %rest-of-para.class;
+          Inside the content model for Paragraph &lt;p&gt;, was renamed 
+          -%p-elements;. The content model for Named Content 
+          and %p-elements; still use %rest-of-para.class;.
+
+     c. LINK CLASSES
+        ### Customization Alert ###
+        - Deleted 
+            - %link.class;, 
+            - %inpara-address; 
+            - %ext-links.class;
+        - Replaced above with four link classes: 
+          (some unchanged from before)
+            - %address-link.class;   (the links used in addresses)
+            - %fn-link.class.class;  (just fn)
+            - %simple-link.class;    (the internal links, same)
+            - %article-link.class;   (links for journal article)
+        - All occurrences of %link.class replaced with
+            - %address-link.class; and 
+            - %simple-link.class;, and 
+            - %article-link.class;  links
+        - Replaced all occurrences of %ext-links.class; with
+          the new %address-links.class;
+        - This changed the following Parameter Entities (no DTD 
+          model change):
+            - %disp-formula-elements;
+            - %emphasized.text; 
+            - %simple-phrase; 
+
+     d. PARA CLASS
+        ### Customization Alert ###
+        - Deleted %para.class; 
+        - Its place in the definition of the Paragraph &lt;p&gt; element 
+          will be taken by the -%p-elements; entity.
+        - Its place in other mixes will be taken by the combination
+          of %just-para.class; and %rest-of-para.class;
+                
+  1. Created this module from material previously in the single
+     journal publishing customization module (journalpubcustomize.ent)
+     Created at version "v2.3 20070202"                            --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    INLINE MIXES TO OVER-RIDE CONTENT MODELS   --&gt;
+&lt;!--                    (ELEMENTS TO BE ADDED TO #PCDATA IN MODELS)--&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    ABBREVIATED JOURNAL TITLE ELEMENTS         --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;abbrev-journal-title&gt; 
+                        Removed the face markup, %just-rendition;  --&gt;
+&lt;!ENTITY % abbrev-journal-title-elements
+                        ""                                           &gt;
+
+
+&lt;!--                    CONFERENCE ACRONYM ELEMENTS                --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        the conference acronym.    
+                        Removed %simple-text;                      --&gt;
+&lt;!ENTITY % conf-acronym-elements 
+                        ""                                           &gt;
+
+
+&lt;!--                    CONFERENCE LOCATION ELEMENTS               --&gt;
+&lt;!--                    Elements for use in the &lt;conf-loc&gt; element 
+                        Removed %simple-text;                      --&gt;
+&lt;!ENTITY % conf-loc-elements 
+                        " "                                          &gt; 
+
+
+&lt;!--                    CONFERENCE NAME ELEMENTS                   --&gt;
+&lt;!--                    Elements for use in the &lt;conf-name&gt; element.
+                        Removed %simple-text;                      --&gt;
+&lt;!ENTITY % conf-name-elements 
+                        " "                                          &gt; 
+          
+
+&lt;!--                    CONFERENCE NUMBER ELEMENTS                 --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        the conference number.     
+                        Removed %simple-text;                      --&gt;
+&lt;!ENTITY % conf-num-elements 
+                        " "                                          &gt;
+
+
+&lt;!--                    CONFERENCE SPONSOR  ELEMENTS               --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        the conference sponsor. 
+                        Removed %simple-text;                      --&gt;
+&lt;!ENTITY % conf-sponsor-elements 
+                        ""                                           &gt;
+
+
+&lt;!--                    CONTRACT/GRANT NUMBER ELEMENTS             --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        the contract number.  
+                        Removed %simple-text;                      --&gt;
+&lt;!ENTITY % contract-elements 
+                        ""                                           &gt;
+
+
+&lt;!--                    DEGREE(S) ELEMENTS                         --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        &lt;degrees&gt;                             
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % degrees-elements
+                        " "                                          &gt;
+
+
+&lt;!--                    EDITION ELEMENTS                           --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % edition-elements
+                        " "                                          &gt;
+
+
+&lt;!--                    FAX NUMBER ELEMENTS                        --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;fax&gt;    
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % fax-elements
+                        " "                                          &gt;
+
+
+&lt;!--                    GIVEN (FIRST) NAMES ELEMENTS               --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;given-names&gt;                   
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % given-names-elements
+                        " "                                          &gt;
+
+
+&lt;!--                    INSTITUTION NAME ELEMENTS                  --&gt;
+&lt;!--                    Elements for use in the &lt;institution&gt; 
+                        element                                    
+                        Removed %break.class; and %emphasis.class; --&gt;
+&lt;!ENTITY % institution-elements 
+                        "| %subsup.class;"                           &gt; 
+
+
+&lt;!--                    ISSUE TITLE ELEMENTS                       --&gt;
+&lt;!--                    Elements for use with data characters inside
+                        the model for the &lt;issue&gt; element     
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % issue-elements 
+                        " "                                          &gt;
+
+
+&lt;!--                    JOURNAL TITLE ELEMENTS                     --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;journal-title&gt;
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % journal-title-elements
+                        " "                                          &gt;
+
+
+&lt;!--                    KEYWORD CONTENT ELEMENTS                   --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a keyword &lt;kwd&gt;.                           --&gt;
+&lt;!ENTITY % kwd-elements
+                        "| %emphasis.class; | %subsup.class;"        &gt;
+
+
+&lt;!--                    PATENT NUMBER ELEMENTS                     --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        &lt;patent&gt;                             
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % patent-elements 
+                        " "                                          &gt;
+
+
+&lt;!--                    PHONE NUMBER ELEMENTS                      --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;phone number&gt;             
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % phone-elements
+                        " "                                          &gt;
+
+
+&lt;!--                    PREFIX ELEMENTS                            --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;prefix&gt;  
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % prefix-elements
+                        " "                                          &gt;
+
+
+&lt;!--                    PREFORMATTED TEXT ELEMENTS                 --&gt;
+&lt;!--                    Elements that may be used, along with data
+                        characters, inside the content model for the
+                        &lt;preformat&gt; element, in which white space,
+                        such as tabs, line feeds, and spaces will
+                        be preserved                               --&gt;
+&lt;!ENTITY % preformat-elements
+                        "| %address-link.class; | 
+                         %display-back-matter.class; |
+                         %emphasis.class; | %phrase.class; |
+                         %subsup.class;"                             &gt;
+
+
+&lt;!--                    PUBLISHER'S LOCATION ELEMENTS              --&gt;
+&lt;!--                    Elements for use in the Publisher Location
+                        &lt;publisher-loc&gt; element
+                        Removed %address.class;, %address-link.class;,
+                        %emphasis.class;, and %subsup.class;       --&gt;
+&lt;!ENTITY % publisher-loc-elements 
+                        "| %address-link.class;"                     &gt; 
+
+
+&lt;!--                    PUBLISHER'S NAME ELEMENTS                  --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;publisher-name&gt;   
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % publisher-name-elements
+                        " "                                          &gt; 
+                        
+                        
+&lt;!--                    SUFFIX ELEMENTS                            --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;suffix&gt;
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % suffix-elements
+                        " "                                          &gt; 
+
+
+&lt;!--                    SURNAME ELEMENTS                           --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;surname&gt;                                
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % surname-elements
+                        " "                                          &gt; 
+
+
+&lt;!--                    URI ELEMENTS                               --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;uri&gt; 
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % uri-elements
+                        " "                                          &gt; 
+
+
+&lt;!--                    VOLUME NUMBER ELEMENTS                     --&gt;
+&lt;!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a &lt;volume&gt; 
+                        Removed %just-rendition;                   --&gt;
+&lt;!ENTITY % volume-elements
+                        " "                                          &gt; 
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OVER-RIDES OF CONTENT MODELS (FULL MODELS) --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    ABSTRACT MODEL                             --&gt;
+&lt;!--                    Abstracts may contain one or more paragraphs
+                        (as a typical abstract does) or titled
+                        sections, as is done in many physics
+                        articles.
+                        Unlike the default model in the base DTD
+                        Suite, this &lt;abstract&gt; requires that all
+                        sections in the abstract start with titles.--&gt;
+&lt;!ENTITY % abstract-model    
+                        "(title?, p*, sec*)"                         &gt;
+
+
+&lt;!--                    ACKNOWLEDGMENTS MODEL                      --&gt;
+&lt;!--                    Content model for the &lt;ack&gt; element        --&gt;
+&lt;!ENTITY % ack-model    "(title?, p*, sec*, ref-list*)"              &gt; 
+                         
+                          
+&lt;!--                    ANONYMOUS MODEL                            --&gt;
+&lt;!--                    Unlike in Green, &lt;anonymous&gt; is empty. When 
+                        present, it is used to generate the text
+                        "anonymous" or "anon.", etc.               --&gt;
+&lt;!ENTITY % anonymous-model   
+                        "EMPTY"                                      &gt; 
+
+
+&lt;!--                    ARRAY CONTENT MODEL                        --&gt;
+&lt;!--                    The element used to contain material in
+                        rows and columns that is just a block insert
+                        into the text flow, not numbered or called a
+                        table, and not titled or captioned         --&gt;
+&lt;!ENTITY % array-model  "((%access.class; | %address-link.class;)*, 
+                          ( (%just-base-display.class;)* | 
+                            %tbody.class; ), 
+                          (%display-back-matter.class;)* )"          &gt;
+
+
+&lt;!--                    ARTICLE METADATA MODEL                     --&gt;
+&lt;!--                    Full content model for the metadata that is
+                        specific to the article.                  
+                        Unlike in Archive DTD, some of the metadata  
+                        is required here.                          --&gt;
+&lt;!ENTITY % article-meta-model
+                        "(article-id*, article-categories?, 
+                         title-group, (contrib-group | aff)*, 
+                         author-notes?, pub-date+, 
+                         volume?, volume-id*, 
+                         issue?, issue-id*, issue-title*,  
+                         supplement?, 
+                         ((fpage, lpage?, page-range?) | 
+                           elocation-id)?, 
+                         (%address-link.class; | product | 
+                         supplementary-material)*, history?, 
+                         copyright-statement?, copyright-year?,
+                         license?, permissions?,   
+                         self-uri*, related-article*, abstract*, 
+                         trans-abstract*, kwd-group*, 
+                         contract-num*, contract-sponsor*,
+                         grant-num*, grant-sponsor*, 
+                         conference*, counts?,
+                         custom-meta-wrap*)"                         &gt;
+
+
+&lt;!--                    AUTHOR NOTE MODEL                          --&gt;
+&lt;!--                    The content model of a &lt;author-notes&gt;.     --&gt;
+&lt;!ENTITY % author-notes-model 
+                        "(title?, 
+                          (%corresp.class; | %fn-link.class;)+ )"    &gt;
+
+
+&lt;!--                    CONFERENCE MODEL                           --&gt;
+&lt;!--                    The content model of the &lt;conference&gt; 
+                        element                                    --&gt;
+&lt;!ENTITY % conference-model
+                        "(conf-date, (conf-name | conf-acronym )+, 
+                         conf-num?, conf-loc?, conf-sponsor*, 
+                         conf-theme?)"                               &gt;
+
+
+&lt;!--                    CONTRIBUTOR MODEL                          --&gt;
+&lt;!--                    Content model for the &lt;contrib&gt; element    --&gt;
+&lt;!ENTITY % contrib-model  
+                        "((%name.class;)*, (%degree.class;)*,  
+                          (%contrib-info.class;)* )"                 &gt;
+                         
+                         
+&lt;!--                    DATE ELEMENTS MODEL                        --&gt;
+&lt;!--                    The content models for elements that describe
+                        dates, such as Publication Date &lt;pub-date&gt; and
+                        History Dates &lt;date&gt;.  The &lt;string-date&gt;
+                        element holds dates for which months and 
+                        years are not given, for example "first 
+                        quarter", "spring", etc.   
+                        Unlike the base DTD Suite, this &lt;date&gt; 
+                        requires a &lt;year&gt; and may not take a string
+                        date as an alternative.                    --&gt;
+&lt;!ENTITY % date-model   "(((day?, month?) | season)?, year)"         &gt;
+
+
+&lt;!--                    DEFINITION LIST: DEFINITION ITEM ELEMENTS  --&gt;
+&lt;!--                    The content model of a &lt;def-item&gt;.         --&gt;
+&lt;!ENTITY % def-item-model 
+                        "(term, def*)"                               &gt;
+                         
+                          
+&lt;!--                    ET AL                                      --&gt;
+&lt;!--                    Unlike in NLMART, &lt;etal&gt; is empty. When 
+                        present, it is used to generate the text
+                        "et al."                                   --&gt;
+&lt;!ENTITY % etal-model   "EMPTY"                                      &gt; 
+
+
+&lt;!--                    FIGURE-LIKE CONTENT MODEL                  --&gt;
+&lt;!--                    Content model for the Figure element and any
+                        similarly structured elements              
+                        Made &lt;label&gt; and &lt;caption&gt; non-repeatable. --&gt;
+&lt;!ENTITY % fig-model    "((%id.class;)*, (%label.class;)?, 
+                          (%caption.class;)?, 
+                          (%access.class; | %address-link.class;)*,  
+                          (%block-math.class; | 
+                           %chem-struct-wrap.class; |
+                           %intable-para.class; |
+                           %just-table.class; | %just-para.class; |
+                           %list.class; | %simple-display.class;)*,
+                          (%display-back-matter.class;)* )"          &gt;
+
+
+&lt;!--                    FIGURE GROUP MODEL                         --&gt;
+&lt;!--                    Content model for a &lt;fig-group&gt;            --&gt;
+&lt;!ENTITY % fig-group-model
+                        "(caption?, 
+                          (%access.class; | %address-link.class;)*,  
+                          (%fig-display.class; | 
+                           %just-base-display.class;)* )"            &gt;
+                          
+
+&lt;!--                    JOURNAL METADATA MODEL                     --&gt;
+&lt;!--                    Content model for the journal metadata
+                        element &lt;journal-meta&gt;                     --&gt;
+&lt;!ENTITY % journal-meta-model
+                        "(journal-id+,
+                          journal-title*, journal-subtitle*,
+                          trans-title*, trans-subtitle*, 
+                          abbrev-journal-title*, issn+, 
+                          publisher?, notes?)"                       &gt;
+                         
+ 
+&lt;!--                    LIST MODEL                                 --&gt;
+&lt;!--                    Content model for the &lt;list&gt; element       --&gt;
+&lt;!ENTITY % list-model   "(title?, list-item+)"                       &gt;
+
+
+&lt;!--                    REFERENCE ITEM MODEL                       --&gt;
+&lt;!--                    Content model for the &lt;ref&gt; element        --&gt;
+&lt;!ENTITY % ref-model    "(label?, 
+                         (%citation.class; | %note.class;)+ )"       &gt; 
+
+
+&lt;!--                    CONTENT MODEL FOR A STRUCTURAL SECTION     --&gt;
+&lt;!--                    The model for a section that requires that a
+                        either &lt;title&gt; or a &lt;label&gt; (which in some 
+                        journals takes the place of a title) must be
+                        present. One or the other must be present
+                        for autogeneration of a Table of Contents or
+                        other navigation. Used for elements
+                        such as Section and Appendix.              --&gt;
+&lt;!ENTITY % sec-model    "(sec-meta?, ( (label, title?) | title ),
+                          (%para-level;)*, 
+                          (%sec-level;)*, 
+                          (%sec-back-matter-mix;)* )"                &gt;
+
+
+&lt;!--                    CONTENT MODEL FOR AN UNTITLED SECTION      --&gt;
+&lt;!--                    The model for a section-like structure that
+                        copyright-statement may or may not have 
+                        an initial title                           --&gt;
+&lt;!ENTITY % sec-opt-title-model
+                        "(sec-meta?, label?, title?, (%para-level;)*,  
+                          (%sec-level;)*, 
+                          (%sec-back-matter-mix;)* )"                &gt;
+
+
+&lt;!--                    TRANSLATED ABSTRACT MODEL                  --&gt;
+&lt;!--                    Content model for an &lt;trans-abstract&gt; 
+                        element                                    --&gt;
+&lt;!ENTITY % trans-abstract-model
+                        "(title?, p*, sec*)"                         &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DUPLICATE LINKING ATTRIBUTES               --&gt;
+&lt;!--                    (For use in the attribute over-rides below)--&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    DISPLAY ATTRIBUTES OPTIONAL ID             --&gt;
+&lt;!--         position   Must this display object (figure, boxed text,
+                        etc.) be anchored in its exact location
+                        within the text or may it float, for example
+                        to the top of the next page, next column, or
+                        within a separate window?  Values are:
+                          anchor      Object must remain in place
+                          float       Object is not anchored and
+                                      may be moved to a new column,
+                                      a new window, etc.
+                          margin      In print, item should be placed
+                                      in the margin or gutter. 
+                                      Online the item should 
+                                      remain closely associated 
+                                      with the text.               --&gt;
+&lt;!ENTITY % display-atts
+             "position  (anchor | float | margin)        'float'"    &gt;
+
+
+&lt;!--                    XLINK LINK ATTRIBUTES                      --&gt;
+&lt;!--                    Attributes for any element that must be a
+                        link                                       --&gt;
+&lt;!ENTITY % link-atts
+            "xmlns:xlink CDATA                            #FIXED
+                                     'http://www.w3.org/1999/xlink'
+             xlink:type  (simple)                   #FIXED 'simple'
+             xlink:href  CDATA                            #REQUIRED 
+             xlink:role  CDATA                            #IMPLIED
+             xlink:title CDATA                            #IMPLIED
+             xlink:show  (embed | new | none | other | replace)
+                                                          #IMPLIED
+             xlink:actuate   
+                         (none | onLoad | onRequest | other)          
+                                                          #IMPLIED"  &gt;
+
+
+&lt;!--                    MIGHT LINK XLINK ATTRIBUTES                --&gt;
+&lt;!--                    Attributes for any element that may be a link
+                        but need not be one                        --&gt;
+&lt;!ENTITY % might-link-atts
+            "xmlns:xlink CDATA                            #FIXED
+                                     'http://www.w3.org/1999/xlink'
+             xlink:type  (simple)                   #FIXED 'simple'
+             xlink:href  CDATA                            #IMPLIED 
+             xlink:role  CDATA                            #IMPLIED
+             xlink:title CDATA                            #IMPLIED
+             xlink:show  (embed | new | none | other | replace)
+                                                          #IMPLIED
+             xlink:actuate   
+                         (none | onLoad | onRequest | other)          
+                                                          #IMPLIED"  &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OVER-RIDES OF ATTRIBUTE LISTS              --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    CITATION ATTRIBUTES                        --&gt;
+&lt;!--                    Attributes for &lt;citation&gt;                  --&gt;
+&lt;!ENTITY % citation-atts
+             "citation-type   
+                        (book | commun | confproc | discussion |
+                         gov | journal | list | patent | thesis  |
+                         web  | other)                     #IMPLIED  
+              id         ID                                #IMPLIED
+              %might-link-atts;"                                     &gt;
+
+
+&lt;!--                    FOOTNOTE TYPE VALUES                       --&gt;
+&lt;!--                    Used to mark the semantics of the footnote,
+                        what information does this footnote convey.
+                                                                   --&gt;
+&lt;!ENTITY % fn-types     "abbr | com | con | conflict | 
+                         corresp | current-aff | deceased | 
+                         edited-by | equal | 
+                         financial-disclosure | on-leave | 
+                         participating-researchers | 
+                         presented-at | presented-by | 
+                         present-address | previously-at |
+                         study-group-members | 
+                         supplementary-material | 
+                         supported-by | other"                       &gt;
+
+
+&lt;!--                    FOOTNOTE ATTRIBUTES                        --&gt;
+&lt;!--                    Attribute list for Footnote element        
+                        Unlike base, "fn-type" values have been made 
+                        explicit and removed the symbol attribute  --&gt;
+&lt;!ENTITY % fn-atts
+             "id        ID                                 #IMPLIED  
+              fn-type   (%fn-types;)                       #IMPLIED  
+              symbol     CDATA                             #IMPLIED 
+              xml:lang  NMTOKEN                            #IMPLIED" &gt; 
+
+
+&lt;!--                    GIVEN NAMES ATTRIBUTES                     --&gt;
+&lt;!--                    Removed the "initial" attribute for the given
+                        name, that held initials for those cases in 
+                        which they could not be algorithmically 
+                        determined.                                --&gt;
+&lt;!ENTITY % given-names-atts
+             ""                                                      &gt;
+
+
+&lt;!--                    GRAPHIC ATTRIBUTES                         --&gt;
+&lt;!--                    Attributes for Graphic &lt;graphic&gt;           --&gt;
+&lt;!ENTITY % graphic-atts
+             "alternate-form-of
+                        IDREF                              #IMPLIED
+              alt-version 
+                        (yes|no)                               'no'
+              id        ID                                 #IMPLIED
+              content-type  
+                        CDATA                              #IMPLIED 
+              mime-subtype  
+                        CDATA                              #IMPLIED 
+              mimetype  CDATA                              #IMPLIED
+              %display-atts;                                       
+              %link-atts;"                                           &gt;
+
+
+&lt;!--                    SURNAME ATTRIBUTES                         --&gt;
+&lt;!--                    Removed the initial(s) for the surname of
+                        the person. Particularly useful in those 
+                        cases that cannot be algorithmically 
+                        determined.                                --&gt;
+&lt;!ENTITY % surname-atts
+             ""                                                      &gt;
+
+
+&lt;!--                    INLINE GRAPHIC ATTRIBUTES                  --&gt;
+&lt;!--                    Attributes for Inline Graphic 
+                        &lt;inline-graphic&gt;                           --&gt;
+&lt;!ENTITY % inline-graphic-atts
+             "alternate-form-of
+                        IDREF                              #IMPLIED
+              id        ID                                 #IMPLIED
+              content-type  
+                        CDATA                              #IMPLIED 
+              baseline-shift
+                        CDATA                              #IMPLIED
+              mimetype  CDATA                              #IMPLIED
+              mime-subtype  
+                        CDATA                              #IMPLIED 
+              %link-atts;"                                           &gt;
+
+                                                               
+&lt;!--                    PERSON GROUP ATTRIBUTES                    --&gt;
+&lt;!--                    Attributes for the &lt;person-group&gt; element 
+                        Valid Types include:
+                          author - Content creators
+                          editor - Content editors
+                          guest-editor
+                                 - a content editor that has been invited 
+                                   to edit all or part of a work.
+                          inventor
+                                 - Idea, software, or machine creator
+                          assignee
+                                 - the person to whom a patent is awarded
+                          translator
+                                 - Translated the cited work from
+                                   one language into another
+                          transed
+                                 - Editor of a translated version of
+                                   a work
+                          allauthors
+                                 - used to identify a complete list 
+                                   of authors when a subset of the 
+                                   author group has been used 
+                                   elsewhere in the citation. See 
+                                   "Standard reference to a chapter 
+                                   in a book" (II.C.1) in the 
+                                   tagging examples.
+                          compiler 
+                                 - Put together a composite work
+                                   from multiple sources           --&gt;
+&lt;!ENTITY % person-group-atts  
+             "id        ID                                 #IMPLIED
+              person-group-type 
+                        (allauthors | assignee | author | compiler |
+                         director | editor | guest-editor | inventor | 
+                         translator | transed)             #IMPLIED" &gt;
+
+
+&lt;!--                    SECTION ATTRIBUTES                         --&gt;
+&lt;!--                    Attribute list for Section element         --&gt;
+&lt;!ENTITY % sec-atts   
+            "id         ID                                 #IMPLIED
+             xml:lang   NMTOKEN                            #IMPLIED
+             sec-type   CDATA                              #IMPLIED" &gt;
+             
+                                                                                                                                                         
+&lt;!-- ================== End Publishing Content/ATT Override ====== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

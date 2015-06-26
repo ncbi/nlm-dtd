@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for Alt Title Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<?mtl /hellip?>
+<article-meta>
+<article-categories><?mtl hellip?><?mtl /hellip?></article-categories>
+<title-group>
+<article-title>Characterization of the Cryptic Lambdoid Prophage DLP12 
+of <italic>Escherichia coli</italic> and Overlap of the DLP12 Integrase 
+Gene with the tRNA Gene <italic>argU</italic></article-title>
+<alt-title><italic>E. COLI</italic> DLP12 AND OVERLAP of DLP12 
+<italic>int</italic> WITH <italic>argU</italic></alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="no">
+<name><surname>Lindsey</surname>
+<given-names>David F.</given-names></name>
+</contrib>
+<contrib contrib-type="author" corresp="no" rid="fn1">
+<name><surname>Mullin</surname>
+<given-names>David A.</given-names></name>
+</contrib>
+<?mtl hellip?><contrib contrib-type="author" corresp="yes">
+<name><surname>Walker</surname>
+<given-names>James R.</given-names></name>
+<aff>Department of Microbiology, University of Texas, Austin, 
+Texas  78712</aff>
+</contrib><?mtl /hellip?>
+</contrib-group>
+<author-notes>
+<fn id="fn1"><p>Present address:  Biology Department, Tulane University, 
+New Orleans, LA 70118</p></fn>
+</author-notes>
+<pub-date><year>2004</year></pub-date>
+<fpage>13</fpage>
+</article-meta>
+<?mtl hellip?></front>
+</article><?mtl /hellip?>

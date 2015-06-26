@@ -1,0 +1,83 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Suffix</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;suffix&gt;</h1>
+         <h1 class="elementname">Suffix</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Qualifiers that follow a person’s name, for example, “Sr.”, “Jr.”, “III”, “3rd”, etc.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-bi40.html" target="main" title="Suffix"><span class="elementtag">&lt;suffix&gt;</span></a> element should be used for parts of people’s names, not for degrees, such as Ph.D. or DDS. The academic degrees are part
+            of the information that is known about a contributor, not part of the name of the contributor, and should take the <a href="n-bw50.html" target="main" title="Degree(s)"><span class="elementtag">&lt;degrees&gt;</span></a> element. Degree and certification information should be placed directly following the person’s name within the contributor
+            information:
+            
+         </p>
+         <div class="codeblock"><pre>
+&lt;contributor ...&gt;
+&lt;name&gt;
+&lt;surname&gt;Smyth-Jones&lt;/surname&gt;
+&lt;given-names&gt;George&lt;/given-names&gt;
+&lt;suffix&gt;Sr.&lt;/suffix&gt;
+&lt;/name&gt;
+&lt;degrees&gt;PhD&lt;/degrees&gt;
+&lt;/contributor&gt;
+</pre></div>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  suffix       (#PCDATA <a href="n-vvp0.html" target="main" title="Suffix Elements"><span class="petag">%suffix-elements;</span></a>)*                 &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(#PCDATA)*</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Text, numbers, or special characters, zero or more</p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>, <a href="n-tbv0.html" target="main" title="Speaker"><span class="elementtag">&lt;speaker&gt;</span></a>, <a href="n-2u40.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;string-name&gt;
+&lt;surname&gt;Moellering&lt;/surname&gt;
+&lt;given-names&gt;R. C.&lt;/given-names&gt;
+<strong><span class="focus">&lt;suffix&gt;Jr.&lt;/suffix&gt;</span></strong>
+&lt;/string-name&gt;
+... 
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

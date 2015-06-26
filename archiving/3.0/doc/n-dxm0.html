@@ -1,0 +1,76 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Attribute: Table Cell Alignment Character (XHTML table model)</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">char</h1>
+         <h1 class="attrname">Table Cell Alignment Character (XHTML table model)</h1>
+      </div>
+      <div class="definition">
+         <p class="para">See W3C documentation for the XHTML table model. 
+            
+         </p>
+         <p class="para">The character to be used in horizontal alignment of the contents of an entry in a table. The content of a table data or table
+            header element is to be aligned horizontally based on the character named in this attribute, for example, alignment on a period
+            for decimal alignment or on an equal sign for alignment of variables. 
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Horizontal alignment on a particular character requires that three attributes be set in the XML document: 
+            
+            <ol class="olist">
+               <li>The <a href="n-di90.html" target="main" title="Horizontal Alignment (XHTML table model)"><span class="attrtag">@align</span></a> attribute value is set to the word “<tt>char</tt>”. 
+                  
+               </li>
+               <li>The <a href="n-dxm0.html" target="main" title="Table Cell Alignment Character (XHTML table model)"><span class="attrtag">@char</span></a> attribute value is set to the actual character to use for the aligning, for example, a decimal point, “<tt>.</tt>”. 
+                  
+               </li>
+               <li>The <a href="n-a4m0.html" target="main" title="Table Character Offset (XHTML table model)"><span class="attrtag">@charoff</span></a> attribute value is set to the percent of the current column width to the left of the (left edge of the) alignment character,
+                  for example, “<tt>30</tt>”. 
+                  
+               </li>
+            </ol>
+            
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4><a href="n-e950.html" target="main" title="Table Column (XHTML table model)"><span class="elementtag">&lt;col&gt;</span></a>, <a href="n-tm50.html" target="main" title="Table Column Group (XHTML table model)"><span class="elementtag">&lt;colgroup&gt;</span></a>, <a href="n-cbj0.html" target="main" title="Table Body (XHTML table model)"><span class="elementtag">&lt;tbody&gt;</span></a>, <a href="n-qbj0.html" target="main" title="Table Data Cell (XHTML table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-znp0.html" target="main" title="Table Footer (XHTML table model)"><span class="elementtag">&lt;tfoot&gt;</span></a>, <a href="n-b6p0.html" target="main" title="Table Header Cell (XHTML table model)"><span class="elementtag">&lt;th&gt;</span></a>, <a href="n-tpp0.html" target="main" title="Table Header (XHTML table model)"><span class="elementtag">&lt;thead&gt;</span></a>, <a href="n-25q0.html" target="main" title="Table Row (XHTML table model)"><span class="elementtag">&lt;tr&gt;</span></a><table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">When used in conjunction with <tt>align="char"</tt>,
+                     the contents of the table entry are aligned relative to the character specified
+                     by this attribute.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Tagging Affiliations</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h3 class="header">Tagging Affiliations</h3>
+         <p class="para">Affiliations are commonly listed for some or all authors of an article to provide information about their company, university
+            or other institution, and their contact information. In print, affiliations are commonly displayed in the footnote area, with
+            footnote numbers or other symbols to identify which contributors go with which affiliations. However, in this Tag Set, each
+            author’s affiliation is recorded as part of an individual contributor (<a href="n-he30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>).
+         </p>
+         <p class="para">The element to hold affiliation information is <a href="n-fb00.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, which allows many subelements, with the address and address-linking elements being most common. <a href="n-fb00.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> occurs only inside <a href="n-he30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>, commonly at the end. If two or more contributors have the same affiliation, the affiliation is repeated for each contributor
+            to which it applies inside each <a href="n-he30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> element.
+         </p>
+         <p class="para">In some cases, one or more authors will be designated “corresponding” authors (that is, readers should contact them rather
+            than other authors concerning the article). The <a href="n-he30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> element provides the <a href="n-cve0.html" target="main" title="Corresponding Author"><span class="attrtag">@corresp</span></a> attribute, which should be set to “<tt>yes</tt>” for those authors.
+         </p>
+         <div class="codeblock"><pre>
+
+&lt;contrib-group&gt;
+  &lt;contrib contrib-type="author" corresp="yes"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Tanabe&lt;/surname&gt;
+      &lt;given-names&gt;Lorraine&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;aff&gt;National Center for Biotechnology Information, National Library of
+   Medicine, NIH, 8600 Rockville Pike, Bethesda, MD, USA&lt;/aff&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Thom&lt;/surname&gt;
+      &lt;given-names&gt;Lynne H.&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;aff&gt;Consolidated Safety Services, 10335 Democracy Lane, Suite 202,
+   Fairfax, VA, USA&lt;/aff&gt;
+  &lt;/contrib&gt;
+&lt;/contrib-group&gt;</pre></div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

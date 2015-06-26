@@ -1,0 +1,43 @@
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<?mtl hellip?>
+<article article-type="correction">
+<front>
+<journal-meta>
+<journal-id journal-id-type="pmc">BMJ</journal-id>
+<journal-id journal-id-type="pubmed">BMJ</journal-id>
+<journal-id journal-id-type="publisher">BR MED J</journal-id>
+<issn>0959-8138</issn><publisher>
+<publisher-name>British Medical Journal</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id>mul987</article-id>
+<article-categories>
+<subj-group><subject>Correction</subject></subj-group>
+</article-categories>
+<title-group>
+<article-title>ABC of oxygen: Diving and oxygen</article-title>
+</title-group>
+<pub-date pub-type="pub">
+<day>27</day><month>3</month><year>1999</year>
+</pub-date>
+<volume>318</volume><issue>7187</issue>
+<fpage>857</fpage>
+<copyright-statement>Copyright &#x00A9; 1999, British 
+Medical Journal</copyright-statement>
+<copyright-year>1999</copyright-year>
+<related-article xmlns:xlink="http://www.w3.org/1999/xlink" 
+related-article-type="corrected-art"
+xlink:href="9765173" vol="317" page="996"/>
+</article-meta>
+</front>
+<body>
+<sec><title>Correction</title><?mtl /hellip?>
+<p>This article by Peter Wilmshurst (10 October 1998, pp 996-9) 
+used the incorrect abbreviation for inspired partial pressure 
+of oxygen. The abbreviation should have been Pi<sc>o</sc><sub>2</sub> 
+not Fi<sc>o</sc><sub>2</sub>.</p>
+<?mtl hellip?></sec>
+</body>
+</article> 
+<?mtl /hellip?>

@@ -1,0 +1,181 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Type of Citation</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">citation-type</h1>
+         <h1 class="attrname">Type of Citation</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Defines the type of work being referenced (type of
+                   citation), for example, a book is being cited or a journal article is being cited
+         </p>
+      </div>
+      <h2 class="header">Usage</h2>
+      <p class="para">Some journal Tag Sets make a distinction between different types of
+                references, for example, using different names and distinct content models for
+                book references, journal references, patent references, etc. This attribute was
+                designed to preserve the information about the type of reference, for those
+                tagged references that explicitly describe their type.
+      </p>
+      <p class="para">This attribute should be used if the type of citation is one (or more) of the suggested values and should otherwise be omitted.
+         A citation that can be identified as more than one of the types (e.g., both a government report and a book) should have the
+         types combined (e.g., <tt>citation-type="gov | book"</tt>).
+      </p>
+      <p class="para">Conversion Note: If the type of reference (<a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>)
+                is not named in the source file, it need not be identified using this
+                attribute.
+      </p>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5 class="heading"><a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a></h5>
+            <h5 class="heading"><a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-2is0.html"><span class="elementname">NLM Citation Model</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">The type
+                                of source being cited in the bibliographic reference citation, for example,
+                                &#8220;<tt>journal</tt>&#8221; for a journal article. This attribute may take any value, but see the list of suggested values below.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+            <h4 class="header"><span class="headerlabel">Suggested usage</span></h4>
+            
+            <p class="para">Although designed to accept any text as its value, the following values are suggested for naming the type of object that the
+               citation describes:
+                             
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>book</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Book or book series</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>commun</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Informal or personal communication, such as a phone call
+                                                 or an email message
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>confproc</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Conference proceedings</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>discussion</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Discussion among a group in some forum &#8212; public,
+                                                 private, or electronic &#8212; which may or may not be moderated, for example, a single discussion thread in
+                              a listserv
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>gov</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Government publication or government standard</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>journal</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Journal article</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>list</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Listserv or discussion group (as an entity, as opposed to a single discussion thread which uses the value &#8220;<tt>discussion</tt>&#8221;)
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>patent</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Patent or patent application</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>standard</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Standards document issued by recognized standards body,
+                                                 such as ISO, ANSI, IEEE, OASIS, etc.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>thesis</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Work written as part of the completion of an advanced
+                                                 degree
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>web</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Website</p>
+                        </td>
+                     </tr>
+                  </table>
+               </div> 
+            </p>
+                   
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

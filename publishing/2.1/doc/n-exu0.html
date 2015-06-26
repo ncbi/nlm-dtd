@@ -1,0 +1,103 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: License Information</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;license&gt;</h1>
+         <h1 class="elementname">License Information</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The set of conditions under which people are allowed to use an article, or other license-related information or restrictions</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Best practice is to use the <a href="n-exu0.html"><span class="elementtag">&lt;license&gt;</span></a> element only within the container element <a href="n-pbw0.html"><span class="elementtag">&lt;permissions&gt;</span></a>. The  <a href="n-exu0.html"><span class="elementtag">&lt;license&gt;</span></a> element is allowed outside the permissions wrapper only for reasons of backwards compatibility.
+         </p>
+         <p class="para">The current <a href="n-exu0.html"><span class="elementtag">&lt;license&gt;</span></a> element is a place-holder element that may change after the AIT Working Group has done additional analysis.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-qfe0.html"><span class="attrtag">license-type</span></a> <a href="n-qfe0.html"><span class="attrname">Type of License</span></a></h5>
+         <h5 class="header"><a href="n-hug0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-hug0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-txg0.html"><span class="attrtag">xlink:href</span></a> <a href="n-txg0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-54g0.html"><span class="attrtag">xlink:role</span></a> <a href="n-54g0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-esg0.html"><span class="attrtag">xlink:show</span></a> <a href="n-esg0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-v7g0.html"><span class="attrtag">xlink:title</span></a> <a href="n-v7g0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-ieg0.html"><span class="attrtag">xlink:type</span></a> <a href="n-ieg0.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-erg0.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-erg0.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  license      %license-model;                              &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any one of:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-66w0.html"><span class="elementname">Paragraph</span></a> <a href="n-66w0.html"><span class="elementtag">&lt;p&gt;</span></a>, one or more
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-58c0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-58c0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-pbw0.html"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-pbw0.html"><span class="elementname">Permissions</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+           
+...
+&lt;article-meta&gt;
+...
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright: &amp;copy; 2004 Eichenberger 
+et al.&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;2004&lt;/copyright-year&gt;
+<strong><span class="focus">&lt;license license-type="open-access" 
+xlink:href="http://creativecommons.org/licenses/by/2.0/"&gt;
+&lt;p&gt;This is an open-access article distributed under the terms of the 
+Creative Commons Attribution License, which permits unrestricted use, 
+distribution, and reproduction in any medium, provided the original 
+work is properly cited.&lt;/p&gt;
+&lt;/license&gt;</span></strong>        
+&lt;/permissions&gt;
+&lt;related-article related-article-type="companion" 
+xlink:title="synopsis" xlink:href="10.1371/journal.pbio.0020359" 
+vol="2" page="e359"&gt;
+&lt;article-title&gt;How to Make a Mother in Five Easy Steps&lt;/article-title&gt;
+&lt;/related-article&gt;
+...
+&lt;/article-meta&gt;
+...
+
+
+           </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

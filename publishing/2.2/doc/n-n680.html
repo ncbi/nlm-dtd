@@ -1,0 +1,98 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Et Al</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;etal&gt;</h1>
+         <h1 class="elementname">Et Al</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Within bibliographic references and contributor groupings, this
+                   element designates unnamed individuals (typically indicated in print with the
+                   text &#8220;et al.&#8221;).
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">As in many journal DTDs, this element is modeled as an <tt>EMPTY</tt> element, that is, the element has no content. The element is typically used as a place holder, for example, to generate the
+            text &#8220;et al.&#8221; via a stylesheet.
+         </p>
+         <p class="para">Note: Unlike the Archiving DTD, the Journal Publishing DTD does <em>not</em> accommodate those journal DTDs (Blackwell&#8217;s, for example) that expect content inside <a href="n-n680.html"><span class="elementtag">&lt;etal&gt;</span></a>, with such text as &#8220;Associates, co-workers, and colleagues&#8221;.
+         </p>
+         <p class="para">In this DTD, this element may only be used in bibliographic references (in <a href="n-jt30.html"><span class="elementtag">&lt;citation&gt;</span></a>, <a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, and <a href="n-73x0.html"><span class="elementtag">&lt;person-group&gt;</span></a>). For extensive examples of formatted <a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-n680.html"><span class="elementtag">&lt;etal&gt;</span></a>s in <a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  etal         %etal-model;                                 &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">This is an EMPTY element</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-jt30.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-jt30.html"><span class="elementname">Citation</span></a>; <a href="n-73x0.html"><span class="elementtag">&lt;person-group&gt;</span></a> <a href="n-73x0.html"><span class="elementname">Person Group for a Cited Publication</span></a>; <a href="n-5sx0.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-5sx0.html"><span class="elementname">Product Information</span></a>; <a href="n-umx0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-umx0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;ref&gt;
+&lt;nlm-citation citation-type="journal"&gt;
+&lt;person-group&gt;
+&lt;name&gt;
+&lt;surname&gt;Bedford&lt;/surname&gt;
+&lt;given-names&gt;CD&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name&gt;
+&lt;surname&gt;Harris&lt;/surname&gt;
+&lt;given-names&gt;RN&lt;/given-names&gt;
+&lt;suffix&gt;3d&lt;/suffix&gt;
+&lt;/name&gt;
+&lt;name&gt;
+&lt;surname&gt;Howd&lt;/surname&gt;
+&lt;given-names&gt;RA&lt;/given-names&gt;
+&lt;/name&gt;
+<strong><span class="focus">&lt;etal/&gt;</span></strong>
+&lt;/person-group&gt;
+&lt;article-title&gt;Quaternary salts of 2-[(hydroxyimino)methyl]imidazole&lt;/article-title&gt;
+&lt;source&gt;J Med Chem&lt;/source&gt;
+&lt;year&gt;1989&lt;/year&gt;
+&lt;month&gt;02&lt;/month&gt;
+&lt;volume&gt;32&lt;/volume&gt;
+&lt;issue&gt;2&lt;/issue&gt;
+&lt;fpage&gt;493&lt;/fpage&gt;
+&lt;lpage&gt;503&lt;/lpage&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

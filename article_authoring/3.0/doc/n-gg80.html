@@ -1,0 +1,142 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Funding Source</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;funding-source&gt;</h1>
+         <h1 class="elementname">Funding Source</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Agency or organization (such as a foundation, corporation, or an educational institution) that funded the research on which
+            a work was based
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">A few example organizations are the Wellcome Trust, NIH, HHS, Princeton University, or sometimes a corporation such as Alcoa
+            sponsoring the research for a journal article
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-94e0.html" target="main"><span class="attrtag">country</span></a> <a href="n-94e0.html" target="main"><span class="attrname">Country</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-9pg0.html" target="main"><span class="attrtag">rid</span></a> <a href="n-9pg0.html" target="main"><span class="attrname">Reference to an Identifier</span></a></h5>
+         <h5 class="header"><a href="n-8an0.html" target="main"><span class="attrtag">source-type</span></a> <a href="n-8an0.html" target="main"><span class="attrname">Source Type</span></a></h5>
+         <h5 class="header"><a href="n-edn0.html" target="main"><span class="attrtag">xlink:actuate</span></a> <a href="n-edn0.html" target="main"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-shn0.html" target="main"><span class="attrtag">xlink:href</span></a> <a href="n-shn0.html" target="main"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-wyn0.html" target="main"><span class="attrtag">xlink:role</span></a> <a href="n-wyn0.html" target="main"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-hjn0.html" target="main"><span class="attrtag">xlink:show</span></a> <a href="n-hjn0.html" target="main"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-iqn0.html" target="main"><span class="attrtag">xlink:title</span></a> <a href="n-iqn0.html" target="main"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-w9n0.html" target="main"><span class="attrtag">xlink:type</span></a> <a href="n-w9n0.html" target="main"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-d360.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-d360.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  funding-source 
+                        (#PCDATA <a href="n-udh0.html" target="main" title="Funding-Source Elements"><span class="petag">%funding-source-elements;</span></a>)*         &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(#PCDATA)*</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Text, numbers, or special characters, zero or more</p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-jh20.html" target="main" title="Award Group"><span class="elementtag">&lt;award-group&gt;</span></a>, <a href="n-xya0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+...
+&lt;kwd-group kwd-group-type="author"&gt;&lt;kwd&gt;...&lt;/kwd&gt;&lt;/kwd-group&gt;
+&lt;funding-group&gt;
+
+&lt;award-group id="award1"&gt;
+<strong><span class="focus">&lt;funding-source id="GS1"
+xlink:href="http://www.phrmafoundation.org/"&gt;Pharmaceutical
+Research and Manufacturers of America Foundation&lt;/funding-source&gt;</span></strong>
+&lt;/award-group&gt;
+
+&lt;award-group id="award2" award-type="grant"&gt;
+<strong><span class="focus">&lt;funding-source id="GS2"
+xlink:href="http://www.energy.gov"&gt;United States Department
+of Energy Office of Science (BER)&lt;/funding-source&gt;</span></strong>
+&lt;award-id rid="GS2"&gt;DE-FG02-04ER63803&lt;/award-id&gt;
+&lt;/award-group&gt;
+
+&lt;award-group id="award3"&gt;
+<strong><span class="focus">&lt;funding-source id="GS3" xlink:href="http://www.nih.gov"&gt;National
+Institutes of Health&lt;/funding-source&gt;</span></strong>
+&lt;/award-group&gt;
+
+&lt;award-group id="award4"&gt;
+<strong><span class="focus">&lt;funding-source id="GS4" xlink:href="http://www.nsf.gov"&gt;National
+Science Foundation&lt;/funding-source&gt;</span></strong>
+&lt;award-id rid="GS4" &gt;FIBR Award EF-0425719&lt;/award-id&gt;
+&lt;/award-group&gt;
+
+&lt;award-group id="award5"&gt;
+<strong><span class="focus">&lt;funding-source id="GS5"
+xlink:href="http://www.nhlbi.nih.gov/meetings/proteomics.htm"&gt;National
+Heart, Lung, and Blood Proteomics Initiative&lt;/funding-source&gt;</span></strong>
+&lt;award-id rid="GS5"&gt;HHSN268200248178C&lt;/award-id&gt;
+&lt;/award-group&gt;
+
+&lt;award-group id="award6"&gt;
+<strong><span class="focus">&lt;funding-source id="GS6"&gt;Whitaker Foundation&lt;/funding-source&gt;</span></strong>
+&lt;/award-group&gt;
+
+&lt;award-group id="award7"&gt;
+<strong><span class="focus">&lt;funding-source id="GS7"&gt;Cellicon Biotechnologies, Inc.&lt;/funding-source&gt;</span></strong>
+&lt;/award-group&gt;
+
+&lt;funding-statement&gt;&lt;bold&gt;Funding.&lt;/bold&gt; &lt;uri
+xlink:href="http://www.phrmafoundation.org/"&gt;Pharmaceutical Research
+and Manufacturers of America Foundation&lt;/uri&gt;, the
+&lt;uri xlink:href="http://www.energy.gov"&gt;United States
+Department of Energy Office of Science (BER)&lt;/uri&gt; grant
+number DE-FG02-04ER63803, the
+&lt;uri xlink:href="http://www.nih.gov"&gt;National Institutes of
+Health&lt;/uri&gt;, &lt;uri
+xlink:href="http://www.nsf.gov"&gt;National Science Foundation&lt;/uri&gt;
+FIBR Award EF-0425719,
+the &lt;uri
+xlink:href="http://www.nhlbi.nih.gov/meetings/proteomics.htm"&gt;National
+Heart, Lung, and Blood Proteomics Initiative&lt;/uri&gt; (
+HHSN268200248178C), the
+Whitaker Foundation, and Cellicon
+Biotechnologies, Inc.&lt;/funding-statement&gt;
+
+&lt;/funding-group&gt;
+&lt;/article-meta&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">funding3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

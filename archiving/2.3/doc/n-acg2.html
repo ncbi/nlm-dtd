@@ -1,0 +1,314 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Archiving and Interchange Suite MathML Setup Module</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Archiving and Interchange Suite MathML Setup Module</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    MathML DTD SETUP MODULE                           --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.3 20070202//EN"
+     Delivered as file "mathmlsetup.ent"                           --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    Provides the organization for using the           --&gt;
+&lt;!--             MathML DTD                                        --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) Overrides to standard parameter entities used  --&gt;
+&lt;!--                in the MathML 2.0 DTD                          --&gt;
+&lt;!--             2) Call to MathML 2.0 DTD                         --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- MODULES REQUIRED:                                             --&gt;
+&lt;!--             1) mathml2.dtd           MathML 2.0 DTD           --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital archives and publishers who wish to       --&gt;
+&lt;!--             create a custom XML DTD for original markup of    --&gt;
+&lt;!--             journal literature, books, and related material,  --&gt;
+&lt;!--             or for archiving and transferring such material   --&gt;
+&lt;!--             between archives.                                 --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             This DTD is in the public domain. An organization --&gt;
+&lt;!--             that wishes to create its own DTD from the suite  --&gt;
+&lt;!--             may do so without permission from NLM.            --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             The suite has been set up to be extended using a  --&gt;
+&lt;!--             new DTD file and a new DTD-specific customization --&gt;
+&lt;!--             module to redefine the many Parameter Entities.   --&gt;
+&lt;!--             Do not modify the suite directly or redistribute  --&gt;
+&lt;!--             modified versions of the suite.                   --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             In the interest of maintaining consistency and    --&gt;
+&lt;!--             clarity for potential users, NLM requests:        --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             1. If you create a DTD from the Archiving and     --&gt;
+&lt;!--                Interchange DTD Suite and intend to stay       --&gt;
+&lt;!--                compatible with the suite, then please include --&gt;
+&lt;!--                the following statement as a comment in all of --&gt;
+&lt;!--                your DTD modules:                              --&gt;
+&lt;!--                   "Created from, and fully compatible with,   --&gt;
+&lt;!--                    the Archiving and Interchange DTD Suite."  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             2. If you alter one or more modules of the suite, --&gt;
+&lt;!--                then please rename your version and all its    --&gt;
+&lt;!--                modules to avoid any confusion with the        --&gt;
+&lt;!--                original suite. Also, please include the       --&gt;
+&lt;!--                following statement as a comment in all your   --&gt;
+&lt;!--                DTD modules:                                   --&gt;
+&lt;!--                   "Based in part on, but not fully compatible --&gt;
+&lt;!--                    with, the Archiving and Interchange DTD    --&gt; 
+&lt;!--                    Suite."                                    --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             the DTD suite should be sent in email to:         --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             December 2002                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Jeff Beck       (NCBI)                            --&gt;
+&lt;!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             Bruce Rosenblum (Inera Inc.)                      --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             NLM thanks the Harvard University Libraries, both --&gt;
+&lt;!--             for proposing that a draft archiving NLM DTD for  --&gt; 
+&lt;!--             life sciences journals be extended to accommodate --&gt;
+&lt;!--             journals in all disciplines and for sponsoring    --&gt;
+&lt;!--             Bruce Rosenblum's collaboration with other DTD    --&gt;
+&lt;!--             authors in completing Version 1.0. The Andrew W.  --&gt; 
+&lt;!--             Mellon Foundation provided support for these      --&gt; 
+&lt;!--             important contributions.                          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  6. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by NCBI   
+
+  5. DO NOT INVOKE CHARACTER SETS THROUGH MATHML DTD- Added a new
+     parameter entity -%mathml-charent.module;, set to IGNORE to
+     remove the character set invocations from the MathML 2 DTD.
+     Since that removed both mmlextra and mmlalias at the same time,
+     invocations to them were added to their modules
+     
+  4. SCHEMA - added the "xsi" prefix and namespace FIXED
+     declaration here, because them MathML DTD (in the module
+     mathml2-qname-mod.ent) let this namespace be defaulted
+     to CDATA although they set up for the FIXED value. We needed
+     the real FIXED value for the schema version of these DTDs.
+     
+  3. Updated public identifier to "v2.3 20070202" 
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+          
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+  
+  2. Updated public identifier to "v2.3 20070202"          
+
+     =============================================================
+     Version 1.1                           (TRG) v1.1 (2003-11-01)
+
+  1. Added attribute "alternate-form-of" to &lt;mml:math&gt; 
+     (Note: parameter entity %math.qname; resolves to &lt;mml:math&gt;.)
+     Rationale: Where multiple formats of an item (e.g., graphic 
+     file, media object, chemical structure) are available, this 
+     attribute indicates that a format is a secondary one and 
+     provides a link to the primary format, so that only one 
+     format of an item is displayed.
+                                                                   --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    SET UP FOR THE MathML MODULE               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    MathML DTD                                 --&gt;
+&lt;!--                    The official version of the MathML 2.0 can 
+                        be found at: http://www.w3.org/TR/MathML2/
+
+                        See also Mathematical Markup Language  
+                        (MathML) Version 2.0
+                       
+                        A. Parsing MathML
+                        A.6 The MathML DTD
+            http://www.w3.org/TR/MathML2/appendixa.html#parsing-dtd
+
+                        A zip file with entity declarations is 
+                        available from
+            http://www.w3.org/TR/MathML2/DTD-MathML-20010221.zip   --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    SET UP W3C XML SCHEMA                      --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    MAKE PREFIX EQUAL "xsi" (same as MathML)   --&gt;
+&lt;!ENTITY % Schema.prefix         
+                        "xsi"                                        &gt;    
+
+&lt;!--                    SET UP NAMESPACE FOR SCHEMA(same as MathML)--&gt;
+&lt;!ENTITY % Schema.xmlns "http://www.w3.org/2001/XMLSchema-instance"  &gt;
+
+
+&lt;!--                    OVER-RIDE MATHML DTD TO MAKE EXPLICIT NS   --&gt;
+&lt;!--                    MathML sets this up but then lets the
+                        attribute be a CDATA one, not the real
+                        namespace URI                              --&gt;
+&lt;!ENTITY % Schema.xmlns.attrib
+     "xmlns:%Schema.prefix;  CDATA          #FIXED '%Schema.xmlns;'" &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    SET UP "mml" AS THE MATH PREFIX            --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    MAKE MATH PREFIX PARAMETER ENTITY HAPPEN   --&gt;
+&lt;!ENTITY % MATHML.prefixed "INCLUDE"                                 &gt;
+
+
+&lt;!--                    MAKE PREFIX EQUAL "mml"                    --&gt;
+&lt;!ENTITY % MATHML.prefix   "mml"                                     &gt;
+
+
+&lt;!--                    SET UP "pfx"                               --&gt;
+&lt;![%MATHML.prefixed;[
+&lt;!ENTITY % MATHML.pfx      "%MATHML.prefix;:"                        &gt;
+]]&gt;
+
+
+&lt;!--                    USE "pfx" TO SET THE MATH ELEMENT NAME     --&gt;
+&lt;!ENTITY % math.qname      "%MATHML.pfx;math"                        &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    NEW ATTRIBUTES FOR THE MATH ELEMENT        --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--         alternate-form-of
+                        Where multiple formats of an item (e.g., 
+                        graphic file, media object, chemical 
+                        structure) are available, this attribute 
+                        indicates that a format is a secondary 
+                        one and provides a link to the primary 
+                        format, so that only one format of an 
+                        item is displayed.                         --&gt;
+&lt;!ATTLIST  %math.qname;
+             alternate-form-of
+                        IDREF                              #IMPLIED  &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    CALL THE MATHML ENTITIES                   --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    MATHML CHARACTER ENTITIES                  --&gt;
+&lt;!--                    Set the "INCLUDE" or "IGNORE" marked section
+                        switch for the MATHML 2.0 DTD. This switch
+                        determines whether the math processing in 
+                        the -%mathml.dtd; module or the
+                        -%xmlspecchars.ent; module in this DTD Suite 
+                        will invoke the sets of special characters 
+                        that are defined AND INVOKED in the
+                        -%xmlspecchars.ent; module.
+                        A value of "IGNORE" turns off the second
+                        invocation from the MathML DTD.            --&gt;
+&lt;!ENTITY % mathml-charent.module 
+                        "IGNORE"                                     &gt;
+
+
+&lt;!--                    MATHML-SPECIFIC CHARACTER ENTITIES         --&gt;
+&lt;!--                    Because the MATHML invocation is canceled
+                        using the parameter enti6ty just defined,
+                        the two external entities below must be
+                        invoked from here, as neither XMLspecchars
+                        nor the MathML DTD will invoke them.       --&gt;
+
+&lt;!--                    New characters defined by MathML           --&gt;
+%ent-mmlextra;
+
+
+&lt;!--                    MathML aliases for characters defined above--&gt;
+%ent-mmlalias;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    MathML 2.0 INVOCATION                      --&gt;
+&lt;!-- ============================================================= --&gt;
+
+%mathml.dtd;
+
+
+&lt;!-- ================== End MATHML Setup Module ================== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

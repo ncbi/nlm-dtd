@@ -1,0 +1,163 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Journal Publishing DTD-Specific Modules</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Journal Publishing DTD-Specific Modules</h2>
+         <hr>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Journal Publishing DTD-Specific Modules           --&gt;
+&lt;!--  VERSION:   2.1                                               --&gt;
+&lt;!--  DATE:      June 2005                                         --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Journal Publishing DTD-Specific Modules v2.1 20050630//EN"
+     Delivered as file "journalpubcustom-modules.ent"              --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Journal Publishing DTD of the                     --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    To name any modules created explicitly for this   --&gt;
+&lt;!--             Publishing DTD, that is, not present in the       --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1)  Full external Parameter Entity declarations   --&gt;
+&lt;!--                 for all DTD-specific modules (Note: the       --&gt;
+&lt;!--                 modules are declared here but referenced in   --&gt;
+&lt;!--                 the Publishing DTD.)                          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital Archive of Journal Articles               --&gt;
+&lt;!--             National Center for Biotechnology Information     --&gt;
+&lt;!--                (NCBI)                                         --&gt;
+&lt;!--             National Library of Medicine (NLM)                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             September 2004                                    --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             this DTD should be sent in email to:              --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+
+  2. Updated public identifier to "v2.1 20050630" and modified the
+     fpis of all updated modules: journal publishing custom models
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+     
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+                
+  1. Created this module as version "v2.0 20040830"                --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    CUSTOMIZATION MODULES DECLARED             --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    DTD-SPECIFIC CLASS CUSTOMIZATIONS MODULE   --&gt;
+&lt;!--                    Set up the Parameter Entities and element
+                        class definitions that will be used to
+                        over-ride some element classes in the
+                        DTD Suite.                                 --&gt;
+&lt;!ENTITY % journalpubcustom-classes.ent 
+                        PUBLIC  
+"-//NLM//DTD Journal Publishing DTD Customize Classes Module v2.0 20040830//EN"
+"journalpubcustom-classes.ent"                                       &gt;
+
+
+&lt;!--                    DTD-SPECIFIC MIX CUSTOMIZATIONS MODULE     --&gt;
+&lt;!--                    Set up the Parameter Entities and element
+                        mix definitions that will be used to
+                        over-ride some element mixes in the DTD
+                        Suite.                                     --&gt;
+&lt;!ENTITY % journalpubcustom-mixes.ent 
+                        PUBLIC  
+"-//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.0 20040830//EN"
+"journalpubcustom-mixes.ent"                                         &gt;
+
+
+&lt;!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
+                        MODULE                                     --&gt;
+&lt;!--                    Set up the Parameter Entities for element-
+                        specific element groups, complete content 
+                        models, and attribute list and value over-
+                        rides. These PEs will over-ride selected
+                        content models and attribute lists for the 
+                        Journal Archiving and Interchange DTD.     --&gt;
+&lt;!ENTITY % journalpubcustom-models.ent 
+                        PUBLIC  
+"-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.1 20050630//EN"
+"journalpubcustom-models.ent"                                        &gt;
+
+
+&lt;!--                    NLM CITATION MODULE                        --&gt;
+&lt;!--                    The only new element created for the 
+                        Publishing DTD, the highly structured NLM
+                        citation, to enforce a slightly loose version
+                        of an NLM-structured bibliographic reference.
+                        Sequence is enforced and interior punctuation
+                        is expected to be generated.               --&gt;
+&lt;!ENTITY % nlmcitation.ent 
+                        PUBLIC  
+"-//NLM//DTD NLM Citation v2.0 20040830//EN"
+"nlmcitation.ent"                                                    &gt;
+
+
+&lt;!-- =================== End Publishing DTD Module of Modules ==== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

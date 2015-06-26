@@ -1,0 +1,87 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Page Ranges</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;page-range&gt;</h1>
+         <h1 class="elementname">Page Ranges</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Container element for additional page information to record discontinuous pages ranges, such as “8-11, 14-19, 40” (i.e., an
+            article begins on page 8, runs through 11, skips to pages 14 through 19, and concludes on page 40).
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-g6w0.html" target="main" title="Page Ranges"><span class="elementtag">&lt;page-range&gt;</span></a> element only supplements other page elements and DOES NOT replace <a href="n-5t80.html" target="main" title="First Page"><span class="elementtag">&lt;fpage&gt;</span></a> and <a href="n-d2u0.html" target="main" title="Last Page"><span class="elementtag">&lt;lpage&gt;</span></a>. The <a href="n-5t80.html" target="main" title="First Page"><span class="elementtag">&lt;fpage&gt;</span></a> element and the <a href="n-d2u0.html" target="main" title="Last Page"><span class="elementtag">&lt;lpage&gt;</span></a> element (where available) should always be tagged; infrastructures for linking references across publishers (such as that
+            of CrossRef) use first and last page information on an article as part of their identification process. Accordingly, material
+            with a page range should be tagged:
+            
+         </p>
+         <div class="codeblock"><pre>
+   &lt;fpage&gt;8&lt;/fpage&gt;
+   &lt;lpage&gt;40&lt;/lpage&gt;
+   &lt;page-range&gt;8-11, 14-19, 40&lt;/page-range&gt;
+   </pre></div>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">A number of elements in this Suite relate to page numbers used in bibliographic citations (<a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>):
+            
+            <ul class="bullist">
+               <li><a href="n-5t80.html" target="main" title="First Page"><span class="elementtag">&lt;fpage&gt;</span></a> names the page number on which a referenced item begins;
+                  
+               </li>
+               <li><a href="n-d2u0.html" target="main" title="Last Page"><span class="elementtag">&lt;lpage&gt;</span></a> names the page number on which a referenced item ends (which should be the same page number or a number larger than the starting
+                  page number);
+                  
+               </li>
+               <li><a href="n-qb50.html" target="main" title="Electronic Location Identifier"><span class="elementtag">&lt;elocation-id&gt;</span></a> replaces the start and end page elements just described for electronic-only publications;
+                  
+               </li>
+               <li><a href="n-g6w0.html" target="main" title="Page Ranges"><span class="elementtag">&lt;page-range&gt;</span></a> records discontinuous page ranges (See definition above.); and
+                  
+               </li>
+               <li><a href="n-6gw0.html" target="main" title="Page Count"><span class="elementtag">&lt;page-count&gt;</span></a> (deprecated) holds the total page count, if a page count is included for a referenced item, only in an in an <a href="n-czu0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, which is now a deprecated element. Other citation types use <a href="n-5yv0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a>, with an <a href="n-3fn0.html" target="main" title="Units"><span class="attrtag">@units</span></a> of “<tt>page</tt>”.
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  page-range   (#PCDATA)                                    &gt;</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Text, numbers, or special characters</p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

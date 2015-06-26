@@ -1,0 +1,159 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Formula, Display Group</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;disp-formula-group&gt;</h1>
+         <h1 class="elementname">Formula, Display Group</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Used for a group of equations or other mathematical expressions to be displayed together.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element should not contain only a single equation or expression.
+            
+         </p>
+         <p class="para">Equations within such groups may be given a single group number, numbered individually, or both.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-vwn0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-vwn0.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  disp-formula-group
+                        <a href="n-wbr0.html" target="main" title="Formula, Display Group Model"><span class="petag">%disp-formula-group-model;</span></a>                   &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">(label?, (caption)?, 
+(alt-text | long-desc | email | ext-link | uri)*, 
+(disp-formula | disp-formula-group)*)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-tha0.html" target="main" title="Label (Of a Statement)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-tha0.html" target="main" title="<label&gt;"><span class="elementname">Label (Of a Statement)</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-5vc0.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a> <a href="n-5vc0.html" target="main" title="<caption&gt;"><span class="elementname">Caption of a Figure, Table, Etc.</span></a>, zero or one
+               </li>
+               <li>Any combination of:
+                  <ul class="bullist">
+                     <li>All the accessibility elements:
+                        <ul class="bullist">
+                           <li>
+                              <a href="n-nc20.html" target="main" title="Alternate Title Text (For a Figure, Etc.)"><span class="elementtag">&lt;alt-text&gt;</span></a> <a href="n-nc20.html" target="main" title="<alt-text&gt;"><span class="elementname">Alternate Title Text (For a Figure, Etc.)</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-jku0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a> <a href="n-jku0.html" target="main" title="<long-desc&gt;"><span class="elementname">Long Description</span></a>
+                              
+                           </li>
+                        </ul>
+                        
+                     </li>
+                     <li>All the address linking elements:
+                        <ul class="bullist">
+                           <li>
+                              <a href="n-gm50.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-gm50.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-c280.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-c280.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-yyt0.html" target="main" title="Uniform Resource Indicator (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-yyt0.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Indicator (URI)</span></a>
+                              
+                           </li>
+                        </ul>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>Any combination of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-ev50.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a> <a href="n-ev50.html" target="main" title="<disp-formula&gt;"><span class="elementname">Formula, Display</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-7750.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a> <a href="n-7750.html" target="main" title="<disp-formula-group&gt;"><span class="elementname">Formula, Display Group</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-b820.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-hq20.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-im20.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-7750.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-xya0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-myu0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-sx40.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-ues0.html" target="main" title="Table Data Cell (XHTML table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-ekt0.html" target="main" title="Table Header Cell (XHTML table model)"><span class="elementtag">&lt;th&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;sec&gt;
+&lt;title&gt;The Quadratic Formula&lt;/title&gt;
+&lt;p&gt;...&lt;/p&gt;
+<strong><span class="focus">&lt;disp-formula-group&gt;
+&lt;disp-formula id="formula-qf-1"&gt;
+&lt;label&gt;(1)&lt;/label&gt;
+&lt;mml:math&gt;
+&lt;mml:mrow&gt;
+...&lt;/mml:mrow&gt;
+&lt;/mml:math&gt;
+&lt;/disp-formula&gt;
+
+&lt;disp-formula id="formula-qf-2"&gt;
+&lt;label&gt;(2)&lt;/label&gt;
+&lt;mml:math&gt;
+&lt;mml:mrow&gt;
+...
+&lt;/mml:mrow&gt;
+&lt;/mml:math&gt;
+&lt;/disp-formula&gt;
+
+&lt;disp-formula  id="formula-qf-3"&gt;
+&lt;label&gt;(3)&lt;/label&gt;
+&lt;mml:math&gt;
+&lt;mml:mrow&gt;
+...&lt;/mml:mrow&gt;
+&lt;/mml:math&gt;
+&lt;/disp-formula&gt;
+&lt;/disp-formula-group&gt;</span></strong>
+&lt;/sec&gt;
+...
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">math3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

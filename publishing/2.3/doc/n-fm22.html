@@ -1,0 +1,268 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Journal Publishing DTD Customize Classes Module</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Journal Publishing DTD Customize Classes Module</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Journal Publishing DTD Customize Classes Module   --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Journal Publishing DTD Customize Classes Module v2.3 20070202//EN"
+Delivered as file "journalpubcustom-classes.ent"                   --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Journal Publishing DTD of the                     --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    To declare the Parameter Entities (PEs) used to   --&gt;
+&lt;!--             over-ride the named element classes for the       --&gt;
+&lt;!--             journal Publishing DTD, which was developed from  --&gt;
+&lt;!--             the Archiving and Interchange DTD Suite.          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             This DTD (in contrast to the Journal Archiving    --&gt;
+&lt;!--             and Interchange DTD) is a more prescriptive       --&gt;
+&lt;!--             DTD than is the Archiving DTD. There are fewer    --&gt;
+&lt;!--             choices in the models within this DTD, and some   --&gt;
+&lt;!--             XML structures that were provided simply to       --&gt;
+&lt;!--             facilitate conversion of existing materials from  --&gt;
+&lt;!--             other DTDs into this format have not been included--&gt;
+&lt;!--             in this version of the DTD.                       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Similarly, this is also a tighter DTD. Some of the--&gt;
+&lt;!--             attributes that have type CDATA values in the     --&gt;
+&lt;!--             Archiving DTD, and can thus accept any value,     --&gt;
+&lt;!--             have been given explicit value lists in this DTD. --&gt; 
+&lt;!--                                                               --&gt;
+&lt;!--             Note: Since PEs must be declared before they      --&gt;
+&lt;!--             are used, this module must be called before the   --&gt;
+&lt;!--             content modules that declare elements, and before --&gt;
+&lt;!--             the default classes module.                       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) PEs for changing the contents of the default   --&gt;
+&lt;!--                element classes                                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital Archive of Journal Articles               --&gt;
+&lt;!--             National Center for Biotechnology Information     --&gt;
+&lt;!--                (NCBI)                                         --&gt;
+&lt;!--             National Library of Medicine (NLM)                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             September 2004                                    --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             this DTD should be sent in email to:              --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  7. EMPHASIS CLASS - Added new element to the emphasis.class:
+     - &lt;sans-serif&gt;
+     
+  6. NAME CLASS - Added &lt;anonymous&gt; to name.class, thereby adding
+     it to &lt;contrib&gt; and &lt;person-group&gt; for both metadata and 
+     reference use.
+     
+  5. REFERENCES CLASS - Added the following elements to the
+     contents of the parameter entity -%references.class; thereby 
+     adding them to
+        - &lt;citation&gt;
+        - &lt;product&gt;
+        - &lt;related-article&gt;
+     
+     a. CONFERENCE SPONSOR - &lt;conf-sponsor&gt; 
+     
+     b. Institution &lt;institution&gt; (for CrossRef compatibility)
+     
+  4. NLM CITATION - Added &lt;nlm-citation&gt; as an alternative to
+     unstructured &lt;citation&gt;s by adding &lt;nlm-citation&gt;
+     to -%citation.class;. This changed the models for:
+      - &lt;ref&gt;, which uses -%citation.class; inside %ref-model;
+      
+  3. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.0                  (Beck/DAL/BTU) v2.0 (2004-08-30)
+     
+     
+     Minor tweaks before public release. Decision was made not to
+     change release number
+
+  2. SEC BACK CLASS - Deleted over-ride. Publishing will use Base
+     definition
+  
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+          
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+     
+                
+  1. Created this module from material previously in the single
+     journal publishing customization module (journalpubcustomize.ent)
+     Created at version "v2.3 20070202"                            --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PARAMETER ENTITIES FOR CLASS OVER-RIDES    --&gt;
+&lt;!-- ============================================================= --&gt;
+                            
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OVER-RIDE FORMATTING CLASS (format.ent)    --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    APPEARANCE CLASS ELEMENTS                  --&gt;
+&lt;!--                    Names those elements (inherited from the
+                        XHTML table DTD that are only concerned with
+                        appearance, not with structure or content.
+                        Use of these elements is to be discouraged.
+                        Removed &lt;font&gt;.                            --&gt;
+&lt;!ENTITY % appearance.class   
+                        "hr"                                         &gt;
+   
+
+&lt;!--                    EMPHASIS RENDITION ELEMENTS                --&gt;
+&lt;!ENTITY % emphasis.class   
+                        "bold | italic | monospace | overline | 
+                         sans-serif | sc | strike | underline"       &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OVER-RIDE INLINE CLASSES                   --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    CITATION CLASS ELEMENTS                    --&gt;
+&lt;!--                    Reference to an external document, as used 
+                        within, for example, the text of a 
+                        paragraph                                  --&gt;
+&lt;!ENTITY % citation.class   
+                        "citation | nlm-citation"                    &gt;
+
+
+&lt;!--                    CONTRIBUTOR INFORMATION                    --&gt;
+&lt;!--                    Metadata about a contributor               --&gt;
+&lt;!ENTITY % contrib-info.class
+                        "address | aff | author-comment | bio |  
+                         email | ext-link | on-behalf-of |
+                         role | uri | xref"                          &gt;
+                        
+                        
+&lt;!--                    DATE CLASS ELEMENTS                        --&gt;
+&lt;!--                    Dates and other matters of history         --&gt;
+&lt;!ENTITY % date.class   "date"                                       &gt;
+
+
+&lt;!--                    NAMES CLASS                                --&gt;
+&lt;!--                    The elements used to name the personal names
+                        for individuals and the collaboration names
+                        for groups  
+                        Removed &lt;string-name&gt;                      --&gt;
+&lt;!ENTITY % name.class   "anonymous | collab | name"                  &gt;
+
+
+&lt;!--                    BIBLIOGRAPHIC REFERENCE (CITATION) CLASS   --&gt;
+&lt;!--                    The elements that may be included inside a
+                        Citation (bibliographic reference) 
+                        Removed &lt;string-name&gt;                      --&gt;
+&lt;!ENTITY % references.class
+                        "access-date | annotation | article-title | 
+                         collab | comment | conf-date | conf-loc | 
+                         conf-name | conf-sponsor | 
+                         day | edition | email | elocation-id | 
+                         etal | ext-link | fpage |  gov | isbn | 
+                         institution | issn | issue | issue-id | 
+                         issue-title | lpage | month | name | 
+                         object-id | page-count | page-range | 
+                         patent | person-group | pub-id | 
+                         publisher-loc | publisher-name | role | 
+                         season | series | source | std | 
+                         supplement | time-stamp | 
+                         trans-source | trans-title | uri |
+                         volume | volume-id | year"                  &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OVER-RIDE PARAGRAPH-LIKE ELEMENTS          --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    REST OF PARAGRAPH CLASS (MINUS PARAGRAPH)  --&gt;
+&lt;!--                    Information for the reader that is at the
+                        same structural level as a Paragraph.
+                        Contains all paragraph-level objects that are
+                        not also used inside tables and excepting
+                        also the paragraph element itself.
+                        Unlike in base, &lt;ack&gt; not allowed. 
+                        Acknowledgements only allowed in Back Matter
+                        &lt;back&gt;                                     --&gt;
+&lt;!ENTITY % rest-of-para.class   
+                        "disp-quote | speech | statement | 
+                         verse-group"                                &gt;
+              
+              
+&lt;!-- ================== End Publishing Classes Customization ===== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

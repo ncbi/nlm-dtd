@@ -1,0 +1,696 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Structure of the Authoring DTD</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h1 class="sectiontitle">Structure of the Authoring DTD</h1>
+         <hr class="hrule">
+         <div class="section"><a name="classes"></a><h2 class="header">Element Classes</h2>
+            <p class="para">Many of the elements in the Authoring DTD have been
+               grouped into loose element classes. There is no hard and fast rule for what constitutes a class; each one is a design decision,
+               a matter of judgment. These classes are designed to ease customization to meet the particular needs of new DTDs. Base classes
+               for the Archiving and Interchange DTD Suite are defined in a separate <a href="n-kj70.html"><span class="pename">Default Element Classes Module</span></a> (<a href="n-kj70.html"><span class="petag">%default-classes.ent;</span></a>).
+            </p>
+            <p class="para">Content models are built using sequences of elements by element name, but OR groups typically do not use element names, ORs
+               offer choices of classes (the usual) or mixes. As an example, the content model for a
+                      <a href="n-vaa0.html"><span class="elementname">Paragraph</span></a>  element is declared to be an OR group (that is, a choice) of
+                      <em>data characters</em> and any of the elements named in the <a href="n-sef0.html"><span class="pename">Paragraph Elements</span></a> mix (<a href="n-sef0.html"><span class="petag">%p-elements;</span></a>). The mix <a href="n-sef0.html"><span class="petag">%p-elements;</span></a> is
+                      declared to be a large OR group of many other element-defining classes: the <a href="n-r370.html"><span class="pename">Block Display Class Elements</span></a>, the
+                      <a href="n-fuf0.html"><span class="pename">Mathematical Expressions Class Elements</span></a>, the <a href="n-kaf0.html"><span class="pename">List Class Elements</span></a>, the <a href="n-jv70.html"><span class="pename">Citation Class Elements</span></a>, et al.
+            </p>
+            <p class="para">Element classes can be viewed as building blocks used to build larger Parameter Entities for element mixes. (Note: A mix describes
+               a
+                      usage circumstance for a group of elements, such as all the paragraph-level
+                      elements, all the elements allowed inside a table cell, all the elements inside
+                      a paragraph, or all the inline elements). For example, to add another block display item to the <a href="n-r370.html"><span class="pename">Block Display Class Elements</span></a>, you
+                      would edit the <a href="n-r370.html"><span class="petag">%block-display.class;</span></a> Parameter Entity in the
+                      DTD-specific Article Authoring Class Over-ride Module to override the default Parameter Entity in the DTD Suite&#8217;s <a href="n-kj70.html"><span class="pename">Default Element Classes Module</span></a> module and create a new module containing the Element Declaration of the new block display item.
+            </p>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name="elementclasses"></a><h2 class="header">The Element Classes in the Suite</h2>
+            <p class="para">The classes described here &#8212; with a few exceptions noted below &#8212; are defined in the Archiving and Interchange DTD Suite <a href="n-kj70.html"><span class="pename">Default Element Classes Module</span></a> (<a href="n-kj70.html"><span class="petag">%default-classes.ent;</span></a>) and have been used to divide the elements into physical modules. The documentation for the classes and their current default
+               element contents are listed in the Parameter Entity Section toward the end of this Tag Library. In the Parameter Entity Section,
+               the names of the elements in a group or class are listed within quotation marks, separated by vertical bars. For example,
+               Phrase Class will be listed as &#8220;<a href="n-r6f0.html"><span class="petag">%phrase.class;</span></a>&#8221; and shown to contain:
+            </p>
+            <div class="codeblock"><pre>"abbrev | named-content"</pre></div>
+            <p class="para">which means that the two elements <a href="n-hc20.html"><span class="elementtag">&lt;abbrev&gt;</span></a> and <a href="n-zi80.html"><span class="elementtag">&lt;named-content&gt;</span></a> are defined as <a href="n-r6f0.html"><span class="pename">Phrase Class Elements</span></a>.
+            </p>
+            <div class="deflist">
+               <table class="deflisttable">
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Accessibility Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-wht0.html"><span class="petag">%access.class;</span></a>) Elements added to make the processing of journal articles more accessible to people with special needs and the devices that
+                           meet those needs, for example, the visually handicapped. Includes, for example, the element <a href="n-8720.html"><span class="elementtag">&lt;alt-text&gt;</span></a> which is a short phrase name or description of an object, usually a graphical object, that can be used &#8220;behind the picture&#8221;
+                           on a website or pronounced in an audio system.
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Address Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-ryt0.html"><span class="petag">%address.class;</span></a>) Potential element components of an address, such as <a href="n-6n30.html"><span class="elementtag">&lt;country&gt;</span></a> or <a href="n-uw50.html"><span class="elementtag">&lt;fax&gt;</span></a></p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Appearance Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-xbt0.html"><span class="petag">%appearance.class;</span></a>) Formatting
+                                      elements used primarily in tables, for example, a
+                                      horizontal rule (usage discouraged)
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Appendix Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-qqt0.html"><span class="petag">%app.class;</span></a>) A construct containing only the appendix for use in the back matter of an article
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Break Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-j870.html"><span class="petag">%break.class;</span></a>) Formatting element used to force a line break, primarily in tables and titles (usage discouraged)
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Citation Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-jv70.html"><span class="petag">%citation.class;</span></a>) Reference (a citation) to an
+                                      external document as used within, for example, the text of a
+                                      paragraph
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Contributor Information Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-ad70.html"><span class="petag">%contrib-info.class;</span></a>) Metadata about a contributor
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Definition Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-5h70.html"><span class="petag">%def.class;</span></a>) Definitions (<a href="n-sd30.html"><span class="elementtag">&lt;def&gt;</span></a>) and other elements to match with terms and abbreviations
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Degree Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-kp70.html"><span class="petag">%degree.class;</span></a>) The academic or professional degrees that accompany a person&#8217;s name
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Display Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(Several Parameter Entities:
+                                      <a href="n-ya70.html"><span class="petag">%caption.class;</span></a>,
+                                      <a href="n-r370.html"><span class="petag">%block-display.class;</span></a>,
+                                      <a href="n-j970.html"><span class="petag">%display-back-matter.class;</span></a>,
+                                      <a href="n-ate0.html"><span class="petag">%inline-display.class;</span></a>,
+                                      <a href="n-j3g0.html"><span class="petag">%simple-display.class;</span></a>,
+                                      <a href="n-a5g0.html"><span class="petag">%simple-intable-display.class;</span></a>) Graphical or other
+                                      display-related elements, including figures, chemical formulas, and images [Parameter Entities <a href="n-r370.html"><span class="petag">%block-display.class;</span></a>, <a href="n-ate0.html"><span class="petag">%inline-display.class;</span></a>, and <a href="n-j3g0.html"><span class="petag">%simple-display.class;</span></a> defined
+                                     in the <a href="n-bmt0.html"><span class="petag">%articleauthcustom-classes.ent;</span></a> module]
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Emphasis Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-jke0.html"><span class="petag">%emphasis.class;</span></a>, <a href="n-kxg0.html"><span class="petag">%subsup.class;</span></a>) Used to produce
+                                      rendering/typographical distinctions, such as superscript, subscript, or bold
+                                      text [Parameter Entity <a href="n-jke0.html"><span class="petag">%emphasis.class;</span></a> defined in the <a href="n-bmt0.html"><span class="petag">%articleauthcustom-classes.ent;</span></a> module]
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Identifier Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-dse0.html"><span class="petag">%id.class;</span></a>) DOIs and other identifiers used by publishers at many levels, for example, for an <a href="n-j320.html"><span class="elementtag">&lt;abstract&gt;</span></a> or a <a href="n-8x50.html"><span class="elementtag">&lt;fig&gt;</span></a></p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Keyword Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-6kf0.html"><span class="petag">%kwd.class;</span></a>) Keywords and other elements which name a subject term, critical expression, key phrase, etc. associated with an entire document
+                           and used for identification and indexing purposes
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Link Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(Several Parameter Entities: <a href="n-iit0.html"><span class="petag">%address-link.class;</span></a>, <a href="n-a9t0.html"><span class="petag">%article-link.class;</span></a>, <a href="n-d5g0.html"><span class="petag">%simple-link.class;</span></a>, <a href="n-t8e0.html"><span class="petag">%fn-link.class;</span></a>) Elements that associate one location with another, including cross references, and URIs for links to the World Wide Web
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>List Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-kaf0.html"><span class="petag">%list.class;</span></a>) The types of lists used in text, including numbered lists and bulleted lists
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Math Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(Several Parameter Entities: <a href="n-fuf0.html"><span class="petag">%math.class;</span></a>, <a href="n-c570.html"><span class="petag">%block-math.class;</span></a>, <a href="n-97e0.html"><span class="petag">%inline-math.class;</span></a>) The mathematical element (<a href="n-3n80.html"><span class="elementtag">&lt;mml:math&gt;</span></a>) and the elements that can contain them (such as <a href="n-xj50.html"><span class="elementtag">&lt;inline-formula&gt;</span></a> and <a href="n-tb30.html"><span class="elementtag">&lt;disp-formula&gt;</span></a>) [Parameter Entity <a href="n-fuf0.html"><span class="petag">%math.class;</span></a> defined in the <a href="n-bmt0.html"><span class="petag">%articleauthcustom-classes.ent;</span></a> module]
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Name Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-d4f0.html"><span class="petag">%name.class;</span></a>) The various types of names (such as <a href="n-djc0.html"><span class="elementtag">&lt;collab&gt;</span></a>) for people who produce products or articles [Defined in the <a href="n-bmt0.html"><span class="petag">%articleauthcustom-classes.ent;</span></a> module]
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Paragraph Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(Several Parameter Entities: <a href="n-j9e0.html"><span class="petag">%just-para.class;</span></a>, <a href="n-xmf0.html"><span class="petag">%rest-of-para.class;</span></a>, <a href="n-ige0.html"><span class="petag">%intable-para.class;</span></a>) Information for the reader that is at the same structural level as a paragraph, including both regular paragraphs and specially-named
+                           paragraphs that may have distinctive uses or different displays, such as dialogs and formal statements [Parameter Entities
+                           <a href="n-xmf0.html"><span class="petag">%rest-of-para.class;</span></a> and <a href="n-ige0.html"><span class="petag">%intable-para.class;</span></a> defined in the <a href="n-bmt0.html"><span class="petag">%articleauthcustom-classes.ent;</span></a> module]
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Personal Name Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-inf0.html"><span class="petag">%person-name.class;</span></a>) The element
+                                      components of a person&#8217;s name (such as
+                                      <a href="n-6sw0.html"><span class="elementtag">&lt;surname&gt;</span></a>),which can be used, for example, inside the
+                                      name of a contributor
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Phrase Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-r6f0.html"><span class="petag">%phrase.class;</span></a>) Inline elements
+                                      that surround a word or phrase in text because the subject (content) should
+                                      be identified to support some kind of display, searching, or processing (such as <a href="n-hc20.html"><span class="elementtag">&lt;abbrev&gt;</span></a> to identify an abbreviation).
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Reference Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-tqf0.html"><span class="petag">%references.class;</span></a>) The elements
+                                      that may be included inside a <a href="n-efc0.html"><span class="elementtag">&lt;citation&gt;</span></a>
+                                      (bibliographic reference) [Defined in the <a href="n-bmt0.html"><span class="petag">%articleauthcustom-classes.ent;</span></a> module]
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Reference List Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-mjf0.html"><span class="petag">%ref-list.class;</span></a>) A construct containing only the reference list (defined in References Module) for use in the back matter of an article
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Section Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(<a href="n-j2g0.html"><span class="petag">%sec.class;</span></a>) The elements that are at the same hierarchical level as a section
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Table Class</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">(Several Parameter Entities: <a href="n-g7g0.html"><span class="petag">%table.class;</span></a>, <a href="n-qme0.html"><span class="petag">%just-table.class;</span></a>, and <a href="n-jsg0.html"><span class="petag">%table-foot.class;</span></a>) Elements that contain the rows and columns inside the <a href="n-aew0.html"><span class="elementname">Table Wrapper</span></a> element (<a href="n-aew0.html"><span class="elementtag">&lt;table-wrap&gt;</span></a>). The following XHTML table model elements can be set up for inclusion: <a href="n-4tw0.html"><span class="elementtag">&lt;table&gt;</span></a>.
+                        </p>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name="modules"></a><h2 class="header">Modules in the DTD and Suite</h2>
+            <p class="para">The DTD Suite was created to allow a multiplicity of DTDs, based on the needs of the intended use, for example, an authoring
+               DTD versus one for a repository.  The Authoring DTD (<tt>articleauthoring.dtd</tt>) and its specific
+                      customization modules (<a href="n-bmt0.html"><span class="petag">%articleauthcustom-classes.ent;</span></a>, <a href="n-xzt0.html"><span class="petag">%articleauthcustom-mixes.ent;</span></a>, <a href="n-hzt0.html"><span class="petag">%articleauthcustom-models.ent;</span></a>, and <a href="n-3k70.html"><span class="petag">%articleauthcustom-modules.ent;</span></a>) define an authoring DTD focused
+                      on consistent modeling, processing and searching capability. The following modules are critical for the customization
+               process that
+                      creates that DTD:
+                      
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Authoring DTD</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(File name <tt>articleauthoring.dtd</tt>) The top-level Authoring DTD Module that declares the document element (<a href="n-s620.html"><span class="elementtag">&lt;article&gt;</span></a>) and the other top-level elements that define a journal article (front matter, body, and back matter). All elements but these
+                              few &#8212; and the element <a href="n-hb80.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> &#8212; are declared in the modules of the Suite. The DTD invokes all the other modules it uses, by reference, as external Parameter
+                              Entities: first the Authoring DTD-Specific Module of Modules is called to name all Article Authoring-specific customized modules,
+                              then the Suite Module of Modules is called to name all the potential modules from the Suite, then customized and default modules
+                              are called (for Parameter Entities naming element classes, mixes, and models), then the Common Module for shared elements
+                              and attribute lists is called, and finally all the other modules are called as needed, including the DTD-specific element
+                              module, <a href="n-9sf0.html"><span class="petag">%nlmcitation.ent;</span></a>.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Module to Name Authoring DTD-Specific Modules</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-3k70.html"><span class="petag">%articleauthcustom-modules.ent;</span></a>) Defines all the external modules that are specific to the Authoring DTD (except itself, which must be both named and called
+                              inside a DTD). A DTD selects from these modules by referencing the module names through external Parameter Entities. The entities
+                              are declared in the Authoring DTD-Specific Module of Modules (<a href="n-3k70.html"><span class="petag">%articleauthcustom-modules.ent;</span></a>), but referenced (or not) in the DTD proper. To include a set of elements (such as all the lists or all the MathML elements),
+                              a DTD references the external Parameter Entity of the module that contains these declarations.
+                           </p>
+                           <p class="para">Note: The Authoring DTD-Specific Module of Modules and the Suite Module to Name the Modules need to be the first two external
+                              modules called by the Authoring DTD. Customization modules for classes, mixes, and models will typically be called following
+                              the Authoring DTD-Specific Modules and the Module to Name the Modules.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Suite Module to Name the Modules</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-84f0.html"><span class="petag">%modules.ent;</span></a>) Defines all the external modules that are part of the modular Archiving and Interchange DTD Suite (except itself, which
+                              must be both named and called inside a DTD). A DTD selects from these modules by referencing the module names through external
+                              Parameter Entities. The entities are declared in the Module to Name the Modules (<a href="n-84f0.html"><span class="petag">%modules.ent;</span></a>), but referenced (or not) in the DTD proper. To include a set of elements (such as all the article metadata or all the display
+                              elements) a DTD references the external Parameter Entity of the module that contains these declarations.
+                           </p>
+                           <p class="para">Note: The Authoring DTD-Specific Modules and the Suite Module to Name the Modules need to be the first two external modules
+                              called by the Authoring DTD. Customization modules for classes, mixes, and models will typically be called following the Authoring
+                              DTD-Specific Modules and the Module to Name the Modules.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Authoring DTD Class Customizations Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-bmt0.html"><span class="petag">%articleauthcustom-classes.ent;</span></a>) Sets up Parameter Entities that will be used to override default classes prescribed by the <a href="n-kj70.html"><span class="petag">%default-classes.ent;</span></a> module
+                           </p>
+                           <p class="para">Note: This module must be called after the Authoring DTD-Specific Modules (<a href="n-3k70.html"><span class="petag">%articleauthcustom-modules.ent;</span></a>) and the Suite Module to Name the Modules (<a href="n-84f0.html"><span class="petag">%modules.ent;</span></a>) but before any other module, including specifically the <a href="n-kj70.html"><span class="petag">%default-classes.ent;</span></a> module (which this module overrides) and the <a href="n-xzt0.html"><span class="petag">%articleauthcustom-mixes.ent;</span></a> and <a href="n-hzt0.html"><span class="petag">%articleauthcustom-models.ent;</span></a> modules (which build on this module).
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Suite Default Element Classes Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-kj70.html"><span class="petag">%default-classes.ent;</span></a>) Sets up the Parameter Entities that name the element members of each class that will be used to establish the content models
+                           </p>
+                           <p class="para">Note: This module must be called before the Article Authoring Over-ride Mixes Module (<a href="n-xzt0.html"><span class="petag">%articleauthcustom-mixes.ent;</span></a>) and the Default Element Mixes Module (<a href="n-fj70.html"><span class="petag">%default-mixes.ent;</span></a>), as well as the Article Authoring Over-ride Models Module, <a href="n-hzt0.html"><span class="petag">%articleauthcustom-models.ent;</span></a> (which builds on those modules).
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Authoring DTD Mix Customizations Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-xzt0.html"><span class="petag">%articleauthcustom-mixes.ent;</span></a>) Sets up Parameter Entities that will be used to override default mixes (groupings made of &#8220;classes&#8221;) prescribed by the <a href="n-fj70.html"><span class="petag">%default-mixes.ent;</span></a> module
+                           </p>
+                           <p class="para">Note: This module must be called after the Article Authoring Over-ride Classes Module (<a href="n-bmt0.html"><span class="petag">%articleauthcustom-classes.ent;</span></a>) and the Default Classes Module (<a href="n-kj70.html"><span class="petag">%default-classes.ent;</span></a>) but before any other module, including specifically the <a href="n-fj70.html"><span class="petag">%default-mixes.ent;</span></a> module (which this module overrides) and the <a href="n-hzt0.html"><span class="petag">%articleauthcustom-models.ent;</span></a> module (which builds on this module).
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Suite Default Element Mixes Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-fj70.html"><span class="petag">%default-mixes.ent;</span></a>) Sets up the Parameter Entities that name mixes (groupings made of &#8220;classes&#8221;) that will be used to establish the content
+                              models
+                           </p>
+                           <p class="para">Note: This module must be called before the Article Authoring Over-ride Models Module (<a href="n-hzt0.html"><span class="petag">%articleauthcustom-models.ent;</span></a>) or any &#8220;base&#8221; module of the interchange Suite.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Journal Publishing DTD Models/Attributes Customizations Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-hzt0.html"><span class="petag">%articleauthcustom-models.ent;</span></a>) Sets up Parameter Entities that will be used to override default content model Parameter Entities set elsewhere in the Suite.
+                              Also defines customizable attribute Declared Values and attribute lists for the DTD being defined.
+                           </p>
+                           <p class="para">Note: This module must be called after the Article Authoring Over-ride Mixes Module (<a href="n-xzt0.html"><span class="petag">%articleauthcustom-mixes.ent;</span></a>) and Default Mixes Module (<a href="n-fj70.html"><span class="petag">%default-mixes.ent;</span></a>) but before any &#8220;base&#8221; module of the interchange Suite.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Authoring DTD NLM Citation Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-9sf0.html"><span class="petag">%nlmcitation.ent;</span></a>) Adds the model for the NLM structured bibliographic citation element (<a href="n-hb80.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>). This model for a cited reference loosely reflects the NLM&#8217;s formal bibliographic style. The model allows the tagging of
+                              all &#8220;legal&#8221; NLM citations and enforces the sequence in which content must appear. However, this model does not provide guidance
+                              on what information is required for each type of cited content; such guidance must be controlled editorially.
+                           </p>
+                           <p class="para">Note: This is the only module defining a new element added to the Suite by this DTD. The module <tt>%nlmcitation.ent;</tt> was initially written as part of the Journal Publishing DTD and is used without change by this DTD.&gt;
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </p>
+            <p class="para">The modules comprising the rest of the DTD Suite that are used in this DTD are:
+                      
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Common (Shared) Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-at70.html"><span class="petag">%common.ent;</span></a>) Declarations for
+                                          elements, attributes, entities, and notations that are shared by more than one
+                                          class module
+                           </p>
+                           <p class="para">Note: This module must be called before any of the modules comprising the interchange Suite.</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Article Metadata Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-gk70.html"><span class="petag">%articlemeta.ent;</span></a>) Declares the
+                                          metadata elements (issue elements and article header elements) used to
+                                          describe a journal article
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Back Matter Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-sc70.html"><span class="petag">%backmatter.ent;</span></a>) Declares
+                                          elements that are not part of the main textual flow of a work, but are
+                                          considered to be ancillary material such as appendices, glossaries, and
+                                          bibliographic reference lists
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Display Class Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-sm70.html"><span class="petag">%display.ent;</span></a>) Declares the
+                                          display-related elements, such as figures, graphics, math, chemical expressions and structures, tables, etc.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Format Class Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-vue0.html"><span class="petag">%format.ent;</span></a>) Declares elements
+                                          concerned with rendition of output, for example, printing on a page or display
+                                          on a screen. This module includes the elements in the Appearance Class, the
+                                          Break Class, and the Emphasis Class.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Link Class Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-w3f0.html"><span class="petag">%link.ent;</span></a>) Declares elements that are links (internal or external) by definition, such as URLs (<a href="n-hhx0.html"><span class="elementtag">&lt;uri&gt;</span></a>) and internal cross references (<a href="n-zbx0.html"><span class="elementtag">&lt;xref&gt;</span></a>)
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>List Class Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-faf0.html"><span class="petag">%list.ent;</span></a>) Declares the
+                                          elements in the List Class; these are all lists except the lists of
+                                          bibliographic references (citations). Lists are considered to be composed of
+                                          items.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Math Class Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-9uf0.html"><span class="petag">%math.ent;</span></a>) Declares the
+                                          elements in the math classes such as display equations
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Paragraph-Like Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-eff0.html"><span class="petag">%para.ent;</span></a>) Declares structural,
+                                          non-display elements that may appear in the same places as a paragraph. These
+                                          elements are named in the various paragraph class Parameter Entities.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Subject Phrase Class Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-8df0.html"><span class="petag">%phrase.ent;</span></a>) Declares the
+                                          Phrase Class elements, that is, names the inline, subject-specific elements. At the time of this DTD&#8217;s creation,
+                              there are only two phrase-level elements, <a href="n-hc20.html"><span class="elementname">Abbreviation or Acronym</span></a> (<a href="n-hc20.html"><span class="elementtag">&lt;abbrev&gt;</span></a>) and <a href="n-zi80.html"><span class="elementname">Named Special (Subject) Content</span></a> (<a href="n-zi80.html"><span class="elementtag">&lt;named-content&gt;</span></a>). If more specific subject words (such as &#8220;gene&#8221;) are added to later
+                                          versions of this DTD, they should be added to the <a href="n-r6f0.html"><span class="petag">%phrase.class;</span></a> Parameter Entity and defined in this module or in the Common Module, <a href="n-at70.html"><span class="petag">%common.ent;</span></a>.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Bibliographic Reference (Citation) Class Elements
+                                         Module
+                           </p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-qqf0.html"><span class="petag">%references.ent;</span></a>) Declares the
+                                          bibliographic reference elements
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Section Class Elements Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-wcg0.html"><span class="petag">%section.ent;</span></a>) Declares the
+                                          elements of the Section Class, that is, declares all section-level elements in
+                                          the Authoring DTD. At the time of this DTD&#8217;s creation, there is
+                                          only one such element, <a href="n-qsu0.html"><span class="elementname">Section</span></a> (<a href="n-qsu0.html"><span class="elementtag">&lt;sec&gt;</span></a>) itself, but
+                                          future expansion to named sections (such as <tt>&lt;methodology&gt;</tt> or <tt>&lt;materials&gt;</tt>) or any new section-level structures
+                                          would be added here.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>MathML Setup Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-yxf0.html"><span class="petag">%mathmlsetup.ent;</span></a>) Invokes the
+                                          MathML modules
+                           </p>
+                           <p class="para">DTD Creation Note: To include the MathML elements, a DTD must
+                                          reference this module. This module sets up all Parameter Entities needed to use
+                                          the MathML tagset and references (invokes) the MathML 2.0 DTD Module, which, in
+                                          turn, invokes all the other MathML modules.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>MathML 2.0 DTD Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-iwf0.html"><span class="petag">%mathml.dtd;</span></a>) Mathematical
+                                          Markup Language (MathML) 2.0, an XML application for describing mathematical
+                                          notation and capturing both its structure and content
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>MathML 2.0 Qualified Names 1.0</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-vwf0.html"><span class="petag">%mathml-qname.mod;</span></a>) Declares
+                                          Parameter Entities to support namespace-qualified names, namespace
+                                          declarations, and name prefixing for MathML, as well as declares the Parameter
+                                          Entities used to provide namespace-qualified names for all MathML element
+                                          types
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Extra Entities for MathML 2.0</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-2ce0.html"><span class="petag">%ent-mmlextra;</span></a>) Used for MathML
+                                          processing
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Aliases for MathML 2.0</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-d2e0.html"><span class="petag">%ent-mmlalias;</span></a>) Used for MathML
+                                          processing
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>XHTML Table Setup Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-arg0.html"><span class="petag">%XHTMLtablesetup.ent;</span></a>) Sets all
+                                          Parameter Entities needed by the HTML 4.0 (XHTML) table model, and then invokes
+                                          the module containing that model
+                           </p>
+                           <p class="para">DTD Creation Note: To include the XHTML
+                                          table model, a DTD must reference this module. This module sets up all
+                                          Parameter Entities needed to use the XHTML table model and references (invokes)
+                                          the XHTML Table Model Module.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>XHTML Table Model Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-8se0.html"><span class="petag">%htmltable.dtd;</span></a>) The public XML
+                                          version of the HTML 4.0 (XHTML) table model. This module is invoked in
+                                          <a href="n-arg0.html"><span class="petag">%XHTMLtablesetup.ent;</span></a>.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>XML Special Characters Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-xhg0.html"><span class="petag">%xmlspecchars.ent;</span></a>) Standard ISO
+                                          XML special character entities used in this DTD
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Custom Special Characters Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-au70.html"><span class="petag">%chars.ent;</span></a>) Custom special
+                                          character entities created specifically for use in this DTD
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Notation Declarations Module</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">(Parameter Entity <a href="n-ttf0.html"><span class="petag">%notat.ent;</span></a>) Container module
+                                          for the Notation Declarations to be used with this DTD Suite. These notations
+                                          have been placed in their own module for easy expansion or replacement.
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </p>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

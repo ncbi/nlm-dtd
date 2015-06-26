@@ -1,0 +1,101 @@
+<chapter>
+   <no>1.</no>
+   <title>Monographs</title>
+   <reflist>
+      <title>A. Entire Monographs</title>
+      <reflist>
+         <title>1. Standard citation:</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Lawrence</surname>
+                     <given-names>Ruth A</given-names>
+                  </name>
+               </person-group>
+               <source>A review of the medical benefits and contraindications to breastfeeding in the United States [Internet]</source>
+               <year>1997</year>
+               <month>10</month>
+               <access-date>cited 2000 Apr 24</access-date>
+               <publisher-loc>Arlington (VA)</publisher-loc>
+               <publisher-name>National Center for Education in Maternal and Child Health</publisher-name>
+               <fpage>40</fpage>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.ncemch.org/pubs/PDFs/breastfeedingTIB.pdf">http://www.ncemch.org/pubs/PDFs/breastfeedingTIB.pdf</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+         <reflist>
+            <title>- with optional initials for author</title>
+            <ref>
+               <citation citation-type="book">
+                  <person-group person-group-type="author">
+                     <name>
+                        <surname>Lawrence</surname>
+                        <given-names>RA</given-names>
+                     </name>
+                  </person-group>
+                  <source>A review of the medical benefits and contraindications to breastfeeding in the United States [Internet]   </source>
+                  <year>1997</year>
+                  <month>10</month>
+                  <access-date>cited 2000 Apr 24</access-date>
+                  <publisher-loc>Arlington (VA)</publisher-loc>
+                  <publisher-name>National Center for Education in Maternal and Child Health</publisher-name>
+                  <fpage>40</fpage>
+                  <other-ref>Available from: <exlnk exlnk-type="url" href="www.ncemch.org/pubs/PDFs/breastfeedingTIB.pdf">   http://www.ncemch.org/pubs/PDFs/breastfeedingTIB.pdf</exlnk>
+                  </other-ref>
+               </citation>
+            </ref>
+         </reflist>
+         <reflist>
+            <title>- with optional content designator</title>
+            <ref>
+               <citation citation-type="book">
+                  <person-group person-group-type="author">
+                     <name>
+                        <surname>Lawrence</surname>
+                        <given-names>RA</given-names>
+                     </name>
+                  </person-group>
+                  <source>A review of the medical benefits and contraindications to breastfeeding in the United States [monograph on the Internet]   </source>
+                  <year>1997</year>
+                  <month>10</month>
+                  <access-date>cited 2000 Apr 24</access-date>
+                  <publisher-loc>Arlington (VA)</publisher-loc>
+                  <publisher-name>National Center for Education in Maternal and Child Health</publisher-name>
+                  <fpage>40</fpage>
+                  <other-ref>Available from: <exlnk exlnk-type="url" href="www.ncemch.org/pubs/PDFs/breastfeedingTIB.pdf">   http://www.ncemch.org/pubs/PDFs/breastfeedingTIB.pdf</exlnk>
+                  </other-ref>
+               </citation>
+            </ref>
+         </reflist>
+      </reflist>
+      <reflist>
+         <title>13. Copyright date:</title>
+         <ref>
+            <citation citation-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Allen</surname>
+                     <given-names>Timothy F</given-names>
+                  </name>
+               </person-group>
+               <source>The encyclopedia of pure materia medica [Internet]</source>
+               <year>c2000</year>
+               <month>10</month>
+               <access-date>cited 2001 Apr 25</access-date>
+               <publisher-loc>France</publisher-loc>
+               <publisher-name>Homeopathe International</publisher-name>
+               <fpage>40</fpage>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="homeoint.org/allen/index.htm">   homeoint.org/allen/index.htm</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+      </reflist>
+   </reflist>
+   <reflist>
+      <title>B. Parts of Monographs</title>
+   </reflist>
+   <reflist>
+      <title>C. Contributions to Monographs</title>
+   </reflist>
+</chapter>

@@ -1,0 +1,371 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Archiving and Interchange Suite XML Special Characters Module</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Archiving and Interchange Suite XML Special Characters Module</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    XML Special Characters Module                     --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.3 20070202//EN"
+     Delivered as file "xmlspecchars.ent"                          --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    External Parameter Entities for calling in the    --&gt;
+&lt;!--             special character entities                        --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) Calls to external entity sets                  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- MODULES REQUIRED:                                             --&gt;
+&lt;!--             The standard ISO special character entity sets    --&gt;
+&lt;!--             (see below)                                       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital archives and publishers who wish to       --&gt;
+&lt;!--             create a custom XML DTD for original markup of    --&gt;
+&lt;!--             journal literature, books, and related material,  --&gt;
+&lt;!--             or for archiving and transferring such material   --&gt;
+&lt;!--             between archives.                                 --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             This DTD is in the public domain. An organization --&gt;
+&lt;!--             that wishes to create its own DTD from the suite  --&gt;
+&lt;!--             may do so without permission from NLM.            --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             The suite has been set up to be extended using a  --&gt;
+&lt;!--             new DTD file and a new DTD-specific customization --&gt;
+&lt;!--             module to redefine the many Parameter Entities.   --&gt;
+&lt;!--             Do not modify the suite directly or redistribute  --&gt;
+&lt;!--             modified versions of the suite.                   --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             In the interest of maintaining consistency and    --&gt;
+&lt;!--             clarity for potential users, NLM requests:        --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             1. If you create a DTD from the Archiving and     --&gt;
+&lt;!--                Interchange DTD Suite and intend to stay       --&gt;
+&lt;!--                compatible with the suite, then please include --&gt;
+&lt;!--                the following statement as a comment in all of --&gt;
+&lt;!--                your DTD modules:                              --&gt;
+&lt;!--                   "Created from, and fully compatible with,   --&gt;
+&lt;!--                    the Archiving and Interchange DTD Suite."  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             2. If you alter one or more modules of the suite, --&gt;
+&lt;!--                then please rename your version and all its    --&gt;
+&lt;!--                modules to avoid any confusion with the        --&gt;
+&lt;!--                original suite. Also, please include the       --&gt;
+&lt;!--                following statement as a comment in all your   --&gt;
+&lt;!--                DTD modules:                                   --&gt;
+&lt;!--                   "Based in part on, but not fully compatible --&gt;
+&lt;!--                    with, the Archiving and Interchange DTD    --&gt; 
+&lt;!--                    Suite."                                    --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             the DTD suite should be sent in email to:         --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             December 2002                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Jeff Beck       (NCBI)                            --&gt;
+&lt;!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             Bruce Rosenblum (Inera Inc.)                      --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             NLM thanks the Harvard University Libraries, both --&gt;
+&lt;!--             for proposing that a draft archiving NLM DTD for  --&gt; 
+&lt;!--             life sciences journals be extended to accommodate --&gt;
+&lt;!--             journals in all disciplines and for sponsoring    --&gt;
+&lt;!--             Bruce Rosenblum's collaboration with other DTD    --&gt;
+&lt;!--             authors in completing Version 1.0. The Andrew W.  --&gt; 
+&lt;!--             Mellon Foundation provided support for these      --&gt; 
+&lt;!--             important contributions.                          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  4. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                   (DAL/TRG/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by the online list     
+
+  3. NEW CHARACTER ENTITY SETS
+     MathML had modified their character entity sets and this DTD
+     was changed to match. The new sets:
+       a) Now match Unicode 4.0
+       b) Have changed the older private use areas to 4.0 mappings
+       c) Have a new directory structure, which separates the
+          ISO 8879 (SGML) sets from the ISO 9573-13 (ISO tech rpt)
+          sets. The MathML DTD uses some members of both sets
+          and this DTD Suite has followed their usage exactly.
+          So there are now 3 character subdirectories:
+            - iso8879 (from SGML used in MathML)
+            - iso9573-13 (from ISO Tech Rpt used in MathML)
+            - xmlchars (from SGML not used in MathML)
+          
+          Implementor Alert: The MathML DTD includes some entity
+          files in both sets (for example "isoamsa.ent" is in 
+          both directories, but has added characters in the 
+          "iso9573-13" directory.) This Suite includes only 
+          the entity files actually referenced.
+          
+  2. Updated public identifier to "v2.3 20070202" 
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+     
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+
+  1. Updated public identifier to "v2.3 20070202"          
+                                                                   --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    ENTITY SETS FROM INFORMATIVE ANNEX TO      --&gt; 
+&lt;!--                       ISO 8879:1986 (SGML)                    --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    ISO STANDARD ADDED LATIN 1                 --&gt;
+&lt;!ENTITY % ISOlat1 PUBLIC
+"-//W3C//ENTITIES Added Latin 1 for MathML 2.0//EN"
+"iso8879/isolat1.ent"                                                &gt;
+
+
+&lt;!--                    ISO STANDARD ADDED LATIN 2                 --&gt;
+&lt;!ENTITY % ISOlat2 PUBLIC
+"-//W3C//ENTITIES Added Latin 2 for MathML 2.0//EN"
+"iso8879/isolat2.ent"                                                &gt;
+
+
+&lt;!--                    ISO BOX AND LINE DRAWING                   --&gt;
+&lt;!ENTITY % ISObox       PUBLIC 
+"-//W3C//ENTITIES Box and Line Drawing for MathML 2.0//EN"
+"iso8879/isobox.ent"                                                 &gt;
+
+
+&lt;!--                    ISO STANDARD DIACRITICAL MARKS             --&gt;
+&lt;!ENTITY % ISOdia PUBLIC
+"-//W3C//ENTITIES Diacritical Marks for MathML 2.0//EN"
+"iso8879/isodia.ent"                                                 &gt;
+
+
+&lt;!--                    ISO STANDARD NUMERIC AND SPECIAL GRAPHIC   --&gt;
+&lt;!ENTITY % ISOnum PUBLIC
+"-//W3C//ENTITIES Numeric and Special Graphic for MathML 2.0//EN"
+"iso8879/isonum.ent"                                                 &gt;
+
+
+&lt;!--                    ISO STANDARD PUBLISHING                    --&gt;
+&lt;!ENTITY % ISOpub PUBLIC
+"-//W3C//ENTITIES Publishing for MathML 2.0//EN"
+"iso8879/isopub.ent"                                                 &gt;
+
+
+&lt;!--                    ISO STANDARD RUSSIAN CYRILLIC              --&gt;
+&lt;!ENTITY % ISOcyr1 PUBLIC 
+"-//W3C//ENTITIES Russian Cyrillic for MathML 2.0//EN"
+"iso8879/isocyr1.ent"                                                &gt;
+
+
+&lt;!--                    ISO STANDARD NON-RUSSIAN CYRILLIC          --&gt;
+&lt;!ENTITY % ISOcyr2 PUBLIC
+"-//W3C//ENTITIES Non-Russian Cyrillic for MathML 2.0//EN"
+"iso8879/isocyr2.ent"                                                &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    ISO 8879 NOT USED BY MATHML                --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    ISO STANDARD GREEK LETTERS                 --&gt;
+&lt;!ENTITY % ISOgrk1 PUBLIC
+"-//W3C//ENTITIES Greek Letters//EN"
+"xmlchars/isogrk1.ent"                                               &gt;
+
+
+&lt;!--                    ISO STANDARD MONOTONIKO GREEK              --&gt;
+&lt;!ENTITY % ISOgrk2 PUBLIC
+"-//W3C//ENTITIES Monotoniko Greek//EN"
+"xmlchars/isogrk2.ent"                                               &gt;
+
+
+&lt;!--                    ISO STANDARD ALTERNATIVE GREEK SYMBOLS     --&gt;
+&lt;!ENTITY % ISOgrk4 PUBLIC
+"-//W3C//ENTITIES Alternative Greek Symbols//EN"
+"xmlchars/isogrk4.ent"                                               &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    ISO TECHNICAL REPORT 9573-13 ENTITY SETS   --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    ISO STANDARD GENERAL TECHNICAL             --&gt;
+&lt;!ENTITY % ISOtech PUBLIC
+"-//W3C//ENTITIES General Technical for MathML 2.0//EN"
+"iso9573-13/isotech.ent"                                             &gt;
+
+
+&lt;!--                    ISO STANDARD GREEK SYMBOLS                 --&gt;
+&lt;!ENTITY % ISOgrk3 PUBLIC
+"-//W3C//ENTITIES Greek Symbols for MathML 2.0//EN"
+"iso9573-13/isogrk3.ent"                                             &gt;
+
+
+&lt;!--                    ISO STANDARD MATH ALPHABETS (SCRIPT)       --&gt;
+&lt;!ENTITY % ISOmscr PUBLIC
+"-//W3C//ENTITIES Math Alphabets: Script for MathML 2.0//EN"
+"iso9573-13/isomscr.ent"                                             &gt;
+
+
+&lt;!--                    ISO STANDARD ADDED MATH SYMBOLS 
+                           (ARROW RELATIONS)                       --&gt;
+&lt;!ENTITY % ISOamsa PUBLIC
+"-//W3C//ENTITIES Added Math Symbols: Arrow Relations for MathML 2.0//EN"
+"iso9573-13/isoamsa.ent"                                             &gt;
+
+
+&lt;!--                    ISO STANDARD ADDED MATH SYMBOLS 
+                           (BINARY OPERATORS)                      --&gt;
+&lt;!ENTITY % ISOamsb PUBLIC 
+"-//W3C//ENTITIES Added Math Symbols: Binary Operators for MathML 2.0//EN" 
+"iso9573-13/isoamsb.ent"                                             &gt;
+
+
+&lt;!--                    ISO STANDARD ADDED MATH SYMBOLS 
+                           (DELIMITERS)                            --&gt;
+&lt;!ENTITY % ISOamsc PUBLIC 
+"-//W3C//ENTITIES Added Math Symbols: Delimiters for MathML 2.0//EN"
+"iso9573-13/isoamsc.ent"                                             &gt;
+
+
+&lt;!--                    ISO STANDARD ADDED MATH SYMBOLS 
+                           (NEGATED RELATIONS)                     --&gt;
+&lt;!ENTITY % ISOamsn PUBLIC 
+"-//W3C//ENTITIES Added Math Symbols: Negated Relations for MathML 2.0//EN"
+"iso9573-13/isoamsn.ent"                                             &gt;
+
+
+&lt;!--                    ISO STANDARD ADDED MATH SYMBOLS (ORDINARY) --&gt;
+&lt;!ENTITY % ISOamso PUBLIC 
+"-//W3C//ENTITIES Added Math Symbols: Ordinary for MathML 2.0//EN"
+"iso9573-13/isoamso.ent"                                             &gt;
+
+
+&lt;!--                    ISO STANDARD ADDED MATH SYMBOLS 
+                           (RELATIONS)                             --&gt;
+&lt;!ENTITY % ISOamsr PUBLIC 
+"-//W3C//ENTITIES Added Math Symbols: Relations for MathML 2.0//EN"
+"iso9573-13/isoamsr.ent"                                             &gt;
+
+
+&lt;!--                    ISO STANDARD MATH ALPHABETS (FRAKTUR)      --&gt;
+&lt;!ENTITY % ISOmfrk PUBLIC
+"-//W3C//ENTITIES Math Alphabets: Fraktur for MathML 2.0//EN"
+"iso9573-13/isomfrk.ent"                                             &gt;
+
+
+&lt;!--                    ISO STANDARD MATH ALPHABETS (OPEN FACE)    --&gt;
+&lt;!ENTITY % ISOmopf PUBLIC
+"-//W3C//ENTITIES Math Alphabets: Open Face for MathML 2.0//EN"
+"iso9573-13/isomopf.ent"                                             &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    ISO SPECIAL CHARACTER SETS INVOKED         --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+%ISOlat1;
+%ISOlat2;
+%ISObox;
+%ISOdia;
+%ISOnum;
+%ISOpub;
+%ISOcyr1;
+%ISOcyr2;
+
+%ISOgrk1;
+%ISOgrk2;
+%ISOgrk4;
+
+%ISOtech;
+%ISOgrk3;
+%ISOamsa;
+%ISOamsb;
+%ISOamsc;
+%ISOamsn;
+%ISOamso;
+%ISOamsr;
+%ISOmscr;
+%ISOmfrk; 
+%ISOmopf;
+
+
+&lt;!--                    Custom special characters are declared 
+                        in a separate module %chars.ent;           --&gt;
+
+
+&lt;!-- ============ End of XML Special Characters Module =========== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,108 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Contributor Group</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;contrib-group&gt;</h1>
+         <h1 class="elementname">Contributor Group</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Wrapper element for information concerning a grouping of
+                    contributors, such as primary authors. These are contributors who worked
+                    individually, not as a group.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Not to be confused with the element
+                    <a href="n-bpc0.html"><span class="elementtag">&lt;collab&gt;</span></a>, which is used for groups of authors who
+                    are credited under a single name, either as a collaboration in the strictest
+                    sense, or when an organization, institution, or a corporation is given as a
+                    contributor.
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">This element is for grouping contributors in the metadata of an
+                    article. The <a href="n-yfa0.html"><span class="elementtag">&lt;person-group&gt;</span></a> element performs a
+                    similar function of grouping contributors, such as authors and editors, within
+                    bibliographic references (<a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a> and <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>).
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  contrib-group
+                        %contrib-group-model;                        &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">
+                        <a href="n-ks30.html"><span class="elementname">Contributor</span></a> <a href="n-ks30.html"><span class="elementtag">&lt;contrib&gt;</span></a>, one or more
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-9r20.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-9r20.html"><span class="elementname">Article Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital 
+care for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+<strong><span class="focus">&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;aff id="StLukes"&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5 
+0NA&lt;/aff&gt;
+&lt;/contrib&gt;
+...
+&lt;/contrib-group&gt;</span></strong>
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British 
+Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of day hospital attendance 
+in prolonging independent living for elderly people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+... 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

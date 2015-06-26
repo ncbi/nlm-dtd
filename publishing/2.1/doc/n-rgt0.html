@@ -1,0 +1,158 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: X(cross) Reference</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;xref&gt;</h1>
+         <h1 class="elementname">X(cross) Reference</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Used for any kind of <strong>internal</strong>
+                   article referencing
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element may be used to reference anything that has an <a href="n-5we0.html"><span class="attrtag">id</span></a> attribute (an attribute of type <a href="n-5we0.html"><span class="attrtag">id</span></a>). This single element takes the place of the many named types of references (such as figure references, table references,
+            and footnote references) that are common in many journal DTDs. 
+         </p>
+         <p class="para">The <a href="n-3tf0.html"><span class="attrtag">ref-type</span></a> attribute (of the <a href="n-rgt0.html"><span class="elementtag">&lt;xref&gt;</span></a> element) can be used to preserve information concerning what type of element is being pointed to by the cross-reference.
+         </p>
+         <p class="para">Display/Formatting Note: The content of the reference (if present) will be displayed as
+                   the link.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-5we0.html"><span class="attrtag">id</span></a> <a href="n-5we0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-3tf0.html"><span class="attrtag">ref-type</span></a> <a href="n-3tf0.html"><span class="attrname">Type of Cross Reference</span></a></h5>
+         <h5 class="header"><a href="n-sdf0.html"><span class="attrtag">rid</span></a> <a href="n-sdf0.html"><span class="attrname">Reference to an Identifier</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  xref         (#PCDATA %xref-elements;)*                   &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-apc0.html"><span class="elementname">Bold</span></a> <a href="n-apc0.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-2ma0.html"><span class="elementname">Italic</span></a> <a href="n-2ma0.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-3pu0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-3pu0.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-sfw0.html"><span class="elementname">Overline</span></a> <a href="n-sfw0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-qzx0.html"><span class="elementname">Small Caps</span></a> <a href="n-qzx0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-vyv0.html"><span class="elementname">Strike Through</span></a> <a href="n-vyv0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-rat0.html"><span class="elementname">Underline</span></a> <a href="n-rat0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-gqv0.html"><span class="elementname">Subscript</span></a> <a href="n-gqv0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-fw40.html"><span class="elementname">Superscript</span></a> <a href="n-fw40.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-g720.html"><span class="elementtag">&lt;aff&gt;</span></a> <a href="n-g720.html"><span class="elementname">Affiliation</span></a>; <a href="n-c620.html"><span class="elementtag">&lt;alt-title&gt;</span></a> <a href="n-c620.html"><span class="elementname">Alternate Title</span></a>; <a href="n-bxc0.html"><span class="elementtag">&lt;article-title&gt;</span></a> <a href="n-bxc0.html"><span class="elementname">Article Title</span></a>; <a href="n-a7c0.html"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-a7c0.html"><span class="elementname">Attribution</span></a>; <a href="n-apc0.html"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-apc0.html"><span class="elementname">Bold</span></a>; <a href="n-g330.html"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-g330.html"><span class="elementname">Chemical Structure (Display)</span></a>; <a href="n-5d30.html"><span class="elementtag">&lt;collab&gt;</span></a> <a href="n-5d30.html"><span class="elementname">Collaborative (Group) Author</span></a>; <a href="n-wi30.html"><span class="elementtag">&lt;comment&gt;</span></a> <a href="n-wi30.html"><span class="elementname">Comment in a Citation</span></a>; <a href="n-xw50.html"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-xw50.html"><span class="elementname">Contributor</span></a>; <a href="n-mv50.html"><span class="elementtag">&lt;contrib-group&gt;</span></a> <a href="n-mv50.html"><span class="elementname">Contributor Group</span></a>; <a href="n-r950.html"><span class="elementtag">&lt;def-head&gt;</span></a> <a href="n-r950.html"><span class="elementname">Definition List: Definition Head</span></a>; <a href="n-2ma0.html"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-2ma0.html"><span class="elementname">Italic</span></a>; <a href="n-3nu0.html"><span class="elementtag">&lt;meta-name&gt;</span></a> <a href="n-3nu0.html"><span class="elementname">Metadata Data Name for Custom Metadata</span></a>; <a href="n-pru0.html"><span class="elementtag">&lt;meta-value&gt;</span></a> <a href="n-pru0.html"><span class="elementname">Metadata Data Name For Custom Metadata</span></a>; <a href="n-3pu0.html"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-3pu0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a>; <a href="n-pzu0.html"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-pzu0.html"><span class="elementname">Named Special (Subject) Content</span></a>; <a href="n-sfw0.html"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-sfw0.html"><span class="elementname">Overline</span></a>; <a href="n-66w0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-66w0.html"><span class="elementname">Paragraph</span></a>; <a href="n-b5x0.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-b5x0.html"><span class="elementname">Product Information</span></a>; <a href="n-qzx0.html"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-qzx0.html"><span class="elementname">Small Caps</span></a>; <a href="n-inv0.html"><span class="elementtag">&lt;speaker&gt;</span></a> <a href="n-inv0.html"><span class="elementname">Speaker</span></a>; <a href="n-vyv0.html"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-vyv0.html"><span class="elementname">Strike Through</span></a>; <a href="n-gqv0.html"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-gqv0.html"><span class="elementname">Subscript</span></a>; <a href="n-j340.html"><span class="elementtag">&lt;subtitle&gt;</span></a> <a href="n-j340.html"><span class="elementname">Article Subtitle</span></a>; <a href="n-fw40.html"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-fw40.html"><span class="elementname">Superscript</span></a>; <a href="n-iz40.html"><span class="elementtag">&lt;td&gt;</span></a> <a href="n-iz40.html"><span class="elementname">Table Data Cell (XHTML table model)</span></a>; <a href="n-x8s0.html"><span class="elementtag">&lt;term&gt;</span></a> <a href="n-x8s0.html"><span class="elementname">Definition List: Term</span></a>; <a href="n-txs0.html"><span class="elementtag">&lt;term-head&gt;</span></a> <a href="n-txs0.html"><span class="elementname">Definition List: Term Head</span></a>; <a href="n-47s0.html"><span class="elementtag">&lt;th&gt;</span></a> <a href="n-47s0.html"><span class="elementname">Table Header Cell (XHTML table model)</span></a>; <a href="n-yds0.html"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-yds0.html"><span class="elementname">Title</span></a>; <a href="n-yms0.html"><span class="elementtag">&lt;trans-subtitle&gt;</span></a> <a href="n-yms0.html"><span class="elementname">Translated Subtitle</span></a>; <a href="n-ect0.html"><span class="elementtag">&lt;trans-title&gt;</span></a> <a href="n-ect0.html"><span class="elementname">Translated Title</span></a>; <a href="n-rat0.html"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-rat0.html"><span class="elementname">Underline</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;...&lt;/front&gt;
+&lt;body&gt;...
+&lt;p&gt;Geriatric day hospitals developed rapidly in the United Kingdom in 
+the 1960s as an important component of care provision. ... Although 
+there is considerable descriptive literature on day hospital 
+care,<strong><span class="focus">&lt;xref ref-type="bibr" rid="B1"&gt;1&lt;/xref&gt;</span></strong> concern has been expressed 
+that evidence for effectiveness is equivocal and that day hospital care 
+is expensive.<strong><span class="focus">&lt;xref ref-type="bibr" rid="B2"&gt;2&lt;/xref&gt;</span></strong> ...&lt;/p&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;...
+&lt;ref-list&gt;
+&lt;ref id="B1"&gt;
+&lt;nlm-citation&gt;
+&lt;collab&gt;Research Unit of the Royal College of Physicians and British
+Geriatric Society&lt;/collab&gt;
+&lt;source&gt;Geriatric day hospitals: their role and guidelines for good
+practice&lt;/source&gt;
+&lt;year&gt;1994&lt;/year&gt;
+&lt;publisher-loc&gt;London&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;RCP&lt;/publisher-name&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B2"&gt;
+&lt;nlm-citation&gt;
+&lt;collab&gt;National Audit Office&lt;/collab&gt;
+&lt;source&gt;National health service day hospitals for elderly people
+in England&lt;/source&gt;
+&lt;year&gt;1994&lt;/year&gt;
+&lt;publisher-loc&gt;London&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;HMSO&lt;/publisher-name&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt; 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">link.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,201 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Stub Front Metadata</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;front-stub&gt;</h1>
+         <h1 class="elementname">Stub Front Metadata</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A reduced metadata set for use in sub-articles and responses, which will inherit metadata not defined in the stub from the
+            enclosing article
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  front-stub   %front-stub-model;                           &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-hrc0.html"><span class="elementname">Article Identifier</span></a> <a href="n-hrc0.html"><span class="elementtag">&lt;article-id&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-7bd0.html"><span class="elementname">Title Group</span></a> <a href="n-7bd0.html"><span class="elementtag">&lt;title-group&gt;</span></a>, zero or one
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-k3a0.html"><span class="elementname">Contributor Group</span></a> <a href="n-k3a0.html"><span class="elementtag">&lt;contrib-group&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-gi20.html"><span class="elementname">Affiliation</span></a> <a href="n-gi20.html"><span class="elementtag">&lt;aff&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-bsh0.html"><span class="elementname">X - Generated Text and Punctuation</span></a> <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-ca30.html"><span class="elementname">Author Note Group</span></a> <a href="n-ca30.html"><span class="elementtag">&lt;author-notes&gt;</span></a>, zero or one
+                  </li>
+                  <li>Optionally any one of:
+                     <ul class="bullist">
+                        <li>The following, in order:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-gqw0.html"><span class="elementname">First Page</span></a> <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-ap40.html"><span class="elementname">Last Page</span></a> <a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a>, zero or one
+                              </li>
+                              <li>
+                                                                     <a href="n-art0.html"><span class="elementname">Page Ranges</span></a> <a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a>, zero or one
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-pdu0.html"><span class="elementname">Electronic Location Identifier</span></a> <a href="n-pdu0.html"><span class="elementtag">&lt;elocation-id&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-emx0.html"><span class="elementname">History: Document History</span></a> <a href="n-emx0.html"><span class="elementtag">&lt;history&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-2qt0.html"><span class="elementname">Permissions</span></a> <a href="n-2qt0.html"><span class="elementtag">&lt;permissions&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-8a20.html"><span class="elementname">Abstract</span></a> <a href="n-8a20.html"><span class="elementtag">&lt;abstract&gt;</span></a>, zero or more
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-yde0.html"><span class="elementtag">&lt;response&gt;</span></a> <a href="n-yde0.html"><span class="elementname">Response</span></a>; <a href="n-a4n0.html"><span class="elementtag">&lt;sub-article&gt;</span></a> <a href="n-a4n0.html"><span class="elementname">Sub-article</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">As part of a sub-article:</p><pre class="taggedtext">
+
+&lt;article xmlns:xlink="http://www.w3.org/1999/xlink" 
+article-type="research-article"&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="nlm-ta"&gt;J Athl Train&lt;/journal-id&gt;
+&lt;journal-title&gt;Journal of Athletic Training&lt;/journal-title&gt;
+&lt;issn pub-type="ppub"&gt;1062-6050&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;attr&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;...&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+...
+&lt;sub-article article-type="article-commentary"&gt;
+<strong><span class="focus">&lt;front-stub&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;COMMENTARY&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Kirk&lt;/surname&gt;
+&lt;given-names&gt;Susan E.&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;aff&gt;Susan E. Kirk, MD, is Assistant Professor in Internal 
+Medicine and Obstetrics and Gynecology, Division of Endocrinology 
+and Metabolism, University of Virginia Health System, 
+Charlottesville, VA.&lt;/aff&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;/front-stub&gt;</span></strong>
+&lt;body&gt;...&lt;/body&gt;
+...
+&lt;/sub-article&gt;
+&lt;/article&gt;
+
+</pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">As part of a response:</p><pre class="taggedtext">
+
+&lt;article article-type="discussion" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="nlm-ta"&gt;BMJ&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="publisher-id"&gt;BR MED J&lt;/journal-id&gt;
+&lt;journal-title&gt;BMJ : British Medical Journal&lt;/journal-title&gt;
+&lt;issn pub-type="ppub"&gt;0959-8138&lt;/issn&gt;
+&lt;issn pub-type="epub"&gt;1468-5833&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;British Medical Journal&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;...&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;response response-type="discussion"&gt;
+<strong><span class="focus">&lt;front-stub&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;For&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Strube&lt;/surname&gt;
+&lt;given-names&gt;George&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;general practitioner&lt;/role&gt;
+&lt;aff&gt;33 Goffs Park Road, Crawley, West Sussex RH11 8AX&lt;/aff&gt;
+&lt;email&gt;GStrube@aol.com&lt;/email&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;/front-stub&gt;</span></strong>
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/response&gt;
+...
+&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">archivearticle.dtd</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

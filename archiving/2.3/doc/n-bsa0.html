@@ -1,0 +1,273 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Correspondence Information</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;corresp&gt;</h1>
+         <h1 class="elementname">Correspondence Information</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Information concerning which of the authors (or other
+                   contributors) is the corresponding contributor, to whom information requests
+                   should be addressed
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">A cross-reference element (<a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a>)
+                   may point to the this element&#8217;s <a href="n-jdy0.html"><span class="attrname">Identifier</span></a>
+                   attribute.
+         </p>
+         <p class="para">Authoring Note: While this element contains an optional <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> element, the <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> element should be included only in those circumstances where a formatting override is needed; <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> should NOT be used in the ordinary course of tagging.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Conversion Note: In current journal Tag Set practice,
+                   information naming one contributor as the corresponding contributor may be
+                   tagged explicitly using a <a href="n-bsa0.html"><span class="elementtag">&lt;corresp&gt;</span></a> element or
+                   may just be one of many footnotes <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a> concerning
+                   the contributor. While this Suite supports both practices, if possible, the
+                   correspondence information should be tagged using the <a href="n-bsa0.html"><span class="elementname">Correspondence Information</span></a> <a href="n-bsa0.html"><span class="elementtag">&lt;corresp&gt;</span></a> element.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  corresp      (#PCDATA %corresp-elements;)*                &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the address elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-af20.html"><span class="elementname">Address Line</span></a> <a href="n-af20.html"><span class="elementtag">&lt;addr-line&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-una0.html"><span class="elementname">Country: in an Address</span></a> <a href="n-una0.html"><span class="elementtag">&lt;country&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-wuw0.html"><span class="elementname">Fax Number: in an Address</span></a> <a href="n-wuw0.html"><span class="elementtag">&lt;fax&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ztv0.html"><span class="elementname">Institution Name: in an Address</span></a> <a href="n-ztv0.html"><span class="elementtag">&lt;institution&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-y9t0.html"><span class="elementname">Phone Number: in an Address</span></a> <a href="n-y9t0.html"><span class="elementtag">&lt;phone&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-chu0.html"><span class="elementname">Email Address</span></a> <a href="n-chu0.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ekw0.html"><span class="elementname">External Link</span></a> <a href="n-ekw0.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-8yr0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-8yr0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the article linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-6xv0.html"><span class="elementname">Inline Supplementary Material</span></a> <a href="n-6xv0.html"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a> <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-4iw0.html"><span class="elementname">Font</span></a> <a href="n-4iw0.html"><span class="elementtag">&lt;font&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-g3v0.html"><span class="elementname">Horizontal Rule</span></a> <a href="n-g3v0.html"><span class="elementtag">&lt;hr&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-n730.html"><span class="elementname">Bold</span></a> <a href="n-n730.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-c9v0.html"><span class="elementname">Italic</span></a> <a href="n-c9v0.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cvs0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-cvs0.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-y8t0.html"><span class="elementname">Overline</span></a> <a href="n-y8t0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-w4t0.html"><span class="elementname">Overline Start</span></a> <a href="n-w4t0.html"><span class="elementtag">&lt;overline-start&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cvt0.html"><span class="elementname">Overline End</span></a> <a href="n-cvt0.html"><span class="elementtag">&lt;overline-end&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hqe0.html"><span class="elementname">Sans Serif</span></a> <a href="n-hqe0.html"><span class="elementtag">&lt;sans-serif&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-bze0.html"><span class="elementname">Small Caps</span></a> <a href="n-bze0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-gyg0.html"><span class="elementname">Strike Through</span></a> <a href="n-gyg0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-fgr0.html"><span class="elementname">Underline</span></a> <a href="n-fgr0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cir0.html"><span class="elementname">Underline Start</span></a> <a href="n-cir0.html"><span class="elementtag">&lt;underline-start&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-zrr0.html"><span class="elementname">Underline End</span></a> <a href="n-zrr0.html"><span class="elementtag">&lt;underline-end&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-dwv0.html"><span class="elementname">Graphic, Inline</span></a> <a href="n-dwv0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-3t70.html"><span class="elementname">Private Character (Custom or Unicode)</span></a> <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-x5v0.html"><span class="elementname">Formula, Inline</span></a> <a href="n-x5v0.html"><span class="elementtag">&lt;inline-formula&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-f7d0.html"><span class="elementname">Tex Math Equation</span></a> <a href="n-f7d0.html"><span class="elementtag">&lt;tex-math&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-6xs0.html"><span class="elementname">Math (Mathml 2.0 Tag Set)</span></a> <a href="n-6xs0.html"><span class="elementtag">&lt;mml:math&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-5900.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-5900.html"><span class="elementtag">&lt;abbrev&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-tws0.html"><span class="elementname">Milestone End</span></a> <a href="n-tws0.html"><span class="elementtag">&lt;milestone-end&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-kxs0.html"><span class="elementname">Milestone Start</span></a> <a href="n-kxs0.html"><span class="elementtag">&lt;milestone-start&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-ifs0.html"><span class="elementname">Named Special (Subject) Content</span></a> <a href="n-ifs0.html"><span class="elementtag">&lt;named-content&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the simple link/cross-referencing elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-crw0.html"><span class="elementname">Footnote</span></a> <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hj60.html"><span class="elementname">Target of an Internal Link</span></a> <a href="n-hj60.html"><span class="elementtag">&lt;target&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-beh0.html"><span class="elementname">X(cross) Reference</span></a> <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-pan0.html"><span class="elementname">Subscript</span></a> <a href="n-pan0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-w9n0.html"><span class="elementname">Superscript</span></a> <a href="n-w9n0.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-4i30.html"><span class="elementname">Line Break</span></a> <a href="n-4i30.html"><span class="elementtag">&lt;break&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> <a href="n-pg40.html"><span class="elementtag">&lt;label&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-bsh0.html"><span class="elementname">X - Generated Text and Punctuation</span></a> <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-ca30.html"><span class="elementtag">&lt;author-notes&gt;</span></a> <a href="n-ca30.html"><span class="elementname">Author Note Group</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">No sample is available at this time.
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,1809 @@
+<!DOCTYPE article SYSTEM "../../../../Ncbi/ArchivingDTD/DTD/Working/archivearticle.dtd">
+<article>
+<front>
+<journal-meta><?mtl hellip?>
+<!-- Used for subtitle --><journal-id journal-id-type="pmc">mbc</journal-id>
+<journal-id journal-id-type="pubmed">Mol Biol Cell</journal-id>
+<journal-id journal-id-type="publisher">MOL BIOL CELL</journal-id>
+<issn>1059-1524</issn>
+<publisher>
+<publisher-name>The American Society for Cell Biology</publisher-name>
+</publisher><?mtl /hellip?></journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">1641</article-id>
+<article-id pub-id-type="pmid">11598180</article-id>
+<article-categories>
+<subj-group><subject>ESSAY</subject></subj-group>
+</article-categories>
+<title-group>
+<article-title>Adaptins<xref ref-type="fn" rid="FN206">dbox</xref>
+</article-title>
+<subtitle>The Final Recount</subtitle>
+<fn-group>
+<fn id="FN206" symbol="dbox">
+<p>Online version of this essay contains
+supplemental tabular material. Online version is available at
+www.molcellbiol.org.</p>
+</fn>
+</fn-group>
+</title-group>
+<?mtl hellip?>
+<contrib-group>
+<contrib contrib-type="editor">
+<name><surname>Pollard</surname>
+<given-names>Thomas D.</given-names>
+</name>
+<role>This essay constitutes the second article in the
+&#x201C;Genome Annotation Series&#x201D; initiated by Thomas D. Pollard, Essay
+Editor. The first essay, by J.S. Berg, B.C. Powell, and R.E. Cheney, appeared in
+the April 2001 issue of <italic>Molecular Biology of the Cell</italic> (Vol. 12, Issue
+4, pp 780&#x2013;794).</role></contrib></contrib-group><contrib-group><contrib
+contrib-type="author"><name><surname>Boehm</surname><given-names>Markus</given-names></name></contrib>
+<contrib contrib-type="author"><name><surname>Bonifacino</surname><given-names>Juan
+S.</given-names></name><xref ref-type="author-notes"
+rid="FN150">&#x002A;</xref></contrib></contrib-group><aff>Cell Biology and
+Metabolism Branch, National Institute of Child Health and Human Development,
+National Institutes of Health, Bethesda, Maryland, 20892</aff><author-notes><fn
+id="FN150" symbol="&#x002A;"><p>Corresponding author: E-mail:
+<email>juan@helix.nih.gov</email></p></fn></author-notes><pub-date
+pub-type="pub"><day>1</day><month>10</month><year>2001</year></pub-date><volume>
+12</volume><issue>10</issue><fpage>2907</fpage><lpage>2920</lpage><history><date
+date-type="received"><day>20</day><month>6</month><year>2001</year></date><date
+date-type="rev-recd"><day>13</day><month>7</month><year>2001</year></date><date
+date-type="accepted"><day>13</day><month>8</month><year>2001</year></date>
+</history><copyright-statement>Copyright &#x00A9; 2001, The American Society for Cell
+Biology</copyright-statement><abstract><p>Adaptins are subunits of adaptor protein (AP) complexes
+involved in the formation of intracellular transport vesicles and in the
+selection of cargo for incorporation into the vesicles. In this article, we
+report the results of a survey for adaptins from sequenced genomes including
+those of man, mouse, the fruit fly <italic>Drosophila melanogaster</italic>, the
+nematode <italic>Caenorhabditis elegans</italic>, the plant <italic>Arabidopsis
+thaliana</italic>, and the yeasts, <italic>Saccharomyces cerevisiae</italic> and
+<italic>Schizosaccharomyces pombe</italic>. We find that humans, mice, and
+<italic>Arabidopsis thaliana</italic> have four AP complexes (AP-1, AP-2, AP-3, and
+AP-4), whereas <italic>D. melanogaster</italic>, <italic>C. elegans</italic>, <italic>S.
+cerevisiae,</italic> and <italic>S. pombe</italic> have only three (AP-1, AP-2, and AP-3).
+Additional diversification of AP complexes arises from the existence of adaptin
+isoforms encoded by distinct genes or resulting from alternative splicing of
+mRNAs. We complete the assignment of adaptins to AP complexes and provide
+information on the chromosomal localization, exon-intron structure, and
+pseudogenes for the different adaptins. In addition, we discuss the structural
+and evolutionary relationships of the adaptins and the genetic analyses of their
+function. Finally, we extend our survey to adaptin-related proteins such as the
+GGAs and stonins, which contain domains homologous to the adaptins.</p></abstract>
+
+<?mtl /hellip?>
+</article-meta>
+</front><?mtl hellip?>
+<body><sec><title>OVERVIEW OF THE ADAPTIN FAMILY</title><p>The term
+&#x201C;adaptin&#x201D; was coined by <xref ref-type="bibr" rid="B66">Barbara
+Pearse (1975)</xref> to designate a group of &#x223C;100 kDa proteins that
+copurified with clathrin upon isolation of clathrin-coated vesicles. The
+&#x223C;100 kDa-proteins were later found to be subunits of heterotetrameric
+adaptor protein (AP) complexes, and the term &#x201C;adaptin&#x201D; was
+extended to all subunits of these complexes. Four basic AP complexes have been
+described: AP-1, AP-2, AP-3, and AP-4. Each of these complexes is composed of
+two large adaptins (one each of &#x03B3;/&#x03B1;/&#x03B4;/&#x03B5; and
+&#x03B2;1&#x2013;4, respectively, 90&#x2013;130 kDa), one medium adaptin
+(&#x03BC;1&#x2013;4, &#x223C;50 kDa), and one small adaptin (&#x03C2;1&#x2013;4,
+&#x223C;20 kDa) (Figure <xref ref-type="fig" rid="F1">1</xref>A) (reviewed by
+<xref ref-type="bibr" rid="B40">Kirchhausen, 1999</xref>; <xref ref-type="bibr"
+rid="B46">Lewin and Mellman, 1998</xref>; <xref ref-type="bibr"
+rid="B78">Robinson and Bonifacino, 2001</xref>). The analogous adaptins of the
+four AP complexes are homologous to one another (21&#x2013;83&#x0025; identity
+at the amino acid level). In general, the subunits of different AP complexes are
+not interchangeable, with the exception of some nonmammalian &#x03B2;1/2 hybrid
+proteins (see below), and possibly mammalian &#x03B2;1 and &#x03B2;2, which can
+be components of both AP-1 and AP-2. Some of the adaptins occur as two or more
+closely-related isoforms encoded by different genes. Additional diversity arises
+from alternative splicing of adaptin mRNAs. Thus, cells that express several of
+these adaptin variants have the potential to assemble a diverse array of AP
+complexes. AP-1, AP-2, and AP-3 are expressed in all eukaryotic cells examined
+to date. AP-4, on the other hand, is ubiquitously expressed in man (<italic>Homo
+sapiens</italic>), mouse (<italic>Mus musculus</italic>), chicken (<italic>Gallus gallus</italic>),
+and the plant <italic>Arabidopsis thaliana</italic>, but not in the fruit fly
+<italic>Drosophila melanogaster</italic>, the nematode <italic>Caenorhabditis elegans</italic>,
+and the yeasts <italic>Saccharomyces cerevisiae</italic> and <italic>Schizosaccharomyces
+pombe</italic>.</p><fig id="F1"><label>Figure 1</label><caption><p>Schematic
+representation of adaptins and related proteins (A) and of the trafficking
+pathways in which they might be involved (B). The scheme in A depicts the
+structure of a generic AP complex, a GGA, and a stonin. N and C indicate the
+amino- and carboxy-termini of the proteins, respectively. GAE, &#x03B3;-adaptin
+ear-homology domain; GAT, GGA, and TOM1-homology domain; MHD, &#x03BC;-homology
+domain; PRD, proline-rich domain; SHD, stonin-homology domain; VHS,
+Vps27p/HRS/STAM-homology domain. B is a scheme of postGolgi trafficking
+pathways, showing the putative localization and role AP complexes, GGAs, and
+stonins within the cell. Of these, only the localization and role of AP-2 have
+been established with certainty. All the others should be considered
+tentative.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="mk1011641001" alt-version="yes"></graphic></fig><p>AP complexes are
+components of protein coats that associate with the cytoplasmic face of
+organelles of the secretory and endocytic pathways. The complexes participate in
+the formation of coated vesicular carriers, as well as in the selection of cargo
+molecules for incorporation into the carriers. AP-2 mediates rapid endocytosis
+from the plasma membrane, while AP-1, AP-3, and AP-4 mediate sorting events at
+the <italic>trans</italic>-Golgi network (TGN) and/or endosomes (Figure <xref
+ref-type="fig" rid="F1">1</xref>B). AP-1 and AP-2 function in conjunction with
+clathrin, whereas AP-4 is most likely part of a nonclathrin coat. Mammalian (but
+not yeast) AP-3 has been shown to interact with clathrin, but the functional
+significance of this interaction is still unclear. The AP complexes have the
+overall shape of a &#x201C;head&#x201D; with two protruding &#x201C;ears&#x201D;
+connected to the head by flexible &#x201C;hinge&#x201D; domains (Figure <xref
+ref-type="fig" rid="F1">1</xref>A).</p><p>Recent studies have identified two
+additional families of proteins, the GGAs (Golgi-localizing, &#x03B3;-adaptin
+ear homology, ARF-binding proteins) (<xref ref-type="bibr" rid="B7">Boman <italic>et
+al.</italic>, 2000</xref>; <xref ref-type="bibr" rid="B17">Dell'Angelica <italic>et
+al.</italic>, 2000b</xref>; <xref ref-type="bibr" rid="B36">Hirst <italic>et al.</italic>,
+2000</xref>; <xref ref-type="bibr" rid="B71">Poussu <italic>et al.</italic>,
+2000</xref>; <xref ref-type="bibr" rid="B87">Takatsu <italic>et al.</italic>,
+2000</xref>), and the stonins (<xref ref-type="bibr" rid="B4">Andrews <italic>et
+al.</italic>, 1996</xref>; <xref ref-type="bibr" rid="B49">Martina <italic>et al.</italic>,
+2001</xref>; <xref ref-type="bibr" rid="B92">Walther <italic>et al</italic>.,
+2001</xref>), which share partial homology with the adaptins but are not
+components of AP complexes (Figure <xref ref-type="fig" rid="F1">1</xref>A). The
+GGAs contain a carboxy-terminal domain homologous (28&#x2013;30&#x0025; identity
+at the amino acid level) to the ear domain of the &#x03B3;-adaptin subunit of
+AP-1. They function as monomeric adaptors for ARF (ADP-ribosylation
+factor)-dependent recruitment of clathrin to the TGN, and they mediate sorting
+of mannose 6-phosphate receptors and sortilin from the TGN to endosomes (<xref
+ref-type="bibr" rid="B57">Nielsen <italic>et al.</italic>, 2001</xref>; <xref
+ref-type="bibr" rid="B72">Puertollano <italic>et al.</italic>, 2001a</xref>; <xref
+ref-type="bibr" rid="B73">Puertollano <italic>et al.</italic>, 2001b</xref>; <xref
+ref-type="bibr" rid="B87">Takatsu <italic>et al.</italic>, 2000</xref>; <xref
+ref-type="bibr" rid="B98">Zhdankina <italic>et al.</italic>, 2001</xref>; <xref
+ref-type="bibr" rid="B99">Zhu <italic>et al.</italic>, 2001</xref>). The stonins are
+related to the <italic>D. melanogaster</italic> stoned B protein and exhibit homology
+(22&#x2013;25&#x0025; identity at the amino acid level) to the carboxy-terminal
+domain of the &#x03BC; adaptins (<xref ref-type="bibr" rid="B4">Andrews <italic>et
+al.</italic>, 1996</xref>; <xref ref-type="bibr" rid="B49">Martina <italic>et al.</italic>,
+2001</xref>; <xref ref-type="bibr" rid="B92">Walther <italic>et al</italic>.,
+2001</xref>). The available evidence points to a role for at least some of the
+stonins in endocytosis (<xref ref-type="bibr" rid="B24">Fergestad and Broadie,
+2001</xref>; <xref ref-type="bibr" rid="B25">Fergestad <italic>et al.</italic>,
+1999</xref>; <xref ref-type="bibr" rid="B49">Martina <italic>et al.</italic>,
+2001</xref>; <xref ref-type="bibr" rid="B86">Stimson <italic>et al.</italic>,
+2001</xref>).</p><p>The adaptins are also distantly related
+(16&#x2013;21&#x0025; identity at the amino acid level) to subunits of the
+heteroheptameric COPI (coat protein I) or coatomer complex, a protein coat that
+functions in ER-Golgi and endosomal transport pathways. The large AP subunits
+are related to the &#x03B2;-COP and &#x03B3;-COP subunits of COPI, while the
+medium and small AP subunits are related to the &#x03B4;-COP and &#x03B6;-COP
+subunits of COPI, respectively. Together, &#x03B2;-, &#x03B3;-, &#x03B4;- and
+&#x03B6;-COP constitute the heterotetrameric F-COPI subcomplex (<xref
+ref-type="bibr" rid="B26">Fiedler <italic>et al.</italic>, 1996</xref>). COPI comprises
+three additional subunits named &#x03B1;-COP, &#x03B2;'-COP, and &#x03B5;-COP
+that are not related to the adaptins. These subunits constitute the B-COPI
+subcomplex (<xref ref-type="bibr" rid="B26">Fiedler <italic>et al.</italic>,
+1996</xref>), which is thought to subserve a function similar to that of
+clathrin.</p><p>Because of the critical roles of adaptins and related proteins
+in intracellular protein trafficking, it is of utmost importance to identify the
+complete repertoire of these proteins in eukaryotes. This goal is now achievable
+thanks to the recent completion of the sequencing of the genomes of humans and
+model organisms such as <italic>M. musculus</italic>, <italic>D. melanogaster</italic>, <italic>C.
+elegans</italic>, <italic>A. thaliana</italic>, <italic>S. cerevisiae,</italic> and <italic>S.
+pombe</italic> (<xref ref-type="bibr" rid="B1">Adams <italic>et al.</italic>, 2000</xref>;
+<xref ref-type="bibr" rid="B9">The <italic>C. elegans</italic> Sequencing Consortium,
+1998</xref>; <xref ref-type="bibr" rid="B29">Goffeau <italic>et al.</italic>,
+1996</xref>; <xref ref-type="bibr" rid="B38">The <italic>Arabidopsis</italic> Genome
+Initiative, 2000</xref>; <xref ref-type="bibr" rid="B43">Lander <italic>et al.</italic>,
+2001</xref>; <xref ref-type="bibr" rid="B91">Venter <italic>et al.</italic>,
+2001</xref>). The following sections describe the findings of a genome-wide
+survey for adaptins, GGAs, and stonins in these organisms. COPI subunits are
+beyond the scope of this essay and are only discussed in relation to the
+adaptins.</p></sec><sec sec-type="methods"><title>METHODS OF ANALYSIS AND SUMMARY OF
+TABLES</title><p>An inventory of adaptins was compiled from information
+published in the literature or obtained from the following internet resources:
+the National Center for Biotechnology Information (NCBI, <ext-link ext-link-type="url"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://www.ncbi.nlm.nih.gov">http://www.ncbi.nlm.nih.gov</ext-link>),
+The Genome Database (<ext-link ext-link-type="url"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://www.gdb.org">http://www.gdb.org</ext-link>), the Mouse Genome
+Informatics at The Jackson Laboratory (<ext-link ext-link-type="url"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://www.informatics.jax.org/">http://www.informatics.jax.org/
+</ext-link>), the <italic>D. melanogaster</italic> genome at NCBI (<ext-link ext-link-type="url"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://www.ncbi.nlm.nih.gov/PMGifs/Genomes/7227.html">http://www.
+ncbi.nlm.nih.gov/PMGifs/Genomes/7227.html</ext-link>), the Sanger Center <italic>C.
+elegans</italic> Genome Project (<ext-link ext-link-type="url"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://www.sanger.ac.uk/Projects/C-elegans/blast-server.shtml">http:
+//www.sanger.ac.uk/Projects/C-elegans/blast-server.shtml</ext-link>), and The
+Stanford University <italic>Saccharomyces</italic> Genome Database search page (<ext-link
+ext-link-type="url" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://genome-www.stanford.edu/Saccharomyces/">http://genome-www.
+stanford.edu/Saccharomyces/</ext-link>). To search for novel human adaptins, we
+used the TBLASTN algorithm (<ext-link ext-link-type="url"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://www.ncbi.nlm.nih.gov/genome/seq/page.cgi?F=HsBlast.html
+&#x0026;&#x0026;ORG=Hs">http://www.ncbi.nlm.nih.gov/genome/seq/page.cgi?F=HsBlast.
+html&#x0026;&#x0026;ORG=Hs</ext-link>) at the NCBI human genome BLAST web page.
+Adaptins in organisms other than human were found using the BLASTP and TBLASTN
+algorithms at the NCBI web page. Homologous hit sequences were reanalyzed using
+the same algorithm to check for the closest human relative and assigned a name
+accordingly. Consensus secondary structure predictions and sequence alignments
+were performed using the Multialign and ClustalW programs available at the
+P&#x00F4;le Bio-informatique Lyonnais (<ext-link ext-link-type="url"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://npsa-pbil.ibcp.fr/">http://npsa-pbil.ibcp.fr/</ext-link>).
+Protein family (Pfam) domains are listed in the Pfam Homepage (<ext-link
+ext-link-type="url" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://pfam.wustl.edu/">http://pfam.wustl.edu/</ext-link>) at
+Washington University, St. Louis, MO.</p><p>Table <xref ref-type="table"
+rid="T1">1</xref> lists all the adaptins and related proteins found in mammals
+and other eukaryotes with sequenced genomes. Table <xref ref-type="table"
+rid="T2">2</xref> summarizes the phenotypes resulting from disruption, RNA
+interference, or naturally-occurring mutations of genes encoding adaptins and
+adaptin-related proteins in organisms from yeast to humans. Supplemental Tables
+1 and 2 (all supplemental Tables are found online) contain an inventory of the
+names, chromosomal location, number of exons and size of the genes, and the
+accession codes for all human and mouse adaptins, respectively. Supplemental
+Table 3 lists potential human pseudogenes. Supplemental Tables 4&#x2013;9
+summarize information on adaptins in <italic>D. melanogaster, A. thaliana</italic>,
+<italic>C. elegans</italic>, <italic>S. cerevisiae</italic>, <italic>S. pombe,</italic> and other
+organisms, in that order.</p><table-wrap id="T1"><label>Table
+1</label><caption><p>Adaptins and related proteins identified in various
+eukaryotes</p></caption><table><tr><th>Adaptins</th><th><italic>H.
+sapiens</italic></th><th><italic>M. musculus</italic></th><th><italic>A.
+thaliana</italic></th><th><italic>D. melanogaster</italic></th><th><italic>C.
+elegans</italic></th><th><italic>S. cerevisiae</italic></th><th><italic>S.
+pombe</italic></th></tr><tr>
+<td colspan="8"><hr/></td></tr>
+<tr><td>AP-1</td></tr>
+<tr><td>&#x2003;Large</td>
+<td>&#x03B3;1 &#x03B3;2</td><td>&#x03B3;1 &#x03B3;2</td><td>&#x03B3;-I &#x03B3;-II
+&#x03B3;-III</td><td>&#x03B3;</td><td>&#x03B3;</td><td>&#x03B3;</td><td>&#x03B3;
+</td></tr><tr><td/><td>&#x03B2;1</td><td>&#x03B2;1</td><td>&#x03B2;1/2-I
+&#x03B2;1/2-II</td><td>&#x03B2;1/2<xref ref-type="table-fn"
+rid="TF1-A"></xref></td><td>&#x03B2;1/2<xref ref-type="table-fn"
+rid="TF1-A"></xref></td><td>&#x03B2;1</td><td>&#x03B2;1</td></tr><tr><td/><td/>
+<td/><td>&#x03B2;1/2-III<xref ref-type="table-fn"
+rid="TF1-B"></xref></td></tr><tr><td>&#x2003;Medium</td><td>&#x03BC;1A
+&#x03BC;1B</td><td>&#x03BC;1A
+&#x03BC;1B</td><td>&#x03BC;1</td><td>&#x03BC;1</td><td>&#x03BC;1-I
+&#x03BC;1-II</td><td>&#x03BC;1-I
+&#x03BC;1-II</td><td>&#x03BC;1</td></tr><tr><td>&#x2003;Small</td><td>&#x03C2;1A
+&#x03C2;1B</td><td>&#x03C2;1A &#x03C2;1B</td><td>&#x03C2;1-I
+&#x03C2;1-II</td><td>&#x03C2;1</td><td>&#x03C2;1</td><td>&#x03C2;1</td><td>
+&#x03C2;1</td></tr><tr><td/><td>&#x03C2;1C</td><td>&#x03C2;1C</td></tr><tr><td>AP-
+2</td></tr><tr><td>&#x2003;Large</td><td>&#x03B1;1 &#x03B1;2</td><td>&#x03B1;1
+&#x03B1;2</td><td>&#x03B1;</td><td>&#x03B1;</td><td>&#x03B1;</td><td>&#x03B1;
+</td><td>&#x03B1;</td></tr><tr><td/><td>&#x03B2;2</td><td>&#x03B2;2</td><td>
+&#x03B2;1/2-I &#x03B2;1/2-II</td><td>&#x03B2;1/2<xref ref-type="table-fn"
+rid="TF1-A"></xref></td><td>&#x03B2;1/2<xref ref-type="table-fn"
+rid="TF1-A"></xref></td><td>&#x03B2;2</td><td>&#x03B2;2</td></tr><tr><td/><td/>
+<td/><td>&#x03B2;1/2-III<xref ref-type="table-fn"
+rid="TF1-B"></xref></td></tr><tr><td>&#x2003;Medium</td><td>&#x03BC;2</td><td>
+&#x03BC;2</td><td>&#x03BC;2</td><td>&#x03BC;2</td><td>&#x03BC;2</td><td>&#x03BC;2
+</td><td>&#x03BC;2</td></tr><tr><td>&#x2003;Small</td><td>&#x03C2;2</td><td>
+&#x03C2;2</td><td>&#x03C2;2</td><td>&#x03C2;2</td><td>&#x03C2;2</td><td>&#x03C2;2
+</td><td>&#x03C2;2</td></tr><tr><td>AP-3</td></tr><tr><td>&#x2003;Large</td>
+<td>&#x03B4;</td><td>&#x03B4;</td><td>&#x03B4;</td><td>&#x03B4;</td><td>&#x03B4;</td>
+<td>&#x03B4;</td><td>&#x03B4;</td></tr><tr><td/><td>&#x03B2;3A
+&#x03B2;3B</td><td>&#x03B2;3A
+&#x03B2;3B</td><td>&#x03B2;3</td><td>&#x03B2;3</td><td>&#x03B2;3</td>
+<td>&#x03B2;3</td><td>&#x03B2;3</td></tr><tr><td>&#x2003;Medium</td><td>&#x03BC;3A
+&#x03BC;3B</td><td>&#x03BC;3A
+&#x03BC;3B</td><td>&#x03BC;3</td><td>&#x03BC;3</td><td>&#x03BC;3</td>
+<td>&#x03BC;3</td><td>&#x03BC;3</td></tr><tr><td>&#x2003;Small</td><td>&#x03C2;3A
+&#x03C2;3B</td><td>&#x03C2;3A
+&#x03C2;3B</td><td>&#x03C2;3</td><td>&#x03C2;3</td><td>&#x03C2;3</td>
+<td>&#x03C2;3</td><td>&#x03C2;3</td></tr><tr><td>AP-4</td></tr>
+<tr><td>&#x2003;Large</td>
+<td>&#x025B;</td><td>&#x025B;</td><td>&#x025B;</td><td>n.f.<xref ref-type="table-fn"
+rid="TF1-C"></xref></td><td>n.f.<xref ref-type="table-fn"
+rid="TF1-C"></xref></td><td>n.f.<xref ref-type="table-fn"
+rid="TF1-C"></xref></td><td>n.f.<xref ref-type="table-fn"
+rid="TF1-C"></xref></td></tr><tr><td/><td>&#x03B2;4</td><td>&#x03B2;4</td><td>
+&#x03B2;4</td></tr><tr><td>&#x2003;Medium</td><td>&#x03BC;4</td><td>&#x03BC;4</td>
+<td>&#x03BC;4</td></tr><tr><td>&#x2003;Small</td><td>&#x03C2;4</td><td>&#x03C2;4
+</td><td>&#x03C2;4</td></tr><tr><td>GGAs</td><td>GGA1</td><td>GGA1</td><td>n.f.
+</td><td>GGA</td><td>GGA</td><td>Gga1p</td><td>Gga1p</td></tr><tr><td/><td>GGA2
+</td><td>GGA2</td><td/><td/><td/><td>Gga2p</td><td>Gga2p</td></tr><tr><td/><td>
+GGA3</td><td>GGA3</td></tr><tr><td>Stonins</td><td>Stonin 1</td><td>Stonin
+1</td><td>n.f.<xref ref-type="table-fn" rid="TF1-C"></xref></td><td>Stoned
+B</td><td>Stonin</td><td>n.f.<xref ref-type="table-fn"
+rid="TF1-C"></xref></td><td>n.f.<xref ref-type="table-fn"
+rid="TF1-C"></xref></td></tr><tr><td/><td>Stonin 2/ Stoned B</td><td>Stonin 2/
+Stoned B</td></tr></table><table-wrap-foot><fn><p>See Supplemental Tables 1&#x2013;9
+(online) for more details</p></fn><fn id="TF1-A"><p> The &#x03B2;1/2 adaptins of
+<italic>C. elegans</italic> and <italic>D. melanogaster</italic> are most likely components of
+AP-1 and AP-2.</p></fn><fn id="TF1-B"><p> The assignment of &#x03B2;1/2-I to
+&#x03B2;1/2-III adaptins of <italic>A. thaliana</italic> both to AP complexes is
+tentative.</p></fn><fn id="TF1-C"><p> n.f., these adaptins were not found in
+these organisms.</p></fn></table-wrap-foot></table-wrap><table-wrap id="T2"><label>Table
+2</label><caption><p>Genetic analyses of the function of adaptins and related
+proteins
+</p></caption><table><tr><th>Complex</th><th>Organism</th><th>Methodology</th>
+<th>Phenotype</th></tr><tr><td
+colspan="4"><hr/></td></tr><tr><td>AP-1</td></tr><tr><td>&#x2003;&#x03B3;1</td>
+<td align="left"><italic>M. musculus</italic></td><td align="left">Targeted
+disruption</td><td align="left">Embryonic lethal at day 4.5
+pc</td></tr><tr><td>&#x2003;&#x03BC;1A</td><td align="left"><italic>M.
+musculus</italic></td><td align="left">Targeted disruption</td><td
+align="left">Embryonic lethal at day 13.5 pc, accumulation of
+mannose-6-phosphate receptors in
+endosomes</td></tr><tr><td>&#x2003;&#x03B3;</td><td align="left"><italic>C.
+elegans</italic></td><td align="left">dsRNAi</td><td align="left">Embryonic
+lethal</td></tr><tr><td>&#x2003;&#x03B2;1/2</td><td align="left"><italic>C.
+elegans</italic></td><td align="left">dsRNAi</td><td align="left">Embryonic lethal,
+inhibition of yolk endocytosis</td></tr><tr><td>&#x2003;&#x03BC;1-I</td><td
+align="left"><italic>C. elegans</italic></td><td align="left">Naturally-occurring
+mutation (<italic>unc-101</italic>)</td><td align="left">50&#x0025; embryonic lethal,
+uncoordinated movement</td></tr><tr><td>&#x2003;&#x03BC;1-II</td><td
+align="left"><italic>C. elegans</italic></td><td align="left">dsRNAi</td><td
+align="left">Arrested development at larval L1
+stage</td></tr><tr><td>&#x2003;&#x03C2;1</td><td align="left"><italic>C.
+elegans</italic></td><td align="left">dsRNAi</td><td align="left">Embryonic
+lethal</td></tr><tr><td>&#x2003;&#x03B3;</td><td align="left"><italic>S.
+cerevisiae</italic></td><td align="left">Targeted disruption</td><td
+align="left">Synthetic lethal with clathrin temperature sensitive mutation, mild
+defect in &#x03B1;-factor processing</td></tr><tr><td>&#x2003;&#x03B2;1</td><td
+align="left"><italic>S. cerevisiae</italic></td><td align="left">Targeted
+disruption</td><td align="left">Synthetic lethal with clathrin temperature
+sensitive mutation, mild defect in &#x03B1;-factor
+processing</td></tr><tr><td>&#x2003;&#x03BC;1</td><td align="left"><italic>S.
+cerevisiae</italic></td><td align="left">Targeted disruption</td><td
+align="left">Synthetic lethal with clathrin temperature sensitive mutation, mild
+defect in &#x03B1;-factor processing</td></tr><tr><td>&#x2003;&#x03C2;1</td><td
+align="left"><italic>S. cerevisiae</italic></td><td align="left">Targeted
+disruption</td><td align="left">Synthetic lethal with clathrin temperature
+sensitive mutation, mild defect in &#x03B1;-factor
+processing</td></tr><tr><td/></tr><tr><td>AP-2</td></tr><tr><td>&#x2003;&#x03B1;
+</td><td align="left"><italic>D. melanogaster</italic></td><td align="left">P-element
+enhancer trap insertion</td><td align="left">Several alleles - most severe are
+embryonic lethal, synapses devoid of
+vesicles</td></tr><tr><td>&#x2003;&#x03B1;</td><td align="left"><italic>C.
+elegans</italic></td><td align="left">dsRNAi</td><td align="left">Embryonic lethal,
+inhibition of yolk endocytosis</td></tr><tr><td>&#x2003;&#x03BC;2</td><td
+align="left"><italic>C. elegans</italic></td><td align="left">dsRNAi</td><td
+align="left">50&#x0025; embryonic lethal, dumpy
+phenotype</td></tr><tr><td>&#x2003;&#x03C2;2</td><td align="left"><italic>C.
+elegans</italic></td><td align="left">dsRNAi</td><td align="left">50&#x0025;
+embryonic lethal, dumpy phenotype</td></tr><tr><td>&#x2003;&#x03B1;</td><td
+align="left"><italic>S. cerevisiae</italic></td><td align="left">Targeted
+disruption</td><td align="left">None
+observed</td></tr><tr><td>&#x2003;&#x03B2;2</td><td align="left"><italic>S.
+cerevisiae</italic></td><td align="left">Targeted disruption</td><td
+align="left">None observed</td></tr><tr><td>&#x2003;&#x03BC;2</td><td
+align="left"><italic>S. cerevisiae</italic></td><td align="left">Targeted
+disruption</td><td align="left">None
+observed</td></tr><tr><td>&#x2003;&#x03C2;2</td><td align="left"><italic>S.
+cerevisiae</italic></td><td align="left">Targeted disruption</td><td
+align="left">None
+observed</td></tr><tr><td/></tr><tr><td>AP-3</td></tr><tr><td>&#x2003;&#x03B2;3A
+</td><td align="left"><italic>H. sapiens</italic></td><td
+align="left">Naturally-occurring mutation (HPS type 2)</td><td
+align="left">Pigmentation defect, bleeding disorder, misrouting of lysosomal
+membrane proteins to the plasma
+membrane</td></tr><tr><td>&#x2003;&#x03B4;</td><td align="left"><italic>M.
+musculus</italic></td><td align="left">Naturally-occurring mutation (mocha)</td><td
+align="left">Pigmentation defect, bleeding disorder, lysosomal abnormalities,
+inner ear degeneration, neurological
+defects</td></tr><tr><td>&#x2003;&#x03B2;3A</td><td align="left"><italic>M.
+musculus</italic></td><td align="left">Naturally-occurring mutation (pearl)</td><td
+align="left">Pigmentation and bleeding
+defects</td></tr><tr><td>&#x2003;&#x03B4;</td><td align="left"><italic>D.
+melanogaster</italic></td><td align="left">Naturally-occurring mutation
+(<italic>garnet</italic>)</td><td align="left">Pigmentation
+defect</td></tr><tr><td>&#x2003;&#x03B2;3</td><td align="left"><italic>D.
+melanogaster</italic></td><td align="left">Naturally-occurring mutation
+(<italic>ruby</italic>)</td><td align="left">Like
+<italic>garnet</italic></td></tr><tr><td>&#x2003;&#x03BC;3</td><td align="left"><italic>D.
+melanogaster</italic></td><td align="left">Naturally-occurring mutation
+(<italic>carmine</italic>)</td><td align="left">Like
+<italic>garnet</italic></td></tr><tr><td>&#x2003;&#x03C2;3</td><td align="left"><italic>D.
+melanogaster</italic></td><td align="left">Naturally-occurring mutation
+(<italic>orange</italic>)</td><td align="left">Like
+<italic>garnet</italic></td></tr><tr><td>&#x2003;&#x03B4;</td><td align="left"><italic>S.
+cerevisiae</italic></td><td align="left">Targeted disruption</td><td
+align="left">Missorting of alkaline phosphatase and
+Vam3p</td></tr><tr><td>&#x2003;&#x03B2;3</td><td align="left"><italic>S.
+cerevisiae</italic></td><td align="left">Targeted disruption</td><td
+align="left">Missorting of alkaline phosphatase and
+Vam3p</td></tr><tr><td>&#x2003;&#x03BC;3</td><td align="left"><italic>S.
+cerevisiae</italic></td><td align="left">Targeted disruption</td><td
+align="left">Missorting of alkaline phosphatase and
+Vam3p</td></tr><tr><td>&#x2003;&#x03C2;3</td><td align="left"><italic>S.
+cerevisiae</italic></td><td align="left">Targeted disruption</td><td
+align="left">Missorting of alkaline phosphatase and
+Vam3p</td></tr><tr><td/></tr><tr><td>Related
+proteins</td></tr><tr><td>&#x2003;Gga1p</td><td align="left"><italic>S.
+cerevisiae</italic></td><td align="left">Targeted disruption</td><td
+align="left">Vacuolar protein sorting and &#x03B1;-factor maturation
+defects</td></tr><tr><td>&#x2003;Gga2p</td></tr><tr><td>&#x2003;&#x2003;stoned
+B</td><td align="left"><italic>D. melanogaster</italic></td><td
+align="left">Naturally-occurring mutation (<italic>stoned</italic>)</td><td
+align="left">Paralysis at the nonpermissive
+temperature</td></tr></table></table-wrap></sec><sec><title>MAMMALIAN ADAPTINS AND
+RELATED PROTEINS: ISOFORMS AND GENETIC ANALYSES OF THEIR
+FUNCTION</title><sec><title>AP-1 Adaptins</title><p>Both humans and mice express
+two &#x03B3; (&#x03B3;1 and &#x03B3;2), one &#x03B2; (&#x03B2;1), two &#x03BC;
+(&#x03BC;1A and &#x03BC;1B) and three &#x03C2; (&#x03C2;1A, &#x03C2;1B, and
+&#x03C2;1C) adaptin(s) (Table <xref ref-type="table" rid="T1">1</xref>,
+Supplemental Tables 1 and 2). Although there is only one gene encoding
+&#x03B2;1, two isoforms can be generated by alternative splicing of exon 15
+(<xref ref-type="bibr" rid="B68">Peyrard <italic>et al.</italic>, 1994</xref>).
+&#x03C2;1C is a novel isoform of &#x03C2;1 encoded on chromosome 2 that was
+identified in our analyses. The predicted amino acid sequence for &#x03C2;1C
+adaptin is equally homologous to the &#x03C2;1A and &#x03C2;1B adaptins
+(Supplemental Figure 1A). All of these proteins are known or predicted to
+assemble into various forms of the heterotetrameric AP-1 complex.</p><p>The AP-1
+subunits are expressed in all mammalian tissues and cells examined except for
+&#x03BC;1B, which is exclusively expressed in polarized epithelial cells (<xref
+ref-type="bibr" rid="B59">Ohno <italic>et al.</italic>, 1999</xref>). For &#x03C2;1C,
+human ESTs can be found from a variety of sources, such as kidney (accession
+number <ext-link ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="BG166479"/>), colon (<ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="BG386072"/>), brain
+(<ext-link ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="BF697657"/>), and B-cells (<ext-link ext-link-type="gen"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="BG340480"/>), suggesting
+that it may be ubiquitously expressed. Homozygous disruptions of the genes
+encoding &#x03B3;1 or &#x03BC;1A cause embryonic lethality in mice, indicating
+that the AP-1 complex is essential for viability (<xref ref-type="bibr"
+rid="B100">Zizioli <italic>et al.</italic>, 1999</xref>; <xref ref-type="bibr"
+rid="B50">Meyer <italic>et al.</italic>, 2000</xref>) (Table <xref ref-type="table"
+rid="T2">2</xref>). An embryonal fibroblast cell line deficient in &#x03BC;1A
+adaptin exhibited accumulation of mannose 6-phosphate receptors in endosomes,
+suggesting a role for the AP-1 complex containing &#x03BC;1A (i.e., AP-1A) in
+sorting from endosomes to the TGN (<xref ref-type="bibr" rid="B50">Meyer <italic>et
+al.</italic>, 2000</xref>). The absence of &#x03BC;1B expression in the polarized
+epithelial cell line LLC-PK1 (<xref ref-type="bibr" rid="B59">Ohno <italic>et
+al.</italic>, 1999</xref>), on the other hand, was linked to impaired sorting of LDL
+receptor and other transmembrane proteins to the basolateral plasma membrane
+domain (<xref ref-type="bibr" rid="B27">F&#x00F6;lsch <italic>et al.</italic>,
+1999</xref>) (Table <xref ref-type="table" rid="T2">2</xref>). Thus, the form of
+AP-1 containing &#x03BC;1B (i.e., AP-1B) appears to be involved in basolateral
+targeting. The functional importance of other mammalian AP-1 subunit isoforms
+(e.g., &#x03B3;2, &#x03C2;1A, &#x03C2;1B, &#x03C2;1C) is unknown.</p><p>BLASTP
+searches of GenBank revealed an additional human cDNA termed FLJ10813 encoding a
+protein that is distantly related to the medium adaptins, with human and mouse
+&#x03BC;1B being the most homologous (24&#x0025; identity and 37&#x0025;
+similarity at the amino acid level, but with 17&#x0025; sequence gaps). The
+FLJ10813 protein is predicted to be truncated at the carboxy terminus relative
+to the &#x03BC; chains, suggesting that it may not function as a &#x03BC;
+adaptin. Interestingly, while no homologues can be found in <italic>D. melanogaster,
+C. elegans</italic>, or <italic>S. cerevisiae</italic>, a homologous protein (accession
+number <ext-link ext-link-type="gen" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="AC006234"/>) exists in <italic>A.
+thaliana</italic>.</p></sec><sec><title>AP-2 Adaptins</title><p>Genes encoding two
+&#x03B1; (&#x03B1;1 and &#x03B1;2), one &#x03B2; (&#x03B2;2), one &#x03BC;
+(&#x03BC;2) and one &#x03C2; (&#x03C2;2) adaptin(s) have been found in both
+humans and mice (Table <xref ref-type="table" rid="T1">1</xref>, Supplemental
+Tables 1 and 2). The human and mouse &#x03B1;2 adaptin sequences have been known
+for some time (<xref ref-type="bibr" rid="B77">Robinson, 1989</xref>; <xref
+ref-type="bibr" rid="B20">Faber <italic>et al.</italic>, 1998</xref>), whereas the
+sequence of human &#x03B1;1 adaptin is annotated as a hypothetical protein in
+GenBank (accession number <ext-link ext-link-type="genpept"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="CAB66859"/>). Human
+&#x03B1;1 and &#x03B1;2 adaptin share 81&#x0025; identity and 88&#x0025;
+similarity at the amino acid level. Although there are fewer isoforms of AP-2
+subunits as compared with AP-1 subunits, additional diversity arises from
+alternative splicing of some mRNAs. In mammals such as mouse and pig, the
+&#x03B1;1 adaptin mRNA is alternatively spliced in brain and skeletal muscle to
+generate a protein with 21 additional amino acids in the hinge region (<xref
+ref-type="bibr" rid="B5">Ball <italic>et al.</italic>, 1995</xref>). Alternative
+splicing of exon 5 of the mouse &#x03BC;2 gene leads to the presence or absence
+of His142 and Gln143 in the protein. Although the longer isoform is more
+abundant, both forms are fully capable of interacting with tyrosine-based
+sorting signals (<xref ref-type="bibr" rid="B58">Ohno <italic>et al.</italic>,
+1998</xref>). Finally, a splice variant of &#x03C2;2 adaptin termed
+&#x03C2;2&#x0394; has been identified in human leukocytes (<xref ref-type="bibr"
+rid="B37">Holzmann <italic>et al.</italic>, 1998</xref>). All AP-2 subunits are
+ubiquitously expressed in mammals. No genetic analyses of AP-2 function in
+mammals have been reported to date.</p></sec><sec><title>AP-3
+Adaptins</title><p>Both humans and mice contain genes encoding one &#x03B4;, two
+&#x03B2;3 (&#x03B2;3A and &#x03B2;3B), two &#x03BC;3 (&#x03BC;3A and
+&#x03BC;3B), and two &#x03C2;3 (&#x03C2;3A and &#x03C2;3B) adaptin(s) (Table
+<xref ref-type="table" rid="T1">1</xref>, Supplemental Tables 1 and 2). &#x03B4;,
+&#x03B2;3A, &#x03BC;3A, &#x03C2;3A, and &#x03C2;3B are expressed ubiquitously,
+while &#x03B2;3B and &#x03BC;3B are specifically expressed in neurons and
+neuroendocrine cells (<xref ref-type="bibr" rid="B67">Pevsner <italic>et al.</italic>,
+1994</xref>; <xref ref-type="bibr" rid="B56">Newman <italic>et al.</italic>,
+1995</xref>). Several putative splice variants of &#x03B4; adaptin lacking
+codons 170&#x2013;260, 117&#x2013;285, and 746&#x2013;877 have been identified
+through searches of EST databases and PCR amplification (<xref ref-type="bibr"
+rid="B60">Ooi <italic>et al.</italic>, 1997</xref>). In humans, mutations in the gene
+encoding &#x03B2;3A adaptin cause Hermansky-Pudlak syndrome type 2 (HPS-2), a
+genetic disorder characterized by defective melanosomes and platelet dense
+granules (<xref ref-type="bibr" rid="B18">Dell'Angelica <italic>et al.</italic>,
+1999b</xref>) (Table <xref ref-type="table" rid="T2">2</xref>). A similar disorder
+has been described in mice bearing mutations in the genes encoding &#x03B4;
+adaptin (mocha, <xref ref-type="bibr" rid="B39">Kantheti <italic>et al.</italic>,
+1998</xref>) and &#x03B2;3A adaptin (pearl, <xref ref-type="bibr" rid="B22">Feng
+<italic>et al.</italic>, 2000</xref>; <xref ref-type="bibr" rid="B23">Feng <italic>et
+al.</italic>, 1999</xref>; <xref ref-type="bibr" rid="B96">Yang <italic>et al.</italic>,
+2000</xref>) (Table <xref ref-type="table" rid="T2">2</xref>). In addition,
+&#x03B4; adaptin-deficient mice exhibit neurological defects that are not
+observed in &#x03B2;3A adaptin-deficient mice or HPS-2 patients (<xref
+ref-type="bibr" rid="B39">Kantheti <italic>et al.</italic>, 1998</xref>). Fibroblasts
+from AP-3-deficient humans and mice exhibit increased trafficking of lysosomal
+membrane proteins such as CD63, lamp-1, and lamp-2 via the plasma membrane
+(<xref ref-type="bibr" rid="B13">Dell'Angelica <italic>et al.</italic>, 2000a</xref>;
+<xref ref-type="bibr" rid="B18">Dell'Angelica <italic>et al.</italic>, 1999b</xref>;
+<xref ref-type="bibr" rid="B96">Yang <italic>et al.</italic>, 2000</xref>). A similar
+missorting of melanosomal and platelet dense granule proteins could underlie the
+organellar defects in the AP-3 mutants.</p></sec><sec><title>AP-4
+Adaptins</title><p>Both humans and mice have only one gene encoding each of the
+&#x03B5;, &#x03B2;4, &#x03BC;4, and &#x03C2;4 adaptin subunits of AP-4 (Table
+<xref ref-type="table" rid="T1">1</xref>, Supplemental Tables 1 and 2) (<xref
+ref-type="bibr" rid="B15">Dell'Angelica <italic>et al.</italic>, 1999a</xref>; <xref
+ref-type="bibr" rid="B35">Hirst <italic>et al.</italic>, 1999</xref>). While no isoforms
+or splice variants of the AP-4 subunits &#x03B5;, &#x03B2;4, or &#x03BC;4 have
+been reported to date, the human &#x03C2;4 mRNA appears to be subject to
+alternative splicing (accession numbers NP-009008 and AAH01259). Both splice
+isoforms share the first 102 residues, but they contain unrelated
+carboxy-terminal sequences of 42 (one exon) and 57 amino acids (two exons),
+respectively. Genomic sequences can be found for both splice variants, but no
+data are available on their tissue expression or differential incorporation of
+the proteins into AP-4. There are also no data on the disruption of AP-4 subunit
+gene expression in mammals, although indirect evidence has suggested a possible
+involvement of this complex in protein sorting to lysosomes (<xref
+ref-type="bibr" rid="B2">Aguilar <italic>et al.</italic>,
+2001</xref>).</p></sec><sec><title>GGAs and Stonins</title><p>Unlike the
+conventional adaptins, GGAs and stonins are monomeric proteins. Genes encoding
+three GGAs (GGA1, GGA2 and GGA3) and two stonins (stonin 1 and stonin 2) have
+been described in both humans and mice (Table <xref ref-type="table"
+rid="T1">1</xref>, Supplemental Tables 1 and 2) (<xref ref-type="bibr"
+rid="B7">Boman <italic>et al.</italic>, 2000</xref>; <xref ref-type="bibr"
+rid="B17">Dell'Angelica <italic>et al.</italic>, 2000b</xref>; <xref ref-type="bibr"
+rid="B36">Hirst <italic>et al.</italic>, 2000</xref>; <xref ref-type="bibr"
+rid="B49">Martina <italic>et al.</italic>, 2001</xref>; <xref ref-type="bibr"
+rid="B71">Poussu <italic>et al.</italic>, 2000</xref>; <xref ref-type="bibr"
+rid="B87">Takatsu <italic>et al.</italic>, 2000</xref>). Alternative splicing has been
+reported for the GGA2 and GGA3 mRNAs. For GGA2, this results in a truncated form
+of the protein (accession number <ext-link ext-link-type="genpept"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AAK38634"/>) comprising
+residues 1&#x2013;194 of the full length GGA2, plus an additional &#x223C;30
+residues at the carboxy terminus (<xref ref-type="bibr" rid="B57">Nielsen <italic>et
+al.</italic>, 2001</xref>). This short GGA2 form, therefore, has a complete VHS
+domain but no GAT, hinge or GAE domains. There is also a short form of GGA3
+(accession number <ext-link ext-link-type="genpept"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AAF42849"/>) that lacks
+33 residues from the VHS domain as compared with the full-length GGA3 (<xref
+ref-type="bibr" rid="B17">Dell'Angelica <italic>et al.</italic>, 2000b</xref>), and that
+appears not to interact with the acidic di-leucine motif in the cytoplasmic
+tails of the mannose 6-phosphate receptors (<xref ref-type="bibr"
+rid="B88">Takatsu <italic>et al.</italic>, 2001</xref>). No genetic disruptions of the
+expression of GGAs and stonins in mammals have been
+reported.</p></sec></sec><sec><title>STRUCTURAL FEATURES OF MAMMALIAN ADAPTINS
+AND RELATED PROTEINS</title><p>The availability of a complete catalogue of
+mammalian adaptins should now allow detailed analyses of the structural features
+that account for both the conservation and specialization of their functions. A
+schematic representation of all human adaptins and adaptin-related proteins is
+shown in Figure <xref ref-type="fig" rid="F2">2</xref>.</p><fig
+id="F2"><label>Figure 2</label><caption><p>Bar diagram showing the structural
+relationships between the different adaptins and adaptin-related proteins.
+Regions in the proteins as defined by homology, function, or tertiary structural
+information, as well as protein family (Pfam) domains are depicted as colored
+boxes.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="mk1011641002" alt-version="yes"></graphic><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mk101164102c"
+alt-version="yes"></graphic></fig><sec><title>Large Adaptins</title><p>A region
+at the amino terminus of the large adaptins, comprising &#x223C;600 amino acid
+residues in &#x03B3;1, &#x03B3;2, &#x03B1;1, &#x03B1;2, &#x03B5;, &#x03B2;3A,
+and &#x03B2;3B, &#x223C;530 residues in &#x03B2;1, &#x03B2;2, and &#x03B2;4, and
+&#x223C;490 residues in &#x03B4;, corresponds to the so-called
+&#x201C;trunk&#x201D; or &#x201C;Adaptin-N&#x201D; homology domain (pfam 01602)
+(Figure <xref ref-type="fig" rid="F2">2</xref>). This domain is predicted to be
+rich in &#x03B1;-helical secondary structure. In the &#x03B2; adaptins, it has
+been proposed to comprise 13&#x2013;14 armadillo (arm) repeats,
+&#x223C;40-residue sequences that fold into two short &#x03B1;-helices linked by
+joining loops (<xref ref-type="bibr" rid="B33">Groves and Barford, 1999</xref>).
+Arm repeats have not been recognized in the amino-terminal region of the
+&#x03B3;/&#x03B1;/&#x03B4;/&#x03B5; adaptins. However, their homology to the
+&#x03B2; adaptins suggests that they could be composed of more divergent double
+helix-loop repeats. An &#x201C;Adaptin-N&#x201D; homology domain is also present
+within the amino-terminal &#x223C;500 residues of the &#x03B2;-COP,
+&#x03B3;1-COP, and &#x03B3;2-COP subunits of COPI.</p><p>The
+&#x201C;Adaptin-N&#x201D; homology domain is involved in intersubunit
+interactions between the large adaptins and with the medium and small adaptins.
+It is also responsible for targeting of AP-1 and AP-2 to the TGN and plasma
+membrane, respectively. <xref ref-type="bibr" rid="B64">Page and Robinson
+(1995)</xref> have demonstrated that the trunk domains of &#x03B3;1 and
+&#x03B1;2 interact with &#x03C2;1A and &#x03C2;2, respectively, while the
+&#x03B2; adaptins are more promiscuous, as both &#x03B2;1 and &#x03B2;2 can
+interact with either &#x03BC;1A and &#x03BC;2 in yeast two-hybrid assays. The
+ability of the &#x03B3;/&#x03B1; large chains to bind specifically to the small
+chains has been shown to correlate with their in vivo targeting to the TGN or
+the plasma membrane. The trunk domains of &#x03B2;1 and &#x03B2;2 are also the
+site of interaction with dileucine-based signals (<xref ref-type="bibr"
+rid="B76">Rapoport <italic>et al.</italic>, 1998</xref>; <xref ref-type="bibr"
+rid="B32">Greenberg <italic>et al.</italic>, 1998</xref>).</p><p>The
+&#x201C;hinge&#x201D; domains of the large chains are of variable length,
+ranging from 46 residues in &#x03B2;4 adaptin to 410 residues in &#x03B4;
+adaptin, and exhibit little if any sequence homology (Figure <xref
+ref-type="fig" rid="F2">2</xref>). With the exception of &#x03B3;2 and &#x03B4;
+adaptin, the hinge regions of the adaptins are enriched in serine residues, many
+of which are potential targets for phosphorylation (<xref ref-type="bibr"
+rid="B56">Newman <italic>et al.</italic>, 1995</xref>; <xref ref-type="bibr"
+rid="B95">Wilde and Brodsky, 1996</xref>; <xref ref-type="bibr"
+rid="B16">Dell'Angelica <italic>et al.</italic>, 1997</xref>; <xref ref-type="bibr"
+rid="B21">Faundez and Kelly, 2000</xref>). The hinge domains of &#x03B2;1,
+&#x03B2;2, &#x03B2;3A, and &#x03B2;3B adaptins contain clathrin-binding motifs
+conforming to the consensus, L(L,I)(D,E,N)(L,F)(D,E) (<xref ref-type="bibr"
+rid="B14">Dell'Angelica <italic>et al.</italic>, 1998</xref>; <xref ref-type="bibr"
+rid="B41">Kirchhausen, 2000</xref>).</p><p>Homology in the carboxy-terminal
+&#x201C;ear&#x201D; domains of the large adaptins is lower than that in the
+trunk domains, especially among the &#x03B3;/&#x03B1;/&#x03B4;/&#x03B5; adaptins
+(Figure <xref ref-type="fig" rid="F2">2</xref>). This probably reflects the
+functional diversity of the various AP complexes. The carboxy-terminal
+&#x223C;300 amino acids of &#x03B1;1 and &#x03B1;2 adaptin contain what is known
+as the &#x201C;Alpha -adaptin-C&#x201D; domain (pfam 02296) (Figure <xref
+ref-type="fig" rid="F2">2</xref>). The ear domain of the &#x03B1;2 adaptin has
+been shown to interact with many regulators of coat assembly and/or vesicle
+formation that contain DPF/W motifs, such as epsin, eps15, and amphiphysin
+(reviewed by <xref ref-type="bibr" rid="B84">Slepnev and De Camilli,
+2000</xref>). The three-dimensional structure of the ear domain of mouse
+&#x03B1;2 adaptin (residues 695&#x2013;938) was solved with the use of x-ray
+crystallography (<xref ref-type="bibr" rid="B62">Owen <italic>et al.</italic>,
+1999</xref>; <xref ref-type="bibr" rid="B89">Traub <italic>et al.</italic>,
+1999</xref>). This domain consists of two structurally unrelated subdomains. The
+amino-terminal subdomain forms a nine-stranded &#x03B2;-sandwich that has
+similarity to the immunoglobulin fold and possibly acts as a structural anchor
+or spacer for the carboxy-terminal subdomain. This latter domain harbors the
+binding site for the DPF/W containing proteins, which is centered around residue
+W840. This domain contains a five-stranded &#x03B2;-sheet that is flanked by
+three &#x03B1;-helices and bears no resemblance to other known domain
+structures.</p><p>The carboxy-terminal &#x223C;120 residues of the &#x03B3;1 and
+&#x03B3;2 adaptins share the so-called &#x201C;G-Adapt-CT&#x201D; domain (pfam
+02139) with the carboxy-terminal &#x223C;120 residues of the three GGAs (Figure
+<xref ref-type="fig" rid="F2">2</xref>). Functionally, this homology is mirrored
+in the ability of the &#x03B3;1 ear and the GGA GAE domains to interact with
+&#x03B3;-synergin and rabaptin-5 (<xref ref-type="bibr" rid="B36">Hirst <italic>et
+al.</italic>, 2000</xref>; <xref ref-type="bibr" rid="B65">Page <italic>et al.</italic>,
+1999</xref>; <xref ref-type="bibr" rid="B87">Takatsu <italic>et al.</italic>,
+2000</xref>). Although the alignment of &#x03B4; and &#x03B5; adaptin with the
+&#x03B3; and &#x03B1; adaptin sequences shows little conservation outside the
+trunk domain, a comparison of the predicted secondary structures allows the
+tentative assignment of ear domains for &#x03B4; and &#x03B5;. In &#x03B4;
+adaptin, the ear domain starts around residue 900 while in &#x03B5; adaptin, it
+starts around residue 840. For both &#x03B4; and &#x03B5; adaptins, this domain
+is predicted to comprise a part rich in &#x03B2;-sheet followed by an
+&#x03B1;-helical segment of &#x223C;100 residues, similarly to the &#x03B1;
+adaptins. The carboxy-terminal domains of &#x03B3;1-COP, &#x03B3;2-COP, and
+&#x03B2;-COP are largely dissimilar from those of the AP large subunits.
+However, there is a small stretch of homology (22&#x0025; amino acid identity,
+41&#x0025; similarity) between residues 946 and 1094 of &#x03B5; adaptin and
+residues 745 and 895 of &#x03B2;-COP. This homology is exclusive for
+&#x03B2;-COP and &#x03B5; adaptin since it is not observed in &#x03B3;1-COP or
+&#x03B3;2-COP, or in the &#x03B3;, &#x03B1;, and &#x03B4;
+adaptins.</p><p>Although the ear domains of the
+&#x03B3;/&#x03B1;/&#x03B4;/&#x03B5; adaptins do not share sequence homology with
+the &#x03B2; ear domains, the tertiary structures of the ear domains of
+&#x03B1;2 adaptin (<xref ref-type="bibr" rid="B62">Owen <italic>et al.</italic>,
+1999</xref>; <xref ref-type="bibr" rid="B89">Traub <italic>et al.</italic>, 1999</xref>)
+and &#x03B2;2 adaptin (<xref ref-type="bibr" rid="B63">Owen <italic>et al.</italic>,
+2000</xref>) are remarkably similar. The ear domains of the other &#x03B2;
+adaptins exhibit significant sequence homology to &#x03B2;2, suggesting that
+they may also display a similar three-dimensional
+structure.</p></sec><sec><title>Medium and Small Adaptins</title><p>The
+amino-terminal domain of the &#x03BC; adaptins, consisting of 120&#x2013;140
+residues, interacts with the &#x03B2; adaptins of the corresponding complexes,
+and is hence referred to as &#x201C;&#x03B2;-binding domain&#x201D; (BBD, <xref
+ref-type="bibr" rid="B3">Aguilar <italic>et al.</italic>, 1997</xref>) or
+&#x201C;Clat-adaptor-s&#x201D; region (pfam 01217) (Figure <xref ref-type="fig"
+rid="F2">2</xref>). This region exhibits homology to a 90-residue sequence from
+the amino-terminal domain of &#x03B4;-COP (20&#x2013;27&#x0025; amino acid
+identity, 44&#x2013;51&#x0025; similarity), as well as to the entire or almost
+entire length of the small adaptins (&#x223C;20&#x0025; amino acid identity,
+&#x223C;40&#x0025; similarity). The small adaptins are in turn homologous to
+&#x03B6;1-COP and &#x03B6;2-COP (17&#x2013;23&#x0025; amino acid identity,
+43&#x2013;49&#x0025; similarity). In addition, &#x03C2;3A, &#x03C2;3B, and
+&#x03B6;1-COP have short extensions at their carboxy-termini and &#x03B6;2-COP
+at both its amino- and carboxy-termini. By analogy with the amino-terminal
+domain of the &#x03BC; adaptins, it is tempting to speculate that the entire
+length of the &#x03C2; adaptins may be engaged in interactions with the
+&#x03B3;/&#x03B1;/&#x03B4;/&#x03B5; adaptins, perhaps having the sole purpose of
+stabilizing the AP complex. The crystal structure of this domain has not been
+solved, although theoretical analyses predict a high content of
+&#x03B1;-helices.</p><p>The 290&#x2013;320-residue carboxy-terminal domain of
+the &#x03BC; adaptins (Figure <xref ref-type="fig" rid="F2">2</xref>) is known
+as the &#x201C;YXX&#x00D8;-signal-binding domain&#x201D; (<xref ref-type="bibr"
+rid="B3">Aguilar <italic>et al.</italic>, 1997</xref>) or &#x201C;Adap-comp-sub&#x201D;
+domain (pfam 00928) and binds YXX&#x00D8;-motifs (Y is tyrosine, X is any amino
+acid and &#x00D8; is leucine, isoleucine, phenylalanine, methionine or valine)
+present in the cytosolic domains of some transmembrane proteins. This domain has
+an all &#x03B2;-sheet, &#x201C;banana-shaped&#x201D; tertiary structure
+including two hydrophobic pockets that accommodate the tyrosine and bulky
+hydrophobic residues of YXX&#x00D8;-type signals (<xref ref-type="bibr"
+rid="B61">Owen and Evans, 1998</xref>). This domain of &#x03BC;2 has also been
+shown to interact with synaptotagmins (<xref ref-type="bibr" rid="B34">Haucke
+<italic>et al.</italic>, 2000</xref>). Interestingly, this domain is shared with
+&#x03B4;-COP (<xref ref-type="bibr" rid="B80">Serafini <italic>et al.</italic>,
+1991</xref>; <xref ref-type="bibr" rid="B94">Waters <italic>et al.</italic>,
+1991</xref>; <xref ref-type="bibr" rid="B75">Radice <italic>et al.</italic>,
+1995</xref>; <xref ref-type="bibr" rid="B90">Tunnacliffe <italic>et al.</italic>,
+1996</xref>) and the stonins (<xref ref-type="bibr" rid="B4">Andrews <italic>et
+al.</italic>, 1996</xref>; <xref ref-type="bibr" rid="B49">Martina <italic>et al.</italic>,
+2001</xref>). Although neither of these proteins bind YXX&#x00D8; signals, the
+ability to interact with synaptotagmins appears to be conserved in the stonins
+(<xref ref-type="bibr" rid="B49">Martina <italic>et al.</italic>, 2001</xref>; <xref
+ref-type="bibr" rid="B92">Walther <italic>et al</italic>.,
+2001</xref>).</p></sec></sec><sec><title>ADAPTIN PSEUDOGENES IN THE HUMAN
+GENOME</title><p>In addition to genes encoding the AP subunits described above,
+TBLASTN searches at the NCBI human genome BLAST web page using the known adaptin
+protein sequences as queries revealed additional DNA sequences homologous to
+adaptin genes (Supplemental Table 3). However, these sequences encoded only
+fragments of the predicted adaptins, had deletions, insertions or frame shifts
+that resulted in premature termination codons, or had no introns, all
+characteristics of pseudogenes (Supplemental Table 3). Of these, only an
+intronless gene on chromosome 17 could potentially give rise to a protein
+identical to &#x03C2;1B residues 1-142 (amino acid identity). Although the
+absence of introns is a salient feature of pseudogenes, transcribed intronless
+paralogs have nonetheless been described (<xref ref-type="bibr" rid="B91">Venter
+<italic>et al.</italic>, 2001</xref>), making it possible that this sequence encodes an
+additional &#x03C2;1 adaptin.</p></sec><sec><title>ADAPTINS AND RELATED PROTEINS
+IN OTHER ORGANISMS</title><p>Adaptins in other organisms (Table <xref
+ref-type="table" rid="T1">1</xref>, Supplemental Tables 4&#x2013;9) have been
+tentatively identified based on the homology to their mammalian counterparts,
+with the exception of the <italic>S. cerevisiae</italic> adaptins that have also been
+assigned by <xref ref-type="bibr" rid="B97">Yeung <italic>et al.</italic> (1999)</xref>
+based on biochemical and genetic evidence. Like mammals, <italic>A. thaliana</italic>
+contains genes encoding subunits of the four AP complexes. In contrast, <italic>D.
+melanogaster</italic>, <italic>C. elegans</italic>, <italic>S. cerevisiae</italic>, and <italic>S.
+pombe</italic> possess genes encoding subunits of AP-1, AP-2, and AP-3, but not
+AP-4. The domain organization and other structural features of adaptins in these
+organisms are predicted to be very similar to those of mammalian
+adaptins.</p><sec><title>AP-1 Adaptins</title><p>As in mammals, AP-1 is the
+complex that exhibits the greatest subunit diversification in other organisms
+(Table <xref ref-type="table" rid="T1">1</xref>, Supplemental Tables 4&#x2013;9).
+The <italic>A. thaliana</italic> genome contains genes encoding three &#x03B3;
+(&#x03B3;-I, &#x03B3;-II and &#x03B3;-III), three &#x03B2;1/2 (&#x03B2;1/2-I,
+&#x03B2;1/2-II and &#x03B2;1/2-III), one &#x03BC;1, and two &#x03C2;1
+(&#x03C2;1-I and &#x03C2;1-II) adaptin(s) (Supplemental Table 4). &#x03B3;-I had
+been previously given the names &#x03B3;1 and &#x03B3;2 by Schledzewski <italic>et
+al.</italic> who isolated two sequences with 98&#x0025; identity at the amino acid
+level &#x005B;accession number <ext-link ext-link-type="genpept"
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AAC28338"/> (&#x03B3;1)
+and <ext-link ext-link-type="genpept" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="CAB39730"/> (&#x03B3;2)&#x005D;. In a TBLASTN search, however, gene
+T23E23.7 was most closely related to both &#x03B3;1 and &#x03B3;2 (94&#x0025;
+identity and similarity at the amino acid level), making it likely that both
+proteins originate from the same gene. The difference in amino acid composition
+between the &#x03B3;1 and &#x03B3;2 forms of &#x03B3;-I could be the result of
+alternative splicing. &#x03B3;-II shares 70&#x0025; amino acid sequence identity
+with &#x03B3;-I. &#x03B3;-III has several stretches of homology to both
+&#x03B3;-I and &#x03B3;-II. However, it shows several features that would make
+it an unusual &#x03B3; adaptin. The &#x03B3;-III &#x201C;Adaptin-N&#x201D;
+region of homology (pfam 01602) is truncated and shifted carboxy-terminally
+relative to the other <italic>A. thaliana</italic> &#x03B3; adaptins. Moreover,
+&#x03B3;-III lacks the &#x03B3; adaptin hinge and ear domains. Since there is no
+corroborative evidence for the existence of a transcript encoding &#x03B3;-III,
+this DNA could be an artifact or a pseudogene. Full sequences are available for
+genes encoding <italic>A. thaliana</italic> &#x03B2;1/2-I and &#x03B2;1/2-II, whereas
+that encoding &#x03B2;1/2-III has been only partially sequenced. The &#x03B2;1/2
+adaptins share 93&#x2013;98&#x0025; identity at the amino acid level and are
+thus more closely related to each other than to either human &#x03B2;1 or
+&#x03B2;2 adaptin. This suggests that they are products of relatively recent
+gene duplications. As is the case for mammalian &#x03B2;1 and &#x03B2;2
+adaptins, the <italic>A. thaliana</italic> &#x03B2;1/2 adaptins could be subunits of
+both AP-1 and AP-2 complexes. Two &#x03C2;1 adaptins that are homologous to
+mammalian &#x03C2;1 adaptins have been identified in <italic>A. thaliana</italic>. These
+are constitutively expressed in all tissues of the plant, with higher levels
+being found in reproductive tissues (<xref ref-type="bibr"
+rid="B48">Maldonado-Mendoza and Nessler, 1997</xref>). Only one gene encoding a
+&#x03BC;1 homolog could be identified in <italic>A. thaliana</italic>.</p><p><italic>D.
+melanogaster</italic> contains only one gene encoding each of the subunits of AP-1
+(&#x03B3;, &#x03B2;1/2, &#x03BC;1 and &#x03C2;1 adaptins) (Supplemental Table
+5), while <italic>C. elegans</italic> contains genes encoding one &#x03B3;, one
+&#x03B2;1/2, two &#x03BC;1 (&#x03BC;1-I and &#x03BC;1-II) and one &#x03C2;1
+adaptin(s) (Supplemental Table 6). Both <italic>D. melanogaster</italic> and <italic>C.
+elegans</italic> have a single &#x03B2;1/2 adaptin, which is probably a subunit of
+both AP-1 and AP-2. While <italic>D. melanogaster</italic> has a single &#x03BC;1
+adaptin, <italic>C. elegans</italic> has two, &#x03BC;1-I (Unc-101) and &#x03BC;1-II
+(Apm-1). The 56&#x0025; identity and 70&#x0025; similarity at the amino acid
+level of these two proteins points to a gene duplication within the nematodes
+group. Both proteins are transcribed in all cells and at all stages of
+development. Null mutations of <italic>unc-101</italic> are lethal in 50&#x0025; of the
+animals (<xref ref-type="bibr" rid="B44">Lee <italic>et al.</italic>, 1994</xref>), and
+a dsRNAi against <italic>apm-1</italic> results in larval lethality (<xref
+ref-type="bibr" rid="B82">Shim <italic>et al.</italic>, 2000</xref>). Simultaneous
+interference with both &#x03BC;1 adaptins by dsRNAi is embryonic lethal in
+100&#x0025; of the animals, as is dsRNAi against &#x03B3;, &#x03B2;1 or
+&#x03C2;1 (<xref ref-type="bibr" rid="B82">Shim <italic>et al.</italic>, 2000</xref>)
+(Table <xref ref-type="table" rid="T2">2</xref>).</p><p><italic>S. cerevisiae</italic> has
+one &#x03B3; (Apl4p), one &#x03B2;1 (Apl2p), two &#x03BC;1 (Apm1p and Apm2p) and
+one &#x03C2;1 (Aps1p) adaptin (Supplemental Table 7). This allows for the
+assembly of two AP-1 complexes that differ in their &#x03BC;1 subunit (<xref
+ref-type="bibr" rid="B97">Yeung <italic>et al.</italic>, 1999</xref>). While Apm1p is a
+classical &#x03BC; chain, Apm2p is unusually large and cannot complement for
+Apm1p in <italic>apm1</italic> null mutants (<xref ref-type="bibr" rid="B85">Stepp
+<italic>et al.</italic>, 1995</xref>). Disruption of genes encoding AP-1 subunits is not
+detrimental to <italic>S. cerevisiae</italic> cells (<xref ref-type="bibr"
+rid="B55">Nakai <italic>et al.</italic>, 1993</xref>; <xref ref-type="bibr"
+rid="B69">Phan <italic>et al.</italic>, 1994</xref>; <xref ref-type="bibr" rid="B74">Rad
+<italic>et al.</italic>, 1995</xref>; <xref ref-type="bibr" rid="B85">Stepp <italic>et
+al.</italic>, 1995</xref>) (Table <xref ref-type="table" rid="T2">2</xref>). However,
+they exhibit synthetic lethality with the temperature-sensitive clathrin heavy
+chain allele <italic>chc1<sup>ts</sup></italic> at the nonpermissive temperature (<xref
+ref-type="bibr" rid="B69">Phan <italic>et al.</italic>, 1994</xref>). Even at the
+permissive temperature, there is a defect in &#x03B1;-factor secretion in the
+double mutants, indicating a role for yeast AP-1 in sorting at the TGN (<xref
+ref-type="bibr" rid="B69">Phan <italic>et al.</italic>, 1994</xref>; <xref
+ref-type="bibr" rid="B85">Stepp <italic>et al.</italic>,
+1995</xref>).</p></sec><sec><title>AP-2 Adaptins</title><p><italic>A. thaliana</italic>,
+<italic>D. melanogaster</italic>, <italic>C. elegans</italic>, <italic>S. cerevisiae</italic>, and
+<italic>S. pombe</italic> have single genes encoding the &#x03B1;, &#x03BC;2 and
+&#x03C2;2 subunits of AP-2 (Table <xref ref-type="table" rid="T1">1</xref>,
+Supplemental Tables 4&#x2013;8). As discussed above, <italic>A. thaliana</italic>
+possesses three genes encoding hybrid &#x03B2;1/2 adaptins (&#x03B2;1/2-I, -II,
+and -III) that could be components of AP-2 as well as AP-1. Similarly, <italic>D.
+melanogaster</italic> and <italic>C. elegans</italic> have single genes encoding a hybrid
+&#x03B2;1/2 adaptin that is also probably shared by AP-1 and AP-2. In <italic>D.
+melanogaster</italic>, &#x03B1; and &#x03BC;2 are most highly expressed in the
+central nervous system. Disruption of <italic>D. melanogaster</italic> &#x03B1; adaptin
+expression resulted in alleles with various degrees of severity ranging from
+embryonic lethality to adult flies that could neither walk nor fly (<xref
+ref-type="bibr" rid="B30">Gonz&#x00E1;lez-Gait&#x00E1;n and J&#x00E4;ckle,
+1997</xref>) (Table <xref ref-type="table" rid="T2">2</xref>). dsRNAi of &#x03B1;
+or &#x03B2;1/2 adaptin in <italic>C. elegans</italic> resulted in the inhibition of yolk
+endocytosis and embryos proved to be inviable (<xref ref-type="bibr"
+rid="B31">Grant and Hirsh, 1999</xref>). Embryos obtained from &#x03BC;2(RNAi)
+or &#x03C2;2(RNAi) mothers exhibited developmental phenotypes (<xref
+ref-type="bibr" rid="B45">Levy <italic>et al.</italic>, 1993</xref>; <xref
+ref-type="bibr" rid="B81">Shim and Lee, 2000</xref>) (Table <xref ref-type="table"
+rid="T2">2</xref>). <italic>S. cerevisiae</italic> has homologues of the mammalian AP-2
+adaptor complex subunits &#x005B;Apl3p (&#x03B1;), Apl1p (&#x03B2;2), Apm4p
+(&#x03BC;2), and Aps2p (&#x03C2;2)&#x005D;, but their deletion has no apparent
+effect on endocytosis or any other protein sorting step yet analyzed (<xref
+ref-type="bibr" rid="B54">Munn, 2001</xref>) (Table <xref ref-type="table"
+rid="T2">2</xref>).</p></sec><sec><title>AP-3 Adaptins</title><p>AP-3 subunits
+are encoded by single genes in <italic>A. thaliana</italic>, <italic>D. melanogaster</italic>,
+<italic>C. elegans</italic>, <italic>S. cerevisiae</italic>, and <italic>S. pombe</italic> (Table <xref
+ref-type="table" rid="T1">1</xref>, Supplemental Tables 4&#x2013;7). We found the
+<italic>C. elegans</italic> &#x03C2;3 adaptin sequence by using the TBLASTN algorithm at
+the Sanger Center on a search for homologues of <italic>D. melanogaster</italic>
+&#x03C2;3 (Supplemental Figure 1B). In agreement with studies of AP-3 function
+in mammals described above, <italic>D. melanogaster</italic> AP-3 appears to be involved
+in the biogenesis of pigment granules (<xref ref-type="bibr"
+rid="B42">Kretzschmar <italic>et al.</italic>, 2000</xref>; <xref ref-type="bibr"
+rid="B47">Lloyd <italic>et al.</italic>, 1999</xref>; <xref ref-type="bibr"
+rid="B52">Mullins <italic>et al.</italic>, 2000</xref>; <xref ref-type="bibr"
+rid="B53">Mullins <italic>et al.</italic>, 1999</xref>; <xref ref-type="bibr"
+rid="B60">Ooi <italic>et al.</italic>, 1997</xref>; <xref ref-type="bibr"
+rid="B83">Simpson <italic>et al.</italic>, 1997</xref>) (Table <xref ref-type="table"
+rid="T2">2</xref>). Mutations of the genes encoding the <italic>S. cerevisiae</italic>
+&#x03B4; (Apl5p), &#x03B2;3 (Apl6p), &#x03BC;3 (Apm3p) or &#x03C2;3 (Aps3p)
+impaired the sorting of alkaline phosphatase (ALP) and the t-SNARE Vam3p to the
+vacuole (<xref ref-type="bibr" rid="B11">Cowles <italic>et al.</italic>, 1997</xref>),
+an organelle that is the yeast counterpart of mammalian lysosomes (Table <xref
+ref-type="table" rid="T2">2</xref>).</p></sec><sec><title>AP-4
+Adaptins</title><p>In addition to mammals, a complete set of AP-4 subunits has
+only been found in <italic>A. thaliana</italic> (Table <xref ref-type="table"
+rid="T1">1</xref>, Supplemental Table 3). Homologues of &#x03BC;4 have been
+identified in <italic>G. gallus</italic> (<xref ref-type="bibr" rid="B93">Wang and
+Kilimann, 1997</xref>) and <italic>D. discoideum</italic> (<xref ref-type="bibr"
+rid="B12">de Chassey <italic>et al.</italic>, 2001</xref>), the genomes of which have
+not yet been completely sequenced. However, homologues of &#x03B5;, &#x03B2;4
+and &#x03C2;4 subunits have yet to be identified in these organisms. Therefore,
+the existence of an AP-4 complex in these organisms remains to be formally
+established.</p></sec><sec><title>GGAs and Stonins</title><p>Sequences
+homologous to the GGA proteins could be identified in <italic>C. elegans</italic> and
+<italic>D. melanogaster</italic> (Table <xref ref-type="table" rid="T1">1</xref>,
+Supplemental Tables 4&#x2013;6), but no data are available on their expression
+pattern, localization or function. <italic>S. cerevisiae</italic> and <italic>S. pombe</italic>
+each contain two GGA proteins that are more closely related to each other than
+to the mammalian proteins. Single deletions of genes encoding these proteins in
+<italic>S. cerevisiae</italic> resulted in no obvious phenotype, but the
+<italic>gga1&#x0394; gga2&#x0394;</italic> double deletion strain displays defects in
+CPY and proteinase A sorting to the vacuole, Pep12p sorting from the Golgi to a
+prevacuolar compartment, &#x03B1;-factor maturation, and vacuolar morphology
+(<xref ref-type="bibr" rid="B6">Black and Pelham, 2000</xref>; <xref
+ref-type="bibr" rid="B10">Costaguta <italic>et al.</italic>, 2001</xref>; <xref
+ref-type="bibr" rid="B17">Dell'Angelica <italic>et al.</italic>, 2000b</xref>; <xref
+ref-type="bibr" rid="B36">Hirst <italic>et al.</italic>, 2000</xref>; <xref
+ref-type="bibr" rid="B51">Mullins and Bonifacino, 2001</xref>; <xref
+ref-type="bibr" rid="B98">Zhdankina <italic>et al.</italic>, 2001</xref>) (Table <xref
+ref-type="table" rid="T2">2</xref>).</p><p>A BLASTP search for homologues of the
+mammalian stonins in other organisms also identified homologues in <italic>D.
+melanogaster</italic> and <italic>C. elegans</italic>, but not in <italic>A. thaliana</italic>,
+<italic>S. cerevisiae</italic> and <italic>S. pombe</italic>, suggesting that these proteins may
+be specific to the animal lineage (Table <xref ref-type="table" rid="T1">1</xref>,
+Supplemental Tables 4&#x2013;9). The only member of this family for which a
+genetic analysis of its function has been performed is the <italic>D.
+melanogaster</italic> stoned B protein. This protein is one of two polypeptides
+produced from a dicistronic message that is transcribed from the <italic>stoned</italic>
+gene (<xref ref-type="bibr" rid="B4">Andrews <italic>et al.</italic>, 1996</xref>). The
+other polypeptide translated from this message, stoned A, is structurally
+unrelated to the adaptins. Temperature-sensitive <italic>stoned</italic> mutants display
+uncoordinated leg and wing movements characteristic of neurological dysfunction
+at the nonpermissive temperature (<xref ref-type="bibr" rid="B70">Phillips
+<italic>et al.</italic>, 2000</xref>) (Table <xref ref-type="table" rid="T2">2</xref>).
+The mutants also exhibit decreased uptake of FM1&#x2013;43 in nerve terminals,
+suggesting that the neurological defects are due to impaired synaptic vesicle
+recycling (<xref ref-type="bibr" rid="B70">Phillips <italic>et al.</italic>,
+2000</xref>).</p></sec></sec><sec><title>EVOLUTION OF ADAPTINS AND RELATED
+PROTEINS</title><sec><title>COPI and AP Complexes</title><p>All eukaryotes for
+which sequence information is available have one COPI and at least three of the
+four AP complexes (AP-1, AP-2 and AP-3), suggesting that the diversification of
+heterotetrameric coat complexes occurred before the branching of the major
+eukaryotic kingdoms &#x005B;see <xref ref-type="bibr" rid="B19">Doolittle
+(1999)</xref> for a review of recent phylogenetic classifications&#x005D;. The
+existence of AP-4 in <italic>A. thaliana</italic> and some vertebrates (<italic>G.
+gallus</italic>, <italic>M. musculus</italic>, and <italic>H. sapiens</italic>) suggests that this
+complex evolved before the separation of the plant and animal ancestors. The
+homologies between the two sets of large subunits of the AP complexes
+(&#x03B3;/&#x03B1;/&#x03B4;/&#x03B5; and &#x03B2;1&#x2013;4) and the F-COPI
+subcomplex (&#x03B3;- and &#x03B2;-COP) indicate that they all derived from a
+single ancestral large chain (denoted as L in Figure <xref ref-type="fig"
+rid="F3">3</xref>). Similarly, the &#x03BC; and &#x03C2; subunits of AP
+complexes as well as the &#x03B4; and &#x03B6; subunits of the F-COPI subcomplex
+likely derived from a common ancestral small chain (denoted as S in Figure <xref
+ref-type="fig" rid="F3">3</xref>). These two proteins must have come together to
+form a proto-F-COPI-AP hemicomplex (<xref ref-type="bibr" rid="B79">Schledzewski
+<italic>et al.</italic>, 1999</xref>) (L, S in Figure <xref ref-type="fig"
+rid="F3">3</xref>). This complex could have been a heterodimer or a
+heterotetramer composed of two identical heterodimers (L, L, S, S in Figure
+<xref ref-type="fig" rid="F3">3</xref>). Genes encoding the subunits of this
+ancestral complex must have undergone successive rounds of coordinated gene
+duplication (indicated by asterisks in Figure <xref ref-type="fig"
+rid="F3">3</xref>) to give rise to the F-COPI and AP complexes. A first round of
+gene duplication and accumulation of mutations resulted in the emergence of two
+distinct pairs of large and small subunits (L1, L2, S1, S2). Later, one of the
+small subunits acquired a precursor of the &#x03BC; subunit signal-binding
+domain (MHD in Figure <xref ref-type="fig" rid="F3">3</xref>), leading to the
+emergence of an ancestral &#x03BC; subunit (M) (<xref ref-type="bibr"
+rid="B79">Schledzewski <italic>et al.</italic>, 1999</xref>). The two large subunits,
+together with the medium and small subunits, constituted the proto-F-COPI-AP
+heterotetrameric complex (L1, L2, M, S in Figure <xref ref-type="fig"
+rid="F3">3</xref>). Another round of gene duplication involving all four
+subunits of this complex followed by evolutionary divergence led to the
+appearance of distinct F-COPI and proto-AP (AP-1/2/3/4) complexes (Figure <xref
+ref-type="fig" rid="F3">3</xref>). From this point on, the F-COPI and proto-AP
+complexes followed different evolutionary paths. F-COPI acquired the ability to
+bind to the three proteins that conform the B-COPI subcomplex to form a
+heteroheptameric COPI complex (<xref ref-type="bibr" rid="B26">Fiedler <italic>et
+al.</italic>, 1996</xref>). Isoforms of the &#x03B3;-COP and &#x03B6;-COP subunits
+arose by separate gene duplications (indicated by &#x2297; in Figure <xref
+ref-type="fig" rid="F3">3</xref>) in plants (&#x03B6;-COP) and vertebrates
+(&#x03B3;-COP and &#x03B6;-COP), but no new sets of four subunits were derived
+from the F-COPI subunits. In contrast, the genes encoding the four subunits of
+the proto-AP complex underwent at least three more rounds of gene duplication
+(Figure <xref ref-type="fig" rid="F3">3</xref>).</p><fig id="F3"><label>Figure
+3</label><caption><p>Possible evolution of the COPI-AP coat components. The
+order of the appearance of distinct complexes was deduced from the phylogenetic
+analysis of all adaptins present in <italic>A. thaliana</italic>, <italic>C. elegans</italic>,
+<italic>D. melanogaster</italic>, <italic>H. sapiens</italic>, <italic>M. musculus</italic>, and <italic>S.
+cerevisiae</italic>. The GGAs and stonins are hypothesized to have evolved after the
+&#x03B3; and &#x03BC;2 adaptins were differentiated, respectively, based on
+their higher degree of homology to domains from these adaptins. Asterisks
+indicate coordinated rounds of gene duplication, while dashed arrows show gene
+transfer. See text for more details.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mk1011641003"
+alt-version="yes"></graphic></fig><p>The probable sequence in which the four AP
+complexes evolved was inferred from phylogenetic analyses using the EMBL
+European Bioinformatics Institute ClustalW algorithm (<ext-link ext-link-type="url"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://www2.ebi.ac.uk/clustalw">http://www2.ebi.ac.uk/clustalw
+</ext-link>) and the TreeviewPPC program (Figures <xref ref-type="fig"
+rid="F4">4</xref> and <xref ref-type="fig" rid="F5">5</xref>). Although
+differences in the evolutionary rates of different proteins can lead to
+erroneous phylogenetic reconstructions (<xref ref-type="bibr"
+rid="B8">Brocchieri, 2001</xref>), the heterotetrameric structure of the four AP
+complex allows combined measures of evolutionary distance to be derived. These
+analyses indicate that the precursor of modern-day AP-3 branched out first from
+the proto-AP complex. The AP-4 complex appears to have evolved next. Some
+animals such as <italic>C. elegans</italic> and <italic>D. melanogaster</italic> do not have an
+AP-4, while <italic>A. thaliana</italic> and mammals do. This indicates that, although
+AP-4 is ancient, some organisms may have lost the genes for this complex.
+Distinct AP-1 and AP-2 complexes were the last ones to evolve, initially sharing
+a single &#x03B2; subunit. The sharing of a &#x03B2; subunit has persisted to
+date in organisms such as <italic>C. elegans</italic> and <italic>D. melanogaster</italic>,
+which have only one &#x03B2;1/2 subunit common to both AP-1 and AP-2.
+Duplications of genes encoding &#x03B2;1/2 precursors may have occurred
+relatively recently in some lineages giving rise to two or three genes encoding
+closely related paralogs that may be subunits of both AP-1 and AP-2.</p><fig
+id="F4"><label>Figure 4</label><caption><p>An unrooted phylogenetic tree
+displaying the evolutionary relationship between the large adaptins from <italic>A.
+thaliana</italic> (<italic>At</italic>), <italic>C. elegans</italic> (<italic>Ce</italic>), <italic>D.
+melanogaster</italic> (<italic>Dm</italic>), <italic>H. sapiens</italic> (<italic>Hs</italic>), <italic>M.
+musculus</italic> (<italic>Mm</italic>), <italic>S. cerevisiae</italic> (<italic>Sc</italic>), and <italic>S.
+pombe</italic> (<italic>Sp</italic>). The &#x03B3;/&#x03B1;/&#x03B4;/&#x03B5; and
+&#x03B2;1&#x2013;4 subunits from these organisms were aligned, and a
+phylogenetic tree was calculated using the EMBL European Bioinformatics
+Institute ClustalW algorithm (<italic><ext-link ext-link-type="url"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="http://www2.ebi.ac.uk/clustalw">http://www2.ebi.ac.uk/clustalw
+</ext-link></italic>) and displayed using the TreeviewPPC program. The evolutionary
+distance is indicated by substitutions per site.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mk1011641004"
+alt-version="yes"></graphic></fig><fig id="F5"><label>Figure
+5</label><caption><p>Analysis of the evolutionary relationship between the small
+and medium adaptins calculated as described for Figure <xref ref-type="fig"
+rid="F4">4</xref>. Note that for &#x03C2;2, the <italic>R. norvegicus</italic>
+(<italic>Rn</italic>) sequence was used, as the <italic>M. musculus</italic> &#x03C2;2 sequence
+is not yet available.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mk1011641005"
+alt-version="yes"></graphic></fig><p>AP-1 and AP-2 subunits in the yeasts <italic>S.
+cerevisiae</italic> and <italic>S. pombe</italic> evolved somewhat differently, since the
+duplication of the &#x03B2;1/2 subunit gene appears to have occurred very early
+in evolution after the separation from the common yeast/nematode ancestor. Thus,
+the <italic>S. cerevisiae</italic> AP-1 &#x03B2; adaptin, Apl2p, is most homologous to
+the mammalian &#x03B2;1 and &#x03B2;2 proteins while the <italic>S. cerevisiae</italic>
+AP-2 &#x03B2; adaptin, Apl4p, is quite different from the &#x03B2;2 subunit of
+mammalian AP-2. Similarly, the <italic>S. cerevisiae</italic> &#x03BC;2 adaptin, Apm4p,
+is equally homologous to the mammalian &#x03BC;1 and &#x03BC;2 proteins, which
+suggests an early duplication of genes encoding the &#x03B2;1/2-&#x03BC;1/2
+hemicomplex in <italic>S. cerevisiae</italic>. An early duplication of the gene encoding
+&#x03BC;1 may also be responsible for the appearance of a second, distinct
+&#x03BC;1 in <italic>S. cerevisiae</italic>, Apm2p, which remains a relative outlier in
+the phylogenetic tree.</p><p>The transition between flies and vertebrates is
+characterized by the duplication of genes encoding individual subunits of the AP
+complexes (indicated by the &#x2297; in Figure <xref ref-type="fig"
+rid="F3">3</xref>). These resulted in the emergence of two or more isoforms of
+certain subunits, including &#x03B3; (&#x03B3;1 and &#x03B3;2), &#x03BC;1
+(&#x03BC;1A and &#x03BC;1B), &#x03C2;1 (&#x03C2;1A, &#x03C2;1B and &#x03C2;1C),
+&#x03B1; (&#x03B1;1 and &#x03B1;2), &#x03B2;3 (&#x03B2;3A and &#x03B2;3B),
+&#x03BC;3 (&#x03BC;3A and &#x03BC;3B), and &#x03C2;3 (&#x03C2;3A and &#x03C2;3B)
+in humans. Some of the isoforms continued to be expressed in all cells, while
+others became specific to some cells or tissues. For example, &#x03B2;3A and
+&#x03BC;3A are ubiquitous while &#x03B2;3B and &#x03BC;3B are exclusively found
+in brain or other neural tissues. Similarly, &#x03BC;1A is ubiquitous while
+&#x03BC;1B is expressed only in epithelial cells. It thus appears that more
+complex organisms built specificity on top of their already established AP
+complexes by selectively replacing some of their preexisting subunits with new
+isoforms.</p></sec><sec><title>GGAs and Stonins</title><p>All three mammalian
+GGA proteins contain a domain that is homologous to the ear domain of the
+&#x03B3; adaptins, but are otherwise structurally distinct from the &#x03B3;
+adaptins. A duplication and transfer of the &#x03B3; ear domain probably took
+place after the emergence of AP-1 but before the separation of the major
+eukaryotic kingdoms (Figure <xref ref-type="fig" rid="F3">3</xref>). The
+complete GGA gene was duplicated in <italic>S. cerevisiae</italic> and <italic>S.
+pombe</italic>, giving rise to two GGA isoforms. <italic>C. elegans</italic> and <italic>D.
+melanogaster</italic> have only one GGA gene but mice and humans have three. GGA2
+was likely the first one to branch out, while GGA1 and GGA3 separated later
+(Figure <xref ref-type="fig" rid="F3">3</xref>).</p><p>The stonins have a
+carboxy-terminal domain homologous to the signal-binding domain of the &#x03BC;
+adaptins, more specifically to mammalian &#x03BC;2. This suggests that genomic
+sequences encoding the &#x03BC;2 signal-binding domain were duplicated and
+translocated next to sequences encoding the proline-rich (PRD in Figure <xref
+ref-type="fig" rid="F3">3</xref>) and stonin homology domains (SHD in Figure
+<xref ref-type="fig" rid="F3">3</xref>) thus creating the stonin ancestor
+(stonin 1/2 in Figure <xref ref-type="fig" rid="F3">3</xref>). Since stonin
+orthologues have been identified in <italic>C. elegans</italic>, <italic>D.
+melanogaster</italic>, mice and humans, but not yeast or <italic>A. thaliana</italic>, it
+appears that they evolved in the animal lineage. Similarly to adaptins and GGAs,
+however, the stonin gene was duplicated in vertebrates, leading to the human and
+mouse stonin 1 and stonin 2 genes (Figure <xref ref-type="fig"
+rid="F3">3</xref>).</p></sec></sec><sec sec-type="conclusions"><title>CONCLUSIONS AND
+PROSPECTS</title><p>In this essay we have assembled a comprehensive inventory of
+adaptins and related proteins encoded in the genomes of various eukaryotic
+organisms. We have tentatively assigned them to complexes according to the
+mammalian AP nomenclature and described the structural and evolutionary
+relationships between these proteins. Our analyses resulted in the
+identification of several new gene products that had not yet been annotated as
+adaptins or related proteins. With a systematic classification of the adaptins
+in hand, we can now attempt to explain the full range of protein sorting events
+mediated by the adaptins. Many aspects of adaptin function remain to be
+elucidated, including: (1) the exact intracellular localization and distribution
+of AP complexes and related proteins; (2) the signal-binding specificity of all
+the adaptins and related proteins; (3) the nature of the cellular processes in
+which AP complexes and related proteins are involved; (4) the function of
+ubiquitous and tissue-specific adaptin isoforms; (5) the regulation of
+expression of adaptins during development. We expect rapid advances in the
+elucidation of these issues through refinement of established morphological,
+biochemical, and genetic methodologies, as well as the adoption of recent
+advances in genetic manipulation such as RNA interference in mammalian
+cells.</p></sec></body>
+<back><ack><title>ACKNOWLEDGMENTS</title><p>We thank Esteban
+Dell'Angelica, Fran&#x00E7;ois Letourneur, Chris Mullins, and Hiroshi Ohno for
+critical reading of the manuscript. M.B. was supported by a fellowship from the
+German Academic Exchange Service
+(DAAD).</p></ack><ref-list><title>REFERENCES</title><ref
+id="B1"><citation><name><surname>Adams</surname><given-names>M.D.</given-names></name><etal/><article-title>
+The genome sequence of <italic>Drosophila
+melanogaster</italic>.</article-title><source>Science</source><volume>287</volume><year>
+2000</year><fpage>2185</fpage><lpage>2195</lpage>.<pub-id
+pub-id-type="pmid">10731132</pub-id> </citation></ref><ref
+id="B2"><citation><name><surname>Aguilar</surname><given-names>R.C.</given-names></name><name><surname>
+Boehm</surname><given-names>M.</given-names></name><name><surname>Gorshkova</surname><given-names>I.</given-names></name
+><name><surname>Crouch</surname><given-names>R.J.</given-names></name><name><surname>Tomita</surname><given-names>K.
+</given-names></name><name><surname>Saito</surname><given-names>T.</given-names></name><name><surname>Ohno</surname>
+<given-names>H.</given-names></name><name><surname>Bonifacino</surname><given-names>J.S.</given-names></name><article-title>
+Signal-binding specificity of the &#x03BC;4 subunit of the adaptor protein
+complex AP-4.</article-title><source>J. Biol.
+Chem.</source><volume>276</volume><year>2001</year><fpage>13145</fpage><lpage>
+13152</lpage>.<pub-id pub-id-type="pmid">11139587</pub-id> </citation></ref><ref
+id="B3"><citation><name><surname>Aguilar</surname><given-names>R.C.</given-names></name><name><surname>
+Ohno</surname><given-names>H.</given-names></name><name><surname>Roche</surname><given-names>K.W.</given-names></name>
+<name><surname>Bonifacino</surname><given-names>J.S.</given-names></name><article-title>Functional domain
+mapping of the clathrin-associated adaptor medium chains &#x03BC;1 and
+&#x03BC;2.</article-title><source>J. Biol.
+Chem.</source><volume>272</volume><year>1997</year><fpage>27160</fpage><lpage>
+27166</lpage>.<pub-id pub-id-type="pmid">9341158</pub-id> </citation></ref><ref
+id="B4"><citation><name><surname>Andrews</surname><given-names>J.</given-names></name><name><surname>Smith
+</surname><given-names>M.</given-names></name><name><surname>Merakovsky</surname><given-names>J.</given-names></name>
+<name><surname>Coulson</surname><given-names>M.</given-names></name><name><surname>Hannan</surname><given-names>F.
+</given-names></name><name><surname>Kelly</surname><given-names>L.E.</given-names></name><article-title>The
+<italic>stoned</italic> locus of <italic>Drosophila melanogaster</italic> produces a dicistronic
+transcript and encodes two distinct
+polypeptides.</article-title><source>Genetics</source><volume>143</volume><year>1996
+</year><fpage>1699</fpage><lpage>1711</lpage>.<pub-id
+pub-id-type="pmid">8844157</pub-id> </citation></ref><ref
+id="B5"><citation><name><surname>Ball</surname><given-names>C.L.</given-names></name><name><surname>Hunt
+</surname><given-names>S.P.</given-names></name><name><surname>Robinson</surname><given-names>M.S.</given-names></name>
+<article-title>Expression and localization of &#x03B1;-adaptin
+isoforms.</article-title><source>J. Cell
+Sci.</source><volume>108</volume><year>1995</year><fpage>2865</fpage><lpage>2875
+</lpage>.<pub-id pub-id-type="pmid">7593326</pub-id> </citation></ref><ref
+id="B6"><citation><name><surname>Black</surname><given-names>M.W.</given-names></name><name><surname>
+Pelham</surname><given-names>H.R.</given-names></name><article-title>A selective transport route from
+Golgi to late endosomes that requires the yeast GGA proteins.</article-title><source>J.
+Cell
+Biol.</source><volume>151</volume><year>2000</year><fpage>587</fpage><lpage>600
+</lpage>.<pub-id pub-id-type="pmid">11062260</pub-id> </citation></ref><ref
+id="B7"><citation><name><surname>Boman</surname><given-names>A.L.</given-names></name><name><surname>Zhang
+</surname><given-names>C.</given-names></name><name><surname>Zhu</surname><given-names>X.</given-names></name><name><surname
+>Kahn</surname><given-names>R.A.</given-names></name><article-title>A family of ADP-ribosylation factor
+effectors that can alter membrane transport through the
+trans-Golgi.</article-title><source>Mol. Biol.
+Cell</source><volume>11</volume><year>2000</year><fpage>1241</fpage><lpage>1255
+</lpage>.<pub-id pub-id-type="pmid">10749927</pub-id> </citation></ref><ref
+id="B8"><citation><name><surname>Brocchieri</surname><given-names>L.</given-names></name><article-title>
+Phylogenetic inferences from molecular sequences: review and
+critique.</article-title><source>Theor. Popul.
+Biol.</source><volume>59</volume><year>2001</year><fpage>27</fpage><lpage>40
+</lpage>.<pub-id pub-id-type="pmid">11243926</pub-id> </citation></ref><ref
+id="B9"><citation><collab>The <italic>C. elegans</italic> Sequencing
+Consortium</collab><article-title>Genome sequence of the nematode <italic>C. elegans</italic>:
+a platform for investigating
+biology.</article-title><source>Science</source><volume>282</volume><year>1998</year>
+<fpage>2012</fpage><lpage>2018</lpage>.<pub-id pub-id-type="pmid">9851916</pub-id>
+</citation></ref><ref
+id="B10"><citation><name><surname>Costaguta</surname><given-names>G.</given-names></name><name><surname>
+Stefan</surname><given-names>C.J.</given-names></name><name><surname>Bensen</surname><given-names>E.S.</given-names>
+</name><name><surname>Emr</surname><given-names>S.D.</given-names></name><name><surname>Payne</surname><given-names>G.S
+.</given-names></name><article-title>Yeast Gga coat proteins function with clathrin in Golgi
+to endosome transport.</article-title><source>Mol. Biol.
+Cell</source><volume>12</volume><year>2001</year><fpage>1885</fpage><lpage>1896
+</lpage>.<pub-id pub-id-type="pmid">11408593</pub-id> </citation></ref><ref
+id="B11"><citation><name><surname>Cowles</surname><given-names>C.R.</given-names></name><name><surname>
+Snyder</surname><given-names>W.B.</given-names></name><name><surname>Burd</surname><given-names>C.G.</given-names></name
+><name><surname>Emr</surname><given-names>S.D.</given-names></name><article-title>Novel Golgi to vacuole
+delivery pathway in yeast: identification of a sorting determinant and required
+transport component.</article-title><source>EMBO
+J.</source><volume>16</volume><year>1997</year><fpage>2769</fpage><lpage>2782
+</lpage>.<pub-id pub-id-type="pmid">9184222</pub-id> </citation></ref><ref
+id="B12"><citation><name><surname>de
+Chassey</surname><given-names>B.</given-names></name><name><surname>Dubois</surname><given-names>A.</given-names></name>
+<name><surname>Lefkir</surname><given-names>Y.</given-names></name><name><surname>Letourneur</surname><given-names>F.
+</given-names></name><article-title>Identification of clathrin-adaptor medium chains in
+<italic>Dictyostelium discoideum</italic>: differential expression during
+development.</article-title><source>Gene</source><volume>262</volume><year>2001</year>
+<fpage>115</fpage><lpage>122</lpage>.<pub-id pub-id-type="pmid">11179674</pub-id>
+</citation></ref><ref
+id="B13"><citation><name><surname>Dell'Angelica</surname><given-names>E.C.</given-names></name><name>
+<surname>Aguilar</surname><given-names>R.C.</given-names></name><name><surname>Wolins</surname><given-names>N.</given-names>
+</name><name><surname>Hazelwood</surname><given-names>S.</given-names></name><name><surname>Gahl</surname><given-names
+>W.A.</given-names></name><name><surname>Bonifacino</surname><given-names>J.S.</given-names></name><article-title>
+Molecular characterization of the protein encoded by the Hermansky-Pudlak
+syndrome type 1 gene.</article-title><source>J. Biol.
+Chem.</source><volume>275</volume><year>2000a</year><fpage>1300</fpage><lpage>
+1306</lpage>.<pub-id pub-id-type="pmid">10625677</pub-id> </citation></ref><ref
+id="B14"><citation><name><surname>Dell'Angelica</surname><given-names>E.C.</given-names></name><name>
+<surname>Klumperman</surname><given-names>J.</given-names></name><name><surname>Stoorvogel</surname><given-names>W.
+</given-names></name><name><surname>Bonifacino</surname><given-names>J.S.</given-names></name><article-title>
+Association of the AP-3 adaptor complex with
+clathrin.</article-title><source>Science</source><volume>280</volume><year>1998</year>
+<fpage>431</fpage><lpage>434</lpage>.<pub-id pub-id-type="pmid">9545220</pub-id>
+</citation></ref><ref
+id="B15"><citation><name><surname>Dell'Angelica</surname><given-names>E.C.</given-names></name><name>
+<surname>Mullins</surname><given-names>C.</given-names></name><name><surname>Bonifacino</surname><given-names>J.S.
+</given-names></name><article-title>AP-4, a novel protein complex related to clathrin
+adaptors.</article-title><source>J. Biol.
+Chem.</source><volume>274</volume><year>1999a</year><fpage>7278</fpage><lpage>
+7285</lpage>.<pub-id pub-id-type="pmid">10066790</pub-id> </citation></ref><ref
+id="B16"><citation><name><surname>Dell'Angelica</surname><given-names>E.C.</given-names></name><name>
+<surname>Ooi</surname><given-names>C.E.</given-names></name><name><surname>Bonifacino</surname><given-names>J.S.</given-names
+></name><article-title>&#x03B2;3A-adaptin, a subunit of the adaptor-like complex
+AP-3.</article-title><source>J. Biol.
+Chem.</source><volume>272</volume><year>1997</year><fpage>15078</fpage><lpage>
+15084</lpage>.<pub-id pub-id-type="pmid">9182526</pub-id> </citation></ref><ref
+id="B17"><citation><name><surname>Dell'Angelica</surname><given-names>E.C.</given-names></name><name>
+<surname>Puertollano</surname><given-names>R.</given-names></name><name><surname>Mullins</surname><given-names>C.
+</given-names></name><name><surname>Aguilar</surname><given-names>R.C.</given-names></name><name><surname>Vargas
+</surname><given-names>J.D.</given-names></name><name><surname>Hartnell</surname><given-names>L.M.</given-names></name>
+<name><surname>Bonifacino</surname><given-names>J.S.</given-names></name><article-title>GGAs: a family of ADP
+ribosylation factor-binding proteins related to adaptors and associated with the
+Golgi complex.</article-title><source>J. Cell
+Biol.</source><volume>149</volume><year>2000b</year><fpage>81</fpage><lpage>94
+</lpage>.<pub-id pub-id-type="pmid">10747089</pub-id> </citation></ref><ref
+id="B18"><citation><name><surname>Dell'Angelica</surname><given-names>E.C.</given-names></name><name>
+<surname>Shotelersuk</surname><given-names>V.</given-names></name><name><surname>Aguilar</surname><given-names>R.C.
+</given-names></name><name><surname>Gahl</surname><given-names>W.A.</given-names></name><name><surname>Bonifacino
+</surname><given-names>J.S.</given-names></name><article-title>Altered trafficking of lysosomal proteins in
+Hermansky-Pudlak syndrome due to mutations in the &#x03B2;3A subunit of the AP-3
+adaptor.</article-title><source>Mol.
+Cell</source><volume>3</volume><year>1999b</year><fpage>11</fpage><lpage>21
+</lpage>.<pub-id pub-id-type="pmid">10024875</pub-id> </citation></ref><ref
+id="B19"><citation><name><surname>Doolittle</surname><given-names>W.F.</given-names></name><article-title>
+Phylogenetic classification and the universal
+tree.</article-title><source>Science</source><volume>284</volume><year>1999</year>
+<fpage>2124</fpage><lpage>2129</lpage>.<pub-id pub-id-type="pmid">10381871</pub-id>
+</citation></ref><ref
+id="B20"><citation><name><surname>Faber</surname><given-names>P.W.</given-names></name><name><surname>
+Barnes</surname><given-names>G.T.</given-names></name><name><surname>Srinidhi</surname><given-names>J.</given-names>
+</name><name><surname>Chen</surname><given-names>J.</given-names></name><name><surname>Gusella</surname><given-names>J.
+F.</given-names></name><name><surname>MacDonald</surname><given-names>M.E.</given-names></name><article-title>
+Huntingtin interacts with a family of WW domain proteins.</article-title><source>Hum.
+Mol.
+Genet.</source><volume>7</volume><year>1998</year><fpage>1463</fpage><lpage>1474
+</lpage>.<pub-id pub-id-type="pmid">9700202</pub-id> </citation></ref><ref
+id="B21"><citation><name><surname>Faundez</surname><given-names>V.V.</given-names></name><name><surname>
+Kelly</surname><given-names>R.B.</given-names></name><article-title>The AP-3 complex required for
+endosomal synaptic vesicle biogenesis is associated with a casein kinase
+I&#x03B1;-like isoform.</article-title><source>Mol. Biol.
+Cell</source><volume>11</volume><year>2000</year><fpage>2591</fpage><lpage>2604
+</lpage>.<pub-id pub-id-type="pmid">10930456</pub-id> </citation></ref><ref
+id="B22"><citation><name><surname>Feng</surname><given-names>L.</given-names></name><name><surname>Rigatti
+</surname><given-names>B.W.</given-names></name><name><surname>Novak</surname><given-names>E.K.</given-names></name>
+<name><surname>Gorin</surname><given-names>M.B.</given-names></name><name><surname>Swank</surname><given-names>R.T.
+</given-names></name><article-title>Genomic structure of the mouse Ap3b1 gene in normal and
+<italic>pearl</italic>
+mice.</article-title><source>Genomics</source><volume>69</volume><year>2000</year>
+<fpage>370</fpage><lpage>379</lpage>.<pub-id pub-id-type="pmid">11056055</pub-id>
+</citation></ref><ref
+id="B23"><citation><name><surname>Feng</surname><given-names>L.</given-names></name><name><surname>Seymour
+</surname><given-names>A.B.</given-names></name><name><surname>Jiang</surname><given-names>S.</given-names></name><name>
+<surname>To</surname><given-names>A.</given-names></name><name><surname>Peden</surname><given-names>A.A.</given-names></name
+><name><surname>Novak</surname><given-names>E.K.</given-names></name><name><surname>Zhen</surname><given-names>L.
+</given-names></name><name><surname>Rusiniak</surname><given-names>M.E.</given-names></name><name><surname>Eicher
+</surname><given-names>E.M.</given-names></name><name><surname>Robinson</surname><given-names>M.S.</given-names></name>
+<name><surname>Gorin</surname><given-names>M.B.</given-names></name><name><surname>Swank</surname><given-names>R.T.
+</given-names></name><article-title>The &#x03B2;3A subunit gene (Ap3b1) of the AP-3 adaptor
+complex is altered in the mouse hypopigmentation mutant <italic>pearl</italic>, a model
+for Hermansky-Pudlak syndrome and night blindness.</article-title><source>Hum. Mol.
+Genet.</source><volume>8</volume><year>1999</year><fpage>323</fpage><lpage>330
+</lpage>.<pub-id pub-id-type="pmid">9931340</pub-id> </citation></ref><ref
+id="B24"><citation><name><surname>Fergestad</surname><given-names>T.</given-names></name><name><surname>
+Broadie</surname><given-names>K.</given-names></name><article-title>Interaction of stoned and
+synaptotagmin in synaptic vesicle endocytosis.</article-title><source>J.
+Neurosci.</source><volume>21</volume><year>2001</year><fpage>1218</fpage><lpage>
+1227</lpage>.<pub-id pub-id-type="pmid">11160392</pub-id> </citation></ref><ref
+id="B25"><citation><name><surname>Fergestad</surname><given-names>T.</given-names></name><name><surname>
+Davis</surname><given-names>W.S.</given-names></name><name><surname>Broadie</surname><given-names>K.</given-names></name
+><article-title>The stoned proteins regulate synaptic vesicle recycling in the
+presynaptic terminal.</article-title><source>J.
+Neurosci.</source><volume>19</volume><year>1999</year><fpage>5847</fpage><lpage>
+5860</lpage>.<pub-id pub-id-type="pmid">10407025</pub-id> </citation></ref><ref
+id="B26"><citation><name><surname>Fiedler</surname><given-names>K.</given-names></name><name><surname>Veit
+</surname><given-names>M.</given-names></name><name><surname>Stamnes</surname><given-names>M.A.</given-names></name>
+<name><surname>Rothman</surname><given-names>J.E.</given-names></name><article-title>Bimodal interaction of
+coatomer with the p24 family of putative cargo
+receptors.</article-title><source>Science</source><volume>273</volume><year>1996</year>
+<fpage>1396</fpage><lpage>1399</lpage>.<pub-id pub-id-type="pmid">8703076</pub-id>
+</citation></ref><ref
+id="B27"><citation><name><surname>F&#x00F6;lsch</surname><given-names>H.</given-names></name><name>
+<surname>Ohno</surname><given-names>H.</given-names></name><name><surname>Bonifacino</surname><given-names>J.S.</given-names>
+</name><name><surname>Mellman</surname><given-names>I.</given-names></name><article-title>A novel clathrin
+adaptor complex mediates basolateral targeting in polarized epithelial
+cells.</article-title><source>Cell</source><volume>99</volume><year>1999</year><fpage>
+189</fpage><lpage>198</lpage>.<pub-id pub-id-type="pmid">10535737</pub-id>
+</citation></ref><ref
+id="B28"><citation><name><surname>F&#x00F6;lsch</surname><given-names>H.</given-names></name><name>
+<surname>Pypaert</surname><given-names>M.</given-names></name><name><surname>Schu</surname><given-names>P.</given-names>
+</name><name><surname>Mellman</surname><given-names>I.</given-names></name><article-title>Distribution and
+function of AP-1 clathrin adaptor complexes in polarized epithelial
+cells.</article-title><source>J. Cell
+Biol.</source><volume>152</volume><year>2001</year><fpage>595</fpage><lpage>606
+</lpage>.<pub-id pub-id-type="pmid">11157985</pub-id> </citation></ref><ref
+id="B29"><citation><name><surname>Goffeau</surname><given-names>A.</given-names></name><name><surname>
+Barrell</surname><given-names>B.G.</given-names></name><name><surname>Bussey</surname><given-names>H.</given-names>
+</name><name><surname>Davis</surname><given-names>R.W.</given-names></name><name><surname>Dujon</surname><given-names>B
+.</given-names></name><name><surname>Feldmann</surname><given-names>H.</given-names></name><name><surname>
+Galibert</surname><given-names>F.</given-names></name><name><surname>Hoheisel</surname><given-names>J.D.</given-names>
+</name><name><surname>Jacq</surname><given-names>C.</given-names></name><name><surname>Johnston</surname><given-names>M
+.</given-names></name><name><surname>Louis</surname><given-names>E.J.</given-names></name><name><surname>Mewes
+</surname><given-names>H.W.</given-names></name><name><surname>Murakami</surname><given-names>Y.</given-names></name><name
+><surname>Philippsen</surname><given-names>P.</given-names></name><name><surname>Tettelin</surname><given-names>H.
+</given-names></name><name><surname>Oliver</surname><given-names>S.G.</given-names></name><article-title>Life with
+6000
+genes.</article-title><source>Science</source><volume>274</volume><year>1996</year>
+<fpage>546</fpage><lpage>567</lpage>.<pub-id pub-id-type="pmid">8849441</pub-id>
+</citation></ref><ref
+id="B30"><citation><name><surname>Gonz&#x00E1;lez-Gait&#x00E1;n</surname><given-names>M.</given-names>
+</name><name><surname>J&#x00E4;ckle</surname><given-names>H.</given-names></name><article-title>Role of
+<italic>Drosophila</italic> &#x03B1;-adaptin in presynaptic vesicle
+recycling.</article-title><source>Cell</source><volume>88</volume><year>1997</year>
+<fpage>767</fpage><lpage>776</lpage>.<pub-id pub-id-type="pmid">9118220</pub-id>
+</citation></ref><ref
+id="B31"><citation><name><surname>Grant</surname><given-names>B.</given-names></name><name><surname>Hirsh
+</surname><given-names>D.</given-names></name><article-title>Receptor-mediated endocytosis in the
+<italic>Caenorhabditis elegans</italic> oocyte.</article-title><source>Mol. Biol.
+Cell</source><volume>10</volume><year>1999</year><fpage>4311</fpage><lpage>4326
+</lpage>.<pub-id pub-id-type="pmid">10588660</pub-id> </citation></ref><ref
+id="B32"><citation><name><surname>Greenberg</surname><given-names>M.</given-names></name><name><surname>
+DeTulleo</surname><given-names>L.</given-names></name><name><surname>Rapoport</surname><given-names>I.</given-names>
+</name><name><surname>Skowronski</surname><given-names>J.</given-names></name><name><surname>Kirchhausen
+</surname><given-names>T.</given-names></name><article-title>A dileucine motif in HIV-1 Nef is essential
+for sorting into clathrin-coated pits and for downregulation of
+CD4.</article-title><source>Curr.
+Biol.</source><volume>8</volume><year>1998</year><fpage>1239</fpage><lpage>1242
+</lpage>.<pub-id pub-id-type="pmid">9811611</pub-id> </citation></ref><ref
+id="B33"><citation><name><surname>Groves</surname><given-names>M.R.</given-names></name><name><surname>
+Barford</surname><given-names>D.</given-names></name><article-title>Topological characteristics of
+helical repeat proteins.</article-title><source>Curr. Opin. Struct.
+Biol.</source><volume>9</volume><year>1999</year><fpage>383</fpage><lpage>389
+</lpage>.<pub-id pub-id-type="pmid">10361086</pub-id> </citation></ref><ref
+id="B34"><citation><name><surname>Haucke</surname><given-names>V.</given-names></name><name><surname>Wenk
+</surname><given-names>M.R.</given-names></name><name><surname>Chapman</surname><given-names>E.R.</given-names></name>
+<name><surname>Farsad</surname><given-names>K.</given-names></name><name><surname>De
+Camilli</surname><given-names>P.</given-names></name><article-title>Dual interaction of synaptotagmin
+with &#x03BC;2- and &#x03B1;-adaptin facilitates clathrin-coated pit
+nucleation.</article-title><source>EMBO
+J.</source><volume>19</volume><year>2000</year><fpage>6011</fpage><lpage>6019
+</lpage>.<pub-id pub-id-type="pmid">11080148</pub-id> </citation></ref><ref
+id="B35"><citation><name><surname>Hirst</surname><given-names>J.</given-names></name><name><surname>Bright
+</surname><given-names>N.A.</given-names></name><name><surname>Rous</surname><given-names>B.</given-names></name><name>
+<surname>Robinson</surname><given-names>M.S.</given-names></name><article-title>Characterization of a fourth
+adaptor-related protein complex.</article-title><source>Mol. Biol.
+Cell</source><volume>10</volume><year>1999</year><fpage>2787</fpage><lpage>2802
+</lpage>.<pub-id pub-id-type="pmid">10436028</pub-id> </citation></ref><ref
+id="B36"><citation><name><surname>Hirst</surname><given-names>J.</given-names></name><name><surname>Lui
+</surname><given-names>W.W.</given-names></name><name><surname>Bright</surname><given-names>N.A.</given-names></name><name
+><surname>Totty</surname><given-names>N.</given-names></name><name><surname>Seaman</surname><given-names>M.N.</given-names>
+</name><name><surname>Robinson</surname><given-names>M.S.</given-names></name><article-title>A family of
+proteins with &#x03B3;-adaptin and VHS domains that facilitate trafficking
+between the trans-Golgi network and the vacuole/lysosome.</article-title><source>J.
+Cell
+Biol.</source><volume>149</volume><year>2000</year><fpage>67</fpage><lpage>80
+</lpage>.<pub-id pub-id-type="pmid">10747088</pub-id> </citation></ref><ref
+id="B37"><citation><name><surname>Holzmann</surname><given-names>K.</given-names></name><name><surname>
+Poltl</surname><given-names>A.</given-names></name><name><surname>Sauermann</surname><given-names>G.</given-names></name
+><article-title>A novel spliced transcript of human CLAPS2 encoding a protein
+alternative to clathrin adaptor protein
+AP17.</article-title><source>Gene</source><volume>220</volume><year>1998</year><fpage>
+39</fpage><lpage>44</lpage>.<pub-id pub-id-type="pmid">9767099</pub-id>
+</citation></ref><ref id="B38"><citation><collab>The <italic>Arabidopsis</italic> Genome
+Initiative</collab><article-title>Analysis of the genome sequence of the flowering
+plant <italic>Arabidopsis
+thaliana</italic>.</article-title><source>Nature</source><volume>408</volume><year>2000
+</year><fpage>796</fpage><lpage>815</lpage>.<pub-id
+pub-id-type="pmid">11130711</pub-id> </citation></ref><ref
+id="B39"><citation><name><surname>Kantheti</surname><given-names>P.</given-names></name><name><surname>
+Qiao</surname><given-names>X.</given-names></name><name><surname>Diaz</surname><given-names>M.E.</given-names></name>
+<name><surname>Peden</surname><given-names>A.A.</given-names></name><name><surname>Meyer</surname><given-names>G.E.
+</given-names></name><name><surname>Carskadon</surname><given-names>S.L.</given-names></name><name><surname>
+Kapfhamer</surname><given-names>D.</given-names></name><name><surname>Sufalko</surname><given-names>D.</given-names>
+</name><name><surname>Robinson</surname><given-names>M.S.</given-names></name><name><surname>Noebels</surname>
+<given-names>J.L.</given-names></name><name><surname>Burmeister</surname><given-names>M.</given-names></name><article-title>
+Mutation in AP-3 &#x03B4; in the <italic>mocha</italic> mouse links endosomal transport
+to storage deficiency in platelets, melanosomes, and synaptic
+vesicles.</article-title><source>Neuron</source><volume>21</volume><year>1998</year>
+<fpage>111</fpage><lpage>122</lpage>.<pub-id pub-id-type="pmid">9697856</pub-id>
+</citation></ref><ref
+id="B40"><citation><name><surname>Kirchhausen</surname><given-names>T.</given-names></name><article-title>
+Adaptors for clathrin-mediated traffic.</article-title><source>Annu. Rev. Cell Dev.
+Biol.</source><volume>15</volume><year>1999</year><fpage>705</fpage><lpage>732
+</lpage>.<pub-id pub-id-type="pmid">10611976</pub-id> </citation></ref><ref
+id="B41"><citation><name><surname>Kirchhausen</surname><given-names>T.</given-names></name><article-title>
+Clathrin.</article-title><source>Annu. Rev.
+Biochem.</source><volume>69</volume><year>2000</year><fpage>699</fpage><lpage>
+727</lpage>.<pub-id pub-id-type="pmid">10966473</pub-id> </citation></ref><ref
+id="B42"><citation><name><surname>Kretzschmar</surname><given-names>D.</given-names></name><name><surname>
+Poeck</surname><given-names>B.</given-names></name><name><surname>Roth</surname><given-names>H.</given-names></name>
+<name><surname>Ernst</surname><given-names>R.</given-names></name><name><surname>Keller</surname><given-names>A.</given-names
+></name><name><surname>Porsch</surname><given-names>M.</given-names></name><name><surname>Strauss</surname>
+<given-names>R.</given-names></name><name><surname>Pflugfelder</surname><given-names>G.O.</given-names></name><article-title
+>Defective pigment granule biogenesis and aberrant behavior caused by mutations
+in the <italic>Drosophila</italic> AP-3 &#x03B2; adaptin gene
+ruby.</article-title><source>Genetics</source><volume>155</volume><year>2000</year>
+<fpage>213</fpage><lpage>223</lpage>.<pub-id pub-id-type="pmid">10790396</pub-id>
+</citation></ref><ref
+id="B43"><citation><name><surname>Lander</surname><given-names>E.S.</given-names></name><etal/><article-title
+>Initial sequencing and analysis of the human
+genome.</article-title><source>Nature</source><volume>409</volume><year>2001</year>
+<fpage>860</fpage><lpage>921</lpage>.<pub-id pub-id-type="pmid">11237011</pub-id>
+</citation></ref><ref
+id="B44"><citation><name><surname>Lee</surname><given-names>J.</given-names></name><name><surname>
+Jongeward</surname><given-names>G.D.</given-names></name><name><surname>Sternberg</surname><given-names>P.W.
+</given-names></name><article-title><italic>unc-101</italic>, a gene required for many aspects of
+<italic>Caenorhabditis elegans</italic> development and behavior, encodes a
+clathrin-associated protein.</article-title><source>Genes
+Dev.</source><volume>8</volume><year>1994</year><fpage>60</fpage><lpage>73
+</lpage>.<pub-id pub-id-type="pmid">8288128</pub-id> </citation></ref><ref
+id="B45"><citation><name><surname>Levy</surname><given-names>A.D.</given-names></name><name><surname>Yang
+</surname><given-names>J.</given-names></name><name><surname>Kramer</surname><given-names>J.M.</given-names></name>
+<article-title>Molecular and genetic analyses of the <italic>Caenorhabditis elegans</italic>
+dpy-2 and dpy-10 collagen genes: a variety of molecular alterations affect
+organismal morphology.</article-title><source>Mol. Biol.
+Cell</source><volume>4</volume><year>1993</year><fpage>803</fpage><lpage>817
+</lpage>.<pub-id pub-id-type="pmid">8241567</pub-id> </citation></ref><ref
+id="B46"><citation><name><surname>Lewin</surname><given-names>D.A.</given-names></name><name><surname>
+Mellman</surname><given-names>I.</given-names></name><article-title>Sorting out
+adaptors.</article-title><source>Biochim. Biophys.
+Acta</source><volume>1401</volume><year>1998</year><fpage>129</fpage><lpage>145
+</lpage>.<pub-id pub-id-type="pmid">9531969</pub-id> </citation></ref><ref
+id="B47"><citation><name><surname>Lloyd</surname><given-names>V.K.</given-names></name><name><surname>
+Sinclair</surname><given-names>D.A.</given-names></name><name><surname>Wennberg</surname><given-names>R.</given-names>
+</name><name><surname>Warner</surname><given-names>T.S.</given-names></name><name><surname>Honda</surname><given-names>
+B.M.</given-names></name><name><surname>Grigliatti</surname><given-names>T.A.</given-names></name><article-title>A
+genetic and molecular characterization of the <italic>garnet</italic> gene of
+<italic>Drosophila
+melanogaster</italic>.</article-title><source>Genome</source><volume>42</volume><year>1999
+</year><fpage>1183</fpage><lpage>1193</lpage>.<pub-id
+pub-id-type="pmid">10659786</pub-id> </citation></ref><ref
+id="B48"><citation><name><surname>Maldonado-Mendoza</surname><given-names>I.E.</given-names></name>
+<name><surname>Nessler</surname><given-names>C.L.</given-names></name><article-title>Molecular
+characterization of the AP19 gene family in <italic>Arabidopsis thaliana</italic>:
+components of the Golgi AP-1 clathrin assembly protein
+complex.</article-title><source>Plant Mol.
+Biol.</source><volume>35</volume><year>1997</year><fpage>865</fpage><lpage>872
+</lpage>.<pub-id pub-id-type="pmid">9426606</pub-id> </citation></ref><ref
+id="B49"><citation><name><surname>Martina</surname><given-names>J.A.</given-names></name><name><surname>
+Bonangelino</surname><given-names>C.J.</given-names></name><name><surname>Aguilar</surname><given-names>R.C.
+</given-names></name><name><surname>Bonifacino</surname><given-names>J.S.</given-names></name><article-title>Stonin 2.
+An adaptor-like protein that interacts with components of the endocytic
+machinery.</article-title><source>J. Cell
+Biol.</source><volume>153</volume><year>2001</year><fpage>1111</fpage><lpage>
+1120</lpage>.<pub-id pub-id-type="pmid">11381094</pub-id> </citation></ref><ref
+id="B50"><citation><name><surname>Meyer</surname><given-names>C.</given-names></name><name><surname>
+Zizioli</surname><given-names>D.</given-names></name><name><surname>Lausmann</surname><given-names>S.</given-names>
+</name><name><surname>Eskelinen</surname><given-names>E.L.</given-names></name><name><surname>Hamann</surname>
+<given-names>J.</given-names></name><name><surname>Saftig</surname><given-names>P.</given-names></name><name><surname>von
+Figura</surname><given-names>K.</given-names></name><name><surname>Schu</surname><given-names>P.</given-names></name>
+<article-title>&#x03BC;1A-adaptin-deficient mice: lethality, loss of AP-1 binding and
+rerouting of mannose 6-phosphate receptors.</article-title><source>EMBO
+J.</source><volume>19</volume><year>2000</year><fpage>2193</fpage><lpage>2203
+</lpage>.<pub-id pub-id-type="pmid">10811610</pub-id> </citation></ref><ref
+id="B51"><citation>Mullins, C., and Bonifacino, J.S. (2001). Structural
+Requirements for Function of Yeast GGAs in Vacuolar Protein Sorting,
+&#x03B1;-factor Maturation, and Interactions with Clathrin. Mol. Cell. Biol., in
+press.</citation></ref><ref
+id="B52"><citation><name><surname>Mullins</surname><given-names>C.</given-names></name><name><surname>
+Hartnell</surname><given-names>L.M.</given-names></name><name><surname>Bonifacino</surname><given-names>J.S.
+</given-names></name><article-title>Distinct requirements for the AP-3 adaptor complex in
+pigment granule and synaptic vesicle biogenesis in <italic>Drosophila
+melanogaster</italic>.</article-title><source>Mol. Gen.
+Genet.</source><volume>263</volume><year>2000</year><fpage>1003</fpage><lpage>
+1014</lpage>.<pub-id pub-id-type="pmid">10954086</pub-id> </citation></ref><ref
+id="B53"><citation><name><surname>Mullins</surname><given-names>C.</given-names></name><name><surname>
+Hartnell</surname><given-names>L.M.</given-names></name><name><surname>Wassarman</surname><given-names>D.A.</given-names
+></name><name><surname>Bonifacino</surname><given-names>J.S.</given-names></name><article-title>Defective
+expression of the &#x03BC;3 subunit of the AP-3 adaptor complex in the
+<italic>Drosophila</italic> pigmentation mutant. carmine.</article-title><source>Mol. Gen.
+Genet.</source><volume>262</volume><year>1999</year><fpage>401</fpage><lpage>412
+</lpage>.<pub-id pub-id-type="pmid">10589826</pub-id> </citation></ref><ref
+id="B54"><citation><name><surname>Munn</surname><given-names>A.L.</given-names></name><article-title>
+Molecular requirements for the internalization step of endocytosis: insights
+from yeast.</article-title><source>Biochim. Biophys.
+Acta</source><volume>1535</volume><year>2001</year><fpage>236</fpage><lpage>257
+</lpage>.<pub-id pub-id-type="pmid">11278164</pub-id> </citation></ref><ref
+id="B55"><citation><name><surname>Nakai</surname><given-names>M.</given-names></name><name><surname>Takada
+</surname><given-names>T.</given-names></name><name><surname>Endo</surname><given-names>T.</given-names></name><article-title>
+Cloning of the YAP19 gene encoding a putative yeast homolog of AP19, the
+mammalian small chain of the clathrin-assembly
+proteins.</article-title><source>Biochim. Biophys.
+Acta</source><volume>1174</volume><year>1993</year><fpage>282</fpage><lpage>284
+</lpage>.<pub-id pub-id-type="pmid">8373805</pub-id> </citation></ref><ref
+id="B56"><citation><name><surname>Newman</surname><given-names>L.S.</given-names></name><name><surname>
+McKeever</surname><given-names>M.O.</given-names></name><name><surname>Okano</surname><given-names>H.J.</given-names>
+</name><name><surname>Darnell</surname><given-names>R.B.</given-names></name><article-title>&#x03B2;-NAP, a
+cerebellar degeneration antigen, is a neuron-specific vesicle coat
+protein.</article-title><source>Cell</source><volume>82</volume><year>1995</year><fpage
+>773</fpage><lpage>783</lpage>.<pub-id pub-id-type="pmid">7671305</pub-id>
+</citation></ref><ref
+id="B57"><citation><name><surname>Nielsen</surname><given-names>M.S.</given-names></name><name><surname>
+Madsen</surname><given-names>P.</given-names></name><name><surname>Christensen</surname><given-names>E.I.</given-names>
+</name><name><surname>Nykjaer</surname><given-names>A.</given-names></name><name><surname>Gliemann</surname>
+<given-names>J.</given-names></name><name><surname>Kasper</surname><given-names>D.</given-names></name><name><surname>
+Pohlmann</surname><given-names>R.</given-names></name><name><surname>Petersen</surname><given-names>C.M.</given-names>
+</name><article-title>The sortilin cytoplasmic tail conveys Golgi-endosome transport and
+binds the VHS domain of the GGA2 sorting protein.</article-title><source>EMBO
+J.</source><volume>20</volume><year>2001</year><fpage>2180</fpage><lpage>2190
+</lpage>.<pub-id pub-id-type="pmid">11331584</pub-id> </citation></ref><ref
+id="B58"><citation><name><surname>Ohno</surname><given-names>H.</given-names></name><name><surname>Poy
+</surname><given-names>G.</given-names></name><name><surname>Bonifacino</surname><given-names>J.S.</given-names></name>
+<article-title>Cloning of the gene encoding the murine clathrin-associated adaptor
+medium chain &#x03BC;2: gene organization, alternative splicing and chromosomal
+assignment.</article-title><source>Gene</source><volume>210</volume><year>1998</year>
+<fpage>187</fpage><lpage>193</lpage>.<pub-id pub-id-type="pmid">9573360</pub-id>
+</citation></ref><ref
+id="B59"><citation><name><surname>Ohno</surname><given-names>H.</given-names></name><name><surname>
+Tomemori</surname><given-names>T.</given-names></name><name><surname>Nakatsu</surname><given-names>F.</given-names>
+</name><name><surname>Okazaki</surname><given-names>Y.</given-names></name><name><surname>Aguilar</surname><given-names
+>R.C.</given-names></name><name><surname>F&#x00F6;lsch</surname><given-names>H.</given-names></name><name>
+<surname>Mellman</surname><given-names>I.</given-names></name><name><surname>Saito</surname><given-names>T.</given-names>
+</name><name><surname>Shirasawa</surname><given-names>T.</given-names></name><name><surname>Bonifacino</surname>
+<given-names>J.S.</given-names></name><article-title>&#x03BC;1B, a novel adaptor medium chain
+expressed in polarized epithelial cells.</article-title><source>FEBS
+Lett.</source><volume>449</volume><year>1999</year><fpage>215</fpage><lpage>220
+</lpage>.<pub-id pub-id-type="pmid">10338135</pub-id> </citation></ref><ref
+id="B60"><citation><name><surname>Ooi</surname><given-names>C.E.</given-names></name><name><surname>
+Moreira</surname><given-names>J.E.</given-names></name><name><surname>Dell'Angelica</surname><given-names>E.C.
+</given-names></name><name><surname>Poy</surname><given-names>G.</given-names></name><name><surname>Wassarman</surname>
+<given-names>D.A.</given-names></name><name><surname>Bonifacino</surname><given-names>J.S.</given-names></name>
+<article-title>Altered expression of a novel adaptin leads to defective pigment granule
+biogenesis in the <italic>Drosophila</italic> eye color mutant.
+garnet.</article-title><source>EMBO
+J.</source><volume>16</volume><year>1997</year><fpage>4508</fpage><lpage>4518
+</lpage>.<pub-id pub-id-type="pmid">9303295</pub-id> </citation></ref><ref
+id="B61"><citation><name><surname>Owen</surname><given-names>D.J.</given-names></name><name><surname>Evans
+</surname><given-names>P.R.</given-names></name><article-title>A structural explanation for the
+recognition of tyrosine-based endocytotic
+signals.</article-title><source>Science</source><volume>282</volume><year>1998</year>
+<fpage>1327</fpage><lpage>1332</lpage>.<pub-id pub-id-type="pmid">9812899</pub-id>
+</citation></ref><ref
+id="B62"><citation><name><surname>Owen</surname><given-names>D.J.</given-names></name><name><surname>
+Vallis</surname><given-names>Y.</given-names></name><name><surname>Noble</surname><given-names>M.E.</given-names></name>
+<name><surname>Hunter</surname><given-names>J.B.</given-names></name><name><surname>Dafforn</surname><given-names>T.R
+.</given-names></name><name><surname>Evans</surname><given-names>P.R.</given-names></name><name><surname>McMahon
+</surname><given-names>H.T.</given-names></name><article-title>A structural explanation for the binding of
+multiple ligands by the &#x03B1;-adaptin appendage
+domain.</article-title><source>Cell</source><volume>97</volume><year>1999</year><fpage>
+805</fpage><lpage>815</lpage>.<pub-id pub-id-type="pmid">10380931</pub-id>
+</citation></ref><ref
+id="B63"><citation><name><surname>Owen</surname><given-names>D.J.</given-names></name><name><surname>
+Vallis</surname><given-names>Y.</given-names></name><name><surname>Pearse</surname><given-names>B.M.</given-names></name
+><name><surname>McMahon</surname><given-names>H.T.</given-names></name><name><surname>Evans</surname><given-names>P.R
+.</given-names></name><article-title>The structure and function of the &#x03B2;2-adaptin
+appendage domain.</article-title><source>EMBO
+J.</source><volume>19</volume><year>2000</year><fpage>4216</fpage><lpage>4227
+</lpage>.<pub-id pub-id-type="pmid">10944104</pub-id> </citation></ref><ref
+id="B64"><citation><name><surname>Page</surname><given-names>L.J.</given-names></name><name><surname>
+Robinson</surname><given-names>M.S.</given-names></name><article-title>Targeting signals and subunit
+interactions in coated vesicle adaptor complexes.</article-title><source>J. Cell
+Biol.</source><volume>131</volume><year>1995</year><fpage>619</fpage><lpage>630
+</lpage>.<pub-id pub-id-type="pmid">7593184</pub-id> </citation></ref><ref
+id="B65"><citation><name><surname>Page</surname><given-names>L.J.</given-names></name><name><surname>
+Sowerby</surname><given-names>P.J.</given-names></name><name><surname>Lui</surname><given-names>W.W.</given-names></name
+><name><surname>Robinson</surname><given-names>M.S.</given-names></name><article-title>&#x03B3;-synergin: an
+EH domain-containing protein that interacts with
+&#x03B3;-adaptin.</article-title><source>J. Cell
+Biol.</source><volume>146</volume><year>1999</year><fpage>993</fpage><lpage>1004
+</lpage>.<pub-id pub-id-type="pmid">10477754</pub-id> </citation></ref><ref
+id="B66"><citation><name><surname>Pearse</surname><given-names>B.M.</given-names></name><article-title>Coated
+vesicles from pig brain: purification and biochemical
+characterization.</article-title><source>J. Mol.
+Biol.</source><volume>97</volume><year>1975</year><fpage>93</fpage><lpage>98
+</lpage>.<pub-id pub-id-type="pmid">1177317</pub-id> </citation></ref><ref
+id="B67"><citation><name><surname>Pevsner</surname><given-names>J.</given-names></name><name><surname>
+Volknandt</surname><given-names>W.</given-names></name><name><surname>Wong</surname><given-names>B.R.</given-names>
+</name><name><surname>Scheller</surname><given-names>R.H.</given-names></name><article-title>Two rat homologs
+of clathrin-associated adaptor
+proteins.</article-title><source>Gene</source><volume>146</volume><year>1994</year>
+<fpage>279</fpage><lpage>283</lpage>.<pub-id pub-id-type="pmid">8076832</pub-id>
+</citation></ref><ref
+id="B68"><citation><name><surname>Peyrard</surname><given-names>M.</given-names></name><name><surname>
+Fransson</surname><given-names>I.</given-names></name><name><surname>Xie</surname><given-names>Y.G.</given-names></name>
+<name><surname>Han</surname><given-names>F.Y.</given-names></name><name><surname>Ruttledge</surname><given-names>M.H.
+</given-names></name><name><surname>Swahn</surname><given-names>S.</given-names></name><name><surname>Collins
+</surname><given-names>J.E.</given-names></name><name><surname>Dunham</surname><given-names>I.</given-names></name><name>
+<surname>Collins</surname><given-names>V.P.</given-names></name><name><surname>Dumanski</surname><given-names>J.P.
+</given-names></name><article-title>Characterization of a new member of the human
+&#x03B2;-adaptin gene family from chromosome 22q12, a candidate meningioma
+gene.</article-title><source>Hum. Mol.
+Genet.</source><volume>3</volume><year>1994</year><fpage>1393</fpage><lpage>1399
+</lpage>.<pub-id pub-id-type="pmid">7987321</pub-id> </citation></ref><ref
+id="B69"><citation><name><surname>Phan</surname><given-names>H.L.</given-names></name><name><surname>
+Finlay</surname><given-names>J.A.</given-names></name><name><surname>Chu</surname><given-names>D.S.</given-names></name>
+<name><surname>Tan</surname><given-names>P.K.</given-names></name><name><surname>Kirchhausen</surname><given-names>T.
+</given-names></name><name><surname>Payne</surname><given-names>G.S.</given-names></name><article-title>The
+<italic>Saccharomyces cerevisiae</italic> APS1 gene encodes a homolog of the small
+subunit of the mammalian clathrin AP-1 complex: evidence for functional
+interaction with clathrin at the Golgi complex.</article-title><source>EMBO
+J.</source><volume>13</volume><year>1994</year><fpage>1706</fpage><lpage>1717
+</lpage>.<pub-id pub-id-type="pmid">8157009</pub-id> </citation></ref><ref
+id="B70"><citation><name><surname>Phillips</surname><given-names>A.M.</given-names></name><name><surname>
+Smith</surname><given-names>M.</given-names></name><name><surname>Ramaswami</surname><given-names>M.</given-names></name
+><name><surname>Kelly</surname><given-names>L.E.</given-names></name><article-title>The products of the
+<italic>Drosophila</italic> stoned locus interact with synaptic vesicles via
+synaptotagmin.</article-title><source>J.
+Neurosci.</source><volume>20</volume><year>2000</year><fpage>8254</fpage><lpage>
+8261</lpage>.<pub-id pub-id-type="pmid">11069931</pub-id> </citation></ref><ref
+id="B71"><citation><name><surname>Poussu</surname><given-names>A.</given-names></name><name><surname>Lohi
+</surname><given-names>O.</given-names></name><name><surname>Lehto</surname><given-names>V.P.</given-names></name><article-title
+>Vear, a novel Golgi-associated protein with VHS and &#x03B3;-adaptin
+&#x201C;ear&#x201D;domains.</article-title><source>J. Biol.
+Chem.</source><volume>275</volume><year>2000</year><fpage>7176</fpage><lpage>
+7183</lpage>.<pub-id pub-id-type="pmid">10702286</pub-id> </citation></ref><ref
+id="B72"><citation><name><surname>Puertollano</surname><given-names>R.</given-names></name><name><surname>
+Aguilar</surname><given-names>R.C.</given-names></name><name><surname>Gorshkova</surname><given-names>I.</given-names>
+</name><name><surname>Crouch</surname><given-names>R.J.</given-names></name><name><surname>Bonifacino</surname>
+<given-names>J.S.</given-names></name><article-title>Sorting of mannose 6-phosphate receptors mediated
+by the
+GGAs.</article-title><source>Science</source><volume>292</volume><year>2001a</year>
+<fpage>1712</fpage><lpage>1716</lpage>.<pub-id pub-id-type="pmid">11387475</pub-id>
+</citation></ref><ref
+id="B73"><citation><name><surname>Puertollano</surname><given-names>R.</given-names></name><name><surname>
+Randazzo</surname><given-names>P.A.</given-names></name><name><surname>Presley</surname><given-names>J.F.</given-names>
+</name><name><surname>Hartnell</surname><given-names>L.M.</given-names></name><name><surname>Bonifacino
+</surname><given-names>J.S.</given-names></name><article-title>The GGAs promote ARF-dependent recruitment
+of clathrin to the
+TGN.</article-title><source>Cell</source><volume>105</volume><year>2001b</year><fpage>
+93</fpage><lpage>102</lpage>.<pub-id pub-id-type="pmid">11301005</pub-id>
+</citation></ref><ref
+id="B74"><citation><name><surname>Rad</surname><given-names>M.R.</given-names></name><name><surname>Phan
+</surname><given-names>H.L.</given-names></name><name><surname>Kirchrath</surname><given-names>L.</given-names></name>
+<name><surname>Tan</surname><given-names>P.K.</given-names></name><name><surname>Kirchhausen</surname><given-names>T.
+</given-names></name><name><surname>Hollenberg</surname><given-names>C.P.</given-names></name><name><surname>Payne
+</surname><given-names>G.S.</given-names></name><article-title><italic>Saccharomyces cerevisiae</italic> Apl2p, a
+homologue of the mammalian clathrin AP &#x03B2; subunit, plays a role in
+clathrin-dependent Golgi functions.</article-title><source>J. Cell
+Sci.</source><volume>108</volume><year>1995</year><fpage>1605</fpage><lpage>1615
+</lpage>.<pub-id pub-id-type="pmid">7615679</pub-id> </citation></ref><ref
+id="B75"><citation><name><surname>Radice</surname><given-names>P.</given-names></name><name><surname>
+Pensotti</surname><given-names>V.</given-names></name><name><surname>Jones</surname><given-names>C.</given-names></name>
+<name><surname>Perry</surname><given-names>H.</given-names></name><name><surname>Pierotti</surname><given-names>M.A.
+</given-names></name><name><surname>Tunnacliffe</surname><given-names>A.</given-names></name><article-title>The human
+archain gene, ARCN1, has highly conserved homologs in rice and.
+<italic>Drosophila</italic>.</article-title><source>Genomics</source><volume>26</volume><year>
+1995</year><fpage>101</fpage><lpage>106</lpage>.<pub-id
+pub-id-type="pmid">7782067</pub-id> </citation></ref><ref
+id="B76"><citation><name><surname>Rapoport</surname><given-names>I.</given-names></name><name><surname>
+Chen</surname><given-names>Y.C.</given-names></name><name><surname>Cupers</surname><given-names>P.</given-names></name>
+<name><surname>Shoelson</surname><given-names>S.E.</given-names></name><name><surname>Kirchhausen</surname>
+<given-names>T.</given-names></name><article-title>Dileucine-based sorting signals bind to the
+&#x03B2; chain of AP-1 at a site distinct and regulated differently from the
+tyrosine-based motif- binding site.</article-title><source>EMBO
+J.</source><volume>17</volume><year>1998</year><fpage>2148</fpage><lpage>2155
+</lpage>.<pub-id pub-id-type="pmid">9545228</pub-id> </citation></ref><ref
+id="B77"><citation><name><surname>Robinson</surname><given-names>M.S.</given-names></name><article-title>
+Cloning of cDNAs encoding two related 100-kD coated vesicle proteins
+(&#x03B1;-adaptins).</article-title><source>J. Cell
+Biol.</source><volume>108</volume><year>1989</year><fpage>833</fpage><lpage>842
+</lpage>.<pub-id pub-id-type="pmid">2564002</pub-id> </citation></ref><ref
+id="B78"><citation><name><surname>Robinson</surname><given-names>M.S.</given-names></name><name><surname>
+Bonifacino</surname><given-names>J.S.</given-names></name><article-title>Adaptor-related
+proteins.</article-title><source>Curr. Opin. Cell
+Biol.</source><volume>13</volume><year>2001</year><fpage>444</fpage><lpage>453
+</lpage>.<pub-id pub-id-type="pmid">11454451</pub-id> </citation></ref><ref
+id="B79"><citation><name><surname>Schledzewski</surname><given-names>K.</given-names></name><name><surname
+>Brinkmann</surname><given-names>H.</given-names></name><name><surname>Mendel</surname><given-names>R.R.</given-names>
+</name><article-title>Phylogenetic analysis of components of the eukaryotic vesicle
+transport system reveals a common origin of adaptor protein complexes 1, 2, and
+3 and the F subcomplex of the coatomer COPI.</article-title><source>J. Mol.
+Evol.</source><volume>48</volume><year>1999</year><fpage>770</fpage><lpage>778
+</lpage>.<pub-id pub-id-type="pmid">10229581</pub-id> </citation></ref><ref
+id="B80"><citation><name><surname>Serafini</surname><given-names>T.</given-names></name><name><surname>
+Stenbeck</surname><given-names>G.</given-names></name><name><surname>Brecht</surname><given-names>A.</given-names></name
+><name><surname>Lottspeich</surname><given-names>F.</given-names></name><name><surname>Orci</surname><given-names>L.
+</given-names></name><name><surname>Rothman</surname><given-names>J.E.</given-names></name><name><surname>Wieland
+</surname><given-names>F.T.</given-names></name><article-title>A coat subunit of Golgi-derived
+non-clathrin-coated vesicles with homology to the clathrin-coated vesicle coat
+protein
+&#x03B2;-adaptin.</article-title><source>Nature</source><volume>349</volume><year>1991
+</year><fpage>215</fpage><lpage>220</lpage>.<pub-id
+pub-id-type="pmid">1898984</pub-id> </citation></ref><ref
+id="B81"><citation><name><surname>Shim</surname><given-names>J.</given-names></name><name><surname>Lee
+</surname><given-names>J.</given-names></name><article-title>Molecular genetic analysis of <italic>apm-2</italic>
+and <italic>aps-2</italic>, genes encoding the medium and small chains of the AP-2
+clathrin-associated protein complex in the nematode <italic>Caenorhabditis
+elegans</italic>.</article-title><source>Mol.
+Cells</source><volume>10</volume><year>2000</year><fpage>309</fpage><lpage>316
+</lpage>.<pub-id pub-id-type="pmid">10901169</pub-id> </citation></ref><ref
+id="B82"><citation><name><surname>Shim</surname><given-names>J.</given-names></name><name><surname>
+Sternberg</surname><given-names>P.W.</given-names></name><name><surname>Lee</surname><given-names>J.</given-names></name
+><article-title>Distinct and redundant functions of &#x03BC;1 medium chains of the AP-1
+clathrin-associated protein complex in the nematode <italic>Caenorhabditis
+elegans</italic>.</article-title><source>Mol. Biol.
+Cell</source><volume>11</volume><year>2000</year><fpage>2743</fpage><lpage>2756
+</lpage>.<pub-id pub-id-type="pmid">10930467</pub-id> </citation></ref><ref
+id="B83"><citation><name><surname>Simpson</surname><given-names>F.</given-names></name><name><surname>
+Peden</surname><given-names>A.A.</given-names></name><name><surname>Christopoulou</surname><given-names>L.</given-names>
+</name><name><surname>Robinson</surname><given-names>M.S.</given-names></name><article-title>Characterization
+of the adaptor-related protein complex, AP-3.</article-title><source>J. Cell
+Biol.</source><volume>137</volume><year>1997</year><fpage>835</fpage><lpage>845
+</lpage>.<pub-id pub-id-type="pmid">9151686</pub-id> </citation></ref><ref
+id="B84"><citation><name><surname>Slepnev</surname><given-names>V.I.</given-names></name><name><surname>De
+Camilli</surname><given-names>P.</given-names></name><article-title>Accessory factors in
+clathrin-dependent synaptic vesicle endocytosis.</article-title><source>Nat. Rev.
+Neurosci.</source><volume>1</volume><year>2000</year><fpage>161</fpage><lpage>
+172</lpage>.<pub-id pub-id-type="pmid">11257904</pub-id> </citation></ref><ref
+id="B85"><citation><name><surname>Stepp</surname><given-names>J.D.</given-names></name><name><surname>
+Pellicena-Palle</surname><given-names>A.</given-names></name><name><surname>Hamilton</surname><given-names>S.
+</given-names></name><name><surname>Kirchhausen</surname><given-names>T.</given-names></name><name><surname>Lemmon
+</surname><given-names>S.K.</given-names></name><article-title>A late Golgi sorting function for
+<italic>Saccharomyces cerevisiae</italic> Apm1p, but not for Apm2p, a second yeast
+clathrin AP medium chain-related protein.</article-title><source>Mol. Biol.
+Cell</source><volume>6</volume><year>1995</year><fpage>41</fpage><lpage>58
+</lpage>.<pub-id pub-id-type="pmid">7749194</pub-id> </citation></ref><ref
+id="B86"><citation><name><surname>Stimson</surname><given-names>D.T.</given-names></name><name><surname>
+Estes</surname><given-names>P.S.</given-names></name><name><surname>Rao</surname><given-names>S.</given-names></name>
+<name><surname>Krishnan</surname><given-names>K.S.</given-names></name><name><surname>Kelly</surname><given-names>L.E.
+</given-names></name><name><surname>Ramaswami</surname><given-names>M.</given-names></name><article-title><italic>
+Drosophila</italic> stoned proteins regulate the rate and fidelity of synaptic
+vesicle internalization.</article-title><source>J.
+Neurosci.</source><volume>21</volume><year>2001</year><fpage>3034</fpage><lpage>
+3044</lpage>.<pub-id pub-id-type="pmid">11312288</pub-id> </citation></ref><ref
+id="B87"><citation><name><surname>Takatsu</surname><given-names>H.</given-names></name><name><surname>
+Yoshino</surname><given-names>K.</given-names></name><name><surname>Nakayama</surname><given-names>K.</given-names>
+</name><article-title>Adaptor &#x03B3; ear homology domain conserved in &#x03B3;-adaptin
+and GGA proteins that interact with &#x03B3;-synergin.</article-title><source>Biochem.
+Biophys. Res.
+Commun.</source><volume>271</volume><year>2000</year><fpage>719</fpage><lpage>
+725</lpage>.<pub-id pub-id-type="pmid">10814529</pub-id> </citation></ref><ref
+id="B88"><citation><name><surname>Takatsu</surname><given-names>H.</given-names></name><name><surname>
+Katoh</surname><given-names>Y.</given-names></name><name><surname>Shiba</surname><given-names>Y.</given-names></name>
+<name><surname>Nakayama</surname><given-names>K.</given-names></name><article-title>GGA proteins interact with
+acidic di-leucine sequences within the cytoplasmic domains of sorting receptors
+through their VHS domains.</article-title><source>J. Biol.
+Chem.</source><volume>276</volume><year>2001</year><fpage>28541</fpage><lpage>
+28545</lpage>.<pub-id pub-id-type="pmid">11390366</pub-id> </citation></ref><ref
+id="B89"><citation><name><surname>Traub</surname><given-names>L.M.</given-names></name><name><surname>
+Downs</surname><given-names>M.A.</given-names></name><name><surname>Westrich</surname><given-names>J.L.</given-names>
+</name><name><surname>Fremont</surname><given-names>D.H.</given-names></name><article-title>Crystal structure
+of the &#x03B1; appendage of AP-2 reveals a recruitment platform for
+clathrin-coat assembly.</article-title><source>Proc. Natl. Acad. Sci. U S
+A</source><volume>96</volume><year>1999</year><fpage>8907</fpage><lpage>8912
+</lpage>.<pub-id pub-id-type="pmid">10430869</pub-id> </citation></ref><ref
+id="B90"><citation><name><surname>Tunnacliffe</surname><given-names>A.</given-names></name><name><surname>
+van de
+Vrugt</surname><given-names>H.</given-names></name><name><surname>Pensotti</surname><given-names>V.</given-names></name>
+<name><surname>Radice</surname><given-names>P.</given-names></name><article-title>The coatomer protein
+&#x03B4;-COP, encoded by the archain gene, is conserved across diverse
+eukaryotes.</article-title><source>Mamm.
+Genome</source><volume>7</volume><year>1996</year><fpage>784</fpage><lpage>786
+</lpage>.<pub-id pub-id-type="pmid">8854871</pub-id> </citation></ref><ref
+id="B91"><citation><name><surname>Venter</surname><given-names>J.C.</given-names></name><etal/><article-title
+>The sequence of the human
+genome.</article-title><source>Science</source><volume>291</volume><year>2001</year>
+<fpage>1304</fpage><lpage>1351</lpage>.<pub-id pub-id-type="pmid">11181995</pub-id>
+</citation></ref><ref
+id="B92"><citation><name><surname>Walther</surname><given-names>K.</given-names></name><name><surname>
+Krauss</surname><given-names>M.</given-names></name><name><surname>Diril</surname><given-names>M.K.</given-names></name>
+<name><surname>Lemke</surname><given-names>S.</given-names></name><name><surname>Ricotta</surname><given-names>D.
+</given-names></name><name><surname>H&#x00F6;ning</surname><given-names>S.</given-names></name><name><surname>
+Haucke</surname><given-names>V.</given-names></name><article-title>Human Stoned B interacts with AP-2 and
+synaptoagmin and facilitates clathrin-coated vesicle
+uncoating.</article-title><source>EMBO
+Rep.</source><volume>2</volume><year>2001</year><fpage>634</fpage><lpage>640
+</lpage>.<pub-id pub-id-type="pmid">11454741</pub-id> </citation></ref><ref
+id="B93"><citation><name><surname>Wang</surname><given-names>X.</given-names></name><name><surname>
+Kilimann</surname><given-names>M.W.</given-names></name><article-title>Identification of two new
+&#x03BC;-adaptin-related proteins, &#x03BC;-ARP1 and
+&#x03BC;-ARP2.</article-title><source>FEBS
+Lett.</source><volume>402</volume><year>1997</year><fpage>57</fpage><lpage>61
+</lpage>.<pub-id pub-id-type="pmid">9013859</pub-id> </citation></ref><ref
+id="B94"><citation><name><surname>Waters</surname><given-names>M.G.</given-names></name><name><surname>
+Serafini</surname><given-names>T.</given-names></name><name><surname>Rothman</surname><given-names>J.E.</given-names>
+</name><article-title>'Coatomer': a cytosolic protein complex containing subunits of
+non-clathrin-coated Golgi transport
+vesicles.</article-title><source>Nature</source><volume>349</volume><year>1991</year>
+<fpage>248</fpage><lpage>251</lpage>.<pub-id pub-id-type="pmid">1898986</pub-id>
+</citation></ref><ref
+id="B95"><citation><name><surname>Wilde</surname><given-names>A.</given-names></name><name><surname>
+Brodsky</surname><given-names>F.M.</given-names></name><article-title>In vivo phosphorylation of adaptors
+regulates their interaction with clathrin.</article-title><source>J. Cell
+Biol.</source><volume>135</volume><year>1996</year><fpage>635</fpage><lpage>645
+</lpage>.<pub-id pub-id-type="pmid">8909539</pub-id> </citation></ref><ref
+id="B96"><citation><name><surname>Yang</surname><given-names>W.</given-names></name><name><surname>Li</surname
+><given-names>C.</given-names></name><name><surname>Ward</surname><given-names>D.M.</given-names></name><name><surname>
+Kaplan</surname><given-names>J.</given-names></name><name><surname>Mansour</surname><given-names>S.L.</given-names>
+</name><article-title>Defective organellar membrane protein trafficking in
+Ap3b1-deficient cells.</article-title><source>J. Cell
+Sci.</source><volume>113</volume><year>2000</year><fpage>4077</fpage><lpage>4086
+</lpage>.<pub-id pub-id-type="pmid">11058094</pub-id> </citation></ref><ref
+id="B97"><citation><name><surname>Yeung</surname><given-names>B.G.</given-names></name><name><surname>Phan
+</surname><given-names>H.L.</given-names></name><name><surname>Payne</surname><given-names>G.S.</given-names></name>
+<article-title>Adaptor complex-independent clathrin function in
+yeast.</article-title><source>Mol. Biol.
+Cell</source><volume>10</volume><year>1999</year><fpage>3643</fpage><lpage>3659
+</lpage>.<pub-id pub-id-type="pmid">10564262</pub-id> </citation></ref><ref
+id="B98"><citation><name><surname>Zhdankina</surname><given-names>O.</given-names></name><name><surname>
+Strand</surname><given-names>N.L.</given-names></name><name><surname>Redmond</surname><given-names>J.M.</given-names>
+</name><name><surname>Boman</surname><given-names>A.L.</given-names></name><article-title>Yeast GGA proteins
+interact with GTP-bound ARF and facilitate transport through the
+Golgi.</article-title><source>Yeast</source><volume>18</volume><year>2001</year><fpage>
+1</fpage><lpage>18</lpage>.<pub-id pub-id-type="pmid">11124697</pub-id>
+</citation></ref><ref
+id="B99"><citation><name><surname>Zhu</surname><given-names>Y.</given-names></name><name><surname>Doray
+</surname><given-names>B.</given-names></name><name><surname>Poussu</surname><given-names>A.</given-names></name><name>
+<surname>Lehto</surname><given-names>V.P.</given-names></name><name><surname>Kornfeld</surname><given-names>S.</given-names>
+</name><article-title>Binding of GGA2 to the lysosomal enzyme sorting motif of the
+mannose 6-phosphate
+receptor.</article-title><source>Science</source><volume>292</volume><year>2001</year>
+<fpage>1716</fpage><lpage>1718</lpage>.<pub-id pub-id-type="pmid">11387476</pub-id>
+</citation></ref><ref
+id="B100"><citation><name><surname>Zizioli</surname><given-names>D.</given-names></name><name><surname>
+Meyer</surname><given-names>C.</given-names></name><name><surname>Guhde</surname><given-names>G.</given-names></name>
+<name><surname>Saftig</surname><given-names>P.</given-names></name><name><surname>von
+Figura</surname><given-names>K.</given-names></name><name><surname>Schu</surname><given-names>P.</given-names></name>
+<article-title>Early embryonic death of mice deficient in
+&#x03B3;-adaptin.</article-title><source>J. Biol.
+Chem.</source><volume>274</volume><year>1999</year><fpage>5385</fpage><lpage>
+5390</lpage>.<pub-id pub-id-type="pmid">10026148</pub-id>
+</citation></ref></ref-list></back><?mtl /hellip?></article> 

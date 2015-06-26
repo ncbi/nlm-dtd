@@ -1,0 +1,188 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Tag Library Introduction</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="intro">
+         <h1 class="header">General Introduction</h1>
+         <ul class="bullist">
+            <li><a href="n-y000.html#dtddesign">DTD Design Principles
+                   </a><ul class="bullist">
+                  <li><a href="n-y000.html#purpose">Purpose and Characteristics</a></li>
+                  <li><a href="n-y000.html#dtdscope">Scope: Journal Articles</a></li>
+                  <li><a href="n-y000.html#modularoverview">Modular DTD Design</a></li>
+                  <li><a href="n-y000.html#accessibility">Accessibility</a></li>
+               </ul>
+            </li>
+            <li><a href="n-q800.html#authordoc">Documentation for Authors</a><ul class="bullist">
+                  <li><a href="n-q800.html#articleintro">Introduction to Article</a></li>
+                  <li><a href="n-q800.html#howto">How to Read This Tag Library</a><ul class="bullist">
+                        <li><a href="n-q800.html#terms">Terms and Definitions</a></li>
+                        <li><a href="n-q800.html#howtostart">How To Start Using This Tag Library</a></li>
+                        <li><a href="n-q800.html#structure">Tag Library Organization</a></li>
+                        <li><a href="n-q800.html#typog">Typographic Conventions</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li><a href="n-dv00.html#impledoc">Documentation for Implementors</a><ul class="bullist">
+                  <li><a href="n-dv00.html#modulardesign">Modular DTD Design</a></li>
+                  <li><a href="n-dv00.html#developed">DTDs from the Base Suite</a></li>
+                  <li><a href="n-dv00.html#learnDTD">Learning the DTD</a></li>
+                  <li>Structure of the Authoring DTD
+                     <ul class="bullist">
+                        <li><a href="n-3t00.html#classes">Element Classes</a></li>
+                        <li><a href="n-3t00.html#elementclasses">Element Classes in the Suite</a></li>
+                        <li><a href="n-3t00.html#modules">Modules in the DTD and Suite</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="n-dv00.html#howtodtds">How To Make New DTDs</a><ul class="bullist">
+                        <li><a href="n-dv00.html#pes">Parameter Entity Modules to Customize and Change</a></li>
+                        <li><a href="n-dv00.html#concept">Concept</a></li>
+                        <li><a href="n-dv00.html#variant">Making a Variant DTD</a></li>
+                        <li><a href="n-dv00.html#howtobuild">How To Build a New Custom DTD</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="n-dv00.html#naming">DTD Suite Naming Conventions</a><ul class="bullist">
+                        <li><a href="n-dv00.html#elemnamerules">Element and Attribute Naming Rules</a></li>
+                        <li><a href="n-dv00.html#pesclassmix">Parameter Entity Names for Classes and Mixes</a></li>
+                        <li><a href="n-dv00.html#filenaming">File Naming Conventions</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="n-dv00.html#phaseII">Phase II DTD Work</a></li>
+               </ul>
+            </li>
+         </ul>
+         <p class="para">The Article Authoring Document Type Definition (hereafter Authoring DTD) is used to create new journal articles tagged with
+            XML elements. The DTD defines the elements (and their attributes) that describe the content of most journal articles, as well
+            the content of some non-article journal material, such as editorials and book reviews. The person using this DTD is typically
+            one of the article&#8217;s authors or someone (such as a copyeditor) to whom the author has sent the XML files.  The DTD is intended
+            for use with XML-aware or text-editing software to guide the writer in choosing tags correctly. This DTD is a simplified version
+            of the Journal Publishing (Blue) DTD, which describes the biological and medical journal articles archived in PubMed Central.
+         </p>
+         <p class="para">This Tag Library provides the documentation for the authoring tag set including examples of element and attribute usage. The
+            documentation is divided in to two levels: author documentation and implementor documentation, which is more detailed for
+            people who need to modify or maintain the DTD. Author-level reference material includes:
+             
+            <ul class="bullist">
+               <li>This brief introduction;</li>
+               <li>An explanation of how to read and use this Tag Library;</li>
+               <li>A top-level introduction to the <a href="n-s620.html"><span class="elementtag">&lt;article&gt;</span></a> tag;
+               </li>
+               <li>Large reference sections describing all the elements and attributes. (This part of
+                   the Tag Library provides individual definitions and tagged examples for most of
+                   the elements and attributes used in the DTD.);
+               </li>
+               <li>Tree-like hierarchical diagrams that show the structures in the Authoring DTD; and </li>
+               <li>A full article sample, which has been tagged as an XML file valid to this DTD.</li>
+            </ul> Implementor-level material is also included:
+            <ul class="bullist">
+               <li>A separate reference section describing the Parameter Entities;</li>
+               <li>An introduction to the design principles for the whole modular
+                   Archiving and Interchange DTD Suite from which this DTD was constructed;
+               </li>
+               <li>An explanation of how to build new DTDs from the modules in the
+                    Suite;
+               </li>
+               <li>Tables and appendices useful for reference on the fine points
+                   of the DTD (such as naming conventions); and 
+               </li>
+               <li>Reading copies of both the DTD-specific modules and the modules of the Suite that were used.</li>
+            </ul>
+         </p>
+         <hr class="hrule">
+         <div class="section"><a name="dtddesign"></a><h2 class="header">DTD Design Principles</h2>
+            <hr class="hrule">
+            <div class="section"><a name="purpose"></a><h2 class="header">Purpose and Characteristics</h2>
+               <p class="para">This Authoring DTD create(s) a standardized format for new journal articles that can be used by authors to submit publications
+                  to journals and to archives such as PubMed Central. The focus on authoring means that this is a smaller, tighter, less inclusive
+                  DTD than would have been necessary  to create a journal <em>archiving</em> DTD. Unlike an archiving DTD, which needs to accommodate a wide
+                   variety of structures and offers very flexible content models for elements, this DTD is more prescriptive than descriptive
+                  and includes many elements whose content must occur in a specified order. This is a DTD optimized for authorship of new journal
+                  articles, where regularization and control of content is important, and where it is useful rather than harmful to have only
+                  one way to tag a structure.
+               </p>
+               <p class="para">Since no assumptions can be made concerning the processing software and editorial situation that will receive an article authored
+                  in this DTD, tagging that forces specific formatting has been avoided. There is no way for an author to number his/her lists
+                  explicitly, for example, or to manually number the cited references, since many journals have their own citation policies.
+                  Numbers for the cited references must be generated by software to match editorial policy. For proofing purposes the stlyesheets
+                  that may be used to produce PDF from these tagged articles number the references as counting numbers and the stylesheets that
+                  produce HTML for proofing display the identifier of the <a href="n-6ma0.html"><span class="elementtag">&lt;ref&gt;</span></a> as the number.
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="dtdscope"></a><h2 class="header">Scope: Journal Articles</h2>
+               <ul class="bullist">
+                  <li><em>Articles</em>. This is not a DTD for complete journals. The Authoring DTD models journal articles, where such an article is defined as
+                     the typical research article found in an STM journal. By design, the definition of an article is broad enough to include other
+                     article-like material found in journals, for example, editorials, short new pieces, obituaries, meeting reports, and book
+                     or product reviews. 
+                  </li>
+                  <li><em>Header and Body</em>. This DTD describes both the metadata for a journal article and the content of the article. Both are required to make a complete
+                     article.
+                  </li>
+                  <li><em>Multidisciplinary</em>.  Although designed for biomedical journals, this DTD should be sufficiently general to describe not only STM journals but
+                     technical journals in any field.
+                  </li>
+               </ul>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="modularoverview"></a><h2 class="header">Modular DTD Design</h2>
+               <p class="para">The Authoring DTD has been written as a set of &#8220;modules&#8221; that make use of the modules of the Archiving and Interchange DTD
+                  Suite. Each module is a separate physical file, no module
+                   is an entire DTD by itself, and modules can be combined into a number of
+                   different DTDs. The module files are primarily intended for ease of constructing new DTDs and ease of maintenance.
+               </p>
+               <p class="para">The major disadvantage of a modular system is the longer learning
+                   curve, since it may not be immediately obvious <em>where</em>
+                   within the system to find a particular element or attribute cluster. To help
+                   with this, the description of each element in the Element Section of this
+                   documentation names the module in which that element is defined.
+               </p>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="accessibility"></a><h2 class="header">Accessibility</h2>
+               <p class="para">Because access for a wide range of output devices, as well as for
+                         the visually impaired, is becoming more and more important in the STM journal
+                         community, the modules in the Archiving and Interchange Suite were designed to follow, as much as
+                         possible, the W3C <a href="http://www.w3.org/TR/2002/WD-WCAG20-20020822/"><span class="citetitle">Web Content Accessibility Guidelines
+                               2.0</span></a> working draft.  This DTD is based on the Archiving and Interchange DTD Suite, which used the August 2002 specification, which
+                  was the latest accessibility specification
+                         available when the Suite was initially constructed. This Specification specifies
+                         accessibility guidelines on many levels from design through application. The
+                         guidelines which pertain to the modeling of materials were followed to at least
+                         Level-2 compliance. For example, a <a href="n-vt80.html"><span class="elementname">Long Description</span></a>
+                         <a href="n-vt80.html"><span class="elementtag">&lt;long-desc&gt;</span></a> element was defined as part of many
+                         other elements, such as <a href="n-8x50.html"><span class="elementname">Figure</span></a> <a href="n-8x50.html"><span class="elementtag">&lt;fig&gt;</span></a>, so it can be added not only to all figures and other graphical objects, but to any section of the text (for example, to
+                  a <a href="n-98c0.html"><span class="elementname">Boxed Text</span></a> <a href="n-98c0.html"><span class="elementtag">&lt;boxed-text&gt;</span></a>) to provide an accessible description of the object. The <a href="n-pvt0.html"><span class="attrtag">xml:lang</span></a> attribute was added to all
+                         section-level elements and many paragraph-level elements to permit explicit
+                         indication of the language of the content, as required by these guidelines. The <a href="n-hc20.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-hc20.html"><span class="elementtag">&lt;abbrev&gt;</span></a> element (also to be used for acronyms) was added to meet Checkpoint 4.3.
+               </p>
+            </div>
+         </div>
+         <h3 class="header">Subsidiary sections:</h3>
+         <h4 class="header"><a href="n-q800.html">Documentation for Authors</a></h4>
+         <h4 class="header"><a href="n-dv00.html">Documentation for Implementors</a></h4>
+         <hr class="hrule">
+         <div class="section"><a name="thanks"></a><h2 class="header">Acknowledgments</h2>
+            <p class="para">We thank <em>bmj.com</em>, <em>Molecular Biology of the Cell</em>, and <em>The Proceedings of the National Academy of Sciences of the U.S.A.</em> for providing the sample articles used in this tag Library.
+            </p>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

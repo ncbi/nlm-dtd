@@ -1,0 +1,132 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Glyph Data for a Private Character</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;glyph-data&gt;</h1>
+         <h1 class="elementname">Glyph Data for a Private Character</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Most characters in an XML document can be expressed as regular
+            Unicode codes. Characters not in the standard Unicode tables have
+            traditionally been expressed as explicit font calls (non-portable), created as
+                   inline graphics, or defined in one of the Unicode private-use areas where users
+                   may define their own characters. This element is used when there is known to be
+                   no font available to render a private-use character. The <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> element provides information on the
+                   actual glyph that is associated with the private-use character.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This Suite has been designed with Unicode as the basic
+                   representation of all special characters. The use of combining characters is
+                   supported and encouraged as is the use of entities defined by the STIX project
+                   (<tt>http://www.ams.org/STIX/</tt>). Unicode values in planes other than Plane 0 may be
+                   freely used. Use of private publisher entities and Unicode Private Use Area is
+                   discouraged, but supported with the <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> element, for which a corresponding bitmap must be
+                   submitted using the <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> element. In
+                   cases where an entity name has been generally accepted with a corresponding
+                   Unicode number and the entity has not been added to the ISO standard entity
+                   sets, a named entity may be defined in the <a href="n-gsb0.html"><span class="petag">%chars.ent;</span></a> module (e.g., as has been done with the Euro &#8364;).
+         </p>
+         <p class="para">Because of the potential for conflicts in assignments by different publishers,
+                   this Suite does not support assignment of values in the Unicode Private Use
+                   Area. Publishers who have defined characters in the Private Use Area must remap
+                   those characters to existing Unicode values (using combining characters for
+                   special accented characters where appropriate), or must submit bitmaps of those
+                   characters using one of the two methods supported under the <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> element. Those custom publisher
+                   entities for which corresponding Unicode values have not been determined must
+                   be tagged with the <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> element.
+                   
+         </p>
+         <p class="para">The element <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> includes
+                   an inline bitmap of the glyph encoded in plain PBM (Plain Bit Map) format so
+                   that it is human-readable. (See the tagged example below.)
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-hey0.html"><span class="attrtag">format</span></a> <a href="n-hey0.html"><span class="attrname">Format</span></a></h5>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-gkp0.html"><span class="attrtag">resolution</span></a> <a href="n-gkp0.html"><span class="attrname">Resolution of the Glyph Bitmap</span></a></h5>
+         <h5 class="header"><a href="n-4ip0.html"><span class="attrtag">x-size</span></a> <a href="n-4ip0.html"><span class="attrname">X Size of the Glyph</span></a></h5>
+         <h5 class="header"><a href="n-uvq0.html"><span class="attrtag">y-size</span></a> <a href="n-uvq0.html"><span class="attrname">Y Size of the Glyph</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">This element <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> may only be used inside the <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> element.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  glyph-data   (#PCDATA)                                    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> <a href="n-3t70.html"><span class="elementname">Private Character (Custom or Unicode)</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+...
+&lt;p&gt;...The map symbol indicating these conditions will be a
+&lt;private-char name="NORTHWEST SOUTHEAST ARROW" description="Arrow,
+normal weight, single line, two-headed, Northwest to Southeast"&gt;
+<strong><span class="focus">&lt;glyph-data id="NWSEArr" format="PBM" resolution="300"
+x-size="34" y-size="34"&gt;
+ 0000000000000000000000000000000000 0111111111111100000000000000000000
+ 0111111111111100000000000000000000 0111110000000000000000000000000000
+ 0111110000000000000000000000000000 0111111000000000000000000000000000
+ 0110111100000000000000000000000000 0110011110000000000000000000000000
+ 0110001111000000000000000000000000 0110000111100000000000000000000000
+ 0110000011110000000000000000000000 0110000001111000000000000000000000
+ 0110000000111100000000000000000000 0110000000011110000000000000000000
+ 0110000000001111000000000000000000 0110000000000111100000000000000000
+ 0110000000000011110000000000000000 0000000000000001111000000000000000
+ 0000000000000000111100000000000110 0000000000000000011110000000000110
+ 0000000000000000001111000000000110 0000000000000000000111100000000110
+ 0000000000000000000011110000000110 0000000000000000000001111000000110
+ 0000000000000000000000111100000110 0000000000000000000000011110000110
+ 0000000000000000000000001111000110 0000000000000000000000000111100110
+ 0000000000000000000000000011110110 0000000000000000000000000001111110
+ 0000000000000000000000000001111110 0000000000000000011111111111111110
+ 0000000000000000011111111111111110 0000000000000000000000000000000000
+ &lt;/glyph-data&gt;</span></strong>&lt;/private-char&gt;. The NOAA 1993 standard definition of
+&lt;private-char name="NORTHWEST SOUTHEAST ARROW" description="Arrow,
+normal weight, single line, two-headed, Northwest to Southeast"&gt;
+&lt;glyph-ref glyph-data="NWSEArr"/&gt;&lt;/private-char&gt; will apply.
+&lt;/p&gt;
+...
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">chars.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

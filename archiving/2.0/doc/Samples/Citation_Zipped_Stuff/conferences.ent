@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+<no>III.</no>
+   <title>Conference Publications</title>
+   <reflist>
+      <title>A. Conference Proceedings</title>
+      <reflist>
+         <title>1. Proceedings with a title in addition to the conference name  - </title>
+         <ref>
+            <citation citation-type="confproc">
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Vivian</surname>
+                     <given-names>Valerie L</given-names>
+                  </name>
+               </person-group>
+               <atitle>Child abuse and neglect: a medical community response</atitle>
+               <year>1985</year>
+               <conf-name>1st AMA National Conference on Child Abuse and Neglect</conf-name>
+               <conf-date>1984 Mar 30-31</conf-date>
+               <conf-loc>Chicago</conf-loc>
+               <publisher-loc>Chicago</publisher-loc>
+               <publisher-name>American Medical Association</publisher-name>
+               <lpage>256</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="confproc">
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Popper</surname>
+                     <given-names>Hans</given-names>
+                  </name>
+                  <etal/>
+               </person-group>
+               <atitle>Structural carbohydrates in the liver: proceedings of the 34th Falk Symposium</atitle>
+               <year>1983</year>
+               <conf-date>1982 Oct 12-18</conf-date>
+               <conf-loc>Basil, Switzerland</conf-loc>
+               <publisher-loc>Boston</publisher-loc>
+               <publisher-name>MTB Press</publisher-name>
+               <lpage>701</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>2. Proceedings without a separate title - </title>
+         <ref>
+            <citation citation-type="confproc">
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Sasaki</surname>
+                     <given-names>Y</given-names>
+                  </name>
+                  <name>
+                     <surname>Nomura</surname>
+                     <given-names>Y</given-names>
+                  </name>
+               </person-group>
+               <year>1986</year>
+               <conf-name>Symposium on Nasal Polyp</conf-name>
+               <conf-date>1984 Oct 5-6</conf-date>
+               <conf-loc>Tokyo</conf-loc>
+               <publisher-loc>Stockholm</publisher-loc>
+               <publisher-name>Almqvist &amp; Wiksell</publisher-name>
+               <lpage>48</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="confproc">
+               <person-group person-group-type="guest-editor">
+                  <name>
+                     <surname>Ferguson</surname>
+                     <given-names>Ronald M</given-names>
+                  </name>
+                  <name>
+                     <surname>Sommer</surname>
+                     <given-names>Bruce G</given-names>
+                  </name>
+               </person-group>
+               <source>Proceedings of a Conference on the Clinical Management of the Renal Transplant Recipient with Cyclosporine</source>
+               <year>1986</year>
+               <conf-date>1985 Nov 3-5</conf-date>
+               <conf-loc>Palm Springs, FL</conf-loc>
+               <publisher-loc>Orlando (FL)</publisher-loc>
+               <publisher-name>Grune &amp; Stratton</publisher-name>
+               <lpage>216</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>3. Proceedings without editor(s)  - </title>
+         <ref>
+            <citation citation-type="confproc">
+               <source>Symposium on Nasal Polyp</source>
+               <year>1986</year>
+               <conf-date>1984 Oct 5-6</conf-date>
+               <conf-loc>Tokyo</conf-loc>
+               <publisher-loc>Stockholm</publisher-loc>
+               <publisher-name>Almqvist &amp; Wiksell</publisher-name>
+               <lpage>48</lpage>
+            </citation>
+         </ref>
+      </reflist>
+   </reflist>
+   <reflist>
+      <title>B. Conference Papers and Abstracts of Papers</title>
+            <reflist>
+         <title>1. Paper from a proceedings with a separate title -</title>
+         <ref>
+            <citation citation-type="confproc">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Harley</surname>
+                     <given-names>Naomi H</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Gammage</surname>
+                     <given-names>Richard B</given-names>
+                  </name>
+                  <name>
+                     <surname>Kaye</surname>
+                     <given-names>Stephen V</given-names>
+                  </name>
+               </person-group>
+               <atitle>Comparing radon daughter dosimetric and risk models</atitle>
+               <source>Indoor air and human health. Proceedings of the 7th Life Sciences Symposium</source>
+               <year>1985</year>
+               <conf-date>1984 Oct 29-31</conf-date>
+               <conf-loc>Knoxville, TN</conf-loc>
+               <publisher-loc>Chelsea (MN)</publisher-loc>
+               <publisher-name>Lewis Publishers</publisher-name>
+               <fpage>69</fpage>
+               <lpage>78</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="confproc">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Meyer</surname>
+                     <given-names>Beat</given-names>
+                  </name>
+                  <name>
+                     <surname>Hermanns</surname>
+                     <given-names>Karl</given-names>
+                  </name>
+               </person-group>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Turoski</surname>
+                     <given-names>Victor</given-names>
+                  </name>
+               </person-group>
+               <atitle>Formaldehyde release from pressed wood products</atitle>
+               <source>Formaldehyde: analytical chemistry and toxicology. Proceedings of the symposium at the 187th meeting of the American Chemical Society</source>
+               <year>1985</year>
+               <conf-date>1984 Apr 8-13</conf-date>
+               <conf-loc>St. Louis, MO</conf-loc>
+               <publisher-loc>Washington</publisher-loc>
+               <publisher-name>The Society</publisher-name>
+               <fpage>101</fpage>
+               <lpage>116</lpage>
+               <other-ref>(Advances in chemistry series; 210)</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+
+   </reflist>
+</chapter>

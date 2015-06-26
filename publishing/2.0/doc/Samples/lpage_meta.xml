@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<article>
+<front>
+<journal-meta>
+<?mtl hellip?>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher>
+<publisher-name>...</publisher-name>
+</publisher>
+<?mtl /hellip?>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="pmid">10092260</article-id>
+<title-group><article-title>Systematic review of day 
+hospital care for elderly people</article-title>
+</title-group>
+<contrib-group><?mtl hellip?><contrib> </contrib><?mtl /hellip?></contrib-group> 
+<?mtl hellip?> <?mtl /hellip?>
+<pub-date pub-type="pub"><day>27</day>
+<month>3</month><year>1999</year></pub-date>
+<volume>318</volume>
+<issue>7187</issue>
+<fpage>837</fpage>
+<lpage>841</lpage>
+<history><?mtl hellip?>
+<date><day>27</day>
+<month>3</month>
+<year>1999</year></date>
+<?mtl /hellip?></history>
+<copyright-statement><?mtl hellip?> <?mtl /hellip?></copyright-statement>
+<?mtl hellip?><copyright-year> </copyright-year>
+<abstract> </abstract><?mtl /hellip?>
+</article-meta></front>
+<?mtl hellip?> <?mtl /hellip?>
+</article>

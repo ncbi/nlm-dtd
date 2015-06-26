@@ -1,0 +1,161 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Element: Conference Sponsor</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;conf-sponsor&gt;</h1>
+         <h1 class="elementname">Conference Sponsor</h1>
+      </div>
+      <div class="definition">
+         <p class="para">One organization that sponsored the conference
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Conversion Note: If more than one organization sponsored the conference, use a separate <a href="n-v650.html" target="main" title="Conference Sponsor"><span class="elementtag">&lt;conf-sponsor&gt;</span></a> element for each one.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-cdd0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-cdd0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The container element <a href="n-et50.html" target="main" title="<conference&gt;"><span class="elementname">Conference Information</span></a><a href="n-et50.html" target="main" title="Conference Information"><span class="elementtag">&lt;conference&gt;</span></a> holds all of the elements that may be used to describe a conference, where an article was originally presented at a conference.
+            Those elements include: <a href="n-q450.html" target="main" title="Conference Date"><span class="elementtag">&lt;conf-date&gt;</span></a>, <a href="n-an50.html" target="main" title="Conference Number"><span class="elementtag">&lt;conf-num&gt;</span></a>, <a href="n-se50.html" target="main" title="Conference Location"><span class="elementtag">&lt;conf-loc&gt;</span></a>, <a href="n-v650.html" target="main" title="Conference Sponsor"><span class="elementtag">&lt;conf-sponsor&gt;</span></a>, <a href="n-hd50.html" target="main" title="Conference Theme"><span class="elementtag">&lt;conf-theme&gt;</span></a>, and <a href="n-tv50.html" target="main" title="Conference Acronym"><span class="elementtag">&lt;conf-acronym&gt;</span></a>.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  conf-sponsor (#PCDATA <a href="n-yuq0.html" target="main" title="Conference Sponsor Elements"><span class="petag">%conf-sponsor-elements;</span></a>)*           &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(#PCDATA)*</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Text, numbers, or special characters, zero or more</p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-et50.html" target="main" title="Conference Information"><span class="elementtag">&lt;conference&gt;</span></a>, <a href="n-8xa0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-t5v0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-nfs0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-wut0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-6et0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;element-citation publication-type="confproc"&gt;
+&lt;person-group person-group-type="editor"&gt;
+&lt;name&gt;&lt;surname&gt;van Pelt&lt;/surname&gt;
+&lt;given-names&gt;J&lt;/given-names&gt;&lt;/name&gt;
+...
+&lt;/person-group&gt;
+&lt;source&gt;Development, dynamics, and pathology of
+neuronal networks: from molecules to functional
+circuits&lt;/source&gt;
+&lt;conf-name&gt;Proceedings of the 23rd International
+Summer School of Brain Research&lt;/conf-name&gt;
+&lt;conf-date&gt;2003 Aug 25-29&lt;/conf-date&gt;
+<strong><span class="focus">&lt;conf-sponsor&gt;Royal Netherlands Academy of Arts and
+Sciences, Amsterdam, the Netherlands&lt;/conf-sponsor&gt;</span></strong>
+&lt;publisher-loc&gt;Amsterdam&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;Elsevier&lt;/publisher-name&gt;
+&lt;year&gt;2005&lt;/year&gt;
+&lt;size units="page"&gt;385 p&lt;/size&gt;
+&lt;comment&gt;(Progress in brain research; vol. 147)&lt;/comment&gt;
+&lt;/element-citation&gt;
+
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;mixed-citation publication-type="confproc"&gt;
+&lt;string-name&gt;&lt;surname&gt;van Pelt&lt;/surname&gt;, 
+&lt;given-names&gt;J&lt;/given-names&gt;&lt;/string-name&gt;,
+... editors.
+&lt;source&gt;Development, dynamics, and pathology of
+neuronal networks: from molecules to functional
+circuits&lt;/source&gt;. &lt;conf-name&gt;Proceedings of
+the 23rd International Summer School of Brain
+Research&lt;/conf-name&gt;; &lt;conf-date&gt;2003 Aug
+25-29&lt;/conf-date&gt;; <strong><span class="focus">&lt;conf-sponsor&gt;Royal
+Netherlands Academy of Arts and Sciences,
+Amsterdam, the Netherlands&lt;/conf-sponsor&gt;</span></strong>.
+&lt;publisher-loc&gt;Amsterdam&lt;/publisher-loc&gt;:
+&lt;publisher-name&gt;Elsevier&lt;/publisher-name&gt;;
+&lt;year&gt;2005&lt;/year&gt;. &lt;size units="page"&gt;385
+p&lt;/size&gt;. (Progress in brain research; vol.
+147).&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 3</h3>
+         <p class="para">In article metadata</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+...
+&lt;abstract&gt;...&lt;/abstract&gt;
+&lt;conference&gt;
+&lt;conf-date&gt;1999&lt;/conf-date&gt;
+&lt;conf-name&gt;The 27th annual ACM SI/GUCCS
+conference&lt;/conf-name&gt;
+&lt;conf-acronym&gt;SIGUCCS&lt;/conf-acronym&gt;
+&lt;conf-num&gt;27&lt;/conf-num&gt;
+&lt;conf-loc&gt;Denver, Colorado, United States&lt;/conf-loc&gt;
+<strong><span class="focus">&lt;conf-sponsor&gt;ACM, Assoc. for Computing
+Machinery&lt;/conf-sponsor&gt;</span></strong>
+&lt;conf-theme&gt;User services conference for
+university and college computing service
+organizations&lt;/conf-theme&gt;
+&lt;/conference&gt;
+&lt;counts&gt;
+&lt;fig-count count="5"/&gt;
+&lt;table-count count="3"/&gt;
+&lt;equation-count count="10"/&gt;
+&lt;ref-count count="26"/&gt;
+&lt;page-count count="6"/&gt;
+&lt;word-count count="2847"/&gt;
+&lt;/counts&gt;
+&lt;/article-meta&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

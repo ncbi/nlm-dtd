@@ -1,0 +1,53 @@
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for NLM Citation Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+</article-meta>
+</front>
+<body>
+<p>The <italic>Escherichia coli argU</italic> gene encodes a minor arginine 
+tRNA, tRNA<sup arrange="stack">Arg</sup><sub arrange="stack">UCU</sub>, 
+which corresponds to the rare codon AGA and possibly AGG ....</p>
+</body>
+<back>
+<ref-list><?mtl /hellip?>
+<ref>
+<nlm-citation citation-type="journal">
+<person-group>
+<name>
+<surname>Bedford</surname>
+<given-names>CD</given-names>
+</name>
+<name>
+<surname>Harris</surname>
+<given-names>RN</given-names>
+<suffix>3d</suffix>
+</name>
+<name>
+<surname>Howd</surname>
+<given-names>RA</given-names>
+</name>
+<etal/>
+</person-group>
+<article-title>Quaternary salts of 2-[(hydroxyimino)methyl]imidazole</article-title>
+<source>J Med Chem</source>
+<year>1989</year>
+<month>2</month>
+<volume>32</volume>
+<issue>2</issue>
+<fpage>493</fpage>
+<lpage>503</lpage>
+</nlm-citation>
+</ref>
+<?mtl hellip?></ref-list>
+</back>
+</article><?mtl /hellip?>

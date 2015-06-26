@@ -1,0 +1,88 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Attribute: Identifier</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">id</h1>
+         <h1 class="attrname">Identifier</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Indicates the unique identifier for an associated element, so that the element’s content may be cross-referenced. <tt>ID</tt>s must be unique inside their document (not just within their element type); the XML parser enforces this.
+            
+         </p>
+      </div>
+      <div class="usage">
+         <h2 class="header">Usage</h2>
+         <p class="para">The <tt>ID</tt> and <tt>IDREF</tt> attribute values constitute a primitive reference mechanism for XML. For example, when an <a href="n-z8f0.html" target="main" title="Identifier"><span class="attrtag">@id</span></a> attribute has been used on a <a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> element, that identifier can be referenced by an <tt>IDREF</tt>-style attribute on a <a href="n-2c70.html" target="main" title="X(cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> element, so that the figure can be pointed to and need not be repeated every time the figure is mentioned.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This attribute (<span class="attrtag">@id</span>) has been significantly remodeled in version 3.0 of the Tag Set. For a few elements, the values and/or usage in version 3.0
+            are not backward-compatible with that in previous versions of the Tag Set. Specifically, in prior versions the <a href="n-wu50.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a>, <a href="n-fma0.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a>, <a href="n-hza0.html" target="main" title="List Item"><span class="elementtag">&lt;list-item&gt;</span></a>, and <tt>tex-math</tt> elements permitted this attribute to have any value (<tt>CDATA</tt>), not only valid XML ID values.
+            
+         </p>
+         <p class="para">An identifier string is typically 1-32 characters in length and must start with a letter of the alphabet. (It is an XML rule
+            that identifiers may not start with a digit.)
+            
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5><a href="n-vss0.html" target="main" title="Target of an Internal Link"><span class="elementtag">&lt;target&gt;</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">An XML identifier (ID)</td>
+                  <td class="attrmeaning">A unique identifier for the element. XML parsers can verify that an element pointing to one of these is pointing to a valid
+                     <tt>ID</tt>.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute must be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4><a href="n-un00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a>, <a href="n-n600.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a>, <a href="n-4h00.html" target="main" title="Acknowledgments"><span class="elementtag">&lt;ack&gt;</span></a>, <a href="n-4i00.html" target="main" title="Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a>, <a href="n-fb00.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, <a href="n-nc20.html" target="main" title="Alternate Title Text (For a Figure, Etc.)"><span class="elementtag">&lt;alt-text&gt;</span></a>, <a href="n-b820.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-pw20.html" target="main" title="Appendix Matter"><span class="elementtag">&lt;app-group&gt;</span></a>, <a href="n-6t20.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a>, <a href="n-6n20.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a>, <a href="n-uy20.html" target="main" title="Author Comment"><span class="elementtag">&lt;author-comment&gt;</span></a>, <a href="n-jh20.html" target="main" title="Award Group"><span class="elementtag">&lt;award-group&gt;</span></a>, <a href="n-hq20.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-5vc0.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a>, <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a>, <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-4rc0.html" target="main" title="Table Column (XHTML table model)"><span class="elementtag">&lt;col&gt;</span></a>, <a href="n-8hc0.html" target="main" title="Table Column Group (XHTML table model)"><span class="elementtag">&lt;colgroup&gt;</span></a>, <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-uzc0.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a>, <a href="n-he30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>, <a href="n-dn30.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a>, <a href="n-6k50.html" target="main" title="Definition List: Definition"><span class="elementtag">&lt;def&gt;</span></a>, <a href="n-ka50.html" target="main" title="Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a>, <a href="n-wu50.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a>, <a href="n-ev50.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-7750.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-tf50.html" target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a>, <a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-c280.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a>, <a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-bv80.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a>, <a href="n-us80.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a>, <a href="n-gg80.html" target="main" title="Funding Source"><span class="elementtag">&lt;funding-source&gt;</span></a>, <a href="n-eh80.html" target="main" title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a>, <a href="n-sy80.html" target="main" title="Glyph Data for a Private Character"><span class="elementtag">&lt;glyph-data&gt;</span></a>, <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>, <a href="n-xka0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a>, <a href="n-33a0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a>, <a href="n-x5a0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>, <a href="n-kua0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>, <a href="n-4na0.html" target="main" title="Keyword"><span class="elementtag">&lt;kwd&gt;</span></a>, <a href="n-9da0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>, <a href="n-fma0.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a>, <a href="n-hza0.html" target="main" title="List Item"><span class="elementtag">&lt;list-item&gt;</span></a>, <a href="n-jku0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a>, <a href="n-f3u0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>, <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-dfu0.html" target="main" title="Math (MathML 2.0 Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a>, <a href="n-myu0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-czu0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a>, <a href="n-t9w0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a>, <a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-x6x0.html" target="main" title="Reference Item"><span class="elementtag">&lt;ref&gt;</span></a>, <a href="n-rdx0.html" target="main" title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a>, <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a>, <a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-sjv0.html" target="main" title="Source"><span class="elementtag">&lt;source&gt;</span></a>, <a href="n-smv0.html" target="main" title="Speech"><span class="elementtag">&lt;speech&gt;</span></a>, <a href="n-bzv0.html" target="main" title="Statement, Formal"><span class="elementtag">&lt;statement&gt;</span></a>, <a href="n-jz40.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-m5s0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a>, <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-77s0.html" target="main" title="Table Body (XHTML table model)"><span class="elementtag">&lt;tbody&gt;</span></a>, <a href="n-ues0.html" target="main" title="Table Data Cell (XHTML table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-ers0.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>, <a href="n-nzs0.html" target="main" title="Table Footer (XHTML table model)"><span class="elementtag">&lt;tfoot&gt;</span></a>, <a href="n-ekt0.html" target="main" title="Table Header Cell (XHTML table model)"><span class="elementtag">&lt;th&gt;</span></a>, <a href="n-b8t0.html" target="main" title="Table Header (XHTML table model)"><span class="elementtag">&lt;thead&gt;</span></a>, <a href="n-yut0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a>, <a href="n-utt0.html" target="main" title="Table Row (XHTML table model)"><span class="elementtag">&lt;tr&gt;</span></a>, <a href="n-47t0.html" target="main" title="Translated Source"><span class="elementtag">&lt;trans-source&gt;</span></a>, <a href="n-bft0.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a>, <a href="n-rpt0.html" target="main" title="Verse Form for Poetry"><span class="elementtag">&lt;verse-group&gt;</span></a>, <a href="n-2c70.html" target="main" title="X(cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a><table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">An XML identifier (ID)</td>
+                  <td class="attrmeaning">A unique identifier for the element. XML parsers can verify that an element pointing to one of these is pointing to a valid
+                     <tt>ID</tt>.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

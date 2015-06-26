@@ -1,0 +1,158 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: On Behalf of</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;on-behalf-of&gt;</h1>
+         <h1 class="elementname">On Behalf of</h1>
+      </div>
+      <div class="definition">
+         <p class="para">When a contributor is acting as a representative of an organization, he/she is said to have written or edited a work “on behalf
+            of” that organization or group, and this element holds the name of the organization or group.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The contributor writing on-behalf-of may also have a separate, different affiliation. For example, a physician affiliated
+            with Johns Hopkins Hospital writing for the National Cancer Institute would be tagged as:
+         </p>
+         <div class="codeblock"><pre>
+ &lt;on-behalf-of&gt;National Cancer Institute&lt;/on-behalf-of&gt;</pre></div>
+         <p class="para">and the physician’ affiliation would be tagged as usual as</p>
+         <div class="codeblock"><pre>
+ &lt;aff&gt;Johns Hopkins Hospital&lt;/aff&gt;</pre></div>
+         <p class="para">The <span class="elementtag">&lt;on-behalf-of&gt;</span> element is akin to a “role” the person is playing with respect to the organization. Thus, this element joins the related
+            element <a href="n-vav0.html" target="main" title="Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a> as a way to describe the particular contribution of a contributor. The <span class="elementtag">&lt;role&gt;</span> element will say that a person is an “Editor” or “Associate Editor”, and the <a href="n-v5w0.html" target="main" title="On Behalf of"><span class="elementtag">&lt;on-behalf-of&gt;</span></a> element will state that this editing was undertaken as a representative of a group or organization, typically capturing all
+            text associated with the organization (see “for” in the example below):
+         </p>
+         <div class="codeblock"><pre>
+&lt;contrib&gt;
+&lt;name&gt;&lt;surname&gt;Smith&lt;/surname&gt;
+&lt;given-names&gt;J.D.&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;on-behalf-of&gt;for the Cardiac Research Group&lt;/on-behalf-of&gt;
+&lt;/contrib&gt;</pre></div>
+         <p class="para">Technical Note: Some Tag Sets identify what this Tag Set calls  “on-behalf-of” content as a Collaborative (Group) Author or
+            Editor <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>. In other tag sets, the association “on-behalf-of” may be tagged as a <a href="n-vav0.html" target="main" title="Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a> rather than as a specific <a href="n-v5w0.html" target="main" title="On Behalf of"><span class="elementtag">&lt;on-behalf-of&gt;</span></a>. It is therefore also acceptable (although no best practice) to tag the example as: 
+            
+         </p>
+         <div class="codeblock"><pre>
+&lt;contrib&gt;
+&lt;name&gt;&lt;surname&gt;Smith&lt;/surname&gt;
+&lt;given-names&gt;J.D.&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;for the Cardiac Research Group&lt;/role&gt;
+&lt;/contrib&gt;
+</pre></div>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">See discussion about <a href="n-vav0.html" target="main" title="Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a> in <em>Remarks</em>.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  on-behalf-of (#PCDATA <a href="n-26y0.html" target="main" title="On Behalf of Content Elements"><span class="petag">%on-behalf-of-elements;</span></a>)*           &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(#PCDATA | bold | italic | monospace | overline | roman | sc | strike | underline | sub | sup)*</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Any combination of:
+            <ul class="bullist">
+               <li>Text, numbers, or special characters</li>
+               <li>All the emphasis elements:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-j2c0.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-j2c0.html" target="main" title="<bold&gt;"><span class="elementname">Bold</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-ita0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-ita0.html" target="main" title="<italic&gt;"><span class="elementname">Italic</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-dgu0.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-dgu0.html" target="main" title="<monospace&gt;"><span class="elementname">Monospace Text (Typewriter Text)</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-yuw0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-yuw0.html" target="main" title="<overline&gt;"><span class="elementname">Overline</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-hwv0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a> <a href="n-hwv0.html" target="main" title="<roman&gt;"><span class="elementname">Roman</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-fsv0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-fsv0.html" target="main" title="<sc&gt;"><span class="elementname">Small Caps</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-x340.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-x340.html" target="main" title="<strike&gt;"><span class="elementname">Strike Through</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-pdt0.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-pdt0.html" target="main" title="<underline&gt;"><span class="elementname">Underline</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-te40.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-te40.html" target="main" title="<sub&gt;"><span class="elementname">Subscript</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-9y40.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-9y40.html" target="main" title="<sup&gt;"><span class="elementname">Superscript</span></a>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-he30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+<strong><span class="focus">&lt;on-behalf-of&gt;Multiple Sclerosis Collaborative 
+Research Group&lt;/on-behalf-of&gt;</span></strong> 
+&lt;aff id="StLukes"&gt;Department of Health 
+Care for the Elderly, St Luke&amp;#x2019;s Hospital, 
+Bradford BD5 0NA&lt;/aff&gt;
+&lt;/contrib&gt;
+... 
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

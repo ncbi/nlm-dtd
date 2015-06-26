@@ -1,0 +1,308 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Element: Biography</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;bio&gt;</h1>
+         <h1 class="elementname">Biography</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Biographical data concerning a contributor, usually an author or editor or the description of a collaboration. A <span class="elementtag">&lt;bio&gt;</span> concerns a person or group who wrote or otherwise contributed to the article.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">In print publications, the biographical text associated with an article may not appear with the article metadata; for example,
+            it may appear at the end of the article, in a sidebar, or collected with other biographies in a separate section of the publication.
+            Biographies may be as short as a few words (tagged as a <a href="n-f640.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>) or as long as a section with internal subsections.
+            
+         </p>
+         <p class="para">Conversion Note: The XLink linking attribute <a href="n-vny0.html" target="main" title="Href (Linking Mechanism)"><span class="attrtag">@xlink:href</span></a> may be used to point to a picture of the contributor, to a more complete vita, to his/her website, etc.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-cdd0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-cdd0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-gyr0.html" target="main"><span class="attrtag">id</span></a> <a href="n-gyr0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-fni0.html" target="main"><span class="attrtag">rid</span></a> <a href="n-fni0.html" target="main"><span class="attrname">Reference to an Identifier</span></a></h5>
+         <h5 class="header"><a href="n-vky0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-vky0.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+         <h5 class="header"><a href="n-sfy0.html" target="main"><span class="attrtag">xlink:actuate</span></a> <a href="n-sfy0.html" target="main"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-vny0.html" target="main"><span class="attrtag">xlink:href</span></a> <a href="n-vny0.html" target="main"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-udy0.html" target="main"><span class="attrtag">xlink:role</span></a> <a href="n-udy0.html" target="main"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-hry0.html" target="main"><span class="attrtag">xlink:show</span></a> <a href="n-hry0.html" target="main"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-yiy0.html" target="main"><span class="attrtag">xlink:title</span></a> <a href="n-yiy0.html" target="main"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-vjy0.html" target="main"><span class="attrtag">xlink:type</span></a> <a href="n-vjy0.html" target="main"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-skj0.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-skj0.html" target="main"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  bio          <a href="n-iwp0.html" target="main" title="Biography Model"><span class="petag">%bio-model;</span></a>                                  &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">(sec-meta?, label?, title?, 
+(address | alternatives | array | boxed-text | chem-struct-wrap | fig | 
+fig-group | graphic | media | preformat | supplementary-material | 
+table-wrap | table-wrap-group | disp-formula | disp-formula-group | 
+p | def-list | list | tex-math | mml:math | related-article | 
+related-object | disp-quote | speech | statement | verse-group)*, 
+(sec)*, 
+(fn-group | glossary | ref-list)*)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-jf70.html" target="main" title="Section Metadata"><span class="elementtag">&lt;sec-meta&gt;</span></a> <a href="n-jf70.html" target="main" title="<sec-meta&gt;"><span class="elementname">Section Metadata</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-axx0.html" target="main" title="Label (Of a Figure, Reference, Etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-axx0.html" target="main" title="<label&gt;"><span class="elementname">Label (Of a Figure, Reference, Etc.)</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-hxn0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-hxn0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one
+               </li>
+               <li>Any combination of:
+                  <ul class="bullist">
+                     <li>All the block display elements:
+                        <ul class="bullist">
+                           <li>
+                              <a href="n-cj00.html" target="main" title="Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a> <a href="n-cj00.html" target="main" title="<address&gt;"><span class="elementname">Address/Contact Information</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-g520.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> <a href="n-g520.html" target="main" title="<alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-xy20.html" target="main" title="Array (Simple Tabular Array)"><span class="elementtag">&lt;array&gt;</span></a> <a href="n-xy20.html" target="main" title="<array&gt;"><span class="elementname">Array (Simple Tabular Array)</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-8w30.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-8w30.html" target="main" title="<boxed-text&gt;"><span class="elementname">Boxed Text</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-3y30.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> <a href="n-3y30.html" target="main" title="<chem-struct-wrap&gt;"><span class="elementname">Chemical Structure Wrapper</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-kza0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> <a href="n-kza0.html" target="main" title="<fig&gt;"><span class="elementname">Figure</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-45u0.html" target="main" title="Figure Group"><span class="elementtag">&lt;fig-group&gt;</span></a> <a href="n-45u0.html" target="main" title="<fig-group&gt;"><span class="elementname">Figure Group</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-iaw0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-iaw0.html" target="main" title="<graphic&gt;"><span class="elementname">Graphic</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-6jx0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-6jx0.html" target="main" title="<media&gt;"><span class="elementname">Media Object</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-ras0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-ras0.html" target="main" title="<preformat&gt;"><span class="elementname">Preformatted Text</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-yif0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-yif0.html" target="main" title="<supplementary-material&gt;"><span class="elementname">Supplementary Material</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-4cg0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> <a href="n-4cg0.html" target="main" title="<table-wrap&gt;"><span class="elementname">Table Wrapper</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-5wg0.html" target="main" title="Table Wrapper Group"><span class="elementtag">&lt;table-wrap-group&gt;</span></a> <a href="n-5wg0.html" target="main" title="<table-wrap-group&gt;"><span class="elementname">Table Wrapper Group</span></a>
+                              
+                           </li>
+                        </ul>
+                        
+                     </li>
+                     <li>
+                        <a href="n-n980.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a> <a href="n-n980.html" target="main" title="<disp-formula&gt;"><span class="elementname">Formula, Display</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-92a0.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a> <a href="n-92a0.html" target="main" title="<disp-formula-group&gt;"><span class="elementname">Formula, Display Group</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-f640.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-f640.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-8p80.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> <a href="n-8p80.html" target="main" title="<def-list&gt;"><span class="elementname">Definition List</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-m6x0.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a> <a href="n-m6x0.html" target="main" title="<list&gt;"><span class="elementname">List</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-d9g0.html" target="main" title="Tex Math Equation"><span class="elementtag">&lt;tex-math&gt;</span></a> <a href="n-d9g0.html" target="main" title="<tex-math&gt;"><span class="elementname">Tex Math Equation</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-8ev0.html" target="main" title="Math (MathML 2.0 Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> <a href="n-8ev0.html" target="main" title="<mml:math&gt;"><span class="elementname">Math (MathML 2.0 Tag Set)</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-wut0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-wut0.html" target="main" title="<related-article&gt;"><span class="elementname">Related Article Information</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-6et0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a> <a href="n-6et0.html" target="main" title="<related-object&gt;"><span class="elementname">Related Object Information</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-b3a0.html" target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a> <a href="n-b3a0.html" target="main" title="<disp-quote&gt;"><span class="elementname">Quote, Displayed</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-nwe0.html" target="main" title="Speech"><span class="elementtag">&lt;speech&gt;</span></a> <a href="n-nwe0.html" target="main" title="<speech&gt;"><span class="elementname">Speech</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-cve0.html" target="main" title="Statement, Formal"><span class="elementtag">&lt;statement&gt;</span></a> <a href="n-cve0.html" target="main" title="<statement&gt;"><span class="elementname">Statement, Formal</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-qu60.html" target="main" title="Verse Form for Poetry"><span class="elementtag">&lt;verse-group&gt;</span></a> <a href="n-qu60.html" target="main" title="<verse-group&gt;"><span class="elementname">Verse Form for Poetry</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-n470.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-n470.html" target="main" title="<sec&gt;"><span class="elementname">Section</span></a>, zero or more
+               </li>
+               <li>Any combination of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-u4u0.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a> <a href="n-u4u0.html" target="main" title="<fn-group&gt;"><span class="elementname">Footnote Group</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-kmu0.html" target="main" title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a> <a href="n-kmu0.html" target="main" title="<glossary&gt;"><span class="elementname">Glossary Elements List</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-k3t0.html" target="main" title="Reference List (Bibliographic Reference List)"><span class="elementtag">&lt;ref-list&gt;</span></a> <a href="n-k3t0.html" target="main" title="<ref-list&gt;"><span class="elementname">Reference List (Bibliographic Reference List)</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-vyc0.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a>, <a href="n-bb30.html" target="main" title="Collaborative (Group) Author or Editor"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-3y50.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>, <a href="n-tq50.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">Section-style <span class="elementtag">&lt;bio&gt;</span> with headed sections
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;...&lt;/name&gt;
+<strong><span class="focus">&lt;bio&gt;
+&lt;p&gt;One of the most well-known Surgeons General of the
+United States (1982-1989), C. Everett Koop&amp;rsquo;s illustrious
+career encompasses more than 35 years ...&lt;/p&gt;
+&lt;sec&gt;
+&lt;label&gt;1&lt;/label&gt;&lt;title&gt;Education&lt;/title&gt;
+&lt;p&gt;Following his graduation from Dartmouth College (B.A.,
+1937), Koop received his M.D. degree ...&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;label&gt;2&lt;/label&gt;&lt;title&gt;Medical Practice&lt;/title&gt;
+&lt;p&gt;Following his training, Koop joined the staff of
+Children&amp;rsquo;s Hospital of Philadelphia as a pediatric
+surgeon; in 1946 he became ...&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;label&gt;3&lt;/label&gt;&lt;title&gt;Government Office&lt;/title&gt;
+&lt;p&gt;Koop became Surgeon General in January 1982.  During
+his tenure, he was a strong advocate on public health issues
+such as the rights of the disabled, smoking, and ...&lt;/p&gt;
+&lt;p&gt;The same year as his appointment, controversy arose
+involving the treatment of a disabled newborn ...&lt;/p&gt;
+...
+&lt;/sec&gt;
+...
+&lt;/bio&gt;</span></strong>
+&lt;/contrib&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;...
+&lt;article-meta&gt;...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;Designed electronic devices and protocols&lt;/role&gt;
+&lt;xref ref-type="aff"/&gt;
+<strong><span class="focus">&lt;bio&gt;
+&lt;p&gt;&lt;bold&gt;Anne Forster&lt;/bold&gt; is the current editor of
+the &lt;italic&gt;OASIS Microwave Journal&lt;/italic&gt;, responsible
+for Technical Committee and Developments. She received
+her BE and PhD in electrical engineering from the
+University of Queensland, Brisbane, Australia.
+Currently, she is professor in the School of
+Electronic Engineering at the University of
+Finlandia, where she holds the chair in Microwave
+Electronics&lt;/p&gt;
+&lt;p&gt;She is a member of the technical program committee
+for the International Microwave Symposium and a member
+of the editorial board for the &lt;italic&gt;Mulberry
+Transactions on Microwave Theory and Technique&lt;/italic&gt;.
+she has organized many workshops and taught many
+short courses on microwave signal integrity and
+wireless and RF design.&lt;/p&gt;
+&lt;/bio&gt;</span></strong>
+&lt;email&gt;afwiz@queensland.edu&lt;/email&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;...
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;...&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...
+&lt;/body&gt;
+&lt;back&gt;
+...
+&lt;/back&gt;&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

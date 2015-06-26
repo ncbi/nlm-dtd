@@ -1,0 +1,207 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Type of External Link</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">ext-link-type</h1>
+         <h1 class="attrname">Type of External Link</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">What kind of external link, for example, a pointer to an external database. Types of links include the identifier type, such
+            as &#8220;<tt>doi</tt>&#8221; for a Digital Object Identifier; the access method, such as &#8220;<tt>ftp</tt>&#8221; for an ftp site; or the specific external source to which the link points, such as the protein data bank &#8220;<tt>pdb</tt>&#8221;.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5 class="heading"><a href="n-ekw0.html"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-ekw0.html"><span class="elementname">External Link</span></a></h5>
+            <h5 class="heading"><a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">The type of link,
+                                for example, &#8220;<tt>ftp</tt>&#8221; or &#8220;<tt>uri</tt>&#8221;. This attribute may take any value, but see the list of suggested values below.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+            <h4 class="header"><span class="headerlabel">Suggested usage</span></h4>
+            
+                   
+            <p class="para">This list is slightly overloaded in that two different functions are being performed. The first is to name the specific external
+               source when it is one of the ones named below. If the external source is not one of the ones below, the type of link (DOI,
+               AOI) or type of access (ftp, URI, etc.) should be named instead. The idea is to be as specific as possible, i.e., if you are
+               pointing to the Protein data bank, use &#8220;<tt>pdb</tt>&#8221;, but if you are pointing to another protein registry though its URL, use &#8220;<tt>uri</tt>&#8221;.
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>aoi</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Astronomical object identifier</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>doi</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Digital object identifier</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>ec</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Enzyme nomenclature; see
+                                          http://www.chem.qmw.ac.uk/iubmb/enzyme/
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>email</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Email address</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>ftp</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">File transfer protocol</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>gen</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">GenBank identifier</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>genpept</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Translated protein-encoding sequence database</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>highwire</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">HighWire press intrajournal</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>medline</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">MEDLINE or PubMed identifier</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>pdb</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Protein data bank; see http://www.rcsb.org/pdb/</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>pgr</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Plant gene register; see
+                                          http://www.tarweed.com/pgr/b
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>pir</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Protein information resource; see
+                                          http://pir.georgetown.edu
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>pirdb</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Protein information resource; see
+                                          http://pir.georgetown.edu
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>pmc</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Linkage between articles in PubMed Central (Access is
+                                          PMID.)
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>sprot</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Swiss-Prot.; see http://www.ebi.ac.uk/swissprot/</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>uri</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Website or web service</p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </p>
+                   
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

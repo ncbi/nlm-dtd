@@ -1,0 +1,416 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Archiving and Interchange Suite Back Matter Elements</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Archiving and Interchange Suite Back Matter Elements</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Back Matter Elements                              --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.3 20070202//EN"
+     Delivered as file "backmatter.ent"                            --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    Names elements that are not part of the main      --&gt;
+&lt;!--             textual flow of a work, but are considered to be  --&gt;
+&lt;!--             ancillary material.                               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) Parameter Entities for attribute lists         --&gt;
+&lt;!--             2) List of the back matter elements in            --&gt;
+&lt;!--                alphabetical order                             --&gt;
+&lt;!--                 - Acknowledgments &lt;ack&gt; (defined in           --&gt;
+&lt;!--                     %common.ent;)                             --&gt;
+&lt;!--                 - Appendix Matter &lt;app-group&gt;                 --&gt;
+&lt;!--                 - Footnote Group &lt;fn-group&gt;                   --&gt;
+&lt;!--                 - Glossary &lt;glossary&gt;                         --&gt;
+&lt;!--                 - Biography &lt;bio&gt; (defined in %common.ent;)   --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital archives and publishers who wish to       --&gt;
+&lt;!--             create a custom XML DTD for original markup of    --&gt;
+&lt;!--             journal literature, books, and related material,  --&gt;
+&lt;!--             or for archiving and transferring such material   --&gt;
+&lt;!--             between archives.                                 --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             This DTD is in the public domain. An organization --&gt;
+&lt;!--             that wishes to create its own DTD from the suite  --&gt;
+&lt;!--             may do so without permission from NLM.            --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             The suite has been set up to be extended using a  --&gt;
+&lt;!--             new DTD file and a new DTD-specific customization --&gt;
+&lt;!--             module to redefine the many Parameter Entities.   --&gt;
+&lt;!--             Do not modify the suite directly or redistribute  --&gt;
+&lt;!--             modified versions of the suite.                   --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             In the interest of maintaining consistency and    --&gt;
+&lt;!--             clarity for potential users, NLM requests:        --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             1. If you create a DTD from the Archiving and     --&gt;
+&lt;!--                Interchange DTD Suite and intend to stay       --&gt;
+&lt;!--                compatible with the suite, then please include --&gt;
+&lt;!--                the following statement as a comment in all of --&gt;
+&lt;!--                your DTD modules:                              --&gt;
+&lt;!--                   "Created from, and fully compatible with,   --&gt;
+&lt;!--                    the Archiving and Interchange DTD Suite."  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             2. If you alter one or more modules of the suite, --&gt;
+&lt;!--                then please rename your version and all its    --&gt;
+&lt;!--                modules to avoid any confusion with the        --&gt;
+&lt;!--                original suite. Also, please include the       --&gt;
+&lt;!--                following statement as a comment in all your   --&gt;
+&lt;!--                DTD modules:                                   --&gt;
+&lt;!--                   "Based in part on, but not fully compatible --&gt;
+&lt;!--                    with, the Archiving and Interchange DTD    --&gt; 
+&lt;!--                    Suite."                                    --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             the DTD suite should be sent in email to:         --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             December 2002                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Jeff Beck       (NCBI)                            --&gt;
+&lt;!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             Bruce Rosenblum (Inera Inc.)                      --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             NLM thanks the Harvard University Libraries, both --&gt;
+&lt;!--             for proposing that a draft archiving NLM DTD for  --&gt; 
+&lt;!--             life sciences journals be extended to accommodate --&gt;
+&lt;!--             journals in all disciplines and for sponsoring    --&gt;
+&lt;!--             Bruce Rosenblum's collaboration with other DTD    --&gt;
+&lt;!--             authors in completing Version 1.0. The Andrew W.  --&gt; 
+&lt;!--             Mellon Foundation provided support for these      --&gt; 
+&lt;!--             important contributions.                          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov 2006/Jan 2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+ 11. NEW TYPE ATTRIBUTES - Added a "content-type" attribute to the
+     following elements, to add or preserve semantic distinctions
+     between different occurrences of the element:
+     - app
+     - app-group
+     - fn-group
+     - gloss-group
+     - glossary
+     
+ 10. NEW ID ATTRIBUTES - Added an "id" attribute of type ID to the
+     following elements:
+      - app-group (new app-group-atts)
+      - fn-group (new fn-group-atts)
+      - glossary (new glossary-atts) 
+      - gloss-group (new gloss-group-atts) 
+     
+  9. NEW PARAMETER ENTITIES - Added parameter entities for the
+     attribute lists of:
+     - app-group
+     - fn-group
+     - gloss-group
+     - glossary
+     
+  8. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by the online list     
+
+          
+  7. Appendix Model - Added &lt;permissions&gt; to the end of an
+     Appendix
+          
+  6. Updated public identifier to "v2.3 20070202" 
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+        
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+
+  5. COMPLETE MODELS WHEN OVER-RIDING A CONTENT MODEL 
+     (for all Parameter Entities suffixed "-model")
+     ### Customization Alert ###
+     Made all the model over-rides consistent. Some included
+     the outer parentheses, some did not. They all do now.
+     Added parentheses to Parameter Entity and removed them 
+     from the Element Declarations:
+     -  %app-model; 
+     -  %app-group-model; 
+     -  %fn-group-model;
+     -  %glossary-model;
+     -  %glossary-group-model;
+
+  4. DEFAULT CLASSES - Were moved from this module to 
+     %default-classes.ent;
+
+  3. APPENDIX GROUP - model rewritten to use the new class Parameter
+     Entities %app.class; and %ref-list.class;. Default entities
+     placed into this module.
+
+  2. To correct potential classing problems, added the following
+     new Parameter Entities:     
+        - %fn-group-model;
+        - %fn-link.class; used in %fn-group-model;
+        - %gloss-group-model; (and made it contain its parentheses)
+        - %gloss-model; [now called -%glossary-model;] 
+
+  1. FPI - Updated public identifier to "v2.3 20070202"            --&gt;
+
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    BACKMATTER ELEMENTS                        --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--ELEM   bio          Defined in %common.ent;                    --&gt;
+&lt;!--ELEM   ref-list     Defined in %references.ent;                --&gt;
+&lt;!--ELEM   sec          Defined in %section.ent;                   --&gt;
+&lt;!--ELEM   ack          Defined in %common.ent;                    --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PARAMETER ENTITIES FOR ATTRIBUTE LISTS     --&gt;
+&lt;!-- ============================================================= --&gt;
+
+                                                                
+&lt;!--                    APPENDIX ATTRIBUTES                        --&gt;
+&lt;!--                    Attributes for the Appendix &lt;app&gt; element  --&gt;
+&lt;!ENTITY % app-atts
+             "id        ID                                #IMPLIED
+              content-type  
+                        CDATA                             #IMPLIED"  &gt;
+
+                                                                
+&lt;!--                    APPENDIX GROUP ATTRIBUTES                  --&gt;
+&lt;!--                    Attributes for the Appendix Group &lt;app-group&gt; 
+                        element                                    --&gt;
+&lt;!ENTITY % app-group-atts
+             "id        ID                                #IMPLIED
+              content-type  
+                        CDATA                             #IMPLIED"  &gt;
+
+                                                                
+&lt;!--                    FOOTNOTE GROUP ATTRIBUTES                  --&gt;
+&lt;!--                    Attributes for the Footnote Group &lt;fn-group&gt; 
+                        element                                    --&gt;
+&lt;!ENTITY % fn-group-atts
+             "id        ID                                #IMPLIED 
+              content-type
+                        CDATA                             #IMPLIED"  &gt;
+
+                                                                
+&lt;!--                    GLOSSARY ATTRIBUTES                        --&gt;
+&lt;!--                    Attributes for the Glossary &lt;glossary&gt; 
+                        element                                    --&gt;
+&lt;!ENTITY % glossary-atts
+             "id        ID                                #IMPLIED 
+              content-type
+                        CDATA                             #IMPLIED"  &gt;
+
+                                                                
+&lt;!--                    GLOSSARY GROUP ATTRIBUTES                  --&gt;
+&lt;!--                    Attributes for &lt;gloss-group&gt; element       --&gt;
+&lt;!ENTITY % gloss-group-atts
+             "id        ID                                #IMPLIED 
+              content-type
+                        CDATA                             #IMPLIED"  &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    APPENDIX ELEMENTS                          --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    APPENDIX GROUP MODEL                       --&gt;
+&lt;!--                    Content model for the &lt;app-group&gt; element  --&gt;
+&lt;!ENTITY % app-group-model   
+                        "(title?, (%para-level;)*, 
+                          (%app.class; | %ref-list.class;)*)"        &gt; 
+
+
+&lt;!--                    APPENDIX GROUP                             --&gt;
+&lt;!--                    A container element to hold one or more
+                        Appendices. This element was added to
+                        accommodate older DTDs that are based on the 
+                        AAP (later ISO 12083) model, where the element
+                        was known as Appendix Matter &lt;appm&gt;.       --&gt;
+&lt;!ELEMENT  app-group    %app-group-model;                            &gt;
+&lt;!--         id         Unique identifier so the element may be
+                        referenced
+             content-type
+                        "content-type" attribute provides a way to 
+                        preserve or add semantic distinctions, for 
+                        example, saying that this &lt;app-group&gt; 
+                        provides standard reference tables         --&gt;
+&lt;!ATTLIST  app-group
+             %app-group-atts;                                        &gt;
+
+
+&lt;!--                    APPENDIX MODEL                             --&gt;
+&lt;!--                    Content model for the &lt;app&gt; element. The
+                        section model already contains parentheses.--&gt;
+&lt;!ENTITY % app-model    "(%sec-model;, permissions?)"                &gt; 
+
+
+&lt;!--                    APPENDIX                                   --&gt;
+&lt;!ELEMENT  app          %app-model;                                  &gt;
+&lt;!--         id         Unique identifier so the element may be
+                        referenced
+             content-type   
+                        Kind of or rationale for this appendix, used
+                        to divide appendices into useful classes.
+                        This attribute is used to preserve or add
+                        semantic distinctions.                     --&gt;
+&lt;!ATTLIST  app
+             %app-atts;                                              &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    FOOTNOTE GROUPING ELEMENTS                 --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    FOOTNOTE GROUP MODEL                       --&gt;
+&lt;!--                    Content model for the &lt;fn-group&gt; element   --&gt;
+&lt;!ENTITY % fn-group-model
+                        "(title?, (%fn-link.class;)+)"               &gt;
+
+
+&lt;!--                    FOOTNOTE GROUP                             --&gt;
+&lt;!--                    Footnotes in a journal article may be
+                        scattered throughout the text, at the places
+                        they occur, or collected in groups at the
+                        end of structural units.  This element is a
+                        wrapper tag for such groups of footnotes.  --&gt;
+&lt;!ELEMENT  fn-group     %fn-group-model;                             &gt;
+&lt;!--         id         Unique identifier so the element may be
+                        referenced
+             content-type
+                        Lets different groups of footnotes be
+                        identified, for example to distinguish 
+                        between "front matter" footnotes (such as 
+                        the corresponding author or affiliation) 
+                        and bottom-of-the-page, narrative text 
+                        footnotes.                                 --&gt;
+&lt;!ATTLIST  fn-group
+             %fn-group-atts;                                         &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    GLOSSARY                                   --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    GLOSSARY MODEL                             --&gt;
+&lt;!--                    Content model for the &lt;glossary&gt; element
+                        Note: an exception is made to the full
+                        class-mix structure to allow &lt;gloss-group&gt;
+                        inside an &lt;glossary&gt; without requiring a
+                        separate class for it.                     --&gt;
+&lt;!ENTITY % glossary-model
+                        "(title?, (%para-level;)*, gloss-group*)"    &gt;
+                        
+                        
+&lt;!--                    GLOSSARY ELEMENTS                          --&gt;
+&lt;!--                    Glossary or list of definitions.  Typically
+                        the content will be one or more Definition
+                        Lists.                                     --&gt;
+&lt;!ELEMENT  glossary     %glossary-model;                             &gt;
+&lt;!--         id         Unique identifier so the element may be
+                        referenced
+             content-type   
+                        "content-type" attribute provides a way to 
+                        preserve or add semantic distinctions, for 
+                        multiple conference dates                  --&gt;
+&lt;!ATTLIST  glossary
+             %glossary-atts;                                         &gt;
+
+
+&lt;!--                    GLOSSARY GROUP MODEL                       --&gt;
+&lt;!--                    Content model for the &lt;gloss-group&gt; element--&gt;
+&lt;!ENTITY % gloss-group-model
+                        "(title?, (%para-level;)*)"                  &gt; 
+
+
+&lt;!--                    GLOSSARY GROUP                             --&gt;
+&lt;!--                    A (usually headed) group of glossary
+                        definitions.  The most likely content for this
+                        element is a paragraph of explanation,
+                        followed by a definition list.             --&gt;
+&lt;!ELEMENT  gloss-group  %gloss-group-model;                          &gt;
+&lt;!--         id         Unique identifier so the element may be
+                        referenced
+             content-type   
+                        "content-type" attribute provides a way to 
+                        preserve or add semantic distinctions, for 
+                        multiple conference dates                  --&gt;
+&lt;!ATTLIST  gloss-group
+             %gloss-group-atts;                                      &gt;
+
+
+&lt;!-- ================== End Back Matter Module =================== --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for External Link Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group>
+<author-notes><?mtl /hellip?>
+<fn id="FN153"><label>&#x000a7;</label><p>Present address: Washington Biotech, 14256 Howardness Road, Kalamazoo, MI 49007. <ext-link ext-link-type="email">
+<italic>kuse&commat;udel.edu</italic>
+</ext-link></p></fn>
+<?mtl hellip?></author-notes>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+</article-meta>
+</front>
+<body>
+<p></p>
+</body>
+</article><?mtl /hellip?>
+

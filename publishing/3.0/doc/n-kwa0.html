@@ -1,0 +1,124 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Element: Edition, Cited</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;edition&gt;</h1>
+         <h1 class="elementname">Edition, Cited</h1>
+      </div>
+      <div class="definition">
+         <p class="para">The edition number of a cited publication
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">For a detailed discussion on the use of <span class="elementtag">&lt;edition&gt;</span>, see <a href="n-ui32.html#tag-vol-edt">Ordinal Numbers</a>.
+            
+         </p>
+         <p class="para">This element is used in bibliographic references (<a href="n-8xa0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-t5v0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>).
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-cdd0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-cdd0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  edition      (#PCDATA <a href="n-rab0.html" target="main" title="Edition Elements"><span class="petag">%edition-elements;</span></a>)*                &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(#PCDATA)*</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Text, numbers, or special characters, zero or more</p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-8xa0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-t5v0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-hzv0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-nfs0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-wut0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-6et0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">In an element-style citation (punctuation and spacing removed):
+            
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref id="B6"&gt;
+&lt;element-citation&gt;
+&lt;collab&gt;National Committee for Clinical Laboratory
+Standards&lt;/collab&gt;
+&lt;source&gt;Performance standards for antimicrobial disk
+susceptibility tests&lt;/source&gt;
+&lt;comment&gt;Approved standard&lt;/comment&gt;
+<strong><span class="focus">&lt;edition&gt;7&lt;/edition&gt;</span></strong>
+&lt;fpage&gt;M2&lt;/fpage&gt;
+&lt;lpage&gt;A7&lt;/lpage&gt;
+&lt;publisher-loc&gt;Wayne, Pa&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;National Committee for Clinical Laboratory
+Standards&lt;/publisher-name&gt;
+&lt;year&gt;2000&lt;/year&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <p class="para">In a mixed-style citation (punctuation and spacing preserved):
+            
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;...&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;...
+&lt;ref-list&gt;
+&lt;title&gt;REFERENCES&lt;/title&gt;
+...
+&lt;ref id="B6"&gt;
+&lt;mixed-citation&gt;
+&lt;collab&gt;National Committee for Clinical Laboratory
+Standards&lt;/collab&gt;.
+&lt;source&gt;Performance standards for antimicrobial disk
+susceptibility tests&lt;/source&gt;.
+&lt;comment&gt;Approved standard&lt;/comment&gt;.
+<strong><span class="focus">&lt;edition&gt;7&lt;/edition&gt;</span></strong>&lt;sup&gt;th&lt;/sup&gt; ed.
+p. &lt;fpage&gt;M2&lt;/fpage&gt;&amp;ndash;
+&lt;lpage&gt;A7&lt;/lpage&gt;.
+&lt;publisher-loc&gt;Wayne, Pa&lt;/publisher-loc&gt;:
+&lt;publisher-name&gt;National Committee for Clinical
+Laboratory Standards&lt;/publisher-name&gt;;
+&lt;year&gt;2000&lt;/year&gt;.
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

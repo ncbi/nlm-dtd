@@ -1,0 +1,126 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Quote, Displayed</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;disp-quote&gt;</h1>
+         <h1 class="elementname">Quote, Displayed</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Extract or extended quoted passage from another work, usually made typographically distinct from surrounding text
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Use this element for epigraphs, as well as for block quotes and extracts within text.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-vwn0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-vwn0.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+         <h5 class="header"><a href="n-fzn0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fzn0.html" target="main"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  disp-quote   <a href="n-akh0.html" target="main" title="Quote, Displayed Model"><span class="petag">%disp-quote-model;</span></a>                           &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(title?, p+, attrib?, permissions?)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-yut0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-yut0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-s4w0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more
+               </li>
+               <li>
+                  <a href="n-6n20.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-6n20.html" target="main" title="<attrib&gt;"><span class="elementname">Attribution</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-nyw0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-nyw0.html" target="main" title="<permissions&gt;"><span class="elementname">Permissions</span></a>, zero or one
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-b820.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-hq20.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-im20.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-xya0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-myu0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-sx40.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;sec&gt;
+&lt;title&gt;Introduction&lt;/title&gt;
+<strong><span class="focus">&lt;disp-quote&gt;
+&lt;p&gt;Dead flies cause the ointment of the apothecary to send forth a
+stinking savor; so doth a little folly him that is in reputation
+for wisdom and honour.&lt;/p&gt;
+&lt;attrib&gt;Ecclesiastes 10:1&lt;/attrib&gt;
+&lt;/disp-quote&gt;</span></strong>
+&lt;p&gt;The term &amp;ldquo;flies in the ointment&amp;rdquo; is occasionally used
+to describe minor defects in some endeavor.  But this quote from
+Ecclesiastes has a much wider scope ...&lt;/p&gt;
+&lt;/sec&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;body&gt;
+<strong><span class="focus">&lt;disp-quote&gt;
+&lt;p&gt;&lt;preformat&gt;... who would fardels bear,
+To grunt and sweat under a weary life,
+But that the dread of something after death,
+The undiscover&amp;rsquo;d country from whose bourn
+No traveller returns, puzzles the will
+And makes us rather bear those ills we have
+Than fly to others that we know not of?&lt;/preformat&gt;&lt;/p&gt;
+&lt;attrib&gt;William Shakespeare, Hamlet, Act III,
+Scene IV&lt;/attrib&gt;
+&lt;/disp-quote&gt;</span></strong>
+&lt;p&gt;Shakespeare well understood the underpinning of
+our society&amp;rsquo;s tenacious need to cling to life:
+the fear of death, the fear of the unknown.  Yes, we
+acknowledge death is part of nature&amp;rsquo;s cycle,
+but even as we do so, we struggle ...&lt;/p&gt;
+&lt;sec&gt;...&lt;/sec&gt;
+&lt;/body&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">para3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

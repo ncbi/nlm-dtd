@@ -1,0 +1,117 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Copyright Year</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;copyright-year&gt;</h1>
+         <h1 class="elementname">Copyright Year</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The year of a copyright of the article</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Since the <a href="n-5n30.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a> element is
+                   intended for display, this element&#8217;s contents may not be displayed (but will be available for searching). The <a href="n-nd30.html"><span class="elementtag">&lt;copyright-year&gt;</span></a> element need not be used,
+                   if having the year as part of the
+                   <a href="n-5n30.html"><span class="elementname">Copyright Statement</span></a> (see
+                   <a href="n-5n30.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a>) is sufficient.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-pv40.html"><span class="attrtag">content-type</span></a> <a href="n-pv40.html"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">There are three copyright elements which may be contained in the <a href="n-5ya0.html"><span class="elementtag">&lt;permissions&gt;</span></a> wrapper:
+            <ul class="bullist">
+               <li><a href="n-5n30.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a> , which is the
+                                          textual statement of the copyright intended for print and display (The full statement usually contains
+                  the copyright holder&#8217;s name and the year among other information.);
+               </li>
+               <li><a href="n-nd30.html"><span class="elementtag">&lt;copyright-year&gt;</span></a>,  a metadata element that names just the copyright year; (This is intended for metadata searching and aggregation and is
+                  typically not displayed.);
+                                           and 
+               </li>
+               <li><a href="n-qf30.html"><span class="elementtag">&lt;copyright-holder&gt;</span></a>, also a  metadata element that is typically not displayed.  
+               </li>
+            </ul>
+                                    
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  copyright-year
+                        (#PCDATA)                                    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-5ya0.html"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-5ya0.html"><span class="elementname">Permissions</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital 
+care for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;aff id="StLukes"&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5 
+0NA&lt;/aff&gt;
+&lt;/contrib&gt;
+...
+&lt;/contrib-group&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British 
+Medical Journal&lt;/copyright-statement&gt;
+<strong><span class="focus">&lt;copyright-year&gt;1999&lt;/copyright-year&gt;</span></strong>
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of day hospital attendance 
+in prolonging independent living for elderly people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+... 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

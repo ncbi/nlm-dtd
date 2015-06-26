@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for NLM Citation Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group><?mtl /hellip?>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Genton</surname>
+<given-names>Blaise</given-names>
+</name>
+<role>senior scientist</role>
+<xref ref-type="aff">
+<sup>
+<italic>a</italic>
+</sup>
+</xref>
+<xref ref-type="corresp" rid="cor1">&#x2010;</xref>
+</contrib>
+</contrib-group>
+<aff>
+<sup>
+<italic>a</italic>
+</sup>Policlinique M&#x00E9;dicale Universitaire, 1005 Lausanne,
+Switzerland, <sup>
+<italic>b</italic>
+</sup>Swiss Federal Office of Public Health, Bern,
+Switzerland</aff>
+<author-notes>
+<fn fn-type="con">
+<p>&#x2003; Contributors: VD'A was responsible for data entry,
+management and analysis, interpretation of results, and writing the manuscript. PL was responsible for clinical supervision, data
+collection, and interpretation of results.</p>
+</fn>
+<corresp id="cor1">&#x2010; Correspondence to: B Genton
+<email>Blaise.Genton@hospvd.ch</email></corresp>
+</author-notes>
+<pub-date pub-type="pub">
+<day>13</day>
+<month>4</month>
+<year>2002</year>
+</pub-date>
+<fpage>65</fpage>
+</article-meta><?mtl hellip?>
+</front>
+<body>
+<p>...</p>
+</body>
+</article><?mtl /hellip?>

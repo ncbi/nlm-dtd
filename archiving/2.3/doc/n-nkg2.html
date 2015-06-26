@@ -1,0 +1,1205 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Journal Archiving DTD</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk">
+             National Center for Biotechnology Information (NCBI)<br class="linebrk">
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Journal Archiving DTD</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Journal Archiving and Interchange DTD             --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN"
+     Delivered as file "archivearticle.dtd"                        --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Journal Archiving and Interchange DTD of the      --&gt;
+&lt;!--             Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    DTD to describe a full-text journal article       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             The Journal Archiving and Interchange DTD         --&gt;
+&lt;!--             describes journal articles and some non-article   --&gt;
+&lt;!--             material such as product and book reviews for     --&gt;
+&lt;!--             repository or interchange purposes. It describes  --&gt;
+&lt;!--             both the metadata for a journal article and the   --&gt;
+&lt;!--             full content of the article.                      --&gt;
+&lt;!--             This DTD was constructed using the modules in the --&gt;
+&lt;!--             Archiving and Interchange DTD Suite, using almost --&gt;
+&lt;!--             no customization.                                 --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) Declare and invoke the Archival (Green) DTD-   --&gt;
+&lt;!--                specific module of modules, that names  any    --&gt;
+&lt;!--                modules created expressly for this DTD.        --&gt;
+&lt;!--                   (%archivecustom-modules.ent;)               --&gt;
+&lt;!--             2) Declare and invoke the DTD Suite module of     --&gt;
+&lt;!--                   modules (%modules.ent;), the Archiving and  --&gt;
+&lt;!--                   Interchange Suite module that names all the --&gt;
+&lt;!--                   Suite modules this DTD might invoke         --&gt;
+&lt;!--             3) Invoke DTD-specific classes over-ride module   --&gt;
+&lt;!--                               (%archivecustom-classes.ent;)   --&gt;
+&lt;!--             4) Invoke Suite default classes                   --&gt;
+&lt;!--                               (%default-classes.ent;)         --&gt;
+&lt;!--             5) Invoke DTD-specific mixes over-ride module     --&gt;
+&lt;!--                               (%archivecustom-mixes.ent;)     --&gt;
+&lt;!--             6) Invoke Suite default mixes                     --&gt;
+&lt;!--                               (%default-mixes.ent;)           --&gt;
+&lt;!--             7) Invoke DTD-specific content model over-ride    --&gt;
+&lt;!--                        module (%archivecustom-models.ent;)    --&gt;
+&lt;!--             8) Invoke the Common Element Module (from Suite)  --&gt;
+&lt;!--             9) Invoke all the Class Modules (from Suite) as   --&gt;
+&lt;!--                    well as any DTD-specific element modules   --&gt;
+&lt;!--            10) Parameter Entities for attribute values used   --&gt;
+&lt;!--                 in this module (DTD-specific definitions)     --&gt;
+&lt;!--            11) Define document element (Article &lt;article&gt;)    --&gt;
+&lt;!--            12) Define Front Matter &lt;front&gt;                    --&gt;
+&lt;!--            13) Define Body Matter &lt;body&gt;                      --&gt;
+&lt;!--            14) Define Back Matter &lt;back&gt;                      --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital Archive of Journal Articles               --&gt;
+&lt;!--             National Center for Biotechnology Information     --&gt;
+&lt;!--                (NCBI)                                         --&gt;
+&lt;!--             National Library of Medicine (NLM)                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             December 2002                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Jeff Beck       (NCBI)                            --&gt;
+&lt;!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             Bruce Rosenblum (Inera Inc.)                      --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             The Journal Archiving and Interchange DTD is      --&gt;
+&lt;!--             built from the Archiving and Interchange DTD      --&gt;
+&lt;!--             Suite.                                            --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             The Archiving and Interchange DTD Suite evolved   --&gt;
+&lt;!--             from NLM/NCBI's pmc-1 DTD.                        --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             NLM thanks the Harvard University Libraries, both --&gt;
+&lt;!--             for proposing that a draft archiving NLM DTD for  --&gt;
+&lt;!--             life sciences journals be extended to accommodate --&gt;
+&lt;!--             journals in all disciplines and for sponsoring    --&gt;
+&lt;!--             Bruce Rosenblum's collaboration with other DTD    --&gt;
+&lt;!--             authors in completing Version 1.0. The Andrew W.  --&gt;
+&lt;!--             Mellon Foundation provided support for these      --&gt;
+&lt;!--             important contributions.                          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             this DTD should be sent in email to:              --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+
+     Enhancement Release (2.3) following the Working Group meetings
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs.
+
+21. FLOATS WRAPPER - Added new element &lt;floats-wrap&gt; to both of the
+     models for article (article-short and article-full) and the model
+     for sub-article. This new element, which follows the &lt;back&gt;
+     element, is a  just a wrapper to hold the floating objects that
+     occur anywhere in the article. Some publishers like to
+     collect all the "floating objects" (figures, tables, text boxes,
+     graphics, etc.) together at the end of the document rather than
+     interspersing them throughout the parts of the article where
+     they are referenced.
+
+
+ 20. NLM CITATION - Added &lt;nlm-citation&gt; as an alternative to
+     unstructured &lt;citation&gt;s by adding &lt;nlm-citation&gt;
+     to -%citation.class;. This changed the models for:
+      - &lt;ref&gt;, which uses %citation.class; inside %ref-model;
+      - &lt;p&gt; through &amp;p-elements;
+      - to inside cell mix
+      - added &lt;nlm-citation&gt; module declaration to
+          -%archivecustom-modules.ent;
+      - invoked -%nlm-citation.ent in this DTD
+
+ 19. DTD VERSION ATTRIBUTE - Fixed attribute value changed from "2.2"
+     to "2.3" to reflect latest version of DTD
+
+ 18. Updated public identifier to "v2.3 20070202//EN"
+
+     =============================================================
+     Version 2.2                       (DAL/BTU) v2.2 (2006-04-30)
+
+     Backwards-compatible changes to meet operational needs.
+     Typical changes include adding attribute values and making
+     required elements optional.
+
+ 17. DTD VERSION ATTRIBUTE - Fixed attribute value changed from "2.1"
+     to "2.2" to reflect latest version of DTD
+
+ 16. RESPONSE TYPE ATTRIBUTE - Only the comment has changed to reflect
+     the usage. First, the use of the attribute is no longer
+     discouraged. Second, there are a few suggested values.
+
+ 15. SUB-ARTICLE/RESPONSE METADATA
+     a. Added new element &lt;front-stub&gt; as an alternative to the
+     typical &lt;front&gt; metadata inside a  &lt;sub-article&gt;, so that not
+     as much metadata is replicated between the article and
+     sub-article. For example, a &lt;sub-article&gt; that uses a
+     &lt;front-stub&gt; will inherit all of its &lt;journal-meta&gt; from the
+     journal meta of the associated article.
+
+     b. Changed the model for %article-short-model; (which is used
+        only for &lt;response&gt; to also use &lt;front-stub&gt;
+
+ 14. ID ATTRIBUTES- Added &lt;sub-article&gt; and &lt;response&gt; through
+     their attribute Parameter Entities
+
+ 13. SIGNATURE BLOCK- Added &lt;sig-block&gt; to the end of article &lt;body&gt;
+
+ 12. ARTICLE TYPES ATTRIBUTE - Added new values to the list of
+     suggested values in the comments:
+      - collection
+      - dissertation
+      - partial-retraction
+      - rapid-communication
+      - reprint
+      - translation
+
+ 11. Updated public identifier to "v2.2 20060430//EN"
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+
+
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by the online list
+
+ 10. Modified Module of Modules to include new MathML 2.0 DTD
+     (mathml2.dtd,v 1.12 2003/11/04) and modified entity
+     "xmlspecchars.ent" to include the new MathML Character sets
+     which match Unicode 4.0.
+
+     Implementor Alert: New directory structure for the character
+     sets was also adopted, to match the new MathML directories.
+
+     Implementor Alert: New directory structure for the character
+     sets was also adopted, to match the new MathML directories.
+     There are now 3 character set directories:
+            - iso8879 (from SGML used in MathML)
+            - iso9573-13 (from ISO Tech Rpt used in MathML)
+            - xmlchars (from SGML not used in MathML)
+
+  9. Updated public identifier to "v2.3 20070202", modified the
+     fpis of the updated modules (both publishing custom modules
+     and the Suite modules), and changed the "dtd-version" fixed
+     attribute to reference latest version of DTD (version "2.1").
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-07-30)
+
+
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist
+          archive DTD (the current Green Archiving and Interchange
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+
+  8. COMPLETE MODELS WHEN OVER-RIDING A CONTENT MODEL
+     (for all Parameter Entities suffixed "-model")
+     ### Customization Alert ###
+     Made all the model over-rides consistent. Some included
+     the outer parentheses, some did not. They all do now.
+     Added parentheses to Parameter Entity and removed them
+     from the Element Declarations:
+     -  %article-short-model;
+     -  %article-full-model;
+     -  %front-model;
+     -  %body-model;
+     -  %back-model;
+
+  7. ATTRIBUTE VALUE LISTS
+     a. For the Green (Preservationist Archival) DTD, changed all
+        explicit attribute value lists to CDATA. In the future,
+        attribute value lists will be a feature of the Blue
+        (Publishing) and new Authoring DTDs.
+        - Added Parameter Entities to hold "date-type"
+        - Changed the following attributes:
+             article-type (in %article-atts;)
+     b. Removed Parameter Entity definition for
+        %article-types: since it was not being used at all!
+        The attribute takes CDATA values.
+
+     c. SUBARTICLE ATTRIBUTES - made into a Parameter Entity
+
+
+  6. PARAMETER ENTITY CLEANUP AND REGULARIZATION
+
+     a. RENAME ELEMENT MIXES NOT TO END IN "-elements"
+        ### Customization Alert ###
+        Names ending in "-elements" saved for the particular mixes
+        that will be added to #PCDATA for a particular element,
+        therefore:
+        -  %doc-back-matter-elements; ==&gt; %doc-back-matter-mix;
+
+     b. FRONT MATTER MODEL - rewritten to use new class Parameter
+        Entity %front-back.class; and to use %list.class; rather
+        than just &lt;def-list&gt;. This widens the model of Front Matter
+        by adding &lt;list&gt;.
+
+  5. REMODULARIZATION - The entire Archiving and Interchange DTD
+     Suite was remodularized. Replaced the previous single Archiving
+     customization module (archivecustomize.ent) with the
+     following single-function customization modules:
+       - archivecustom-modules.ent (DTD-specific module naming)
+       - archivecustom-classes.ent (DTD-specific classes over-rides)
+       - default.classes (Default classes declarations)
+       - archivecustom-mixes.ent (DTD-specific mixes over-rides)
+       - default-mixes (Default mixes declarations)
+       - archivecustom-models.ent (DTD-specific content model
+         over-rides to the base Suite)
+            There are two types of such over-rides. One that
+            replaces a complete content model (which are named with a
+            suffix "-model") and those that are OR groups of
+            elements, intended to be mixed with #PCDATA inside
+            a particular model (which are named with an "-elements"
+            suffix).
+
+  4. VERSION 2.0 - Updated public identifier to "v2.1 20050630" on
+     this module and the module-of-modules module and changed the
+     "dtd-version" fixed attribute to reference latest version
+     of DTD (version "2.0").
+
+     =============================================================
+     Version 1.1                           (TRG) v1.1 (2003-11-01)
+
+  3. Updated public identifier to "v1.1 20031101"
+
+  2. Changed Parameter Entity %dtd-version; to reference latest
+     version of DTD (version 1.1)
+
+  1. Updated public identifiers for modules.ent and
+     archivecustomize.ent to reflect modules' modification.
+     Rationale: To call updated modules.
+                                                                   --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DESIGN CONSIDERATIONS                      --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- MODULAR DTD LIBRARY
+                        A set of journal archiving and interchange
+                        DTD modules was written as the basis for
+                        publishing, interchange, and repository
+                        DTDs, with the intention that DTDs for
+                        specific purposes, such as this Journal
+                        Archiving and Interchange DTD, would be
+                        developed based on them.
+
+                        This archiving DTD has been designed to
+                        be descriptive, open, and inclusive to
+                        allow journal articles to be translated into
+                        this format as conveniently as possible
+                        from a wide variety of proprietary journal
+                        article DTDs (such as Blackwell, Keton, and
+                        Ovid).
+
+                        This Archiving DTD has been developed from
+                        the Archiving and Interchange DTD Suite
+                        modules, in the approved manner, making
+                        changes to the declarations in those modules
+                        by over-riding Parameter Entity contents
+                        by redefining the entities in the
+                            %archivecustomize.ent;
+                        module, which is called from this DTD file.
+                        No changes to any of the original Archiving
+                        and Interchange Suite modules are required
+                        in order to use this DTD.                  --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    VERSION 1.0 DESIGN CONSIDERATIONS          --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- THE MANY ROADS NOT TAKEN
+                        In the interest of getting a version of this
+                        DTD into production as quickly as practical,
+                        several structures and functions that might
+                        be appropriately included have been delayed
+                        until a future version of this DTD. Such
+                        components include:
+                          - Questions and Answers (These may be
+                              modeled with the current DTDs by using
+                              paragraphs and lists)
+                          - Continuing Medical Education material
+                             (which frequently contains questions
+                             and answers)
+                          - Forms and fill-in-the-blank
+                          - Conflict of Interest statements and
+                              Financial Disclosure (May be modeled
+                              as paragraphs or footnotes)
+                          - Electronic and Digital Rights Management
+                          - Advertising included in the journal:
+                                + Job ads
+                                + Classified advertising
+                                + Display advertising
+                          - Calendars, meeting schedules, and
+                              announcements.  (These can be handled
+                              as ordinary articles or sections within
+                              articles)
+                          - About the Journal material such as Author
+                              Guidelines, Policy and Scope statements,
+                              Editorial or advisory boards, detailed
+                              indicia, etc.
+                                                                  --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    MODULES OF MODULES INVOKED                 --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    MODULE TO NAME DTD-SPECIFIC MODULES        --&gt;
+&lt;!--                    Names all DTD-specific external modules    --&gt;
+&lt;!ENTITY % archivecustom-modules.ent PUBLIC
+"-//NLM//DTD Journal Archiving DTD-Specific Modules v2.3 20070202//EN"
+"archivecustom-modules.ent"                                          &gt;
+%archivecustom-modules.ent;
+
+
+&lt;!--                    MODULE TO NAME THE MODULES                 --&gt;
+&lt;!--                    Declares all the external modules that are
+                        part of the modular Journal Archiving and
+                        Interchange DTD Suite library. Thus it does
+                        NOT declare itself; the DTD-specific
+                        module-of-modules; any DTD-specific class,
+                        mix, or model over-ride modules; or any new
+                        new content modules specific to this DTD.
+                        Those are declared in the DTD-specific
+                        module of modules.
+                           Since this module declares but does not
+                        invoke modules, this DTD then invokes any
+                        modules it uses by referencing the external
+                        Parameter Entities defined in the Module of
+                        Modules. To include a set of elements (such
+                        as all the lists or the MathML elements) this
+                        module defines the external Parameter Entity
+                        for the module(s) that contains the MathML
+                        declarations and the DTD references that
+                        entity.                                    --&gt;
+&lt;!ENTITY % modules.ent PUBLIC
+"-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.3 20070202//EN"
+"modules.ent"                                                        &gt;
+%modules.ent;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    CUSTOMIZATION MODULES INVOKED              --&gt;
+&lt;!--                    Note: These modules must be called after   --&gt;
+&lt;!--                    all Module of Modules but before any other --&gt;
+&lt;!--                    modules. Unlike any other grouping, order  --&gt;
+&lt;!--                    of these modules matters.                  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    DTD-SPECIFIC CLASS CUSTOMIZATIONS MODULE   --&gt;
+&lt;!--                    Names the module that holds the DTD-specific
+                        class definitions for the Journal Archiving
+                        and Interchange DTD that over-rides the Suite
+                        defaults.
+                        (Defined in %archivecustom-modules.ent;)   --&gt;
+%archivecustom-classes.ent;
+
+
+&lt;!--                    DEFAULT ELEMENT CLASSES MODULE             --&gt;
+&lt;!--                    Names the module that holds the standard
+                        class definitions for the Journal Archiving
+                        and Interchange DTD Suite.                 --&gt;
+%default-classes.ent;
+
+
+&lt;!--                    DTD-SPECIFIC MIX CUSTOMIZATIONS MODULE     --&gt;
+&lt;!--                    Set up the Parameter Entities and element
+                        class definitions that will be used to
+                        over-ride some element mixes in this DTD.
+                        (Defined in %archivecustom-modules.ent;)   --&gt;
+%archivecustom-mixes.ent;
+
+
+&lt;!--                    DEFAULT MIX CUSTOMIZATIONS MODULE          --&gt;
+&lt;!--                    Names the module that holds the standard
+                        mix definitions for the Journal Archiving
+                        and Interchange DTD Suite.                 --&gt;
+%default-mixes.ent;
+
+
+&lt;!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS
+                        MODULE                                     --&gt;
+&lt;!--                    Names the module that holds the over-rides
+                        of content models, attribute lists, elements
+                        lists to be used in content models, and
+                        attribute values. These are DTD-specific.
+                        (Defined in %archivecustom-modules.ent;)   --&gt;
+%archivecustom-models.ent;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    COMMON (SHARED) ELEMENTS MODULE INVOKED    --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    COMMON (SHARED) DECLARATIONS               --&gt;
+&lt;!--                    Declarations for elements, attributes,
+                        entities, and Notations that are shared by
+                        more than one class module. Note: Must be
+                        called before any of the class modules.    --&gt;
+
+%common.ent;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    JOURNAL ARTICLE CLASS ELEMENTS (alpha)     --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!--                    ARTICLE METADATA ELEMENTS                  --&gt;
+%articlemeta.ent;
+
+
+&lt;!--                    BACK MATTER ELEMENTS                       --&gt;
+%backmatter.ent;
+
+
+&lt;!--                    DISPLAY (GRAPHICAL) ELEMENTS               --&gt;
+%display.ent;
+
+
+&lt;!--                    FORMATTING ELEMENT CLASSES                 --&gt;
+&lt;!--                    Elements that change rendition/display.    --&gt;
+%format.ent;
+
+
+&lt;!--                    JOURNAL METADATA ELEMENTS                  --&gt;
+%journalmeta.ent;
+
+
+&lt;!--                    LINK CLASS ELEMENTS                        --&gt;
+%link.ent;
+
+
+&lt;!--                    LIST CLASS ELEMENTS                        --&gt;
+%list.ent;
+
+
+&lt;!--                    MATH ELEMENTS                              --&gt;
+%math.ent;
+
+
+&lt;!--                    NLM CITATION ELEMENT                       --&gt;
+%nlmcitation.ent;
+
+
+&lt;!--                    PARAGRAPH-LEVEL ELEMENTS                   --&gt;
+%para.ent;
+
+
+&lt;!--                    PHRASE-LEVEL ELEMENTS                      --&gt;
+%phrase.ent;
+
+
+&lt;!--                    BIBLIOGRAPHIC REFERENCE (CITATION)
+                        CLASS ELEMENTS                             --&gt;
+%references.ent;
+
+
+&lt;!--                    SECTION ELEMENTS                           --&gt;
+%section.ent;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    THE REST OF THE EXTERNAL MODULES INVOKED   --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    MATHML SETUP MODULE                        --&gt;
+&lt;!--                    Invoke the MathML modules                  --&gt;
+%mathmlsetup.ent;
+
+
+
+&lt;!--                    XHTML TABLE SETUP MODULE                   --&gt;
+&lt;!--                    Set up the necessary Parameter Entity values
+                        and then invoke XHTML (HTML 4.0) table
+                        module                                     --&gt;
+%XHTMLtablesetup.ent;
+
+
+&lt;!--                    SPECIAL CHARACTERS DECLARATIONS            --&gt;
+&lt;!--                    Standard XML special character entities
+                        used in this DTD                           --&gt;
+%xmlspecchars.ent;
+
+
+&lt;!--                    CUSTOM SPECIAL CHARACTERS DECLARATIONS     --&gt;
+&lt;!--                    Custom special character entities created
+                        specifically for use in this DTD Suite     --&gt;
+%chars.ent;
+
+
+&lt;!--                    NOTATION DECLARATIONS MODULE               --&gt;
+%notat.ent;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PARAMETER ENTITIES FOR ATTRIBUTE LISTS     --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    DTD VERSION                                --&gt;
+&lt;!--                    What version of this DTD was used to make
+                        the document instance under consideration.
+                        Note that this is a fixed value that should
+                        change every time the DTD changes versions or
+                        revisions.                                 --&gt;
+&lt;!ENTITY % dtd-version
+            "dtd-version
+                        CDATA                         #FIXED '2.3'"  &gt;
+
+
+
+&lt;!--                    ARTICLE ATTRIBUTES                         --&gt;
+&lt;!--                    Attributes for the top-level element
+                        &lt;article&gt;                                  --&gt;
+&lt;!ENTITY % article-atts
+            "article-type
+                        CDATA                              #IMPLIED
+             %dtd-version;
+             xml:lang   NMTOKEN                            'EN'
+             %XLINK.xmlns.attrib;
+             %MATHML.xmlns.attrib;
+             %Schema.xmlns.attrib;"                                  &gt;
+
+
+&lt;!--                    SUB-ARTICLE ATTRIBUTES                     --&gt;
+&lt;!--                    Attributes for the &lt;sub-article&gt; element   --&gt;
+&lt;!ENTITY % sub-article-atts
+            "article-type
+                        CDATA                              #IMPLIED
+             id         ID                                 #IMPLIED
+             xml:lang   NMTOKEN                            'EN'"     &gt;
+
+
+&lt;!--                    RESPONSE ATTRIBUTES                        --&gt;
+&lt;!--                    Attributes for the &lt;response&gt; element      --&gt;
+&lt;!ENTITY % response-atts
+            "response-type
+                        CDATA                              #IMPLIED
+             id         ID                                 #IMPLIED
+             xml:lang   NMTOKEN                            'EN'"     &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    JOURNAL ARTICLE ELEMENTS                   --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    ARTICLE MODEL (LIMITED)                    --&gt;
+&lt;!--                    Article-like model used for, for example,
+                        a short sub-article such as a news brief that
+                        is contained in side a journal article.
+                        Only the metadata (&lt;front&gt; for full metadata
+                        or &lt;front-stub&gt; for article metadata,
+                        inheriting the rest from the parent article)
+                        is required, although typical short articles
+                        also have a body and may have references or
+                        other back matter.
+                        The &lt;floats-wrap&gt; container element is just
+                        a wrapper to hold the floating objects
+                        that occur anywhere in the article. Some
+                        publishers like to collect all the floating
+                        objects (figures, tables, text boxes,
+                        graphics, etc.) together at the end rather
+                        than interspersing them throughout the parts
+                        of the article where they are referenced.  --&gt;
+&lt;!ENTITY % article-short-model
+                        "((front | front-stub), body?, back?,
+                          floats-wrap?)"                             &gt;
+
+
+&lt;!--                    ARTICLE MODEL WITH SUBARTICLE OR RESPONSE  --&gt;
+&lt;!--                    Typical journal article model, which may
+                        contain extended components, such as
+                        sub-articles or responses, but which usually
+                        contains neither.
+                        The &lt;floats-wrap&gt; container element is just
+                        a wrapper to hold the floating objects
+                        that occur anywhere in the article. Some
+                        publishers like to collect all the floating
+                        objects (figures, tables, text boxes,
+                        graphics, etc.) together at the end rather
+                        than interspersing them throughout the parts
+                        of the article where they are referenced.  --&gt;
+&lt;!ENTITY % article-full-model
+                        "(front, body?, back?, floats-wrap?,
+                          (sub-article* | response*) )"              &gt;
+
+
+&lt;!--                    ARTICLE                                    --&gt;
+&lt;!--                    The complete content of a journal article.
+                        An article is potentially divided into
+                        four (more typically three) parts: 1) the
+                        Front Matter (article metadata or header),
+                        the body of the article (main content), any
+                        ancillary information such as a glossary or
+                        appendix, and (the least common) a
+                        response, that is a commentary on the
+                        article itself.                            --&gt;
+&lt;!ELEMENT  article      %article-full-model;                         &gt;
+&lt;!--         article-type
+                        What kind of article is this?
+                        Note: When the article is a commentary on
+                        another article, for example a correction or
+                        addendum, this attribute is metadata for the
+                        commentary itself, it does NOT define the
+                        kind of article that is being corrected or
+                        amended.
+                          This is an optional CDATA attribute, but
+                        an article type should be identified if
+                        possible. Potential values include:
+                          abstract   The article itself is an
+                                     abstract (of a paper or
+                                     presentation), usually that
+                                     has been presented or published
+                                     separately.
+                          addendum   A published item that adds
+                                     additional information or
+                                     clarification to another item
+                                     Similar value "correction"
+                                     corrects an error in previously
+                                     published material
+                          announcement
+                                     Material announced in the
+                                     publication (may or may not be
+                                     directly related to the pub)
+                          article-commentary
+                                     An item whose subject or focus
+                                     is another article or articles;
+                                     this article comments on the
+                                     other article(s) (For example,
+                                     for a controversial article, the
+                                     editors of the publication
+                                     might invite an author of the
+                                     opposing opinion to comment on
+                                     the first article, and publish
+                                     the two together.)
+                          book-review
+                                     Review or analysis of one or more
+                                     printed or online books (Note
+                                     that product reviews are a
+                                     separate type.)
+                          books-received
+                                     Notification of items such as
+                                     books that have been received
+                                     by the publication for review
+                                     or other consideration
+                          brief-report
+                                     A short and/or rapid announcement
+                                     of research results
+                          calendar   A list of events
+                          case-report
+                                     Case study, case report, or other
+                                     description of a case
+                          collection This value should only be used
+                                     to describe articles whose
+                                     intellectual content appears
+                                     primarily in the &lt;sub-article&gt;
+                                     or &lt;response&gt; elements.
+                          correction A modification, or
+                                     correction of previously
+                                     published material (sometimes
+                                     called "errata") Similar value
+                                     "addendum" merely adds to
+                                     previously published material
+                          dissertation
+                                     Thesis or dissertation written
+                                     as part of the completion of
+                                     a degree of study
+                          discussion Invited discussion related to a
+                                     specific article or issue
+                          editorial  Opinion piece, policy statement,
+                                     or general commentary, typically
+                                     written by staff of the
+                                     publication. Note: similar value
+                                     "article-commentary" is reserved
+                                     for a commentary on a specific
+                                     article or articles.
+                          in-brief   Summary of items in the current
+                                     issue
+                          introduction
+                                     An introduction to the
+                                     publication, a series of articles
+                                     within the publication, etc.,
+                                     typically for a special section
+                                     or issue
+                          letter     Letter to the publication,
+                                     typically commenting upon a
+                                     published item
+                          meeting-report
+                                      Report of a conference,
+                                      symposium, or meeting
+                          news        News item
+                          obituary    Announcement of a death or
+                                      appreciation of a colleague
+                                      who has recently died
+                          oration     Reprint of a speech or oral
+                                      presentation
+                          other       Not any of the article types
+                                      explicitly named in this list
+                          partial-retraction
+                                      Partial retraction of
+                                      previously published material
+                          product-review
+                                      Description, analysis, or review
+                                      of a product or service, for
+                                      example a software package (note
+                                      that book review is a separate
+                                      type)
+                          rapid-communication
+                                      Fast-breaking research update
+                                      or other news item
+                          reply       Reply to a letter or commentary,
+                                      typically by the original
+                                      author commenting upon the
+                                      comments
+                          reprint     Reprint of a previously
+                                      published article
+                          research-article
+                                      Research article
+                          retraction  Retraction of previously
+                                      published material
+                          review-article
+                                      Review or state-of-the-art
+                                      summary article
+                          translation Translation of an article
+                                      originally produced in a
+                                      different language
+             dtd-version
+                        Which version of the DTD does this article
+                        use? The value is a #FIXED attribute, so
+                        the entire attribute definition is defined
+                        in a Parameter Entity, so the next version
+                        of the DTD can use a different #FIXED value.
+             xml:lang   The language in which the value of the
+                        element is expressed.  Recommended best
+                        practice is to use values as defined in
+                        RFC 1766, typically 2-letter language
+                        codes such as "FR" (French), "EN" (English),
+                        and "DE" (German).  These values are NOT
+                        case sensitive, so "EN" = "en". The values
+                        may include hyphenated differentiations such
+                        as "EN-AU" (Australian English) and "EN-US"
+                        (United States English).
+                        Processing and Conversion Note: All other
+                        xml:lang attributes within the article
+                        inherit the value set on &lt;article&gt; unless
+                        explicitly set themselves with their own
+                        "xml:lang" attribute.
+             xmlns      Set up the pseudo-attributes for the
+                        namespaces for any namespaces used in this
+                        DTD.  XLink and MathML are set up in the
+                        MathML modules. These xmlns are called
+                        here because certain older tools will not
+                        work properly with namespaces unless they
+                        are declared on the top level element.
+                        The PEs are defined in the MathML modules. --&gt;
+&lt;!ATTLIST  article
+             %article-atts;                                          &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    FRONT MATTER ELEMENTS                      --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    FRONT MATTER MODEL                         --&gt;
+&lt;!--                    Model for the &lt;front&gt; matter (the header
+                        metadata) of a journal article)            --&gt;
+&lt;!ENTITY % front-model  "(journal-meta?, article-meta,
+                          (%list.class; | %front-back.class;)* )"    &gt;
+
+
+&lt;!--                    FRONT MATTER                               --&gt;
+&lt;!--                    The metadata concerning an article, such as
+                        the name and issue of the journal in which it
+                        appears and the name and author(s) of the
+                        article.
+                        In some journal DTDs this is called the
+                        header information, and it includes metadata
+                        concerning the journal &lt;journal-meta&gt; and
+                        metadata concerning the issue of the journal
+                        and the individual article &lt;article-meta&gt;. --&gt;
+&lt;!ELEMENT  front        %front-model;                                &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    BODY ELEMENTS                              --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    BODY MODEL                                 --&gt;
+&lt;!--                    Content model for the Body (main textual
+                        content) of a journal article.             --&gt;
+&lt;!ENTITY % body-model   "((%para-level;)*, (%sec-level;)*,
+                          sig-block?)"                               &gt;
+
+
+&lt;!--                    BODY OF THE ARTICLE                        --&gt;
+&lt;!--                    The main textual portion of the article that
+                        conveys the content.                       --&gt;
+&lt;!ELEMENT  body         %body-model;                                 &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    BACK MATTER ELEMENTS                       --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    BACK MATTER MODEL                          --&gt;
+&lt;!--                    Content model for the Back Matter (ancillary
+                        material such as appendices) of a journal
+                        article.                                   --&gt;
+&lt;!ENTITY % back-model   "(title*, (%doc-back-matter-mix;)* )"        &gt;
+
+
+&lt;!--                    BACK MATTER                                --&gt;
+&lt;!--                    Ancillary or supporting material not included
+                        as part of the main textual content of a
+                        journal article, for example appendices and
+                        acknowledgments.                           --&gt;
+&lt;!ELEMENT  back         %back-model;                                 &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    SUBARTICLE                                 --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    SUBARTICLE MODEL                           --&gt;
+&lt;!--                    Content model for the &lt;sub-article&gt; element
+                                                                   --&gt;
+&lt;!ENTITY % sub-article-model
+                        "( (front | front-stub), body?, back?,
+                           floats-wrap?, (sub-article* | response*) )"
+                                                                     &gt;
+
+
+&lt;!--                    SUBARTICLE                                 --&gt;
+&lt;!--                    An article that is completely contained
+                        inside another article. Both the article and
+                        the subarticle have their own metadata. The
+                        article has at very least journal and issue
+                        information and start and end pages; it may
+                        have a title, author, or other metadata.
+                        The subarticle has its own, independent
+                        metadata, such as authors, that it
+                        may not share with the article that
+                        encloses it.
+                        Conversion Note: "Superarticles" that contain
+                        other articles rarely contain much content of
+                        their own, perhaps just a title and
+                        introductory paragraph.
+                        Authoring Note: This construction is NOT to
+                        be used for an article and its response, or
+                        for a series of responses, even if the
+                        original article to which the responses are
+                        replying is elsewhere.                     --&gt;
+&lt;!ELEMENT  sub-article  %sub-article-model;                          &gt;
+&lt;!--         article-type
+                        What kind of article is this?
+                        Note: When the article is a commentary on
+                        another article, for example a correction or
+                        addendum, this attribute is metadata for the
+                        commentary itself, it does NOT define the
+                        kind of article that is being corrected or
+                        amended.
+                        Authoring Note: All articles
+                        should have types assigned if possible.
+                          abstract   The article itself is an
+                                     abstract (of a paper or
+                                     presentation), usually that
+                                     has been presented or published
+                                     separately.
+                          addendum   A published item that adds
+                                     additional information or
+                                     clarification to another item
+                                     Similar value "correction"
+                                     corrects an error in previously
+                                     published material
+                          announcement
+                                     Material announced in the
+                                     publication (may or may not be
+                                     directly related to the pub)
+                          article-commentary
+                                     An item whose subject or focus
+                                     is another article or articles;
+                                     this article comments on the
+                                     other article(s) (For example,
+                                     for a controversial article, the
+                                     editors of the publication
+                                     might invite an author of the
+                                     opposing opinion to comment on
+                                     the first article, and publish
+                                     the two together.)
+                          book-review
+                                     Review or analysis of one or more
+                                     printed or online books (Note
+                                     that product reviews are a
+                                     separate type.)
+                          books-received
+                                     Notification of items such as
+                                     books that have been received
+                                     by the publication for review
+                                     or other consideration
+                          brief-report
+                                     A short and/or rapid announcement
+                                     of research results
+                          calendar   A list of events
+                          case-report
+                                     Case study, case report, or other
+                                     description of a case
+                          collection This value should only be used
+                                     to describe articles whose
+                                     intellectual content appears
+                                     primarily in the &lt;sub-article&gt;
+                          correction A modification, or
+                                     correction of previously
+                                     published material (sometimes
+                                     called "errata") Similar value
+                                     "addendum" merely adds to
+                                     previously published material
+                          discussion Invited discussion related to a
+                                     specific article or issue
+                          dissertation
+                                     Thesis or dissertation written
+                                     as part of the completion of
+                                     a degree of study
+                          editorial  Opinion piece, policy statement,
+                                     or general commentary, typically
+                                     written by staff of the
+                                     publication. Note: similar value
+                                     "article-commentary" is reserved
+                                     for a commentary on a specific
+                                     article or articles.
+                          in-brief   Summary of items in the current
+                                     issue
+                          introduction
+                                     An introduction to the
+                                     publication, a series of articles
+                                     within the publication, etc.,
+                                     typically for a special section
+                                     or issue
+                          letter     Letter to the publication,
+                                     typically commenting upon a
+                                     published item
+                          meeting-report
+                                      Report of a conference,
+                                      symposium, or meeting
+                          news        News item
+                          obituary    Announcement of a death or
+                                      appreciation of a colleague
+                                      who has recently died
+                          oration     Reprint of a speech or oral
+                                      presentation
+                          other       Not any of the article types
+                                      explicitly named in this list
+                          partial-retraction
+                                      Partial retraction of
+                                      previously published material
+                          product-review
+                                      Description, analysis, or review
+                                      of a product or service, for
+                                      example a software package (note
+                                      that book review is a separate
+                                      type)
+                          rapid-communication
+                                      Fast-breaking research update
+                                      or other news item
+                          reply       Reply to a letter or commentary,
+                                      typically by the original
+                                      author commenting upon the
+                                      comments
+                          reprint     Reprint of a previously
+                                      published article
+                          research-article
+                                      Research article
+                          retraction  Retraction of previously
+                                      published material
+                          review-article
+                                      Review or state-of-the-art
+                                      summary article
+                          translation Translation of an article
+                                      originally produced in a
+                                      different language
+             id         Unique identifier so the element may be
+                        referenced
+             xml:lang   The language in which the value of the
+                        element is expressed.  Recommended best
+                        practice is to use values as defined in
+                        RFC 1766, typically 2-letter language
+                        codes such as "FR" (French), "EN" (English),
+                        and "DE" (German).  These values are NOT
+                        case sensitive, so "EN" = "en". The values
+                        may include hyphenated differentiations such
+                        as "EN-AU" (Australian English) and "EN-US"
+                        (United States English).
+                        Processing and Conversion Note: All other
+                        xml:lang attributes within the article
+                        inherit the value set on &lt;article&gt; unless
+                        explicitly set themselves with their own
+                        "xml:lang" attribute.                      --&gt;
+&lt;!ATTLIST  sub-article
+             %sub-article-atts;                                      &gt;
+
+
+&lt;!--                    FRONT MODEL STUB                           --&gt;
+&lt;!--                    Content model for the &lt;front-stub&gt; element,
+                        a reduced metadata set for use in
+                        sub-articles and responses, which will
+                        inherit metadata not defined in the stub
+                        from the enclosing article                 --&gt;
+&lt;!ENTITY % front-stub-model
+                        "(article-id*, title-group?,
+                         (contrib-group | aff | %x.class;)*,
+                         author-notes?,
+                         ( (fpage, lpage?, page-range?) |
+                            elocation-id)?,
+                         history?, permissions?, abstract*)"         &gt;
+
+
+&lt;!--                    STUB FRONT METADATA                        --&gt;
+&lt;!--                    A reduced metadata set for use in
+                        sub-articles and responses, which will
+                        inherit metadata not defined in the stub
+                        from the enclosing article                 --&gt;
+&lt;!ELEMENT  front-stub   %front-stub-model;                           &gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    RESPONSE ELEMENTS                          --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    RESPONSE                                   --&gt;
+&lt;!--                    Reply, response, or commentary concerning the
+                        journal article. In the typical case, the
+                        response is included in the same XML package
+                        as the original article, and thus attached
+                        at the end of the article proper.
+                        Authoring Note: Frequently a reply or
+                        response is an article in its own right, not
+                        included as part of the original article.
+                        Such an article could use the
+                        &lt;related-article&gt; element in the article
+                        metadata to record the metadata for the
+                        original article.
+                        Conversion Note: This construction can also
+                        be used for the pathological case, rarely
+                        seen, in which several responses to an
+                        article are lumped together into a single
+                        container which is not the original article,
+                        merely a collection of responses. In one
+                        example we examined, the first two responses
+                        were to an original article which was else-
+                        where and the third response was a response
+                        to the first two responses.                --&gt;
+&lt;!ELEMENT  response     %article-short-model;                        &gt;
+&lt;!--         response-type
+                        What kind of response is this?
+                        Note: This does NOT define the kind of
+                        article on which the response is commenting,
+                        it is metadata for the response itself.
+                        Suggested values include:
+                         addendum    Adds additional information or
+                                     clarification to the parent
+                                     article
+                         discussion  Discussion related to a specific
+                                     issue described in the parent
+                                     article
+                         reply       Reply to the parent article.
+                                     This is the most commonly used
+                                     value.
+                        Authoring Note: This attribute was added to
+                        describe cases in which a series of articles
+                        is chained together: typically as an
+                        introduction to the article, an article, then
+                        several responses to the article.
+             id         Unique identifier so the element may be
+                        referenced
+             xml:lang   The language in which the value of the
+                        element is expressed.  Recommended best
+                        practice is to use values as defined in
+                        RFC 1766, typically 2-letter language
+                        codes such as "FR" (French), "EN" (English),
+                        and "DE" (German).  These values are NOT
+                        case sensitive, so "EN" = "en". The values
+                        may include hyphenated differentiations such
+                        as "EN-AU" (Australian English) and "EN-US"
+                        (United States English).
+                        Processing and Conversion Note: All other
+                        xml:lang attributes within the article
+                        inherit the value set on &lt;article&gt; unless
+                        explicitly set themselves with their own
+                        "xml:lang" attribute.                      --&gt;
+&lt;!ATTLIST  response
+             %response-atts;                                         &gt;
+
+
+&lt;!-- ================== End Journal Archiving and Interchange DTD  --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

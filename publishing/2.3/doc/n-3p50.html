@@ -1,0 +1,138 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Date</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;date&gt;</h1>
+         <h1 class="elementname">Date</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">One of the historical dates that may be preserved for an article, such as when it was received or when it was accepted. This
+            element acts (as does the related element <a href="n-jbx0.html"><span class="elementtag">&lt;pub-date&gt;</span></a>) as a wrapper element for date elements, such as <a href="n-bq50.html"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-fxw0.html"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-xh70.html"><span class="elementtag">&lt;year&gt;</span></a>, which are typically given numeric values, as well as for <a href="n-fhv0.html"><span class="elementtag">&lt;season&gt;</span></a>, which is just a text string.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-pcf0.html"><span class="attrtag">date-type</span></a> <a href="n-pcf0.html"><span class="attrname">Type of Date</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The tag set includes several date elements. For the date of
+                   publication of the article (metadata), use the element
+                   <a href="n-jbx0.html"><span class="elementname">Publication Date</span></a>
+                   <a href="n-jbx0.html"><span class="elementtag">&lt;pub-date&gt;</span></a>. For the copyright date of an article
+                   (metadata), use <a href="n-dg50.html"><span class="elementtag">&lt;copyright-year&gt;</span></a>. The
+                   <a href="n-3p50.html"><span class="elementtag">&lt;date&gt;</span></a> element is to be used for historical dates
+                   concerning the article such as the date received or the date accepted (also
+                   metadata). For the publication date of a cited work in bibliographic
+                   references (<a href="n-tw30.html"><span class="elementtag">&lt;citation&gt;</span></a> and <a href="n-tgw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>), use the individual elements
+                   <a href="n-fxw0.html"><span class="elementtag">&lt;month&gt;</span></a>, <a href="n-bq50.html"><span class="elementtag">&lt;day&gt;</span></a> and <a href="n-xh70.html"><span class="elementtag">&lt;year&gt;</span></a>.
+                   If no month or month/day construction is given within a <a href="n-tw30.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-tgw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, and the only date is a season or a
+                   textual form of the date, such as &#8220;Third Quarter&#8221;, use the <a href="n-fhv0.html"><span class="elementtag">&lt;season&gt;</span></a> element inside the <a href="n-tw30.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-tgw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  date         %date-model;                                 &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>Optionally any one of:
+                     <ul class="bullist">
+                        <li>The following, in order:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-bq50.html"><span class="elementname">Day</span></a> <a href="n-bq50.html"><span class="elementtag">&lt;day&gt;</span></a>, zero or one
+                              </li>
+                              <li>
+                                                                     <a href="n-fxw0.html"><span class="elementname">Month</span></a> <a href="n-fxw0.html"><span class="elementtag">&lt;month&gt;</span></a>, zero or one
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-fhv0.html"><span class="elementname">Season</span></a> <a href="n-fhv0.html"><span class="elementtag">&lt;season&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-xh70.html"><span class="elementname">Year</span></a> <a href="n-xh70.html"><span class="elementtag">&lt;year&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-6qa0.html"><span class="elementtag">&lt;history&gt;</span></a> <a href="n-6qa0.html"><span class="elementname">History: Document History</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;
+&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+<strong><span class="focus">&lt;date date-type="accepted"&gt;
+&lt;day&gt;29&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;</span></strong>
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British 
+Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of
+day hospital attendance in prolonging independent living for elderly
+people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+... 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

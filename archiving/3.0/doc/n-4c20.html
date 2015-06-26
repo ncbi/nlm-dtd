@@ -1,0 +1,126 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Element: Access Date for Cited Work</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;access-date&gt;</h1>
+         <h1 class="elementname">Access Date for Cited Work</h1>
+      </div>
+      <div class="definition">
+         <p class="para">This is an element from older versions of this Tag Set (now replaced by the <a href="n-aru0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> element using a <a href="n-8fm0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute of “access-date”) that records the date on which the cited work was examined. 
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para"> This element is an artifact, now used only within the <a href="n-a8f0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a> element, which is deprecated in and after Version 3.0. Use of this element is therefore also deprecated. 
+            
+         </p>
+         <p class="para">Some online resources are changing so quickly that a citation to the resource is not complete without the date on which the
+            cited resource was examined, since a day before or a day later, the relevant material might be different. The <a href="n-aru0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> element is now used to record such information inside <a href="n-sue0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> and <a href="n-5bw0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>s. 
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-8fm0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-8fm0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Use <a href="n-aru0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> to record information such as this inside a <a href="n-5bw0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-sue0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>. 
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  access-date  (#PCDATA <a href="n-mv32.html" target="main" title="Access Date Elements"><span class="petag">%access-date-elements;</span></a>)*            &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(#PCDATA | day | month | season | year | x)*</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Any combination of:
+            <ul class="bullist">
+               <li>Text, numbers, or special characters</li>
+               <li>
+                  <a href="n-gyu0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a> <a href="n-gyu0.html" target="main" title="<day&gt;"><span class="elementname">Day</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-yje0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a> <a href="n-yje0.html" target="main" title="<month&gt;"><span class="elementname">Month</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-qbd0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> <a href="n-qbd0.html" target="main" title="<season&gt;"><span class="elementname">Season</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-ve90.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> <a href="n-ve90.html" target="main" title="<year&gt;"><span class="elementname">Year</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-xa90.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-xa90.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-a8f0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <p class="para">Used only in <a href="n-a8f0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, 
+            an element-style bibliographic reference:
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;...
+&lt;/front&gt;
+&lt;body&gt;...
+&lt;/body&gt;
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;ref&gt;
+&lt;nlm-citation publication-format="web"&gt;
+&lt;source&gt;Hypertension, Dialysis &amp;amp; Clinical
+Nephrology [Internet]&lt;/source&gt;
+&lt;year&gt;c1995&amp;ndash;2001&lt;/year&gt;
+<strong><span class="focus">&lt;access-date&gt;cited 2001 Mar 8&lt;/access-date&gt;</span></strong>
+&lt;publisher-loc&gt;Hinsdale (IL)&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;Medtext, Inc.&lt;/publisher-name&gt;
+&lt;comment&gt;Available from: &lt;ext-link ext-link-type="url"
+xlink:href="www.medtext.com/hdcn.htm"&gt;
+http://www.medtext.com/hdcn.htm&lt;/ext-link&gt;&lt;/comment&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

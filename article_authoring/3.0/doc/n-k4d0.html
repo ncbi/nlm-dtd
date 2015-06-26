@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Parameter entity: Boxed Text Model</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="petag">%boxed-text-model;</h1>
+         <h1 class="pename">Boxed Text Model</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Complete content model for the <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a> element 
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ENTITY % boxed-text-model
+                        "((<a href="n-7ph0.html" target="main" title="Identifier Class Elements"><span class="petag">%id.class;</span></a>)*, caption?, (<a href="n-dry0.html" target="main" title="Paragraph-Level Elements"><span class="petag">%para-level;</span></a>)*, 
+                          (<a href="n-chj0.html" target="main" title="Section-Level Elements"><span class="petag">%sec-level;</span></a>)*, <a href="n-99r0.html" target="main" title="Display Element Back Matter Sequence"><span class="petag">%display-back-matter;</span></a> )"   &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">((object-id)*, caption?, 
+(boxed-text | chem-struct-wrap | fig | graphic | media | preformat | supplementary-material | 
+table-wrap | disp-formula | disp-formula-group | p | def-list | list | disp-quote | speech | 
+statement | verse-group)*, 
+(sec)*, 
+attrib?, permissions? )</pre></div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articleauthcustom-models3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

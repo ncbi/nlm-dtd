@@ -1,0 +1,546 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Tagging Tables</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h3 class="header">Tagging Tables</h3>
+         <div class="section"><a name="tag-table-wrap"></a><h4 class="header">Table, Table Wrapper, and Table Group</h4>
+            <p class="para">There are three similar sounding elements for tagging tables:</p>
+            <div class="deflist">
+               <table class="deflisttable">
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p><a href="n-x4j0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a></p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">An element from one of the standard public table tag sets (by default the XHTML Tag Set) that handles row-and-column data.
+                           The OASIS CALS Exchange Tag Set can also be used with the Tag Suite, and the name for the similar element is <tt>&lt;oasis:table&gt;</tt>.
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p><a href="n-z7j0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Element that represents the complete table. This includes the row-and-column data, table number, table title, table caption,
+                           and any table footnotes or general notes attached to the table. If the complete table includes a label (such as “Table 3”)
+                           and it should appear in a List of Tables for the publication, then it is tagged with the <a href="n-z7j0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element.
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p><a href="n-3rj0.html" target="main" title="Table Wrapper Group"><span class="elementtag">&lt;table-wrap-group&gt;</span></a></p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">A logical or display grouping of more than one complete table (<a href="n-z7j0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>)
+                        </p>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            <div class="section"><a name="tag-table-wrap-only"></a><h4 class="header">Table Wrapper</h4>
+               <p class="para">Here is a table tagged as a <a href="n-x4j0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> and other elements inside a <a href="n-z7j0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>:
+               </p>
+               <div class="codeblock"><pre>
+...
+&lt;table-wrap&gt;
+&lt;table frame="box"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Color&lt;/th&gt;
+&lt;th&gt;Size&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+  
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td rowspan="3"&gt;Green&lt;/td&gt;
+&lt;td&gt;small&lt;/td&gt;
+&lt;td&gt;$3.25&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;td&gt;$2.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;large&lt;/td&gt;
+&lt;td&gt;$1.15&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td rowspan="3"&gt;Red&lt;/td&gt;
+&lt;td&gt;small&lt;/td&gt;
+&lt;td&gt;$3.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;td&gt;$5.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;large&lt;/td&gt;
+&lt;td&gt;$9.95&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/table-wrap&gt;
+...
+
+
+</pre></div>
+               <p class="para">The <a href="n-z7j0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element provides a uniform place to put information such as a table number (<a href="n-6370.html" target="main" title="Label (of a Figure, Reference, Etc.)"><span class="elementtag">&lt;label&gt;</span></a>) and table title and caption (both in <a href="n-cs50.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a>). The element <a href="n-z7j0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> can also contain a <a href="n-v6j0.html" target="main" title="<table-wrap-foot&gt;"><span class="elementname">Table Wrapper Footer</span></a>, as a place to put table footnotes and other information. Because objects that are identified as tables can be encoded in
+                  several ways — as XHTML tables (<a href="n-x4j0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a>), lists, paragraphs of material, graphics, a mixture of these elements — it is possible that a <a href="n-z7j0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> will not contain a <a href="n-x4j0.html" target="main" title="Table (XHTML table model)"><span class="elementtag">&lt;table&gt;</span></a> element.
+               </p>
+               <p class="para">Here is a table that has no tabular material in it because the tabular portion is represented as a graphic:</p>
+               <div class="codeblock"><pre>
+&lt;table-wrap id="Table-07"&gt;
+  &lt;caption&gt;
+    &lt;title&gt;2008 Expenditures&lt;/title&gt;
+    &lt;p&gt;Total research expenditures by disease, 2008&lt;/p&gt;
+  &lt;/caption&gt;
+  &lt;graphic xlink:href="totals.jpeg"&gt;
+    &lt;alt-text&gt;Distribution of research spending for major
+       diseases.&lt;/alt-text&gt;
+    &lt;object-id&gt;314159&lt;/object-id&gt;
+  &lt;/graphic&gt;
+  &lt;attrib&gt;Reprinted courtesy of TableSource, Inc.&lt;/attrib&gt;
+&lt;/table-wrap&gt;
+</pre></div>
+               <p class="para">Here is a non-tabular table:</p>
+               <div class="codeblock"><pre>
+&lt;table-wrap id="Table-05"&gt;
+  &lt;caption&gt;
+    &lt;title&gt;Show and Tell Program&lt;/title&gt;
+  &lt;/caption&gt;
+    &lt;list list-type="order"&gt;
+    &lt;list-item&gt;&lt;label&gt;1.&lt;/label&gt;&lt;p&gt;Poodle&lt;/p&gt;&lt;/list-item&gt;
+    &lt;list-item&gt;&lt;label&gt;2.&lt;/label&gt;&lt;p&gt;Persian Cat&lt;/p&gt;&lt;/list-item&gt;
+    &lt;list-item&gt;&lt;label&gt;3.&lt;/label&gt;&lt;p&gt;Weaver Finches&lt;/p&gt;&lt;/list-item&gt;
+    &lt;list-item&gt;&lt;label&gt;4.&lt;/label&gt;&lt;p&gt;Gecko&lt;/p&gt;&lt;/list-item&gt;
+  &lt;/list&gt;
+  &lt;attrib&gt;Reprinted courtesy of YourSchool.edu&lt;/attrib&gt;
+  &lt;permissions&gt;
+    &lt;copyright-statement&gt;© 2008&lt;/copyright-statement&gt;
+  &lt;/permissions&gt;
+&lt;/table-wrap&gt;
+</pre></div>
+            </div>
+            <div class="section"><a name="tag-table-wrap-group"></a><h4 class="header">Table Group</h4>
+               <p class="para">Some complex tables may consist of a single table wrapper (<a href="n-z7j0.html" target="main" title="<table-wrap&gt;"><span class="elementname">Table Wrapper</span></a>) containing a one or more small tables that represent one logical tabular area. For example, one part of the display might
+                  be 3 rows by 10 columns, the next part might be 5 rows by 2 columns, and the last part may return to 10 columns for 6 more
+                  rows. Each tabular area can be tagged with a <a href="n-x4j0.html" target="main" title="<table&gt;"><span class="elementname">Table (XHTML table model)</span></a> element, and paragraphs of text may be interspersed between the tabular material. In the United States, tax tables are frequently
+                  this type of table.
+               </p>
+               <p class="para">In the example just explained, three <a href="n-x4j0.html" target="main" title="<table&gt;"><span class="elementname">Table (XHTML table model)</span></a>s equaled one <a href="n-z7j0.html" target="main" title="<table-wrap&gt;"><span class="elementname">Table Wrapper</span></a> and not a <a href="n-3rj0.html" target="main" title="<table-wrap-group&gt;"><span class="elementname">Table Wrapper Group</span></a>. A <a href="n-3rj0.html" target="main" title="<table-wrap-group&gt;"><span class="elementname">Table Wrapper Group</span></a> contains multiple <a href="n-z7j0.html" target="main" title="<table-wrap&gt;"><span class="elementname">Table Wrapper</span></a> elements, each of which typically has a table number, caption or title, and tabular material. The entire group may also be
+                  given a collective label and caption. Table groups are frequently a print artifact, where several tables are clustered on
+                  a page for better display. The <a href="n-3rj0.html" target="main" title="<table-wrap-group&gt;"><span class="elementname">Table Wrapper Group</span></a> element has been provided to capture these as well as semantic or logical groupings. Here is an abbreviated <a href="n-3rj0.html" target="main" title="<table-wrap-group&gt;"><span class="elementname">Table Wrapper Group</span></a>:
+               </p>
+               <div class="codeblock"><pre>
+&lt;table-wrap-group id="Table-grp-06"&gt;
+  &lt;label&gt;Special Section II.&lt;/label&gt;
+  &lt;caption&gt;&lt;title&gt;Tables 3 through 5&lt;/title&gt;&lt;/caption&gt;
+  &lt;table-wrap id="Table-03"&gt;
+    &lt;label&gt;Table 3&lt;/label&gt;
+    &lt;caption&gt;&lt;p&gt;...&lt;/p&gt;&lt;/caption&gt;
+    &lt;graphic xlink:href="..."&gt;&lt;/graphic&gt;
+  &lt;/table-wrap&gt;
+  &lt;table-wrap id="Table-04"&gt;
+    &lt;label&gt;Table 4&lt;/label&gt;
+    &lt;caption&gt;&lt;p&gt;...&lt;/p&gt;&lt;/caption&gt;
+    &lt;graphic xlink:href="..."&gt;&lt;/graphic&gt;
+  &lt;/table-wrap&gt;
+  &lt;table-wrap id="Table-05"&gt;
+    &lt;label&gt;Table 5&lt;/label&gt;
+    &lt;caption&gt;&lt;p&gt;...&lt;/p&gt;&lt;/caption&gt;
+    &lt;graphic xlink:href="..."&gt;&lt;/graphic&gt;
+  &lt;/table-wrap&gt;
+&lt;/table-wrap-group&gt;
+</pre></div>
+            </div>
+         </div>
+         <div class="section"><a name="tag-table-format"></a><h4 class="header">Table Formatting</h4>
+            <p class="para">This Tag Suite uses the XHTML table model by default. This model matches the needs of web browsers and can support (at least
+               roughly) most table display formatting.
+            </p>
+            <p class="para">Format is indicated in one of two ways in XHTML tables: using multiple single-purpose attributes for simple formatting, or
+               making more complex formats using the <a href="n-ykc2.html" target="main" title="Style (XHTML table model; MathML 2.0 Tag Set)"><span class="attrtag">@style</span></a> attribute.
+            </p>
+            <div class="section"><a name="tag-table-attr"></a><h4 class="header">Simple Formatting with Attributes</h4>
+               <p class="para">Simple format information can be indicated with the following attributes:</p>
+               <ul class="bullist">
+                  <li><a href="n-vum0.html" target="main" title="Border (Frame) around a Table (XHTML table model)"><span class="attrtag">@border</span></a> controls borders around all of the cells in a table,
+                  </li>
+                  <li><a href="n-5wm0.html" target="main" title="Cell Padding (XHTML table model)"><span class="attrtag">@cellpadding</span></a> controls space between the text and any borders in the cells of the table,
+                  </li>
+                  <li><a href="n-9wm0.html" target="main" title="Cell Spacing (XHTML table model)"><span class="attrtag">@cellspacing</span></a> controls space between the cells of the table,
+                  </li>
+                  <li><a href="n-ygz0.html" target="main" title="Frame (XHTML table model)"><span class="attrtag">@frame</span></a> controls the “box” around the whole table,
+                  </li>
+                  <li><a href="n-jn22.html" target="main" title="Rules (XHTML table model)"><span class="attrtag">@rules</span></a> controls rules between groupings in the table (rows, columns, column groups, etc.), and
+                  </li>
+                  <li><a href="n-ctc2.html" target="main" title="Width (XHTML table model; MathML 2.0 Tag Set)"><span class="attrtag">@width</span></a> controls the width of the entire table or columns within the table.
+                  </li>
+               </ul>
+               <p class="para">To illustrate use of the <a href="n-jn22.html" target="main" title="Rules (XHTML table model)"><span class="attrtag">@rules</span></a> attribute, here is a table with rules on the rows:
+               </p>
+               <div class="codeblock"><pre>
+...
+&lt;table-wrap&gt;
+&lt;table rules="rows"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Color&lt;/th&gt;
+&lt;th&gt;Size&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+  
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td rowspan="3"&gt;Green&lt;/td&gt;
+&lt;td&gt;small&lt;/td&gt;
+&lt;td&gt;$3.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;td&gt;$2.25&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;large&lt;/td&gt;
+&lt;td&gt;$1.15&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td rowspan="3"&gt;Red&lt;/td&gt;
+&lt;td&gt;small&lt;/td&gt;
+&lt;td&gt;$3.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;td&gt;$5.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;large&lt;/td&gt;
+&lt;td&gt;$9.95&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/table-wrap&gt;
+...
+
+
+</pre></div>
+               <div class="graphic"><img class="graphic" src="graphics/tablesample1.jpg"></div>
+               <p class="para">Here is the same table, without the rules, to demonstrate use of the <a href="n-ygz0.html" target="main" title="Frame (XHTML table model)"><span class="attrtag">@frame</span></a> attribute:
+               </p>
+               <div class="codeblock"><pre>
+...
+&lt;table-wrap&gt;
+&lt;table frame="box"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Color&lt;/th&gt;
+&lt;th&gt;Size&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+  
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td rowspan="3"&gt;Green&lt;/td&gt;
+&lt;td&gt;small&lt;/td&gt;
+&lt;td&gt;$3.25&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;td&gt;$2.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;large&lt;/td&gt;
+&lt;td&gt;$1.15&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td rowspan="3"&gt;Red&lt;/td&gt;
+&lt;td&gt;small&lt;/td&gt;
+&lt;td&gt;$3.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;td&gt;$5.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;large&lt;/td&gt;
+&lt;td&gt;$9.95&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/table-wrap&gt;
+...
+
+
+</pre></div>
+               <div class="graphic"><img class="graphic" src="graphics/tablesample2.jpg"></div>
+               <p class="para">And here is the <a href="n-vum0.html" target="main" title="Border (Frame) around a Table (XHTML table model)"><span class="attrtag">@border</span></a> attribute:
+               </p>
+               <div class="codeblock"><pre>
+...
+&lt;table-wrap&gt;
+&lt;table border="1"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Color&lt;/th&gt;
+&lt;th&gt;Size&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+  
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td rowspan="3"&gt;Green&lt;/td&gt;
+&lt;td&gt;small&lt;/td&gt;
+&lt;td&gt;$3.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;td&gt;$2.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;large&lt;/td&gt;
+&lt;td&gt;$1.15&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td rowspan="3"&gt;Red&lt;/td&gt;
+&lt;td&gt;small&lt;/td&gt;
+&lt;td&gt;$3.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;td&gt;$5.25&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;large&lt;/td&gt;
+&lt;td&gt;$9.95&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;    
+&lt;/table-wrap&gt;
+...
+
+
+</pre></div>
+               <div class="graphic"><img class="graphic" src="graphics/tablesample3.jpg"></div>
+            </div>
+            <div class="section"><a name="tag-table-style"></a><h4 class="header">Formatting with Style</h4>
+               <p class="para">All the tables just shown are all relatively simple formats. More complex table formatting is done using the <a href="n-ykc2.html" target="main" title="Style (XHTML table model; MathML 2.0 Tag Set)"><span class="attrtag">@style</span></a> attribute, which contains CSS instructions. Key to understanding how the CSS in tables works is that instructions on smaller
+                  portions override those on larger portions of the table. For example, if a background color is provided for the whole table
+                  and different background color is specified for a row, everything in the table will be the first background color except that
+                  row, which will have the second. Similarly, if borders are specified for a <a href="n-tm50.html" target="main" title="Table Column Group (XHTML table model)"><span class="elementtag">&lt;colgroup&gt;</span></a>, they will apply to the whole <a href="n-tm50.html" target="main" title="Table Column Group (XHTML table model)"><span class="elementtag">&lt;colgroup&gt;</span></a> unless a different border is specified for one cell (<a href="n-b6p0.html" target="main" title="Table Header Cell (XHTML table model)"><span class="elementtag">&lt;th&gt;</span></a> or <a href="n-qbj0.html" target="main" title="Table Data Cell (XHTML table model)"><span class="elementtag">&lt;td&gt;</span></a>), in which case that cell will have the override.
+               </p>
+               <p class="para">Here is a sample, in code and image, of a relatively complex table, formatted using a variety of techniques including CSS
+                  in the <a href="n-ykc2.html" target="main" title="Style (XHTML table model; MathML 2.0 Tag Set)"><span class="attrtag">@style</span></a> attribute, controlling alignment with the <a href="n-di90.html" target="main" title="Horizontal Alignment (XHTML table model)"><span class="attrtag">@align</span></a>, and a few spans.
+               </p>
+               <div class="codeblock"><pre>
+...
+&lt;table-wrap&gt;
+&lt;table rules="groups" &gt;
+&lt;colgroup style="border-right: hidden"&gt;&lt;col/&gt;&lt;/colgroup&gt;
+&lt;colgroup style="border-right: solid thin"&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;/colgroup&gt;
+&lt;colgroup&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;/colgroup&gt;
+
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="3" style="border-bottom: solid"&gt;1974-75&lt;/th&gt;
+&lt;th colspan="3" style="border-bottom: solid"&gt;1983-84&lt;/th&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th style="border-bottom: solid thin"&gt;Public&lt;/th&gt;
+&lt;th style="border-bottom: solid thin"&gt;Private&lt;/th&gt;
+&lt;th style="border-bottom: solid thin"&gt;Total&lt;/th&gt;
+&lt;th style="border-bottom: solid thin"&gt;Public&lt;/th&gt;
+&lt;th style="border-bottom: solid thin"&gt;Private&lt;/th&gt;
+&lt;th style="border-bottom:  solid thin"&gt;Total&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td style="background: lightgrey" colspan="7"&gt;Preschool&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;Schools&lt;/td&gt;
+&lt;td align="right"&gt;n.a.&lt;/td&gt;
+&lt;td align="right"&gt;n.a.&lt;/td&gt;
+&lt;td align="right"&gt;n.a.&lt;/td&gt;
+&lt;td align="right"&gt;n.a.&lt;/td&gt;
+&lt;td align="right"&gt;n.a.&lt;/td&gt;
+&lt;td align="right"&gt;n.a.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Teachers&lt;/td&gt;
+&lt;td align="right"&gt;2,986&lt;/td&gt;
+&lt;td align="right"&gt;1,252&lt;/td&gt;
+&lt;td align="right"&gt;4,238&lt;/td&gt;
+&lt;td align="right"&gt;15,440&lt;/td&gt;
+&lt;td align="right"&gt;4,008&lt;/td&gt;
+&lt;td align="right"&gt;19,448&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Enrollment&lt;/td&gt;
+&lt;td align="right"&gt;108,500&lt;/td&gt;
+&lt;td align="right"&gt;43,800&lt;/td&gt;
+&lt;td align="right"&gt;152,300&lt;/td&gt;
+&lt;td align="right"&gt;442,700&lt;/td&gt;
+&lt;td align="right"&gt;80,600&lt;/td&gt;
+&lt;td align="right"&gt;523,300&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td style="background: lightgrey" colspan="7"&gt;Primary&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;Schools &lt;/td&gt;
+&lt;td align="right"&gt;9,982&lt;/td&gt;
+&lt;td align="right"&gt;1,116&lt;/td&gt;
+&lt;td align="right"&gt;11,098&lt;/td&gt;
+&lt;td align="right"&gt;11,397&lt;/td&gt;
+&lt;td align="right"&gt;1,285&lt;/td&gt;
+&lt;td align="right"&gt;12,682&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Teachers&lt;/td&gt;
+&lt;td align="right"&gt;54,276&lt;/td&gt;
+&lt;td align="right"&gt;8,922&lt;/td&gt;
+&lt;td align="right"&gt;63,198&lt;/td&gt;
+&lt;td align="right"&gt;71,454&lt;/td&gt;
+&lt;td align="right"&gt;9,176&lt;/td&gt;
+&lt;td align="right"&gt;80,630&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;Enrollment&lt;/td&gt;
+&lt;td align="right"&gt;1,764,100&lt;/td&gt;
+&lt;td align="right"&gt;226,000&lt;/td&gt;
+&lt;td align="right"&gt;1,990,100&lt;/td&gt;
+&lt;td align="right"&gt;2,338,400&lt;/td&gt;
+&lt;td align="right"&gt;303,000&lt;/td&gt;
+&lt;td align="right"&gt;2,641,400&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td style="background: lightgrey" colspan="7"&gt;Secondary&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Schools&lt;/td&gt;
+&lt;td align="right"&gt;735&lt;/td&gt;
+&lt;td align="right"&gt;438&lt;/td&gt;
+&lt;td align="right"&gt;1,173&lt;/td&gt;
+&lt;td align="right"&gt;1,486&lt;/td&gt;
+&lt;td align="right"&gt;710&lt;/td&gt;
+&lt;td align="right"&gt;2,196&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;Teachers&lt;/td&gt;
+&lt;td align="right"&gt;24,222&lt;/td&gt;
+&lt;td align="right"&gt;9,133&lt;/td&gt;
+&lt;td align="right"&gt;33,355&lt;/td&gt;
+&lt;td align="right"&gt;41,350&lt;/td&gt;
+&lt;td align="right"&gt;13,964&lt;/td&gt;
+&lt;td align="right"&gt;55,314&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;Enrollment&lt;/td&gt;
+&lt;td align="right"&gt;513,100&lt;/td&gt;
+&lt;td align="right"&gt;118,100&lt;/td&gt;
+&lt;td align="right"&gt;631,200&lt;/td&gt;
+&lt;td align="right"&gt;786,200&lt;/td&gt;
+&lt;td align="right"&gt;177,200&lt;/td&gt;
+&lt;td align="right"&gt;963,400&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td style="background: lightgrey" colspan="7"&gt;Higher Education&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;Schools&lt;/td&gt;
+&lt;td align="right"&gt;26&lt;/td&gt;
+&lt;td align="right"&gt;12&lt;/td&gt;
+&lt;td align="right"&gt;38&lt;/td&gt;
+&lt;td align="right"&gt;535&lt;/td&gt;
+&lt;td align="right"&gt;275&lt;/td&gt;
+&lt;td align="right"&gt;805&lt;/td&gt;
+&lt;/tr&gt;
+  
+&lt;tr&gt;
+&lt;td&gt;Teachers&lt;/td&gt;
+&lt;td align="right"&gt;13,228&lt;/td&gt;
+&lt;td align="right"&gt;1,376&lt;/td&gt;
+&lt;td align="right"&gt;14,604&lt;/td&gt;
+&lt;td align="right"&gt;24,633&lt;/td&gt;
+&lt;td align="right"&gt;4,072&lt;/td&gt;
+&lt;td align="right"&gt;28,705&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Enrollment&lt;/td&gt;
+&lt;td align="right"&gt;172,100&lt;/td&gt;
+&lt;td align="right"&gt;21,200&lt;/td&gt;
+&lt;td align="right"&gt;193,300&lt;/td&gt;
+&lt;td align="right"&gt;320,800&lt;/td&gt;
+&lt;td align="right"&gt;63,900&lt;/td&gt;
+&lt;td align="right"&gt;384,700&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/table-wrap&gt;
+...
+
+
+</pre></div>
+               <div class="graphic"><img class="graphic" src="graphics/tablesample4.jpg"></div>
+            </div>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

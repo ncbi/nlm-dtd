@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for NLM Citation Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+</article-meta>
+</front>
+<body>
+<p>The <italic>Escherichia coli argU</italic> gene encodes a minor arginine 
+tRNA, tRNA<sup arrange="stack">Arg</sup><sub arrange="stack">UCU</sub>, 
+which corresponds to the rare codon AGA and possibly AGG ....</p>
+</body>
+<back>
+<ref-list><?mtl /hellip?>
+<ref>
+<nlm-citation citation-type="journal">
+<person-group>
+<name>
+<surname>Massone</surname>
+<given-names>L</given-names>
+</name>
+<name>
+<surname>Borghi</surname>
+<given-names>S</given-names>
+</name>
+<name>
+<surname>Pestarino</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Piccini</surname>
+<given-names>R</given-names>
+</name>
+<name>
+<surname>Gambini</surname>
+<given-names>C</given-names>
+</name>
+</person-group>
+<article-title xml:lang="fr">Localisations palmaires purpurioques de la dermatitie herpetiforme</article-title>
+<trans-title>Purpuric palmar sites of dermatitis herpetiformis</trans-title>
+<source>Ann Dermatol Vernerol</source>
+<year>1987</year>
+<volume>114</volume>
+<issue>12</issue>
+<fpage>1545</fpage>
+<lpage>1547</lpage>
+</nlm-citation>
+</ref>
+<?mtl hellip?></ref-list>
+</back>
+</article><?mtl /hellip?>
+
+

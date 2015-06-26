@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for NLM Citation Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+</article-meta>
+</front>
+<body>
+<p>The <italic>Escherichia coli argU</italic> gene encodes a minor arginine 
+tRNA, tRNA<sup arrange="stack">Arg</sup><sub arrange="stack">UCU</sub>, 
+which corresponds to the rare codon AGA and possibly AGG ....</p>
+</body>
+<back>
+<ref-list><?mtl /hellip?>
+<ref>
+<nlm-citation citation-type="journal">
+<person-group>
+<name>
+<surname>Fabdetti</surname>
+<given-names>DV</given-names>
+</name>
+<name>
+<surname>Golsmeier</surname>
+<given-names>J</given-names>
+</name>
+</person-group>
+<article-title>Social workers as culture mediators in health care settings</article-title>
+<source>Health Soc Work</source>
+<year>1988</year>
+<season>Summer</season>
+<volume>13</volume>
+<issue>3</issue>
+<fpage>171</fpage>
+<lpage>179</lpage>
+</nlm-citation>
+</ref>
+<?mtl hellip?></ref-list>
+</back>
+</article><?mtl /hellip?>

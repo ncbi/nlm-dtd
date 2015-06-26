@@ -1,0 +1,245 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Type of Footnote</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">fn-type</h1>
+         <h1 class="attrname">Type of Footnote</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">There are many reasons why the text or metadata of an article might be footnoted. For those footnotes known to contain a particular
+            type of information, this attribute names the type of material being stated in the footnote. This could be a means of preserving,
+            for example, information that a contributor is on
+                   leave of absence.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5 class="heading"><a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-crw0.html"><span class="elementname">Footnote</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">The type of footnote, where the publisher or archive has given the footnote a special type such as &#8220;<tt>corresp</tt>&#8221; to indicate a corresponding author footnote.  This attribute may take any value, but see the list of suggested values below.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+            <h4 class="header"><span class="headerlabel">Suggested usage</span></h4>
+                         
+            <p class="para">Although designed to accept any text as its value, the following
+                             are suggested footnote types:
+                             
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>abbr</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Abbreviations</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>com</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Communicated-by information</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>con</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributed-by information</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>conflict</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Conflict of interest statements</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>corresp</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Corresponding author information not identified
+                                                 separately, but merely footnoted
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>current-aff</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributor&#8217;s current affiliation</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>deceased</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Person has died since article was written.</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>edited-by</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributor has the role of an editor.</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>equal</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributed equally to the creation of the document</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>financial-disclosure</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Statement of funding or denial of funds received in
+                                                 support of the research on which an article is based
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>on-leave</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributor is on sabbatical or other leave of
+                                                 absence.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>participating-researchers</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributor was a researcher for an article.</p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>present-address</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributor&#8217;s current address</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>presented-at</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Conference, colloquium, or other occasion at which this
+                                                 paper was presented
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>presented-by</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributor who presented the material</p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>previously-at</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributor&#8217;s previous location or
+                                                 affiliation
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>reprint</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Method or place to obtain reprints, typically the name
+                                                 and address of a person from whom reprints can be requested
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>study-group-members</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Contributor was a member of the study group for the
+                                                 research.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>supplementary-material</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Points to or describes supplementary material for the
+                                                 article
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>supported-by</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Research upon which an article is based was supported by
+                                                 some entity
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div> 
+            </p>
+                   
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

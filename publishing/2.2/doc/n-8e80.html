@@ -1,0 +1,119 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Edition, Cited</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;edition&gt;</h1>
+         <h1 class="elementname">Edition, Cited</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The edition number of a cited publication</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element is used in bibliographic references <a href="n-jt30.html"><span class="elementtag">&lt;citation&gt;</span></a> and <a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>. For extensive examples of formatted <a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, including use of <a href="n-8e80.html"><span class="elementtag">&lt;edition&gt;</span></a>s in <a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  edition      (#PCDATA %edition-elements;)*                &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters, zero or more</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-jt30.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-jt30.html"><span class="elementname">Citation</span></a>; <a href="n-6vw0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-6vw0.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-5sx0.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-5sx0.html"><span class="elementname">Product Information</span></a>; <a href="n-umx0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-umx0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In article metadata:</p><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;...&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;...
+&lt;ref-list&gt;
+&lt;title&gt;REFERENCES&lt;/title&gt;
+...
+&lt;ref id="B6"&gt;
+&lt;citation&gt;
+&lt;collab&gt;National Committee for Clinical Laboratory 
+Standards&lt;/collab&gt;
+&lt;source&gt;Performance standards for antimicrobial disk 
+susceptibility tests. Approved standard&lt;/source&gt;
+&lt;year&gt;2000&lt;/year&gt;
+<strong><span class="focus">&lt;edition&gt;7th ed.&lt;/edition&gt;</span></strong>
+&lt;publisher-loc&gt;Wayne, Pa&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;National Committee for Clinical Laboratory 
+Standards&lt;/publisher-name&gt;
+&lt;fpage&gt;M2&lt;/fpage&gt;
+&lt;lpage&gt;A7&lt;/lpage&gt;
+&lt;/citation&gt;
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt; 
+
+
+</pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a NLM-style bibliographic citation:</p><pre class="taggedtext">
+
+...
+&lt;ref&gt;
+&lt;nlm-citation citation-type="journal"&gt;
+&lt;person-group&gt;
+&lt;name&gt;
+&lt;surname&gt;Allen&lt;/surname&gt;
+&lt;given-names&gt;CP&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name&gt;
+&lt;surname&gt;Calvert&lt;/surname&gt;
+&lt;given-names&gt;PT&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;Simultaneous upper femoral epiphysis in identical twins&lt;/article-title&gt;
+&lt;source&gt;J Bone Joint Surg&lt;/source&gt;
+&lt;year&gt;1990&lt;/year&gt;
+&lt;month&gt;09&lt;/month&gt;
+&lt;volume&gt;72&lt;/volume&gt;
+<strong><span class="focus">&lt;edition&gt;Br Vol&lt;/edition&gt;</span></strong>
+&lt;issue&gt;5&lt;/issue&gt;
+&lt;fpage&gt;928&lt;/fpage&gt;
+&lt;lpage&gt;929&lt;/lpage&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

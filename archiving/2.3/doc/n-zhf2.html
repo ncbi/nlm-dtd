@@ -1,0 +1,674 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Archiving and Interchange Suite Naming Rules</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <h1 class="sectiontitle">Archiving and Interchange Suite Naming Rules</h1>
+      <p class="para">
+             
+         <ol class="olist">
+            <li>All XML names are to be in lower case. (Names include element names, attribute names, entity names, and <tt>ID</tt>s.)
+            </li>
+            <li>When two or more words are concatenated into an element name, a
+                       hyphen will be placed between the whole words (e.g., <a href="n-k9r0.html"><span class="elementtag">&lt;verse-group&gt;</span></a>, <a href="n-dqc0.html"><span class="elementtag">&lt;article-title&gt;</span></a>, <a href="n-m4h0.html"><span class="elementtag">&lt;word-count&gt;</span></a>).
+            </li>
+            <li>The typographic emphasis elements are spelled out in full &#8212; <a href="n-n730.html"><span class="elementtag">&lt;bold&gt;</span></a>, <a href="n-c9v0.html"><span class="elementtag">&lt;italic&gt;</span></a>, <a href="n-fgr0.html"><span class="elementtag">&lt;underline&gt;</span></a>, etc. &#8212; not put in as values of an attribute on an element such as <tt>&lt;emphasis&gt;</tt>. (Superscript and subscript are
+                       not considered to be purely typographic.)
+            </li>
+            <li>The casing and interior punctuation of element type names and attribute names inherited from PUBLIC models (such as the XHTML
+               table model or the MathML Tag Set) are unchanged. Thus, for example, the <a href="n-g3v0.html"><span class="elementname">Horizontal Rule</span></a> element is <a href="n-g3v0.html"><span class="elementtag">&lt;hr&gt;</span></a>, and the table cell tags are <a href="n-nm60.html"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-2md0.html"><span class="elementtag">&lt;tr&gt;</span></a>, <a href="n-q960.html"><span class="elementtag">&lt;tbody&gt;</span></a>, <a href="n-6rd0.html"><span class="elementtag">&lt;thead&gt;</span></a>, etc.
+            </li>
+            <li>Abbreviations may be used when words are used in combination. When a word stands alone as a name, it is not abbreviated. Thus,
+               the element <a href="n-dr80.html"><span class="elementname">Conference Information</span></a> uses the full name <a href="n-dr80.html"><span class="elementtag">&lt;conference&gt;</span></a>, but the conference combinations (such as <a href="n-ug80.html"><span class="elementname">Conference Theme</span></a> and <a href="n-8w80.html"><span class="elementname">Conference Number</span></a>) use the abbreviation &#8220;conf&#8221; (<a href="n-ug80.html"><span class="elementtag">&lt;conf-theme&gt;</span></a> and <a href="n-8w80.html"><span class="elementtag">&lt;conf-num&gt;</span></a>).<br class="br">The following table contains a growing list of abbreviations to be used in combined tag names (element type names), attribute
+               names, and Parameter Entity names. (Words in the list below that are not abbreviated are displayed in italics.)
+            </li>
+         </ol> 
+      </p>
+      <table xmlns:mtl="http://www.mulberrytech.com/taglib" xmlns:xsd="http://www.w3.org/2000/10/XMLSchema">
+             
+         <thead>
+                  
+            <tr>
+                      
+               <th rowspan="1" colspan="1">ORIGINAL WORD</th>
+                      
+               <th rowspan="1" colspan="1">ABBREVIATION/USAGE</th>
+                     
+            </tr>
+                
+         </thead>
+             
+         <tbody>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">acknowledgment</td>
+                      
+               <td rowspan="1" colspan="1">ack</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">abstract</td>
+                      
+               <td rowspan="1" colspan="1">abs</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">address</td>
+                      
+               <td rowspan="1" colspan="1">addr</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">affiliation </td>
+                      
+               <td rowspan="1" colspan="1">aff (common journal Tag Set usage)</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">alternate/alternative </td>
+                      
+               <td rowspan="1" colspan="1">alt</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">article </td>
+                      
+               <td rowspan="1" colspan="1"><em>article</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">attribution </td>
+                      
+               <td rowspan="1" colspan="1">attrib</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">author </td>
+                      
+               <td rowspan="1" colspan="1"><em>author</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">biography </td>
+                      
+               <td rowspan="1" colspan="1">bio</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">chemical </td>
+                      
+               <td rowspan="1" colspan="1">chem</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">communication </td>
+                      
+               <td rowspan="1" colspan="1"><em>communication</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">conference </td>
+                      
+               <td rowspan="1" colspan="1">conf</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">contributor/contribution </td>
+                      
+               <td rowspan="1" colspan="1">contrib</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">corresponding </td>
+                      
+               <td rowspan="1" colspan="1">corresp</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">count </td>
+                      
+               <td rowspan="1" colspan="1"><em>count</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">cross </td>
+                      
+               <td rowspan="1" colspan="1">x (no hyphen; well known)</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">definition </td>
+                      
+               <td rowspan="1" colspan="1">def</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">description </td>
+                      
+               <td rowspan="1" colspan="1">desc</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">display </td>
+                      
+               <td rowspan="1" colspan="1">disp</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">editor </td>
+                      
+               <td rowspan="1" colspan="1"><em>editor</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">end </td>
+                      
+               <td rowspan="1" colspan="1"><em>end</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">equal </td>
+                      
+               <td rowspan="1" colspan="1"><em>equal</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">external </td>
+                      
+               <td rowspan="1" colspan="1">ext</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">figure </td>
+                      
+               <td rowspan="1" colspan="1">fig</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">first </td>
+                      
+               <td rowspan="1" colspan="1">f (no hyphen; <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> well
+                          known)
+               </td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">footnote </td>
+                      
+               <td rowspan="1" colspan="1">fn (traditional business abbreviation)</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">formula </td>
+                      
+               <td rowspan="1" colspan="1"><em>formula</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">government </td>
+                      
+               <td rowspan="1" colspan="1">gov</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">graphic </td>
+                      
+               <td rowspan="1" colspan="1"><em>graphic</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">group/grouping </td>
+                      
+               <td rowspan="1" colspan="1">group</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">heading/header </td>
+                      
+               <td rowspan="1" colspan="1">head</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">identifier/ID </td>
+                      
+               <td rowspan="1" colspan="1">id</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">inline </td>
+                      
+               <td rowspan="1" colspan="1"><em>inline</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">institution </td>
+                      
+               <td rowspan="1" colspan="1"><em>institution</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">item </td>
+                      
+               <td rowspan="1" colspan="1">item</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">journal </td>
+                      
+               <td rowspan="1" colspan="1"><em>journal</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">keyword </td>
+                      
+               <td rowspan="1" colspan="1">kwd</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">last </td>
+                      
+               <td rowspan="1" colspan="1">l (no hyphen; <a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a> well
+                          known)
+               </td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">link </td>
+                      
+               <td rowspan="1" colspan="1"><em>link</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">list </td>
+                      
+               <td rowspan="1" colspan="1"><em>list</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">location </td>
+                      
+               <td rowspan="1" colspan="1">loc</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">material </td>
+                      
+               <td rowspan="1" colspan="1"><em>material</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">metadata </td>
+                      
+               <td rowspan="1" colspan="1">meta</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">number </td>
+                      
+               <td rowspan="1" colspan="1">num</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">page </td>
+                      
+               <td rowspan="1" colspan="1"><em>page</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">paragraph </td>
+                      
+               <td rowspan="1" colspan="1">p (well known)</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">prefix </td>
+                      
+               <td rowspan="1" colspan="1"><em>prefix</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">proceedings </td>
+                      
+               <td rowspan="1" colspan="1"><em>proceedings</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">publication </td>
+                      
+               <td rowspan="1" colspan="1">pub</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">publisher </td>
+                      
+               <td rowspan="1" colspan="1"><em>publisher</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">quote </td>
+                      
+               <td rowspan="1" colspan="1"><em>quote</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">reference </td>
+                      
+               <td rowspan="1" colspan="1">ref</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">related </td>
+                      
+               <td rowspan="1" colspan="1"><em>related</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">section </td>
+                      
+               <td rowspan="1" colspan="1">sec</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">sequence/sequential </td>
+                      
+               <td rowspan="1" colspan="1">seq</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">series </td>
+                      
+               <td rowspan="1" colspan="1"><em>series</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">size </td>
+                      
+               <td rowspan="1" colspan="1"><em>size</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">standard </td>
+                      
+               <td rowspan="1" colspan="1">std</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">start </td>
+                      
+               <td rowspan="1" colspan="1"><em>start</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">statement </td>
+                      
+               <td rowspan="1" colspan="1"><em>statement</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">structure </td>
+                      
+               <td rowspan="1" colspan="1">struct</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">subject </td>
+                      
+               <td rowspan="1" colspan="1">subj</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">subscript </td>
+                      
+               <td rowspan="1" colspan="1">sub (note: not inferior)</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">suffix </td>
+                      
+               <td rowspan="1" colspan="1"><em>suffix</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">superscript </td>
+                      
+               <td rowspan="1" colspan="1">sup (note: not superior)</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">supplement </td>
+                      
+               <td rowspan="1" colspan="1"><em>supplement</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">supplementary </td>
+                      
+               <td rowspan="1" colspan="1"><em>supplementary</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">table </td>
+                      
+               <td rowspan="1" colspan="1"><em>table</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">title </td>
+                      
+               <td rowspan="1" colspan="1"><em>title</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">translated/translator </td>
+                      
+               <td rowspan="1" colspan="1">trans</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">type </td>
+                      
+               <td rowspan="1" colspan="1">type</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">underline </td>
+                      
+               <td rowspan="1" colspan="1"><em>underline</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">version </td>
+                      
+               <td rowspan="1" colspan="1"><em>version</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">volume </td>
+                      
+               <td rowspan="1" colspan="1">vol</td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">word </td>
+                      
+               <td rowspan="1" colspan="1"><em>word</em></td>
+                     
+            </tr>
+                  
+            <tr>
+                      
+               <td rowspan="1" colspan="1">wrapper </td>
+                      
+               <td rowspan="1" colspan="1">wrap</td>
+                     
+            </tr>
+                
+         </tbody>
+            
+      </table>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

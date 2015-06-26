@@ -1,0 +1,231 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Article Title</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;article-title&gt;</h1>
+         <h1 class="elementname">Article Title</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The full title of a journal article or other journal
+                   component such as a book review
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-hi20.html"><span class="elementtag">&lt;article-title&gt;</span></a> element is used
+                   in two contexts: as a part of the metadata concerning the article itself and as
+                   part of bibliographic reference metadata inside bibliographic citations
+                   (<a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a> and <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>).
+         </p>
+         <p class="para">In the article metadata, the
+                   article subtitle and title are two different elements and should be tagged
+                   separately, using the <a href="n-hi20.html"><span class="elementtag">&lt;article-title&gt;</span></a> and
+                   <a href="n-z2w0.html"><span class="elementtag">&lt;subtitle&gt;</span></a> elements. Within a bibliographic
+                   reference citation, the subtitle cannot be preserved separately. For citations using <a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a>, it is possible to place the subtitle with the title in the <a href="n-hi20.html"><span class="elementtag">&lt;article-title&gt;</span></a> element (or the <a href="n-m6u0.html"><span class="elementtag">&lt;source&gt;</span></a> element for book titles, proceedings titles, and other titles) or to leave it as untagged data characters within the text
+            of the reference. For references using <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, the subtitle must be included with the title, since that reference model does not permit untagged text. Although this DTD
+            cannot enforce either practice when using <a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a>, retrieval performance will be enhanced if the
+                   subtitle is consistently placed in the <a href="n-hi20.html"><span class="elementtag">&lt;article-title&gt;</span></a> element (or the <a href="n-m6u0.html"><span class="elementtag">&lt;source&gt;</span></a> element for book titles, proceedings titles, and other titles) for all cited material, so this is considered best practice.
+         </p>
+         <p class="para">For extensive examples of formatted <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-hi20.html"><span class="elementtag">&lt;article-title&gt;</span></a>s in <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-qst0.html"><span class="attrtag">xml:lang</span></a> <a href="n-qst0.html"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">There are two elements concerned with the title of an article, contained within the wrapper element <a href="n-4tx0.html"><span class="elementtag">&lt;title-group&gt;</span></a> in the article metadata. The <a href="n-hi20.html"><span class="elementtag">&lt;article-title&gt;</span></a> is the full title of the article. The <a href="n-z2w0.html"><span class="elementtag">&lt;subtitle&gt;</span></a> is a subordinate or auxiliary title that adds information to the full title or modifies the full title.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  article-title
+                        (#PCDATA %title-elements;)*                  &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-z350.html"><span class="elementname">Email Address</span></a> <a href="n-z350.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-c850.html"><span class="elementname">External Link</span></a> <a href="n-c850.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-3yx0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-3yx0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-55c0.html"><span class="elementname">Bold</span></a> <a href="n-55c0.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-r580.html"><span class="elementname">Italic</span></a> <a href="n-r580.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-b680.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-b680.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-d5a0.html"><span class="elementname">Overline</span></a> <a href="n-d5a0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-svu0.html"><span class="elementname">Small Caps</span></a> <a href="n-svu0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-9qu0.html"><span class="elementname">Strike Through</span></a> <a href="n-9qu0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-krx0.html"><span class="elementname">Underline</span></a> <a href="n-krx0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-eb50.html"><span class="elementname">Graphic, Inline</span></a> <a href="n-eb50.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-gp50.html"><span class="elementname">Formula, Inline</span></a> <a href="n-gp50.html"><span class="elementtag">&lt;inline-formula&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-m320.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-m320.html"><span class="elementtag">&lt;abbrev&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-uj80.html"><span class="elementname">Named Special (Subject) Content</span></a> <a href="n-uj80.html"><span class="elementtag">&lt;named-content&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the simple link/cross-referencing elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-vt50.html"><span class="elementname">Footnote</span></a> <a href="n-vt50.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-urw0.html"><span class="elementname">Target of an Internal Link</span></a> <a href="n-urw0.html"><span class="elementtag">&lt;target&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-dmx0.html"><span class="elementname">X(cross) Reference</span></a> <a href="n-dmx0.html"><span class="elementtag">&lt;xref&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-qmu0.html"><span class="elementname">Subscript</span></a> <a href="n-qmu0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-z8w0.html"><span class="elementname">Superscript</span></a> <a href="n-z8w0.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-kvc0.html"><span class="elementname">Line Break</span></a> <a href="n-kvc0.html"><span class="elementtag">&lt;break&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-igc0.html"><span class="elementname">Citation</span></a>; <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-m980.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-wha0.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-wha0.html"><span class="elementname">Product Information</span></a>; <a href="n-i2u0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-i2u0.html"><span class="elementname">Related Article Information</span></a>; <a href="n-4tx0.html"><span class="elementtag">&lt;title-group&gt;</span></a> <a href="n-4tx0.html"><span class="elementname">Title Group</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In article metadata:</p><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;
+&lt;article-meta&gt;
+&lt;title-group&gt;
+<strong><span class="focus">&lt;article-title&gt;Systematic review of day hospital care for 
+elderly people&lt;/article-title&gt;</span></strong>
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+...
+&lt;/contrib-group&gt; 
+&lt;permissions&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+...
+&lt;/abstract&gt;
+...
+&lt;/article-meta&gt;&lt;/front&gt;
+...
+&lt;/article&gt;
+
+
+</pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a NLM-style bibliographic citation:</p><pre class="taggedtext">
+
+...
+&lt;ref&gt;
+&lt;nlm-citation citation-type="journal"&gt;
+&lt;person-group&gt;...&lt;/person-group&gt;
+<strong><span class="focus">&lt;article-title&gt;Electrogastrographic study of patients with unexplained 
+nausea, bloating and vomiting&lt;/article-title&gt;</span></strong>
+&lt;source&gt;Gastroenterology&lt;/source&gt;
+&lt;year&gt;1980&lt;/year&gt;
+&lt;month&gt;08&lt;/month&gt;
+&lt;volume&gt;79&lt;/volume&gt;
+&lt;issue&gt;2&lt;/issue&gt;
+&lt;fpage&gt;311&lt;/fpage&gt;
+&lt;lpage&gt;314&lt;/lpage&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

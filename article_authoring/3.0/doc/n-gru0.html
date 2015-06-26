@@ -1,0 +1,124 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Month</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;month&gt;</h1>
+         <h1 class="elementname">Month</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Within bibliographic references (<a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), names one of the months of the year
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">For a detailed discussion on the use of <span class="elementtag">&lt;month&gt;</span>, see <a href="n-s5b0.html#tag-cite-dates">Dates in Citations</a>.
+            
+         </p>
+         <p class="para">This element may contain the textual name of a month (“December”), a month-name abbreviation (“Dec”), or a numeric month (“12”).
+            For ease in comparisons and searching, it is preferable that months be converted to numeric values:
+            
+            <ul class="bullist">
+               <li>01 = January
+                  
+               </li>
+               <li>02 = February
+                  
+               </li>
+               <li>03 = March
+                  
+               </li>
+            </ul>etc.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  month        (#PCDATA)                                    &gt;</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Text, numbers, or special characters</p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-nq30.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>, <a href="n-t930.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a>, <a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-czu0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 1</h3>
+         <p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;element-citation publication-type="book" publication-format="web"&gt;
+&lt;source&gt;Fact sheet: AIDS information resources&lt;/source&gt;
+&lt;comment&gt;[Internet]&lt;/comment&gt;
+&lt;publisher-loc&gt;Bethesda (MD)&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;National Library of Medicine
+(US)&lt;/publisher-name&gt;
+&lt;year&gt;2003&lt;/year&gt;
+<strong><span class="focus">&lt;month&gt;May&lt;/month&gt;</span></strong>
+&lt;day&gt;2&lt;/day&gt;
+&lt;date-in-citation content-type="updated"&gt;updated 2005 Jul 14&lt;/date-in-citation&gt;
+&lt;date-in-citation content-type="access-date"&gt;cited 2006 Nov 15&lt;/date-in-citation&gt;
+&lt;size units="screen"&gt;[about 3 screens]&lt;/size&gt;
+&lt;comment&gt;Available from:
+&lt;uri&gt;http://www.nlm.nih.gov/pubs/factsheets/aidsinfs.html&lt;/uri&gt;
+&lt;/comment&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example 2</h3>
+         <p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):</p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;mixed-citation publication-type="book" publication-format="web"&gt;
+&lt;source&gt;Fact sheet: AIDS information resources&lt;/source&gt;
+[Internet]. &lt;publisher-loc&gt;Bethesda
+(MD)&lt;/publisher-loc&gt;: &lt;publisher-name&gt;National
+Library of Medicine (US)&lt;/publisher-name&gt;;
+&lt;year&gt;2003&lt;/year&gt; <strong><span class="focus">&lt;month&gt;May&lt;/month&gt;</span></strong> &lt;day&gt;2&lt;/day&gt;
+[updated &lt;date-in-citation  
+content-type="updated"&gt;2005 Jul 14&lt;/date-in-citation&gt;; cited 
+&lt;date-in-citation 
+content-type="access-date"&gt;2006 Nov 15&lt;/date-in-citation&gt;].
+&lt;size units="screen"&gt;[about 3 screens]&lt;/size&gt;.
+Available from:
+&lt;uri&gt;http://www.nlm.nih.gov/pubs/factsheets/aidsinfs.html&lt;/uri&gt;.
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

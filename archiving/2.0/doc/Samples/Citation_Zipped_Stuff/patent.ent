@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+   <no>VI.</no>
+   <title>Patents</title>
+   <reflist>
+      <title>1. Standard US Patent</title>
+      <ref>
+         <citation citation-type="patent">
+            <person-group person-group-type="inventor">
+               <name>
+                  <surname>Blanco</surname>
+                  <given-names>Ernesto E</given-names>
+               </name>
+               <name>
+                  <surname>Meade</surname>
+                  <given-names>John C</given-names>
+               </name>
+               <name>
+                  <surname>Richards</surname>
+                  <given-names>William D</given-names>
+               </name>
+            </person-group>
+            <collab collab-type="assignee">Ophthalmic Ventures</collab>
+            <atitle>Surgical Stapling system</atitle>
+            <source>US patent</source>
+            <patent>4,969,591</patent>
+            <year>1990</year>
+            <month>11</month>
+            <day>13</day>
+         </citation>
+      </ref>
+      <ref>
+         <citation citation-type="patent">
+            <person-group person-group-type="inventor">
+               <name>
+                  <surname>Harred</surname>
+                  <given-names>John F</given-names>
+               </name>
+               <name>
+                  <surname>Knight</surname>
+                  <given-names>Allen R</given-names>
+               </name>
+               <name>
+                  <surname>McIntyre</surname>
+                  <given-names>John S</given-names>
+               </name>
+            </person-group>
+            <collab collab-type="assignee">Dow Chemical Company</collab>
+            <atitle>Epoxidation process</atitle>
+            <source>US patent</source>
+            <patent>4,969,591</patent>
+            <year>1972</year>
+            <month>4</month>
+            <day>4</day>
+         </citation>
+      </ref>
+   </reflist>
+   <reflist>
+      <title>3. Non-US patent with translation</title>
+      <ref>
+         <citation citation-type="patent">
+            <person-group person-group-type="inventor">
+               <name>
+                  <surname>Bottcher</surname>
+                  <given-names>Henning</given-names>
+               </name>
+               <name>
+                  <surname>Juraszyk</surname>
+                  <given-names>Horst</given-names>
+               </name>
+               <name>
+                  <surname>Hausberg</surname>
+                  <given-names>Hans-Heinrich</given-names>
+               </name>
+            </person-group>
+            <collab collab-type="assignee">Merck Patent GMBH</collab>
+            <atitle>Indolderivate</atitle>
+            <transtitle>Indole derivatives</transtitle>
+            <source>German patent</source>
+            <patent>3,907,974</patent>
+            <year>1990</year>
+            <month>09</month>
+            <day>13</day>
+            <lpage>2</lpage>
+         </citation>
+      </ref>
+   </reflist>
+   <reflist>
+      <title>4. Patent in which an inventor is also an assignee</title>
+      <ref>
+         <citation citation-type="patent">
+            <person-group person-group-type="inventor">
+               <name>
+                  <surname>Leibinsohn</surname>
+                  <given-names>Saul</given-names>
+               </name>
+            </person-group>
+            <person-group person-group-type="assignee">
+               <name>
+                  <surname>Konick van Leer</surname>
+                  <given-names>BV</given-names>
+               </name>
+               <name>
+                  <surname>Leibinsohn</surname>
+                  <given-names>Saul</given-names>
+               </name>
+            </person-group>
+            <atitle>Dispositif de commande et debit de fluide et appareil de perfusion comprenant un tel dispositif</atitle>
+            <transtitle>Liquid flow regulating insert for medical transfusion line</transtitle>
+            <source>French patent</source>
+            <patent>2,456,525</patent>
+            <year>1981</year>
+            <month>1</month>
+            <day>16</day>
+            <lpage>3</lpage>
+            <other-ref>Int.Cl. A61M-005/14, G05D-007/00</other-ref>
+         </citation>
+      </ref>
+   </reflist>
+
+</chapter>

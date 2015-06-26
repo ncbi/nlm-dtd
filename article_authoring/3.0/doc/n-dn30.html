@@ -1,0 +1,109 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Contributor Group</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;contrib-group&gt;</h1>
+         <h1 class="elementname">Contributor Group</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Container element for information concerning a grouping of contributors, such as primary authors, editors, sponsors, translators,
+            illustrators, etc. The members of the group are contributors who worked individually, not as a group.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-yce0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute should be used to name the type of contributor, “authors”, “editors”, “translators”, etc.
+            
+         </p>
+         <p class="para">The <span class="elementtag">&lt;contrib-group&gt;</span>, should not be confused with the element <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, which is used for groups of authors, editors, etc. who are credited under a single name, either as a collaboration in the
+            strictest sense, or when an organization, institution, or corporation is given as a contributor.
+            
+         </p>
+         <p class="para">If issue contributors (as opposed to contributors to a particular article), are part of the metadata for an article, they
+            should be listed in a separate <span class="elementtag">&lt;contrib-group&gt;</span> with a <a href="n-yce0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute such as “issue-editors”.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">This element is for grouping individual contributors in the metadata of an article. The <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> element performs a similar function of grouping individual contributors, such as authors and editors, within a bibliographic
+            reference (<a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>).
+            
+         </p>
+         <p class="para">The element <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a> is used where the individuals are not the contributors, the contribution was made by the group as a whole, for example a
+            report which has a laboratory or department as the official author.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  contrib-group
+                        <a href="n-ivr0.html" target="main" title="Contributor Group Model"><span class="petag">%contrib-group-model;</span></a>                        &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(contrib+)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">
+            <a href="n-he30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-he30.html" target="main" title="<contrib&gt;"><span class="elementname">Contributor</span></a>, one or more
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-n420.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-qb40.html" target="main" title="Supplement Information"><span class="elementtag">&lt;supplement&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital 
+care for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+<strong><span class="focus">&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;aff&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5 
+0NA&lt;/aff&gt;
+&lt;/contrib&gt;
+...
+&lt;/contrib-group&gt;</span></strong>
+...
+&lt;/article-meta&gt;
+... 
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

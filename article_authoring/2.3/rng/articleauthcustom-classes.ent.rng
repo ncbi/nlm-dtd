@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- MODULE:    Article Authoring DTD Over-ride Classes Module -->
+<!-- VERSION:   2.3 -->
+<!-- DATE:      February 2007 -->
+<!---->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- PUBLIC DOCUMENT TYPE DEFINITION -->
+<!-- TYPICAL INVOCATION -->
+<!--
+  "-//NLM//DTD Article Authoring DTD Over-ride Classes Module v2.3 20070202//EN"
+  Delivered as file "articleauthcustom-classes.ent"
+-->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- SYSTEM:     Article Authoring DTD of the -->
+<!-- Archiving and Interchange DTD Suite -->
+<!---->
+<!-- PURPOSE:    To declare the Parameter Entities (PEs) used to -->
+<!-- over-ride the named element classes for the -->
+<!-- Article Authoring DTD, which was developed from -->
+<!-- the Archiving and Interchange DTD Suite. -->
+<!---->
+<!-- This DTD is a more prescriptive and limited DTD -->
+<!-- than are the Publishing or Archiving DTDs. -->
+<!---->
+<!-- Note: Since PEs must be declared before they -->
+<!-- are used, this module must be called before the -->
+<!-- content modules that declare elements, and before -->
+<!-- the Suite default classes module. -->
+<!---->
+<!-- CONTAINS:   1) PEs for changing the contents of the Suite -->
+<!-- default element classes -->
+<!---->
+<!-- CREATED FOR: -->
+<!-- Digital Archive of Journal Articles -->
+<!-- National Center for Biotechnology Information -->
+<!-- (NCBI) -->
+<!-- National Library of Medicine (NLM) -->
+<!---->
+<!-- ORIGINAL CREATION DATE: -->
+<!-- June 2005 -->
+<!---->
+<!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.) -->
+<!-- B. Tommie Usdin (Mulberry Technologies, Inc.) -->
+<!---->
+<!-- Suggestions for refinements and enhancements to -->
+<!-- this DTD should be sent in email to: -->
+<!-- authoring-dtd@ncbi.nlm.nih.gov -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- DTD VERSION\CHANGE HISTORY -->
+<!-- ============================================================= -->
+<!--
+  
+       =============================================================
+  
+  Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+  
+       =============================================================
+       Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+  
+       Enhancement Release (2.3) following the Working Group meetings 
+       of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+       Archiving loosened even more. New structures for all the DTDs. 
+  
+    5. PHRASE CLASS - Redefined this class because the default
+       class had added <milesotne-start> and <milestone-end>, which
+       are archival preservation tags not authoring tags.
+  
+    4. NAME CLASS - Added <anonymous> to name.class, thereby adding
+       it to <contrib> and <person-group> for both metadata and 
+       reference use.
+  
+    3. REFERENCES CLASS - Added the following elements to the
+       contents of the parameter entity -%references.class; thereby 
+       adding them to
+          - <citation>
+          - <product>
+          - <related-article>
+  
+       a. CONFERENCE SPONSOR - <conf-sponsor> 
+  
+       b. Institution <institution> (for CrossRef compatibility)
+  
+    2. NLM CITATION - Added <nlm-citation> as an alternative to
+       unstructured <citation>s by adding <nlm-citation>
+       to -%citation.class;. This changed the models for:
+        - <ref>, which uses %citation.class; inside %ref-model;     
+  
+    1. Updated public identifier to "v2.3 20070202//EN"
+-->
+<!-- ============================================================= -->
+<!-- PARAMETER ENTITIES FOR CLASS OVER-RIDES -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- OVER-RIDE INLINE CLASSES -->
+<!-- ============================================================= -->
+<!-- EMPHASIS RENDITION ELEMENTS -->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="emphasis.class">
+    <choice>
+      <ref name="bold"/>
+      <ref name="italic"/>
+      <ref name="monospace"/>
+      <ref name="overline"/>
+      <ref name="sc"/>
+      <ref name="strike"/>
+      <ref name="underline"/>
+    </choice>
+  </define>
+  <!-- PHRASE CLASS ELEMENTS -->
+  <!--
+    Small inline elements, that surround a word
+    or phrase in the text because the subject
+    (content) should be identified as something
+    special or different.
+    Removed <milestone-start> and 
+    <milestone-end>
+  -->
+  <define name="phrase.class">
+    <choice>
+      <ref name="abbrev"/>
+      <ref name="named-content"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- OVER-RIDE DISPLAY ELEMENTS -->
+  <!-- ============================================================= -->
+  <!-- DISPLAY CLASS ELEMENTS -->
+  <!--
+    Graphical or other image-related elements.
+    The display elements may occur within 
+    the text of a table cell or paragraph
+    although they are typically at the same 
+    hierarchical level as a paragraph.         
+    Deleted <array>, <chem-struct>, <fig-group>,
+    <table-wrap-group>
+  -->
+  <define name="block-display.class">
+    <choice>
+      <ref name="boxed-text"/>
+      <ref name="chem-struct-wrapper"/>
+      <ref name="fig"/>
+      <ref name="graphic"/>
+      <ref name="media"/>
+      <ref name="preformat"/>
+      <ref name="supplementary-material"/>
+      <ref name="table-wrap"/>
+    </choice>
+  </define>
+  <!-- INLINE DISPLAY CLASS ELEMENTS -->
+  <!--
+    Non-block display elements that set or
+    display inline with the text 
+    Deleted <private-char>
+  -->
+  <define name="inline-display.class">
+    <ref name="inline-graphic"/>
+  </define>
+  <!-- SIMPLE DISPLAY ELEMENTS -->
+  <!--
+    The simplest and most basic of the Display
+    Class elements, which may be allowed in many
+    places, for example, inside other Display
+    Class elements or inside the cell of a
+    Table 
+    Deleted <array>, <chem-struct>
+  -->
+  <define name="simple-display.class">
+    <choice>
+      <ref name="graphic"/>
+      <ref name="media"/>
+      <ref name="preformat"/>
+    </choice>
+  </define>
+  <!-- DISPLAY ELEMENT BACK MATTER ELEMENTS -->
+  <!--
+    Miscellaneous stuff (such as photo credits or
+    copyright statement) at the end of a display
+    element such as a figure or a boxed text
+    element such as a sidebar                  
+    Maintenance Modification Note: This model 
+    originally allowed the <copyright-statement>
+    element which was deleted here, since that 
+    element is available within <permissions>.
+  -->
+  <define name="display-back-matter.class">
+    <choice>
+      <ref name="attrib"/>
+      <ref name="permissions"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- OVER-RIDE PARAGRAPH-LIKE ELEMENTS -->
+  <!-- ============================================================= -->
+  <!-- REST OF PARAGRAPH CLASS (MINUS PARAGRAPH) -->
+  <!--
+    Full paragraph class, minus the paragraph
+    element itself, so this PE can be used inside
+    the content model of a paragraph           
+    Unlike in base, <ack> not allowed. 
+    Acknowledgements only allowed in Back Matter
+    <back>
+  -->
+  <define name="rest-of-para.class">
+    <choice>
+      <ref name="disp-quote"/>
+      <ref name="speech"/>
+      <ref name="statement"/>
+      <ref name="verse-group"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- OTHER CLASS OVER-RIDES -->
+  <!-- ============================================================= -->
+  <!-- CITATION CLASS ELEMENTS -->
+  <!--
+    Reference to an external document, as used 
+    within, for example, the text of a 
+    paragraph
+  -->
+  <define name="citation.class">
+    <choice>
+      <ref name="citation"/>
+      <ref name="nlm-citation"/>
+    </choice>
+  </define>
+  <!-- CONTRIBUTOR INFORMATION -->
+  <!-- Metadata about a contributor -->
+  <define name="contrib-info.class">
+    <choice>
+      <ref name="address"/>
+      <ref name="aff"/>
+      <ref name="author-comment"/>
+      <ref name="bio"/>
+      <ref name="email"/>
+      <ref name="ext-link"/>
+      <ref name="on-behalf-of"/>
+      <ref name="role"/>
+      <ref name="uri"/>
+      <ref name="xref"/>
+    </choice>
+  </define>
+  <!-- DATE CLASS ELEMENTS -->
+  <!-- Dates and other matters of history -->
+  <define name="date.class">
+    <ref name="date"/>
+  </define>
+  <!-- NAMES CLASS -->
+  <!--
+    The elements used to name the personal names
+    for individuals and the collaboration names
+    for groups
+  -->
+  <define name="name.class">
+    <choice>
+      <ref name="anonymous"/>
+      <ref name="collab"/>
+      <ref name="name"/>
+    </choice>
+  </define>
+  <!--
+    MATHEMATICAL EXPRESSIONS                   
+    Deleted <tex-math>
+  -->
+  <define name="math.class">
+    <ref name="mml.math"/>
+  </define>
+  <!-- BIBLIOGRAPHIC REFERENCE (CITATION) CLASS -->
+  <!--
+    The elements that may be included inside a
+    Citation (bibliographic reference) 
+    Removed <string-name>
+  -->
+  <define name="references.class">
+    <choice>
+      <ref name="access-date"/>
+      <ref name="annotation"/>
+      <ref name="article-title"/>
+      <ref name="collab"/>
+      <ref name="comment"/>
+      <ref name="conf-date"/>
+      <ref name="conf-loc"/>
+      <ref name="conf-name"/>
+      <ref name="conf-sponsor"/>
+      <ref name="day"/>
+      <ref name="edition"/>
+      <ref name="email"/>
+      <ref name="elocation-id"/>
+      <ref name="ext-link"/>
+      <ref name="fpage"/>
+      <ref name="gov"/>
+      <ref name="institution"/>
+      <ref name="isbn"/>
+      <ref name="issn"/>
+      <ref name="issue"/>
+      <ref name="issue-id"/>
+      <ref name="issue-title"/>
+      <ref name="lpage"/>
+      <ref name="month"/>
+      <ref name="name"/>
+      <ref name="object-id"/>
+      <ref name="page-count"/>
+      <ref name="page-range"/>
+      <ref name="patent"/>
+      <ref name="person-group"/>
+      <ref name="pub-id"/>
+      <ref name="publisher-loc"/>
+      <ref name="publisher-name"/>
+      <ref name="role"/>
+      <ref name="season"/>
+      <ref name="series"/>
+      <ref name="source"/>
+      <ref name="std"/>
+      <ref name="supplement"/>
+      <ref name="time-stamp"/>
+      <ref name="trans-source"/>
+      <ref name="trans-title"/>
+      <ref name="uri"/>
+      <ref name="volume"/>
+      <ref name="volume-id"/>
+      <ref name="year"/>
+    </choice>
+  </define>
+</grammar>
+<!-- ================== End Authoring Classes Customization ====== -->

@@ -1,0 +1,51 @@
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<?mtl hellip?><article><front>
+<journal-meta><journal-id journal-id-type="pmc">BMJ</journal-id>
+<journal-id journal-id-type="pubmed">BMJ</journal-id>
+<journal-id journal-id-type="publisher">BR MED J</journal-id>
+<issn>0959-8138</issn>
+<publisher><publisher-name>British Medical Journal</publisher-name></publisher></journal-meta>
+<article-meta>
+<article-id pub-id-type="pmid">10092260</article-id>
+<title-group><article-title>Systematic review of day hospital care for elderly
+people</article-title></title-group>
+<contrib-group>
+<?mtl /hellip?>
+<contrib contrib-type="author">
+<name>
+<surname>Forster</surname>
+<given-names>Anne</given-names>
+</name>
+<on-behalf-of>for the Multiple Sclerosis Collaborative 
+Research Group</on-behalf-of> 
+<role>research physiotherapist</role>
+<xref ref-type="aff" rid="StLukes">
+<sup><italic>a</italic></sup></xref>
+</contrib>
+</contrib-group>
+<?mtl hellip?>
+<aff id="StLukes">
+<sup><italic>a</italic></sup>Department of Health 
+Care for the Elderly, St Luke&#x2019;s Hospital, 
+Bradford BD5 0NA,</aff>
+<aff id="RoyalInf"><sup><italic>b</italic></sup>Academic Section
+of Geriatric Medicine, Royal Infirmary, Glasgow G4 0SF</aff>
+<pub-date pub-type="pub"><day>27</day><month>3</month><year>1999</year></pub-date>
+<volume>318</volume><issue>7187</issue><fpage>837</fpage><lpage>841</lpage>
+<history><date date-type="accepted"><day>29</day><month>1</month>
+<year>1999</year></date></history>
+<copyright-statement>Copyright &#x00A9; 1999, British Medical Journal</copyright-statement>
+<copyright-year>1999</copyright-year>
+<abstract>
+<p>Systematic review of 12 controlled
+clinical trials (available by January 1997) comparing day hospital care with
+comprehensive care (five trials), domiciliary care (four trials), or no
+comprehensive care (three trials).</p></abstract>
+</article-meta></front>
+<body>
+<sec sec-type="intro">
+<title>Introduction</title>
+<p>...
+</p>
+</sec></body>
+</article><?mtl /hellip?> 

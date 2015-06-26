@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+   <no>4.</no>
+   <title>Homepages</title>
+   <reflist>
+      <reflist>
+         <title>1. Standard citation to a homepage:</title>
+         <ref>
+            <citation citation-type="web">
+               <source>Hypertension, Dialysis &amp; Clinical Nephrology [Internet]</source>
+               <year>c1995-2001</year>
+               <access-date>cited 2001 Mar 8</access-date>
+               <publisher-loc>Hinsdale (IL)</publisher-loc>
+               <publisher-name>Medtext, Inc.</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.medtext.com/hdcn.htm">http://www.medtext.com/hdcn.htm</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+         <reflist>
+            <title>- with optional content designator</title>
+            <ref>
+               <citation citation-type="web">
+                  <source>Hypertension, Dialysis &amp; Clinical Nephrology [homepage on the Internet]</source>
+                  <year>c1995-2001</year>
+                  <access-date>cited 2001 Mar 8</access-date>
+                  <publisher-loc>Hinsdale (IL)</publisher-loc>
+                  <publisher-name>Medtext, Inc.</publisher-name>
+                  <other-ref>Available from: <exlnk exlnk-type="url" href="www.medtext.com/hdcn.htm">http://www.medtext.com/hdcn.htm   </exlnk>
+                  </other-ref>
+               </citation>
+            </ref>
+         </reflist>
+      </reflist>
+      <reflist>
+         <title>2. Government sites:</title>
+         <ref>
+            <citation citation-type="web">
+               <source>Animal Welfare Information Center [Internet]</source>
+               <access-date>updated 2001 Mar 1; cited 2001 Mar 2</access-date>
+               <publisher-loc>Beltsville (MD)</publisher-loc>
+               <publisher-name>National Agricultural Library (US)</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.nal.usda.gov/awic/">http://www.nal.usda.gov/awic/</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="web">
+               <source>Medlineplus [Internet]</source>
+               <access-date>updated 2000 Apr 7; cited 2000 Apr 18</access-date>
+               <publisher-loc>Bethesda (MD)</publisher-loc>
+               <publisher-name>National Library of Medicine (US)</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="medlineplus.gov">http://medlineplus.gov</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="web">
+               <source>THOMAS: legislative information on the Internet [Internet]</source>
+               <access-date>updated 2001 Apr 25; cited 2001 Apr 27</access-date>
+               <publisher-loc>Washington</publisher-loc>
+               <publisher-name>Library of Congress (US)</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="thomas.loc.gov">http://thomas.loc.gov</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>3. Association/society sites:</title>
+         <ref>
+            <citation citation-type="web">
+               <source>Nursing World [Internet]</source>
+               <year>c1995-2001</year>
+               <access-date>cited 2001 Mar 12</access-date>
+               <edition>Version 3.2</edition>
+               <publisher-loc>Washington</publisher-loc>
+               <publisher-name>American Nurses Association</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.ana.org">http://www.ana.org</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="web">
+               <source>The AAMC's Academic Medicine Web Site [Internet]</source>
+               <year>c1995-1997</year>
+               <access-date>cited 1997 Nov 4</access-date>
+               <publisher-loc>Washington</publisher-loc>
+               <publisher-name>Association of American Medical Colleges</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.aamc.org">http://www.aamc.org</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="web">
+               <source>PsycPORT.com [Internet]</source>
+               <year>c2000</year>
+               <access-date>cited 2000 Mar 7</access-date>
+               <publisher-loc>Washington</publisher-loc>
+               <publisher-name>American Psychological Association</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.psychPORT.com">http://www.psychPORT.com</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="web">
+               <source>HCMS ON LINE [Internet]</source>
+               <year>c2000</year>
+               <access-date>updated 2001 Apr 25; cited 2001 May 1</access-date>
+               <publisher-loc>Houston (TX)</publisher-loc>
+               <publisher-name>Harris County Medical Society</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.hcms.org">http://www.hcms.org</exlnk>. System Requirements: Best viewed with Netscape</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>4. University sites:</title>
+         <ref>
+            <citation citation-type="web">
+               <source>University of Maryland [Internet]</source>
+               <year>c2001</year>
+               <access-date>updated 2001 Apr 28; cited 2001 May 1</access-date>
+               <publisher-loc>College Park (MD)</publisher-loc>
+               <publisher-name>The University</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.maryland.edu">http://www.maryland.edu</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="web">
+               <source>Virtual Hospital: the apprentice's assistant [Internet]</source>
+               <year>c1992-1999</year>
+               <access-date>modified 1999 Nov 23; cited 2000 Mar 7</access-date>
+               <publisher-loc>Iowa City</publisher-loc>
+               <publisher-name>University of Iowa</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.vh.org">http://www.vh.org</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>5. Commercial sites:</title>
+         <ref>
+            <citation citation-type="web">
+               <source>HIMA: Health Industry Manufacturers Assocation [Internet]</source>
+               <year>1999</year>
+               <access-date>cited 1999 Dec 22</access-date>
+               <publisher-loc>Washington</publisher-loc>
+               <publisher-name>The Association</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.himanet.com">http://www.himanet.com</exlnk>. HIMA is now AdvaMed, the Advanced Medical Technology Association</other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="web">
+               <source>Doctor's Guide to the Internet [Internet]</source>
+               <year>c2000</year>
+               <access-date>cited 2001 Apr 10</access-date>
+               <publisher-loc>[place unknown]</publisher-loc>
+               <publisher-name>P\S\L Consulting Group Inc.</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.pslgroup.com/DOCGUIDE.HTM">http://www.pslgroup.com/DOCGUIDE.HTM</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="web">
+               <source>ScienceDirect [Internet]</source>
+               <year>c2000</year>
+               <access-date>cited 2000 Dec 19</access-date>
+               <publisher-loc>[New York]</publisher-loc>
+               <publisher-name>ScienceDirect</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.sciencedirect.com">http://www.sciencedirect.com</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>6. Individual's site:</title>
+         <ref>
+            <citation citation-type="web">
+               <source>Steve Dunn's Cancer Guide [Internet]</source>
+               <year>c1995-2001</year>
+               <access-date>updated 2001 May 5; cited 2001 May 15</access-date>
+               <publisher-loc>Boulder (CO)</publisher-loc>
+               <publisher-name>Steve Dunn</publisher-name>
+               <other-ref>Available from: <exlnk exlnk-type="url" href="www.cancerguide.org">http://www.cancerguide.org</exlnk>
+               </other-ref>
+            </citation>
+         </ref>
+      </reflist>
+   </reflist>
+</chapter>

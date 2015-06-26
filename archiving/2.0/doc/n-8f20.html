@@ -1,0 +1,118 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Access Date For Cited Work</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2003-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Archive 2.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;access-date&gt;</h1>
+         <h1 class="elementname">Access Date For Cited Work</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The date on which the work which is cited was examined</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Some online resources are changing so quickly that a citation to the resource is not complete without the date on which the
+            cited resource was examined, since a day before or a day later, the relevant material might be different.
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The related element <a href="n-2bg0.html"><span class="elementtag">&lt;time-stamp&gt;</span></a> is
+                   used to record not the time when a cited resource was examined, but rather the time
+                   stamp that was found on the resource when it was examined, for time-stamped
+                   resources.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  access-date  (#PCDATA %access-date-elements;)*            &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>
+                                       <a href="n-kva0.html"><span class="elementname">Day</span></a> <a href="n-kva0.html"><span class="elementtag">&lt;day&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-cc40.html"><span class="elementname">Month</span></a> <a href="n-cc40.html"><span class="elementtag">&lt;month&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-t270.html"><span class="elementname">Season</span></a> <a href="n-t270.html"><span class="elementtag">&lt;season&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-g760.html"><span class="elementname">Year</span></a> <a href="n-g760.html"><span class="elementtag">&lt;year&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-pw60.html"><span class="elementname">X - Generated Text and Punctuation</span></a> <a href="n-pw60.html"><span class="elementtag">&lt;x&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-4930.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-4930.html"><span class="elementname">Citation</span></a>; <a href="n-fhs0.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-fhs0.html"><span class="elementname">Product Information</span></a>; <a href="n-iet0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-iet0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;...
+&lt;/front&gt;
+&lt;body&gt;...
+&lt;/body&gt;
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;ref&gt;
+&lt;citation citation-type="web"&gt;
+&lt;source&gt;Hypertension, Dialysis &amp;amp; Clinical 
+Nephrology [Internet]&lt;/source&gt;
+&lt;year&gt;c1995-2001&lt;/year&gt;
+<strong><span class="focus">&lt;access-date&gt;cited 2001 Mar 8&lt;/access-date&gt;</span></strong>
+&lt;publisher-loc&gt;Hinsdale (IL)&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;Medtext, Inc.&lt;/publisher-name&gt;
+Available from: &lt;ext-link ext-link-type="url"
+xlink:href="www.medtext.com/hdcn.htm"&gt;
+http://www.medtext.com/hdcn.htm&lt;/ext-link&gt;
+&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt; 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Archive 2.0</h2>
+         <h4 class="pubdate">Version of 20040927</h4>
+      </div>
+   </body>
+</html>

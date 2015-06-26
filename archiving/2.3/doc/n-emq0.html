@@ -1,0 +1,47 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Parameter entity: Array Content Model</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="petag">%array-model;</h1>
+         <h1 class="pename">Array Content Model</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Content model for the <a href="n-6ec0.html"><span class="elementtag">&lt;array&gt;</span></a> element, which is used to contain the rows and columns that are just a block insert into the text flow. Such rows and columns
+            are not numbered or considered a table, and are usually not captioned either.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The full table model is allowed here, because this is by design a permissive tag set. But the expected content of an <a href="n-6ec0.html"><span class="elementtag">&lt;array&gt;</span></a> is just a <a href="n-q960.html"><span class="elementtag">&lt;tbody&gt;</span></a>. 
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header">Declaration</h2><pre class="contentdesc">&lt;!ENTITY % array-model  "(label?,
+                          (%access.class; | %address-link.class;)*,
+                          ( (%just-base-display.class;)* |
+                            %tbody.class; ),
+                          (%display-back-matter.class;)* )"          &gt;</pre></div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">display.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,120 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Title Group</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;title-group&gt;</h1>
+         <h1 class="elementname">Title Group</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Wrapper element to hold an article&#8217;s various titles</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Conversion Note: A footnote or other reference inside a title should usually be placed within the title tag, but such footnotes
+            may be placed into a footnote group (<a href="n-ghw0.html"><span class="elementtag">&lt;fn-group&gt;</span></a>) at the end of the <a href="n-7bd0.html"><span class="elementtag">&lt;title-group&gt;</span></a>, if that is the way the footnotes have been placed in the original tagging of the article.
+         </p>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">There are several elements concerned with the title of an article, all contained within the wrapper element <a href="n-7bd0.html"><span class="elementtag">&lt;title-group&gt;</span></a> in the article metadata. The <a href="n-dqc0.html"><span class="elementtag">&lt;article-title&gt;</span></a> is the full title of the article in the original language of the document. The <a href="n-z6n0.html"><span class="elementtag">&lt;subtitle&gt;</span></a> is a subordinate or auxiliary title that adds information to the full title or modifies the full title. The <a href="n-d920.html"><span class="elementtag">&lt;alt-title&gt;</span></a> is another version of an article title, usually created so that the title can be processed in a special way, for example,
+            a short version of the title for use in a Table of Contents, an ASCII title, or a version of the title to be used in the right-running-head.
+            The <a href="n-ssr0.html"><span class="elementtag">&lt;trans-title&gt;</span></a> is a version of the title translated into a language other than the original language of publication; the <a href="n-iur0.html"><span class="elementtag">&lt;trans-subtitle&gt;</span></a> is a version of the subtitle translated into a language other than the original language.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  title-group  %title-group-model;                          &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-dqc0.html"><span class="elementname">Article Title</span></a> <a href="n-dqc0.html"><span class="elementtag">&lt;article-title&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-z6n0.html"><span class="elementname">Article Subtitle</span></a> <a href="n-z6n0.html"><span class="elementtag">&lt;subtitle&gt;</span></a>, zero or more
+                  </li>
+                  <li>Zero or more occurrences of the following, in order:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-ssr0.html"><span class="elementname">Translated Title</span></a> <a href="n-ssr0.html"><span class="elementtag">&lt;trans-title&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-iur0.html"><span class="elementname">Translated Subtitle</span></a> <a href="n-iur0.html"><span class="elementtag">&lt;trans-subtitle&gt;</span></a>, zero or one
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-d920.html"><span class="elementname">Alternate Title</span></a> <a href="n-d920.html"><span class="elementtag">&lt;alt-title&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-ghw0.html"><span class="elementname">Footnote Group</span></a> <a href="n-ghw0.html"><span class="elementtag">&lt;fn-group&gt;</span></a>, zero or one
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-6zw0.html"><span class="elementtag">&lt;front-stub&gt;</span></a> <a href="n-6zw0.html"><span class="elementname">Stub Front Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="pmc"&gt;BMJ&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="publisher"&gt;BR MED J&lt;/journal-id&gt;
+&lt;issn&gt;0959-8138&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;British Medical Journal&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;10092260&lt;/article-id&gt;
+<strong><span class="focus">&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital
+care for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;</span></strong>
+&lt;contrib-group&gt;...
+&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;...&lt;/pub-date&gt;
+...
+&lt;/article-meta&gt;
+...
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

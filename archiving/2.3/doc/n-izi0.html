@@ -1,0 +1,94 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Country</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">country</h1>
+         <h1 class="attrname">Country</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Code (usually a 2-character alphabetic code) that names a country. This is information that can be used to identify a country
+            that granted a patent or to provide a machine-comparable form of the name of a country as an addition to the content of the
+            country element.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">On the element <a href="n-una0.html"><span class="elementtag">&lt;country&gt;</span></a>, archives and publishers can use this attribute to regularize the input for searching without altering the element content,
+            for example, placing a country code in the attribute when the country element content is fully spelled out or uses a non-standard
+            country abbreviation.
+         </p>
+         <p class="para">Best Practice: Although this attribute is optional and open to any value, for best practice, the country code should be provided
+            whenever it is known, and the ISO 31660-1 2-letter alphabetic codes should be used, for example:
+                        
+            <div class="deflist">
+               <table class="deflisttable">
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>US</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">United States</p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>GB</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">United Kingdom</p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>CA</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">Canada</p>
+                     </td>
+                  </tr>
+               </table>
+            </div>The complete list is available from ISO, in HTML, text-file, and XML-file versions at the following location: <tt>http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/index.html</tt>.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5 class="heading"><a href="n-una0.html"><span class="elementtag">&lt;country&gt;</span></a> <a href="n-una0.html"><span class="elementname">Country: in an Address</span></a></h5>
+            <h5 class="heading"><a href="n-ght0.html"><span class="elementtag">&lt;patent&gt;</span></a> <a href="n-ght0.html"><span class="elementname">Patent Number, Cited</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">A standardized abbreviation for a country (for best practice, the ISO 31660-1 2-letter alphabetic codes)</td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

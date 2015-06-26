@@ -1,0 +1,164 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Introduction to Parameter Entities</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="intro">
+         <h1 class="header">Introduction to Parameter Entities</h1>
+         <p class="para">This section describes each Parameter Entity in the Archiving and Interchange Tag Set as well as those in the base Suite that
+            are used by this Tag Set, except those that are part of the MathML or the XHTML Table structure. (Note: The math and table
+            modules come from external sources and are not maintained with this tag set or base Suite; see the documentation provided
+            by the authority responsible for the MathML Tag Set or XHTML table model.)
+         </p>
+         <p class="para">A Parameter Entity is an XML syntactic construct that allows a name to be given to a collection of elements, attributes, or
+            attribute values so that they can be referred to by name rather than have their members listed every time they are used. For
+            example, the name <a href="n-7ck2.html"><span class="petag">%person-name.class;</span></a> stands for all the element components of a person&#8217;s name, such as any title or honorific preceding the person&#8217;s name, a given
+            (first) name, a surname, and any suffix following the name (such as &#8220;Jr.&#8221;).
+         </p>
+         <hr class="hrule">
+         <div class="section"><a name="PE-pages"></a><h2 class="header">Parameter Entity Pages</h2>
+            <p class="para">Although the Parameter Entities are declared in many different modules, they are described here in alphabetical order of their
+               DTD names
+                (i.e., Parameter Entity type names). The DTD name is the shorter machine-readable name used in DTD fragments and schemas
+               and by software; for example, the
+                 DTD name <a href="n-7qq0.html"><span class="petag">%app.class;</span></a> is used for the Parameter Entity named <a href="n-7qq0.html"><span class="pename">Just Appendix Class Elements</span></a>. Parameter Entity names always begin with a percent sign and end with a semi-colon.
+            </p>
+            <p class="para">Each Parameter Entity is described by a separate HTML page, where the heading for the page displays the Parameter Entity&#8217;s
+               DTD name followed by a more descriptive name. The rest of the Parameter Entity description page discusses aspects of the Parameter
+               Entity and its usage. These sections within the page always appear in the following order although any given Parameter Entity
+               description may not contain all the sections:
+            </p>
+            <div class="deflist">
+               <table class="deflisttable">
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Definition</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">This section provides a narrative description of the Parameter Entity, describing what it
+                                     contains, what it does, or why and when it has been used.
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Remarks</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">For some Parameter Entities, this section provides additional useful information about the Parameter Entity or its usage.</p>
+                        <p class="para">Design Notes are instructions aimed at implementors, so they may better appreciate the rationale underlying a design decision
+                           such as the inclusion of an OR bar within a Parameter Entity. For example, inline-mix Parameter Entities always begin with
+                           an OR bar to ease customization for those organizations wishing only character data rather than a mixed content model for
+                           a particular element.
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row1">
+                     <td class="dterm">
+                        <p>Declaration</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">This section contains a copy of the Parameter Entity&#8217;s declaration from the DTD, i.e., the &#8220;content&#8221; of a Parameter Entity
+                           as shown in XML syntax.
+                        </p>
+                     </td>
+                  </tr>
+                  <tr class="row0">
+                     <td class="dterm">
+                        <p>Module</p>
+                     </td>
+                     <td class="ddef">
+                        <p class="para">This portion names the base Suite module in which the Parameter Entity is
+                            defined. In those instances in which the Suite&#8217;s declaration for a Parameter Entity has been over-ridden by a DTD-specific
+                           over-ride module, the name of the DTD-specific over-ride module will be named instead.
+                        </p>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name="pe-conventions"></a><h2 class="header">Parameter Entity Naming Conventions</h2>
+            <p class="para">
+               These DTDs and Suite modules have used a series of design and naming conventions consistently. While parsing software cannot
+               enforce these Parameter Entity usage or naming conventions, these conventions can make it much easier for a person to know
+               how the content models work. Version 2.3 of the Journal Archiving Tag Set (and the entire Version 2.3 Archiving and Interchange
+               Suite) use the following usage and naming conventions.
+               
+               <ul class="bullist">
+                  <li><strong>Classes</strong> &#8212; Classes are functional OR-groups of elements.
+                     All class names end in the suffix &#8220;.class&#8221;. For example:
+                     <div class="codeblock"><pre>&lt;!ENTITY % list.class "def-list | list" &gt;</pre></div><br class="br">Classes cannot be made empty; the class should just be
+                     removed from all models where you do not want the elements
+                     included.
+                  </li>
+                  <li><strong>Mixes</strong> &#8212; Mixes are OR-groups of classes. All mixes must be
+                     declared after all classes, since mixes are composed of
+                     classes. (In best practice, mixes never contain element names directly.) Mix names have no set suffix, and only a few have
+                     been named &#8220;<tt>.mix</tt>&#8221;. Some mixes are inline to be
+                     intermingled with <tt>#PCDATA</tt> in a mixed content model while other mixes are grouping of block-level elements. All inline mixes begin with an OR bar. For
+                     example:
+                     <div class="codeblock"><pre>&lt;!ENTITY % rendition-plus
+"| %all-phrase;" &gt;</pre></div>
+                  </li>
+                  <li><strong>Content</strong> &#8212; Content models and content model over-rides use mixes
+                     and classes for all OR groups. Only sequences are made
+                     up of element names directly. Content models over-rides are of two types, which are defined
+                     separately to preserve the mixed-content or element-
+                     content nature of the models as an aid to interchange.
+                     
+                     <ul class="bullist">
+                        <li><strong>-models</strong> &#8212; The over-ride of a complete content model will be
+                           named with a suffix &#8220;<tt>-model</tt>&#8221;. The over-ride contains
+                           the entire content model,<em> including the enclosing
+                              parentheses</em>, for example:
+                           <div class="codeblock"><pre>&lt;!ENTITY % kwd-group-model
+"(title?, (%kwd.class; | %x.class;)+ )" &gt;</pre></div>
+                        </li>
+                        <li><strong>-elements</strong> &#8212; A grouping of elements to be mixed with <tt>#PCDATA</tt> inside
+                           a mixed content model will be named with a suffix &#8220;<tt>-elements</tt>&#8221;.
+                           For example, &#8220;<a href="n-6fq0.html"><span class="petag">%access-date-elements;</span></a>&#8221; would be used in
+                           the models for the elements <a href="n-rv20.html"><span class="elementtag">&lt;access-date&gt;</span></a>. All &#8220;<tt>-elements</tt>&#8221;
+                           over-rides begin with an OR bar, so that a model may
+                           exclude all elements and be reduced to <tt>#PCDATA</tt>.
+                           For example:
+                           <div class="codeblock"><pre>&lt;!ENTITY % access-date-elements
+"| %date-parts.class; | %x.class;" &gt;</pre></div><br class="br">
+                           Could be replaced by
+                           
+                           <div class="codeblock"><pre>&lt;!ENTITY % access-date-elements ""              &gt;</pre></div>
+                        </li>
+                     </ul>
+                     
+                  </li>
+                  <li><strong>Attribute lists</strong> &#8212; Attribute lists for a particular element are named with the name of the element followed by the suffix &#8220;<tt>-atts</tt>&#8221;, so, for example, the attributes for the <a href="n-8a20.html"><span class="elementtag">&lt;abstract&gt;</span></a> element would be named &#8220;<tt>abstract-atts</tt>&#8221;. Such lists are not reused as frequently as they might be in many Tag Sets, to provide maximum flexibility. Attribute lists
+                     for different elements were rarely tied together. The Parameter Entities contain at least one complete line of an attribute
+                     list, excluding the <tt>ATTLIST</tt> Declaration.
+                     <div class="codeblock"><pre>&lt;!ENTITY % abstract-atts
+            "id         ID                                 #IMPLIED
+             abstract-type
+                        CDATA                              #IMPLIED
+             xml:lang   NMTOKEN                            #IMPLIED" &gt;
+</pre></div>
+                  </li>
+               </ul>
+            </p>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

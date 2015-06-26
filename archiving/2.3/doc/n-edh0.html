@@ -1,0 +1,158 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Year</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;year&gt;</h1>
+         <h1 class="elementname">Year</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Year of publication of the article or other work</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-edh0.html"><span class="elementtag">&lt;year&gt;</span></a> element is used in two contexts: as a part of the metadata concerning the article itself, and as part of a description of
+            a cited work inside a bibliographic reference (<a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>).  For extensive examples of formatted <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-edh0.html"><span class="elementtag">&lt;year&gt;</span></a>s in <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+         <p class="para">Conversion Note: When possible, the year should be expressed as a 4-digit number, for example, &#8220;1776&#8221;, &#8220;1924&#8221;, or &#8220;0042&#8221;.</p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  year         (#PCDATA)                                    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-rv20.html"><span class="elementtag">&lt;access-date&gt;</span></a> <a href="n-rv20.html"><span class="elementname">Access Date for Cited Work</span></a>; <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-qb50.html"><span class="elementtag">&lt;conf-date&gt;</span></a> <a href="n-qb50.html"><span class="elementname">Conference Date</span></a>; <a href="n-sha0.html"><span class="elementtag">&lt;date&gt;</span></a> <a href="n-sha0.html"><span class="elementname">Date</span></a>; <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-2is0.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-ay70.html"><span class="elementtag">&lt;pub-date&gt;</span></a> <a href="n-ay70.html"><span class="elementname">Publication Date</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a>; <a href="n-ybg0.html"><span class="elementtag">&lt;string-date&gt;</span></a> <a href="n-ybg0.html"><span class="elementname">Date as a String</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In article metadata:</p><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+...
+&lt;author-notes&gt;...&lt;/author-notes&gt;
+&lt;pub-date pub-type="pub"&gt;
+&lt;day&gt;27&lt;/day&gt; &lt;month&gt;03&lt;/month&gt;
+<strong><span class="focus">&lt;year&gt;1999&lt;/year&gt;</span></strong>
+&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt; &lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt; &lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted"&gt;
+&lt;day&gt;29&lt;/day&gt; &lt;month&gt;01&lt;/month&gt;
+<strong><span class="focus">&lt;year&gt;1999&lt;/year&gt;</span></strong>&lt;/date&gt;
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;...&lt;/copyright-statement&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;...&lt;/abstract&gt;
+...
+&lt;/article-meta&gt;
+...
+
+
+</pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference (punctuation and spacing removed):</p><pre class="taggedtext">
+
+...
+&lt;ref-list&gt;
+...
+&lt;ref id="B8"&gt;&lt;label&gt;8&lt;/label&gt;
+&lt;citation&gt;
+&lt;person-group&gt;
+&lt;name&gt;&lt;surname&gt;Weissert&lt;/surname&gt;
+&lt;given-names&gt;W&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Wan&lt;/surname&gt;
+&lt;given-names&gt;T&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Livieratos&lt;/surname&gt;
+&lt;given-names&gt;B&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Katz&lt;/surname&gt;
+&lt;given-names&gt;S&lt;/given-names&gt;&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;Effects and costs of day-care services
+for the chronically ill: a randomized experiment&lt;/article-title&gt;
+&lt;source&gt;Medical Care&lt;/source&gt;
+<strong><span class="focus">&lt;year&gt;1980&lt;/year&gt;</span></strong>
+&lt;volume&gt;18&lt;/volume&gt;
+&lt;fpage&gt;567&lt;/fpage&gt;
+&lt;lpage&gt;584&lt;/lpage&gt;
+&lt;pub-id pub-id-type="pmid"&gt;6772889&lt;/pub-id&gt;
+&lt;/citation&gt;
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+...
+
+
+</pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 3</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference (punctuation and spacing preserved):</p><pre class="taggedtext">
+
+...
+&lt;ref-list&gt;
+...
+&lt;ref id="B8"&gt;&lt;label&gt;8&lt;/label&gt;
+&lt;citation&gt;
+&lt;name&gt;&lt;surname&gt;Weissert&lt;/surname&gt;
+&lt;given-names&gt;W&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Wan&lt;/surname&gt;
+&lt;given-names&gt;T&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Livieratos&lt;/surname&gt;
+&lt;given-names&gt;B&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Katz&lt;/surname&gt;
+&lt;given-names&gt;S&lt;/given-names&gt;&lt;/name&gt;.
+&lt;article-title&gt;Effects and costs of day-care services
+for the chronically ill: a randomized experiment&lt;/article-title&gt;.
+&lt;source&gt;Medical Care&lt;/source&gt;
+<strong><span class="focus">&lt;year&gt;1980&lt;/year&gt;</span></strong>;
+&lt;volume&gt;18&lt;/volume&gt;:
+&lt;fpage&gt;567&lt;/fpage&gt;&amp;ndash;
+&lt;lpage&gt;584&lt;/lpage&gt;.
+&lt;pub-id pub-id-type="pmid"&gt;6772889&lt;/pub-id&gt;.
+&lt;/citation&gt;
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Attribute: Language</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">xml:lang</h1>
+         <h1 class="attrname">Language</h1>
+      </div>
+      <div class="definition">
+         <p class="para">The language of the intellectual content of the element for which this is an attribute, typically a whole article
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Recommended best practice is to use values as defined in RFC 4646, typically two-letter, lower-case language codes such as
+            “<tt>fr</tt>” (French), “<tt>en</tt>” (English), and “<tt>de</tt>” (German). These values are <strong>NOT</strong> case sensitive, but current best practice uses all lower case. Values can be obtained from the IANA Language Subtag Registry:
+            <a href="http://www.iana.org/assignments/language-subtag-registry" target="_new" class="external">http://www.iana.org/assignments/language-subtag-registry</a>
+            
+         </p>
+         <p class="para">Unlike nearly all other attributes in XML, the value of language is inherited. This means that all elements inside the one
+            with the language attribute (its descendants) are assumed to be in the same language, unless they explicitly set their own
+            <a href="n-fzn0.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attribute.
+            
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5><a href="n-2v20.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">An alphanumeric string, which may include hyphens</td>
+                  <td class="attrmeaning">For best practice, use the RFC 4646, typically two-letter, lower-case language code (such as “<tt>en</tt>”),
+                     including any subcodes (such as “<tt>en-au</tt>”).
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Default value: </b>EN
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4><a href="n-n600.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a>, <a href="n-nc20.html" target="main" title="Alternate Title Text (For a Figure, Etc.)"><span class="elementtag">&lt;alt-text&gt;</span></a>, <a href="n-6t20.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a>, <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-5vc0.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a>, <a href="n-tf50.html" target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a>, <a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-bv80.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a>, <a href="n-xka0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a>, <a href="n-9da0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>, <a href="n-jku0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a>, <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-t9w0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a>, <a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-sjv0.html" target="main" title="Source"><span class="elementtag">&lt;source&gt;</span></a>, <a href="n-smv0.html" target="main" title="Speech"><span class="elementtag">&lt;speech&gt;</span></a>, <a href="n-s640.html" target="main" title="Article Subtitle"><span class="elementtag">&lt;subtitle&gt;</span></a>, <a href="n-jz40.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-47t0.html" target="main" title="Translated Source"><span class="elementtag">&lt;trans-source&gt;</span></a>, <a href="n-bft0.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a>, <a href="n-rpt0.html" target="main" title="Verse Form for Poetry"><span class="elementtag">&lt;verse-group&gt;</span></a><table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">An alphanumeric string, which may include hyphens</td>
+                  <td class="attrmeaning">For best practice, use the RFC 4646, typically two-letter, lower-case language code (such as “<tt>en</tt>”),
+                     including any subcodes (such as “<tt>en-au</tt>”).
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,146 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: On Behalf of</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;on-behalf-of&gt;</h1>
+         <h1 class="elementname">On Behalf of</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">When a contributor has written or edited a work
+            &#8220;on behalf of&#8221; an organization or group, the contributor is acting
+            as a representative of the organization, which may or may not be his/her usual
+                   affiliation, for example, a physician affiliated with St. Luke&#8217;s Hospital writing on behalf of the Multiple Sclerosis
+            Collaborative Research Group.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element should not be confused with the element <a href="n-djc0.html"><span class="elementtag">&lt;collab&gt;</span></a>, which is used when a group as a whole authors a work.
+         </p>
+         <p class="para">This element joins the related element <a href="n-tuu0.html"><span class="elementtag">&lt;role&gt;</span></a> in describing the contribution of a contributor. The <a href="n-tuu0.html"><span class="elementtag">&lt;role&gt;</span></a> element will say that a person is an &#8220;Editor&#8221; or &#8220;Associate Editor&#8221;, and the <a href="n-s2a0.html"><span class="elementtag">&lt;on-behalf-of&gt;</span></a> element will state that this editing was undertaken as a representative of a group or organization:
+         </p>
+         <div class="codeblock"><pre>
+ &lt;on-behalf-of&gt;for the Multiple Sclerosis Collaborative Research Group&lt;/on-behalf-of&gt;</pre></div>
+         <p class="para">While not considered best practice, it is also acceptable
+            to tag the example as:
+         </p>
+         <div class="codeblock"><pre>
+&lt;contrib&gt;
+&lt;name&gt;&lt;surname&gt;Campion&lt;/surname&gt;
+&lt;given-names&gt;M&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;for the Multiple Sclerosis Collaborative Research Group&lt;/role&gt;
+&lt;/contrib&gt;
+</pre></div>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">See discussion about <a href="n-tuu0.html"><span class="elementtag">&lt;role&gt;</span></a> in <em>Remarks</em>.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  on-behalf-of
+                        (#PCDATA %on-behalf-of-elements;)*           &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-bcc0.html"><span class="elementname">Bold</span></a> <a href="n-bcc0.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-t380.html"><span class="elementname">Italic</span></a> <a href="n-t380.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-dn80.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-dn80.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-s3a0.html"><span class="elementname">Overline</span></a> <a href="n-s3a0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-zwu0.html"><span class="elementname">Small Caps</span></a> <a href="n-zwu0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-fpu0.html"><span class="elementname">Strike Through</span></a> <a href="n-fpu0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-66x0.html"><span class="elementname">Underline</span></a> <a href="n-66x0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-79u0.html"><span class="elementname">Subscript</span></a> <a href="n-79u0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-n5w0.html"><span class="elementname">Superscript</span></a> <a href="n-n5w0.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-yv30.html"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-yv30.html"><span class="elementname">Contributor</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+<strong><span class="focus">&lt;on-behalf-of&gt;Multiple Sclerosis Collaborative 
+Research Group&lt;/on-behalf-of&gt;</span></strong> 
+&lt;aff id="StLukes"&gt;Department of Health 
+Care for the Elderly, St Luke&amp;#x2019;s Hospital, 
+Bradford BD5 0NA&lt;/aff&gt;
+&lt;/contrib&gt;
+... 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

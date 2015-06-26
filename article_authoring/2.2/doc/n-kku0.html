@@ -1,0 +1,102 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Reference Item</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;ref&gt;</h1>
+         <h1 class="elementname">Reference Item</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">One item in a bibliographic list, i.e., a citation describing
+                   a referenced work
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-9740.html"><span class="attrtag">id</span></a> <a href="n-9740.html"><span class="attrname">Identifier</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  ref          %ref-model;                                  &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any one of:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-igc0.html"><span class="elementname">Citation</span></a> <a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-m980.html"><span class="elementname">NLM Citation Model</span></a> <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-jku0.html"><span class="elementtag">&lt;ref-list&gt;</span></a> <a href="n-jku0.html"><span class="elementname">Reference List (Bibliographic)</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+...
+&lt;back&gt;&lt;ack&gt;...&lt;/ack&gt;
+&lt;ref-list&gt;
+<strong><span class="focus">&lt;ref id="B1"&gt;
+&lt;nlm-citation citation-type="commun"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Harris&lt;/surname&gt;
+&lt;given-names&gt;Pat&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;New Z39.50 resource [Internet]&lt;/article-title&gt;
+&lt;source&gt;Message to: Karen Patrias&lt;/source&gt;
+&lt;year&gt;1998&lt;/year&gt;
+&lt;month&gt;02&lt;/month&gt;
+&lt;day&gt;27&lt;/day&gt;
+&lt;time-stamp&gt;1:18 pm&lt;/time-stamp&gt;
+&lt;access-date&gt;cited 1998 Feb 28&lt;/access-date&gt;
+&lt;comment&gt;[about 2 screens]&lt;/comment&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;</span></strong>
+<strong><span class="focus">&lt;ref id="B2"&gt;
+...
+&lt;/ref&gt;</span></strong>
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

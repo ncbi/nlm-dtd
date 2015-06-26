@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+   <no>I.</no>
+   <title>Journals</title>
+   <reflist>
+      <title>A. Journal Articles</title>
+      <reflist>
+         <title>1. Standard journal article</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Herbert</surname>
+                     <given-names>JR</given-names>
+                  </name>
+                  <name>
+                     <surname>Barone</surname>
+                     <given-names>J</given-names>
+                  </name>
+               </person-group>
+               <atitle>On the possible relationship between AIDS and nutrition</atitle>
+               <source>Med Hypotheses</source>
+               <year>1988</year>
+               <month>09</month>
+               <volume>27</volume>
+               <issue>1</issue>
+               <fpage>51</fpage>
+               <lpage>54</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>2. Article with "et al"</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Baxter</surname>
+                     <given-names>JR</given-names>
+                  </name>
+                  <name>
+                     <surname>James</surname>
+                     <given-names>J</given-names>
+                  </name>
+                  <name>
+                     <surname>Robinson</surname>
+                     <given-names>F</given-names>
+                  </name>
+                  <etal/>
+               </person-group>
+               <atitle>Quaternary salts of 2-[(hydroxyimino)methyl]imidazole</atitle>
+               <source>J Med Chem</source>
+               <year>1989</year>
+               <month>2</month>
+               <volume>32</volume>
+               <issue>2</issue>
+               <fpage>493</fpage>
+               <lpage>503</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>3. Organization as author</title>
+         <ref>
+            <citation citation-type="journal">
+               <collab>The Royal Marsden Hospital Bone-Marrow Transplantation Team</collab>
+               <atitle>Failure of syngeneic bone-marrow graft without preconditioning in post-hepatitis marrow aplasia</atitle>
+               <source>Lancet</source>
+               <year>1977</year>
+               <month>10</month>
+               <day>8</day>
+               <volume>2</volume>
+               <issue>8041</issue>
+               <fpage>742</fpage>
+               <lpage>744</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>4. No author given</title>
+         <ref>
+            <citation citation-type="journal">
+               <atitle>Indoor air pollution in developing countries [editorial]</atitle>
+               <source>Lancet</source>
+               <year>1990</year>
+               <month>12</month>
+               <day>22-29</day>
+               <volume>336</volume>
+               <issue>8730</issue>
+               <fpage>1548</fpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>5. Author affiliation included (affiliation of all authors or onlythe first may be given)</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Lidz</surname>
+                     <given-names>CW</given-names>
+                  </name>
+                  <aff>Dept. of Psychiatry, Univ. of Pittsburgh, Pittsburgh, PA</aff>
+                  <name>
+                     <surname>Lewis</surname>
+                     <given-names>SH</given-names>
+                  </name>
+                  <aff>Dept. of Psychology, Yale Univ., New Haven, CT</aff>
+                  <name>
+                     <surname>Gould</surname>
+                     <given-names>LC</given-names>
+                  </name>
+                  <aff>Dept. of Psychiatry, Yale Univ., New Haven, CT</aff>
+               </person-group>
+               <atitle>Heroin maintenance and heroin control</atitle>
+               <source>Int J Addict</source>
+               <year>1972</year>
+               <volume>10</volume>
+               <issue>1</issue>
+               <fpage>35</fpage>
+               <lpage>52</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Wishart</surname>
+                     <given-names>J</given-names>
+                  </name>
+                  <aff>Dept of Medicine, Royal Adelaide Hospital, South Australia</aff>
+                  <name>
+                     <surname>Horowitz</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Need</surname>
+                     <given-names>A</given-names>
+                  </name>
+                  <name>
+                     <surname>Nordin</surname>
+                     <given-names>BE</given-names>
+                  </name>
+               </person-group>
+               <atitle>Relationship between forearm and vertibral mineral density in postmenopausal women with primary hyperparathyroidism	</atitle>
+               <source>Arch Int Med</source>
+               <year>1990</year>
+               <month>06</month>
+               <volume>150</volume>
+               <issue>6</issue>
+               <fpage>1329</fpage>
+               <lpage>1331</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>6. Article in a language other than English</title>
+         <reflist>
+            <title>- in a roman alphabet</title>
+            <ref>
+               <citation citation-type="journal">
+                  <person-group>
+                     <name>
+                        <surname>Massone</surname>
+                        <given-names>L</given-names>
+                     </name>
+                     <name>
+                        <surname>Borghi</surname>
+                        <given-names>S</given-names>
+                     </name>
+                     <name>
+                        <surname>Pestarino</surname>
+                        <given-names>A</given-names>
+                     </name>
+                     <name>
+                        <surname>Piccini</surname>
+                        <given-names>R</given-names>
+                     </name>
+                     <name>
+                        <surname>Gambini</surname>
+                        <given-names>C</given-names>
+                     </name>
+                  </person-group>
+                  <atitle xml:lang="fr">Localisations palmaires purpurioques de la dermatitie herpetiforme</atitle>
+                  <transtitle xml:lang="en">Purpuric palmar sites of dermatitis herpetiformis</transtitle>
+                  <source>Ann Dermatol Vernerol</source>
+                  <year>1987</year>
+                  <volume>114</volume>
+                  <issue>12</issue>
+                  <fpage>1545</fpage>
+                  <lpage>1547</lpage>
+               </citation>
+            </ref>
+         </reflist>
+         <reflist>
+            <title>- in a non-roman alphabet</title>
+            <ref>
+               <citation citation-type="journal">
+                  <person-group>
+                     <name>
+                        <surname>Koplatadze</surname>
+                        <given-names>AM</given-names>
+                     </name>
+                     <name>
+                        <surname>Bondarev</surname>
+                        <given-names>IuA</given-names>
+                     </name>
+                  </person-group>
+                  <atitle xml:lang="ru"/>
+                  <atitle>Lechenie ostrykh anal'nykh treshchin</atitle>
+                  <transtitle>Treatment of acute renal fissures</transtitle>
+                  <source>Vestn Khir</source>
+                  <year>1990</year>
+                  <month>1</month>
+                  <volume>144</volume>
+                  <issue>1</issue>
+                  <fpage>110</fpage>
+                  <lpage>112</lpage>
+               </citation>
+            </ref>
+            <ref>
+               <citation citation-type="journal">
+                  <person-group>
+                     <name>
+                        <surname>Taguchi</surname>
+                        <given-names>H</given-names>
+                     </name>
+                  </person-group>
+                  <atitle xml:lang="jp"/>
+                  <transtitle>Immunologic deficiency in HTLV-I infection</transtitle>
+                  <source>Rinsho Kitsueki</source>
+                  <year>1989</year>
+                  <month>10</month>
+                  <volume>30</volume>
+                  <issue>10</issue>
+                  <fpage>1751</fpage>
+                  <lpage>1754</lpage>
+               </citation>
+            </ref>
+         </reflist>
+      </reflist>
+      <reflist>
+         <title>7. Type of article indicated as needed</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Spargo</surname>
+                     <given-names>PM</given-names>
+                  </name>
+                  <name>
+                     <surname>Manners</surname>
+                     <given-names>JM</given-names>
+                  </name>
+               </person-group>
+               <atitle>DDAVP and open heart surgery [letter]</atitle>
+               <source>Anaesthesia</source>
+               <year>1989</year>
+               <month>4</month>
+               <volume>44</volume>
+               <issue>4</issue>
+               <fpage>363</fpage>
+               <lpage>364</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Alberts</surname>
+                     <given-names>ME</given-names>
+                  </name>
+               </person-group>
+               <atitle>Immunization [editorial]</atitle>
+               <source>Iowa Med</source>
+               <year>1989</year>
+               <month>10</month>
+               <volume>79</volume>
+               <issue>10</issue>
+               <fpage>489</fpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>8. Article containing retraction</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Shishido</surname>
+                     <given-names>A</given-names>
+                  </name>
+               </person-group>
+               <atitle>Retraction notice: Effect of platinum compounds on murine lymphocyte mitogenesis [Retraction of Alsabti EA, Ghalib ON, Salem MH. In: Jpn J Med Biol 1979 Apr; 32(2):53-65]</atitle>
+               <source>Jpn J Med Scie Biol</source>
+               <year>1980</year>
+               <month>Aug</month>
+               <volume>33</volume>
+               <issue>4</issue>
+               <fpage>235</fpage>
+               <lpage>237</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Leist</surname>
+                     <given-names>TP</given-names>
+                  </name>
+                  <name>
+                     <surname>Zinkernagel</surname>
+                     <given-names>RM</given-names>
+                  </name>
+               </person-group>
+               <atitle>Effects of treatment with IL-2 receptor specific monoclonal antibody in mice [letter] [Retraction of Leist TP, Kohler M, Eppler M, Zinkernagel RM. In: J Immunol 1989 Jul 15; 143(2): 628-32]</atitle>
+               <source>J Immunol</source>
+               <year>1990</year>
+               <month>Apr</month>
+               <day>1</day>
+               <volume>144</volume>
+               <issue>7</issue>
+               <fpage>2847</fpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>9. Articles retracted </title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Alsabti</surname>
+                     <given-names>EA</given-names>
+                  </name>
+                  <name>
+                     <surname>Ghalib</surname>
+                     <given-names>ON</given-names>
+                  </name>
+                  <name>
+                     <surname>Salem</surname>
+                     <given-names>MH</given-names>
+                  </name>
+               </person-group>
+               <atitle>Effect of platinum compounds on murine lymphocyte mitogenesis [Retracted by Shishido A. In: Jpn J Med Sci Biol 1980 Aug; 33(4):235-7]</atitle>
+               <source>Jpn J Med Sci Biol</source>
+               <year>1979</year>
+               <month>Apr</month>
+               <volume>32</volume>
+               <issue>2</issue>
+               <fpage>53</fpage>
+               <lpage>65</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Tidy</surname>
+                     <given-names>JA</given-names>
+                  </name>
+                  <name>
+                     <surname>Parry</surname>
+                     <given-names>GC</given-names>
+                  </name>
+                  <name>
+                     <surname>Ward</surname>
+                     <given-names>P</given-names>
+                  </name>
+                  <name>
+                     <surname>Coleman</surname>
+                     <given-names>DV</given-names>
+                  </name>
+                  <name>
+                     <surname>Peto</surname>
+                     <given-names>J</given-names>
+                  </name>
+                  <name>
+                     <surname>Malcolm</surname>
+                     <given-names>AD</given-names>
+                  </name>
+                  <name>
+                     <surname>Farrell</surname>
+                     <given-names>PJ</given-names>
+                  </name>
+               </person-group>
+               <atitle>High rate of papillomavirus type 16 infection in cytologically normal cervices [letter] [Retracted by Tidy J, Farrell PJ. In: Lancet 1989 Dec 23-30:2(8678-8679):1535]</atitle>
+               <source>Lancet</source>
+               <year>1989</year>
+               <month>Feb</month>
+               <day>25</day>
+               <volume>1</volume>
+               <issue>8635</issue>
+               <fpage>434</fpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>10. Journal title with edition</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Freeman</surname>
+                     <given-names>NJ</given-names>
+                  </name>
+                  <name>
+                     <surname>Kirdar</surname>
+                     <given-names>JA</given-names>
+                  </name>
+               </person-group>
+               <atitle>An unusual manifestation of a common illness in the elderly</atitle>
+               <source>Hosp Pract (Off Ed)</source>
+               <year>1990</year>
+               <month>Nov</month>
+               <day>15</day>
+               <volume>25</volume>
+               <issue>11</issue>
+               <fpage>91</fpage>
+               <lpage>94</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Allen</surname>
+                     <given-names>CP</given-names>
+                  </name>
+                  <name>
+                     <surname>Calvert</surname>
+                     <given-names>PT</given-names>
+                  </name>
+               </person-group>
+               <atitle>Simultaneous upper femoral epiphysis in identical twins</atitle>
+               <source>J Bone Joint Surg (Br Vol)</source>
+               <year>1990</year>
+               <month>Sep</month>
+               <volume>72</volume>
+               <issue>5</issue>
+               <fpage>928</fpage>
+               <lpage>929</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>11. Article in microform</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Webster</surname>
+                     <given-names>RC</given-names>
+                  </name>
+                  <name>
+                     <surname>Davidson</surname>
+                     <given-names>TM</given-names>
+                  </name>
+                  <name>
+                     <surname>Smith</surname>
+                     <given-names>RC</given-names>
+                  </name>
+                  <name>
+                     <surname>Anderson</surname>
+                     <given-names>JR</given-names>
+                  </name>
+                  <name>
+                     <surname>Berman</surname>
+                     <given-names>WE</given-names>
+                  </name>
+                  <name>
+                     <surname>Beyer</surname>
+                     <given-names>CK</given-names>
+                  </name>
+                  <name>
+                     <surname>Duplin</surname>
+                     <given-names>CL</given-names>
+                  </name>
+                  <name>
+                     <surname>Feldstein</surname>
+                     <given-names>N</given-names>
+                  </name>
+                  <name>
+                     <surname>Johnson</surname>
+                     <given-names>CM</given-names>
+                  </name>
+                  <name>
+                     <surname>Kelleher</surname>
+                     <given-names>RE</given-names>
+                  </name>
+                  <etal/>
+               </person-group>
+               <atitle>Cosmetic blepharoplasty evaluation</atitle>
+               <source>Aesthetic Reconstr Plast Surg [microfiche]</source>
+               <year>1976</year>
+               <month>Apr</month>
+               <volume>3</volume>
+               <issue>2</issue>
+               <fpage>1</fpage>
+               <lpage>120</lpage>
+               <other-ref>1 microfiche: color, 4x6 in</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>12. Year or volume with special number</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Egawa</surname>
+                     <given-names>S</given-names>
+                  </name>
+               </person-group>
+               <atitle xml:lang="jp"/>
+               <transtitle>Hyperthermic therapy of cancer</transtitle>
+               <source>Gan No Rinsho</source>
+               <year>1989</year>
+               <month>1</month>
+               <volume>Spec No</volume>
+               <fpage>34</fpage>
+               <lpage>41</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Auriacombe</surname>
+                     <given-names>L</given-names>
+                  </name>
+                  <name>
+                     <surname>Pedroni</surname>
+                     <given-names>E</given-names>
+                  </name>
+                  <name>
+                     <surname>Kachaner</surname>
+                     <given-names>J</given-names>
+                  </name>
+                  <name>
+                     <surname>Mandel</surname>
+                     <given-names>C</given-names>
+                  </name>
+                  <name>
+                     <surname>Sidi</surname>
+                     <given-names>D</given-names>
+                  </name>
+               </person-group>
+               <atitle xml:lang="fr">Aptitude au sport des enfants de coarciation d l'aorte</atitle>
+               <transtitle>Aptitude for sports in children operated on for aortic coarctation</transtitle>
+               <source>Arch Mal Coeurr</source>
+               <year>1989</year>
+               <month>8</month>
+               <volume>82 Spec No 2</volume>
+               <fpage>13</fpage>
+               <lpage>16</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>13. Volume with supplement</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Magni</surname>
+                     <given-names>F</given-names>
+                  </name>
+                  <name>
+                     <surname>Rossoni</surname>
+                     <given-names>G</given-names>
+                  </name>
+                  <name>
+                     <surname>Berti</surname>
+                     <given-names>F</given-names>
+                  </name>
+               </person-group>
+               <atitle>BN-52021 protects guinea-pig from heard anaphylaxis</atitle>
+               <source>Pharm Res Commun</source>
+               <year>1988</year>
+               <month>12</month>
+               <volume>20</volume>
+               <supplement>Suppl 5</supplement>
+               <fpage>75</fpage>
+               <lpage>78</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Black</surname>
+                     <given-names>HR</given-names>
+                  </name>
+               </person-group>
+               <atitle>Evaluation of the elderly hypertensive</atitle>
+               <source>Geriatrics</source>
+               <year>1989</year>
+               <month>10</month>
+               <volume>44</volume>
+               <supplement>Suppl B</supplement>
+               <fpage>15</fpage>
+               <lpage>19</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>14. Issue with supplement</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Hoyme</surname>
+                     <given-names>HE</given-names>
+                  </name>
+                  <name>
+                     <surname>Jones</surname>
+                     <given-names>KL</given-names>
+                  </name>
+                  <name>
+                     <surname>Dixon</surname>
+                     <given-names>SD</given-names>
+                  </name>
+                  <name>
+                     <surname>Jewett</surname>
+                     <given-names>T</given-names>
+                  </name>
+                  <name>
+                     <surname>Hanson</surname>
+                     <given-names>JW</given-names>
+                  </name>
+                  <name>
+                     <surname>Robinson</surname>
+                     <given-names>LK</given-names>
+                  </name>
+                  <name>
+                     <surname>Small</surname>
+                     <given-names>ME</given-names>
+                  </name>
+                  <name>
+                     <surname>Allanson</surname>
+                     <given-names>J</given-names>
+                  </name>
+               </person-group>
+               <atitle>Maternal cocain use and fetal vascular disruption [abstract]</atitle>
+               <source>Am J Hum Genet</source>
+               <year>1988</year>
+               <volume>43</volume>
+               <issue>3 Suppl</issue>
+               <fpage>A56</fpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Gardos</surname>
+                     <given-names>G</given-names>
+                  </name>
+                  <name>
+                     <surname>Cole</surname>
+                     <given-names>JO</given-names>
+                  </name>
+                  <name>
+                     <surname>Haskell</surname>
+                     <given-names>D</given-names>
+                  </name>
+                  <name>
+                     <surname>Marby</surname>
+                     <given-names>D</given-names>
+                  </name>
+                  <name>
+                     <surname>Paine</surname>
+                     <given-names>SS</given-names>
+                  </name>
+                  <name>
+                     <surname>Moore</surname>
+                     <given-names>P</given-names>
+                  </name>
+               </person-group>
+               <atitle>The natural history of tardive dyskinesia</atitle>
+               <source>J Clin Psychopharmacol</source>
+               <year>1988</year>
+               <month>8</month>
+               <volume>8</volume>
+               <issue>4 Suppl</issue>
+               <fpage>31S</fpage>
+               <lpage>37S</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Ferriero</surname>
+                     <given-names>DM</given-names>
+                  </name>
+                  <name>
+                     <surname>Wong</surname>
+                     <given-names>DF</given-names>
+                  </name>
+                  <name>
+                     <surname>Townsend</surname>
+                     <given-names>R</given-names>
+                  </name>
+                  <name>
+                     <surname>Simon</surname>
+                     <given-names>RP</given-names>
+                  </name>
+               </person-group>
+               <atitle>Neurologic complications in infants of cocaine-abusing mothers [abstract]</atitle>
+               <source>Neurology</source>
+               <year>1988</year>
+               <volume>38</volume>
+               <issue>3 Suppl 1</issue>
+               <fpage>163</fpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>15. Volume with parts</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Hanley</surname>
+                     <given-names>C</given-names>
+                  </name>
+               </person-group>
+               <atitle>Metaphysics and innateness: a psycholanalytic perspective</atitle>
+               <source>Int J Psychoanal</source>
+               <year>1988</year>
+               <volume>69</volume>
+               <issue>Pt 3</issue>
+               <fpage>89</fpage>
+               <lpage>99</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>16. Issue with parts</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Edwards</surname>
+                     <given-names>L</given-names>
+                  </name>
+                  <name>
+                     <surname>Meyskens</surname>
+                     <given-names>F</given-names>
+                  </name>
+                  <name>
+                     <surname>Levine</surname>
+                     <given-names>N</given-names>
+                  </name>
+               </person-group>
+               <atitle>Effect of oral isotretinoin on dysplastic nevi</atitle>
+               <source>J Am Acad Dermatol</source>
+               <year>1989</year>
+               <month>2</month>
+               <volume>20</volume>
+               <issue>2 Pt 1</issue>
+               <fpage>257</fpage>
+               <lpage>260</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>17. Volume number in new series</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Dana</surname>
+                     <given-names>WJ</given-names>
+                  </name>
+               </person-group>
+               <atitle>Colorectal cancer: detection, prevention, and therapeutics</atitle>
+               <source>Am Pharm</source>
+               <year>1988</year>
+               <month>6</month>
+               <volume>NS28</volume>
+               <issue>6</issue>
+               <fpage>58</fpage>
+               <lpage>62</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>18. Issue with no volume</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Baumeister</surname>
+                     <given-names>AA</given-names>
+                  </name>
+               </person-group>
+               <atitle>Origins and control of stereotyped movements</atitle>
+               <source>Monogr Am Assoc Ment Defic</source>
+               <year>1978</year>
+               <issue>3</issue>
+               <fpage>353</fpage>
+               <lpage>384</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>19. Multiple issue numbers</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Fava</surname>
+                     <given-names>GN</given-names>
+                  </name>
+                  <name>
+                     <surname>Wise</surname>
+                     <given-names>TN</given-names>
+                  </name>
+               </person-group>
+               <atitle>Recommendations for clinical studies in psychosomatic medicine</atitle>
+               <source>Psychother Psychosom</source>
+               <year>1987</year>
+               <volume>47</volume>
+               <issue>3-4</issue>
+               <fpage>139</fpage>
+               <lpage>142</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>20. No issue or volume</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Danoek</surname>
+                     <given-names>K</given-names>
+                  </name>
+               </person-group>
+               <atitle>Skiing in and through the history of medicine</atitle>
+               <source>Nord Medicinhist Arsb</source>
+               <year>1982</year>
+               <fpage>86</fpage>
+               <lpage>100</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>21. Season included with date</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Fabdetti</surname>
+                     <given-names>DV</given-names>
+                  </name>
+                  <name>
+                     <surname>Golsmeier</surname>
+                     <given-names>J</given-names>
+                  </name>
+               </person-group>
+               <atitle>Social workers as culture mediators in health care settings</atitle>
+               <source>Health Soc Work</source>
+               <year>1988</year>
+               <season>Summer</season>
+               <volume>13</volume>
+               <issue>3</issue>
+               <fpage>171</fpage>
+               <lpage>179</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Beninger</surname>
+                     <given-names>RJ</given-names>
+                  </name>
+                  <name>
+                     <surname>Hoffman</surname>
+                     <given-names>DC</given-names>
+                  </name>
+                  <name>
+                     <surname>Mazurski</surname>
+                     <given-names>EJ</given-names>
+                  </name>
+               </person-group>
+               <atitle>Receptor subtype-specific dopaminergic agents and conditioned behavior</atitle>
+               <source>Neurosci Biobehav Rev</source>
+               <year>1989</year>
+               <season>Summer-Fall</season>
+               <volume>13</volume>
+               <issue>2-3</issue>
+               <fpage>113</fpage>
+               <lpage>122</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>22. Multiple years, months in date</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Shibbal</surname>
+                     <given-names>CS</given-names>
+                  </name>
+                  <name>
+                     <surname>Lipinska</surname>
+                     <given-names>SD</given-names>
+                  </name>
+               </person-group>
+               <atitle>Alzheimer's educational/support group: considerations for success</atitle>
+               <source>J Gerontol Soc Work</source>
+               <year>1985-86</year>
+               <volume>9</volume>
+               <issue>2</issue>
+               <fpage>41</fpage>
+               <lpage>48</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Stewart-Dedmon</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <atitle>Strain and strategy</atitle>
+               <source>Nurs Times</source>
+               <year>1988</year>
+               <month>Apr 27-May 3</month>
+               <volume>9</volume>
+               <issue>17</issue>
+               <fpage>38</fpage>
+               <lpage>41</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Garvia</surname>
+                     <given-names>EE</given-names>
+                  </name>
+                  <name>
+                     <surname>DeHaven</surname>
+                     <given-names>ED</given-names>
+                  </name>
+               </person-group>
+               <atitle>An experimental analysis of response acquisition and elimination with positive reinforcers</atitle>
+               <source>Behav Neuropsychiatry</source>
+               <year>1975 Apr-1976 Mar</year>
+               <volume>7</volume>
+               <issue>1-12</issue>
+               <fpage>71</fpage>
+               <lpage>78</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>23. Page numbers with letters</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Adam</surname>
+                     <given-names>D</given-names>
+                  </name>
+                  <name>
+                     <surname>Prauer</surname>
+                     <given-names>H</given-names>
+                  </name>
+                  <name>
+                     <surname>Sorgel</surname>
+                     <given-names>F</given-names>
+                  </name>
+                  <name>
+                     <surname>Zurcher</surname>
+                     <given-names>J</given-names>
+                  </name>
+               </person-group>
+               <atitle xml:lang="DE">Enoxacin-Konzentrationen im Lungengewebe</atitle>
+               <transtitle>Enoxacin concentrations in lung tissue</transtitle>
+               <source>Infection</source>
+               <year>1989</year>
+               <volume>17</volume>
+               <supplement>Suppl 1</supplement>
+               <fpage>S21</fpage>
+               <lpage>S22</lpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Dougherty</surname>
+                     <given-names>RJ</given-names>
+                  </name>
+               </person-group>
+               <atitle>Cocaine facts and fantasies</atitle>
+               <source>U S Pharm</source>
+               <year>1989</year>
+               <volume>14</volume>
+               <issue>3</issue>
+               <fpage>H16, H19-H20</fpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Goodnight</surname>
+                     <given-names>SH</given-names>
+                     <suffix>Jr</suffix>
+                  </name>
+               </person-group>
+               <atitle>Vascular effects of omega-3 fatty acids</atitle>
+               <source>J Invest Dermatol</source>
+               <year>1989</year>
+               <month>Aug</month>
+               <volume>93</volume>
+               <issue>2 Suppl</issue>
+               <fpage>102S</fpage>
+               <lpage>106S</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>24. Page numbers in roman numerals </title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Ansavarsfall</surname>
+                     <given-names>Ronne Y</given-names>
+                  </name>
+               </person-group>
+               <atitle xml:lang="SE">Blodtransfusion till fel patient</atitle>
+               <transtitle>Liability cas. Blood transfusion to the wrong patient</transtitle>
+               <source>Vardfacket</source>
+               <year>1989</year>
+               <month>Jan</month>
+               <day>26</day>
+               <volume>13</volume>
+               <issue>2</issue>
+               <fpage>XXVI</fpage>
+               <lpage>XXVII</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>25. Discontinuous pagination (include up to three groups; if more than three add passim)</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Boissoneau</surname>
+                     <given-names>R</given-names>
+                  </name>
+                  <name>
+                     <surname>Schwahn</surname>
+                     <given-names>BM</given-names>
+                  </name>
+               </person-group>
+               <atitle>Participatory Management. Its evolution, current usage</atitle>
+               <source>AORN J</source>
+               <year>1989</year>
+               <month>Nov</month>
+               <volume>50</volume>
+               <issue>5</issue>
+               <fpage>1079, 1082-1084, 1086</fpage>
+            </citation>
+         </ref>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Robinson</surname>
+                     <given-names>BE</given-names>
+                  </name>
+               </person-group>
+               <atitle>Dementia: a three-pronged strategy for primary care</atitle>
+               <source>Geriatrics</source>
+               <year>1986</year>
+               <month>Feb</month>
+               <volume>41</volume>
+               <issue>2</issue>
+               <fpage>75</fpage>
+               <lpage>77, 81, 84 passim</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>26. No page numbers given</title>
+         <ref>
+            <citation citation-type="journal">
+               <atitle>The humane care and use of animals: statement of journal policy</atitle>
+               <source>Int J Neurosci</source>
+               <year>1988</year>
+               <month>Oct</month>
+               <volume>42</volume>
+               <issue>3-4</issue>
+               <fpage>[1 p.]</fpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>27. Part of an article</title>
+         <ref>
+            <citation citation-type="journal">
+               <person-group>
+                  <name>
+                     <surname>Franklin</surname>
+                     <given-names>PD</given-names>
+                  </name>
+                  <name>
+                     <surname>Panzer</surname>
+                     <given-names>RJ</given-names>
+                  </name>
+                  <name>
+                     <surname>Brideau</surname>
+                     <given-names>LP</given-names>
+                  </name>
+                  <name>
+                     <surname>Griner</surname>
+                     <given-names>PF</given-names>
+                  </name>
+               </person-group>
+               <atitle>Innovations in clinical practice through hospital-funded grants</atitle>
+               <source>Academic Med</source>
+               <year>1990</year>
+               <month>Jun</month>
+               <volume>65</volume>
+               <issue>6</issue>
+               <fpage>355</fpage>
+               <lpage>360</lpage>
+               <other-ref>Figure 1, Cost and net annual savings per study; p. 358</other-ref>
+            </citation>
+         </ref>
+      </reflist>
+   </reflist>
+   <reflist>
+      <title>B. Special Issues of Journals</title>
+   </reflist>
+   <reflist>
+      <title>C. Journal Titles</title>
+   </reflist>
+</chapter>

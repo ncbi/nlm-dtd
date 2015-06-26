@@ -1,0 +1,134 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Author Note Group</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;author-notes&gt;</h1>
+         <h1 class="elementname">Author Note Group</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Collection of footnotes to, or correspondence notes about,
+            authors (and potentially about other contributors). Such footnotes/notes
+             typically name one of the authors a corresponding author, provide the author
+                   affiliation or current contact information, explain that the person has changed
+                   organizations, or provide other contributor-related material.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">References to these footnotes <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a>,
+                   as to any other footnote, should be are made using the <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a> element.
+         </p>
+         <p class="para">Authoring Note: While this element contains an optional <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> element, the <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> element should be included only in those circumstances where a formatting override is needed; <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> should NOT be used in the ordinary course of tagging.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-ecp0.html"><span class="attrtag">rid</span></a> <a href="n-ecp0.html"><span class="attrname">Reference to an Identifier</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Conversion Note: The current model allows identification of the corresponding contributor either by explicit tagging using
+            a <a href="n-bsa0.html"><span class="elementtag">&lt;corresp&gt;</span></a> element or by providing a footnote <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a> concerning the contributor. While this Tag Set supports both practices, best practice is to tag the correspondent information
+            using the <a href="n-bsa0.html"><span class="elementname">Correspondence Information</span></a> <a href="n-bsa0.html"><span class="elementtag">&lt;corresp&gt;</span></a> element.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  author-notes %author-notes-model;                         &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> <a href="n-pg40.html"><span class="elementtag">&lt;label&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-tid0.html"><span class="elementname">Title</span></a> <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                  </li>
+                  <li>One or more of any of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-bsa0.html"><span class="elementname">Correspondence Information</span></a> <a href="n-bsa0.html"><span class="elementtag">&lt;corresp&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-crw0.html"><span class="elementname">Footnote</span></a> <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-6zw0.html"><span class="elementtag">&lt;front-stub&gt;</span></a> <a href="n-6zw0.html"><span class="elementname">Stub Front Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;10092260&lt;/article-id&gt;
+...
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital care for elderly
+people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;...
+&lt;/contrib-group&gt;
+&lt;aff&gt;...&lt;/aff&gt;
+<strong><span class="focus">&lt;author-notes&gt;
+&lt;fn fn-type="con"&gt;&lt;p&gt;Contributors: AF planned and initiated the
+review, conducted literature searches, assessed the trials, drafted
+and redrafted the final report. JY planned and initiated the review, assessed
+trials, and redrafted the final report. PL planned the review, assessed trials,
+provided methodological support, and redrafted the final report. The day
+hospital group is formed from the authors of this systematic review and the
+authors of the original trials who provided additional information about trial
+procedures and data: S Burch, J Longbottom, M Mckay, C Borland, T Prevost
+(Huntingdon); Kaisu Pitkala (Helsinki); John Gladman (Nottingham); Susan
+Hedrick, M L Rothman, M K Chapko, J L Ehreth, P Diehr, T S Inui, R T Connis, P L
+Grover, J R Kelly (United States); E Hui, C Lum, R L C Kay, J Woo, K H Or (Hong
+Kong); N Vetter (Cardiff). Victor Cummings, Joan Eagle, and S J Ogle also
+supported the review. J Baskett provided additional information and T K Kong
+identified a relevant trial.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;fn&gt;&lt;p&gt;...Dr Forster &lt;email&gt;a.forster@leeds.ac.uk&lt;/email&gt;&lt;/p&gt;&lt;/fn&gt;
+&lt;/author-notes&gt;</span></strong>
+&lt;pub-date pub-type="pub"&gt;&lt;day&gt;27&lt;/day&gt;
+&lt;month&gt;03&lt;/month&gt;&lt;year&gt;1999&lt;/year&gt;&lt;/pub-date&gt;...
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

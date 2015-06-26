@@ -1,0 +1,220 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Element: Notes</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;notes&gt;</h1>
+         <h1 class="elementname">Notes</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A section-like container element for a section of notes that may appear, for example, at the end of an <a href="n-u2c0.html"><span class="elementtag">&lt;article&gt;</span></a> or as part of the article back matter
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">A typical end-of-article note is a &#8220;Note in Proof&#8221;. A Note in Proof contains late-breaking news items or other material produced
+            while the article was being typeset or was otherwise in production, that therefore happened too late to be included in the
+            text of the article. This is typically NOT peer-reviewed content, and citations to other material within such content are
+            usually integrated into the text or put inside the last paragraph, not listed separately in a bibliographic reference list
+            <a href="n-u6x0.html"><span class="elementtag">&lt;ref-list&gt;</span></a>.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-5we0.html"><span class="attrtag">id</span></a> <a href="n-5we0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-wbe0.html"><span class="attrtag">notes-type</span></a> <a href="n-wbe0.html"><span class="attrname">Type of Notes</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Not to be confused with the general notes and footnotes that can appear at the bottom of a table (<a href="n-4h40.html"><span class="elementtag">&lt;table-wrap&gt;</span></a>), these should be tagged as ordinary paragraphs and footnotes inside a <a href="n-xp40.html"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a> container element.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  notes        %notes-model;                                &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-yds0.html"><span class="elementname">Title</span></a> <a href="n-yds0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-rm20.html"><span class="elementname">Array (Simple Tabular Array)</span></a> <a href="n-rm20.html"><span class="elementtag">&lt;array&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-f9c0.html"><span class="elementname">Boxed Text</span></a> <a href="n-f9c0.html"><span class="elementtag">&lt;boxed-text&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-g330.html"><span class="elementname">Chemical Structure (Display)</span></a> <a href="n-g330.html"><span class="elementtag">&lt;chem-struct&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ru30.html"><span class="elementname">Chemical Structure Wrapper</span></a> <a href="n-ru30.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-th80.html"><span class="elementname">Figure</span></a> <a href="n-th80.html"><span class="elementtag">&lt;fig&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-vq80.html"><span class="elementname">Figure Group</span></a> <a href="n-vq80.html"><span class="elementtag">&lt;fig-group&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-eea0.html"><span class="elementname">Graphic</span></a> <a href="n-eea0.html"><span class="elementtag">&lt;graphic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-3eu0.html"><span class="elementname">Media Object</span></a> <a href="n-3eu0.html"><span class="elementtag">&lt;media&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-tkx0.html"><span class="elementname">Preformatted Text</span></a> <a href="n-tkx0.html"><span class="elementtag">&lt;preformat&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-s740.html"><span class="elementname">Supplementary Material</span></a> <a href="n-s740.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-4h40.html"><span class="elementname">Table Wrapper</span></a> <a href="n-4h40.html"><span class="elementtag">&lt;table-wrap&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-yq40.html"><span class="elementname">Table Wrapper Group</span></a> <a href="n-yq40.html"><span class="elementtag">&lt;table-wrap-group&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-9580.html"><span class="elementname">Formula, Display</span></a> <a href="n-9580.html"><span class="elementtag">&lt;disp-formula&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-66w0.html"><span class="elementname">Paragraph</span></a> <a href="n-66w0.html"><span class="elementtag">&lt;p&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-wc80.html"><span class="elementname">Definition List</span></a> <a href="n-wc80.html"><span class="elementtag">&lt;def-list&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-4vu0.html"><span class="elementname">List</span></a> <a href="n-4vu0.html"><span class="elementtag">&lt;list&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-mss0.html"><span class="elementname">Tex Math Equation</span></a> <a href="n-mss0.html"><span class="elementtag">&lt;tex-math&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-nju0.html"><span class="elementname">Math (MathML 2.0 DTD)</span></a> <a href="n-nju0.html"><span class="elementtag">&lt;mml:math&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-thx0.html"><span class="elementname">Related Article Information</span></a> <a href="n-thx0.html"><span class="elementtag">&lt;related-article&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-tw80.html"><span class="elementname">Quote, Displayed</span></a> <a href="n-tw80.html"><span class="elementtag">&lt;disp-quote&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-vdv0.html"><span class="elementname">Speech</span></a> <a href="n-vdv0.html"><span class="elementtag">&lt;speech&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-grv0.html"><span class="elementname">Statement, Formal</span></a> <a href="n-grv0.html"><span class="elementtag">&lt;statement&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-v4t0.html"><span class="elementname">Verse Form for Poetry</span></a> <a href="n-v4t0.html"><span class="elementtag">&lt;verse-group&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-55v0.html"><span class="elementname">Section</span></a> <a href="n-55v0.html"><span class="elementtag">&lt;sec&gt;</span></a>, zero or more
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-zm80.html"><span class="elementname">Footnote Group</span></a> <a href="n-zm80.html"><span class="elementtag">&lt;fn-group&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-jwa0.html"><span class="elementname">Glossary Elements List</span></a> <a href="n-jwa0.html"><span class="elementtag">&lt;glossary&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-u6x0.html"><span class="elementname">Reference List (Bibliographic Reference List)</span></a> <a href="n-u6x0.html"><span class="elementtag">&lt;ref-list&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-d6c0.html"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-d6c0.html"><span class="elementname">Back Matter</span></a>; <a href="n-g3a0.html"><span class="elementtag">&lt;front&gt;</span></a> <a href="n-g3a0.html"><span class="elementname">Front Matter</span></a>; <a href="n-4cu0.html"><span class="elementtag">&lt;journal-meta&gt;</span></a> <a href="n-4cu0.html"><span class="elementname">Journal Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;
+...
+&lt;/front&gt;
+&lt;body&gt;...
+&lt;/body&gt;
+&lt;back&gt;
+&lt;glossary&gt;...
+&lt;/glossary&gt;
+<strong><span class="focus">&lt;notes&gt;
+&lt;sec&gt;&lt;title&gt;Note Added in Proof&lt;/title&gt;
+&lt;p&gt;Similar sequence information has been obtained in another study (S. Mishiro,
+personal communication) and has been deposited under GenBank accession numbers
+&amp;#x2013;. For the purposes of HBV nomenclature, we have proposed that the
+chimpanzee HBV be abbreviated as ChHBV.&lt;/p&gt;
+&lt;/sec&gt;
+&lt;/notes&gt;</span></strong>
+&lt;ref-list&gt;...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt; 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

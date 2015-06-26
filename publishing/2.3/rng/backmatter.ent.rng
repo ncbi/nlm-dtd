@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- MODULE:    Back Matter Elements -->
+<!-- VERSION:   2.3 -->
+<!-- DATE:      February 2007 -->
+<!---->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- PUBLIC DOCUMENT TYPE DEFINITION -->
+<!-- TYPICAL INVOCATION -->
+<!--
+  "-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.3 20070202//EN"
+       Delivered as file "backmatter.ent"
+-->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- SYSTEM:     Archiving and Interchange DTD Suite -->
+<!---->
+<!-- PURPOSE:    Names elements that are not part of the main -->
+<!-- textual flow of a work, but are considered to be -->
+<!-- ancillary material. -->
+<!---->
+<!-- CONTAINS:   1) Parameter Entities for attribute lists -->
+<!-- 2) List of the back matter elements in -->
+<!-- alphabetical order -->
+<!-- - Acknowledgments <ack> (defined in -->
+<!-- %common.ent;) -->
+<!-- - Appendix Matter <app-group> -->
+<!-- - Footnote Group <fn-group> -->
+<!-- - Glossary <glossary> -->
+<!-- - Biography <bio> (defined in %common.ent;) -->
+<!---->
+<!-- CREATED FOR: -->
+<!-- Digital archives and publishers who wish to -->
+<!-- create a custom XML DTD for original markup of -->
+<!-- journal literature, books, and related material, -->
+<!-- or for archiving and transferring such material -->
+<!-- between archives. -->
+<!---->
+<!-- This DTD is in the public domain. An organization -->
+<!-- that wishes to create its own DTD from the suite -->
+<!-- may do so without permission from NLM. -->
+<!---->
+<!-- The suite has been set up to be extended using a -->
+<!-- new DTD file and a new DTD-specific customization -->
+<!-- module to redefine the many Parameter Entities. -->
+<!-- Do not modify the suite directly or redistribute -->
+<!-- modified versions of the suite. -->
+<!---->
+<!-- In the interest of maintaining consistency and -->
+<!-- clarity for potential users, NLM requests: -->
+<!---->
+<!-- 1. If you create a DTD from the Archiving and -->
+<!-- Interchange DTD Suite and intend to stay -->
+<!-- compatible with the suite, then please include -->
+<!-- the following statement as a comment in all of -->
+<!-- your DTD modules: -->
+<!-- "Created from, and fully compatible with, -->
+<!-- the Archiving and Interchange DTD Suite." -->
+<!---->
+<!-- 2. If you alter one or more modules of the suite, -->
+<!-- then please rename your version and all its -->
+<!-- modules to avoid any confusion with the -->
+<!-- original suite. Also, please include the -->
+<!-- following statement as a comment in all your -->
+<!-- DTD modules: -->
+<!-- "Based in part on, but not fully compatible -->
+<!-- with, the Archiving and Interchange DTD -->
+<!-- Suite." -->
+<!---->
+<!-- Suggestions for refinements and enhancements to -->
+<!-- the DTD suite should be sent in email to: -->
+<!-- archive-dtd@ncbi.nlm.nih.gov -->
+<!---->
+<!-- ORIGINAL CREATION DATE: -->
+<!-- December 2002 -->
+<!---->
+<!-- CREATED BY: Jeff Beck       (NCBI) -->
+<!-- Deborah Lapeyre (Mulberry Technologies, Inc.) -->
+<!-- Bruce Rosenblum (Inera Inc.) -->
+<!---->
+<!-- NLM thanks the Harvard University Libraries, both -->
+<!-- for proposing that a draft archiving NLM DTD for -->
+<!-- life sciences journals be extended to accommodate -->
+<!-- journals in all disciplines and for sponsoring -->
+<!-- Bruce Rosenblum's collaboration with other DTD -->
+<!-- authors in completing Version 1.0. The Andrew W. -->
+<!-- Mellon Foundation provided support for these -->
+<!-- important contributions. -->
+<!---->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- DTD VERSION/CHANGE HISTORY -->
+<!-- ============================================================= -->
+<!--
+       =============================================================
+  
+  Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+  
+       =============================================================
+       Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+  
+       Enhancement Release (2.3) following the Working Group meetings 
+       of Oct-Nov 2006/Jan 2007. No backward-incompatible changes.
+       Archiving loosened even more. New structures for all the DTDs. 
+  
+   11. NEW TYPE ATTRIBUTES - Added a "content-type" attribute to the
+       following elements, to add or preserve semantic distinctions
+       between different occurrences of the element:
+       - app
+       - app-group
+       - fn-group
+       - gloss-group
+       - glossary
+  
+   10. NEW ID ATTRIBUTES - Added an "id" attribute of type ID to the
+       following elements:
+        - app-group (new app-group-atts)
+        - fn-group (new fn-group-atts)
+        - glossary (new glossary-atts) 
+        - gloss-group (new gloss-group-atts) 
+  
+    9. NEW PARAMETER ENTITIES - Added parameter entities for the
+       attribute lists of:
+       - app-group
+       - fn-group
+       - gloss-group
+       - glossary
+  
+    8. Updated public identifier to "v2.3 20070202//EN"          
+  
+       =============================================================
+       Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+  
+       Changed to MathML 2.0 and MathML 2.0 Character Sets
+       Added new material requested by the online list     
+  
+  
+    7. Appendix Model - Added <permissions> to the end of an
+       Appendix
+  
+    6. Updated public identifier to "v2.3 20070202" 
+  
+       =============================================================
+       Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+  
+       Major requirement changes led to the new release, producing
+       DTD version "2.0":
+         a) The splitting of the Archival and Interchange Tag Set 
+            DTDs into three DTDs from two: an authoring DTD, an
+            archive regularization and interchange DTD (the
+            current Blue Publishing DTD), and a preservationist 
+            archive DTD (the current Green Archiving and Interchange 
+            DTD).
+         b) AIT Working Group suggestions from the June 04 meeting 
+            and June/July 2004 followup discussions
+         c) Suite remodularization to meet new (and newly articulated)
+            modularization requirements
+         d) New or renamed classes and mixes to make modifications
+            easier and more consistent
+  
+    5. COMPLETE MODELS WHEN OVER-RIDING A CONTENT MODEL 
+       (for all Parameter Entities suffixed "-model")
+       ### Customization Alert ###
+       Made all the model over-rides consistent. Some included
+       the outer parentheses, some did not. They all do now.
+       Added parentheses to Parameter Entity and removed them 
+       from the Element Declarations:
+       -  %app-model; 
+       -  %app-group-model; 
+       -  %fn-group-model;
+       -  %glossary-model;
+       -  %glossary-group-model;
+  
+    4. DEFAULT CLASSES - Were moved from this module to 
+       %default-classes.ent;
+  
+    3. APPENDIX GROUP - model rewritten to use the new class Parameter
+       Entities %app.class; and %ref-list.class;. Default entities
+       placed into this module.
+  
+    2. To correct potential classing problems, added the following
+       new Parameter Entities:     
+          - %fn-group-model;
+          - %fn-link.class; used in %fn-group-model;
+          - %gloss-group-model; (and made it contain its parentheses)
+          - %gloss-model; [now called -%glossary-model;] 
+  
+    1. FPI - Updated public identifier to "v2.3 20070202"
+-->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- BACKMATTER ELEMENTS -->
+<!-- ============================================================= -->
+<!-- ELEM   bio          Defined in %common.ent; -->
+<!-- ELEM   ref-list     Defined in %references.ent; -->
+<!-- ELEM   sec          Defined in %section.ent; -->
+<!-- ELEM   ack          Defined in %common.ent; -->
+<!-- ============================================================= -->
+<!-- PARAMETER ENTITIES FOR ATTRIBUTE LISTS -->
+<!-- ============================================================= -->
+<!-- APPENDIX ATTRIBUTES -->
+<!-- Attributes for the Appendix <app> element -->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <define name="app-atts">
+    <optional>
+      <attribute name="id">
+        <data type="ID"/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="content-type"/>
+    </optional>
+  </define>
+  <!-- APPENDIX GROUP ATTRIBUTES -->
+  <!--
+    Attributes for the Appendix Group <app-group> 
+    element
+  -->
+  <define name="app-group-atts">
+    <optional>
+      <attribute name="id">
+        <data type="ID"/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="content-type"/>
+    </optional>
+  </define>
+  <!-- FOOTNOTE GROUP ATTRIBUTES -->
+  <!--
+    Attributes for the Footnote Group <fn-group> 
+    element
+  -->
+  <define name="fn-group-atts">
+    <optional>
+      <attribute name="id">
+        <data type="ID"/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="content-type"/>
+    </optional>
+  </define>
+  <!-- GLOSSARY ATTRIBUTES -->
+  <!--
+    Attributes for the Glossary <glossary> 
+    element
+  -->
+  <define name="glossary-atts">
+    <optional>
+      <attribute name="id">
+        <data type="ID"/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="content-type"/>
+    </optional>
+  </define>
+  <!-- GLOSSARY GROUP ATTRIBUTES -->
+  <!-- Attributes for <gloss-group> element -->
+  <define name="gloss-group-atts">
+    <optional>
+      <attribute name="id">
+        <data type="ID"/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="content-type"/>
+    </optional>
+  </define>
+  <!-- ============================================================= -->
+  <!-- APPENDIX ELEMENTS -->
+  <!-- ============================================================= -->
+  <!-- APPENDIX GROUP MODEL -->
+  <!-- Content model for the <app-group> element -->
+  <define name="app-group-model">
+    <optional>
+      <ref name="title"/>
+    </optional>
+    <zeroOrMore>
+      <ref name="para-level"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <choice>
+        <ref name="app.class"/>
+        <ref name="ref-list.class"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+  <!-- APPENDIX GROUP -->
+  <!--
+    A container element to hold one or more
+    Appendices. This element was added to
+    accommodate older DTDs that are based on the 
+    AAP (later ISO 12083) model, where the element
+    was known as Appendix Matter <appm>.
+  -->
+  <define name="app-group">
+    <element name="app-group">
+      <ref name="app-group-attlist"/>
+      <ref name="app-group-model"/>
+    </element>
+  </define>
+  <!--
+    id         Unique identifier so the element may be
+               referenced
+    content-type
+               "content-type" attribute provides a way to 
+               preserve or add semantic distinctions, for 
+               example, saying that this <app-group> 
+               provides standard reference tables
+  -->
+  <define name="app-group-attlist" combine="interleave">
+    <ref name="app-group-atts"/>
+  </define>
+  <!-- APPENDIX MODEL -->
+  <!--
+                        Content model for the <app> element. The
+    section model already contains parentheses.
+  -->
+  <define name="app-model">
+    <ref name="sec-model"/>
+    <optional>
+      <ref name="permissions"/>
+    </optional>
+  </define>
+  <!-- APPENDIX -->
+  <define name="app">
+    <element name="app">
+      <ref name="app-attlist"/>
+      <ref name="app-model"/>
+    </element>
+  </define>
+  <!--
+    id         Unique identifier so the element may be
+               referenced
+    content-type   
+               Kind of or rationale for this appendix, used
+               to divide appendices into useful classes.
+               This attribute is used to preserve or add
+               semantic distinctions.
+  -->
+  <define name="app-attlist" combine="interleave">
+    <ref name="app-atts"/>
+  </define>
+  <!-- ============================================================= -->
+  <!-- FOOTNOTE GROUPING ELEMENTS -->
+  <!-- ============================================================= -->
+  <!-- FOOTNOTE GROUP MODEL -->
+  <!-- Content model for the <fn-group> element -->
+  <define name="fn-group-model">
+    <optional>
+      <ref name="title"/>
+    </optional>
+    <oneOrMore>
+      <ref name="fn-link.class"/>
+    </oneOrMore>
+  </define>
+  <!-- FOOTNOTE GROUP -->
+  <!--
+    Footnotes in a journal article may be
+    scattered throughout the text, at the places
+    they occur, or collected in groups at the
+    end of structural units.  This element is a
+    wrapper tag for such groups of footnotes.
+  -->
+  <define name="fn-group">
+    <element name="fn-group">
+      <ref name="fn-group-attlist"/>
+      <ref name="fn-group-model"/>
+    </element>
+  </define>
+  <!--
+    id         Unique identifier so the element may be
+               referenced
+    content-type
+               Lets different groups of footnotes be
+               identified, for example to distinguish 
+               between "front matter" footnotes (such as 
+               the corresponding author or affiliation) 
+               and bottom-of-the-page, narrative text 
+               footnotes.
+  -->
+  <define name="fn-group-attlist" combine="interleave">
+    <ref name="fn-group-atts"/>
+  </define>
+  <!-- ============================================================= -->
+  <!-- GLOSSARY -->
+  <!-- ============================================================= -->
+  <!-- GLOSSARY MODEL -->
+  <!--
+    Content model for the <glossary> element
+    Note: an exception is made to the full
+    class-mix structure to allow <gloss-group>
+    inside an <glossary> without requiring a
+    separate class for it.
+  -->
+  <define name="glossary-model">
+    <optional>
+      <ref name="title"/>
+    </optional>
+    <zeroOrMore>
+      <ref name="para-level"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="gloss-group"/>
+    </zeroOrMore>
+  </define>
+  <!-- GLOSSARY ELEMENTS -->
+  <!--
+    Glossary or list of definitions.  Typically
+    the content will be one or more Definition
+    Lists.
+  -->
+  <define name="glossary">
+    <element name="glossary">
+      <ref name="glossary-attlist"/>
+      <ref name="glossary-model"/>
+    </element>
+  </define>
+  <!--
+    id         Unique identifier so the element may be
+               referenced
+    content-type   
+               "content-type" attribute provides a way to 
+               preserve or add semantic distinctions, for 
+               multiple conference dates
+  -->
+  <define name="glossary-attlist" combine="interleave">
+    <ref name="glossary-atts"/>
+  </define>
+  <!-- GLOSSARY GROUP MODEL -->
+  <!--                     Content model for the <gloss-group> element -->
+  <define name="gloss-group-model">
+    <optional>
+      <ref name="title"/>
+    </optional>
+    <zeroOrMore>
+      <ref name="para-level"/>
+    </zeroOrMore>
+  </define>
+  <!-- GLOSSARY GROUP -->
+  <!--
+    A (usually headed) group of glossary
+    definitions.  The most likely content for this
+    element is a paragraph of explanation,
+    followed by a definition list.
+  -->
+  <define name="gloss-group">
+    <element name="gloss-group">
+      <ref name="gloss-group-attlist"/>
+      <ref name="gloss-group-model"/>
+    </element>
+  </define>
+  <!--
+    id         Unique identifier so the element may be
+               referenced
+    content-type   
+               "content-type" attribute provides a way to 
+               preserve or add semantic distinctions, for 
+               multiple conference dates
+  -->
+  <define name="gloss-group-attlist" combine="interleave">
+    <ref name="gloss-group-atts"/>
+  </define>
+</grammar>
+<!-- ================== End Back Matter Module =================== -->

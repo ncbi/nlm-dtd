@@ -1,0 +1,190 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Article</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;article&gt;</h1>
+         <h1 class="elementname">Article</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A journal article; the top-level element (document element) of the Archiving Tag Set, which contains all the metadata and
+            content for the article
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element can be used to describe not only typical journal articles (research articles)
+                   but also much of the non-article content within a journal, such as book and product reviews, editorials, commentaries,
+            and news summaries.
+         </p>
+         <p class="para">A journal article <a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a> may be divided into several components:
+            
+            <ol class="olist">
+               <li>the <a href="n-i9w0.html"><span class="elementname">Front Matter</span></a> (the article metadata or header information, which contains both journal and article metadata);
+               </li>
+               <li>the <a href="n-yv30.html"><span class="elementname">Body of the Article</span></a> (the textual and graphical content of the article);
+               </li>
+               <li>any <a href="n-gu30.html"><span class="elementname">Back Matter</span></a> (any ancillary information such as a glossary, reference list, or appendix);
+               </li>
+               <li>a  <a href="n-ynw0.html"><span class="elementname">Floats Wrapper</span></a> (single container element some publishers and archives use to hold all floating elements such as figures and tables that
+                  are referenced in the article body or back matter); and
+               </li>
+               <li>either a series of <a href="n-yde0.html"><span class="elementname">Response</span></a> elements (A response is a commentary on the article itself.) or a series of <a href="n-a4n0.html"><span class="elementname">Sub-article</span></a> elements (Sub-articles are smaller articles completely contained within the article.).
+               </li>
+            </ol>
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-hci0.html"><span class="attrtag">article-type</span></a> <a href="n-hci0.html"><span class="attrname">Type of Article</span></a></h5>
+         <h5 class="header"><a href="n-pay0.html"><span class="attrtag">dtd-version</span></a> <a href="n-pay0.html"><span class="attrname">Version of the DTD</span></a></h5>
+         <h5 class="header"><a href="n-dcq0.html"><span class="attrtag">xml:lang</span></a> <a href="n-dcq0.html"><span class="attrname">Language</span></a></h5>
+         <h5 class="header"><a href="n-j8q0.html"><span class="attrtag">xmlns:mml</span></a> <a href="n-j8q0.html"><span class="attrname">MathML Namespace Declaration</span></a></h5>
+         <h5 class="header"><a href="n-naq0.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-naq0.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+         <h5 class="header"><a href="n-5wq0.html"><span class="attrtag">xmlns:xsi</span></a> <a href="n-5wq0.html"><span class="attrname">XML Schema Namespace Declaration</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  article      %article-full-model;                         &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-i9w0.html"><span class="elementname">Front Matter</span></a> <a href="n-i9w0.html"><span class="elementtag">&lt;front&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-yv30.html"><span class="elementname">Body of the Article</span></a> <a href="n-yv30.html"><span class="elementtag">&lt;body&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-gu30.html"><span class="elementname">Back Matter</span></a> <a href="n-gu30.html"><span class="elementtag">&lt;back&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-ynw0.html"><span class="elementname">Floats Wrapper</span></a> <a href="n-ynw0.html"><span class="elementtag">&lt;floats-wrap&gt;</span></a>, zero or one
+                  </li>
+                  <li>Any one of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-a4n0.html"><span class="elementname">Sub-article</span></a> <a href="n-a4n0.html"><span class="elementtag">&lt;sub-article&gt;</span></a>, zero or more
+                        </li>
+                        <li>
+                                                      <a href="n-yde0.html"><span class="elementname">Response</span></a> <a href="n-yde0.html"><span class="elementtag">&lt;response&gt;</span></a>, zero or more
+                        </li>
+                     </ul>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This top-level element may not be contained in any other elements.</h3>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+    
+<strong><span class="focus">&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="pmc"&gt;BMJ&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="pubmed"&gt;BMJ&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="publisher"&gt;BR MED J&lt;/journal-id&gt;
+&lt;abbrev-journal-title&gt;BR MED J&lt;/abbrev-journal-title&gt;
+&lt;issn&gt;0959-8138&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;British Medical Journal&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;10092260&lt;/article-id&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital care for elderly
+people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;xref ref-type="aff"&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Young&lt;/surname&gt;
+&lt;given-names&gt;John G.&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;consultant physician&lt;/role&gt;
+&lt;xref ref-type="aff"&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Langhorne&lt;/surname&gt;
+&lt;given-names&gt;Peter Parker ("Spider")&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;senior lecturer&lt;/role&gt;
+&lt;xref ref-type="aff"&gt;&lt;sup&gt;&lt;italic&gt;b&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;
+&lt;author-comment&gt;&lt;p&gt;on behalf of the Day Hospital Group&lt;/p&gt;
+&lt;/author-comment&gt;&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5
+0NA, &lt;sup&gt;&lt;italic&gt;b&lt;/italic&gt;&lt;/sup&gt;Academic Section
+of Geriatric Medicine, Royal Infirmary, Glasgow G4 0SF&lt;/aff&gt;
+&lt;author-notes&gt;
+&lt;fn fn-type="con"&gt;
+&lt;p&gt;Contributors: AF planned and initiated the
+review,...&lt;/p&gt;
+&lt;/fn&gt;
+&lt;fn&gt;&lt;p&gt;Correspondence to: Dr Forster
+&lt;email&gt;a.forster@leeds.ac.uk&lt;/email&gt;&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/author-notes&gt;
+&lt;pub-date pub-type="pub"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;&lt;year&gt;1999&lt;/year&gt;&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted"&gt;
+&lt;day&gt;29&lt;/day&gt;&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British Medical
+Journal&lt;/copyright-statement&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;...
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...
+&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/article&gt;</span></strong>
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">archivearticle.dtd</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

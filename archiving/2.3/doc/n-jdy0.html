@@ -1,0 +1,107 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Attribute: Identifier</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">id</h1>
+         <h1 class="attrname">Identifier</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Indicates the unique identifier for an associated element, so
+                   that the element&#8217;s content may be cross-referenced. <tt>ID</tt>s must be unique inside their document (not just within their element type), and the XML parser enforces this.
+         </p>
+      </div>
+      <h2 class="header">Usage</h2>
+      <p class="para">The <tt>ID</tt> and <tt>IDREF</tt> attribute values form a primitive reference mechanism for XML. For example, when an <a href="n-jdy0.html"><span class="attrtag">id</span></a> attribute has been used on a <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> element, that identifier can be referenced by an <tt>IDREF</tt>-style attribute on a <a href="n-ptx0.html"><span class="elementtag">&lt;glyph-ref&gt;</span></a> element, so that the full glyph data can be pointed to and need not be repeated every time the character is used.
+      </p>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">An identifier string is typically 1-32 characters in
+                   length and must start with a letter of the alphabet. (It is an XML rule that identifiers may not start with a digit.)
+         </p>
+         <p class="para">Authoring Note: At present, not all elements with a <a href="n-jdy0.html"><span class="attrtag">id</span></a> attribute are actually of type <tt>ID</tt> and can be cross-referenced.  For backwards compatibility with prior versions of the Journal Archiving Tag Set (versions
+            1.0, 1.1), the following elements cannot be referenced using the <tt>ID/IDREF</tt> mechanism:
+            <ul class="bullist">
+               <li><a href="n-pku0.html"><span class="elementtag">&lt;def-list&gt;</span></a></li>
+               <li><a href="n-ai40.html"><span class="elementtag">&lt;list&gt;</span></a></li>
+               <li><a href="n-8y40.html"><span class="elementtag">&lt;list-item&gt;</span></a></li>
+               <li><a href="n-f7d0.html"><span class="elementtag">&lt;tex-math&gt;</span></a></li>
+            </ul>
+                   These elements use a <tt>CDATA</tt> (data character) attribute type, which does not possess the same cross-reference capability as an <tt>ID</tt> attribute type found on such elements as <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a>.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4><a href="n-pku0.html"><span class="elementtag">&lt;def-list&gt;</span></a> <a href="n-pku0.html"><span class="elementname">Definition List</span></a>; <a href="n-ai40.html"><span class="elementtag">&lt;list&gt;</span></a> <a href="n-ai40.html"><span class="elementname">List</span></a>; <a href="n-8y40.html"><span class="elementtag">&lt;list-item&gt;</span></a> <a href="n-8y40.html"><span class="elementname">List Item</span></a>; <a href="n-f7d0.html"><span class="elementtag">&lt;tex-math&gt;</span></a> <a href="n-f7d0.html"><span class="elementname">Tex Math Equation</span></a><table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">Unique identifier for the element within its document. Parsers cannot check uniqueness or matching.</td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5 class="heading"><a href="n-w4t0.html"><span class="elementtag">&lt;overline-start&gt;</span></a> <a href="n-w4t0.html"><span class="elementname">Overline Start</span></a></h5>
+            <h5 class="heading"><a href="n-cir0.html"><span class="elementtag">&lt;underline-start&gt;</span></a> <a href="n-cir0.html"><span class="elementname">Underline Start</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">An XML identifier (ID)</td>
+                  <td class="attrmeaning">A unique identifier for the element. An XML parser can verify that an <tt>IDREF</tt>-style attribute pointing to one of these is pointing to a valid <tt>ID</tt>.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute must be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4><a href="n-5900.html"><span class="elementtag">&lt;abbrev&gt;</span></a> <a href="n-5900.html"><span class="elementname">Abbreviation or Acronym</span></a>; <a href="n-8a20.html"><span class="elementtag">&lt;abstract&gt;</span></a> <a href="n-8a20.html"><span class="elementname">Abstract</span></a>; <a href="n-us20.html"><span class="elementtag">&lt;ack&gt;</span></a> <a href="n-us20.html"><span class="elementname">Acknowledgments</span></a>; <a href="n-3r20.html"><span class="elementtag">&lt;address&gt;</span></a> <a href="n-3r20.html"><span class="elementname">Address/Contact Information</span></a>; <a href="n-gi20.html"><span class="elementtag">&lt;aff&gt;</span></a> <a href="n-gi20.html"><span class="elementname">Affiliation</span></a>; <a href="n-bb20.html"><span class="elementtag">&lt;alt-text&gt;</span></a> <a href="n-bb20.html"><span class="elementname">Alternate Text Name (For a Figure, Etc.)</span></a>; <a href="n-quc0.html"><span class="elementtag">&lt;app&gt;</span></a> <a href="n-quc0.html"><span class="elementname">Appendix</span></a>; <a href="n-2sc0.html"><span class="elementtag">&lt;app-group&gt;</span></a> <a href="n-2sc0.html"><span class="elementname">Appendix Group</span></a>; <a href="n-6ec0.html"><span class="elementtag">&lt;array&gt;</span></a> <a href="n-6ec0.html"><span class="elementname">Array (Simple Tabular Array)</span></a>; <a href="n-dqc0.html"><span class="elementtag">&lt;article-title&gt;</span></a> <a href="n-dqc0.html"><span class="elementname">Article Title</span></a>; <a href="n-mk30.html"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-mk30.html"><span class="elementname">Attribution</span></a>; <a href="n-u830.html"><span class="elementtag">&lt;author-comment&gt;</span></a> <a href="n-u830.html"><span class="elementname">Author Comment</span></a>; <a href="n-ca30.html"><span class="elementtag">&lt;author-notes&gt;</span></a> <a href="n-ca30.html"><span class="elementname">Author Note Group</span></a>; <a href="n-9x30.html"><span class="elementtag">&lt;bio&gt;</span></a> <a href="n-9x30.html"><span class="elementname">Biography</span></a>; <a href="n-pn30.html"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-pn30.html"><span class="elementname">Boxed Text</span></a>; <a href="n-3y30.html"><span class="elementtag">&lt;caption&gt;</span></a> <a href="n-3y30.html"><span class="elementname">Caption of a Figure, Table, Etc.</span></a>; <a href="n-sj30.html"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-sj30.html"><span class="elementname">Chemical Structure (Display)</span></a>; <a href="n-az30.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a> <a href="n-az30.html"><span class="elementname">Chemical Structure Wrapper</span></a>; <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-ut50.html"><span class="elementtag">&lt;col&gt;</span></a> <a href="n-ut50.html"><span class="elementname">Table Column (XHTML table model)</span></a>; <a href="n-k750.html"><span class="elementtag">&lt;colgroup&gt;</span></a> <a href="n-k750.html"><span class="elementname">Table Column Group (XHTML table model)</span></a>; <a href="n-q750.html"><span class="elementtag">&lt;collab&gt;</span></a> <a href="n-q750.html"><span class="elementname">Collaborative (Group) Author</span></a>; <a href="n-vi80.html"><span class="elementtag">&lt;contract-num&gt;</span></a> <a href="n-vi80.html"><span class="elementname">Contract Number</span></a>; <a href="n-fq80.html"><span class="elementtag">&lt;contract-sponsor&gt;</span></a> <a href="n-fq80.html"><span class="elementname">Contract Sponsor</span></a>; <a href="n-hz80.html"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-hz80.html"><span class="elementname">Contributor</span></a>; <a href="n-k3a0.html"><span class="elementtag">&lt;contrib-group&gt;</span></a> <a href="n-k3a0.html"><span class="elementname">Contributor Group</span></a>; <a href="n-bsa0.html"><span class="elementtag">&lt;corresp&gt;</span></a> <a href="n-bsa0.html"><span class="elementname">Correspondence Information</span></a>; <a href="n-gda0.html"><span class="elementtag">&lt;custom-meta&gt;</span></a> <a href="n-gda0.html"><span class="elementname">Custom Metadata</span></a>; <a href="n-tja0.html"><span class="elementtag">&lt;def&gt;</span></a> <a href="n-tja0.html"><span class="elementname">Definition List: Definition</span></a>; <a href="n-vza0.html"><span class="elementtag">&lt;def-item&gt;</span></a> <a href="n-vza0.html"><span class="elementname">Definition List: Definition Item</span></a>; <a href="n-wuu0.html"><span class="elementtag">&lt;disp-formula&gt;</span></a> <a href="n-wuu0.html"><span class="elementname">Formula, Display</span></a>; <a href="n-jsu0.html"><span class="elementtag">&lt;disp-quote&gt;</span></a> <a href="n-jsu0.html"><span class="elementname">Quote, Displayed</span></a>; <a href="n-ekw0.html"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-ekw0.html"><span class="elementname">External Link</span></a>; <a href="n-h4w0.html"><span class="elementtag">&lt;fig&gt;</span></a> <a href="n-h4w0.html"><span class="elementname">Figure</span></a>; <a href="n-rfw0.html"><span class="elementtag">&lt;fig-group&gt;</span></a> <a href="n-rfw0.html"><span class="elementname">Figure Group</span></a>; <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-crw0.html"><span class="elementname">Footnote</span></a>; <a href="n-ghw0.html"><span class="elementtag">&lt;fn-group&gt;</span></a> <a href="n-ghw0.html"><span class="elementname">Footnote Group</span></a>; <a href="n-z8x0.html"><span class="elementtag">&lt;gloss-group&gt;</span></a> <a href="n-z8x0.html"><span class="elementname">Glossary Group</span></a>; <a href="n-vxx0.html"><span class="elementtag">&lt;glossary&gt;</span></a> <a href="n-vxx0.html"><span class="elementname">Glossary Elements List</span></a>; <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> <a href="n-jsx0.html"><span class="elementname">Glyph Data for a Private Character</span></a>; <a href="n-bnx0.html"><span class="elementtag">&lt;grant-num&gt;</span></a> <a href="n-bnx0.html"><span class="elementname">Grant Number</span></a>; <a href="n-5ix0.html"><span class="elementtag">&lt;grant-sponsor&gt;</span></a> <a href="n-5ix0.html"><span class="elementname">Grant Sponsor</span></a>; <a href="n-eqx0.html"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-eqx0.html"><span class="elementname">Graphic</span></a>; <a href="n-x5v0.html"><span class="elementtag">&lt;inline-formula&gt;</span></a> <a href="n-x5v0.html"><span class="elementname">Formula, Inline</span></a>; <a href="n-dwv0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a> <a href="n-dwv0.html"><span class="elementname">Graphic, Inline</span></a>; <a href="n-6xv0.html"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> <a href="n-6xv0.html"><span class="elementname">Inline Supplementary Material</span></a>; <a href="n-ztv0.html"><span class="elementtag">&lt;institution&gt;</span></a> <a href="n-ztv0.html"><span class="elementname">Institution Name: in an Address</span></a>; <a href="n-8s40.html"><span class="elementtag">&lt;kwd&gt;</span></a> <a href="n-8s40.html"><span class="elementname">Keyword</span></a>; <a href="n-yf40.html"><span class="elementtag">&lt;kwd-group&gt;</span></a> <a href="n-yf40.html"><span class="elementname">Keyword Group</span></a>; <a href="n-gj40.html"><span class="elementtag">&lt;long-desc&gt;</span></a> <a href="n-gj40.html"><span class="elementname">Long Description</span></a>; <a href="n-wb40.html"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-wb40.html"><span class="elementname">Media Object</span></a>; <a href="n-tws0.html"><span class="elementtag">&lt;milestone-end&gt;</span></a> <a href="n-tws0.html"><span class="elementname">Milestone End</span></a>; <a href="n-kxs0.html"><span class="elementtag">&lt;milestone-start&gt;</span></a> <a href="n-kxs0.html"><span class="elementname">Milestone Start</span></a>; <a href="n-6xs0.html"><span class="elementtag">&lt;mml:math&gt;</span></a> <a href="n-6xs0.html"><span class="elementname">Math (Mathml 2.0 Tag Set)</span></a>; <a href="n-ifs0.html"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-ifs0.html"><span class="elementname">Named Special (Subject) Content</span></a>; <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-2is0.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-uqs0.html"><span class="elementtag">&lt;note&gt;</span></a> <a href="n-uqs0.html"><span class="elementname">Note in a Reference List</span></a>; <a href="n-kbs0.html"><span class="elementtag">&lt;notes&gt;</span></a> <a href="n-kbs0.html"><span class="elementname">Notes</span></a>; <a href="n-7st0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-7st0.html"><span class="elementname">Paragraph</span></a>; <a href="n-zqt0.html"><span class="elementtag">&lt;person-group&gt;</span></a> <a href="n-zqt0.html"><span class="elementname">Person Group for a Cited Publication</span></a>; <a href="n-wa70.html"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-wa70.html"><span class="elementname">Preformatted Text</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-h8e0.html"><span class="elementtag">&lt;ref&gt;</span></a> <a href="n-h8e0.html"><span class="elementname">Reference Item</span></a>; <a href="n-awe0.html"><span class="elementtag">&lt;ref-list&gt;</span></a> <a href="n-awe0.html"><span class="elementname">Reference List (Bibliographic)</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a>; <a href="n-yde0.html"><span class="elementtag">&lt;response&gt;</span></a> <a href="n-yde0.html"><span class="elementname">Response</span></a>; <a href="n-z5f0.html"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-z5f0.html"><span class="elementname">Section</span></a>; <a href="n-ecg0.html"><span class="elementtag">&lt;sig-block&gt;</span></a> <a href="n-ecg0.html"><span class="elementname">Signature Block</span></a>; <a href="n-cwg0.html"><span class="elementtag">&lt;source&gt;</span></a> <a href="n-cwg0.html"><span class="elementname">Source</span></a>; <a href="n-qgg0.html"><span class="elementtag">&lt;speech&gt;</span></a> <a href="n-qgg0.html"><span class="elementname">Speech</span></a>; <a href="n-36g0.html"><span class="elementtag">&lt;statement&gt;</span></a> <a href="n-36g0.html"><span class="elementname">Statement, Formal</span></a>; <a href="n-a4n0.html"><span class="elementtag">&lt;sub-article&gt;</span></a> <a href="n-a4n0.html"><span class="elementname">Sub-article</span></a>; <a href="n-4a60.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-4a60.html"><span class="elementname">Supplementary Material</span></a>; <a href="n-5e60.html"><span class="elementtag">&lt;table&gt;</span></a> <a href="n-5e60.html"><span class="elementname">Table (XHTML table model)</span></a>; <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> <a href="n-tn60.html"><span class="elementname">Table Wrapper</span></a>; <a href="n-zi60.html"><span class="elementtag">&lt;table-wrap-group&gt;</span></a> <a href="n-zi60.html"><span class="elementname">Table Wrapper Group</span></a>; <a href="n-hj60.html"><span class="elementtag">&lt;target&gt;</span></a> <a href="n-hj60.html"><span class="elementname">Target of an Internal Link</span></a>; <a href="n-q960.html"><span class="elementtag">&lt;tbody&gt;</span></a> <a href="n-q960.html"><span class="elementname">Table Body (XHTML table model)</span></a>; <a href="n-nm60.html"><span class="elementtag">&lt;td&gt;</span></a> <a href="n-nm60.html"><span class="elementname">Table Data Cell (XHTML table model)</span></a>; <a href="n-c8d0.html"><span class="elementtag">&lt;term&gt;</span></a> <a href="n-c8d0.html"><span class="elementname">Definition List: Term</span></a>; <a href="n-5ed0.html"><span class="elementtag">&lt;tfoot&gt;</span></a> <a href="n-5ed0.html"><span class="elementname">Table Footer (XHTML table model)</span></a>; <a href="n-med0.html"><span class="elementtag">&lt;th&gt;</span></a> <a href="n-med0.html"><span class="elementname">Table Header Cell (XHTML table model)</span></a>; <a href="n-6rd0.html"><span class="elementtag">&lt;thead&gt;</span></a> <a href="n-6rd0.html"><span class="elementname">Table Header (XHTML table model)</span></a>; <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-tid0.html"><span class="elementname">Title</span></a>; <a href="n-2md0.html"><span class="elementtag">&lt;tr&gt;</span></a> <a href="n-2md0.html"><span class="elementname">Table Row (XHTML table model)</span></a>; <a href="n-2zd0.html"><span class="elementtag">&lt;trans-abstract&gt;</span></a> <a href="n-2zd0.html"><span class="elementname">Translated Abstract</span></a>; <a href="n-k3r0.html"><span class="elementtag">&lt;trans-source&gt;</span></a> <a href="n-k3r0.html"><span class="elementname">Translated Source</span></a>; <a href="n-iur0.html"><span class="elementtag">&lt;trans-subtitle&gt;</span></a> <a href="n-iur0.html"><span class="elementname">Translated Subtitle</span></a>; <a href="n-ssr0.html"><span class="elementtag">&lt;trans-title&gt;</span></a> <a href="n-ssr0.html"><span class="elementname">Translated Title</span></a>; <a href="n-k9r0.html"><span class="elementtag">&lt;verse-group&gt;</span></a> <a href="n-k9r0.html"><span class="elementname">Verse Form for Poetry</span></a>; <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-beh0.html"><span class="elementname">X(cross) Reference</span></a><table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">An XML  identifier (ID)</td>
+                  <td class="attrmeaning">A unique identifier for the element. An XML parser can verify that an <tt>IDREF</tt>-style attribute pointing to one of these is pointing to a valid <tt>ID</tt>.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

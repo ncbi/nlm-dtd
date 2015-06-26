@@ -1,0 +1,184 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Personal Names in Citations</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h4 class="header">Personal Names in Citations</h4>
+         <div class="section"><a name="tag-cite-name-string"></a><h4 class="header">Names and String Names</h4>
+            <p class="para">The names of authors, editors, translators, and other contributors can all be tagged within <a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> using <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>, <a href="n-2u40.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a>, or <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a>. The elements <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> and <a href="n-2u40.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> identify the surname (family name) and given names (first names) of the person. Here are examples of <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> inside both citation styles. Note that even when <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> is in <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, it does not allow spacing or punctuation between elements:
+            </p>
+            <div class="codeblock"><pre>&lt;mixed-citation publication-type="journal"&gt;
+  &lt;name&gt;
+    &lt;surname&gt;Jefferson&lt;/surname&gt;&lt;given-names&gt;T&lt;/given-names&gt;
+  &lt;/name&gt;. ...
+&lt;mixed-citation&gt;
+
+&lt;element-citation publication-type="journal"&gt;
+   &lt;name&gt;
+      &lt;surname&gt;Jefferson&lt;/surname&gt;&lt;given-names&gt;T&lt;/given-names&gt;
+    &lt;/name&gt;
+&lt;/element-citation&gt;</pre></div>
+            <p class="para"><a href="n-2u40.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> allows, but does not require, spacing and punctuation: 
+               
+            </p>
+            <div class="codeblock"><pre>&lt;mixed-citation publication-type="journal"&gt;
+   &lt;string-name&gt;
+      &lt;surname&gt;Jefferson&lt;/surname&gt;, &lt;given-names&gt;T&lt;/given-names&gt;
+    &lt;/string-name&gt;. ...
+&lt;mixed-citation&gt;
+
+&lt;element-citation publication-type="journal"&gt;
+   &lt;string-name&gt;
+      &lt;surname&gt;Jefferson&lt;/surname&gt;&lt;given-names&gt;T&lt;/given-names&gt;
+   &lt;/string-name&gt;
+&lt;/element-citation&gt;</pre></div>
+            <p class="para"><a href="n-2u40.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> is more likely to be used in textually mixed citations because it allows the preservation of the punctuation that separates
+               the surname from the initials or the given names (both of which are tagged with <a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>):
+            </p>
+            <div class="codeblock"><pre>&lt;mixed-citation publication-type="journal"&gt;
+  &lt;string-name&gt;
+  &lt;surname&gt;Washington&lt;/surname&gt;, &lt;given-names&gt;George&lt;/given-names&gt;
+  &lt;/string-name&gt;. ...
+&lt;mixed-citation&gt;</pre></div>
+            <p class="para">In element-style citations, which do not preserve punctuation or spacing, <a href="n-2u40.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> is only used to hold unusual names that are not easily broken into <a href="n-v3s0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> and <a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>. For example:
+            </p>
+            <div class="codeblock"><pre>&lt;string-name&gt;His Royal Highness The Prince Charles, Prince of Wales and Earl of Chester&lt;/string-name&gt;</pre></div>
+            <p class="para">The element <a href="n-2u40.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> can also be used to preserve the order of publication as all of the following are legal string names:
+            </p>
+            <div class="codeblock"><pre>  &lt;string-name&gt;
+  &lt;surname&gt;Petitti&lt;/surname&gt;, &lt;given-names&gt;DB&lt;/given-names&gt;
+  &lt;/string-name&gt;
+
+  &lt;string-name&gt;
+  &lt;given-names&gt;DB&lt;/given-names&gt; &lt;surname&gt;Petitti&lt;/surname&gt;
+  &lt;/string-name&gt;
+
+  &lt;string-name&gt;D.B. &lt;surname&gt;Petitti&lt;/surname&gt;&lt;/string-name&gt;</pre></div>
+            <p class="para">The first example above is not a valid <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> because of the comma and space between <a href="n-v3s0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> and <a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>. The second and third examples are not valid <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>s because of name order. To help a publisher or archive regularize the data, <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> requires a particular order for the elements:
+            </p>
+            <ul class="bullist">
+               <li><a href="n-v3s0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> followed by
+               </li>
+               <li><a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> followed by
+               </li>
+               <li><a href="n-ebw0.html" target="main" title="Prefix"><span class="elementtag">&lt;prefix&gt;</span></a> followed by
+               </li>
+               <li><a href="n-bi40.html" target="main" title="Suffix"><span class="elementtag">&lt;suffix&gt;</span></a></li>
+            </ul>
+            <p class="para">The <a href="n-fpf0.html" target="main" title="Name Style"><span class="attrtag">@name-style</span></a> attribute can be used on the <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> element to record the preferred display order for the name to make the distinction between eastern and western display order.
+               
+            </p>
+            <p class="para">Here is a typical citation tagged using <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>, tagged as an element citation :
+            </p>
+            <div class="codeblock"><pre>  &lt;element-citation publication-type="journal" publication-format="print"&gt;
+  &lt;name&gt;&lt;surname&gt;Leifer&lt;/surname&gt;&lt;given-names&gt;BP&lt;/given-names&gt;&lt;/name&gt;
+  &lt;article-title&gt;Early diagnosis of Alzheimer's disease: clinical and 
+  economic benefits&lt;/article-title&gt;&lt;source&gt;J Am Geriatr Soc&lt;/source&gt;
+  &lt;year&gt;2003&lt;/year&gt;&lt;month&gt;May&lt;/month&gt;&lt;volume&gt;51&lt;/volume&gt;
+  &lt;issue&gt;5 Suppl&lt;/issue&gt;&lt;issue-title&gt;Dementia&lt;/issue-title&gt;
+  &lt;fpage&gt;S281&lt;/fpage&gt;&lt;lpage&gt;S288&lt;/lpage&gt;
+   &lt;/element-citation&gt;
+</pre></div>
+            <p class="para">and here is the same citation tagged as a mixed citation:</p>
+            <div class="codeblock"><pre>  &lt;mixed-citation publication-type="journal" publication-format="print"&gt;
+  &lt;string-name&gt;&lt;surname&gt;Leifer&lt;/surname&gt;, &lt;given-names&gt;BP&lt;/given-names&gt;
+  &lt;/string-name&gt;. &lt;article-title&gt;Early diagnosis of Alzheimer's disease: clinical 
+  and economic benefits&lt;/article-title&gt;. &lt;source&gt;J Am Geriatr Soc&lt;/source&gt;. 
+  &lt;year&gt;2003&lt;/year&gt; &lt;month&gt;May&lt;/month&gt;;&lt;volume&gt;51&lt;/volume&gt;(&lt;issue&gt;5 
+  Suppl&lt;/issue&gt; &lt;issue-title&gt;Dementia&lt;/issue-title&gt;):&lt;fpage&gt;S281
+  &lt;/fpage&gt;-&lt;lpage&gt;S288&lt;/lpage&gt;.&lt;/mixed-citation&gt;</pre></div>
+         </div>
+         <div class="section"><a name="tag-cite-persongroup"></a><h4 class="header">Using Person Groups</h4>
+            <p class="para"><a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> elements within citations may be grouped using the <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> element. <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> is very similar to <a href="n-dn30.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> in the article metadata in that it can contain <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>, <a href="n-zhc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, or <a href="n-p520.html" target="main" title="Anonymous"><span class="elementtag">&lt;anonymous&gt;</span></a> elements. <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> takes an optional attribute <a href="n-hcg0.html" target="main" title="Type of People in the Person Group"><span class="attrtag">@person-group-type</span></a> that identifies the type of contributor (editor, illustrator) tagged within the group.
+            </p>
+            <p class="para">Here is an editor tagged using <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> inside <a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>: 
+            </p>
+            <div class="codeblock"><pre>  &lt;element-citation publication-type="journal" publication-format="print"&gt;
+  &lt;source&gt;Folia Primatologica: International Journal of Primatology&lt;/source&gt;
+  &lt;person-group person-group-type="editor"&gt;
+  &lt;name&gt;&lt;surname&gt;Crompton&lt;/surname&gt;&lt;given-names&gt;R.H.&lt;/given-names&gt;&lt;/name&gt;
+  &lt;/person-group&gt;
+  &lt;publisher-loc&gt;Basel (Switzerland)&lt;/publisher-loc&gt;
+  &lt;publisher-name&gt;S. Karger AG&lt;/publisher-name&gt;
+  &lt;vol&gt;1&lt;/vol&gt;&lt;year&gt;1863&lt;/year&gt;&lt;comment&gt; -suspect date, may be 1864.&lt;/comment&gt;
+  &lt;/element-citation&gt;</pre></div>
+            <p class="para">And that same person group in a mixed citation:</p>
+            <div class="codeblock"><pre>  &lt;mixed-citation publication-type="journal" publication-format="print"&gt;
+  &lt;source&gt;Folia Primatologica: International Journal of Primatology&lt;/source&gt;. 
+  &lt;person-group person-group-type="editor"&gt;
+  &lt;name&gt;&lt;surname&gt;Crompton&lt;/surname&gt;&lt;given-names&gt;R.H.&lt;/given-names&gt;
+  &lt;/name&gt;&lt;/person-group&gt;, editor. &lt;publisher-loc&gt;Basel (Switzerland)&lt;/publisher-loc&gt;: 
+  &lt;publisher-name&gt;S. Karger AG&lt;/publisher-name&gt;. Vol. &lt;vol&gt;1&lt;/vol&gt; 
+  &lt;year&gt;1863&lt;/year&gt; -suspect date, may be 1864.&lt;/mixed-citation&gt;
+</pre></div>
+            <p class="para">The <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> element can also be used to tag a person’ name and affiliation or to collect a group of contributors, all of whom have a
+               single affiliation. In the example below, a single individual has an affiliation, tagged in an element-style citation.
+            </p>
+            <div class="codeblock"><pre>  &lt;element-citation publication-type="commun"&gt;
+  &lt;person-group&gt;
+  &lt;name&gt;&lt;surname&gt;Hennen&lt;/surname&gt;&lt;given-names&gt;John&lt;/given-names&gt;&lt;/name&gt;
+  &lt;aff&gt;Edinburgh, Scotland&lt;/aff&gt;&lt;/person-group&gt;
+  &lt;source&gt;Letter to: Dr. Duncan&lt;/source&gt;&lt;year&gt;[date unknown]&lt;/year&gt;
+  &lt;size units="page"&gt;9 p&lt;/size&gt;&lt;comment&gt;Located at: History of Medicine
+  Division, National Library of Medicine, Bethesda, MD; W6 P3 v.1575.
+  Observations on the cure of syphilis without mercury.&lt;/comment&gt;
+  &lt;/element-citation&gt;</pre></div>
+            <p class="para">Notice that, in the mixed-style example just given, the information that a person is an editor may be there twice, once as
+               loose textual material with a comma and space, and once as a searchable attribute on the <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> element. 
+            </p>
+            <p class="para">Another possible use of the <a href="n-jjw0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> is to hold the element <a href="n-bz50.html" target="main" title="Et Al"><span class="elementtag">&lt;etal&gt;</span></a>, to designate unnamed individuals (typically indicated in print with the text “et al.”.
+            </p>
+         </div>
+         <div class="section"><a name="tag-cite-name-style"></a><h4 class="header">Name Display Order</h4>
+            <p class="para">The problem of eastern versus western display of name, e.g., Toshiro Mifune versus Mifune Toshiro can be addressed using the
+               <a href="n-fpf0.html" target="main" title="Name Style"><span class="attrtag">@name-style</span></a> attribute on the element <a href="n-jhu0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>. This information can be used for choosing an inversion algorithm or for sorting or other processing functions. The three
+               values and approximate meanings are given below.
+            </p>
+            <ul class="bullist">
+               <li>When the value is “<tt>western</tt>”
+                  
+                  <ul class="bullist">
+                     <li>The display order is: given (<a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>) followed by family (<a href="n-v3s0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>); and
+                     </li>
+                     <li>The Sort/inversion is family (<a href="n-v3s0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) then given (<a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>).
+                     </li>
+                  </ul>
+               </li>
+               <li>When the value is “<tt>eastern</tt>”
+                  
+                  <ul class="bullist">
+                     <li>The display order is: family (<a href="n-v3s0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) followed by given (<a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>); and
+                     </li>
+                     <li>The Sort/inversion is family (<a href="n-v3s0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) then given (<a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>).
+                     </li>
+                  </ul>
+               </li>
+               <li>When the value is “<tt>islensk</tt>”
+                  
+                  <ul class="bullist">
+                     <li>The display order is: given (<a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>) followed by patronymic (<a href="n-v3s0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>); and
+                     </li>
+                     <li>The Sort/inversion is given (<a href="n-cr80.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>) then patronymic (<a href="n-v3s0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>).
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

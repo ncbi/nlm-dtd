@@ -1,0 +1,107 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: URI for This Same Article Online</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;self-uri&gt;</h1>
+         <h1 class="elementname">URI for This Same Article Online</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The URI (such as, for example, a URL) for a PDF version of a print article. This element may be used when an article is available
+            in multiple forms, for example, in an abbreviated version and in an expanded version with additional graphics available.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The textual content of this element may be a URI (typically naming a website) when the text is used as a live link,
+                   or the element content may just be a few words and the link
+                   attributes  hold the real link, for example,
+         </p>
+         <div class="codeblock"><pre>
+&lt;self-uri xlink:href="...URL here..."&gt;An expanded version of this article is available online&lt;/self-uri&gt;
+</pre></div>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-pv40.html"><span class="attrtag">content-type</span></a> <a href="n-pv40.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-8yt0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-8yt0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-mjt0.html"><span class="attrtag">xlink:href</span></a> <a href="n-mjt0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-iqt0.html"><span class="attrtag">xlink:role</span></a> <a href="n-iqt0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-59t0.html"><span class="attrtag">xlink:show</span></a> <a href="n-59t0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-2zt0.html"><span class="attrtag">xlink:title</span></a> <a href="n-2zt0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-fk70.html"><span class="attrtag">xlink:type</span></a> <a href="n-fk70.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-aa70.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-aa70.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para"><a href="n-spu0.html"><span class="elementtag">&lt;self-uri&gt;</span></a> is used when an article is available in multiple forms, for example, as a means of indicating the online version of a print
+            article. Conversely, a URI that indicates a different article or any other kind of external reference is usually tagged as
+            <a href="n-ju50.html"><span class="elementtag">&lt;ext-link&gt;</span></a>. <a href="n-v3v0.html"><span class="elementtag">&lt;uri&gt;</span></a>, although allowed everywhere <a href="n-ju50.html"><span class="elementtag">&lt;ext-link&gt;</span></a> is used, is more typically part of an address, information concerning a contributor, or part of a reference citation. Loosely
+            put, an external link <a href="n-ju50.html"><span class="elementtag">&lt;ext-link&gt;</span></a> is intended to act as a link; a URI <a href="n-v3v0.html"><span class="elementtag">&lt;uri&gt;</span></a> makes no promises but identifies a URI, such as a URL, when it is present in the text of an address or a citation; and self-uri
+            points to another form of the same article.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  self-uri     (#PCDATA %self-uri-elements;)*               &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters, zero or more</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-sh20.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-sh20.html"><span class="elementname">Article Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+...
+&lt;permissions&gt;
+&lt;copyright-statement&gt;&amp;copy;2004 Lester et al; licensee BioMed 
+Central Ltd.&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;2004&lt;/copyright-year&gt;
+&lt;license license-type="open-access"&gt;
+&lt;p&gt;This is an Open Access article: verbatim copying ...&lt;/p&gt;
+&lt;/license&gt;
+&lt;/permissions&gt;
+<strong><span class="focus">&lt;self-uri xlink:href="http://www.harmreductionjournal.com/content/1/1/5"&gt;This 
+article is available from http://www.harmreductionjournal.com/content/1/1/5&lt;/self-uri&gt;</span></strong>
+&lt;abstract&gt;
+&lt;p&gt;The phenomenon of substance abuse during pregnancy has fostered much 
+controversy, specifically regarding treatment vs. punishment. Should the 
+pregnant mother ...&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

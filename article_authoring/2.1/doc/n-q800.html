@@ -1,0 +1,331 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Documentation for Authors</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h1 class="sectiontitle">Documentation for Authors</h1>
+         <hr class="hrule">
+         <div class="section"><a name="articleintro"></a><h2 class="header">Introduction to <a href="n-s620.html"><span class="elementtag">&lt;article&gt;</span></a></h2>
+            <p class="para">In the  Authoring DTD, the topmost element (your XML &#8220;document&#8221;) is an <a href="n-s620.html"><span class="elementtag">&lt;article&gt;</span></a>. An article is a top-level component of a journal, for example, a research article, an editorial,  or a book review.
+            </p>
+            <p class="para">Each article is composed of one or more parts which must appear (if present) in the
+                following order:
+                
+               <ul class="bullist">
+                  <li><em>Front matter</em> (required). The article front matter is
+                      the metadata for the article (also called article header information). The front matter includes such content as  the article
+                     title, information about the article&#8217;s author, a copyright statement, an abstract, etc. This is not textual front matter as
+                     defined in books, this is basic bibliographic information about the article.
+                  </li>
+                  <li><em>Body</em> (required). The body of the article is
+                      the main textual and graphic content of the article. This usually consists of
+                      paragraphs and sections, which may themselves contain figures, tables, lists, sidebars
+                      (boxed text), etc.
+                  </li>
+                  <li><em>Back matter</em> (optional). If present,
+                      the article back matter contains information that is ancillary to the main text, such as a glossary,
+                      appendix, or list of cited references.
+                  </li>
+               </ul> 
+            </p>
+         </div>
+         <hr class="hrule">
+         <div class="section"><a name="howto"></a><h2 class="header">How to Read This Tag Library</h2>
+            <hr class="hrule">
+            <div class="section"><a name="terms"></a><h2 class="header">Terms and Definitions</h2>
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Element</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Elements are nouns, like &#8220;<a href="n-6hu0.html"><span class="elementname">Speech</span></a>&#8221; and &#8220;<a href="n-kru0.html"><span class="elementname">Speaker</span></a>&#8221;, that represent components of journal articles, the articles themselves, and accompanying metadata. 
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Metadata</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Metadata is data <em>about</em> the data, for example, bibliographic information. The distinction is between metadata elements which <em>describe</em> an article (such as the copyright year for the article) versus elements which contain the textual and graphical content of
+                              the article (such as a paragraph or a list).
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Attribute</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Attributes are name/value pairs that hold facts <em>about</em> an element, for example, 1) the name of a pointer to an external file that contains an image,
+                                         2) a unique identifier, so that an element may be referenced, or 3) an indication of which type
+                                         of list (e.g., numbered, bulleted, or plain) is being requested when using the <a href="n-r480.html"><span class="elementtag">&lt;list&gt;</span></a> tag. Each
+                                         attribute has both a name (e.g., <a href="n-cr40.html"><span class="attrtag">list-type</span></a> ) and
+                                         a value (e.g., &#8220;bulleted&#8221;).
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="howtostart"></a><h2 class="header">How To Start Using This Tag Library</h2>
+               <p class="para">A full DTD Suite delivery package includes the Authoring DTD, the customization files for this DTD, the modules of the full
+                  Archiving and Interchange DTD Suite that have been used in this DTD, one or more complete tagged sample documents, and this
+                  documentation. The Tag Library is delivered as a set of linked HTML files. How you use the documentation will depend on what
+                  you need to learn about the modules and the DTD.
+               </p>
+               <hr class="hrule">
+               <div class="section"><a name="learn-tagset"></a><h2 class="header">Learn the Tag Set</h2>
+                  <p class="para">If you want to learn about the elements and the attributes in the Suite, so that you can write an article using the tag set,
+                     edit an article that is already tagged in this tag set, or learn how the journal article model is constructed, here is a good
+                            way to start.
+                            
+                     <ul class="bullist">
+                        <li>Read the Tag Library General Introduction, taking
+                                      particular note of the next section which describes the parts of the Tag
+                                      Library, so you will know what resources are available.
+                        </li>
+                        <li>Next, if you do not already know the symbols used in the Document
+                                      Hierarchy diagrams, read the &#8220;<a href="n-nvh0.html#nearfar-key">Key to the Near &amp; Far&reg; Diagrams</a>&#8221;.
+                        </li>
+                        <li>Then (once you know the symbols), scan the Document Hierarchy diagrams to get a good sense of the top-level elements and their
+                           contents. (Find what is inside an <a href="n-s620.html"><span class="elementtag">&lt;article&gt;</span></a>, then look at what is inside each of the large pieces of an article (such as body and front matter). Look at body first,
+                           then metadata, then keep working your way down.)
+                        </li>
+                        <li>Pick an element from one of the hierarchy diagrams.  Look up that
+                           element in the <em>Elements Section</em> to find the full name of the element, its definition, usage notes, content allowed, and any attributes. Look up or link to
+                           one of the attributes to find its full name, usage notes, and potential values.).
+                        </li>
+                     </ul>
+                            
+                  </p>
+               </div>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="structure"></a><h2 class="header">Tag Library Organization</h2>
+               <p class="para">This Tag Library contains the following sections:</p>
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Introduction</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">This introduction to the contents of this Tag Library, to the design philosophy and intended usage of the Archiving and Interchange
+                              DTD Suite, and to the Authoring DTD
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Elements Section</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Definitions, tagged examples, and usage notes for each of the elements in the Authoring DTD (and the parts of the Archiving
+                              and Interchange DTD Suite used in this DTD). The element descriptions are listed in
+                                         alphabetical order by tag name. 
+                           </p>
+                           <p class="para">(Note: Each element has two names: a &#8220;tag
+                                         name&#8221; (formally called an element-type name) that is used in tagged
+                                         documents, the DTDs, and by the software, and an &#8220;element name&#8221;
+                                         (usually longer) that provides a fuller, more descriptive name for the benefit
+                                         of human readers. For example, a tag name might be
+                                         <a href="n-dz30.html"><span class="elementtag">&lt;disp-quote&gt;</span></a> with the corresponding element name
+                                         <a href="n-dz30.html"><span class="elementname">Quote, Displayed</span></a> or a tag name might be
+                                         <a href="n-cyx0.html"><span class="elementtag">&lt;verse-group&gt;</span></a> with the corresponding element name
+                                         <a href="n-cyx0.html"><span class="elementname">Verse Form for Poetry</span></a>.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Attributes Section</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Descriptions of the attributes in the DTD modules. </p>
+                           <p class="para">Like
+                                         elements, attributes also have two names: the shorter machine-readable one and
+                                         a (usually longer) human-readable one. Attributes are listed in order by the
+                                         shorter machine-readable names, for example, the attribute short name
+                                         <a href="n-cr40.html"><span class="attrtag">list-type</span></a> instead of the more
+                                         informal, easier to read: <a href="n-cr40.html"><span class="attrname">Type of List</span></a>.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Parameter Entity Section <em>(For Implementors
+                                           Only)</em></p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Names (with occasional descriptions) and contents of the
+                                         Parameter Entities in the DTD modules
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Context Table</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Listings of where each element may be used. All elements
+                                         are given in a simple alphabetical list. There is a single table for the
+                                         elements from all the Suite modules that are called from the DTD. 
+                           </p>
+                           <p class="para">The Context Table is formatted in two columns. The first
+                                         column lists an element&#8217;s tag name, and the second column lists the tag
+                                         names of all the elements in which the first element may occur. For example, if
+                                         the first column contains the front matter element
+                                         <a href="n-rf50.html"><span class="elementtag">&lt;front&gt;</span></a> and the second column contains only the
+                                         article element <a href="n-s620.html"><span class="elementtag">&lt;article&gt;</span></a>, this means that the
+                                         <a href="n-rf50.html"><span class="elementtag">&lt;front&gt;</span></a> (<a href="n-rf50.html"><span class="elementname">Front Matter</span></a>)
+                                         element may only be used inside an <a href="n-s620.html"><span class="elementtag">&lt;article&gt;</span></a>
+                                         (<a href="n-s620.html"><span class="elementname">Article</span></a>) element.
+                           </p>
+                           <p class="para">Most elements may be used inside more than one other
+                                         element. For example, the element
+                                         <a href="n-z520.html"><span class="elementtag">&lt;access-date&gt;</span></a> (<a href="n-z520.html"><span class="elementname">Access Date for Cited Work</span></a>) may be used inside the
+                                         <a href="n-efc0.html"><span class="elementtag">&lt;citation&gt;</span></a>, <a href="n-hb80.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>,  <a href="n-qda0.html"><span class="elementtag">&lt;product&gt;</span></a>, and <a href="n-vku0.html"><span class="elementtag">&lt;related-article&gt;</span></a> elements.
+                           </p>
+                           <p class="para">Note: These Context Table listings (which list <em>where</em> an
+                                         element may be used) are the inverse of the content
+                                         definition that is given as a part of each element description,
+                                         which lists what can be <em>inside</em> the named element.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Document Hierarchy Diagrams</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Tree-like graphical representations of the content of many
+                                         elements. This can be a fast visual way to determine the structure of an
+                                         article or of most elements within an article.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Authoring DTD and Suite Naming Rules</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">The naming conventions for element and attribute names, such as the use of lower case, concatenation, and abbreviations within
+                              tags
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Full Article Sample</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">A complete article is provided in XML according to this DTD. This sample has been provided to help users better understand
+                              the DTD&#8217;s overall structure and the relationship between elements.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>DTD Section</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Copies of the Authoring DTD, its five DTD-specific customization modules, and the modules of the full Archiving and Interchange
+                              DTD Suite.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>Index By Element Name</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Index of element descriptions, alphabetically by element
+                                         name (the longer, more descriptive name)
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>Index By Tag Name</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Index of element descriptions, alphabetically by tag name
+                                         (element-type name)
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <hr class="hrule">
+            <div class="section"><a name="typog"></a><h2 class="header">Typographic Conventions</h2>
+               <table xmlns:mtl="http://www.mulberrytech.com/taglib" xmlns:xsd="http://www.w3.org/2000/10/XMLSchema" frame="hsides">
+                         
+                  <colgroup span="1"> 
+                     <col width="10%" span="1"> 
+                     <col width="90%" span="1">
+                            
+                  </colgroup>
+                         
+                  <tbody>
+                             
+                     <tr>
+                                  
+                        <td rowspan="1" colspan="1"> <a href="n-8720.html"><span class="elementtag">&lt;alt-text&gt;</span></a> 
+                        </td>
+                                  
+                        <td rowspan="1" colspan="1">The tag name of an element (Written in lower case with the
+                                      entire name surrounded by &#8220;&lt; &gt;&#8221;)
+                        </td>
+                                
+                     </tr>
+                             
+                     <tr>
+                                  
+                        <td rowspan="1" colspan="1"> <a href="n-8720.html"><span class="elementname">Alternate Title Text (For a Figure, Etc.)</span></a> 
+                        </td>
+                                  
+                        <td rowspan="1" colspan="1">The element name (long descriptive name of an element) or the
+                                      descriptive name of an attribute (Written in title case, that is, with
+                                      important words capitalized, and the words separated by spaces)
+                        </td>
+                                
+                     </tr>
+                             
+                     <tr>
+                                  
+                        <td rowspan="1" colspan="1"> <em>must not</em> 
+                        </td>
+                                  
+                        <td rowspan="1" colspan="1">Emphasis to stress a point</td>
+                                
+                     </tr>
+                            
+                  </tbody>
+                        
+               </table>
+            </div>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

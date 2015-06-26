@@ -1,0 +1,147 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Caption of a Figure, Table, Etc.</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;caption&gt;</h1>
+         <h1 class="elementname">Caption of a Figure, Table, Etc.</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Wrapper element for the textual description that is associated
+                   with a <a href="n-h4w0.html"><span class="elementname">Figure</span></a>, <a href="n-5e60.html"><span class="elementname">Table (XHTML table model)</span></a>, etc. This is the title for the figure or the description of the figure that prints or displays with the figure.
+         </p>
+         <p class="para">In print or display, a caption is usually recognizable because it is not part of the ordinary text flow; it sits just under,
+            above, beside, or in the same small window or page area as the tabular portions of the table or the graphical portions of
+            the figure.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para"><a href="n-3y30.html"><span class="elementtag">&lt;caption&gt;</span></a> contains the entire, visible textual description of a table, figure, or similar object, but does not typically include the
+            figure or table number, since this will typically be generated on display. If needed in the text, such numbers will be tagged
+            as <a href="n-pg40.html"><span class="elementtag">&lt;label&gt;</span></a>s. The text of the caption includes any separately tagged <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a> and as many paragraphs of information as needed. It may include legends, which are not identified as a separate element in
+            this Suite.
+         </p>
+         <p class="para">The text of the caption does not include words such as &#8220;Figure 3.&#8221; or &#8220;Table 11-a&#8221;. These labels may not be present in the
+            XML file, since many publishers choose to generate such text at display time, but if they are in the source XML, they may
+            be preserved using the <a href="n-pg40.html"><span class="elementtag">&lt;label&gt;</span></a> element.
+         </p>
+         <p class="para">Conversion Note: In many journal articles, a distinction is made between the caption of a figure/table/etc. and its title.
+            There may be two separate tags (<a href="n-3y30.html"><span class="elementtag">&lt;caption&gt;</span></a> and <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a>), or the first sentence of the caption may be set off typographically from the rest of the caption to indicate that it is
+            a title, for example, the first sentence may be italic or bold. In either case, if it is obvious that the figure/table/etc.
+            contains both a title and a caption, both the title and the caption should be tagged during conversion, and the title should
+            be moved inside the caption if it is outside.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-kzh0.html"><span class="attrtag">alternate-form-of</span></a> <a href="n-kzh0.html"><span class="attrname">Alternate Form of Graphic, Media Object, Etc.</span></a></h5>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-z4p0.html"><span class="attrtag">style</span></a> <a href="n-z4p0.html"><span class="attrname">Style (XHTML table model; MathML 2.0 Tag Set)</span></a></h5>
+         <h5 class="header"><a href="n-dcq0.html"><span class="attrtag">xml:lang</span></a> <a href="n-dcq0.html"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  caption      %caption-model;                              &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-tid0.html"><span class="elementname">Title</span></a> <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-7st0.html"><span class="elementname">Paragraph</span></a> <a href="n-7st0.html"><span class="elementtag">&lt;p&gt;</span></a>, zero or more
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-az30.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a> <a href="n-az30.html"><span class="elementname">Chemical Structure Wrapper</span></a>; <a href="n-h4w0.html"><span class="elementtag">&lt;fig&gt;</span></a> <a href="n-h4w0.html"><span class="elementname">Figure</span></a>; <a href="n-rfw0.html"><span class="elementtag">&lt;fig-group&gt;</span></a> <a href="n-rfw0.html"><span class="elementname">Figure Group</span></a>; <a href="n-eqx0.html"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-eqx0.html"><span class="elementname">Graphic</span></a>; <a href="n-wb40.html"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-wb40.html"><span class="elementname">Media Object</span></a>; <a href="n-4a60.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-4a60.html"><span class="elementname">Supplementary Material</span></a>; <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> <a href="n-tn60.html"><span class="elementname">Table Wrapper</span></a>; <a href="n-zi60.html"><span class="elementtag">&lt;table-wrap-group&gt;</span></a> <a href="n-zi60.html"><span class="elementname">Table Wrapper Group</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a figure:</p><pre class="taggedtext">
+ 
+...
+&lt;sec&gt;
+&lt;title&gt;Results&lt;/title&gt;
+&lt;p&gt;... Details of randomization procedures,
+treatment schedules, and numbers of patients followed up are
+given on the &lt;italic&gt;BMJ&lt;/italic&gt; website.
+&lt;/p&gt;
+&lt;fig id="F1"&gt;
+&lt;label&gt;Figure 1&lt;/label&gt;
+<strong><span class="focus">&lt;caption&gt;
+&lt;p&gt;Deaths among patients receiving day hospital care or alternative
+services. Odds ratios of death by end of follow up were calculated by 
+fixed effects model. Heterogeneity between trials is presented as
+&amp;amp;#x03C7;&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;/caption&gt;</span></strong>
+&lt;graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fors2662.f1" 
+alt-version="yes"/&gt;
+&lt;/fig&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/sec&gt;
+...
+
+
+</pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a table:</p><pre class="taggedtext">
+ 
+...
+&lt;table-wrap id="TN0.170"&gt;
+&lt;label&gt;Table 17&lt;/label&gt;
+<strong><span class="focus">&lt;caption&gt;
+&lt;p&gt;Numbers of patients receiving institutional care
+at the end of scheduled follow up and use of hospital beds
+among those allocated to day hospital or alternative
+services&lt;/p&gt;
+&lt;/caption&gt;</span></strong>
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th/&gt;
+&lt;th colspan="3" align="center" rowspan="1"&gt;Institutional care&lt;/th&gt;
+&lt;th align="left"/&gt;
+&lt;th colspan="2" align="center" rowspan="1"&gt;&amp;#x2003;Bed use (days)&lt;/th&gt;
+&lt;/tr&gt;
+...
+&lt;/table&gt;
+&lt;/table-wrap&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">display.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

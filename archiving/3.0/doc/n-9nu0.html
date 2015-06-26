@@ -1,0 +1,143 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Element: Date</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;date&gt;</h1>
+         <h1 class="elementname">Date</h1>
+      </div>
+      <div class="definition">
+         <p class="para">One of the historical dates that may be preserved for an article, such as when it was received or when it was accepted. This
+            element typically acts (as does the related element <a href="n-vjn0.html" target="main" title="Publication Date"><span class="elementtag">&lt;pub-date&gt;</span></a>) as a container element for date elements, such as <a href="n-gyu0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-yje0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-ve90.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, which are usually given numeric values, as well as for <a href="n-cai0.html" target="main" title="Date as a String"><span class="elementtag">&lt;string-date&gt;</span></a> and <a href="n-qbd0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a>, which are just text strings. 
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">For a detailed discussion on the use of <span class="elementtag">&lt;date&gt;</span>, see <a href="n-6ft2.html#tag-cite-dates">Dates in Citations</a>.
+            
+         </p>
+         <p class="para">Conversion Note: It is best practice to tag individual date elements (such as <a href="n-ve90.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>) whenever possible. Use <a href="n-cai0.html" target="main" title="Date as a String"><span class="elementtag">&lt;string-date&gt;</span></a> for the narrative form of a date when necessary, for example, when a date has no month or year specified. However, even inside
+            a <a href="n-cai0.html" target="main" title="Date as a String"><span class="elementtag">&lt;string-date&gt;</span></a> the named date components, such as <a href="n-ve90.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, can even be specified. 
+            
+         </p>
+         <p class="para">The Archiving Tag Set allows <a href="n-cai0.html" target="main" title="Date as a String"><span class="elementtag">&lt;string-date&gt;</span></a> both inside <a href="n-9nu0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a> and at the same level as <a href="n-9nu0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>. This is the most flexible for allowing the archive to preserve any publisher’s structure. The tighter Tag Sets created from
+            the base Suite may choose to use one or the other in preference. 
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-k9m0.html" target="main"><span class="attrtag">date-type</span></a> <a href="n-k9m0.html" target="main"><span class="attrname">Type of Date</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Within citations (<a href="n-5bw0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-sue0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), this element is used to name the date of publication. The elements <a href="n-ve90.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-9nu0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>, <a href="n-gyu0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-yje0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-qbd0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> may all be used to describe the date a cited resource was published. Other dates inside a citation, such as a copyright date,
+            the date on which the author accessed the resource, or a withdrawal date, should be tagged using <a href="n-aru0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> with the <a href="n-8fm0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute used to name the type of date (copyright, access-date, time-stamp, etc.).
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  date         <a href="n-5p82.html" target="main" title="Date Elements Model"><span class="petag">%date-model;</span></a>                                 &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(((day?, month?) | season)?, year?, string-date?)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>Optionally any one of:
+                  <ul class="bullist">
+                     <li>The following, in order:
+                        <ul class="bullist">
+                           <li>
+                              <a href="n-gyu0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a> <a href="n-gyu0.html" target="main" title="<day&gt;"><span class="elementname">Day</span></a>, zero or one
+                           </li>
+                           <li>
+                              <a href="n-yje0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a> <a href="n-yje0.html" target="main" title="<month&gt;"><span class="elementname">Month</span></a>, zero or one
+                           </li>
+                        </ul>
+                        
+                     </li>
+                     <li>
+                        <a href="n-qbd0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> <a href="n-qbd0.html" target="main" title="<season&gt;"><span class="elementname">Season</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-ve90.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> <a href="n-ve90.html" target="main" title="<year&gt;"><span class="elementname">Year</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-cai0.html" target="main" title="Date as a String"><span class="elementtag">&lt;string-date&gt;</span></a> <a href="n-cai0.html" target="main" title="<string-date&gt;"><span class="elementname">Date as a String</span></a>, zero or one
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-5bw0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-5p40.html" target="main" title="History: Document History"><span class="elementtag">&lt;history&gt;</span></a>, <a href="n-sue0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-3en0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-8f60.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-2q60.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;
+&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+<strong><span class="focus">&lt;date date-type="accepted"&gt;
+&lt;day&gt;29&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;</span></strong>
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British
+Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of day hospital 
+attendance in prolonging independent living for 
+elderly people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,322 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Abstract</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;abstract&gt;</h1>
+         <h1 class="elementname">Abstract</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Summarized description of the content of a journal article</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Most journal publishers use the abstract as a very short summary of the major findings or conclusions of an article and limit
+            its contents to a paragraph or two. But some publishers require &#8220;long&#8221; or &#8220;summary&#8221; abstracts that summarize each section
+            of the paper in a separate abstract section that has the same section title as the  article section. Such abstracts may be
+            extensive, incorporating  figures and tables. While the model for the element <a href="n-8a20.html"><span class="elementtag">&lt;abstract&gt;</span></a> has been made flexible enough to allow for these titled sections,  it is expected that most abstracts will be much simpler
+            and will contain one or more paragraphs.
+         </p>
+         <p class="para">The <a href="n-iyh0.html"><span class="attrtag">abstract-type</span></a> attribute may be used to identify special types of abstracts required by some publishers, for example, graphical abstracts,
+            stereochemical abstracts, ASCII abstracts for sending to small devices, and Table-of-Contents abstracts that are so short
+            they are inserted as annotations into a Table of Contents. See the attribute page for <a href="n-iyh0.html"><span class="attrtag">abstract-type</span></a> for a more complete list of types. If the abstract is not one of the special types listed, the <a href="n-iyh0.html"><span class="attrtag">abstract-type</span></a> attribute should not be used.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-iyh0.html"><span class="attrtag">abstract-type</span></a> <a href="n-iyh0.html"><span class="attrname">Type of Abstract</span></a></h5>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-dcq0.html"><span class="attrtag">xml:lang</span></a> <a href="n-dcq0.html"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The element <a href="n-2zd0.html"><span class="elementname">Translated Abstract</span></a> <a href="n-2zd0.html"><span class="elementtag">&lt;trans-abstract&gt;</span></a> contains another version of the
+                   abstract, one translated into a language other than that of the original
+                   publication.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  abstract     %abstract-model;                             &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-5kt0.html"><span class="elementname">Object Identifier</span></a> <a href="n-5kt0.html"><span class="elementtag">&lt;object-id&gt;</span></a>, zero or more
+                  </li>
+                  <li>The following, in order:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-fxf0.html"><span class="elementname">Section Metadata</span></a> <a href="n-fxf0.html"><span class="elementtag">&lt;sec-meta&gt;</span></a>, zero or one
+                        </li>
+                        <li>
+                                                      <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a> <a href="n-pg40.html"><span class="elementtag">&lt;label&gt;</span></a>, zero or one
+                        </li>
+                        <li>
+                                                      <a href="n-tid0.html"><span class="elementname">Title</span></a> <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                        </li>
+                        <li>Any combination of:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-6ec0.html"><span class="elementname">Array (Simple Tabular Array)</span></a> <a href="n-6ec0.html"><span class="elementtag">&lt;array&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-pn30.html"><span class="elementname">Boxed Text</span></a> <a href="n-pn30.html"><span class="elementtag">&lt;boxed-text&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-sj30.html"><span class="elementname">Chemical Structure (Display)</span></a> <a href="n-sj30.html"><span class="elementtag">&lt;chem-struct&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-az30.html"><span class="elementname">Chemical Structure Wrapper</span></a> <a href="n-az30.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-h4w0.html"><span class="elementname">Figure</span></a> <a href="n-h4w0.html"><span class="elementtag">&lt;fig&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-rfw0.html"><span class="elementname">Figure Group</span></a> <a href="n-rfw0.html"><span class="elementtag">&lt;fig-group&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-eqx0.html"><span class="elementname">Graphic</span></a> <a href="n-eqx0.html"><span class="elementtag">&lt;graphic&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-wb40.html"><span class="elementname">Media Object</span></a> <a href="n-wb40.html"><span class="elementtag">&lt;media&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-wa70.html"><span class="elementname">Preformatted Text</span></a> <a href="n-wa70.html"><span class="elementtag">&lt;preformat&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-4a60.html"><span class="elementname">Supplementary Material</span></a> <a href="n-4a60.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-tn60.html"><span class="elementname">Table Wrapper</span></a> <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-zi60.html"><span class="elementname">Table Wrapper Group</span></a> <a href="n-zi60.html"><span class="elementtag">&lt;table-wrap-group&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-wuu0.html"><span class="elementname">Formula, Display</span></a> <a href="n-wuu0.html"><span class="elementtag">&lt;disp-formula&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-7st0.html"><span class="elementname">Paragraph</span></a> <a href="n-7st0.html"><span class="elementtag">&lt;p&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-pku0.html"><span class="elementname">Definition List</span></a> <a href="n-pku0.html"><span class="elementtag">&lt;def-list&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-ai40.html"><span class="elementname">List</span></a> <a href="n-ai40.html"><span class="elementtag">&lt;list&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-f7d0.html"><span class="elementname">Tex Math Equation</span></a> <a href="n-f7d0.html"><span class="elementtag">&lt;tex-math&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-6xs0.html"><span class="elementname">Math (Mathml 2.0 Tag Set)</span></a> <a href="n-6xs0.html"><span class="elementtag">&lt;mml:math&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a> <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-us20.html"><span class="elementname">Acknowledgments</span></a> <a href="n-us20.html"><span class="elementtag">&lt;ack&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-jsu0.html"><span class="elementname">Quote, Displayed</span></a> <a href="n-jsu0.html"><span class="elementtag">&lt;disp-quote&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-qgg0.html"><span class="elementname">Speech</span></a> <a href="n-qgg0.html"><span class="elementtag">&lt;speech&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-36g0.html"><span class="elementname">Statement, Formal</span></a> <a href="n-36g0.html"><span class="elementtag">&lt;statement&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-k9r0.html"><span class="elementname">Verse Form for Poetry</span></a> <a href="n-k9r0.html"><span class="elementtag">&lt;verse-group&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-bsh0.html"><span class="elementname">X - Generated Text and Punctuation</span></a> <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-z5f0.html"><span class="elementname">Section</span></a> <a href="n-z5f0.html"><span class="elementtag">&lt;sec&gt;</span></a>, zero or more
+                        </li>
+                        <li>Any combination of:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-kbs0.html"><span class="elementname">Notes</span></a> <a href="n-kbs0.html"><span class="elementtag">&lt;notes&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-ghw0.html"><span class="elementname">Footnote Group</span></a> <a href="n-ghw0.html"><span class="elementtag">&lt;fn-group&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-vxx0.html"><span class="elementname">Glossary Elements List</span></a> <a href="n-vxx0.html"><span class="elementtag">&lt;glossary&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-awe0.html"><span class="elementname">Reference List (Bibliographic)</span></a> <a href="n-awe0.html"><span class="elementtag">&lt;ref-list&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-6zw0.html"><span class="elementtag">&lt;front-stub&gt;</span></a> <a href="n-6zw0.html"><span class="elementname">Stub Front Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">A typical abstract:</p><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;...
+&lt;volume&gt;97&lt;/volume&gt;
+&lt;issue&gt;4&lt;/issue&gt;
+&lt;fpage&gt;1665&lt;/fpage&gt;&lt;lpage&gt;1670&lt;/lpage&gt;
+&lt;history&gt;...&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 2000, The National Academy of
+Sciences&lt;/copyright-statement&gt;
+&lt;/permissions&gt;
+<strong><span class="focus">&lt;abstract&gt;
+&lt;p&gt;We describe a method for cloning nucleic acid molecules
+onto the surfaces of 5-&amp;#x03BC;m microbeads rather than in biological hosts. A
+unique tag sequence is attached to each molecule, and the tagged library is
+amplified. Unique tagging of the molecules is achieved by sampling a small
+fraction (1&amp;#x0025;) of a very large repertoire of tag sequences. The resulting
+library is hybridized to microbeads that each carry &amp;#x2248;10&lt;sup&gt;6&lt;/sup&gt;
+strands complementary to one of the tags. About 10&lt;sup&gt;5&lt;/sup&gt; copies of each
+molecule are collected on each microbead. Because such clones are segregated on
+microbeads, they can be operated on simultaneously and then assayed separately.
+To demonstrate the utility of this approach, we show how to label and extract
+microbeads bearing clones differentially expressed between two libraries by
+using a fluorescence-activated cell sorter (FACS). Because no prior information
+about the cloned molecules is required, this process is obviously useful where
+sequence databases are incomplete or nonexistent. More importantly, the process
+also permits the isolation of clones that are expressed only in given tissues or
+that are differentially expressed between normal and diseased states. Such
+clones then may be spotted on much more cost-effective, tissue- or
+disease-directed, low-density planar microarrays.&lt;/p&gt;&lt;/abstract&gt;</span></strong>
+&lt;kwd-group&gt;...&lt;/kwd-group&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;...&lt;/article&gt;
+
+
+</pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">An abstract with summarized sections:</p><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;...
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;...
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British
+Medical Journal&lt;/copyright-statement&gt;
+&lt;/permissions&gt;
+<strong><span class="focus">&lt;abstract&gt;
+&lt;sec&gt;
+&lt;title&gt;Objective&lt;/title&gt;
+&lt;p&gt;To examine the effectiveness of
+day hospital attendance in prolonging independent living for elderly
+people.&lt;/p&gt;&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Design&lt;/title&gt;
+&lt;p&gt;Systematic review of 12 controlled clinical trials (available
+by January 1997) comparing day hospital care with
+comprehensive care (five trials), domiciliary care (four trials),
+or no comprehensive care (three trials).&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Subjects&lt;/title&gt;
+&lt;p&gt;2867 elderly people.&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Main outcome measures&lt;/title&gt;
+&lt;p&gt;Death, institutionalisation, disability, global &amp;#x201C;poor
+outcome,&amp;#x201D; and use of resources.&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Results&lt;/title&gt;
+&lt;p&gt;Overall, there was no significant difference between day hospitals and
+alternative services for death, disability, or use of resources. However, ...&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec&gt;
+&lt;title&gt;Conclusions&lt;/title&gt;
+&lt;p&gt;Day hospital care seems to be an effective service for elderly
+people ...&lt;/p&gt;
+&lt;p&gt;&lt;boxed-text&gt;
+&lt;sec&gt;&lt;title&gt;Key messages&lt;/title&gt;...
+&lt;/list&gt;&lt;/p&gt;
+&lt;/sec&gt;
+&lt;/boxed-text&gt;&lt;/p&gt;
+&lt;/sec&gt;
+&lt;/abstract&gt;</span></strong>
+&lt;/article-meta&gt;
+&lt;/front&gt;...
+&lt;/article&gt;
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

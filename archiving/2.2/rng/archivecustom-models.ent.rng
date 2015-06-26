@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- MODULE:    Journal Archiving DTD Customize Content and -->
+<!-- Attributes Module -->
+<!-- VERSION:   2.2 -->
+<!-- DATE:      April 2006 -->
+<!---->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- PUBLIC DOCUMENT TYPE DEFINITION -->
+<!-- TYPICAL INVOCATION -->
+<!--
+  "-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.2 20060430//EN"
+  Delivered as file "archivecustom-models.ent"
+-->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- SYSTEM:     Journal Archiving and Interchange DTD of the -->
+<!-- Archiving and Interchange DTD Suite -->
+<!---->
+<!-- PURPOSE:    To declare the Parameter Entities (PEs) used to -->
+<!-- over-ride content models or parts of content -->
+<!-- models when making a new DTD from the modules of -->
+<!-- the Archiving and Interchange DTD Suite. -->
+<!---->
+<!-- Or-groups within models should use mixes or -->
+<!-- classes rather than name elements directly. -->
+<!---->
+<!-- Note: Since PEs must be declared before they -->
+<!-- are used, this module must be called before the -->
+<!-- content modules that declare elements. -->
+<!---->
+<!-- CONTAINS:   1) PEs that define OR lists of elements to be -->
+<!-- mixed with #PCDATA in element content models -->
+<!-- (all PEs are named "yyy-elements", where "yyy" -->
+<!-- is the name of the primary element whose -->
+<!-- content model will use the declared PE.) -->
+<!-- 2) PEs that define complete content models. -->
+<!-- (names ending in the suffix "-model") -->
+<!-- 3) PEs that define attribute list or attribute -->
+<!-- value over-rides -->
+<!---->
+<!-- CREATED FOR: -->
+<!-- Digital Archive of Journal Articles -->
+<!-- National Center for Biotechnology Information -->
+<!-- (NCBI) -->
+<!-- National Library of Medicine (NLM) -->
+<!---->
+<!-- ORIGINAL CREATION DATE: -->
+<!-- August 2004 -->
+<!---->
+<!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.) -->
+<!-- B. Tommie Usdin (Mulberry Technologies, Inc.) -->
+<!---->
+<!-- Suggestions for refinements and enhancements to -->
+<!-- this DTD should be sent in email to: -->
+<!-- archive-dtd@ncbi.nlm.nih.gov -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- DTD VERSION/CHANGE HISTORY -->
+<!-- ============================================================= -->
+<!--
+  
+  Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+  
+       =============================================================
+       Version 2.2                       (DAL/BTU) v2.2 (2006-04-30)
+  
+       Backwards-compatible changes to meet operational needs.
+       Typical changes include adding attribute values and making 
+       required elements optional.
+  
+   18. PRICE - New <price> element added to <product>.
+  
+   17. Updated public identifier to "v2.2 20060430//EN"          
+  
+       =============================================================
+       Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+  
+       Changed to MathML 2.0 and MathML 2.0 Character Sets
+       Added new material requested by the online list     
+  
+  
+   16. PERMISSIONS - Added a new <permissions> wrapper element to
+       consolidate copyright and licensing information. For backwards
+       compatibility, the new element will be added alongside the
+       existing copyright elements. Best practice will be to use the
+       new container, but <copyright-statement>, <copyright-year>,
+       and <license> will be accepted in their old positions inside
+       <article-meta>
+        - Added <permissions> to <article-meta> model. This should
+          be used in preference to the <copyright>, <copyright-year>,
+          and <license> at the top level in the same model.
+  
+   15. Updated public identifier to "v2.1 20050630" 
+  
+       =============================================================
+       Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+  
+  
+       Major requirement changes led to the new release, producing
+       DTD version "2.0":
+         a) The splitting of the Archival and Interchange Tag Set 
+            DTDs into three DTDs from two: an authoring DTD, an
+            archive regularization and interchange DTD (the
+            current Blue Publishing DTD), and a preservationist 
+            archive DTD (the current Green Archiving and Interchange 
+            DTD).
+         b) AIT Working Group suggestions from the June 04 meeting 
+            and June/July 2004 followup discussions
+         c) Suite remodularization to meet new (and newly articulated)
+            modularization requirements
+         d) New or renamed classes and mixes to make modifications
+            easier and more consistent
+  
+   14. OTHER-TABLE-WRAP-ATTS - Moved this Parameter Entity to the
+       display module, so all variant DTDs could use it.
+  
+   13. LOOSENING ALL PHRASE-LEVEL ELEMENT USAGE - As part of the
+       version 2.0 split into 3 DTDs, removed the distinctions
+       between where phrase-level elements may be used. Now, if
+       you can use one phrase-level, you can use them all. This
+       allows any in any order. Phrase-level elements include the
+       address elements (which is only a little odd for <addr-line>).
+  
+       New Parameter Entity is %all-phrase; used inside:
+        - the Parameter Entities named "nnn-elements" that can
+          be mixed with #PCDATA in the content model of the nnn
+          element (for which the defaults are defined in the module 
+          that holds the element, just before the element, and the
+          over-rides are defined below.)
+        - And the following content model over-rides:
+          . %chem-struct-model; (via %chem-struct-elements;)
+          . %copyright-statement-model; (renamed -elements)
+          . %history-model; (via %history-elements)
+  
+   12. ACCESS CLASS
+          ### Customization Alert ###
+       a. Took <ext-link> out of -%access.class;. It did not belong.
+          It belongs in -%address-link.class;
+       b. Added -%address-link.class; to anywhere regular
+          %access.class; was used.
+  
+   11. ATTRIBUTE VALUE LISTS - The Green (Archival) DTD needed to
+       change all explicit attribute value lists in the DTD to CDATA. 
+       In the future, explicit list types will be a feature of the
+       Blue (Publishing) and new Authoring DTDs. Therefore, added
+       Parameter Entities to hold the following attributes:
+         - %date-atts; (date-type changed from list to CDATA)
+         - %article-id-atts; (pub-id-type changed to CDATA)
+         - %pub-id-atts; (pub-id-type changed to CDATA)
+         - %xref-atts; (ref-type changed to CDATA)
+  
+   10. <x> GENERATED TEXT AND PUNCTUATION ELEMENT:
+       a. Added to the following models:
+          - %def-list-model;
+          - %def-item-model;
+          - %article-meta-model;
+          - %person-group-model;
+       b. Added to %contrib-model; and %contrib-group-model; 
+          (via %x.class;)  
+          (Therefore added to <contributor> and
+           <contributor-group>)
+       c. Also added to the element groups for:
+          - %aff-elements;
+          - %citation-elements;
+          - %collab-elements;
+          - %corresp-elements;
+          - %product-elements;
+          - %publisher-loc-elements;
+          - %related-article-elements;
+  
+    9. OVER-RIDE OF ARTICLE-META-MODEL - Added new elements
+       a. <custom-meta-wrap> containing <custom-meta>
+       b. <email>
+       c. <issue-id>
+       d. <issue-title> (for special title or theme)
+       e. <page-range>
+       f. <volume-id>
+       g. <license> (for now, just a bucket into which to
+          dump license-related material until the AIT Workgroup
+          does more analysis)
+  
+    8. DATES
+       a. Made a new Parameter Entity %string-date-elements; to
+          hold all the elements that may be mixed with #PCDATA
+          in a <string-date>
+       b. Used %date-parts.class; and %x.class; in 
+             new %string-date-elements;
+  
+    7. PRODUCT AND RELATED ARTICLE
+       Added reference elements to both
+  
+    6. COMPLETE MODELS WHEN OVER-RIDING A MODEL 
+       (for all Parameter Entities suffixed "-model")
+       ### Customization Alert ###
+       Made all the model over-rides consistent. Some included
+       the outer parentheses, some did not. They all do now,
+       as this is the most flexible system, allowing for
+       #PCDATA, mixed, or element content. (This is in direct
+       contrast to the "-element" suffixed models, which are
+       designed to prohibit element content and permit only
+       #PCDATA or mixed content.) Added parentheses to Parameter
+       Entity and removed them from the Element Declaration.
+       -  %article-meta-model; 
+       -  %contrib-group-model;
+       -  %contrib-model;
+       -  %def-item-model;
+       -  %def-list-model; 
+       -  %kwd-group-model; 
+  
+    5. CITATION MODEL / COPYRIGHT STATEMENT MODEL
+       ### Customization Alert ###
+       -  Replaced the Parameter Entity %citation-model; with the
+          OR list Parameter Entity %citation-elements; and used that
+          within the content model of <citation>
+       -  Similar Change for copyright-statement-elements
+  
+    4. DEF-ITEM LOOSENING
+       a. Made <term> optional and repeatable so that incomplete
+          <def-item>s can be captured. 
+       b. Added <x> to:
+          - <def-list> by way of -%def-list-model;
+          - <def-item> by way of -%def-item-model;
+  
+    3. RENAMED CLASSES
+       ### Customization Alert ###
+       Not all classes ended in the ".class" suffix. Changed the 
+       following to add the class suffix:
+       - %display-back-matter.class; used in -%preformat-elements;
+       - %address-elements; (renamed -%address.class;!) used in:
+            - %aff-elements; 
+            - %corresp-elements; 
+            - %publisher-loc-elements;
+       - %contrib-info.class; used in -%contrib-group-model;
+       - %block-math.class; used in 
+            - %named-content-elements; 
+            - %term-elements;
+       - %rest-of-para.class;
+            Inside the content model for Paragraph <p>, was renamed 
+            %p-elements;. The content model for Named Content 
+            and the model for %p-elements; still use
+            %rest-of-para.class;.
+  
+    2. INLINE PARAMETER MIXES
+       ### Customization Alert ###
+       INLINE FORMULA/DISPLAY FORMULA/PREFORMAT/RELATED ARTICLE - 
+       Changed the "-element" Parameter Entities to use the 
+       OR-bar-first mechanism:
+          - Inline Formula - In the PE %inline-formula-elements;
+            Changed the PE "%all-phrase;" to "| %all-phrase;"  (Since
+            the OR bar following the #PCDATA in the content model 
+            had been changed to match.) 
+          - Display Formula (%disp-formula-elements; 
+               %disp-formula-model;)
+          - Preformat Elements (%preformat-elements; %preformat-model;)
+          - Related Article (%related-article-elements;)
+  
+    1. Created this module as version "v2.0 20040830"
+-->
+<!-- ============================================================= -->
+<!-- INLINE MIXES TO OVER-RIDE CONTENT MODELS -->
+<!--                     (ELEMENTS TO BE ADDED TO #PCDATA IN MODELS) -->
+<!-- ============================================================= -->
+<!-- ABBREVIATION ELEMENTS -->
+<!--
+  The elements that can be included along with
+  data characters inside the content model of
+  the <abbrev> element
+-->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <define name="abbrev-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="def.class"/>
+    </choice>
+  </define>
+  <!-- ACCESS DATE ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the Access Date <access-date> element
+  -->
+  <define name="access-date-elements">
+    <choice>
+      <ref name="date-parts.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- AFFILIATION ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <aff> element
+  -->
+  <define name="aff-elements">
+    <choice>
+      <ref name="address.class"/>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+      <ref name="label.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- CHEMICAL STRUCTURE ELEMENTS -->
+  <!--
+    Those elements that may mix with the data
+    characters inside a Chemical Structure
+    <chem-struct>
+  -->
+  <define name="chem-struct-elements">
+    <choice>
+      <ref name="access.class"/>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+      <ref name="id.class"/>
+      <ref name="label.class"/>
+      <ref name="list.class"/>
+      <ref name="simple-display.class"/>
+    </choice>
+  </define>
+  <!-- CITATION ELEMENTS -->
+  <!--
+    Those elements that may mix with the data
+    characters inside a Citation
+  -->
+  <define name="citation-elements">
+    <choice>
+      <ref name="article-link.class"/>
+      <ref name="appearance.class"/>
+      <ref name="emphasis.class"/>
+      <ref name="inline-display.class"/>
+      <ref name="inline-math.class"/>
+      <ref name="label.class"/>
+      <ref name="math.class"/>
+      <ref name="phrase.class"/>
+      <ref name="references.class"/>
+      <ref name="simple-link.class"/>
+      <ref name="subsup.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- COLLABORATIVE (GROUP) AUTHOR ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <collab> element
+  -->
+  <define name="collab-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- CONFERENCE DATE ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <conf-date> element
+  -->
+  <define name="conf-date-elements">
+    <choice>
+      <ref name="date-parts.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- COPYRIGHT STATEMENT ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <copyright-statement>
+  -->
+  <define name="copyright-statement-elements">
+    <ref name="all-phrase"/>
+  </define>
+  <!-- CORRESPONDENCE INFORMATION ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the correspondence information.
+  -->
+  <define name="corresp-elements">
+    <choice>
+      <ref name="address.class"/>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+      <ref name="label.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- FORMULA, DISPLAY ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <disp-formula>
+  -->
+  <define name="disp-formula-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="access.class"/>
+      <ref name="break.class"/>
+      <ref name="display-back-matter.class"/>
+      <ref name="label.class"/>
+      <ref name="simple-display.class"/>
+    </choice>
+  </define>
+  <!-- EMAIL ADDRESS ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <email> element
+  -->
+  <define name="email-elements">
+    <ref name="all-phrase"/>
+  </define>
+  <!-- EXTERNAL LINK ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    an <ext-link>
+  -->
+  <define name="ext-link-elements">
+    <ref name="all-phrase"/>
+  </define>
+  <!-- FORMULA, INLINE ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <inline-formula> element.
+  -->
+  <define name="inline-formula-elements">
+    <ref name="all-phrase"/>
+  </define>
+  <!-- INLINE SUPPLEMENTARY MATERIAL ELEMENTS -->
+  <!--
+                        The elements that can be included along with
+    data characters inside the content model of
+    the <inline-supplementary-material> element
+  -->
+  <define name="inline-supplementary-material-elements">
+    <choice>
+      <ref name="access.class"/>
+      <ref name="all-phrase"/>
+    </choice>
+  </define>
+  <!-- INSTITUTION NAME ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <institution> element
+  -->
+  <define name="institution-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- ISSUE TITLE ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <issue-title> element
+  -->
+  <define name="issue-title-elements">
+    <ref name="all-phrase"/>
+  </define>
+  <!-- KEYWORD CONTENT ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    a keyword.
+  -->
+  <define name="kwd-elements">
+    <choice>
+      <ref name="break.class"/>
+      <ref name="all-phrase"/>
+    </choice>
+  </define>
+  <!-- LABEL ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <label> element
+  -->
+  <define name="label-elements">
+    <choice>
+      <ref name="break.class"/>
+      <ref name="all-phrase"/>
+    </choice>
+  </define>
+  <!-- LINK ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    linking element such as <xref>, <target>, 
+    and <ext-link>
+  -->
+  <define name="link-elements">
+    <choice>
+      <ref name="break.class"/>
+      <ref name="all-phrase"/>
+    </choice>
+  </define>
+  <!-- METADATA DATA NAME ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <meta-name> element
+  -->
+  <define name="meta-name-elements">
+    <ref name="all-phrase"/>
+  </define>
+  <!-- METADATA DATA VALUE ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <meta-value> element
+  -->
+  <define name="meta-value-elements">
+    <ref name="all-phrase"/>
+  </define>
+  <!-- NAMED CONTENT ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <named-content> element
+  -->
+  <define name="named-content-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="block-display.class"/>
+      <ref name="block-math.class"/>
+      <ref name="list.class"/>
+      <ref name="rest-of-para.class"/>
+    </choice>
+  </define>
+  <!-- PARAGRAPH ELEMENTS -->
+  <!--
+    Elements that may be used within a paragraph
+    in a mixed content model with #PCDATA.
+    Design Note: There is a major overlap between
+    this parameter entity and the mix for elements
+    that are at the same level as a paragraph.
+    Inline elements appear only inside a 
+    paragraph, but block elements such as quotes 
+    and lists may appear either within a 
+    paragraph or at the same level as a 
+    paragraph. This serves a requirement in a 
+    repository DTD, since some incoming material 
+    will have restricted such elements to only 
+    inside a paragraph, some incoming material 
+    will have restricted them to only outside a 
+    paragraph and some may allow them in both
+    places. Thus the DTD must allow for them to
+    be in either or both.
+  -->
+  <define name="p-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="block-display.class"/>
+      <ref name="block-math.class"/>
+      <ref name="citation.class"/>
+      <ref name="list.class"/>
+      <ref name="rest-of-para.class"/>
+    </choice>
+  </define>
+  <!-- PREFORMATTED TEXT ELEMENTS -->
+  <!--
+    Elements that may be used, along with data
+    characters, inside the content model for the
+    <preformat> element, in which white space,
+    such as tabs, line feeds, and spaces will
+    be preserved.
+  -->
+  <define name="preformat-elements">
+    <choice>
+      <ref name="access.class"/>
+      <ref name="all-phrase"/>
+      <ref name="display-back-matter.class"/>
+    </choice>
+  </define>
+  <!-- PRODUCT ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <product> element
+  -->
+  <define name="product-elements">
+    <choice>
+      <ref name="article-link.class"/>
+      <ref name="appearance.class"/>
+      <ref name="break.class"/>
+      <ref name="emphasis.class"/>
+      <ref name="inline-display.class"/>
+      <ref name="inline-math.class"/>
+      <ref name="math.class"/>
+      <ref name="phrase.class"/>
+      <ref name="price.class"/>
+      <ref name="references.class"/>
+      <ref name="simple-link.class"/>
+      <ref name="subsup.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- PUBLISHER'S LOCATION ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <publisher-loc> element
+  -->
+  <define name="publisher-loc-elements">
+    <choice>
+      <ref name="address.class"/>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- RELATED ARTICLE ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <related-article> element.
+  -->
+  <define name="related-article-elements">
+    <choice>
+      <ref name="article-link.class"/>
+      <ref name="appearance.class"/>
+      <ref name="break.class"/>
+      <ref name="emphasis.class"/>
+      <ref name="inline-display.class"/>
+      <ref name="inline-math.class"/>
+      <ref name="math.class"/>
+      <ref name="phrase.class"/>
+      <ref name="references.class"/>
+      <ref name="simple-link.class"/>
+      <ref name="subsup.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- SELF-URI ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <self-uri> element
+  -->
+  <define name="self-uri-elements">
+    <ref name="all-phrase"/>
+  </define>
+  <!-- SOURCE ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <source> element
+  -->
+  <define name="source-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+    </choice>
+  </define>
+  <!-- SPEAKER ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    a speaker.
+  -->
+  <define name="speaker-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="person-name.class"/>
+    </choice>
+  </define>
+  <!-- STRING DATE ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <string-date> element
+  -->
+  <define name="string-date-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="date-parts.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- STRING NAME ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <string-name> element
+  -->
+  <define name="string-name-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="person-name.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- STRUCTURAL TITLE ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    the <title> element
+  -->
+  <define name="struct-title-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- SUBJECT GROUPING NAME ELEMENTS -->
+  <!--
+    Elements that may be used, along with data
+    characters inside the content model of the
+    <subject> element
+  -->
+  <define name="subject-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- DEFINITION LIST: TERM ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    a <term>.
+  -->
+  <define name="term-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="block-math.class"/>
+      <ref name="simple-display.class"/>
+    </choice>
+  </define>
+  <!-- TITLE ELEMENTS -->
+  <!--
+    The elements that can be included along with
+    data characters inside the content model of
+    title elements such as <title>, <subtitle>, 
+    <trans-title>, etc.
+  -->
+  <define name="title-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- OVER-RIDES OF CONTENT MODELS (FULL MODELS) -->
+  <!-- ============================================================= -->
+  <!-- ARTICLE METADATA MODEL -->
+  <!--
+    Full content model for the metadata that is
+    specific to the article.
+    Note: This includes both metadata that 
+    directly describes the article (such as the 
+    article title, abstract, or article ID) as 
+    well as the metadata that many MAJOUR-style 
+    DTDs (such DTDs split the metadata into three
+    categories: journal metadata, article
+    metadata, and issue metadata), call the issue
+    metadata.
+    Related Element: Metadata specific to the
+    journal is within the element <journal-meta> 
+    Journal Metadata
+  -->
+  <define name="article-meta-model">
+    <zeroOrMore>
+      <ref name="article-id"/>
+    </zeroOrMore>
+    <optional>
+      <ref name="article-categories"/>
+    </optional>
+    <optional>
+      <ref name="title-group"/>
+    </optional>
+    <zeroOrMore>
+      <choice>
+        <ref name="contrib-group"/>
+        <ref name="aff"/>
+        <ref name="x.class"/>
+      </choice>
+    </zeroOrMore>
+    <optional>
+      <ref name="author-notes"/>
+    </optional>
+    <zeroOrMore>
+      <ref name="pub-date"/>
+    </zeroOrMore>
+    <optional>
+      <ref name="volume"/>
+    </optional>
+    <zeroOrMore>
+      <ref name="volume-id"/>
+    </zeroOrMore>
+    <optional>
+      <ref name="issue"/>
+    </optional>
+    <zeroOrMore>
+      <ref name="issue-id"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="issue-title"/>
+    </zeroOrMore>
+    <optional>
+      <ref name="supplement"/>
+    </optional>
+    <optional>
+      <choice>
+        <group>
+          <ref name="fpage"/>
+          <optional>
+            <ref name="lpage"/>
+          </optional>
+          <optional>
+            <ref name="page-range"/>
+          </optional>
+        </group>
+        <ref name="elocation-id"/>
+      </choice>
+    </optional>
+    <zeroOrMore>
+      <choice>
+        <ref name="address-link.class"/>
+        <ref name="product"/>
+        <ref name="supplementary-material"/>
+      </choice>
+    </zeroOrMore>
+    <optional>
+      <ref name="history"/>
+    </optional>
+    <optional>
+      <ref name="copyright-statement"/>
+    </optional>
+    <optional>
+      <ref name="copyright-year"/>
+    </optional>
+    <optional>
+      <ref name="license"/>
+    </optional>
+    <optional>
+      <ref name="permissions"/>
+    </optional>
+    <zeroOrMore>
+      <ref name="self-uri"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="related-article"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="abstract"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="trans-abstract"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="kwd-group"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="contract-num"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="contract-sponsor"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="conference"/>
+    </zeroOrMore>
+    <optional>
+      <ref name="counts"/>
+    </optional>
+    <optional>
+      <ref name="custom-meta-wrap"/>
+    </optional>
+  </define>
+  <!-- CONTRIBUTOR GROUP MODEL -->
+  <!--                     Content model for the <title-group> element -->
+  <define name="contrib-group-model">
+    <oneOrMore>
+      <ref name="contrib"/>
+    </oneOrMore>
+    <zeroOrMore>
+      <choice>
+        <ref name="contrib-info.class"/>
+        <ref name="x.class"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+  <!-- CONTRIBUTOR MODEL -->
+  <!-- Content model for the <contrib> element -->
+  <define name="contrib-model">
+    <zeroOrMore>
+      <ref name="name.class"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <choice>
+        <ref name="degree.class"/>
+        <ref name="contrib-info.class"/>
+        <ref name="x.class"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+  <!-- DEFINITION LIST: DEFINITION ITEM MODEL -->
+  <!-- The content model of a <def-item> -->
+  <define name="def-item-model">
+    <optional>
+      <ref name="label"/>
+    </optional>
+    <zeroOrMore>
+      <ref name="term"/>
+    </zeroOrMore>
+    <zeroOrMore>
+      <choice>
+        <ref name="def.class"/>
+        <ref name="x.class"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+  <!-- DEFINITION LIST MODEL -->
+  <!-- Content model for the <def-list> element -->
+  <define name="def-list-model">
+    <optional>
+      <ref name="label"/>
+    </optional>
+    <optional>
+      <ref name="title"/>
+    </optional>
+    <optional>
+      <ref name="term-head"/>
+    </optional>
+    <optional>
+      <ref name="def-head"/>
+    </optional>
+    <zeroOrMore>
+      <choice>
+        <ref name="def-item"/>
+        <ref name="x.class"/>
+      </choice>
+    </zeroOrMore>
+    <zeroOrMore>
+      <ref name="def-list"/>
+    </zeroOrMore>
+  </define>
+  <!-- HISTORY ELEMENTS -->
+  <!--
+    Elements that may be mixed with data 
+    characters inside the model for <history>
+    when <history> is modeled as a mixed content
+    element.
+  -->
+  <define name="history-elements">
+    <choice>
+      <ref name="all-phrase"/>
+      <ref name="break.class"/>
+      <ref name="date.class"/>
+      <ref name="x.class"/>
+    </choice>
+  </define>
+  <!-- HISTORY MODEL -->
+  <!--
+    The content model for the <history> element
+    (Design Note: This content model is a full
+    model not just an OR list of elements, because
+    the model it is replacing is an element
+    model not a mixed-content model.)
+  -->
+  <define name="history-model">
+    <zeroOrMore>
+      <choice>
+        <text/>
+        <ref name="history-elements"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+  <!-- KEYWORD GROUP MODEL -->
+  <!-- Content model for a <kwd-group> element -->
+  <define name="kwd-group-model">
+    <optional>
+      <ref name="title"/>
+    </optional>
+    <oneOrMore>
+      <choice>
+        <ref name="kwd.class"/>
+        <ref name="x.class"/>
+      </choice>
+    </oneOrMore>
+  </define>
+  <!-- PERSON GROUP MODEL -->
+  <!-- Content model for the Person Group element -->
+  <define name="person-group-model">
+    <zeroOrMore>
+      <choice>
+        <ref name="aff"/>
+        <ref name="etal"/>
+        <ref name="name.class"/>
+        <ref name="x.class"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+  <!-- ============================================================= -->
+  <!-- OVER-RIDES OF ATTRIBUTE LISTS -->
+  <!-- ============================================================= -->
+  <!-- ARTICLE IDENTIFIER ATTRIBUTES -->
+  <!--
+    Attributes for the <article-id> element
+    pub-id-type
+               Publication (article) Identifier Type
+               Names the type of identifier, or the 
+               organization or system that defined this 
+               identifier for the identifier of the journal 
+               article or a cited publication. This is an
+               optional CDATA attribute that should be used
+               whenever the type is known.
+                  Used on the <article-id> element, which 
+               holds an identifier for the entire article.  
+                  Also used on the <pubid> element, which 
+               is an identifier for a publication cited in 
+               a bibliographic reference (citation).
+               Suggested values include:
+                 coden  - Obsolete PDB/CCDC identifier (may
+                          be present on older articles)
+                 doaj   - Directory of Open Access Journals
+                 doi    - Digital Object Identifier
+                 medline- NLM Medline identifier
+                 other  - None of the named identifiers
+                 pii    - Publisher Item Identifier, see
+                           http://pubs.acs.org/epub/piius.htm
+                          or 
+                           http://www.aip.org/epub/piipr.html
+                 pmid   - PubMed ID (see
+                          www.ncbi.nlm.nih.gov/entrez/
+                          query.fcgi?db=PubMed)         
+                 publisher-id 
+                        - Publisher's identifier such 
+                          as an 'article-id', 'artnum',
+                          'identifier', 'article- number', 
+                          'pub-id', etc.
+                 sici   - Serial Item and Contribution 
+                          Identifier (SICI). A journal 
+                          article may have more than one 
+                          SICI, one for a print version and
+                          one for an electronic version.
+  -->
+  <define name="article-id-atts">
+    <optional>
+      <attribute name="pub-id-type"/>
+    </optional>
+  </define>
+  <!-- DATE (HISTORICAL) ATTRIBUTES -->
+  <!--
+    date-type  Attribute should only be used if the type
+    is known, otherwise omit the attribute. 
+    Suggested values include:
+      accepted    - Date manuscript was 
+                    accepted         
+      received    - Date manuscript received
+      rev-request - Date revisions were 
+                    requested or manuscript 
+                    was returned
+      rev-recd    - Date revised manuscript 
+                    was received
+  -->
+  <define name="date-atts">
+    <optional>
+      <attribute name="date-type"/>
+    </optional>
+  </define>
+  <!-- PUBLICATION IDENTIFIER ATTRIBUTES -->
+  <!-- Attributes for the <pub-id> element -->
+  <define name="pub-id-atts">
+    <optional>
+      <attribute name="pub-id-type"/>
+    </optional>
+  </define>
+  <!-- X(CROSS) REFERENCE ATTRIBUTES -->
+  <!-- Attribute list for cross references -->
+  <define name="xref-atts">
+    <optional>
+      <attribute name="id">
+        <data type="ID"/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="ref-type"/>
+    </optional>
+    <optional>
+      <attribute name="rid">
+        <data type="IDREFS"/>
+      </attribute>
+    </optional>
+  </define>
+</grammar>
+<!-- ================== End Archiving Content/ATT Over-rides ===== -->

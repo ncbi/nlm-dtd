@@ -1,0 +1,171 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Chemical Structure Wrapper</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;chem-struct-wrap&gt;</h1>
+         <h1 class="elementname">Chemical Structure Wrapper</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Wrapper element for a chemical expression, reaction, equation, etc. that is set apart from the text, and for any number or
+            caption that accompanies the chemical expression. The chemical expressions inside this element may be formally tagged as <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> elements or merely expressed as one or more display objects.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-65g0.html" target="main" title="Position"><span class="attrtag">@position</span></a> attribute may be used to indicate whether this element must be anchored at its exact location within the text or whether
+            it may float, for example, to the top of the next page, into the next column, to the end of a logical file, or within a separate
+            window.
+            
+         </p>
+         <p class="para">A <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> does not typically include any number or label since this can be numbered automatically by a formatting application.
+            
+         </p>
+         <p class="para">This element (<span class="elementtag">&lt;chem-struct-wrap&gt;</span>) has been significantly remodeled in version 3.0 of the Tag Set. The values and/or usage in version 3.0 are not backward-compatible
+            with that in previous versions of the Tag Set. Specifically, the <span class="elementtag">&lt;chem-struct-wrap&gt;</span> element replaces the <tt>&lt;chem-struct-wrapper&gt;</tt> element, which is no longer available.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-hmf0.html" target="main"><span class="attrtag">Orientation</span></a> <a href="n-hmf0.html" target="main"><span class="attrname">Orientation</span></a></h5>
+         <h5 class="header"><a href="n-65g0.html" target="main"><span class="attrtag">position</span></a> <a href="n-65g0.html" target="main"><span class="attrname">Position</span></a></h5>
+         <h5 class="header"><a href="n-vwn0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-vwn0.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The expression of a chemical reaction or other chemical structure goes inside the <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> element. The related element <a href="n-jnc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a> is an outer wrapper that may hold, for example, both a chemical reaction and its caption or three related chemical expressions.
+            In other words, this element does not contain a chemical expression; it contains other elements (such as <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a>s) that contain such expressions.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  chem-struct-wrap            
+                        <a href="n-zdd0.html" target="main" title="Chemical Structure Wrapper Model"><span class="petag">%chem-struct-wrap-model;</span></a>                     &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">((object-id)*, (caption)?, 
+(alt-text | long-desc)*, 
+(alternatives | chem-struct | graphic | media | preformat | textual-form)+, 
+attrib?, permissions?)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-g3w0.html" target="main" title="Object Identifier"><span class="elementtag">&lt;object-id&gt;</span></a> <a href="n-g3w0.html" target="main" title="<object-id&gt;"><span class="elementname">Object Identifier</span></a>, zero or more
+               </li>
+               <li>
+                  <a href="n-5vc0.html" target="main" title="Caption of a Figure, Table, Etc."><span class="elementtag">&lt;caption&gt;</span></a> <a href="n-5vc0.html" target="main" title="<caption&gt;"><span class="elementname">Caption of a Figure, Table, Etc.</span></a>, zero or one
+               </li>
+               <li>Any combination of:
+                  <ul class="bullist">
+                     <li>All the accessibility elements:
+                        <ul class="bullist">
+                           <li>
+                              <a href="n-nc20.html" target="main" title="Alternate Title Text (For a Figure, Etc.)"><span class="elementtag">&lt;alt-text&gt;</span></a> <a href="n-nc20.html" target="main" title="<alt-text&gt;"><span class="elementname">Alternate Title Text (For a Figure, Etc.)</span></a>
+                              
+                           </li>
+                           <li>
+                              <a href="n-jku0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a> <a href="n-jku0.html" target="main" title="<long-desc&gt;"><span class="elementname">Long Description</span></a>
+                              
+                           </li>
+                        </ul>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>One or more of any of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-7k20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> <a href="n-7k20.html" target="main" title="<alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-57c0.html" target="main" title="<chem-struct&gt;"><span class="elementname">Chemical Structure (Display)</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-tb80.html" target="main" title="<graphic&gt;"><span class="elementname">Graphic</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-f3u0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-f3u0.html" target="main" title="<media&gt;"><span class="elementname">Media Object</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-t9w0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-t9w0.html" target="main" title="<preformat&gt;"><span class="elementname">Preformatted Text</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-89s0.html" target="main" title="Textual Form"><span class="elementtag">&lt;textual-form&gt;</span></a> <a href="n-89s0.html" target="main" title="<textual-form&gt;"><span class="elementname">Textual Form</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-6n20.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-6n20.html" target="main" title="<attrib&gt;"><span class="elementname">Attribution</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-nyw0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-nyw0.html" target="main" title="<permissions&gt;"><span class="elementname">Permissions</span></a>, zero or one
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-b820.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-hq20.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-im20.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-xya0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-myu0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-sx40.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-5us0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+<strong><span class="focus">&lt;chem-struct-wrap&gt;
+&lt;caption&gt;
+&lt;p&gt;Chemical equation for the oxidation of glucose into
+cardon dioxide and water. Unlike combustion, metabolic
+pathways involving glycolysis and respiration control
+the release of energy during oxidation, thereby permitting
+its storage in ATP molecules.  This slow release of energy
+via chain reactions with multiple steps can be grouped
+into four stages.&lt;/p&gt;
+&lt;/caption&gt;
+&lt;alternatives&gt;
+&lt;graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="pq0209587032" specific-use="internet"&gt;&lt;/graphic&gt;
+&lt;chem-struct&gt;C&lt;sub&gt;6&lt;/sub&gt;H&lt;sub&gt;12&lt;/sub&gt;O&lt;sub&gt;6&lt;/sub&gt; &amp;plus;
+6 O&lt;sub&gt;2&lt;/sub&gt; &amp;xrarr; 6 CO&lt;sub&gt;2&lt;/sub&gt; &amp;plus; 6 H&lt;sub&gt;2&lt;/sub&gt;O
+&lt;/chem-struct&gt;
+&lt;/alternatives&gt;
+&lt;/chem-struct-wrap&gt;</span></strong>
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">display3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

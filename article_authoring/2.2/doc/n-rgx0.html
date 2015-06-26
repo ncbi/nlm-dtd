@@ -1,0 +1,208 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Translated Title</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;trans-title&gt;</h1>
+         <h1 class="elementname">Translated Title</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Within a bibliographic reference (<a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>), the <a href="n-rgx0.html"><span class="elementtag">&lt;trans-title&gt;</span></a> element contains the title of a cited article, but with the article title given in a different language from that given in
+            the <a href="n-hi20.html"><span class="elementtag">&lt;article-title&gt;</span></a> element. For example, if an article is originally in French, the <a href="n-hi20.html"><span class="elementtag">&lt;article-title&gt;</span></a> element would contain the French title, and the <a href="n-rgx0.html"><span class="elementtag">&lt;trans-title&gt;</span></a> might contain, for example, the equivalent English title.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">In bibliographic references, translated subtitles should be wrapped into the translated titles.</p>
+         <p class="para">Cited, translated <em>book titles</em> are tagged with the <a href="n-vex0.html"><span class="elementtag">&lt;trans-source&gt;</span></a> element.
+         </p>
+         <p class="para">For extensive examples of formatted <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-rgx0.html"><span class="elementtag">&lt;trans-title&gt;</span></a>s in <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-qst0.html"><span class="attrtag">xml:lang</span></a> <a href="n-qst0.html"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  trans-title  (#PCDATA %title-elements;)*                  &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-z350.html"><span class="elementname">Email Address</span></a> <a href="n-z350.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-c850.html"><span class="elementname">External Link</span></a> <a href="n-c850.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-3yx0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-3yx0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-55c0.html"><span class="elementname">Bold</span></a> <a href="n-55c0.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-r580.html"><span class="elementname">Italic</span></a> <a href="n-r580.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-b680.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-b680.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-d5a0.html"><span class="elementname">Overline</span></a> <a href="n-d5a0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-svu0.html"><span class="elementname">Small Caps</span></a> <a href="n-svu0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-9qu0.html"><span class="elementname">Strike Through</span></a> <a href="n-9qu0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-krx0.html"><span class="elementname">Underline</span></a> <a href="n-krx0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-eb50.html"><span class="elementname">Graphic, Inline</span></a> <a href="n-eb50.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-gp50.html"><span class="elementname">Formula, Inline</span></a> <a href="n-gp50.html"><span class="elementtag">&lt;inline-formula&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-m320.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-m320.html"><span class="elementtag">&lt;abbrev&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-uj80.html"><span class="elementname">Named Special (Subject) Content</span></a> <a href="n-uj80.html"><span class="elementtag">&lt;named-content&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the simple link/cross-referencing elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-vt50.html"><span class="elementname">Footnote</span></a> <a href="n-vt50.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-urw0.html"><span class="elementname">Target of an Internal Link</span></a> <a href="n-urw0.html"><span class="elementtag">&lt;target&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-dmx0.html"><span class="elementname">X(cross) Reference</span></a> <a href="n-dmx0.html"><span class="elementtag">&lt;xref&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-qmu0.html"><span class="elementname">Subscript</span></a> <a href="n-qmu0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-z8w0.html"><span class="elementname">Superscript</span></a> <a href="n-z8w0.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-kvc0.html"><span class="elementname">Line Break</span></a> <a href="n-kvc0.html"><span class="elementtag">&lt;break&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-igc0.html"><span class="elementname">Citation</span></a>; <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-m980.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-wha0.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-wha0.html"><span class="elementname">Product Information</span></a>; <a href="n-i2u0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-i2u0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+</pre><p class="examp.desc">In a NLM-style bibliographic citation:</p><pre class="taggedtext">
+
+...
+&lt;ref&gt;
+&lt;nlm-citation citation-type="journal"&gt;
+&lt;person-group&gt;
+&lt;name&gt;
+&lt;surname&gt;Massone&lt;/surname&gt;
+&lt;given-names&gt;L&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name&gt;
+&lt;surname&gt;Borghi&lt;/surname&gt;
+&lt;given-names&gt;S&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name&gt;
+&lt;surname&gt;Pestarino&lt;/surname&gt;
+&lt;given-names&gt;A&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name&gt;
+&lt;surname&gt;Piccini&lt;/surname&gt;
+&lt;given-names&gt;R&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name&gt;
+&lt;surname&gt;Gambini&lt;/surname&gt;
+&lt;given-names&gt;C&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title xml:lang="fr"&gt;Localisations palmaires purpurioques de la 
+dermatitie herpetiforme&lt;/article-title&gt;
+<strong><span class="focus">&lt;trans-title&gt;Purpuric palmar sites of dermatitis herpetiformis&lt;/trans-title&gt;</span></strong>
+&lt;source&gt;Ann Dermatol Vernerol&lt;/source&gt;
+&lt;year&gt;1987&lt;/year&gt;
+&lt;volume&gt;114&lt;/volume&gt;
+&lt;issue&gt;12&lt;/issue&gt;
+&lt;fpage&gt;1545&lt;/fpage&gt;
+&lt;lpage&gt;1547&lt;/lpage&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+...
+
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

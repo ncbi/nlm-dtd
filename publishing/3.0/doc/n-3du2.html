@@ -1,0 +1,85 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Technical Change Report</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="section">
+         <h3 class="header">Technical Change Report</h3>
+         <p class="para">This section describes the changes between Version 2.3 and Version 3.0 of the Publishing Tag Set and the Archiving and Interchange
+            Tag Suite base modules. The changes are described in terms of the DTD modules, since the DTD is the primary modeling mechanism
+            and the XSD and RELAX NG schemas are derived from these modules. First the base Suite changes are described, which are used
+            by all Tag Sets unless explicitly overridden. An example of such a universal change is changing the name of a base module
+            or the name of an element used in all the Tag Sets. Then the Publishing-specific changes are described.
+         </p>
+         <p class="para">Version 3.0 of these Tag Sets is a departure from all previous releases. All prior versions of the Tag Sets have been document-backward
+            compatible, meaning that, although the Tag Sets have been modified several times, a document that was valid to one version
+            of the tag
+            sets was valid in all subsequent versions. All new elements and structures have, in previous versions, been made optional
+            so there was never a need to modify the backfile to be conformant to the latest Tag Set. In Version 3.0 for the first time,
+            changes have been made that
+            render documents that were valid to a prior version invalid to 3.0. The idea was to make the Tag Sets as logical, internally
+            consistent, and complete as possible going forward. Therefore, users of previous versions, if they choose to accept and integrate
+            Version 3.0, will require changes to the backfile to make it compliant or a before-3.0-and-after-3-0 divergence in their repository.
+            The decision to update to Version 3.0 is left up to each publisher and archive. 
+         </p>
+         <p class="para">The type of changes that cause a document valid according to a previous version to be invalid in Version 3.0 include:
+            
+            <ul class="bullist">
+               <li><strong>Element name changes</strong> — An element that has been in the Tag Sets from the beginning has had its name changed, for example <tt>chem-struct-wrapper</tt> has been renamed to be <a href="n-3y30.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>.
+               </li>
+               <li><strong>New container elements</strong> — Many elements that were direct children of their parents are now grouped together in new container elements. For example,
+                  translated titles and subtitles are now grouped into a single, overarching container so that a title and its subtitle can
+                  be distinguished form all other title/subtitle pairs. 
+                  <ul class="bullist">
+                     <li>Children grouped — Many elements that used to be direct children of their parents are now grouped together in new container
+                        elements. For example, all translated titles used to be followed by all translated subtitles. Now, a translated title and
+                        its subtitle are grouped into a single, overarching container so that a title and its subtitle can be distinguished from all
+                        other title/subtitle pairs.
+                     </li>
+                     <li>Model tightening — When new features were added to previous versions of these Tag Sets, for example, when a new container
+                        element was added to contain elements that had previously been direct children, then both the container and the direct children
+                        were allowed in the model, for reasons of backward compatibility. This version removed such duplication and allows only the
+                        grouped  version, for example, the <a href="n-dz50.html" target="main" title="Copyright Statement"><span class="elementtag">&lt;copyright-statement&gt;</span></a> inside <a href="n-c2c0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a> is now allowed only inside <a href="n-b2s0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> and not also as a direct child of <a href="n-c2c0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>.
+                     </li>
+                  </ul>
+               </li>
+               <li><strong>Replacement elements</strong> — Some elements have been replaced by more general or more functional alternatives, for example:
+                  <ul class="bullist">
+                     <li>The simple <tt>grant-num</tt> and <tt>grant-sponsor</tt> were deleted in favor of a more full-bodied funding model that includes, for example, sponsorship statements, principal investigator,
+                        and access charge information.
+                     </li>
+                     <li>The very specific <a href="n-6wn0.html" target="main" title="Time Stamp for Cited Work"><span class="elementtag">&lt;time-stamp&gt;</span></a> and <a href="n-dh00.html" target="main" title="Access Date for Cited Work"><span class="elementtag">&lt;access-date&gt;</span></a> elements within a citation were replaced with a more general <a href="n-ce80.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> that can be used to tag all dates except publication dates within a citation. The date type of this new date should be identified
+                        with a type attribute.
+                     </li>
+                     <li>The elements identifying a citation within a reference list have been renamed and remodeled. The only holdover from previous
+                        Tag Sets is the <a href="n-hzv0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, which will now be deprecated in favor of the <a href="n-8xa0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> element.
+                     </li>
+                  </ul>
+               </li>
+               <li><strong>Module name changes</strong> — For the first time, the DTD and schema module names include the version of the Tag Set being defined, for example “<tt>list3.ent</tt>” where the old name was “<a href="n-mfm0.html" target="main" title="List Elements Module"><span class="petag">%list.ent;</span></a>”. 
+               </li>
+            </ul>
+         </p>
+         <p class="para">In current planning, the subsequent 3.x releases will be backward-compatilble with Version 3.0, so that the Tag Sets will
+            be back to the pattern of incremental, backward-compatible growth.
+         </p>
+         <h3 class="header">Subsidiary sections:</h3>
+         <h4 class="header"><a href="n-dru2.html">Changes to All Tag Sets</a></h4>
+         <h4 class="header"><a href="n-tav2.html">Publishing Changes</a></h4>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

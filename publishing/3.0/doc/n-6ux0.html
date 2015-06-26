@@ -1,0 +1,109 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Element: Keyword Group</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;kwd-group&gt;</h1>
+         <h1 class="elementname">Keyword Group</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Container element for one set of keywords (<a href="n-28x0.html" target="main" title="Keyword"><span class="elementtag">&lt;kwd&gt;</span></a>s) used to describe a document
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">For a detailed discussion on the use of <span class="elementtag">&lt;kwd-group&gt;</span>, see <a href="n-zk32.html#tag-keywords">Keywords</a>.
+            
+         </p>
+         <p class="para">A document may have multiple sets of keywords, with the <a href="n-q2h0.html" target="main" title="Keyword Authority"><span class="attrtag">@kwd-group-type</span></a> attribute used to discriminate between them. The <a href="n-q2h0.html" target="main" title="Keyword Authority"><span class="attrtag">@kwd-group-type</span></a> attribute most commonly names the source of the keywords, such as “MESH”, “ISO-463”, or “author-generated”. But it is also
+            appropriate to use <a href="n-q2h0.html" target="main" title="Keyword Authority"><span class="attrtag">@kwd-group-type</span></a> to record the type of keywords, for example, “hierarchical” for keywords that are grouped into a hierarchy, “abbreviations”
+            for keywords that contain an abbreviation and its expansion, or “code” for keywords that contain a code and its text but where
+            the source of the codes is unknown.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-gyr0.html" target="main"><span class="attrtag">id</span></a> <a href="n-gyr0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-q2h0.html" target="main"><span class="attrtag">kwd-group-type</span></a> <a href="n-q2h0.html" target="main"><span class="attrname">Keyword Authority</span></a></h5>
+         <h5 class="header"><a href="n-6qy0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-6qy0.html" target="main"><span class="attrname">Language</span></a></h5>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  kwd-group    <a href="n-yxm0.html" target="main" title="Keyword Group Model"><span class="petag">%kwd-group-model;</span></a>                            &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2><pre class="contentdesc">(label?, title?, 
+(kwd | compound-kwd)+)</pre></div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>
+                  <a href="n-axx0.html" target="main" title="Label (Of a Figure, Reference, Etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-axx0.html" target="main" title="<label&gt;"><span class="elementname">Label (Of a Figure, Reference, Etc.)</span></a>, zero or one
+               </li>
+               <li>
+                  <a href="n-hxn0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-hxn0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one
+               </li>
+               <li>One or more of any of:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-28x0.html" target="main" title="Keyword"><span class="elementtag">&lt;kwd&gt;</span></a> <a href="n-28x0.html" target="main" title="<kwd&gt;"><span class="elementname">Keyword</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-xu50.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a> <a href="n-xu50.html" target="main" title="<compound-kwd&gt;"><span class="elementname">Compound Keyword</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-c2c0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-tfu0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a>, <a href="n-jf70.html" target="main" title="Section Metadata"><span class="elementtag">&lt;sec-meta&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;
+...
+&lt;abstract&gt;...
+&lt;/abstract&gt;
+<strong><span class="focus">&lt;kwd-group kwd-group-type="author"&gt;
+&lt;kwd&gt;DNA analysis&lt;/kwd&gt;
+&lt;kwd&gt;gene expression&lt;/kwd&gt;
+
+&lt;kwd&gt;parallel cloning&lt;/kwd&gt;
+&lt;kwd&gt;fluid microarray&lt;/kwd&gt;
+&lt;/kwd-group&gt;</span></strong>
+&lt;/article-meta&gt;
+&lt;/front&gt;
+...&lt;/article&gt;
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

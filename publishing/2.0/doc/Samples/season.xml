@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for NLM Citation Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<?mtl /hellip?>
+<article-meta>
+<?mtl hellip?><article-categories></article-categories><?mtl /hellip?>
+<title-group>
+<article-title>Raptor Science</article-title>
+<subtitle>Capturing Cosmological “Winks”</subtitle>
+</title-group>
+<contrib-group>
+<contrib>
+<name><surname>Fishbone</surname>
+<given-names>Brian</given-names></name>
+</contrib>
+</contrib-group>
+<pub-date pub-type="epub-ppub">
+<season>Fall</season>
+<year>2003</year>
+</pub-date>
+<volume><?mtl hellip?><?mtl /hellip?></volume>
+<fpage>35</fpage>
+<?mtl hellip?><?mtl /hellip?>
+</article-meta>
+<?mtl hellip?></front>
+</article><?mtl /hellip?>

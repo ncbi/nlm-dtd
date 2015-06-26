@@ -1,0 +1,317 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Collaborative (Group) Author</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;collab&gt;</h1>
+         <h1 class="elementname">Collaborative (Group) Author</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A group of authors (contributors) credited under one name, either as a
+                   collaboration in the strictest sense, or when an organization, institution, or
+                   corporation is the author
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Not to be confused with the element <a href="n-k3a0.html"><span class="elementtag">&lt;contrib-group&gt;</span></a> which is just a wrapper element that
+                   holds information such as the names and affiliations of a group of individual
+                   contributors.
+         </p>
+         <p class="para">This element may be used within bibliographic references (<a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> and <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>). For extensive examples of formatted <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-q750.html"><span class="elementtag">&lt;collab&gt;</span></a>s in <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-76i0.html"><span class="attrtag">collab-type</span></a> <a href="n-76i0.html"><span class="attrname">Type of Collaboration</span></a></h5>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-5yp0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-5yp0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-mjp0.html"><span class="attrtag">xlink:href</span></a> <a href="n-mjp0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-yqp0.html"><span class="attrtag">xlink:role</span></a> <a href="n-yqp0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-a9p0.html"><span class="attrtag">xlink:show</span></a> <a href="n-a9p0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-5zp0.html"><span class="attrtag">xlink:title</span></a> <a href="n-5zp0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-dkq0.html"><span class="attrtag">xlink:type</span></a> <a href="n-dkq0.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-naq0.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-naq0.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  collab       (#PCDATA %collab-elements;)*                 &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-chu0.html"><span class="elementname">Email Address</span></a> <a href="n-chu0.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ekw0.html"><span class="elementname">External Link</span></a> <a href="n-ekw0.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-8yr0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-8yr0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the article linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-6xv0.html"><span class="elementname">Inline Supplementary Material</span></a> <a href="n-6xv0.html"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a> <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-4iw0.html"><span class="elementname">Font</span></a> <a href="n-4iw0.html"><span class="elementtag">&lt;font&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-g3v0.html"><span class="elementname">Horizontal Rule</span></a> <a href="n-g3v0.html"><span class="elementtag">&lt;hr&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-n730.html"><span class="elementname">Bold</span></a> <a href="n-n730.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-c9v0.html"><span class="elementname">Italic</span></a> <a href="n-c9v0.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cvs0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-cvs0.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-y8t0.html"><span class="elementname">Overline</span></a> <a href="n-y8t0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-w4t0.html"><span class="elementname">Overline Start</span></a> <a href="n-w4t0.html"><span class="elementtag">&lt;overline-start&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cvt0.html"><span class="elementname">Overline End</span></a> <a href="n-cvt0.html"><span class="elementtag">&lt;overline-end&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hqe0.html"><span class="elementname">Sans Serif</span></a> <a href="n-hqe0.html"><span class="elementtag">&lt;sans-serif&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-bze0.html"><span class="elementname">Small Caps</span></a> <a href="n-bze0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-gyg0.html"><span class="elementname">Strike Through</span></a> <a href="n-gyg0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-fgr0.html"><span class="elementname">Underline</span></a> <a href="n-fgr0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cir0.html"><span class="elementname">Underline Start</span></a> <a href="n-cir0.html"><span class="elementtag">&lt;underline-start&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-zrr0.html"><span class="elementname">Underline End</span></a> <a href="n-zrr0.html"><span class="elementtag">&lt;underline-end&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-dwv0.html"><span class="elementname">Graphic, Inline</span></a> <a href="n-dwv0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-3t70.html"><span class="elementname">Private Character (Custom or Unicode)</span></a> <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-x5v0.html"><span class="elementname">Formula, Inline</span></a> <a href="n-x5v0.html"><span class="elementtag">&lt;inline-formula&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-f7d0.html"><span class="elementname">Tex Math Equation</span></a> <a href="n-f7d0.html"><span class="elementtag">&lt;tex-math&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-6xs0.html"><span class="elementname">Math (Mathml 2.0 Tag Set)</span></a> <a href="n-6xs0.html"><span class="elementtag">&lt;mml:math&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-5900.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-5900.html"><span class="elementtag">&lt;abbrev&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-tws0.html"><span class="elementname">Milestone End</span></a> <a href="n-tws0.html"><span class="elementtag">&lt;milestone-end&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-kxs0.html"><span class="elementname">Milestone Start</span></a> <a href="n-kxs0.html"><span class="elementtag">&lt;milestone-start&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-ifs0.html"><span class="elementname">Named Special (Subject) Content</span></a> <a href="n-ifs0.html"><span class="elementtag">&lt;named-content&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the simple link/cross-referencing elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-crw0.html"><span class="elementname">Footnote</span></a> <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hj60.html"><span class="elementname">Target of an Internal Link</span></a> <a href="n-hj60.html"><span class="elementtag">&lt;target&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-beh0.html"><span class="elementname">X(cross) Reference</span></a> <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-pan0.html"><span class="elementname">Subscript</span></a> <a href="n-pan0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-w9n0.html"><span class="elementname">Superscript</span></a> <a href="n-w9n0.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-4i30.html"><span class="elementname">Line Break</span></a> <a href="n-4i30.html"><span class="elementtag">&lt;break&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-bsh0.html"><span class="elementname">X - Generated Text and Punctuation</span></a> <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-hz80.html"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-hz80.html"><span class="elementname">Contributor</span></a>; <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-2is0.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-zqt0.html"><span class="elementtag">&lt;person-group&gt;</span></a> <a href="n-zqt0.html"><span class="elementname">Person Group for a Cited Publication</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference (punctuation and spacing removed):</p><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;
+...
+&lt;/front&gt;
+&lt;body&gt;...
+&lt;p&gt;Geriatric day hospitals developed rapidly in the United Kingdom in the
+1960s as an important component of care provision. ...
+Although there is considerable descriptive literature on day hospital
+care,&lt;xref ref-type="bibr" rid="B1"&gt;1&lt;/xref&gt; concern has been expressed
+that evidence for effectiveness is equivocal and that day hospital care
+is expensive.&lt;xref ref-type="bibr" rid="B2"&gt;2&lt;/xref&gt; ...&lt;/p&gt;...
+&lt;/body&gt;
+&lt;back&gt;...
+&lt;ref-list&gt;
+&lt;ref id="B1"&gt;&lt;label&gt;1&lt;/label&gt;
+&lt;citation citation-type="book"&gt;
+<strong><span class="focus">&lt;collab&gt;Research Unit of the Royal
+College of Physicians and British
+Geriatric Society&lt;/collab&gt;</span></strong>
+&lt;source&gt;Geriatric day hospitals: their role
+and guidelines for good
+practice&lt;/source&gt;
+&lt;publisher-loc&gt;London&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;RCP&lt;/publisher-name&gt;
+&lt;year&gt;1994&lt;/year&gt;
+&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B2"&gt;...&lt;/ref&gt;
+...
+&lt;/ref-list&gt;...
+&lt;/back&gt;
+&lt;/article&gt;
+
+
+    </pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+</pre><p class="examp.desc">In a bibliographic reference (punctuation and spacing preserved):</p><pre class="taggedtext">
+    
+&lt;article&gt;
+&lt;front&gt;
+...
+&lt;/front&gt;
+&lt;body&gt;...
+&lt;p&gt;Geriatric day hospitals developed rapidly in the United Kingdom in the
+1960s as an important component of care provision. ...
+Although there is considerable descriptive literature on day hospital
+care,&lt;xref ref-type="bibr" rid="B1"&gt;1&lt;/xref&gt; concern has been expressed
+that evidence for effectiveness is equivocal and that day hospital care
+is expensive.&lt;xref ref-type="bibr" rid="B2"&gt;2&lt;/xref&gt; ...&lt;/p&gt;...
+&lt;/body&gt;
+&lt;back&gt;...
+&lt;ref-list&gt;
+&lt;ref id="B1"&gt;&lt;label&gt;1&lt;/label&gt;
+&lt;citation citation-type="book"&gt;
+<strong><span class="focus">&lt;collab&gt;Research Unit of the Royal
+College of Physicians and British
+Geriatric Society&lt;/collab&gt;</span></strong>.
+&lt;source&gt;Geriatric day hospitals: their role
+and guidelines for good
+practice&lt;/source&gt;.
+&lt;publisher-loc&gt;London&lt;/publisher-loc&gt;:
+&lt;publisher-name&gt;RCP&lt;/publisher-name&gt;;
+&lt;year&gt;1994&lt;/year&gt;.
+&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B2"&gt;...&lt;/ref&gt;
+...
+&lt;/ref-list&gt;...
+&lt;/back&gt;
+&lt;/article&gt;
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

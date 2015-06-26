@@ -1,0 +1,134 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Chemical Structure Wrapper</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;chem-struct-wrapper&gt;</h1>
+         <h1 class="elementname">Chemical Structure Wrapper</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Wrapper element for a chemical expression, reaction, chemical equation, etc. that is set apart within the text, and for any
+            caption that accompanies the chemical expression. The chemical expressions inside this  element may be formally tagged as
+            <a href="n-b4c0.html"><span class="elementtag">&lt;chem-struct&gt;</span></a> elements or merely expressed as one or more graphics.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-xcs0.html"><span class="attrtag">position</span></a> attribute may be used to indicate whether this element must be anchored at its exact location within the text or whether
+            it may float, for example, to the top of the next page, into the next column, to the end of a logical file, or within a separate
+            window.
+         </p>
+         <p class="para">A <a href="n-nec0.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a> does not typically include any number or label since this can be numbered automatically by a formatting application.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-79v0.html"><span class="attrtag">content-type</span></a> <a href="n-79v0.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-9740.html"><span class="attrtag">id</span></a> <a href="n-9740.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-xcs0.html"><span class="attrtag">position</span></a> <a href="n-xcs0.html"><span class="attrname">Position</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The expression of a chemical reaction or other chemical structure goes inside the <a href="n-b4c0.html"><span class="elementtag">&lt;chem-struct&gt;</span></a> element. The related element <a href="n-nec0.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a> is an outer wrapper that may hold, for example, both a chemical reaction and its caption or three related chemical expressions.
+            In other words, this element does not contain a chemical expression; it contains other elements (such as <a href="n-b4c0.html"><span class="elementtag">&lt;chem-struct&gt;</span></a>s) that contain such expressions.
+         </p>
+         <p class="para">Implementor&#8217;s Note: If CML is added, it will go within the related element <a href="n-b4c0.html"><span class="elementtag">&lt;chem-struct&gt;</span></a>.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  chem-struct-wrapper
+                        %chem-struct-wrapper-model;                  &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-m2a0.html"><span class="elementname">Object Identifier</span></a> <a href="n-m2a0.html"><span class="elementtag">&lt;object-id&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-ivc0.html"><span class="elementname">Caption of a Figure, Table, Etc.</span></a> <a href="n-ivc0.html"><span class="elementtag">&lt;caption&gt;</span></a>, zero or one
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>All the accessibility elements:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-te20.html"><span class="elementname">Alternate Title Text (For a Figure, Etc.)</span></a> <a href="n-te20.html"><span class="elementtag">&lt;alt-text&gt;</span></a>
+                                                                  
+                              </li>
+                              <li>
+                                                                     <a href="n-n780.html"><span class="elementname">Long Description</span></a> <a href="n-n780.html"><span class="elementtag">&lt;long-desc&gt;</span></a>
+                                                                  
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>One or more of any of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-b4c0.html"><span class="elementname">Chemical Structure (Display)</span></a> <a href="n-b4c0.html"><span class="elementtag">&lt;chem-struct&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-vi50.html"><span class="elementname">Graphic</span></a> <a href="n-vi50.html"><span class="elementtag">&lt;graphic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-mf80.html"><span class="elementname">Media Object</span></a> <a href="n-mf80.html"><span class="elementtag">&lt;media&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-s6a0.html"><span class="elementname">Preformatted Text</span></a> <a href="n-s6a0.html"><span class="elementtag">&lt;preformat&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-tq20.html"><span class="elementname">Attribution</span></a> <a href="n-tq20.html"><span class="elementtag">&lt;attrib&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-pea0.html"><span class="elementname">Permissions</span></a> <a href="n-pea0.html"><span class="elementtag">&lt;permissions&gt;</span></a>, zero or one
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-5g20.html"><span class="elementtag">&lt;app&gt;</span></a> <a href="n-5g20.html"><span class="elementname">Appendix</span></a>; <a href="n-e2c0.html"><span class="elementtag">&lt;body&gt;</span></a> <a href="n-e2c0.html"><span class="elementname">Body of the Article</span></a>; <a href="n-8uc0.html"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-8uc0.html"><span class="elementname">Boxed Text</span></a>; <a href="n-uj80.html"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-uj80.html"><span class="elementname">Named Special (Subject) Content</span></a>; <a href="n-nua0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-nua0.html"><span class="elementname">Paragraph</span></a>; <a href="n-w7u0.html"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-w7u0.html"><span class="elementname">Section</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">No sample is available at this time, as this element is rare
+in STM journal publishing, being more commonly used in STM books.</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">display.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,147 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Attribute: Type of Cross Reference</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2003-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">ref-type</h1>
+         <h1 class="attrname">Type of Cross Reference</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Indicates the type of element to which a cross reference is
+                   pointing (e.g., to a figure, an author note, a bibliographic reference
+                   citation, etc.). These values may be used for type-specific processing or
+                   validation.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-s8t0.html"><span class="elementtag">&lt;xref&gt;</span></a> element may be used to reference anything that has an <a href="n-hq70.html"><span class="attrname">Identifier</span></a> <a href="n-hq70.html"><span class="attrtag">id</span></a> attribute. This single element takes the place of the many named types of references (such as figure references, table references,
+            and footnote references) that are common in many journal DTDs. This attribute preserves the information from such DTDs concerning
+            the type of element to which the cross-reference is pointing.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5 class="heading"><a href="n-s8t0.html"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-s8t0.html"><span class="elementname">X(cross) Reference</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">aff</td>
+                  <td class="attrmeaning">Affiliation</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">app</td>
+                  <td class="attrmeaning">Appendix</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">author-notes</td>
+                  <td class="attrmeaning">Author notes</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">bibr</td>
+                  <td class="attrmeaning">Bibliographic reference (to a <a href="n-mx30.html"><span class="elementtag">&lt;citation&gt;</span></a>, <a href="n-9zu0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, or <a href="n-fvx0.html"><span class="elementtag">&lt;ref&gt;</span></a> element)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">boxed-text</td>
+                  <td class="attrmeaning">Textbox or sidebar</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">chem</td>
+                  <td class="attrmeaning">Chemical structure (to a <a href="n-2330.html"><span class="elementtag">&lt;chem-struct&gt;</span></a> or <a href="n-au30.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a> element)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">contrib</td>
+                  <td class="attrmeaning">Contributor.</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">corresp</td>
+                  <td class="attrmeaning">Corresponding author.</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">disp-formula</td>
+                  <td class="attrmeaning">Display formula.</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">fig</td>
+                  <td class="attrmeaning">Figure or group of figures (to a <a href="n-un80.html"><span class="elementtag">&lt;fig&gt;</span></a> or <a href="n-2i80.html"><span class="elementtag">&lt;fig-group&gt;</span></a> element)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">fn</td>
+                  <td class="attrmeaning">Footnote</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">kwd</td>
+                  <td class="attrmeaning">Keyword</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">list</td>
+                  <td class="attrmeaning">List or list item (to a <a href="n-w8u0.html"><span class="elementtag">&lt;list&gt;</span></a> or <a href="n-3au0.html"><span class="elementtag">&lt;list-item&gt;</span></a> element; also, possibly to a <a href="n-bm50.html"><span class="elementtag">&lt;def-list&gt;</span></a> or <a href="n-p950.html"><span class="elementtag">&lt;def-item&gt;</span></a> element)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">other</td>
+                  <td class="attrmeaning">None of the items listed.</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">plate</td>
+                  <td class="attrmeaning">Plate</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">scheme</td>
+                  <td class="attrmeaning">Scheme</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">sec</td>
+                  <td class="attrmeaning">Section</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">statement</td>
+                  <td class="attrmeaning">Statement</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">supplementary-material</td>
+                  <td class="attrmeaning">Supplementary information</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">table</td>
+                  <td class="attrmeaning">Table or group of tables (to a <a href="n-ke40.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> or <a href="n-cd40.html"><span class="elementtag">&lt;table-wrap-group&gt;</span></a> element)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">table-fn</td>
+                  <td class="attrmeaning">Table footnote</td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="pubdate">Version of 20041115</h4>
+      </div>
+   </body>
+</html>

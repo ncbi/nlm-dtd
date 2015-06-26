@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../ArchivingDTDforTaglib/archivearticle.dtd">
+<?mtl hellip?><article><front><article-meta></article-meta></front>
+<body><p><?xm-replace_text Type new p here ?></p></body><?mtl /hellip?>
+<back>
+<?mtl hellip?><?mtl /hellip?>
+<ref-list>
+<ref id="B1">
+<label>1</label>
+<citation><collab>Research Unit of the Royal
+College of Physicians and British Geriatric Society</collab>
+<source>Geriatric day hospitals: their role
+and guidelines for good practice.</source>
+<year>1994</year>
+<publisher-name>RCP</publisher-name>
+<publisher-loc>London</publisher-loc>.
+</citation>
+</ref>
+<?mtl hellip?><ref><citation></citation></ref>
+<ref><citation></citation></ref>
+<ref><citation></citation></ref><?mtl /hellip?>
+</ref-list>
+<?mtl hellip?><?mtl /hellip?>
+</back>
+<?mtl hellip?></article><?mtl /hellip?>

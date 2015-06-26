@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../ArchivingDTDforTaglib/archivearticle.dtd">
+<?mtl hellip?><article><front><article-meta></article-meta></front>
+<body><p></p></body>
+<back><?mtl /hellip?>
+<ref-list>
+<?mtl hellip?><?mtl /hellip?>
+<ref id="B8"><label>8</label>
+<citation>
+<name>
+<surname>Weissert</surname>
+<given-names>W</given-names></name>
+<name>
+<surname>Wan</surname>
+<given-names>T</given-names></name>
+<name>
+<surname>Livieratos</surname>
+<given-names>B</given-names></name>
+<name>
+<surname>Katz</surname>
+<given-names>S</given-names></name>
+<article-title>Effects and costs of day-care services
+for the chronically ill: a randomized experiment.</article-title>
+<source>Medical Care</source>
+<volume>18</volume>
+<year>1980</year>
+<fpage>567</fpage>
+<lpage>584</lpage>.
+<pub-id pub-id-type="pmid">6772889</pub-id>
+</citation>
+</ref>
+<?mtl hellip?><ref><citation></citation></ref>
+<ref><citation></citation></ref>
+<ref><citation></citation></ref><?mtl /hellip?>
+</ref-list>
+<?mtl hellip?></back>
+</article><?mtl /hellip?>

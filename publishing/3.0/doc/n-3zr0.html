@@ -1,0 +1,162 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="blue.css" type="text/css">
+      <title>Attribute: Type of Journal Identifier</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">journal-id-type</h1>
+         <h1 class="attrname">Type of Journal Identifier</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Names the type of journal identifier or the authority that created a particular journal identifier</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This Tag Set can record multiple journal identifiers, and best practice is to use this attribute to differentiate them. A
+            journal may have multiple identifiers, each unique to its own defining authority. For example, the value “<tt>doi</tt>” would indicate that the identifier is a Digital Object Identifier. The value “<tt>publisher-id</tt>” would indicate that the publisher of the article assigned this particular identifier, but would say nothing about what kind
+            of identifier it is. Similarly, the value “<tt>nlm-ta</tt>” would indicate that the identifier is the NLM Title Abbreviation.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5><a href="n-rzw0.html" target="main" title="Journal Identifier"><span class="elementtag">&lt;journal-id&gt;</span></a></h5>
+            <h5><a href="n-wut0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">Word or phrase that identifies the
+                     organization or service who assigned the identifier (for example,
+                     “<tt>index</tt>” to indicate an abstracting or indexing
+                     service) or names the type of identifier (for example, “<tt>doi</tt>”). This attribute may take any value, but see the list of suggested values below.
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+            <h4 class="header"><span class="headerlabel">Suggested usage</span></h4>
+            <p class="para">Although designed to accept any text as its value, the following are suggested journal identifier types for this attribute:
+               
+               <div class="deflist">
+                  <table class="deflisttable">
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>archive</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Identifier assigned by an archive or other repository for articles
+                              
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>aggregator</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Identifier assigned by a data aggregator
+                              
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>doaj</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Directory of Open Access Journals
+                              
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>doi</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Digital Object Identifier for the entire journal, not just for the article (rare)
+                              
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>index</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Identifier assigned by an abstracting or indexing service
+                              
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>issn</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">International Standard Serial Number for a journal (This value is generally used when referring to related articles.)
+                              
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>nlm-ta</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Identifier assigned by PubMed, for example, “Mol Biol Cell”, “Nucleic Acids Res”, etc. This value is typically the journal
+                              abbreviation and may be the same as the abbreviated journal title <a href="n-r600.html" target="main" title="Abbreviated Journal Title"><span class="elementtag">&lt;abbrev-journal-title&gt;</span></a>.
+                              
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row0">
+                        <td class="dterm">
+                           <p>pmc</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Identifier assigned by PubMed Central, for example, a PMC journal abbreviation such as “pnas”, “mbc”, “nar”, or “molcellb”,
+                              etc. This value is typically the journal abbreviation and may be the same as the abbreviated journal title <a href="n-r600.html" target="main" title="Abbreviated Journal Title"><span class="elementtag">&lt;abbrev-journal-title&gt;</span></a>.
+                              
+                           </p>
+                        </td>
+                     </tr>
+                     <tr class="row1">
+                        <td class="dterm">
+                           <p>publisher-id</p>
+                        </td>
+                        <td class="ddef">
+                           <p class="para">Identifier assigned by the content publisher, for example, “MOLEC” or “MOLCEL”
+                              
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               
+            </p>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,402 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Archiving and Interchange Suite XHTML Table Setup Module</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Archiving and Interchange Suite XHTML Table Setup Module</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    XHTML Table Setup Module                          --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.3 20070202//EN"
+     Delivered as file "XHTMLtablesetup.ent"                       --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    Provides the organization for using the XHTML 1.1 --&gt;
+&lt;!--             table model                                       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1) Invokes the inline style attribute module      --&gt;
+&lt;!--                  to pick up the "style" attribute             --&gt;
+&lt;!--             2) Overrides to standard parameter entities used  --&gt;
+&lt;!--                in the XHTML 1.1 table model                   --&gt;
+&lt;!--             3) Invokes the XHTML 1.1 table model              --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- MODULES REQUIRED:                                             --&gt;
+&lt;!--             1) XHTML inline style module                      --&gt;
+&lt;!--                  (-%xhtml-inlstyle-1.mod;)                    --&gt;
+&lt;!--             2) XHTML 1.1 table model (-%xhtml-table-1.mod;)   --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital archives and publishers who wish to       --&gt;
+&lt;!--             create a custom XML DTD for original markup of    --&gt;
+&lt;!--             journal literature, books, and related material,  --&gt;
+&lt;!--             or for archiving and transferring such material   --&gt;
+&lt;!--             between archives.                                 --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             This DTD is in the public domain. An organization --&gt;
+&lt;!--             that wishes to create its own DTD from the suite  --&gt;
+&lt;!--             may do so without permission from NLM.            --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             The suite has been set up to be extended using a  --&gt;
+&lt;!--             new DTD file and a new DTD-specific customization --&gt;
+&lt;!--             module to redefine the many Parameter Entities.   --&gt;
+&lt;!--             Do not modify the suite directly or redistribute  --&gt;
+&lt;!--             modified versions of the suite.                   --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             In the interest of maintaining consistency and    --&gt;
+&lt;!--             clarity for potential users, NLM requests:        --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             1. If you create a DTD from the Archiving and     --&gt;
+&lt;!--                Interchange DTD Suite and intend to stay       --&gt;
+&lt;!--                compatible with the suite, then please include --&gt;
+&lt;!--                the following statement as a comment in all of --&gt;
+&lt;!--                your DTD modules:                              --&gt;
+&lt;!--                   "Created from, and fully compatible with,   --&gt;
+&lt;!--                    the Archiving and Interchange DTD Suite."  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             2. If you alter one or more modules of the suite, --&gt;
+&lt;!--                then please rename your version and all its    --&gt;
+&lt;!--                modules to avoid any confusion with the        --&gt;
+&lt;!--                original suite. Also, please include the       --&gt;
+&lt;!--                following statement as a comment in all your   --&gt;
+&lt;!--                DTD modules:                                   --&gt;
+&lt;!--                   "Based in part on, but not fully compatible --&gt;
+&lt;!--                    with, the Archiving and Interchange DTD    --&gt; 
+&lt;!--                    Suite."                                    --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             the DTD suite should be sent in email to:         --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             December 2002                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Jeff Beck       (NCBI)                            --&gt;
+&lt;!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             Bruce Rosenblum (Inera Inc.)                      --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             NLM thanks the Harvard University Libraries, both --&gt;
+&lt;!--             for proposing that a draft archiving NLM DTD for  --&gt; 
+&lt;!--             life sciences journals be extended to accommodate --&gt;
+&lt;!--             journals in all disciplines and for sponsoring    --&gt;
+&lt;!--             Bruce Rosenblum's collaboration with other DTD    --&gt;
+&lt;!--             authors in completing Version 1.0. The Andrew W.  --&gt; 
+&lt;!--             Mellon Foundation provided support for these      --&gt; 
+&lt;!--             important contributions.                          --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  8. NEW VERSION OF XHTML TABLE MODULE
+  
+     a) Now using XHTML version 1.1: xhtml-table-1.mod v 4.1 
+     2001/04/10 09:42:30. The module "htmltable.dtd" was replaced 
+     with "xhtml-table-1.mod".
+     
+     b) A new module was added to hold the style attributes. No
+     content model or other attribute changes were made to the table
+     model. The :"style" attribute is one of the common attributes
+     (-%Common.attrib;) and used in all the table elements.
+     
+  7. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by NCBI   
+          
+  6. Minor, non-functional changes to wording in comments as part 
+     of 2.1 release.
+          
+  5. Updated public identifier to "v2.3 20070202" 
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-07-30)
+     
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+          
+  4. Updated public identifier to "v2.3 20070202"          
+
+     =============================================================
+     Version 1.1                           (TRG) v1.1 (2003-11-01)
+
+  3. Added attribute "alternate-form-of" to &lt;table&gt; 
+     (by modifying parameter entity %Common.attrib;)
+     Rationale: Where multiple formats of an item (e.g., graphic 
+     file, media object, chemical structure) are available, this 
+     attribute indicates that a format is a secondary one and 
+     provides a link to the primary format, so that only one 
+     format of an item is displayed.
+     
+  2. Added attribute "id" information to parameter entity 
+     %Common-attrib;  
+     Rationale: Provide unique identifier so these elements can be 
+     linked to, especially for one version of a table to be linked 
+     to by alternate versions of the same table.
+
+      
+  1. Added attribute "content-type" information to &lt;table&gt; 
+     (by modifying parameter entity %Common.attrib;)     
+     Rationale: To identify and preserve the semantic intent of 
+     semantically rich source documents.
+                                                                   --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PARAMETER ENTITY DEPENDENCIES             
+                        Requires the following parameter entities
+                        be defined before calling this module, 
+                        usually accomplished in the Customization
+                        Module for the specific DTD:
+                          %inside-cell; 
+                                                                   --&gt;
+&lt;!-- ============================================================= --&gt;
+                                                                   
+                                                                   
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    SET UP FOR THE XHTML 1.1 TABLE MODULE      --&gt;
+&lt;!-- ============================================================= --&gt;
+ 
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    THE XHTML TABLE STYLE ATTRIBUTE MODULE     --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    XHTML TABLE INLINE STYLE MODULE            --&gt;
+&lt;!--                    This module declares the 'style' attribute, 
+                        used to support inline style markup for the
+                        &lt;td&gt; and &lt;tr&gt; elements. Copyright 1998-2005 
+                        W3C (MIT, ERCIM, Keio), All Rights Reserved.
+                        Revision: $Id: xhtml-inlstyle-1.mod,v 4.0 
+                        2001/04/02 22:42:49 altheim Exp $
+                        PUBLIC identifier
+                        "-//W3C//ENTITIES XHTML Inline Style 1.0//EN"
+                        SYSTEM identifier
+                "http://www.w3.org/MarkUp/DTD/xhtml-inlstyle-1.mod"--&gt;
+%xhtml-inlstyle-1.mod;
+                                                                   
+                                                                   
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DEFAULTS FOR TABLE ELEMENT NAMES           --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!ENTITY % table.qname  "table"                                      &gt;
+&lt;!ENTITY % caption.qname  
+                        "caption"                                    &gt;
+&lt;!ENTITY % thead.qname  "thead"                                      &gt;
+&lt;!ENTITY % tfoot.qname  "tfoot"                                      &gt;
+&lt;!ENTITY % tbody.qname  "tbody"                                      &gt;
+&lt;!ENTITY % colgroup.qname  
+                        "colgroup"                                   &gt;
+&lt;!ENTITY % col.qname    "col"                                        &gt;
+&lt;!ENTITY % tr.qname     "tr"                                         &gt;
+&lt;!ENTITY % th.qname     "th"                                         &gt;
+&lt;!ENTITY % td.qname     "td"                                         &gt;
+                                                                   
+                                                                   
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DEFAULTS FOR DATATYPE PARAMETER ENTITIES   --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!ENTITY % Text.datatype  
+                        "CDATA"                                      &gt;
+
+
+&lt;!ENTITY % Number.datatype  
+                        "CDATA"                                      &gt;
+
+
+&lt;!ENTITY % MultiLength.datatype
+                        "CDATA"                                      &gt;
+
+
+&lt;!ENTITY % Length.datatype
+                        "CDATA"                                      &gt;
+
+
+&lt;!ENTITY % Pixels.datatype
+                        "CDATA"                                      &gt;
+
+
+&lt;!ENTITY % Character.datatype
+                        "CDATA"                                      &gt;
+                                                                   
+                                                                   
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DEFAULTS FOR ATTRIBUTE PARAMETER ENTITIES  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--         alternate-form-of
+                        Where multiple formats of an item (e.g., 
+                        graphic file, media object, chemical 
+                        structure) are available, this attribute 
+                        indicates that a format is a secondary 
+                        one and provides a link to the primary 
+                        format, so that only one format of an
+                        item is displayed.
+             content-type   
+                        Identification of the subject, type of
+                        content, or reason that this word or phrase
+                        is considered semantically special, as a 
+                        means of preserving the semantic intent of 
+                        the original tagging.       
+             id         Unique identifier so that the table can
+                        be referenced 
+             style      Defined in the PE -%Core.extra.attrib; and
+                        used to support inline style markup. This
+                        attribute is defined in the XHTML Table
+                        Inline Style Module called in with the PE:
+                           -%xhtml-inlstyle-1.mod
+                        which must be invoked before the attribute
+                        PE is used.                                --&gt;
+&lt;!ENTITY % Common.attrib
+              "id       ID                                #IMPLIED
+               alternate-form-of
+                        IDREF                             #IMPLIED
+               content-type
+                        CDATA                             #IMPLIED
+               %Core.extra.attrib;"                                  &gt;
+                                                                   
+                                                                   
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OVER-RIDES TO REMOVE CAPTION               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                   CAPTION FOR A TABLE                         --&gt;
+&lt;!--                   Modification of the standard XHMTL model    
+                       Removed the definition of caption, so the
+                       element would not be multiply defined       --&gt;
+&lt;!ENTITY % caption.element  
+                       "IGNORE"                                      &gt;
+                                                                   
+                                                                   
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    OVER-RIDES FOR CONTENT PARAMETER ENTITIES  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                   INLINE ELEMENTS                             --&gt;
+&lt;!--                   Modification of the standard XHMTL model     
+                       for inline elements used in the &lt;caption&gt;
+                       Set to the null because the &lt;caption&gt;
+                       element is now inside the table wrapper,
+                       not inside the table, as the original XHTML
+                       table intended                              --&gt;
+&lt;!ENTITY % Inline.mix  ""                                            &gt;
+
+
+&lt;!--                   CONTENTS OF A TABLE CELL                    --&gt;
+&lt;!--                   Modification of the standard XHMTL model
+                       used for the content of tables cells &lt;th&gt;
+                       and &lt;td&gt;                                    --&gt;
+&lt;!ENTITY % Flow.mix    "%inside-cell;"                               &gt;
+
+
+&lt;!--                   CONTENTS OF A TABLE                         --&gt;
+&lt;!--                   Modification of the standard XHMTL model    
+                       This has been modified from the XHTML model
+                       to remove the &lt;caption&gt; element from the
+                       &lt;table&gt; model, since in the Archiving and
+                       Interchange DTD Suite modular library, the 
+                       &lt;caption&gt; element is part  of the Table Wrapper 
+                       &lt;table-wrap&gt; element. No other changes were 
+                       made to the XHTML table content model.      --&gt;
+&lt;!ENTITY % table.content
+     "( ( %col.qname;* | %colgroup.qname;* ),
+        ( ( %thead.qname;?, %tfoot.qname;?, %tbody.qname;+ ) | 
+          ( %tr.qname;+ ) 
+        ) 
+      )"                                                             &gt;
+ 
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    THE XHTML V1.1 TABLE INVOCATION            --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    XHTML TABLE MODEL                          --&gt;
+&lt;!--                    This module declares element types and 
+                        attributes used to provide table markup 
+                        similar to HTML 4, including features that 
+                        enable better accessibility for non-visual 
+                        user agents. This is the XHTML reformulation 
+                        of HTML as a modular XML application. 
+                        Copyright 1998-2005 W3C (MIT, ERCIM, Keio), 
+                        All Rights Reserved.
+                        Revision: $Id: xhtml-table-1.mod,v 4.1 
+                        2001/04/10 09:42:30 altheim Exp $ SMI
+                        PUBLIC identifier
+                        "-//W3C//ELEMENTS XHTML Tables 1.0//EN"
+                        SYSTEM identifier:
+                  "http://www.w3.org/MarkUp/DTD/xhtml-table-1.mod" --&gt;
+%xhtml-table-1.mod;
+
+
+&lt;!-- ================== End XHTML Table Setup Module ============= --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

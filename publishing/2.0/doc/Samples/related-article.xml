@@ -1,0 +1,34 @@
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<article>
+<front>
+<journal-meta>
+<?mtl hellip?>
+<journal-id>...</journal-id>
+<issn>...</issn>
+<publisher>
+<publisher-name>...</publisher-name>
+</publisher>
+<?mtl /hellip?>
+</journal-meta>
+<article-meta>
+<article-id><?mtl hellip?> <?mtl /hellip?></article-id>
+<title-group>
+<article-title>ABC of oxygen: Diving and oxygen</article-title>
+</title-group>
+<pub-date pub-type="pub">
+<day>27</day>
+<month>3</month>
+<year>1999</year>
+</pub-date>
+<volume>318</volume> 
+<issue>7187</issue>
+<fpage>857</fpage> 
+<copyright-statement>Copyright &amp;#x00A9; 1999, British 
+Medical Journal</copyright-statement>
+<copyright-year>1999</copyright-year>
+<related-article xmlns:xlink="http://www.w3.org/1999/xlink"
+related-article-type="corrected-article" xlink:href="9765173" vol="317"
+page="996"/>
+</article-meta></front>
+<?mtl hellip?> <?mtl /hellip?>
+</article>

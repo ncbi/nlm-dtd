@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<article>
+<front><?mtl hellip?>
+<journal-meta>
+<journal-id>Fake Journal ID for NLM Citation Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged NLM Citation</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+</article-meta>
+<?mtl /hellip?></front>
+<body><?mtl hellip?><p></p><?mtl /hellip?></body>
+<back>
+<?mtl hellip?><?mtl /hellip?>
+<ref-list><?mtl hellip?><p></p><?mtl /hellip?></ref-list>
+<fn-group>
+<fn>
+<p>Funding: NHS Executive Northern and
+Yorkshire Region, Stroke Association.</p>
+</fn>
+<fn>
+<p>Competing interests: None declared.</p>
+</fn>
+</fn-group>
+</back>
+</article>

@@ -1,0 +1,103 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Page Ranges</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;page-range&gt;</h1>
+         <h1 class="elementname">Page Ranges</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A container element for additional page information to record discontinuous pages ranges, such as &#8220;8-11, 14-19, 40&#8221; (i.e.,
+            an article begins on page 8, runs through 11, skips to pages 14 through 19, and concludes on page 40.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> element only supplements other page elements and DOES NOT replace <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> and <a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a>. The <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> element and the <a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a> element (where available) should always be tagged; infrastructures for linking references across publishers (such as that
+            of CrossRef) use first and last page information on an article as part of their identification process.  Accordingly, material
+            with a page range should be tagged:
+         </p>
+         <div class="codeblock"><pre>
+         &lt;fpage&gt;8&lt;/fpage&gt;
+         &lt;lpage&gt;40&lt;/lpage&gt;
+         &lt;page-range&gt;8-11, 14-19, 40&lt;/page-range&gt;
+         </pre></div>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">A number of elements in the Suite relate to page numbers:
+                      
+            <ul class="bullist">
+               <li><a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> names the page number
+                                on which the article begins;
+               </li>
+               <li><a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a> names the page number on which the article ends (which should be the same page number or a number larger than the starting
+                  page number);
+               </li>
+               <li><a href="n-pdu0.html"><span class="elementtag">&lt;elocation-id&gt;</span></a> replaces the start and end page elements just described for electronic-only journals; and
+               </li>
+               <li><a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> records discontinuous page ranges (See note below.).
+               </li>
+               <li><a href="n-w6t0.html"><span class="elementtag">&lt;page-count&gt;</span></a> holds the total page count, if the publisher has provided one. Typically this element records what the publisher said and
+                  makes no validity claim.
+               </li>
+            </ul> 
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  page-range   (#PCDATA)                                    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-6zw0.html"><span class="elementtag">&lt;front-stub&gt;</span></a> <a href="n-6zw0.html"><span class="elementname">Stub Front Metadata</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+...
+&lt;fpage&gt;100&lt;/fpage&gt;
+&lt;lpage&gt;120&lt;/lpage&gt;
+<strong><span class="focus">&lt;page-range&gt;100-101, 105, 107-120&lt;/page-range&gt;</span></strong>
+...
+&lt;/article-meta&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

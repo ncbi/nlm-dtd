@@ -1,0 +1,170 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Private Character (Custom or Unicode)</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;private-char&gt;</h1>
+         <h1 class="elementname">Private Character (Custom or Unicode)</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">A custom character entity defined by a publisher, or a custom
+                   character from the Unicode private-use area for which a bitmap is submitted for
+                   the glyph
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This Suite has been designed with Unicode as the basic
+             representation of all special characters. The use of combining characters is
+             supported and encouraged, as is the use of entities defined by the STIX project
+             (<tt>http://www.ams.org/STIX/</tt>). Unicode values in planes other than Plane 0 may be freely used. Use of private publisher entities and Unicode Private Use
+            Area is discouraged, but supported with the <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> element, for which a corresponding bitmap must be submitted using the <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> element. In cases where an entity name has been generally accepted with a corresponding Unicode number and the entity has
+            not been added to the ISO standard entity sets, a named entity may be defined in the <a href="n-gsb0.html"><span class="petag">%chars.ent;</span></a> module (e.g., the Euro &#8364;).
+             
+         </p>
+         <p class="para">Because of the potential for conflicts in assignments by different publishers,
+             this Suite does not support assignment of values in the Unicode Private Use
+             Area. Publishers who have defined characters in the Private Use Area must remap
+             those characters to existing Unicode values (using combining characters for
+             special accented characters where appropriate), or must submit bitmaps of those
+             characters using one of the two methods supported under the
+             <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> element. Those custom publisher
+             entities for which corresponding Unicode values have not been determined must
+             be tagged with the <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> element.
+            
+         </p>
+         <p class="para">Special characters defined by publishers as custom entities or in
+             the Unicode Private Use Area may not be deposited as is. If they cannot be
+             remapped to existing Unicode values, each must be submitted as a bitmap using
+             the <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> element. The most repository-friendly technique is the
+             element <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> although individual bitmap
+             files may be submitted with <a href="n-dwv0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>. [We
+             would like to thank the APS (American Physical Society) for providing us with
+             this technique.]
+         </p>
+         <p class="para">Since there are no completely standard/public agreements on how
+             such characters are to be named and displayed, this technique is to be used
+             instead of a custom general entity reference, to provide complete information
+             on the intended character. A document should contain a
+             <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> element at each location where a
+             private character is used within the document. The corresponding image for the
+             glyph may be given in the <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> element, as a <a href="n-ptx0.html"><span class="elementtag">&lt;glyph-ref&gt;</span></a> reference to a <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> elsewhere in the document,
+             or as an external bitmap file referenced by an
+             <a href="n-dwv0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a> element.
+         </p>
+         <p class="para">The attributes for this element supply a human-readable
+             description of the character, for example, &#8220;<tt>Arrow, normal weight, single line,
+                two-headed, Northwest to Southeast</tt>&#8221; and a unique name for the character in all
+             uppercase ASCII, similar to names found in Unicode standard (e.g., &#8220;<tt>NORTHWEST
+                SOUTHEAST ARROW</tt>&#8221;).
+         </p>
+         <p class="para">Implementation Note:
+             <a href="n-dwv0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a> should only be used outside
+             <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a> when the graphic is something
+             other than a special character, for example, an icon.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-45y0.html"><span class="attrtag">description</span></a> <a href="n-45y0.html"><span class="attrname">Description of a Private Character</span></a></h5>
+         <h5 class="header"><a href="n-taj0.html"><span class="attrtag">name</span></a> <a href="n-taj0.html"><span class="attrname">Name</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">The element <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a> may only
+                   be used inside the element <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a>.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  private-char ((glyph-data | glyph-ref) | inline-graphic*) &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any one of:
+               <ul class="bullist">
+                  <li>Any one of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-jsx0.html"><span class="elementname">Glyph Data for a Private Character</span></a> <a href="n-jsx0.html"><span class="elementtag">&lt;glyph-data&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ptx0.html"><span class="elementname">Glyph Reference for a Private Character</span></a> <a href="n-ptx0.html"><span class="elementtag">&lt;glyph-ref&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-dwv0.html"><span class="elementname">Graphic, Inline</span></a> <a href="n-dwv0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>, zero or more
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-5900.html"><span class="elementtag">&lt;abbrev&gt;</span></a> <a href="n-5900.html"><span class="elementname">Abbreviation or Acronym</span></a>; <a href="n-i220.html"><span class="elementtag">&lt;abbrev-journal-title&gt;</span></a> <a href="n-i220.html"><span class="elementname">Abbreviated Journal Title</span></a>; <a href="n-af20.html"><span class="elementtag">&lt;addr-line&gt;</span></a> <a href="n-af20.html"><span class="elementname">Address Line</span></a>; <a href="n-gi20.html"><span class="elementtag">&lt;aff&gt;</span></a> <a href="n-gi20.html"><span class="elementname">Affiliation</span></a>; <a href="n-d920.html"><span class="elementtag">&lt;alt-title&gt;</span></a> <a href="n-d920.html"><span class="elementname">Alternate Title</span></a>; <a href="n-43c0.html"><span class="elementtag">&lt;anonymous&gt;</span></a> <a href="n-43c0.html"><span class="elementname">Anonymous</span></a>; <a href="n-dqc0.html"><span class="elementtag">&lt;article-title&gt;</span></a> <a href="n-dqc0.html"><span class="elementname">Article Title</span></a>; <a href="n-mk30.html"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-mk30.html"><span class="elementname">Attribution</span></a>; <a href="n-n730.html"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-n730.html"><span class="elementname">Bold</span></a>; <a href="n-sj30.html"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-sj30.html"><span class="elementname">Chemical Structure (Display)</span></a>; <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-q750.html"><span class="elementtag">&lt;collab&gt;</span></a> <a href="n-q750.html"><span class="elementname">Collaborative (Group) Author</span></a>; <a href="n-6650.html"><span class="elementtag">&lt;comment&gt;</span></a> <a href="n-6650.html"><span class="elementname">Comment in a Citation</span></a>; <a href="n-vy50.html"><span class="elementtag">&lt;conf-acronym&gt;</span></a> <a href="n-vy50.html"><span class="elementname">Conference Acronym</span></a>; <a href="n-hm50.html"><span class="elementtag">&lt;conf-loc&gt;</span></a> <a href="n-hm50.html"><span class="elementname">Conference Location</span></a>; <a href="n-7380.html"><span class="elementtag">&lt;conf-name&gt;</span></a> <a href="n-7380.html"><span class="elementname">Conference Name</span></a>; <a href="n-8w80.html"><span class="elementtag">&lt;conf-num&gt;</span></a> <a href="n-8w80.html"><span class="elementname">Conference Number</span></a>; <a href="n-is80.html"><span class="elementtag">&lt;conf-sponsor&gt;</span></a> <a href="n-is80.html"><span class="elementname">Conference Sponsor</span></a>; <a href="n-ug80.html"><span class="elementtag">&lt;conf-theme&gt;</span></a> <a href="n-ug80.html"><span class="elementname">Conference Theme</span></a>; <a href="n-vi80.html"><span class="elementtag">&lt;contract-num&gt;</span></a> <a href="n-vi80.html"><span class="elementname">Contract Number</span></a>; <a href="n-fq80.html"><span class="elementtag">&lt;contract-sponsor&gt;</span></a> <a href="n-fq80.html"><span class="elementname">Contract Sponsor</span></a>; <a href="n-haa0.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a> <a href="n-haa0.html"><span class="elementname">Copyright Statement</span></a>; <a href="n-bsa0.html"><span class="elementtag">&lt;corresp&gt;</span></a> <a href="n-bsa0.html"><span class="elementname">Correspondence Information</span></a>; <a href="n-mpa0.html"><span class="elementtag">&lt;def-head&gt;</span></a> <a href="n-mpa0.html"><span class="elementname">Definition List: Definition Head</span></a>; <a href="n-6cu0.html"><span class="elementtag">&lt;degrees&gt;</span></a> <a href="n-6cu0.html"><span class="elementname">Degree(s)</span></a>; <a href="n-wuu0.html"><span class="elementtag">&lt;disp-formula&gt;</span></a> <a href="n-wuu0.html"><span class="elementname">Formula, Display</span></a>; <a href="n-vfu0.html"><span class="elementtag">&lt;edition&gt;</span></a> <a href="n-vfu0.html"><span class="elementname">Edition, Cited</span></a>; <a href="n-chu0.html"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-chu0.html"><span class="elementname">Email Address</span></a>; <a href="n-pqu0.html"><span class="elementtag">&lt;etal&gt;</span></a> <a href="n-pqu0.html"><span class="elementname">Et Al.</span></a>; <a href="n-ekw0.html"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-ekw0.html"><span class="elementname">External Link</span></a>; <a href="n-wuw0.html"><span class="elementtag">&lt;fax&gt;</span></a> <a href="n-wuw0.html"><span class="elementname">Fax Number: in an Address</span></a>; <a href="n-4iw0.html"><span class="elementtag">&lt;font&gt;</span></a> <a href="n-4iw0.html"><span class="elementname">Font</span></a>; <a href="n-j2x0.html"><span class="elementtag">&lt;given-names&gt;</span></a> <a href="n-j2x0.html"><span class="elementname">Given (First) Names</span></a>; <a href="n-r7x0.html"><span class="elementtag">&lt;gov&gt;</span></a> <a href="n-r7x0.html"><span class="elementname">Government Report, Cited</span></a>; <a href="n-bnx0.html"><span class="elementtag">&lt;grant-num&gt;</span></a> <a href="n-bnx0.html"><span class="elementname">Grant Number</span></a>; <a href="n-5ix0.html"><span class="elementtag">&lt;grant-sponsor&gt;</span></a> <a href="n-5ix0.html"><span class="elementname">Grant Sponsor</span></a>; <a href="n-emx0.html"><span class="elementtag">&lt;history&gt;</span></a> <a href="n-emx0.html"><span class="elementname">History: Document History</span></a>; <a href="n-x5v0.html"><span class="elementtag">&lt;inline-formula&gt;</span></a> <a href="n-x5v0.html"><span class="elementname">Formula, Inline</span></a>; <a href="n-6xv0.html"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> <a href="n-6xv0.html"><span class="elementname">Inline Supplementary Material</span></a>; <a href="n-ztv0.html"><span class="elementtag">&lt;institution&gt;</span></a> <a href="n-ztv0.html"><span class="elementname">Institution Name: in an Address</span></a>; <a href="n-i6v0.html"><span class="elementtag">&lt;issue&gt;</span></a> <a href="n-i6v0.html"><span class="elementname">Issue Number</span></a>; <a href="n-byv0.html"><span class="elementtag">&lt;issue-title&gt;</span></a> <a href="n-byv0.html"><span class="elementname">Issue Title</span></a>; <a href="n-c9v0.html"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-c9v0.html"><span class="elementname">Italic</span></a>; <a href="n-k540.html"><span class="elementtag">&lt;journal-subtitle&gt;</span></a> <a href="n-k540.html"><span class="elementname">Journal Subtitle (Full)</span></a>; <a href="n-cw40.html"><span class="elementtag">&lt;journal-title&gt;</span></a> <a href="n-cw40.html"><span class="elementname">Journal Title (Full)</span></a>; <a href="n-8s40.html"><span class="elementtag">&lt;kwd&gt;</span></a> <a href="n-8s40.html"><span class="elementname">Keyword</span></a>; <a href="n-pg40.html"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-pg40.html"><span class="elementname">Label (of a Figure, Reference, Etc.)</span></a>; <a href="n-wz40.html"><span class="elementtag">&lt;meta-name&gt;</span></a> <a href="n-wz40.html"><span class="elementname">Metadata Data Name for Custom Metadata</span></a>; <a href="n-p3s0.html"><span class="elementtag">&lt;meta-value&gt;</span></a> <a href="n-p3s0.html"><span class="elementname">Metadata Data Value for Custom Metadata</span></a>; <a href="n-cvs0.html"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-cvs0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a>; <a href="n-ifs0.html"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-ifs0.html"><span class="elementname">Named Special (Subject) Content</span></a>; <a href="n-82t0.html"><span class="elementtag">&lt;on-behalf-of&gt;</span></a> <a href="n-82t0.html"><span class="elementname">On Behalf of</span></a>; <a href="n-y8t0.html"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-y8t0.html"><span class="elementname">Overline</span></a>; <a href="n-7st0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-7st0.html"><span class="elementname">Paragraph</span></a>; <a href="n-ght0.html"><span class="elementtag">&lt;patent&gt;</span></a> <a href="n-ght0.html"><span class="elementname">Patent Number, Cited</span></a>; <a href="n-y9t0.html"><span class="elementtag">&lt;phone&gt;</span></a> <a href="n-y9t0.html"><span class="elementname">Phone Number: in an Address</span></a>; <a href="n-ac70.html"><span class="elementtag">&lt;prefix&gt;</span></a> <a href="n-ac70.html"><span class="elementname">Prefix</span></a>; <a href="n-wa70.html"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-wa70.html"><span class="elementname">Preformatted Text</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-dq70.html"><span class="elementtag">&lt;publisher-loc&gt;</span></a> <a href="n-dq70.html"><span class="elementname">Publisher&#8217;s Location</span></a>; <a href="n-bke0.html"><span class="elementtag">&lt;publisher-name&gt;</span></a> <a href="n-bke0.html"><span class="elementname">Publisher&#8217;s Name</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a>; <a href="n-hhe0.html"><span class="elementtag">&lt;role&gt;</span></a> <a href="n-hhe0.html"><span class="elementname">Role or Function Title of Contributor</span></a>; <a href="n-hqe0.html"><span class="elementtag">&lt;sans-serif&gt;</span></a> <a href="n-hqe0.html"><span class="elementname">Sans Serif</span></a>; <a href="n-bze0.html"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-bze0.html"><span class="elementname">Small Caps</span></a>; <a href="n-vvf0.html"><span class="elementtag">&lt;self-uri&gt;</span></a> <a href="n-vvf0.html"><span class="elementname">URI for This Same Article Online</span></a>; <a href="n-y7f0.html"><span class="elementtag">&lt;series&gt;</span></a> <a href="n-y7f0.html"><span class="elementname">Series</span></a>; <a href="n-cdf0.html"><span class="elementtag">&lt;series-text&gt;</span></a> <a href="n-cdf0.html"><span class="elementname">Series Text: Header Text to Describe</span></a>; <a href="n-myf0.html"><span class="elementtag">&lt;series-title&gt;</span></a> <a href="n-myf0.html"><span class="elementname">Series Title</span></a>; <a href="n-p9f0.html"><span class="elementtag">&lt;sig&gt;</span></a> <a href="n-p9f0.html"><span class="elementname">Signature</span></a>; <a href="n-ecg0.html"><span class="elementtag">&lt;sig-block&gt;</span></a> <a href="n-ecg0.html"><span class="elementname">Signature Block</span></a>; <a href="n-cwg0.html"><span class="elementtag">&lt;source&gt;</span></a> <a href="n-cwg0.html"><span class="elementname">Source</span></a>; <a href="n-ctg0.html"><span class="elementtag">&lt;speaker&gt;</span></a> <a href="n-ctg0.html"><span class="elementname">Speaker</span></a>; <a href="n-vdg0.html"><span class="elementtag">&lt;std&gt;</span></a> <a href="n-vdg0.html"><span class="elementname">Standard, Cited</span></a>; <a href="n-gyg0.html"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-gyg0.html"><span class="elementname">Strike Through</span></a>; <a href="n-ybg0.html"><span class="elementtag">&lt;string-date&gt;</span></a> <a href="n-ybg0.html"><span class="elementname">Date as a String</span></a>; <a href="n-d2n0.html"><span class="elementtag">&lt;string-name&gt;</span></a> <a href="n-d2n0.html"><span class="elementname">Name of Person (Unstructured)</span></a>; <a href="n-pan0.html"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-pan0.html"><span class="elementname">Subscript</span></a>; <a href="n-m7n0.html"><span class="elementtag">&lt;subject&gt;</span></a> <a href="n-m7n0.html"><span class="elementname">Subject Grouping Name</span></a>; <a href="n-z6n0.html"><span class="elementtag">&lt;subtitle&gt;</span></a> <a href="n-z6n0.html"><span class="elementname">Article Subtitle</span></a>; <a href="n-pyn0.html"><span class="elementtag">&lt;suffix&gt;</span></a> <a href="n-pyn0.html"><span class="elementname">Suffix</span></a>; <a href="n-w9n0.html"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-w9n0.html"><span class="elementname">Superscript</span></a>; <a href="n-d260.html"><span class="elementtag">&lt;supplement&gt;</span></a> <a href="n-d260.html"><span class="elementname">Supplement Information</span></a>; <a href="n-iv60.html"><span class="elementtag">&lt;surname&gt;</span></a> <a href="n-iv60.html"><span class="elementname">Surname</span></a>; <a href="n-hj60.html"><span class="elementtag">&lt;target&gt;</span></a> <a href="n-hj60.html"><span class="elementname">Target of an Internal Link</span></a>; <a href="n-nm60.html"><span class="elementtag">&lt;td&gt;</span></a> <a href="n-nm60.html"><span class="elementname">Table Data Cell (XHTML table model)</span></a>; <a href="n-c8d0.html"><span class="elementtag">&lt;term&gt;</span></a> <a href="n-c8d0.html"><span class="elementname">Definition List: Term</span></a>; <a href="n-5vd0.html"><span class="elementtag">&lt;term-head&gt;</span></a> <a href="n-5vd0.html"><span class="elementname">Definition List: Term Head</span></a>; <a href="n-med0.html"><span class="elementtag">&lt;th&gt;</span></a> <a href="n-med0.html"><span class="elementname">Table Header Cell (XHTML table model)</span></a>; <a href="n-tid0.html"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-tid0.html"><span class="elementname">Title</span></a>; <a href="n-k3r0.html"><span class="elementtag">&lt;trans-source&gt;</span></a> <a href="n-k3r0.html"><span class="elementname">Translated Source</span></a>; <a href="n-iur0.html"><span class="elementtag">&lt;trans-subtitle&gt;</span></a> <a href="n-iur0.html"><span class="elementname">Translated Subtitle</span></a>; <a href="n-ssr0.html"><span class="elementtag">&lt;trans-title&gt;</span></a> <a href="n-ssr0.html"><span class="elementname">Translated Title</span></a>; <a href="n-fgr0.html"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-fgr0.html"><span class="elementname">Underline</span></a>; <a href="n-8yr0.html"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-8yr0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a>; <a href="n-hmr0.html"><span class="elementtag">&lt;verse-line&gt;</span></a> <a href="n-hmr0.html"><span class="elementname">Line of a Verse</span></a>; <a href="n-23h0.html"><span class="elementtag">&lt;volume&gt;</span></a> <a href="n-23h0.html"><span class="elementname">Volume Number</span></a>; <a href="n-juh0.html"><span class="elementtag">&lt;volume-id&gt;</span></a> <a href="n-juh0.html"><span class="elementname">Volume Identifier</span></a>; <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-beh0.html"><span class="elementname">X(cross) Reference</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;p&gt;...The map symbol indicating these conditions will be a
+<strong><span class="focus">&lt;private-char name="NORTHWEST SOUTHEAST ARROW" description="Arrow,
+normal weight, single line, two-headed, Northwest to Southeast"&gt;
+&lt;glyph-data id="NWSEArr" format="PBM" resolution="300"
+x-size="34" y-size="34"&gt;
+ 0000000000000000000000000000000000 0111111111111100000000000000000000
+ 0111111111111100000000000000000000 0111110000000000000000000000000000
+ 0111110000000000000000000000000000 0111111000000000000000000000000000
+ 0110111100000000000000000000000000 0110011110000000000000000000000000
+ 0110001111000000000000000000000000 0110000111100000000000000000000000
+ 0110000011110000000000000000000000 0110000001111000000000000000000000
+ 0110000000111100000000000000000000 0110000000011110000000000000000000
+ 0110000000001111000000000000000000 0110000000000111100000000000000000
+ 0110000000000011110000000000000000 0000000000000001111000000000000000
+ 0000000000000000111100000000000110 0000000000000000011110000000000110
+ 0000000000000000001111000000000110 0000000000000000000111100000000110
+ 0000000000000000000011110000000110 0000000000000000000001111000000110
+ 0000000000000000000000111100000110 0000000000000000000000011110000110
+ 0000000000000000000000001111000110 0000000000000000000000000111100110
+ 0000000000000000000000000011110110 0000000000000000000000000001111110
+ 0000000000000000000000000001111110 0000000000000000011111111111111110
+ 0000000000000000011111111111111110 0000000000000000000000000000000000
+ &lt;/glyph-data&gt;&lt;/private-char&gt;</span></strong>. The NOAA 1993 standard definition of
+<strong><span class="focus">&lt;private-char name="NORTHWEST SOUTHEAST ARROW" description="Arrow,
+normal weight, single line, two-headed, Northwest to Southeast"&gt;
+&lt;glyph-ref glyph-data="NWSEArr"/&gt;&lt;/private-char&gt;</span></strong> will apply.
+&lt;/p&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">chars.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

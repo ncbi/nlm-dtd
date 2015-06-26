@@ -1,0 +1,361 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>XHTML Table Model</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">XHTML Table Model</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ...................................................................... --&gt;
+&lt;!-- XHTML Table Module  .................................................. --&gt;
+&lt;!-- file: xhtml-table-1.mod
+
+     This is XHTML, a reformulation of HTML as a modular XML application.
+     Copyright 1998-2005 W3C (MIT, ERCIM, Keio), All Rights Reserved.
+     Revision: $Id: xhtml-table-1.mod,v 4.1 2001/04/10 09:42:30 altheim Exp $ SMI
+
+     This DTD module is identified by the PUBLIC and SYSTEM identifiers:
+
+       PUBLIC "-//W3C//ELEMENTS XHTML Tables 1.0//EN"
+       SYSTEM "http://www.w3.org/MarkUp/DTD/xhtml-table-1.mod"
+
+     Revisions:
+     (none)
+     ....................................................................... --&gt;
+
+&lt;!-- Tables
+
+        table, caption, thead, tfoot, tbody, colgroup, col, tr, th, td
+
+     This module declares element types and attributes used to provide
+     table markup similar to HTML 4, including features that enable
+     better accessibility for non-visual user agents.
+--&gt;
+
+&lt;!-- declare qualified element type names:
+--&gt;
+&lt;!ENTITY % table.qname  "table" &gt;
+&lt;!ENTITY % caption.qname  "caption" &gt;
+&lt;!ENTITY % thead.qname  "thead" &gt;
+&lt;!ENTITY % tfoot.qname  "tfoot" &gt;
+&lt;!ENTITY % tbody.qname  "tbody" &gt;
+&lt;!ENTITY % colgroup.qname  "colgroup" &gt;
+&lt;!ENTITY % col.qname  "col" &gt;
+&lt;!ENTITY % tr.qname  "tr" &gt;
+&lt;!ENTITY % th.qname  "th" &gt;
+&lt;!ENTITY % td.qname  "td" &gt;
+
+&lt;!-- The frame attribute specifies which parts of the frame around
+     the table should be rendered. The values are not the same as
+     CALS to avoid a name clash with the valign attribute.
+--&gt;
+&lt;!ENTITY % frame.attrib
+     "frame        ( void
+                   | above
+                   | below
+                   | hsides
+                   | lhs
+                   | rhs
+                   | vsides
+                   | box
+                   | border )               #IMPLIED"
+&gt;
+
+&lt;!-- The rules attribute defines which rules to draw between cells:
+
+     If rules is absent then assume:
+
+       "none" if border is absent or border="0" otherwise "all"
+--&gt;
+&lt;!ENTITY % rules.attrib
+     "rules        ( none
+                   | groups
+                   | rows
+                   | cols
+                   | all )                  #IMPLIED"
+&gt;
+
+&lt;!-- horizontal alignment attributes for cell contents
+--&gt;
+&lt;!ENTITY % CellHAlign.attrib
+     "align        ( left
+                   | center
+                   | right
+                   | justify
+                   | char )                 #IMPLIED
+      char         %Character.datatype;     #IMPLIED
+      charoff      %Length.datatype;        #IMPLIED"
+&gt;
+
+&lt;!-- vertical alignment attribute for cell contents
+--&gt;
+&lt;!ENTITY % CellVAlign.attrib
+     "valign       ( top
+                   | middle
+                   | bottom
+                   | baseline )             #IMPLIED"
+&gt;
+
+&lt;!-- scope is simpler than axes attribute for common tables
+--&gt;
+&lt;!ENTITY % scope.attrib
+     "scope        ( row
+                   | col
+                   | rowgroup
+                   | colgroup )             #IMPLIED"
+&gt;
+
+&lt;!-- table: Table Element .............................. --&gt;
+
+&lt;!ENTITY % table.element  "INCLUDE" &gt;
+&lt;![%table.element;[
+&lt;!ENTITY % table.content
+     "( %caption.qname;?, ( %col.qname;* | %colgroup.qname;* ),
+      (( %thead.qname;?, %tfoot.qname;?, %tbody.qname;+ ) | ( %tr.qname;+ )))"
+&gt;
+&lt;!ELEMENT %table.qname;  %table.content; &gt;
+&lt;!-- end of table.element --&gt;]]&gt;
+
+&lt;!ENTITY % table.attlist  "INCLUDE" &gt;
+&lt;![%table.attlist;[
+&lt;!ATTLIST %table.qname;
+      %Common.attrib;
+      summary      %Text.datatype;          #IMPLIED
+      width        %Length.datatype;        #IMPLIED
+      border       %Pixels.datatype;        #IMPLIED
+      %frame.attrib;
+      %rules.attrib;
+      cellspacing  %Length.datatype;        #IMPLIED
+      cellpadding  %Length.datatype;        #IMPLIED
+&gt;
+&lt;!-- end of table.attlist --&gt;]]&gt;
+
+&lt;!-- caption: Table Caption ............................ --&gt;
+
+&lt;!ENTITY % caption.element  "INCLUDE" &gt;
+&lt;![%caption.element;[
+&lt;!ENTITY % caption.content
+     "( #PCDATA | %Inline.mix; )*"
+&gt;
+&lt;!ELEMENT %caption.qname;  %caption.content; &gt;
+&lt;!-- end of caption.element --&gt;]]&gt;
+
+&lt;!ENTITY % caption.attlist  "INCLUDE" &gt;
+&lt;![%caption.attlist;[
+&lt;!ATTLIST %caption.qname;
+      %Common.attrib;
+&gt;
+&lt;!-- end of caption.attlist --&gt;]]&gt;
+
+&lt;!-- thead: Table Header ............................... --&gt;
+
+&lt;!-- Use thead to duplicate headers when breaking table
+     across page boundaries, or for static headers when
+     tbody sections are rendered in scrolling panel.
+--&gt;
+
+&lt;!ENTITY % thead.element  "INCLUDE" &gt;
+&lt;![%thead.element;[
+&lt;!ENTITY % thead.content  "( %tr.qname; )+" &gt;
+&lt;!ELEMENT %thead.qname;  %thead.content; &gt;
+&lt;!-- end of thead.element --&gt;]]&gt;
+
+&lt;!ENTITY % thead.attlist  "INCLUDE" &gt;
+&lt;![%thead.attlist;[
+&lt;!ATTLIST %thead.qname;
+      %Common.attrib;
+      %CellHAlign.attrib;
+      %CellVAlign.attrib;
+&gt;
+&lt;!-- end of thead.attlist --&gt;]]&gt;
+
+&lt;!-- tfoot: Table Footer ............................... --&gt;
+
+&lt;!-- Use tfoot to duplicate footers when breaking table
+     across page boundaries, or for static footers when
+     tbody sections are rendered in scrolling panel.
+--&gt;
+
+&lt;!ENTITY % tfoot.element  "INCLUDE" &gt;
+&lt;![%tfoot.element;[
+&lt;!ENTITY % tfoot.content  "( %tr.qname; )+" &gt;
+&lt;!ELEMENT %tfoot.qname;  %tfoot.content; &gt;
+&lt;!-- end of tfoot.element --&gt;]]&gt;
+
+&lt;!ENTITY % tfoot.attlist  "INCLUDE" &gt;
+&lt;![%tfoot.attlist;[
+&lt;!ATTLIST %tfoot.qname;
+      %Common.attrib;
+      %CellHAlign.attrib;
+      %CellVAlign.attrib;
+&gt;
+&lt;!-- end of tfoot.attlist --&gt;]]&gt;
+
+&lt;!-- tbody: Table Body ................................. --&gt;
+
+&lt;!-- Use multiple tbody sections when rules are needed
+     between groups of table rows.
+--&gt;
+
+&lt;!ENTITY % tbody.element  "INCLUDE" &gt;
+&lt;![%tbody.element;[
+&lt;!ENTITY % tbody.content  "( %tr.qname; )+" &gt;
+&lt;!ELEMENT %tbody.qname;  %tbody.content; &gt;
+&lt;!-- end of tbody.element --&gt;]]&gt;
+
+&lt;!ENTITY % tbody.attlist  "INCLUDE" &gt;
+&lt;![%tbody.attlist;[
+&lt;!ATTLIST %tbody.qname;
+      %Common.attrib;
+      %CellHAlign.attrib;
+      %CellVAlign.attrib;
+&gt;
+&lt;!-- end of tbody.attlist --&gt;]]&gt;
+
+&lt;!-- colgroup: Table Column Group ...................... --&gt;
+
+&lt;!-- colgroup groups a set of col elements. It allows you
+     to group several semantically-related columns together.
+--&gt;
+
+&lt;!ENTITY % colgroup.element  "INCLUDE" &gt;
+&lt;![%colgroup.element;[
+&lt;!ENTITY % colgroup.content  "( %col.qname; )*" &gt;
+&lt;!ELEMENT %colgroup.qname;  %colgroup.content; &gt;
+&lt;!-- end of colgroup.element --&gt;]]&gt;
+
+&lt;!ENTITY % colgroup.attlist  "INCLUDE" &gt;
+&lt;![%colgroup.attlist;[
+&lt;!ATTLIST %colgroup.qname;
+      %Common.attrib;
+      span         %Number.datatype;        '1'
+      width        %MultiLength.datatype;   #IMPLIED
+      %CellHAlign.attrib;
+      %CellVAlign.attrib;
+&gt;
+&lt;!-- end of colgroup.attlist --&gt;]]&gt;
+
+&lt;!-- col: Table Column ................................. --&gt;
+
+&lt;!-- col elements define the alignment properties for
+     cells in one or more columns.
+
+     The width attribute specifies the width of the
+     columns, e.g.
+
+       width="64"        width in screen pixels
+       width="0.5*"      relative width of 0.5
+
+     The span attribute causes the attributes of one
+     col element to apply to more than one column.
+--&gt;
+
+&lt;!ENTITY % col.element  "INCLUDE" &gt;
+&lt;![%col.element;[
+&lt;!ENTITY % col.content  "EMPTY" &gt;
+&lt;!ELEMENT %col.qname;  %col.content; &gt;
+&lt;!-- end of col.element --&gt;]]&gt;
+
+&lt;!ENTITY % col.attlist  "INCLUDE" &gt;
+&lt;![%col.attlist;[
+&lt;!ATTLIST %col.qname;
+      %Common.attrib;
+      span         %Number.datatype;        '1'
+      width        %MultiLength.datatype;   #IMPLIED
+      %CellHAlign.attrib;
+      %CellVAlign.attrib;
+&gt;
+&lt;!-- end of col.attlist --&gt;]]&gt;
+
+&lt;!-- tr: Table Row ..................................... --&gt;
+
+&lt;!ENTITY % tr.element  "INCLUDE" &gt;
+&lt;![%tr.element;[
+&lt;!ENTITY % tr.content  "( %th.qname; | %td.qname; )+" &gt;
+&lt;!ELEMENT %tr.qname;  %tr.content; &gt;
+&lt;!-- end of tr.element --&gt;]]&gt;
+
+&lt;!ENTITY % tr.attlist  "INCLUDE" &gt;
+&lt;![%tr.attlist;[
+&lt;!ATTLIST %tr.qname;
+      %Common.attrib;
+      %CellHAlign.attrib;
+      %CellVAlign.attrib;
+&gt;
+&lt;!-- end of tr.attlist --&gt;]]&gt;
+
+&lt;!-- th: Table Header Cell ............................. --&gt;
+
+&lt;!-- th is for header cells, td for data,
+     but for cells acting as both use td
+--&gt;
+
+&lt;!ENTITY % th.element  "INCLUDE" &gt;
+&lt;![%th.element;[
+&lt;!ENTITY % th.content
+     "( #PCDATA | %Flow.mix; )*"
+&gt;
+&lt;!ELEMENT %th.qname;  %th.content; &gt;
+&lt;!-- end of th.element --&gt;]]&gt;
+
+&lt;!ENTITY % th.attlist  "INCLUDE" &gt;
+&lt;![%th.attlist;[
+&lt;!ATTLIST %th.qname;
+      %Common.attrib;
+      abbr         %Text.datatype;          #IMPLIED
+      axis         CDATA                    #IMPLIED
+      headers      IDREFS                   #IMPLIED
+      %scope.attrib;
+      rowspan      %Number.datatype;        '1'
+      colspan      %Number.datatype;        '1'
+      %CellHAlign.attrib;
+      %CellVAlign.attrib;
+&gt;
+&lt;!-- end of th.attlist --&gt;]]&gt;
+
+&lt;!-- td: Table Data Cell ............................... --&gt;
+
+&lt;!ENTITY % td.element  "INCLUDE" &gt;
+&lt;![%td.element;[
+&lt;!ENTITY % td.content
+     "( #PCDATA | %Flow.mix; )*"
+&gt;
+&lt;!ELEMENT %td.qname;  %td.content; &gt;
+&lt;!-- end of td.element --&gt;]]&gt;
+
+&lt;!ENTITY % td.attlist  "INCLUDE" &gt;
+&lt;![%td.attlist;[
+&lt;!ATTLIST %td.qname;
+      %Common.attrib;
+      abbr         %Text.datatype;          #IMPLIED
+      axis         CDATA                    #IMPLIED
+      headers      IDREFS                   #IMPLIED
+      %scope.attrib;
+      rowspan      %Number.datatype;        '1'
+      colspan      %Number.datatype;        '1'
+      %CellHAlign.attrib;
+      %CellVAlign.attrib;
+&gt;
+&lt;!-- end of td.attlist --&gt;]]&gt;
+
+&lt;!-- end of xhtml-table-1.mod --&gt;
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

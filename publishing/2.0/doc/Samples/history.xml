@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front><journal-meta>
+<journal-id>Fake Journal ID for NLM Citation Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<?mtl /hellip?>
+<article-meta>
+<?mtl hellip?>
+<title-group>
+<article-title>Fake History Sample</article-title>
+</title-group><?mtl /hellip?>
+<pub-date pub-type="pub">
+<day>28</day>
+<month>8</month>
+<year>2002</year>
+</pub-date>
+<volume>2</volume>
+<elocation-id>E27</elocation-id>
+<supplementary-material><?mtl hellip?><?mtl /hellip?></supplementary-material>
+<history>
+<date date-type="received"><day>22</day><month>August</month>
+<year>2000</year></date>
+<date date-type="accepted"><day>12</day><month>June</month>
+<year>2002</year></date></history>
+<copyright-statement><?mtl hellip?><?mtl /hellip?></copyright-statement>
+<?mtl hellip?><?mtl /hellip?>
+</article-meta>
+<?mtl hellip?></front>
+</article><?mtl /hellip?>

@@ -1,0 +1,90 @@
+<!DOCTYPE article SYSTEM "../../PublishingDTD/source_DTDs/journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>mul468</journal-id>
+<abbrev-journal-title>J CLIN MICROBIOL</abbrev-journal-title>
+<issn>0095-1137</issn><publisher><publisher-name>American Society for
+Microbiology</publisher-name></publisher>
+</journal-meta><?mtl /hellip?>
+<article-meta><?mtl hellip?>
+<article-id pub-id-type="doi">xxx</article-id>
+<title-group>
+<article-title>Fake Article to add address</article-title>
+</title-group><?mtl /hellip?>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Silverstein</surname>
+<given-names>Michael Q.</given-names>
+</name>
+<xref ref-type="aff" rid="affDorelco"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Taylor</surname>
+<given-names>James C.</given-names>
+</name>
+<degrees>Ph D</degrees>
+<aff id="affDorelco">Dorelco Corporation Ltd.</aff>
+<aff id="IIDR">
+<institution>Institute of Infectious Disease Research
+</institution><break/>
+<addr-line>Oberlin, Washington 96204;</addr-line><break/>
+</aff>
+<aff id="UWW">
+<institution>Department of Pathobiology, 
+University of WallieWash</institution>
+<addr-line>Oberlin, Washington 96204</addr-line>
+</aff>
+<aff>
+<institution>University of Kuopio</institution> 
+<addr-line>Kuopio</addr-line>
+<country>Finland</country>
+</aff>
+<address>
+<institution>Kalakukko Corporation</institution>
+<addr-line>17 West Jefferson St.</addr-line>
+<addr-line>Suite 207</addr-line>
+<addr-line>New South Finland, MD 20856.</addr-line> 
+<phone>(301) 754-5766</phone>
+<fax>(301) 754-5765</fax>
+<email>jct@kalakukko.com.fi</email>
+<uri>http://www.kalakukko.com</uri>
+</address>
+</contrib>
+</contrib-group><?mtl hellip?>
+<pub-date pub-type="pub">
+<day>25</day><month>12</month>
+<year>2004</year>
+</pub-date>
+<volume>145</volume>
+<issue>4</issue>
+<fpage>2854</fpage>
+<lpage>2873</lpage>
+<copyright-statement>Copyright &#x00A9; 2003, Finland Society of Associated Microbiologists</copyright-statement>
+<copyright-year>2003</copyright-year><abstract><p>...</p></abstract>
+<?mtl /hellip?>
+</article-meta><?mtl hellip?>
+</front>
+<body>
+<p><italic>Mycobacterium tuberculosis</italic> continues to be the major infectious cause of
+human death in developing countries and has reemerged in industrialized
+countries
+</p></body>
+<back>
+<ref-list>
+<title>BIBLIOGRAPHIC REFERENCES</title>
+<ref id="B1">
+<citation>
+<name><surname>Andersen</surname>
+<given-names>Jan V.</given-names></name>
+<article-title>Structure and mapping of antigenic domains</article-title>
+<source>Infect. Immun. of Finland</source>
+<year>1992</year>
+<volume>21</volume>
+<fpage>57</fpage>
+<lpage>79</lpage></citation>
+</ref>
+</ref-list>
+</back>
+</article> 
+<?mtl /hellip?>

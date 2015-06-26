@@ -1,0 +1,233 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: NLM Citation Model</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;nlm-citation&gt;</h1>
+         <h1 class="elementname">NLM Citation Model</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Structured citation model to assist users creating &#8220;new&#8221; content; the model loosely reflects the NLM&#8217;s style in that it allows
+            the tagging of all &#8220;legal&#8221; NLM citations and enforces the sequence in which content must appear if it is present.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Note: This model does not provide guidance on what information is required for each type of cited content. Moreover, the model
+            assumes that punctuation between the parts of a citation will be generated on display or on export from the XML tagged according
+            to this Tag Set to XML for another use. For extensive examples of formatted <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-4fi0.html"><span class="attrtag">citation-type</span></a> <a href="n-4fi0.html"><span class="attrname">Type of Citation</span></a></h5>
+         <h5 class="header"><a href="n-jdy0.html"><span class="attrtag">id</span></a> <a href="n-jdy0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-5yp0.html"><span class="attrtag">xlink:actuate</span></a> <a href="n-5yp0.html"><span class="attrname">Actuating the Link</span></a></h5>
+         <h5 class="header"><a href="n-mjp0.html"><span class="attrtag">xlink:href</span></a> <a href="n-mjp0.html"><span class="attrname">Href (Linking Mechanism)</span></a></h5>
+         <h5 class="header"><a href="n-yqp0.html"><span class="attrtag">xlink:role</span></a> <a href="n-yqp0.html"><span class="attrname">Role of the Link</span></a></h5>
+         <h5 class="header"><a href="n-a9p0.html"><span class="attrtag">xlink:show</span></a> <a href="n-a9p0.html"><span class="attrname">Showing the Link</span></a></h5>
+         <h5 class="header"><a href="n-5zp0.html"><span class="attrtag">xlink:title</span></a> <a href="n-5zp0.html"><span class="attrname">Title of the Link</span></a></h5>
+         <h5 class="header"><a href="n-dkq0.html"><span class="attrtag">xlink:type</span></a> <a href="n-dkq0.html"><span class="attrname">Type of Link</span></a></h5>
+         <h5 class="header"><a href="n-naq0.html"><span class="attrtag">xmlns:xlink</span></a> <a href="n-naq0.html"><span class="attrname">XLink  Namespace Declaration</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">There are two kinds of citations in this tag set; the <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> element is free form to accommodate many styles of references, while the other element (<a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>) has a rigid structure of elements within it.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  nlm-citation
+                        ((person-group | collab)*,
+                         (article-title | trans-title)*,
+                         source?, patent?, trans-source?, year?,
+                         ((month?, day?, time-stamp?) | season?),
+                         access-date?, volume?, edition?,
+                         conf-name?, conf-date?, conf-loc?,
+                         (issue | supplement)*, publisher-loc?,
+                         publisher-name?, (fpage?, lpage?)*,
+                         page-count?, series?, comment*, pub-id*,
+                         annotation?)                                &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-zqt0.html"><span class="elementname">Person Group for a Cited Publication</span></a> <a href="n-zqt0.html"><span class="elementtag">&lt;person-group&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-q750.html"><span class="elementname">Collaborative (Group) Author</span></a> <a href="n-q750.html"><span class="elementtag">&lt;collab&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-dqc0.html"><span class="elementname">Article Title</span></a> <a href="n-dqc0.html"><span class="elementtag">&lt;article-title&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ssr0.html"><span class="elementname">Translated Title</span></a> <a href="n-ssr0.html"><span class="elementtag">&lt;trans-title&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-cwg0.html"><span class="elementname">Source</span></a> <a href="n-cwg0.html"><span class="elementtag">&lt;source&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-ght0.html"><span class="elementname">Patent Number, Cited</span></a> <a href="n-ght0.html"><span class="elementtag">&lt;patent&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-k3r0.html"><span class="elementname">Translated Source</span></a> <a href="n-k3r0.html"><span class="elementtag">&lt;trans-source&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-edh0.html"><span class="elementname">Year</span></a> <a href="n-edh0.html"><span class="elementtag">&lt;year&gt;</span></a>, zero or one
+                  </li>
+                  <li>Any one of:
+                     <ul class="bullist">
+                        <li>The following, in order:
+                           <ul class="bullist">
+                              <li>
+                                                                     <a href="n-s7s0.html"><span class="elementname">Month</span></a> <a href="n-s7s0.html"><span class="elementtag">&lt;month&gt;</span></a>, zero or one
+                              </li>
+                              <li>
+                                                                     <a href="n-nya0.html"><span class="elementname">Day</span></a> <a href="n-nya0.html"><span class="elementtag">&lt;day&gt;</span></a>, zero or one
+                              </li>
+                              <li>
+                                                                     <a href="n-vhd0.html"><span class="elementname">Time Stamp for Cited Work</span></a> <a href="n-vhd0.html"><span class="elementtag">&lt;time-stamp&gt;</span></a>, zero or one
+                              </li>
+                           </ul>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-35f0.html"><span class="elementname">Season</span></a> <a href="n-35f0.html"><span class="elementtag">&lt;season&gt;</span></a>, zero or one
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-rv20.html"><span class="elementname">Access Date for Cited Work</span></a> <a href="n-rv20.html"><span class="elementtag">&lt;access-date&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-23h0.html"><span class="elementname">Volume Number</span></a> <a href="n-23h0.html"><span class="elementtag">&lt;volume&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-vfu0.html"><span class="elementname">Edition, Cited</span></a> <a href="n-vfu0.html"><span class="elementtag">&lt;edition&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-7380.html"><span class="elementname">Conference Name</span></a> <a href="n-7380.html"><span class="elementtag">&lt;conf-name&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-qb50.html"><span class="elementname">Conference Date</span></a> <a href="n-qb50.html"><span class="elementtag">&lt;conf-date&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-hm50.html"><span class="elementname">Conference Location</span></a> <a href="n-hm50.html"><span class="elementtag">&lt;conf-loc&gt;</span></a>, zero or one
+                  </li>
+                  <li>Any combination of:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-i6v0.html"><span class="elementname">Issue Number</span></a> <a href="n-i6v0.html"><span class="elementtag">&lt;issue&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-d260.html"><span class="elementname">Supplement Information</span></a> <a href="n-d260.html"><span class="elementtag">&lt;supplement&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-dq70.html"><span class="elementname">Publisher&#8217;s Location</span></a> <a href="n-dq70.html"><span class="elementtag">&lt;publisher-loc&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-bke0.html"><span class="elementname">Publisher&#8217;s Name</span></a> <a href="n-bke0.html"><span class="elementtag">&lt;publisher-name&gt;</span></a>, zero or one
+                  </li>
+                  <li>Zero or more occurrences of the following, in order:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-gqw0.html"><span class="elementname">First Page</span></a> <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a>, zero or one
+                        </li>
+                        <li>
+                                                      <a href="n-ap40.html"><span class="elementname">Last Page</span></a> <a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a>, zero or one
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-w6t0.html"><span class="elementname">Page Count</span></a> <a href="n-w6t0.html"><span class="elementtag">&lt;page-count&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-y7f0.html"><span class="elementname">Series</span></a> <a href="n-y7f0.html"><span class="elementtag">&lt;series&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-6650.html"><span class="elementname">Comment in a Citation</span></a> <a href="n-6650.html"><span class="elementtag">&lt;comment&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-fj70.html"><span class="elementname">Publication Identifier for a Cited Publication</span></a> <a href="n-fj70.html"><span class="elementtag">&lt;pub-id&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-wcc0.html"><span class="elementname">Annotation in a Citation</span></a> <a href="n-wcc0.html"><span class="elementtag">&lt;annotation&gt;</span></a>, zero or one
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7st0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-7st0.html"><span class="elementname">Paragraph</span></a>; <a href="n-h8e0.html"><span class="elementtag">&lt;ref&gt;</span></a> <a href="n-h8e0.html"><span class="elementname">Reference Item</span></a>; <a href="n-nm60.html"><span class="elementtag">&lt;td&gt;</span></a> <a href="n-nm60.html"><span class="elementname">Table Data Cell (XHTML table model)</span></a>; <a href="n-med0.html"><span class="elementtag">&lt;th&gt;</span></a> <a href="n-med0.html"><span class="elementname">Table Header Cell (XHTML table model)</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;ref&gt;
+<strong><span class="focus">&lt;nlm-citation citation-type="journal"&gt;
+&lt;person-group&gt;...&lt;/person-group&gt;
+&lt;article-title&gt;Electrogastrographic study of patients with 
+unexplained nausea, bloating and vomiting&lt;/article-title&gt;
+&lt;source&gt;Gastroenterology&lt;/source&gt;
+&lt;year&gt;1980&lt;/year&gt;
+&lt;month&gt;08&lt;/month&gt;
+&lt;volume&gt;79&lt;/volume&gt;
+&lt;issue&gt;2&lt;/issue&gt;
+&lt;fpage&gt;311&lt;/fpage&gt;
+&lt;lpage&gt;314&lt;/lpage&gt;
+&lt;/nlm-citation&gt;</span></strong>
+&lt;/ref&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">nlmcitation.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

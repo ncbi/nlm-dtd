@@ -1,0 +1,60 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Attribute: Source Identifier</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">source-id</h1>
+         <h1 class="attrname">Source Identifier</h1>
+      </div>
+      <div class="definition">
+         <p class="para">The identifier of a journal, book, conference proceedings, or other publication that is (or contains) the target of the <a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a>
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Used along with <a href="n-u8n0.html" target="main" title="Source Identifier Type"><span class="attrtag">@source-id-type</span></a> to identify the publication that is (or contains) the target of the <a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a> element.  The <a href="n-85n0.html" target="main" title="Source Identifier"><span class="attrtag">@source-id</span></a> might contain an ISBN as content, and the <a href="n-u8n0.html" target="main" title="Source Identifier Type"><span class="attrtag">@source-id-type</span></a> should indicate that this ID is an ISBN.
+         </p>
+         <p class="para">For a large source (such as a book) it may be desirable for the link to cause delivery of only a certain portion (such as
+            a chapter). In that case, the book is specified by this attribute, while the particular chapter is specified by the <a href="n-dne0.html" target="main" title="Document Identifier"><span class="attrtag">@document-id</span></a> attribute. If the entire destination is delivered, it should be specified using the <a href="n-dne0.html" target="main" title="Document Identifier"><span class="attrtag">@document-id</span></a> attribute, and this attribute should be omitted.
+            
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Element</span></h4>
+            <h5><a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">Text, numbers, or special characters</td>
+                  <td class="attrmeaning">The identifier of the source for the <a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

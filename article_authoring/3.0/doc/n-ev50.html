@@ -1,0 +1,232 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Formula, Display</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;disp-formula&gt;</h1>
+         <h1 class="elementname">Formula, Display</h1>
+      </div>
+      <div class="definition">
+         <p class="para">A mathematical equation, expression, or formula that is to be displayed as a block (callout) within the narrative flow. This
+            is not a “formula” in the strict mathematical sense but can be used for any mathematical expression.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element may contain the actual characters that make up an equation or formula, or a graphic that contains the formula.
+            Thus, the mathematics can be expressed as ASCII characters; MathML expressions; or as a graphic or series of graphics.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-yce0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yce0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-z8f0.html" target="main"><span class="attrtag">id</span></a> <a href="n-z8f0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-vwn0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-vwn0.html" target="main"><span class="attrname">Specific Use</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">For a mathematical equation, expression, or formula which is to be displayed inline with the text, use the <a href="n-xka0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a> element.
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  disp-formula <a href="n-bbr0.html" target="main" title="Formula, Display Model"><span class="petag">%disp-formula-model;</span></a>                         &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(#PCDATA | alt-text | long-desc | email | ext-link | uri | break | bold | italic | monospace | overline | roman | sc | strike
+            | underline | attrib | permissions | alternatives | inline-graphic | chem-struct | inline-formula | label | mml:math | graphic
+            | media | preformat | sub | sup)*
+         </p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Any combination of:
+            <ul class="bullist">
+               <li>Text, numbers, or special characters</li>
+               <li>All the accessibility elements:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-nc20.html" target="main" title="Alternate Title Text (For a Figure, Etc.)"><span class="elementtag">&lt;alt-text&gt;</span></a> <a href="n-nc20.html" target="main" title="<alt-text&gt;"><span class="elementname">Alternate Title Text (For a Figure, Etc.)</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-jku0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a> <a href="n-jku0.html" target="main" title="<long-desc&gt;"><span class="elementname">Long Description</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>All the address linking elements:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-gm50.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-gm50.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-c280.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-c280.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-yyt0.html" target="main" title="Uniform Resource Indicator (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-yyt0.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Indicator (URI)</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-xxc0.html" target="main" title="Line Break"><span class="elementtag">&lt;break&gt;</span></a> <a href="n-xxc0.html" target="main" title="<break&gt;"><span class="elementname">Line Break</span></a>
+                  
+               </li>
+               <li>All the emphasis elements:
+                  <ul class="bullist">
+                     <li>
+                        <a href="n-j2c0.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-j2c0.html" target="main" title="<bold&gt;"><span class="elementname">Bold</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-ita0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-ita0.html" target="main" title="<italic&gt;"><span class="elementname">Italic</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-dgu0.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-dgu0.html" target="main" title="<monospace&gt;"><span class="elementname">Monospace Text (Typewriter Text)</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-yuw0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-yuw0.html" target="main" title="<overline&gt;"><span class="elementname">Overline</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-hwv0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a> <a href="n-hwv0.html" target="main" title="<roman&gt;"><span class="elementname">Roman</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-fsv0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-fsv0.html" target="main" title="<sc&gt;"><span class="elementname">Small Caps</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-x340.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-x340.html" target="main" title="<strike&gt;"><span class="elementname">Strike Through</span></a>
+                        
+                     </li>
+                     <li>
+                        <a href="n-pdt0.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-pdt0.html" target="main" title="<underline&gt;"><span class="elementname">Underline</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-6n20.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-6n20.html" target="main" title="<attrib&gt;"><span class="elementname">Attribution</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-nyw0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-nyw0.html" target="main" title="<permissions&gt;"><span class="elementname">Permissions</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-7k20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> <a href="n-7k20.html" target="main" title="<alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-33a0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a> <a href="n-33a0.html" target="main" title="<inline-graphic&gt;"><span class="elementname">Graphic, Inline</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-57c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-57c0.html" target="main" title="<chem-struct&gt;"><span class="elementname">Chemical Structure (Display)</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-xka0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a> <a href="n-xka0.html" target="main" title="<inline-formula&gt;"><span class="elementname">Formula, Inline</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-tha0.html" target="main" title="Label (Of a Statement)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-tha0.html" target="main" title="<label&gt;"><span class="elementname">Label (Of a Statement)</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-dfu0.html" target="main" title="Math (MathML 2.0 Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> <a href="n-dfu0.html" target="main" title="<mml:math&gt;"><span class="elementname">Math (MathML 2.0 Tag Set)</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-tb80.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-tb80.html" target="main" title="<graphic&gt;"><span class="elementname">Graphic</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-f3u0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-f3u0.html" target="main" title="<media&gt;"><span class="elementname">Media Object</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-t9w0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-t9w0.html" target="main" title="<preformat&gt;"><span class="elementname">Preformatted Text</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-te40.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-te40.html" target="main" title="<sub&gt;"><span class="elementname">Subscript</span></a>
+                  
+               </li>
+               <li>
+                  <a href="n-9y40.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-9y40.html" target="main" title="<sup&gt;"><span class="elementname">Superscript</span></a>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-b820.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-hq20.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-im20.html" target="main" title="Body of the Article"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-68c0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-7750.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-vu80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-xya0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-myu0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-s4w0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-ngv0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-sx40.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-ues0.html" target="main" title="Table Data Cell (XHTML table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-ekt0.html" target="main" title="Table Header Cell (XHTML table model)"><span class="elementtag">&lt;th&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;p&gt;... This can be seen in the following summation:
+<strong><span class="focus">&lt;disp-formula&gt;
+&lt;mml:math&gt;
+&lt;mml:semantics&gt;
+&lt;mml:mrow&gt;
+&lt;mml:munder&gt;
+&lt;mml:mo&gt;&amp;sum;&lt;/mml:mo&gt;
+&lt;mml:mi&gt;m&lt;/mml:mi&gt;
+&lt;/mml:munder&gt;
+&lt;mml:mrow&gt;
+&lt;mml:msub&gt;
+&lt;mml:mover accent='true'&gt;
+&lt;mml:mi&gt;p&lt;/mml:mi&gt;
+&lt;mml:mo&gt;&amp;dot;&lt;/mml:mo&gt;
+&lt;/mml:mover&gt;
+&lt;mml:mi&gt;m&lt;/mml:mi&gt;
+&lt;/mml:msub&gt;
+&lt;mml:mo&gt;=&lt;/mml:mo&gt;
+&lt;mml:mn&gt;0&lt;/mml:mn&gt;
+&lt;/mml:mrow&gt;
+&lt;/mml:mrow&gt;
+&lt;/mml:semantics&gt;
+&lt;/mml:math&gt;
+&lt;/disp-formula&gt;</span></strong>
+&lt;/p&gt;
+...
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">math3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

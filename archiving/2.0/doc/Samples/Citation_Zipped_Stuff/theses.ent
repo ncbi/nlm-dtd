@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+<no>V.</no>
+   <title>Dissertation and Theses and Their Parts</title>
+   <reflist>
+ <!--     <reflist>
+         <title>SAMPLE CITATIONS FOR A DISSERTATION AND A THESIS</title>
+         <reflist>
+            <title>A Dissertation</title>
+            <ref>
+               <citation citation-type="thesis">
+                  <person-group person-group-type="author">
+                     <name>
+                        <surname>Youssef</surname>
+                        <given-names>Neemat M</given-names>
+                     </name>
+                  </person-group>
+                  <source>School adjustment of children with congenital heard disease [dissertation]</source>
+                  <year>1988</year>
+                  <publisher-loc>Pittsburgh (PA)</publisher-loc>
+                  <publisher-name>University of Pittsburgh</publisher-name>
+                  <lpage>313</lpage>
+               </citation>
+            </ref>
+         </reflist>
+         <reflist>
+            <title>A Thesis</title>
+            <ref>
+               <citation citation-type="thesis">
+                  <person-group person-group-type="author">
+                     <name>
+                        <surname>Herbrick</surname>
+                        <given-names>Raymona T</given-names>
+                     </name>
+                  </person-group>
+                  <source>The identification of criteria essential for analyzing cardiac rehabilitation programs [masters thesis]</source>
+                  <year>1989</year>
+                  <publisher-loc>Long Beach</publisher-loc>
+                  <publisher-name>California State University at Long Beach</publisher-name>
+                  <lpage>188</lpage>
+               </citation>
+            </ref>
+         </reflist>
+      </reflist> -->
+      <reflist>
+         <title>1. US doctoral dissertation </title>
+         <reflist>
+            <ref>
+               <citation citation-type="thesis">
+                  <person-group person-group-type="author">
+                     <name>
+                        <surname>Youssef</surname>
+                        <given-names>Neemat M</given-names>
+                     </name>
+                  </person-group>
+                  <source>School adjustment of children with congenital heard disease [dissertation]</source>
+                  <year>1988</year>
+                  <publisher-loc>Pittsburgh (PA)</publisher-loc>
+                  <publisher-name>University of Pittsburgh</publisher-name>
+                  <lpage>313</lpage>
+                  <other-ref>Available from: University Microforms, Ann Arbor, MI; AAD88-17006</other-ref>
+               </citation>
+            </ref>
+            <ref>
+               <citation citation-type="thesis">
+                  <person-group person-group-type="author">
+                     <name>
+                        <surname>Bertram</surname>
+                        <given-names>Kenneth</given-names>
+                     </name>
+                  </person-group>
+                  <source>The role of natural killer activity in resistance to herpesvirus-induced disease [dissertation]</source>
+                  <year>1981</year>
+                  <month>12</month>
+                  <publisher-loc>[Rochester]</publisher-loc>
+                  <publisher-name>University of Minnesota</publisher-name>
+                  <lpage>138</lpage>
+               </citation>
+            </ref>
+            <ref>
+               <citation citation-type="thesis">
+                  <person-group person-group-type="author">
+                     <name>
+                        <surname>Wayne</surname>
+                        <given-names>Tom F</given-names>
+                     </name>
+                  </person-group>
+                  <source>Cold injury in World War II: a study in the epidemiology of trauma [dissertation]</source>
+                  <year>1950</year>
+                  <month>5</month>
+                  <day>1</day>
+                  <publisher-loc>[Cambridge (MA)]</publisher-loc>
+                  <publisher-name>Harvard School of Public Health</publisher-name>
+                  <lpage>306</lpage>
+                  <other-ref>+ appendices</other-ref>
+               </citation>
+            </ref>
+            <ref>
+               <citation citation-type="thesis">
+                  <person-group person-group-type="author">
+                     <name>
+                        <surname>Burlingame</surname>
+                        <given-names>Virginia S</given-names>
+                     </name>
+                  </person-group>
+                  <source>The family therapy tapestry: a multi-disciplinary history of the family therapy movement in the United States from 1900 to 1957 [dissertation]</source>
+                  <year>1982</year>
+                  <month>6</month>
+                  <publisher-loc>Evanston (IL)</publisher-loc>
+                  <publisher-name>Northwestern University</publisher-name>
+                  <lpage>628</lpage>
+               </citation>
+            </ref>
+         </reflist>
+      </reflist>
+      <reflist>
+         <title>2. Doctoral dissertation in a language other than English, with translation - </title>
+         <ref>
+            <citation citation-type="thesis">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Alvarez-Lerma</surname>
+                     <given-names>Francesco</given-names>
+                  </name>
+               </person-group>
+               <source xml:lang="sp">Valoration de las medidas de control de la infeccion nosocomial</source>
+               <trans-source>Evolution of control measures in nosocomial infections [dissertation]</trans-source>
+               <year>1988</year>
+               <publisher-loc>Barcelona (Spain)</publisher-loc>
+               <publisher-name>Universitat Autonoma de Barcelona</publisher-name>
+               <lpage>402</lpage>
+            </citation>
+         </ref>
+      </reflist>
+      <reflist>
+         <title>5. Part of a dissertation - </title>
+         <ref>
+            <citation citation-type="thesis">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Weir</surname>
+                     <given-names>David R</given-names>
+                  </name>
+               </person-group>
+               <atitle>Table 1, Femal age at first marriage, by marriage cohort</atitle>
+               <source>Fertility transition in rural France, 1740-1829 [dissertation]</source>
+               <year>1988</year>
+               <publisher-loc>Stanford (CA)</publisher-loc>
+               <publisher-name>Stanford University</publisher-name>
+               <fpage>19</fpage>
+            </citation>
+         </ref>
+      </reflist>
+   </reflist>
+</chapter>

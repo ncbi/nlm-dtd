@@ -1,0 +1,102 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="green.css" type="text/css">
+      <title>Element: Time Stamp for Cited Work</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;time-stamp&gt;</h1>
+         <h1 class="elementname">Time Stamp for Cited Work</h1>
+      </div>
+      <div class="definition">
+         <p class="para">This is a element from older versions of this Tag Set, now replaced by <a href="n-aru0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> with a <a href="n-8fm0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute of “time-stamp” to record any time stamp that was found on the cited resource when it was examined, for resources
+            such as databases that may use a time signature to identify different versions. 
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element is an artifact, now used only within the <a href="n-a8f0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a> element, which is deprecated in and after Version 3.0. Use of this element is therefore also deprecated. 
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-8fm0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-8fm0.html" target="main"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Use <a href="n-aru0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> to record information such as this inside a <a href="n-5bw0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-sue0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>. 
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  time-stamp   (#PCDATA <a href="n-33s2.html" target="main" title="Time Stamp Elements"><span class="petag">%time-stamp-elements;</span></a>)*             &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(#PCDATA | x)*</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">Any combination of:
+            <ul class="bullist">
+               <li>Text, numbers, or special characters</li>
+               <li>
+                  <a href="n-xa90.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-xa90.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-a8f0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <p class="para">Used only in <a href="n-a8f0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, 
+            an element-style bibliographic reference (punctuation and spacing removed):
+         </p>
+         <div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;nlm-citation publication-type="commun"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;string-name&gt;&lt;surname&gt;Harris&lt;/surname&gt;, 
+&lt;given-names&gt;Pat&lt;/given-names&gt;&lt;/string-name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;New Z39.50 resource [Internet]&lt;/article-title&gt;
+&lt;source&gt;Message to: Karen Patrias&lt;/source&gt;
+&lt;year&gt;1998&lt;/year&gt;
+&lt;month&gt;02&lt;/month&gt;
+&lt;day&gt;27&lt;/day&gt;
+<strong><span class="focus">&lt;time-stamp&gt;1:18 pm&lt;/time-stamp&gt;</span></strong>
+&lt;access-date&gt;cited 1998 Feb 28&lt;/access-date&gt;
+&lt;comment&gt;[about 2 screens]&lt;/comment&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

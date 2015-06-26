@@ -1,0 +1,120 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Copyright Year</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;copyright-year&gt;</h1>
+         <h1 class="elementname">Copyright Year</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">The year of a copyright of the article</p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Since <a href="n-haa0.html"><span class="elementname">Copyright Statement</span></a> is
+                   intended for display, this element&#8217;s contents may not be displayed (but will be available for searching). The <a href="n-n4a0.html"><span class="elementname">Copyright Year</span></a> need not be used,
+                   if having the year as part of the <a href="n-haa0.html"><span class="elementname">Copyright Statement</span></a> (see <a href="n-haa0.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a>) is sufficient.
+         </p>
+         <p class="para">Best practice is to use the <a href="n-haa0.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a> and <a href="n-n4a0.html"><span class="elementtag">&lt;copyright-year&gt;</span></a> elements only within the container element <a href="n-2qt0.html"><span class="elementtag">&lt;permissions&gt;</span></a>. The  <a href="n-haa0.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a> and <a href="n-n4a0.html"><span class="elementtag">&lt;copyright-year&gt;</span></a> elements are allowed outside the permissions wrapper only for reasons of backwards compatibility.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">There are three copyright elements which may be contained in the <a href="n-2qt0.html"><span class="elementtag">&lt;permissions&gt;</span></a> wrapper:
+            <ul class="bullist">
+               <li><a href="n-haa0.html"><span class="elementtag">&lt;copyright-statement&gt;</span></a> , which is the
+                                          textual statement of the copyright intended for print and display (The full statement usually contains
+                  the copyright holder&#8217;s name and the year among other information.);
+               </li>
+               <li><a href="n-n4a0.html"><span class="elementtag">&lt;copyright-year&gt;</span></a>,  a metadata element that names just the copyright year; (This is intended for metadata searching and aggregation and is
+                  typically not displayed.);
+                                           and 
+               </li>
+               <li><a href="n-u8a0.html"><span class="elementtag">&lt;copyright-holder&gt;</span></a>, also a  metadata element that is typically not displayed.  
+               </li>
+            </ul>
+                                    
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  copyright-year
+                        (#PCDATA)                                    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-2qt0.html"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-2qt0.html"><span class="elementname">Permissions</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;
+&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted"&gt;
+&lt;day&gt;29&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British
+Medical Journal&lt;/copyright-statement&gt;
+<strong><span class="focus">&lt;copyright-year&gt;1999&lt;/copyright-year&gt;</span></strong>
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of day hospital 
+attendance in prolonging independent living for 
+elderly people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

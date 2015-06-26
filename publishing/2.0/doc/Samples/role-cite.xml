@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../journalpublishing.dtd">
+<?mtl hellip?><article>
+<front>
+<journal-meta>
+<journal-id>Fake Journal ID for Role (cit) Example</journal-id>
+<issn>Fake ISSN</issn>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Hand-tagged Citation</article-title>
+</title-group>
+<pub-date><year>2004</year></pub-date>
+<fpage>00</fpage>
+</article-meta>
+</front>
+<body><p></p></body>
+<back>
+<ref-list>
+<ref><?mtl /hellip?>
+<citation>
+<person-group>
+<name><surname>Johnson</surname>
+<given-names>D. H.</given-names></name>
+<name><surname>O'Neil</surname>
+<given-names>T. A.</given-names></name>
+</person-group>
+<role>managing directors.</role>
+<year>2001</year> Wildlife habitat relationships in Oregon 
+and Washington. Oregon State University Press, Corvallis, 
+Oregon, USA</citation>
+<?mtl hellip?></ref>
+</ref-list>
+</back>
+</article><?mtl /hellip?>

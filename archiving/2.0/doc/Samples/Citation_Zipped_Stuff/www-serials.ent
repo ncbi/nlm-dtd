@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+   <no>2.</no>
+   <title>Serials (Journals)</title>
+   <reflist>
+      <title>A. Entire Serials</title>
+      </reflist>
+      <reflist>
+         <title>B. Serial Articles</title>
+         <reflist>
+            <title>1. Standard reference with volume, issue, and pages:</title>
+               <ref>
+                  <citation citation-type="journal">
+                     <person-group person-group-type="author">
+                        <name>
+                           <surname>Tong</surname>
+                           <given-names>V</given-names>
+                        </name>
+                        <name>
+                           <surname>Abbott</surname>
+                           <given-names>FS</given-names>
+                        </name>
+                        <name>
+                           <surname>Mbofana</surname>
+                           <given-names>S</given-names>
+                        </name>
+                        <name>
+                           <surname>Walker</surname>
+                           <given-names>MJ</given-names>
+                        </name>
+                     </person-group>
+                     <atitle>In vitro investigation of the hepatic extraction of RSD1070, a novel antiarrhythmic compound</atitle>
+                     <source>J Pharm Pharm Sci [Internet]</source>
+                     <year>2001</year>
+                     <access-date>cited 2001 May 3</access-date>
+                     <volume>4</volume>
+                     <issue>1</issue>
+                     <fpage>15</fpage>
+                     <lpage>23</lpage>
+                     <other-ref>Available from: <exlnk exlnk-type="url" href="www.ualberta.ca/~csps/JPPS4(1)/F.Abbot/RSD1070.pdf">   http://www.ualberta.ca/~csps/JPPS4(1)/F.Abbot/RSD1070.pdf</exlnk></other-ref>
+                  </citation>
+               </ref>
+            </reflist>
+         <reflist>
+            <title>2 No author:</title>
+               <ref>
+                  <citation citation-type="journal">
+                     <atitle>Methods for voluntary weight loss and control</atitle>
+                     <source>NIH Technol Assess Statement [Internet]</source>
+                     <year>1992</year>
+                     <month>Mar 30 - Apr 1</month>
+                     <access-date>cited 2000 Apr 14</access-date>
+                     <issue>10</issue>
+                     <other-ref>[about 27p.]. Available from: <exlnk exlnk-type="url" href="www.ualberta.ca/~csps/JPPS4(1)/F.Abbot/RSD1070.pdf">   http://www.ualberta.ca/~csps/JPPS4(1)/F.Abbot/RSD1070.pdf</exlnk></other-ref>
+                  </citation>
+               </ref>
+            </reflist>
+      </reflist>
+      <reflist>
+         <title>C. Parts of Serial Articles</title>
+      </reflist>
+</chapter>

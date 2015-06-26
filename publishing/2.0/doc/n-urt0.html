@@ -1,0 +1,224 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib2-newblue.css" type="text/css">
+      <title>Attribute: Type of Article</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2003-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles
+            National Center for Biotechnology Information (NCBI)
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="attrtag">article-type</h1>
+         <h1 class="attrname">Type of Article</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Indicates what kind of article this is, for example, a research
+                    article, a commentary, a book or product review, a case report, a calendar,
+                    etc. This is  a prescribed list of values that can be checked by XML parsers.
+         </p>
+      </div>
+      <h2 class="header">Usage</h2>
+      <p class="para">This attribute can be used to attach information classes to articles for grouping or searching. An archive may use this, for
+         example, to preserve the publisher&#8217;s classification of an article.  For best practice, all articles should be assigned types
+         if possible. If the article
+                is not one of the listed types or the type of article cannot be determined, the
+                &#8220;<tt>other</tt>&#8221; attribute value may be
+                used, or the attribute may be omitted.
+      </p>
+      <p class="para"><strong>Use for primary article</strong> &#8212; When the article is a commentary on another article (for example,
+                a correction or addendum), this attribute contains metadata concerning the commentary itself;
+                it does <em>not</em> define the kind of article that is being corrected or
+                amended.
+      </p>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Conversion Note: When possible, this attribute should used on the <a href="n-9kc0.html"><span class="elementtag">&lt;article&gt;</span></a> element to provide typing information for retrieval or record keeping. Many publishers indicate the type of article, either
+            in an attribute like this one, or with unique element declarations (such as <tt>&lt;review&gt;</tt> or <tt>&lt;calendar&gt;</tt>), and this attribute has been designed to preserve that information.
+         </p>
+      </div>
+      <div class="attrvalueinfo">
+         <h2 class="header">Attribute Values</h2>
+         <div class="attrvalues">
+            <h4 class="header"><span class="headerlabel">In Elements</span></h4>
+            <h5 class="heading"><a href="n-9kc0.html"><span class="elementtag">&lt;article&gt;</span></a> <a href="n-9kc0.html"><span class="elementname">Article</span></a></h5>
+            <h5 class="heading"><a href="n-miv0.html"><span class="elementtag">&lt;sub-article&gt;</span></a> <a href="n-miv0.html"><span class="elementname">Sub-Article</span></a></h5>
+            <table class="attrtable">
+               <tr>
+                  <th class="attrvalue">Value</th>
+                  <th class="attrmeaning">Meaning</th>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">abstract</td>
+                  <td class="attrmeaning">The article itself is an abstract (of a paper or
+                                  presentation) that usually has been presented or published
+                                  separately.
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">addendum</td>
+                  <td class="attrmeaning">A published work that adds additional information or
+                                                          clarification to another work (The somewhat similar value &#8220;<tt>correction</tt>&#8221; corrects an error in previously
+                                                          published material.)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">announcement</td>
+                  <td class="attrmeaning">Material announced in the publication (may or may not be directly related to the publication)</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">article-commentary</td>
+                  <td class="attrmeaning">A work whose subject or focus is another article or articles; 
+                                                          this article comments on the 
+                                                          other article(s). (This value would be used when the editors of a publication 
+                                                          invite an author with an opposing opinion to comment on
+                                                          a controversial article, and then publish
+                                                          the two together. The somewhat similar value &#8220;<em>editorial</em>&#8221; is reserved for commentary written by an editor or other publication staff.)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">book-review</td>
+                  <td class="attrmeaning">Review or analysis of one or more printed or online
+                                books. (The similar value &#8220;<tt>product-review</tt>&#8221; is used for product analyses.)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">books-received</td>
+                  <td class="attrmeaning">Notification that items, e.g., books or other works, have been received
+                                                          by a publication for review
+                                                          or other consideration
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">brief-report</td>
+                  <td class="attrmeaning">A short and/or rapid announcement of research
+                                   results
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">calendar</td>
+                  <td class="attrmeaning">A list of events</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">case-report</td>
+                  <td class="attrmeaning">Case study, case report, or other description of a
+                                   case
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">correction</td>
+                  <td class="attrmeaning">A modification or correction of previously published
+                                   material; this is sometimes called &#8220;errata&#8221; (The
+                                   similar value &#8220;<tt>addendum</tt>&#8221; merely
+                                   adds to previously published material.)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">discussion</td>
+                  <td class="attrmeaning">Invited discussion related to a specific article or
+                                   issue
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">editorial</td>
+                  <td class="attrmeaning">Opinion piece, policy statement, or general commentary,
+                                   typically written by staff of the publication (The similar value
+                                   &#8220;<tt>article-commentary</tt>&#8221; is reserved for a
+                                   commentary on a specific article or articles, which is written by a an author with a contrasting position, not
+                     an editor or other publication staff.)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">in-brief</td>
+                  <td class="attrmeaning">Summary or teaser of items in the current 
+                                                          issue
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">introduction</td>
+                  <td class="attrmeaning">An introduction to a publication, or to a series of articles
+                                   within a publication, etc., typically for a special section or
+                                   issue
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">letter</td>
+                  <td class="attrmeaning">Letter to a publication, typically
+                                  commenting upon a published work
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">meeting-report</td>
+                  <td class="attrmeaning">Report of a conference, symposium, or meeting</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">news</td>
+                  <td class="attrmeaning">News item, normally current but atypically historical</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">obituary</td>
+                  <td class="attrmeaning">Announcement of a death, or the appreciation for a
+                                  colleague who has recently died
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">oration</td>
+                  <td class="attrmeaning">Reprint of a speech or oral presentation</td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">other</td>
+                  <td class="attrmeaning">None of the article types explicitly named in this
+                                  list
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">product-review</td>
+                  <td class="attrmeaning">Description, analysis, or review of a product or service, for example, a software package (The similar value
+                                  &#8220;<tt>book-review</tt>&#8221; is used for analyses of books.)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">reply</td>
+                  <td class="attrmeaning">Reply to a letter or commentary, typically by the
+                                original author commenting upon the comments
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">research-article</td>
+                  <td class="attrmeaning">Article reporting on primary research (The related value &#8220;<tt>review-article</tt>&#8221;
+                                describes a literature review, research summary, or state-of-the-art article.)
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">retraction</td>
+                  <td class="attrmeaning">Retraction or disavowal of previously published
+                                material
+                  </td>
+               </tr>
+               <tr class="attrrow">
+                  <td class="attrvalue">review-article</td>
+                  <td class="attrmeaning">Review or state-of-the-art summary article (The related
+                                value &#8220;<tt>research-article</tt>&#8221; describes
+                                original research.)
+                  </td>
+               </tr>
+               <tr>
+                  <td class="attrrestrict" colspan="2"><b>Restriction: </b>This attribute may be specified if the element is used.
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Publishing 2.0</h2>
+         <h4 class="pubdate">Version of 20041115</h4>
+      </div>
+   </body>
+</html>

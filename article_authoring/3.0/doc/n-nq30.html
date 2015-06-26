@@ -1,0 +1,98 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+      <link rel="stylesheet" href="Pumpkin.css" type="text/css">
+      <title>Element: Date</title>
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+            National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+            National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;date&gt;</h1>
+         <h1 class="elementname">Date</h1>
+      </div>
+      <div class="definition">
+         <p class="para">Used within citations (<a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), to name the publication date of the cited source. This element acts as a container element for date elements, such as <a href="n-wz30.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-gru0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-s570.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, which are typically given numeric values, as well as for <a href="n-xfv0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a>, which is just a text string.
+            
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">For a detailed discussion on the use of <span class="elementtag">&lt;date&gt;</span>, see <a href="n-s5b0.html#tag-cite-dates">Dates in Citations</a>.
+            
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-y7e0.html" target="main"><span class="attrtag">date-type</span></a> <a href="n-y7e0.html" target="main"><span class="attrname">Type of Date</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Within citations (<a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), the elements <a href="n-s570.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-wz30.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-gru0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-xfv0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> may also be used to describe the date a cited resource was published. Other dates inside a citation, such as a copyright
+            date, the date on which the author accessed the resource, or a withdrawal date, are rarely tagged, but may be recorded using
+            the <a href="n-t930.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> element with the <a href="n-yce0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute used to name the type of date (copyright, access-date, time-stamp, etc.).
+            
+         </p>
+      </div>
+      <div class="contentmodel">
+         <h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  date         <a href="n-anr0.html" target="main" title="Date Elements Model"><span class="petag">%date-model;</span></a>                                 &gt;</pre></div>
+      <div class="contentmodel">
+         <h2 class="header">Expanded Content Model</h2>
+         <p class="contentdesc">(((day?, month?) | season)?, year)</p>
+      </div>
+      <div class="modeldesc">
+         <h2 class="header">Description</h2>
+         <p class="para">The following, in order:
+            <ul class="bullist">
+               <li>Optionally any one of:
+                  <ul class="bullist">
+                     <li>The following, in order:
+                        <ul class="bullist">
+                           <li>
+                              <a href="n-wz30.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a> <a href="n-wz30.html" target="main" title="<day&gt;"><span class="elementname">Day</span></a>, zero or one
+                           </li>
+                           <li>
+                              <a href="n-gru0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a> <a href="n-gru0.html" target="main" title="<month&gt;"><span class="elementname">Month</span></a>, zero or one
+                           </li>
+                        </ul>
+                        
+                     </li>
+                     <li>
+                        <a href="n-xfv0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> <a href="n-xfv0.html" target="main" title="<season&gt;"><span class="elementname">Season</span></a>
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>
+                  <a href="n-s570.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> <a href="n-s570.html" target="main" title="<year&gt;"><span class="elementname">Year</span></a>
+                  
+               </li>
+            </ul>
+            
+         </p>
+      </div>
+      <div class="elementcontext">
+         <h3 class="header">This element may be contained in:</h3>
+         <p class="para"><a href="n-9n50.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-gau0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-uux0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-ahx0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-7mx0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+      </div>
+      <div class="examp.group">
+         <h3 class="header">Example</h3>
+         <div class="taggedexamp"><pre class="taggedtext">No sample is available at this time.</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common3.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 3.0</h2>
+         <h4 class="pubdate">Version of November 2008</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,301 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: History: Document History</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;history&gt;</h1>
+         <h1 class="elementname">History: Document History</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Used as a container for dates related to the processing history
+                   of the document, such as received date and accepted date
+         </p>
+         <p class="para">Conversion Note: The dates inside the <a href="n-emx0.html"><span class="elementtag">&lt;history&gt;</span></a> element are used to preserve events
+                   other than publication date(s) in the life cycle of the article. Publication dates
+                   are considered to be an important part of the article metadata. History dates include received date, accepted date,
+            reviewed date, and other dates that may be
+                   important to the publisher, but are not a likely part of the article metadata
+                   for searching, building a DOI, etc.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-emx0.html"><span class="elementtag">&lt;history&gt;</span></a> element contains one more <a href="n-sha0.html"><span class="elementtag">&lt;date&gt;</span></a> and/or <a href="n-ybg0.html"><span class="elementtag">&lt;string-date&gt;</span></a> elements; the <a href="n-sha0.html"><span class="elementtag">&lt;date&gt;</span></a> element has specific parts, such as day and year, inside it and the <a href="n-ybg0.html"><span class="elementtag">&lt;string-date&gt;</span></a> has a textual description of a date. Best practice for the history element is to use to use <a href="n-sha0.html"><span class="elementtag">&lt;date&gt;</span></a> as much as possible and tag the date components. The <a href="n-ybg0.html"><span class="elementtag">&lt;string-date&gt;</span></a> element should be used only when necessary, for example, when the date does not divide into year and month components. If
+            an archive chooses to make greater use of <a href="n-ybg0.html"><span class="elementtag">&lt;string-date&gt;</span></a>, for example to save money during conversion, it is still considered best practice to tag the year of publication inside
+            the textual date using a +<a href="n-edh0.html"><span class="elementtag">&lt;year&gt;</span></a> element.
+         </p>
+         <p class="para">The Archiving Tag Set allows <a href="n-ybg0.html"><span class="elementtag">&lt;string-date&gt;</span></a> both inside date and at the same level as date. This is the most flexible for allowing the archive to preserve any publisher&#8217;s
+            structure. The tighter Tag Sets created from the base Suite may choose to use one or the other in preference.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  history      %history-model;                              &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-chu0.html"><span class="elementname">Email Address</span></a> <a href="n-chu0.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ekw0.html"><span class="elementname">External Link</span></a> <a href="n-ekw0.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-8yr0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-8yr0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the article linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-6xv0.html"><span class="elementname">Inline Supplementary Material</span></a> <a href="n-6xv0.html"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a> <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-4iw0.html"><span class="elementname">Font</span></a> <a href="n-4iw0.html"><span class="elementtag">&lt;font&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-g3v0.html"><span class="elementname">Horizontal Rule</span></a> <a href="n-g3v0.html"><span class="elementtag">&lt;hr&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-n730.html"><span class="elementname">Bold</span></a> <a href="n-n730.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-c9v0.html"><span class="elementname">Italic</span></a> <a href="n-c9v0.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cvs0.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-cvs0.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-y8t0.html"><span class="elementname">Overline</span></a> <a href="n-y8t0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-w4t0.html"><span class="elementname">Overline Start</span></a> <a href="n-w4t0.html"><span class="elementtag">&lt;overline-start&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cvt0.html"><span class="elementname">Overline End</span></a> <a href="n-cvt0.html"><span class="elementtag">&lt;overline-end&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hqe0.html"><span class="elementname">Sans Serif</span></a> <a href="n-hqe0.html"><span class="elementtag">&lt;sans-serif&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-bze0.html"><span class="elementname">Small Caps</span></a> <a href="n-bze0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-gyg0.html"><span class="elementname">Strike Through</span></a> <a href="n-gyg0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-fgr0.html"><span class="elementname">Underline</span></a> <a href="n-fgr0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-cir0.html"><span class="elementname">Underline Start</span></a> <a href="n-cir0.html"><span class="elementtag">&lt;underline-start&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-zrr0.html"><span class="elementname">Underline End</span></a> <a href="n-zrr0.html"><span class="elementtag">&lt;underline-end&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-dwv0.html"><span class="elementname">Graphic, Inline</span></a> <a href="n-dwv0.html"><span class="elementtag">&lt;inline-graphic&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-3t70.html"><span class="elementname">Private Character (Custom or Unicode)</span></a> <a href="n-3t70.html"><span class="elementtag">&lt;private-char&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-x5v0.html"><span class="elementname">Formula, Inline</span></a> <a href="n-x5v0.html"><span class="elementtag">&lt;inline-formula&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-f7d0.html"><span class="elementname">Tex Math Equation</span></a> <a href="n-f7d0.html"><span class="elementtag">&lt;tex-math&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-6xs0.html"><span class="elementname">Math (Mathml 2.0 Tag Set)</span></a> <a href="n-6xs0.html"><span class="elementtag">&lt;mml:math&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-5900.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-5900.html"><span class="elementtag">&lt;abbrev&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-tws0.html"><span class="elementname">Milestone End</span></a> <a href="n-tws0.html"><span class="elementtag">&lt;milestone-end&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-kxs0.html"><span class="elementname">Milestone Start</span></a> <a href="n-kxs0.html"><span class="elementtag">&lt;milestone-start&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-ifs0.html"><span class="elementname">Named Special (Subject) Content</span></a> <a href="n-ifs0.html"><span class="elementtag">&lt;named-content&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the simple link/cross-referencing elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-crw0.html"><span class="elementname">Footnote</span></a> <a href="n-crw0.html"><span class="elementtag">&lt;fn&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-hj60.html"><span class="elementname">Target of an Internal Link</span></a> <a href="n-hj60.html"><span class="elementtag">&lt;target&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-beh0.html"><span class="elementname">X(cross) Reference</span></a> <a href="n-beh0.html"><span class="elementtag">&lt;xref&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-pan0.html"><span class="elementname">Subscript</span></a> <a href="n-pan0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-w9n0.html"><span class="elementname">Superscript</span></a> <a href="n-w9n0.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-4i30.html"><span class="elementname">Line Break</span></a> <a href="n-4i30.html"><span class="elementtag">&lt;break&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-sha0.html"><span class="elementname">Date</span></a> <a href="n-sha0.html"><span class="elementtag">&lt;date&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-ybg0.html"><span class="elementname">Date as a String</span></a> <a href="n-ybg0.html"><span class="elementtag">&lt;string-date&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-bsh0.html"><span class="elementname">X - Generated Text and Punctuation</span></a> <a href="n-bsh0.html"><span class="elementtag">&lt;x&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-6zw0.html"><span class="elementtag">&lt;front-stub&gt;</span></a> <a href="n-6zw0.html"><span class="elementname">Stub Front Metadata</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Examples</h2>
+         <div class="taggedex">
+            <h3 class="header">Example 1</h3><pre class="taggedtext">
+    </pre><p class="examp.desc">With various types of publication dates tagged (best practice):</p><pre class="taggedtext">
+    
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;
+&lt;lpage&gt;841&lt;/lpage&gt;
+<strong><span class="focus">&lt;history&gt;
+&lt;date date-type="accepted"&gt;
+&lt;day&gt;29&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;</span></strong>
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British
+Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of day hospital 
+attendance in prolonging independent living for 
+elderly people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+...
+
+
+    </pre></div>
+         <div class="taggedex">
+            <h3 class="header">Example 2</h3><pre class="taggedtext">
+        </pre><p class="examp.desc">With publication date information treated as character data:</p><pre class="taggedtext">
+        
+...
+&lt;article-meta&gt;
+...
+&lt;supplementary-material&gt;...&lt;/supplementary-material&gt;
+<strong><span class="focus">&lt;history&gt;Paper submitted August 22, 2000; pending government agency 
+review/approval, revised manuscript accepted June 12, 2002.&lt;/history&gt;</span></strong>
+&lt;permissions&gt;
+&lt;copyright-statement&gt;...&lt;/copyright-statement&gt;
+&lt;/permissions&gt;
+...
+&lt;/article-meta&gt;
+...
+
+
+    </pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">articlemeta.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

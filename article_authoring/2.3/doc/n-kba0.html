@@ -1,0 +1,195 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Preformatted Text</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;preformat&gt;</h1>
+         <h1 class="elementname">Preformatted Text</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Used for preformatted text, such as computer code, in which
+                   white space (such as tabs, line feeds, and spaces) should be preserved
+         </p>
+         <p class="para">This element&#8217;s content typically is displayed or printed in
+                   a monofont to preserve character alignment.
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">The <a href="n-irs0.html"><span class="attrtag">position</span></a> attribute may be used to indicate whether this element must be anchored at its exact location within the text or whether
+            it may float, for example, to the top of the next page, next column, to the end of a logical file, or within a separate window.
+            For the typical <a href="n-kba0.html"><span class="elementtag">&lt;preformat&gt;</span></a> element, the &#8220;float or anchor&#8221; decision will be governed by the size of the object. For example, short code fragments are
+            typically anchored whereas full programs are typically placed elsewhere such as in a separate window or at the end of the
+            article.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-sdv0.html"><span class="attrtag">alternate-form-of</span></a> <a href="n-sdv0.html"><span class="attrname">Alternate Form of Graphic, Media Object, Etc.</span></a></h5>
+         <h5 class="header"><a href="n-t2s0.html"><span class="attrtag">id</span></a> <a href="n-t2s0.html"><span class="attrname">Identifier</span></a></h5>
+         <h5 class="header"><a href="n-irs0.html"><span class="attrtag">position</span></a> <a href="n-irs0.html"><span class="attrname">Position</span></a></h5>
+         <h5 class="header"><a href="n-3ys0.html"><span class="attrtag">preformat-type</span></a> <a href="n-3ys0.html"><span class="attrname">Type of Preformatted Text</span></a></h5>
+         <h5 class="header"><a href="n-ec70.html"><span class="attrtag">xml:lang</span></a> <a href="n-ec70.html"><span class="attrname">Language</span></a></h5>
+         <h5 class="header"><a href="n-n570.html"><span class="attrtag">xml:space</span></a> <a href="n-n570.html"><span class="attrname">Space</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">Poetry may be tagged with the <a href="n-kba0.html"><span class="elementtag">&lt;preformat&gt;</span></a> element if spacing is critical, but usually poetry should be tagged with the <a href="n-h5v0.html"><span class="elementtag">&lt;verse-group&gt;</span></a> element, which may not preserve the exact indentation, but is likely to be displayed in a proportional font.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  preformat    %preformat-model;                            &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>Text, numbers, or special characters</li>
+                  <li>All the accessibility elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-9720.html"><span class="elementname">Alternate Title Text (For a Figure, Etc.)</span></a> <a href="n-9720.html"><span class="elementtag">&lt;alt-text&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-xh80.html"><span class="elementname">Long Description</span></a> <a href="n-xh80.html"><span class="elementtag">&lt;long-desc&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>All the address linking elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-p850.html"><span class="elementname">Email Address</span></a> <a href="n-p850.html"><span class="elementtag">&lt;email&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ju50.html"><span class="elementname">External Link</span></a> <a href="n-ju50.html"><span class="elementtag">&lt;ext-link&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-v3v0.html"><span class="elementname">Uniform Resource Indicator (URI)</span></a> <a href="n-v3v0.html"><span class="elementtag">&lt;uri&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-cb20.html"><span class="elementname">Attribution</span></a> <a href="n-cb20.html"><span class="elementtag">&lt;attrib&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-5ya0.html"><span class="elementname">Permissions</span></a> <a href="n-5ya0.html"><span class="elementtag">&lt;permissions&gt;</span></a>
+                                    
+                  </li>
+                  <li>All the emphasis elements:
+                     <ul class="bullist">
+                        <li>
+                                                      <a href="n-j5c0.html"><span class="elementname">Bold</span></a> <a href="n-j5c0.html"><span class="elementtag">&lt;bold&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-p480.html"><span class="elementname">Italic</span></a> <a href="n-p480.html"><span class="elementtag">&lt;italic&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-6q80.html"><span class="elementname">Monospace Text (Typewriter Text)</span></a> <a href="n-6q80.html"><span class="elementtag">&lt;monospace&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-esa0.html"><span class="elementname">Overline</span></a> <a href="n-esa0.html"><span class="elementtag">&lt;overline&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-p6u0.html"><span class="elementname">Small Caps</span></a> <a href="n-p6u0.html"><span class="elementtag">&lt;sc&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-4aw0.html"><span class="elementname">Strike Through</span></a> <a href="n-4aw0.html"><span class="elementtag">&lt;strike&gt;</span></a>
+                                                   
+                        </li>
+                        <li>
+                                                      <a href="n-ukv0.html"><span class="elementname">Underline</span></a> <a href="n-ukv0.html"><span class="elementtag">&lt;underline&gt;</span></a>
+                                                   
+                        </li>
+                     </ul>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-7320.html"><span class="elementname">Abbreviation or Acronym</span></a> <a href="n-7320.html"><span class="elementtag">&lt;abbrev&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-mka0.html"><span class="elementname">Named Special (Subject) Content</span></a> <a href="n-mka0.html"><span class="elementtag">&lt;named-content&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-xxw0.html"><span class="elementname">Subscript</span></a> <a href="n-xxw0.html"><span class="elementtag">&lt;sub&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-7fw0.html"><span class="elementname">Superscript</span></a> <a href="n-7fw0.html"><span class="elementtag">&lt;sup&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-6g20.html"><span class="elementtag">&lt;app&gt;</span></a> <a href="n-6g20.html"><span class="elementname">Appendix</span></a>; <a href="n-5cc0.html"><span class="elementtag">&lt;body&gt;</span></a> <a href="n-5cc0.html"><span class="elementname">Body of the Article</span></a>; <a href="n-puc0.html"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-puc0.html"><span class="elementname">Boxed Text</span></a>; <a href="n-gsc0.html"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-gsc0.html"><span class="elementname">Chemical Structure (Display)</span></a>; <a href="n-wfc0.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a> <a href="n-wfc0.html"><span class="elementname">Chemical Structure Wrapper</span></a>; <a href="n-fz30.html"><span class="elementtag">&lt;disp-formula&gt;</span></a> <a href="n-fz30.html"><span class="elementname">Formula, Display</span></a>; <a href="n-zs50.html"><span class="elementtag">&lt;fig&gt;</span></a> <a href="n-zs50.html"><span class="elementname">Figure</span></a>; <a href="n-mka0.html"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-mka0.html"><span class="elementname">Named Special (Subject) Content</span></a>; <a href="n-tea0.html"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-tea0.html"><span class="elementname">Paragraph</span></a>; <a href="n-hiu0.html"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-hiu0.html"><span class="elementname">Section</span></a>; <a href="n-xqw0.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> <a href="n-xqw0.html"><span class="elementname">Table Wrapper</span></a>; <a href="n-8cx0.html"><span class="elementtag">&lt;td&gt;</span></a> <a href="n-8cx0.html"><span class="elementname">Table Data Cell (XHTML table model)</span></a>; <a href="n-j7x0.html"><span class="elementtag">&lt;th&gt;</span></a> <a href="n-j7x0.html"><span class="elementname">Table Header Cell (XHTML table model)</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;...&lt;/front&gt;
+&lt;body&gt;
+...
+&lt;p&gt;Trees, of course, are hardly a random choice for our 
+methodology.... Hierarchical trees have been understood as a 
+way of viewing document structures since the earliest days of 
+SGML development. Our initial tree structure was very simple:
+<strong><span class="focus">&lt;preformat&gt;
+&amp;lt;!ELEMENT  implications  (tree+) &amp;gt;
+&amp;lt;!ELEMENT  tree          (root, branches) &amp;gt;
+&amp;lt;!ELEMENT  root          (term, synonym?) &amp;gt;
+&amp;lt;!ELEMENT  branches      (term | (term, synonym) | tree)* &amp;gt;
+&lt;/preformat&gt;</span></strong>
+Terms are the literal strings for which the Ferret engine searches; they 
+are the most specific expressions to be found in real documents of the 
+concepts on which classifications rules act.&lt;/p&gt;...
+&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/article&gt; 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">display.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

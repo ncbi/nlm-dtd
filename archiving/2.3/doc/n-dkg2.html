@@ -1,0 +1,184 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Journal Archiving DTD-Specific Modules</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">Journal Archiving DTD-Specific Modules</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--  MODULE:    Journal Archiving DTD-Specific Modules            --&gt;
+&lt;!--  VERSION:   2.3                                               --&gt;
+&lt;!--  DATE:      February 2007                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    PUBLIC DOCUMENT TYPE DEFINITION            --&gt;
+&lt;!--                        TYPICAL INVOCATION                     --&gt;
+&lt;!--
+"-//NLM//DTD Journal Archiving DTD-Specific Modules v2.3 20070202//EN"
+     Delivered as file "archivecustom-modules.ent"                 --&gt;
+&lt;!-- ============================================================= --&gt;
+
+&lt;!-- ============================================================= --&gt;
+&lt;!-- SYSTEM:     Archiving and Interchange DTD Suite               --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- PURPOSE:    To name any modules created explicitly for this   --&gt;
+&lt;!--             DTD, that is, not present in the Archiving and    --&gt;
+&lt;!--             Interchange DTD Suite                             --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CONTAINS:   1)  Full external Parameter Entity declarations   --&gt;
+&lt;!--                 for all DTD-specific modules (Note: the       --&gt;
+&lt;!--                 modules are declared here but referenced in   --&gt;
+&lt;!--                 the DTD.)                                     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED FOR:                                                  --&gt;
+&lt;!--             Digital Archive of Journal Articles               --&gt;
+&lt;!--             National Center for Biotechnology Information     --&gt;
+&lt;!--                (NCBI)                                         --&gt;
+&lt;!--             National Library of Medicine (NLM)                --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- ORIGINAL CREATION DATE:                                       --&gt;
+&lt;!--             August 2004                                       --&gt;
+&lt;!--                                                               --&gt;
+&lt;!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     --&gt;
+&lt;!--                                                               --&gt;
+&lt;!--             Suggestions for refinements and enhancements to   --&gt;
+&lt;!--             this DTD should be sent in email to:              --&gt;
+&lt;!--                 archive-dtd@ncbi.nlm.nih.gov                  --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    DTD VERSION/CHANGE HISTORY                 --&gt;
+&lt;!-- ============================================================= --&gt;
+&lt;!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  4. NLM CITATION - Added &lt;nlm-citation&gt; as an alternative to
+     unstructured &lt;citation&gt;s by adding &lt;nlm-citation&gt;
+     to -%citation.class;. This changed the models for:
+      - &lt;ref&gt;, which uses %citation.class; inside %ref-model;
+      - &lt;p&gt; through -%p-elements;
+      - to inside cell mix (for &lt;td&gt;, &lt;th&gt;, and &lt;entry&gt;)
+      - added call to &lt;nlm-citation&gt; module to this module
+  
+  3. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+
+  2. Updated public identifier to "v2.3 20070202" for this module
+     and all changed modules: archive custom classes, archive 
+     custom mixes, archive custom models
+
+     =============================================================
+     Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+     
+     
+     Major requirement changes led to the new release, producing
+     DTD version "2.0":
+       a) The splitting of the Archival and Interchange Tag Set 
+          DTDs into three DTDs from two: an authoring DTD, an
+          archive regularization and interchange DTD (the
+          current Blue Publishing DTD), and a preservationist 
+          archive DTD (the current Green Archiving and Interchange 
+          DTD).
+       b) AIT Working Group suggestions from the June 04 meeting 
+          and June/July 2004 followup discussions
+       c) Suite remodularization to meet new (and newly articulated)
+          modularization requirements
+       d) New or renamed classes and mixes to make modifications
+          easier and more consistent
+                
+  1. Created this module as version "v2.3 20070202"                --&gt;
+
+
+&lt;!-- ============================================================= --&gt;
+&lt;!--                    CUSTOMIZATION MODULES DECLARED             --&gt;
+&lt;!-- ============================================================= --&gt;
+
+
+&lt;!--                    DTD-SPECIFIC CLASS CUSTOMIZATIONS MODULE   --&gt;
+&lt;!--                    Set up the Parameter Entities and element
+                        class definitions that will be used to
+                        over-ride some element classes in the
+                        DTD Suite.                                 --&gt;
+&lt;!ENTITY % archivecustom-classes.ent 
+                        PUBLIC  
+"-//NLM//DTD Journal Archiving DTD Customize Classes Module v2.3 20070202//EN"
+"archivecustom-classes.ent"                                          &gt;
+
+
+&lt;!--                    DTD-SPECIFIC MIX CUSTOMIZATIONS MODULE     --&gt;
+&lt;!--                    Set up the Parameter Entities and element
+                        mix definitions that will be used to
+                        over-ride some element mixes in the DTD
+                        Suite.                                     --&gt;
+&lt;!ENTITY % archivecustom-mixes.ent 
+                        PUBLIC  
+"-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.3 20070202//EN"
+"archivecustom-mixes.ent"                                            &gt;
+
+
+&lt;!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
+                        MODULE                                     --&gt;
+&lt;!--                    Set up the Parameter Entities for element-
+                        specific element groups, complete content 
+                        models, and attribute list and value over-
+                        rides. These PEs will over-ride selected
+                        content models and attribute lists for the 
+                        Journal Archiving and Interchange DTD Suite--&gt;
+&lt;!ENTITY % archivecustom-models.ent 
+                        PUBLIC  
+"-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.3 20070202//EN"
+"archivecustom-models.ent"                                           &gt;
+
+
+&lt;!--                    NLM CITATION MODULE                        --&gt;
+&lt;!--                    The only new element created for the 
+                        Publishing DTD, the highly structured NLM
+                        citation, to enforce a slightly loose version
+                        of an NLM-structured bibliographic reference.
+                        Sequence is enforced and interior punctuation
+                        is expected to be generated.               --&gt;
+&lt;!ENTITY % nlmcitation.ent 
+                        PUBLIC  
+"-//NLM//DTD NLM Citation v2.3 20070202//EN"
+"nlmcitation.ent"                                                    &gt;
+
+
+&lt;!-- =================== End Archive DTD Module of Modules ======= --&gt;
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

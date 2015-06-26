@@ -1,0 +1,111 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Person Group for a Cited Publication</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;person-group&gt;</h1>
+         <h1 class="elementname">Person Group for a Cited Publication</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Wrapper element for one or more authors, editors, translators,
+                   etc., that are named in a cited reference
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element may be used in bibliographic references (<a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a> and <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>). For extensive examples of formatted <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s including use of <a href="n-yfa0.html"><span class="elementtag">&lt;person-group&gt;</span></a>s in <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a>s, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citations.html" target="_new">Sample PubMed Central Citations</a>. To see tagged versions of these examples, see: <a href="http://www.ncbi.nlm.nih.gov/staff/beck/citations/citationtags.html" target="_new">Sample PubMed Central Citations - XML Tagged</a>.
+         </p>
+         <p class="para">This element is very similar to the <a href="n-a730.html"><span class="elementtag">&lt;contrib-group&gt;</span></a> element in the article metadata. It would have been nice to design the DTD in such a way that there was just one element
+            that could be used inside both the metadata and inside a citation. But using the same name for both elements was not possible,
+            since the content of the two elements is different, and this is a DTD, not a schema. (Note: Some schema languages could accommodate
+            such context-related model differences.)
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attribute</h2>
+         <h5 class="header"><a href="n-eks0.html"><span class="attrtag">person-group-type</span></a> <a href="n-eks0.html"><span class="attrname">Type of People in the Person Group</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  person-group %person-group-model;                         &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Any combination of:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-bpc0.html"><span class="elementname">Collaborative (Group) Author</span></a> <a href="n-bpc0.html"><span class="elementtag">&lt;collab&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-cy80.html"><span class="elementname">Name of Person</span></a> <a href="n-cy80.html"><span class="elementtag">&lt;name&gt;</span></a>
+                                    
+                  </li>
+                  <li>
+                                       <a href="n-5s20.html"><span class="elementname">Affiliation</span></a> <a href="n-5s20.html"><span class="elementtag">&lt;aff&gt;</span></a>
+                                    
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-igc0.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-igc0.html"><span class="elementname">Citation</span></a>; <a href="n-m980.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-m980.html"><span class="elementname">NLM Citation Model</span></a>; <a href="n-wha0.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-wha0.html"><span class="elementname">Product Information</span></a>; <a href="n-i2u0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-i2u0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+...
+&lt;ref-list&gt;
+...
+&lt;ref&gt;
+&lt;citation citation-type="gov"&gt;
+<strong><span class="focus">&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Norman&lt;/surname&gt;&lt;given-names&gt;John C&lt;/given-names&gt;&lt;/name&gt;
+&lt;aff&gt;Texas Heart Institute, Houston, TX&lt;/aff&gt;
+&lt;/person-group&gt;</span></strong>
+&lt;gov&gt;Report No.: NIH-N01-HV-5-3006-4-VI. Contract No.
+N01-HV-5-3006&lt;/gov&gt;
+&lt;source&gt;ALVAD: 1980. A comprehensive final report to NHLI&lt;/source&gt;
+&lt;year&gt;1980&lt;/year&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;volume&gt;Vol. 1&lt;/volume&gt;
+&lt;publisher-loc&gt;Bethesda (MD)&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;National Institutes of Health, National Heart and Lung
+Institute, Devices and Services Branch&lt;/publisher-name&gt;
+&lt;lpage&gt;340&lt;/lpage&gt;
+ Available from: NTIS, Springfield, VA;
+PB80-148810
+&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;/ref-list&gt;...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring DTD Tag Library version 2.2</h2>
+         <h4 class="pubdate">Version of May 2, 2006</h4>
+      </div>
+   </body>
+</html>

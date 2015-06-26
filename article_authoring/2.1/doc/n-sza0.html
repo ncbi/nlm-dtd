@@ -1,0 +1,110 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Reference List (Bibliographic)</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;ref-list&gt;</h1>
+         <h1 class="elementname">Reference List (Bibliographic)</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">List of references (citations) for an article, which is often
+                    called &#8220;References&#8221;, &#8220;Bibliography&#8221;, or
+                    &#8220;Additional Reading&#8221;
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">No distinction is made between lists of cited references and
+                    lists of suggested references.
+         </p>
+         <p class="para">The optional paragraph elements after the
+                    title allow for those rare cases where there is explanatory material inside the
+                    list, preceding the references.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  ref-list     %ref-list-model;                             &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-fwx0.html"><span class="elementname">Title</span></a> <a href="n-fwx0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-vaa0.html"><span class="elementname">Paragraph</span></a> <a href="n-vaa0.html"><span class="elementtag">&lt;p&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-6ma0.html"><span class="elementname">Reference Item</span></a> <a href="n-6ma0.html"><span class="elementtag">&lt;ref&gt;</span></a>, one or more
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-2m20.html"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-2m20.html"><span class="elementname">Back Matter</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+...
+&lt;back&gt;&lt;ack&gt;...&lt;/ack&gt;
+<strong><span class="focus">&lt;ref-list&gt;
+&lt;ref id="B1"&gt;
+&lt;nlm-citation citation-type="commun"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Harris&lt;/surname&gt;
+&lt;given-names&gt;Pat&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;New Z39.50 resource [Internet]&lt;/article-title&gt;
+&lt;source&gt;Message to: Karen Patrias&lt;/source&gt;
+&lt;year&gt;1998&lt;/year&gt;
+&lt;month&gt;02&lt;/month&gt;
+&lt;day&gt;27&lt;/day&gt;
+&lt;time-stamp&gt;1:18 pm&lt;/time-stamp&gt;
+&lt;access-date&gt;cited 1998 Feb 28&lt;/access-date&gt;
+&lt;comment&gt;[about 2 screens]&lt;/comment&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B2"&gt;
+...
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;</span></strong>
+&lt;/back&gt;
+&lt;/article&gt;
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">references.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring 2.1</h2>
+         <h4 class="pubdate">Version of 20050930</h4>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,1199 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "../../../../NCBI/ArchivingDTD/DTD/Working/archivearticle.dtd">
+<?mtl hellip?><article>
+<!-- Affiliation -->
+<front><journal-meta><journal-id journal-id-type="pmc">mbc</journal-id><journal-id
+journal-id-type="pubmed">Mol Biol Cell</journal-id><journal-id journal-id-type="publisher">MOL BIOL
+CELL</journal-id><issn>1059-1524</issn><publisher><publisher-name>The American Society for
+Cell Biology</publisher-name></publisher></journal-meta>
+<?mtl /hellip?>
+<article-meta>
+<?mtl hellip?>
+<article-id
+pub-id-type="publisher-id">1614</article-id><article-id pub-id-type="pmid">11598181</article-id>
+<article-categories><subj-group><subject>ARTICLE</subject></subj-group></article-categories>
+<title-group><article-title>Cytoplasmic Dynein Light Intermediate Chain Is Required for
+Discrete Aspects of Mitosis in <italic>Caenorhabditis
+elegans</italic></article-title></title-group><contrib-group><contrib
+contrib-type="editor"><name><surname>Kimble</surname><given-names>Judith</given-names></name></contrib
+></contrib-group><contrib-group><contrib
+contrib-type="author"><name><surname>Yoder</surname><given-names>John
+H.</given-names></name></contrib><contrib
+contrib-type="author"><name><surname>Han</surname><given-names>Min</given-names></name><xref
+ref-type="author-notes" rid="FN150">&#x002A;</xref></contrib></contrib-group>
+<?mtl /hellip?>
+<aff id="hhMI">Department of Molecular, Cellular, and Developmental 
+Biology, Howard Hughes Medical Institution, University of Colorado, 
+Boulder, Colorado 80303-0347</aff>
+<author-notes>
+<fn id="FN150"><p>Corresponding
+author. E-mail address: <email>mhan@colorado.edu</email>.</p>
+</fn>
+</author-notes>
+<?mtl hellip?>
+<pub-date
+pub-type="pub"><day>1</day><month>10</month><year>2001</year></pub-date><volume>
+12</volume><issue>10</issue><fpage>2921</fpage><lpage>2933</lpage><history><date
+date-type="received"><day>29</day><month>3</month><year>2001</year></date><date
+date-type="rev-recd"><day>6</day><month>6</month><year>2001</year></date><date
+date-type="accepted"><day>19</day><month>7</month><year>2001</year></date>
+</history><copyright-statement>Copyright &#x00A9; 2001, The American Society for Cell
+Biology</copyright-statement>
+<copyright-year>2001</copyright-year><abstract><p>We describe phenotypic characterization of
+<italic>dli-1</italic>, the <italic>Caenorhabditis elegans</italic> homolog of cytoplasmic
+dynein light intermediate chain (LIC), a subunit of the cytoplasmic dynein motor
+complex. Animals homozygous for loss-of-function mutations in <italic>dli-1</italic>
+exhibit stochastic failed divisions in late larval cell lineages, resulting in
+zygotic sterility. <italic>dli-1</italic> is required for dynein function during
+mitosis. Depletion of the <italic>dli-1</italic> gene product through RNA-mediated gene
+interference (RNAi) reveals an early embryonic requirement. One-cell
+<italic>dli-1</italic>(RNAi) embryos exhibit failed cell division attempts, resulting
+from a variety of mitotic defects. Specifically, pronuclear migration,
+centrosome separation, and centrosome association with the male pronuclear
+envelope are defective in <italic>dli-1</italic>(RNAi) embryos. Meiotic spindle
+formation, however, is not affected in these embryos. DLI-1, like its vertebrate
+homologs, contains a putative nucleotide-binding domain similar to those found
+in the ATP-binding cassette transporter family of ATPases as well as other
+nucleotide-binding and -hydrolyzing proteins. Amino acid substitutions in a
+conserved lysine residue, known to be required for nucleotide binding, confers
+complete rescue in a <italic>dli-1</italic> mutant background, indicating this is not an
+essential domain for DLI-1 function.</p></abstract>
+<?mtl /hellip?>
+</article-meta>
+<?mtl hellip?></front><body><sec
+sec-type="intro"><title>INTRODUCTION</title><p>Cytoplasmic dynein is a large
+multisubunit complex composed of two motor proteins, the heavy chains, and
+several associated subunits that have been named light, light intermediate, and
+intermediate chains. These subunits have no sequence homology; instead, the
+names reflect their relative molecular weights. Cytoplasmic dynein is the major
+microtubule minus-end&#x2013;directed motor protein and has been implicated in a
+variety of cellular processes, during both interphase and mitosis. Membranous
+vesicle transport, endoplasmic reticulum-to-Golgi transport, and axonal
+retrograde transport are all dynein-dependent processes (<xref ref-type="bibr"
+rid="B24">Lacey and Haimo, 1992</xref>; <xref ref-type="bibr" rid="B10">Dillman
+<italic>et al.</italic>, 1996</xref>; <xref ref-type="bibr" rid="B32">Presley <italic>et
+al.</italic>, 1997</xref>).</p><p>Dynein's mitotic roles are numerous. Function
+blocking antibody experiments against heavy chain in vertebrate cells have shown
+the motor protein is required for proper spindle formation and centrosome
+separation (<xref ref-type="bibr" rid="B45">Vaisberg <italic>et al.</italic>,
+1993</xref>). Similar results were observed in <italic>Drosophila</italic> heavy chain
+mutants with additional observations suggesting dynein is required to maintain
+centrosome association with the nuclear envelope (<xref ref-type="bibr"
+rid="B37">Robinson <italic>et al.</italic>, 1999</xref>). In both <italic>Aspergillus
+nidulans</italic> and <italic>Neurospora crassa</italic>, dynein heavy chain mutations
+reveal a role for the complex in nuclear migration (<xref ref-type="bibr"
+rid="B31">Plamann <italic>et al.</italic>, 1994</xref>; <xref ref-type="bibr"
+rid="B51">Xiang <italic>et al.</italic>, 1995</xref>). Other recent work suggests dynein
+may mediate microtubule binding at the kinetochore (<xref ref-type="bibr"
+rid="B48">Wordeman and Mitchison, 1995</xref>).</p><p>The one-cell
+<italic>Caenorhabditis elegans</italic> embryo is also an excellent model system for
+investigating the roles of dynein, its subunits, and the proteins with which it
+interacts. When cytoplasmic dynein heavy chain (<italic>dhc-1</italic>) was eliminated
+through RNA-mediated gene interference (RNAi), all of the above-mentioned
+phenotypes were observed (<xref ref-type="bibr" rid="B18">Gonczy <italic>et
+al.</italic>, 1999</xref>). Pronuclear migration and centrosome separation did not
+occur and multiple female pronuclei were formed, suggesting defects in meiosis.
+Additionally, centrosomes were dissociated from the male pronuclei in 15&#x0025;
+of these embryos.</p><p>The variety of roles dynein plays during mitosis
+suggests complex regulation must be at work to ensure proper timing and
+coordination with mitotic events. Numerous lines of evidence point to the dynein
+subunits as key players in this regulation. For example, the intermediate chain
+(IC) subunit has been shown to directly interact with the p150<sup>glued</sup>
+subunit of dynactin in vertebrate cell extracts (<xref ref-type="bibr"
+rid="B22">Karki and Holzbaur, 1995</xref>; <xref ref-type="bibr"
+rid="B46">Vaughan and Vallee, 1995</xref>). Dynactin is an adapter molecule that
+links dynein to vesicular cargo and has been shown to be required for
+dynein-dependent vesicle motility (<xref ref-type="bibr" rid="B16">Gill <italic>et
+al.</italic>, 1991</xref>). RNAi against the <italic>C. elegans</italic> homologs of
+p150<sup>glued</sup> and another dynactin subunit, p50/dynamintin, also revealed
+a role in nuclear migration and centrosome separation (<xref ref-type="bibr"
+rid="B39">Skop and White, 1998</xref>; <xref ref-type="bibr" rid="B18">Gonczy
+<italic>et al.</italic>, 1999</xref>). IC diversity, as a result of alternative
+splicing, gives rise to tissue-specific distribution as well as differential
+subcellular localization (<xref ref-type="bibr" rid="B29">Nurminsky <italic>et
+al.</italic>, 1998</xref>). Function blocking antibody experiments directed against
+IC suggest it is only required for a subset of dynein functions; spindle
+assembly is disrupted as in the dynein heavy chain experiment, but centrosome
+separation is not affected (<xref ref-type="bibr" rid="B14">Gaglio <italic>et
+al.</italic>, 1997</xref>). Additional function blocking experiments against IC
+suggest it is also required for proper meiotic spindle formation (<xref
+ref-type="bibr" rid="B30">Palazzo <italic>et al.</italic>, 1999</xref>).</p><p>Multiple
+cytoplasmic dynein light chains have been identified and are also responsible
+for linking dynein to specific cargo or regulatory molecules. LC8, for example,
+has been shown to be required for proper nuclear migration in <italic>A.
+nidulans</italic> (<xref ref-type="bibr" rid="B4">Beckwith <italic>et al.</italic>,
+1998</xref>). LC8 has also been shown to directly interact with neuronal
+nitric-oxide synthase and the Bcl-2 family protein Bim and therefore is
+implicated in neurotransmitter function and the apoptotic pathway (<xref
+ref-type="bibr" rid="B21">Jaffrey and Snyder, 1996</xref>; <xref ref-type="bibr"
+rid="B35">Puthalakath <italic>et al.</italic>, 1999</xref>). Mutations in another light
+chain family member, <italic>roadblock</italic>/LC7, reveal roles in axonal transport
+and mitosis in <italic>Drosophila</italic> (<xref ref-type="bibr" rid="B7">Bowman <italic>et
+al.</italic>, 1999</xref>).</p><p>Interestingly, the heavy, intermediate, and light
+chains all have homologs in axonemal dynein. Light IC (LIC), however, is
+specific to cytoplasmic dynein and is the least well characterized subunit of
+the complex. No alleles of LIC have previously been described. Recent work has
+shown there are two rat light intermediate chains (<xref ref-type="bibr"
+rid="B44">Tynan <italic>et al.</italic>, 2000</xref>). Each LIC forms a homodimer and
+binds the dynein complex mutually exclusive of one another. Additionally, LIC1,
+but not LIC2, has been shown to bind pericentrin, a conserved component of the
+centrosome (<xref ref-type="bibr" rid="B34">Purohit <italic>et al.</italic>,
+1999</xref>; <xref ref-type="bibr" rid="B44">Tynan <italic>et al.</italic>,
+2000</xref>). Pericentrin has been observed to translocate along microtubules
+toward the centrosomes in a dynein-dependent manner (<xref ref-type="bibr"
+rid="B52">Young <italic>et al.</italic>, 2000</xref>). These data suggest LIC, like the
+intermediate and light chains, is responsible for linking dynein to specific
+cargo. Recently, antibodies against human LIC were generated and found to
+localize to the nuclear periphery and to the microtubule-organizing center in
+HeLa cells (<xref ref-type="bibr" rid="B5">Bielli <italic>et al.</italic>, 2001</xref>).
+The latter of these observations is consistent with the observed pericentrin
+interaction.</p><p>Pepetide sequence analysis of rat LIC revealed no overall
+homology to known proteins; however, a putative P-loop sequence was identified
+near its N terminus with extended sequence similarity to the ATP-binding
+cassette (ABC) transporter family of ATPases (<xref ref-type="bibr"
+rid="B15">Gill <italic>et al.</italic>, 1994</xref>; <xref ref-type="bibr"
+rid="B20">Hughes <italic>et al.</italic>, 1995</xref>). The P-loop, also known as the Walker A box, is one of three conserved motifs making up the nucleotide-binding
+domain found in numerous nucleotide-binding proteins, including ATPases and
+kinases, as well as proteins whose functions are not fully understood (<xref
+ref-type="bibr" rid="B47">Walker <italic>et al.</italic>, 1982</xref>). LIC, however,
+lacks the other two motifs and its ATPase activity has not been
+assayed.</p><p>Here, we report the first isolated alleles of dynein LIC and show
+it is required for dynein's mitotic roles. Maternal rescue allows
+loss-of-function homozygotes to develop to mid-larval stages before cell
+division failure begins. However, an early embryonic mitotic requirement is
+revealed through RNAi analysis.</p></sec><sec sec-type="materials/methods"><title>MATERIALS
+AND METHODS</title><sec><title>Strains and Alleles</title><p><italic>C. elegans</italic>
+strains were cultured and maintained at 20&#x00B0;C according to standard
+procedures (<xref ref-type="bibr" rid="B8">Brenner, 1974</xref>). Mutagenesis of
+wild-type, N2 Bristol animals was performed with 50 mM ethyl methanesulfornate
+(<xref ref-type="bibr" rid="B8">Brenner, 1974</xref>). Mutagenized adults were
+individually transferred to a Petri plate and allowed to lay eggs. When the F1
+progeny had grown to adults (&#x223C;4 d later), 10 F1 animals were randomly
+selected and transferred to individual Petri plates. The F2 generation was then
+scored under a dissecting microscope for a protruding vulva/sterile phenotype.
+Four to five wild-type siblings of these F2 sterile animals were cloned to
+obtain heterozygous strains. Approximately 10,000 haploid genome (5000 F1
+plates) were screened, and 60 independent strains were isolated. The three
+<italic>dli-1</italic> alleles <italic>ku266</italic>, <italic>ku275</italic>, and <italic>ku287</italic> were
+isolated in this manner. Each allele was outcrossed at least five times. Mapping
+strains used were <italic>unc-30(e191)</italic>, <italic>unc-31(e169) dpy-4(e1166)</italic>, the
+deficiency sDf22, and the translocation balancer DnT1 (<xref ref-type="bibr"
+rid="B36">Riddle <italic>et al.</italic>, 1997</xref>).</p></sec><sec><title>Genetic
+Analysis and Molecular Cloning</title><p><italic>dli-1</italic> was mapped relative to
+the cloned markers <italic>unc-31</italic> and <italic>unc-30</italic> on linkage group IV. The
+strain <italic>unc-31 dpy-4/ku266</italic> was constructed and a standard three-factor
+recombination analysis was performed. Twenty-four recombinants were obtained:
+10/12 Dpy-nonUnc and 2/12 Unc-nonDpy recombinants segregated <italic>ku266</italic>. The
+deficiency sDf22 was shown to uncover <italic>ku266</italic>, placing the locus left of
+the <italic>lev-1</italic> gene. This genetic distance between <italic>unc-31</italic> and
+<italic>lev-1</italic> is represented by 12 cosmids interrupted by one sequencing gap
+near the <italic>unc-31</italic> locus. Cosmids covering the region between
+<italic>unc-31</italic> and <italic>lev-1</italic> were mixed with plasmid DNA carrying the
+dominant marker SUR-5::GFP (100 ng/&#x03BC;l) in pools of three (15 ng/&#x03BC;l
+each) and injected into the strain <italic>unc-31 ku266/unc-30</italic> (<xref
+ref-type="bibr" rid="B27">Mello <italic>et al.</italic>, 1991</xref>). SUR-5::GFP served
+as a visible transgenic marker for scoring progeny of injected animals. The F1
+generation was scored for transgenic fertile animals with the <italic>unc-31</italic>
+phenotype to identify rescued homozygous <italic>ku266</italic> animals. The minimal
+rescuing subclone pJHY10 of cosmid C39E9 contains 3.5 kb of upstream sequence
+and the entire 1.5 kb of coding sequence followed by &#x223C;450 bases of
+3&#x2032; untranslated region. This subclone was generated by inserting the
+5.5-kb <italic>Xho</italic>I/<italic>Msc</italic>I restriction fragment from C39E9 into the
+BlueScript SK<sup>&#x002B;</sup> vector (Stratagene, La Jolla,
+CA).</p></sec><sec><title>Molecular Analysis and RNA Interference</title><p>To
+identify molecular lesions in the 3 <italic>dli-1</italic> alleles, polymerase chain
+reaction of whole-worm lysates was performed (<xref ref-type="bibr"
+rid="B3">Barstead <italic>et al.</italic>, 1991</xref>), and sequences generated and
+compared against wild-type sequence similarly obtained. The <italic>dli-1</italic> cDNAs
+yk102f4, yk303f8, and yk448c3 were sequenced with the use of T3- and T7-specific
+primers. The three cDNAs were shown to be full length by identification of both
+the predicted start and stop codons. Point mutations in the putative P-loop
+domain in pJHY10 were generated with the use of the QuickChange site-directed
+mutagenesis kit (Stratagene).</p><p>The cDNAs yk102f4 and yk22b3 were used as
+templates for generation of double-stranded RNA for <italic>dli-1</italic> and
+<italic>dhc-1</italic> RNAi analysis, respectively. yk102f4 is &#x223C;2 kb in length
+and encodes a full-length cDNA for <italic>dli-1</italic>. yk22b3 is &#x223C;3 kb and
+encodes the 3&#x2032;-most end of <italic>dhc-1</italic>, including part of exon 10 and
+the remaining five exons. The methods of <xref ref-type="bibr" rid="B13">Fire
+<italic>et al.</italic> (1998)</xref> were used for generation and injection of
+double-stranded RNA. Double-stranded RNA for <italic>dli-1</italic> and <italic>dhc-1</italic>
+were injected at equimolar ratios into either wild-type animals or the
+heterozygous strain strain <italic>unc-31 ku266/unc-30</italic> &#x005B;only for
+<italic>dli-1</italic>(RNAi)&#x005D;. All cDNAs were provided by Yuji Kohara (National
+Institute of Genetics, Mishima, Japan).</p></sec><sec><title>Video Microscopy
+and Immunocytochemistry</title><p>Embryos were dissected from adults in a
+minimal volume of M9 buffer with the use of a sterile 20-gauge syringe to cut
+the adults open. Embryos were then transferred with a mouth pipette to a
+2&#x0025; agar pad on a microscope slide in 5&#x2013;10 &#x03BC;l of M9 buffer
+and covered with a coverslip. Time-lapsed movies of one-cell embryos were made
+with the use of OpenLab 2.0 software (Improvision, Coventry, United Kingdom),
+collecting one Nomarski image per second on a Zeiss Axioskop. These files were
+then saved as QuickTime movie files for further analysis. All embryos were
+harvested 26&#x2013;30 h after RNAi injections, and all embryos were observed
+and movies recorded at 23&#x00B0;C.</p><p>Immunocytochemistry was performed on
+single cell embryos harvested as described above. Embryos were placed on subbed
+poly-<sc>l</sc>-lysine slides in a minimal volume of M9 buffer and flash frozen
+in liquid nitrogen. Embryos were permeabilized with the use of the freeze-crack
+method and rehydrated through series of MeOH/phosphate-buffered saline washes
+before blocking with goat serum for 0.5 h (<xref ref-type="bibr"
+rid="B11">Epstein and Shakes, 1995</xref>). Immunocytochemistry performed on
+gonads to visualize sheath cells with the use of antibodies to CEH-18 followed
+the protocol described by <xref ref-type="bibr" rid="B19">Greenstein <italic>et
+al.</italic> (1994)</xref>.</p><p>Primary antibodies were used at the following
+concentrations: 1:100 rabbit anti-DHC-1 (<xref ref-type="bibr" rid="B18">Gonczy
+<italic>et al.</italic>, 1999</xref>), 1:50 rabbit anti-ZYG-9 (<xref ref-type="bibr"
+rid="B25">Matthews <italic>et al.</italic>, 1998</xref>), 1:100 mouse monoclonal
+anti-<italic>Drosophila</italic> &#x03B1;-tubulin (4A-1; M. Fuller, Stanford University,
+Stanford, CA), and 1:200 anti-CEH-18 (<xref ref-type="bibr" rid="B19">Greenstein
+<italic>et al.</italic>, 1994</xref>). Secondary antibodies were used at the following
+concentrations: 1:100 tetramethylrhodamine B isothiocyanate-conjugated goat
+anti-rabbit and 1:100 Cy-2-conjugated donkey anti-mouse (Jackson Immunoresearch,
+West Grove, PA).</p><p>For DNA staining, embryos were incubated for 10 min with
+0.1 &#x03BC;g/ml 4&#x2032;,6-diamidino-3-phenylindole dihydrochloride (DAPI).
+Embryos were then mounted in &#x223C;10 &#x03BC;l of n-propylgalate (Sigma, St.
+Louis, MO) in 80&#x0025; glycerol. Fluorescent images were taken with a Zeiss
+Axioskop equipped with a Hamamatsu digital camera and deconvolution was
+performed with the use of OpenLab 2.0 software
+(Improvision).</p></sec></sec><sec
+sec-type="results"><title>RESULTS</title><sec><title>Isolation of dli-1 Alleles and
+Molecular Cloning of dli-1</title><p>An ethyl methanesulfornate-induced F1
+clonal screen of &#x223C;10,000 haploid genomes was performed to isolate mutants
+with a protruding vulva and sterile phenotype (<xref ref-type="bibr"
+rid="B12">Fay and Han, 2000</xref>; see MATERIALS AND METHODS). Three mutants
+with similar vulva phenotypes mapped to the same genetic interval on linkage
+group IV between <italic>unc-31</italic> and <italic>dpy-4</italic>. Noncomplementation tests
+between these three mutants (<italic>ku266</italic>, <italic>ku275</italic>, and <italic>ku287</italic>)
+indicated they are allelic. When <italic>trans</italic> to one another, the various
+allelic combinations result in the same protruding vulva and sterile phenotype
+seen in the three homozygous mutants. Further mapping with the <italic>ku266</italic>
+allele placed it between the cloned genes <italic>unc-31</italic> and <italic>lev-1</italic> in
+a region spanned by 12 cosmids (Figure <xref ref-type="fig" rid="F1">1</xref>;
+see MATERIALS AND METHODS).</p><fig id="F1"><caption><p>Map position and genetic structure of <italic>dli-1</italic>. (A)
+Top line shows a portion of the genetic map from linkage group IV with relative
+positions of relevant genetic markers. Below are the three cosmids injected as a
+pool that confer rescue in the <italic>dli-1</italic> alleles. The cosmid C39E9 confers
+rescue alone as does the large <italic>Xho</italic>I deletion and the subclone pJHY10.
+(B) Structure of the <italic>dli-1</italic> gene showing locations of lesions within the
+three alleles and the two splice variants as determined by cDNA sequence
+comparison.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="mk1011614001" alt-version="yes"></graphic></fig><p>To identify the
+affected locus, germline transformation rescue was performed by injecting pools
+of overlapping cosmids from this region into the gonad arms of <italic>ku266</italic>
+heterozygotes as described in MATERIALS AND METHODS (Figure <xref ref-type="fig"
+rid="F1">1</xref>A). We were able to rescue both the protruding vulva and
+sterile phenotypes with the single cosmid C39E9. A large <italic>Xho</italic>I deletion
+of this cosmid (CJHY2), containing only one predicted open reading frame
+(C39E9.14), was also able to rescue the phenotypes in all four transgenic lines
+obtained, and a minimal rescuing subclone (pJHY10) from the CJHY2 deletion
+construct was generated, which contains a 5.5-kb <italic>Xho</italic>I/MscI restriction
+fragment (Figure <xref ref-type="fig" rid="F1">1</xref>). An NCBI Blast search
+with the translation of this predicted open reading frame found homology with
+human, rat, and chick LIC with 33&#x0025; sequence identity and 51&#x0025;
+sequence similarity throughout the entire lengths of the proteins (Figure <xref
+ref-type="fig" rid="F2">2</xref>). Two vertebrate LICs have been identified
+(<xref ref-type="bibr" rid="B44">Tynan <italic>et al.</italic>, 2000</xref>). LIC1 and
+LIC2 are &#x223C;75&#x0025; identical but show mutually exclusive binding to the
+dynein motor complex. Additionally, LIC1 specifically binds pericentrin, a
+conserved component of the centrosome. C39E9.14 shares the same degree of
+similarity with LIC1 and LIC2, and it is the only predicted gene in the <italic>C.
+elegans</italic> genome with homology to the LICs; therefore, after <italic>C.
+elegans</italic> nomenclature convention, we have given it the name <italic>dli-1</italic>
+for cytoplasmic dynein light intermediate chain-1.</p><fig
+id="F2"><caption><p>Alignment between DLI-1, rat LIC1,
+and human LIC1. Dark shaded boxes show identical residues in two or more of the
+three proteins shown. Light gray boxes highlight similar residues. There is
+33&#x0025; sequence identity throughout the full length of the proteins and
+51&#x0025; similarity. The underlined residues constitute the putative P-loop
+sequence and the asterisk highlights the conserved lysine residue that is
+mutated in our rescuing constructs to either alanine or asparginine. Sequences
+were aligned with the use of Clustal W.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mk1011614002"
+alt-version="yes"></graphic></fig><p>To confirm the mutant phenotypes are the
+result of mutations in the <italic>dli-1</italic> gene, the entire <italic>dli-1</italic> open
+reading frame was sequenced from the three alleles and compared with wild-type
+sequence. Two of the three alleles, <italic>ku266</italic> and <italic>ku275</italic>, result
+from premature stop codons in the second and fifth exons, respectively (Figure
+<xref ref-type="fig" rid="F1">1</xref>B). <italic>ku287</italic> results from a point
+mutation in the start codon (ATG to ATA). The next in-frame methionine is found
+in the fourth exon. Because the three alleles phenocopy one another, are not
+exacerbated when placed in <italic>trans</italic> to a deficiency, and based on the
+likely instability of messages produced by the introduction of premature stop
+codons (<xref ref-type="bibr" rid="B33">Pulak and Anderson, 1993</xref>), it is
+likely all three alleles are strong loss-of-function or null
+mutations.</p><p>Sequences of three full-length cDNAs were generated and
+compared against one another, revealing two distinct splice variants that differ
+only by 6 bp at the beginning of the fifth exon (Figure <xref ref-type="fig"
+rid="F1">1</xref>B). The two variants are found in both mixed stage and
+embryonic-derived cDNA libraries and will not be further addressed. With the
+exception of this predicted splice variant, the three cDNAs confirm the
+intron/exon boundaries predicted by Genefinder for C39E9.14 (GI:3874851). Each
+of the three cDNAs contains 20&#x2013;70 bases of 5&#x2032; sequence before the
+predicted start codon, and none of the cDNAs contain an SL1 <italic>trans</italic>
+splice leader sequence, suggesting <italic>dli-1</italic> is not processed by
+<italic>trans</italic> splice machinery (<xref ref-type="bibr" rid="B6">Blumenthal,
+1997</xref>).</p></sec><sec><title>dli-1 Mutants Exhibit Failed Cell Divisions
+in a Number of Postembryonic Lineages</title><p>Numerous postembryonic cell
+lineages in <italic>dli-1</italic> mutants exhibit stochastic failed cell division
+attempts. Lineages affected include the vulva precursor cells (VPCs) and their
+descendents, male tail-specific cells, hypodermal cells, and cells of the gonad,
+both germline and somatic. All of the affected lineages in wild-type animals
+begin or continue divisions through the third and fourth (final) larval stage.
+Early larval lineages are not affected in <italic>dli-1</italic> mutants, suggesting
+successful cell divisions in the homozygous null mutants occurs until maternal
+protein is depleted (<xref ref-type="bibr" rid="B12">Fay and Han,
+2000</xref>).</p><p>The vulva in <italic>C. elegans</italic> is derived from three of
+six equipotent cells, the VPCs, each of which undergoes three rounds of
+divisions (beginning early in the third larval stage) to generate a total of 22
+vulval-specific cells (<xref ref-type="bibr" rid="B42">Sulston and Horvitz,
+1977</xref>). To address the nature of the aberrant vulva morphology observed in
+the three alleles, we performed lineage analysis for the first two rounds of VPC
+divisions in 15 <italic>ku266</italic> animals. Numerous stochastic failed cell division
+attempts were observed. One, two, or all three VPCs failed the first division in
+some animals, whereas in other animals, cells completed the first round of
+division, and failed division attempts were only observed during the second
+round. In each case, cells were observed to undergo nuclear envelope breakdown
+(NEB), chromatin then appeared to condense, but &#x223C;20 min later, when two
+daughter nuclei should appear, only a single nucleus reformed. These nuclei were
+large and misshapen and often appeared to contain multiple nucleoli, suggesting
+single polyploid nuclei (Figure <xref ref-type="fig" rid="F3">3</xref>B,
+arrowheads). Also, several cells were seen to not attempt division at all.
+Similar observations were made for male tail-specific cell division attempts.
+These failed divisions were not cell lethal. Some cells that had failed division
+attempts were seen to attempt division in the next round. Additionally, cells
+that resulted from failed divisions were capable of expressing lineage-specific
+markers.</p><fig id="F3"><caption><p>dli-1 alleles
+undergo stochastic failed cell divisions in many postembryonic lineages. (A and
+C) Wild-type <italic>C. elegans</italic> at late L4, the last larval stage before the
+adult molt. (B and D) Similarly staged <italic>ku266</italic> animals. (A) Wild-type
+late L4 vulva. Only 12 of 22 cells are visible in this plane of focus. (B)
+<italic>ku266</italic> late L4 vulva. The enlarged nuclei are the result of failed
+divisions. Several of these cells contain multiple nucleoli (arrowheads)
+indicative of failed chromosome segregation<italic>.</italic> (C) Gonad of a wild-type
+animal composed of many syncitial germline nuclei. (D) Germline nuclei in
+<italic>ku266</italic> animals also have abnormal morphology and are probably polyploid
+as a result of failed mitotic division in the distal end of the gonad arm. (E)
+Wild-type somatic sheath cell nucleus visualized by staining with anti-CEH-18
+antibodies. (F) Sheath cell nucleus of a <italic>ku266</italic> animal. Like all other
+late postembryonic lineages observed, the somatic sheath cells also appear to
+undergo failed division attempts, resulting in too few cells (average of 6 per
+gonad arm compared with 10 in wild-type) with abnormal nuclear morphology. Bar,
+&#x223C;10 &#x03BC;m.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mk1011614003"
+alt-version="yes"></graphic></fig><p>The sterility of <italic>dli-1</italic> mutants is
+also likely a result of failed mitotic divisions. The gonad in <italic>C.
+elegans</italic> hermaphrodites consists of two U-shaped arms that terminate
+proximally in a structure called the spermatheca and are joined by the uterus,
+which opens, via the vulva, to the outside of the animal (<xref ref-type="bibr"
+rid="B38">Schedl, 1997</xref>). L1 animals possess a four-cell gonad primordium
+consisting of two somatic and two germline precursor cells (<xref
+ref-type="bibr" rid="B43">Sulston <italic>et al.</italic>, 1983</xref>). In
+hermaphrodites, by L2, 10 somatic blast cells form a central somatic gonad
+primordium. During L3 and L4, these blast cells divide to produce the sheath,
+spermatheca, and uterus. Additionally, during late L3 and through adulthood, a
+distal pool of nuclei within the syncitial gonad divide mitotically. The
+resulting nuclei then enter meiosis, cellularize, and undergo gametogenesis.
+During L4 these cells differentiate as spermatocytes, and after the L4-to-adult
+molt, these cells begin differentiation as oocytes (<xref ref-type="bibr"
+rid="B38">Schedl, 1997</xref>). The sheath of each gonad arm is composed of five
+pairs of sheath cells, which are involved in regulating meiotic progression,
+ooctye maturation, and ovulation of mature oocytes. Laser ablation of sheath
+cells results in endomitotic germ cells and reduction of distal mitosis (<xref
+ref-type="bibr" rid="B26">McCarter <italic>et al.</italic>, 1997</xref>). Failed
+division attempts are obvious in the distal end of gonads in <italic>dli-1</italic>
+mutants, resulting in enlarged germline nuclei (Figure <xref ref-type="fig"
+rid="F3">3</xref>D). Additionally, <italic>ku266</italic> gonads stained with antibodies
+against the POU domain containing homeobox protein CEH-18 (a gift from D.
+Greenstein, Vanderbilt University, Nashville, TN), which is expressed only in
+the somatic gonad cells, shows the nuclei of the sheath cells are large and have
+irregular morphology compared with wild-type gonads similarly stained (Figure
+<xref ref-type="fig" rid="F3">3</xref>, E and F). Additionally, <italic>ku266</italic>
+gonad arms contain on average six sheath cells (n = 15) compared with 10 in the
+wild type. Loss of sheath cells could also contribute to irregular morphology
+and the large size (as a result of endomitosis) of germ cells in <italic>dli-1</italic>
+mutants.</p></sec><sec><title>Point Mutations in a Putative P-Loop Domain Can
+Rescue dli-1 Phenotype</title><p>Previously reported sequence analysis of chick
+and rat LIC suggests a conserved P-loop domain near the N terminus of the
+protein (<xref ref-type="bibr" rid="B15">Gill <italic>et al.</italic>, 1994</xref>;
+<xref ref-type="bibr" rid="B20">Hughes <italic>et al.</italic>, 1995</xref>). The
+highest degree of similarity was found with the ABC transporter family of
+ATPases. <italic>C. elegans</italic> DLI-1 sequence also shares similarity in this
+region (Figure <xref ref-type="fig" rid="F2">2</xref>, underlined). On the basis
+of this observed similarity with ABC transporters, it was suggested LIC may be
+an ATPase (<xref ref-type="bibr" rid="B15">Gill <italic>et al.</italic>, 1994</xref>;
+<xref ref-type="bibr" rid="B20">Hughes <italic>et al.</italic>, 1995</xref>); however,
+no experimental evidence has been published in support of this
+suggestion.</p><p>Numerous lines of evidence suggest that a conserved lysine
+residue within the P-loop of ATPases and other proteins such as kinases, which
+also contain P-loops, is essential for the role of this domain (<xref
+ref-type="bibr" rid="B2">Azzaria <italic>et al.</italic>, 1989</xref>; <xref
+ref-type="bibr" rid="B40">Stephens <italic>et al.</italic>, 1995</xref>; <xref
+ref-type="bibr" rid="B9">Deyrup <italic>et al.</italic>, 1998</xref>; <xref
+ref-type="bibr" rid="B49">Wu and Horvitz, 1998</xref>). An example is the <italic>C.
+elegans</italic> proapoptotic ABC transporter-like gene <italic>ced-7</italic>. Arginine
+substitutions for the conserved lysine residue in one of two P-loop domains in
+CED-7 fail to rescue a <italic>ced-7</italic> cell corpse engulfment defect (<xref
+ref-type="bibr" rid="B49">Wu and Horvitz, 1998</xref>). To test the necessity of
+this putative P-loop domain in DLI-1, point mutations were constructed in the
+minimal rescuing subclone pJHY10, generating both the conserved K59R (pJHY11)
+and nonconserved K59A (pJHY14) substitutions. Both constructs completely rescued
+the vulva cell division and sterility phenotypes in the two alleles tested,
+<italic>ku266</italic> and <italic>ku287</italic>. In each case, rescued animals homozygous for
+the two alleles were cultured for several generations and the efficiency of this
+rescue was not observed to diminish. These data, therefore, suggest this region
+is not essential for DLI-1 function.</p></sec><sec><title>DLI-1 Is Required for
+Pronuclear Migration</title><p>Double-stranded RNA generated against a gene of
+interest has been shown to specifically and potently disrupt that gene's
+function in <italic>C. elegans</italic> (<xref ref-type="bibr" rid="B13">Fire <italic>et
+al.</italic>, 1998</xref>). Assuming that maternal protein from the heterozygous
+parent of <italic>dli-1</italic> mutants allows homozygous progeny to develop normally
+until that message is depleted, we performed RNAi against <italic>dli-1</italic> in both
+wild-type and <italic>dli-1</italic> heterozygous animals to observe the earliest
+phenotype.</p><p>In uninjected wild-type embryos, shortly after fertilization
+the two meiotic divisions are completed, usually resulting in the extrusion of
+two polar bodies at the anterior end of the embryo (<xref ref-type="bibr"
+rid="B1">Albertson, 1997</xref>). The resulting female pronucleus is positioned
+slightly off the anterior cortex, whereas the male pronucleus, which contributes
+the single centrosome, is tightly associated with the posterior cortex (Figure
+<xref ref-type="fig" rid="F4">4</xref>A). A pseudocleavage furrow partially
+bisects the one-cell embryo. After duplication, the two daughter centrosomes
+associated with the male pronuclear envelope separate and move to opposite sides
+of the pronucleus while remaining associated with envelope (reviewed in <xref
+ref-type="bibr" rid="B41">Strome, 1993</xref>). The female and male pronuclei
+then begin migration toward one another. The female pronucleus moves slightly
+faster than the male and accelerates once it reaches the neck of the
+pseudocleavege furrow. Consequently, the two pronuclei meet in the posterior end
+of the embryo. After regression of the pseudocleavage furrow, the fused nuclei
+along with the two associated centrosomes move anteriorly to the center of the
+embryo. As the pronuclei undergo nuclear envelope breakdown, the centrosomes
+rotate to align themselves along the anterior-posterior axis of the embryo and
+the bipolar spindle is formed (Figure <xref ref-type="fig" rid="F4">4</xref>, B
+and C). Chromosome segregation follows, the embryo divides into two daughter
+cells, and nuclear envelopes are reformed (Figure <xref ref-type="fig"
+rid="F4">4</xref>D).</p><fig id="F4"><caption><p>Comparison of pronuclear migration in wild-type and
+<italic>dli-1</italic>(RNAi) embryos. All images are oriented with anterior to the left.
+(A&#x2013;D) Wild-type embryo; female (anterior) and male (posterior) pronuclei
+begin migration before regression of the pseudocleavage furrow. The two
+pronuclei meet and fuse before nuclear envelope breakdown. (E&#x2013;H) In the
+majority (16/19) of <italic>dli-1</italic>(RNAi) embryos harvested from injected
+wild-type mothers (shown) and 100&#x0025; of embryos harvested from injected
+<italic>dli-1</italic> heterozygous mothers (n = 19), pronuclear migration does not
+occur. (F) At the completion of pseudocleavage furrow regression, neither
+pronucleus has initiated migration. (G) At a time point equivalent to that in B
+in which the wild-type embryo is in metaphase, no pronuclear migration is
+apparent, and the male pronucleus has undergone NEB before female pronuclear
+NEB. (H) Multiple nuclei were formed in all <italic>dli-1</italic>(RNAi) embryos
+observed (arrowheads). Timestamps are relative to completion of anterior
+cytoplasmic contractions. In a wild-type embryo almost immediately after this,
+the female pronucleus initiates posteriorward migration. Bar, &#x223C;10
+&#x03BC;m.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="mk1011614004" alt-version="yes"></graphic></fig><p>RNAi against
+<italic>C. elegans dhc-1</italic> results in early embryonic arrest, resulting from
+failed cell divisions beginning in the one-cell stage <italic>C. elegans</italic> embryo
+(<xref ref-type="bibr" rid="B18">Gonczy <italic>et al.</italic>, 1999</xref>).
+Specifically, under Nomarski optics, male and female pronuclear migrations are
+not observed, suggesting this motor protein is required for both migration
+events. Also, a majority of <italic>dhc-1</italic>(RNAi) embryos contained multiple
+female pronuclei and aberrant polar body formation, suggesting defects in female
+meiotic divisions.</p><p>RNAi against <italic>dli-1</italic> reveals it is also required
+for pronuclear migration. Wild-type animals injected with double-stranded RNA
+directed against <italic>dli-1</italic> are 100&#x0025; sterile 30 h after injection (n
+&#x003E; 30). Embryos were first scored for number of female pronuclei and
+pronuclear migration defects. Unlike <italic>dhc-1</italic>(RNAi), 19/19
+<italic>dli-1</italic>(RNAi) embryos generated a single female pronucleus (Figure 
+<xref ref-type="fig" rid="F4">4</xref>E and Table <xref ref-type="table"
+rid="T1">1</xref>). In one of these embryos, polar body extrusion appeared
+defective, resulting in one enlarged polar body. Although completion of meiosis
+(as scored by the formation of a single female pronucleus) appeared mostly
+unaffected, the majority of these embryos underwent failed pronuclear migration.
+Male pronuclei migration was not observed in any of the 19 embryos. Complete
+failure of female pronuclear migration was observed in 12/19 embryos (Figure
+<xref ref-type="fig" rid="F4">4</xref>, E&#x2013;H). For these 12 embryos, both
+male and female pronuclei remained stationary through pseudocleavage furrow
+regression. Shortly after completion of this event, the male pronucleus
+underwent NEB, followed within 1&#x2013;2 min by female NEB. Such asynchronous
+NEB events are common in mutants that exhibit failed pronuclear migration (<xref
+ref-type="bibr" rid="B18">Gonczy <italic>et al.</italic>, 1999</xref>). The remaining
+seven embryos showed varying degrees of female pronuclear migration. The female
+pronucleus in four of these seven embryos migrated only to the midline of the
+embryo, to the point of pseudocleavage furrow constriction, and then halted.
+Thus, we scored these as failed migration events (Table <xref ref-type="table"
+rid="T1">1</xref>). In the remaining three embryos, the pronucleus did
+successfully migrate to the posterior end; however, the rate of migration was
+considerably decreased and the male and female pronuclei never fused before NEB.
+</p><table-wrap id="T1"><caption><p>Summary of time-lapse
+differential interference contrast and immunocytochemistry
+analysis</p></caption>
+<table><tr><th/>
+<th>N2</th>
+<th><italic>dhc-1</italic>(RNAi)</th>
+<th><italic>dli-1</italic>(RNAi)</th>
+<th><italic>dli-1</italic>(RNAi) in
+<italic>dli-1/</italic><sup>&#x002B;</sup></th></tr>
+<tr><td colspan="5"><hr/></td></tr>
+<tr><td>A. Multiple female pronuclei</td><td>0
+/20</td><td>11 /14</td><td>0 /19</td><td>0 /19</td></tr><tr><td>B. Failed
+pronuclear migration</td><td>0 /20</td><td>14 /14</td><td>16 /19</td><td>19
+/19</td></tr><tr><td>C. Failed centrosome separation</td><td>0 /20</td><td>5
+/5</td><td>10 /17</td><td>6 /8</td></tr><tr><td>D. Centrosomes dissociated from
+male pronucleus</td><td>0 /20</td><td>n /d</td><td>5 /17</td><td>3
+/8</td></tr><tr><td>E. Failure to form meiotic spindle</td><td>0 /15</td><td>7
+/12</td><td>1 /11</td><td>1 /10</td></tr></table></table-wrap><p>We attempted to
+increase the penetrance of the observed phenotypes by performing RNAi in a
+<italic>dli-1</italic> heterozygous strain. As seen in the wild type, 100&#x0025; of
+animals were sterile within 30 h after injection (n = 20). In 19/19 embryos a
+single female pronucleus formed as in the wild-type, but 100&#x0025; of these
+embryos failed to undergo either female or male pronuclear migration (Figure
+<xref ref-type="fig" rid="F4">4</xref> and Table <xref ref-type="table"
+rid="T1">1</xref>).</p><p>In all 38 embryos, proper cell division did not occur.
+Cleavage furrows were initiated in each embryo after NEB, but these furrows were
+never able to completely bisect the embryos. Additionally, an ectopic cleavage
+furrow was often initiated at the posterior cortex these embryos near the
+nucleating microtubules. As in <italic>dhc-1</italic>(RNAi) embryos, multiple nuclei
+reformed as the <italic>dli-1</italic>(RNAi) embryos progressed to interphase,
+suggesting defects in chromosome segregation, or alternatively as a result of
+failed metaphase chromosome congression (Figure <xref ref-type="fig"
+rid="F4">4</xref>H, arrowheads).</p></sec><sec><title>Meiotic Spindle Formation
+Is not Affected by dli-1(RNAi)</title><p>Dynein heavy chain and the IC subunit
+have been shown to be necessary for meiotic spindle formation (<xref
+ref-type="bibr" rid="B30">Palazzo <italic>et al.</italic>, 1999</xref>). Because
+100&#x0025; of <italic>dli-1</italic>(RNAi) embryos formed a single female pronucleus,
+we wanted to investigate meiosis in greater detail. Therefore, <italic>dli-1</italic>
+and <italic>dhc-1(RNAi)</italic> embryos were stained with anti-&#x03B1;-tubulin and
+DAPI to observe meiotic spindles and chromosomes. In wild-type embryos, after
+fertilization, the two meiotic divisions proceed with the formation of an
+acentrosomal meiotic spindle at each round surrounding the condensed metaphase
+meiotic chromosomes (Figure <xref ref-type="fig" rid="F5">5</xref>, A&#x2013;C).
+During each meiotic division, one set of oocyte chromosomes is extruded into a
+polar body. When scored for meiotic spindle assembly, 19/21 observed
+<italic>dli-1</italic>(RNAi) embryos formed a meiotic spindle structure
+indistinguishable from wild-type embryos (10/11 embryos from wild-type injection
+and 9/10 embryos from <italic>dli-1</italic> heterozygous injections; Figure <xref
+ref-type="fig" rid="F5">5</xref>, D&#x2013;F, and Table <xref ref-type="table"
+rid="T1">1</xref>). In the <italic>dli-1</italic>(RNAi) embryo from a wild-type injected
+mother in which a meiotic spindle was not observed, oocyte metaphase chromosomes
+were scattered along the anterior cortex of the embryo and no polar body was
+visible. In the other embryo (from an injected heterozygous mother), one polar
+body had been extruded anteriorly, and the monovalent meiosis II chromosomes
+were tightly condensed at the apex of the anterior cortex. In contrast, of 12
+<italic>dhc-1</italic>(RNAi) embryos observed, only three had formed wild-type meiotic
+spindles with metaphase chromosomes condensed at their centers. Two additional
+embryos formed meiotic spindles, but the oocyte chromosomes were misplaced and
+scattered outside of the structure. The remaining seven <italic>dhc-1</italic>(RNAi)
+embryos failed to form meiotic spindles, and their oocyte chromosomes were
+randomly scattered throughout the anterior end of the embryos (Figure <xref
+ref-type="fig" rid="F5">5</xref>, G&#x2013;I, and Table <xref ref-type="table"
+rid="T1">1</xref>).</p><fig id="F5"><caption><p>Meiotic
+spindles are formed in <italic>dli-1</italic>(RNAi) embryos, but not in all
+<italic>dhc-1</italic>(RNAi) embryos observed. All embryos are oriented with anterior to
+the left. (A, D, and G) Anti-tubulin staining to reveal microtubules. (B, E, and
+H) DAPI staining to reveal DNA. (A&#x2013;C) Wild-type embryo at meiosis II. A
+barrel-shaped spindle surrounds the female meiotic chromosomes. One polar body
+has already been extruded (B and C, arrow). The male meiotic chromosomes are
+tightly condensed at the posterior end of the embryo. (D&#x2013;F)
+<italic>dli-1</italic>(RNAi) embryo slightly later in meiosis II. A barrel-shaped
+meiotic spindle has also formed around the condensed meiotic chromosomes. The
+spindle has rotated to the anterior/posterior axis to complete the meiosis II
+division. A single polar body has also already been extruded (E and F, arrow).
+(G&#x2013;I) <italic>dhc-1</italic>(RNAi) embryo. No meiotic spindle is observable and
+the female meiotic chromosomes are scattered throughout the embryo. Bar,
+&#x223C;10 &#x03BC;m.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mk1011614005"
+alt-version="yes"></graphic></fig></sec><sec><title>DLI-1 Is Required for
+Centrosome Separation and Attachment to Pronuclear Envelope</title><p>To more
+accurately observe the effects that depletion of the <italic>dli-1</italic> gene product
+has on centrosome separation and spindle orientation, we stained
+<italic>dli-1</italic>(RNAi) embryos with antibodies to ZYG-9, a conserved centrosome
+protein (a gift from L. Matthews, Cornell University, Ithaca, NY) and
+&#x03B1;-tubulin (a gift from M. Fuller, Stanford University, Stanford, CA).
+<xref ref-type="bibr" rid="B18">G&#x00F6;nczy <italic>et al.</italic> (1999)</xref>
+reported 100&#x0025; of <italic>dhc-</italic>1(RNAi) one-cell embryos exhibited failed
+centrosome separation. We were able to faithfully duplicate these results (n =
+5). Unlike <italic>dhc-1</italic>(RNAi) embryos, 7 of 17 <italic>dli-1</italic>(RNAi) embryos
+from injected wild-type mothers, just before NEB or at metaphase had undergone
+centrosome separation, but these centrosomes were never observed to undergo full
+rotation, centration, or alignment along the anterior/posterior axis (Figure
+<xref ref-type="fig" rid="F6">6</xref>, D&#x2013;F). The remaining 10
+<italic>dli-1</italic>(RNAi) embryos were phenotypically indistinguishable from
+<italic>dhc-1</italic>(RNAi) embryos. Although centrosomes had duplicated, they had not
+separated after NEB and progression into metaphase (Figure <xref ref-type="fig"
+rid="F6">6</xref>, G&#x2013;I). Similar phenotypes were observed in embryos from
+injected heterozygous mothers. Six of eight observed embryos had undergone
+failed centrosome separation. In similar experiments, <xref ref-type="bibr"
+rid="B18">G&#x00F6;nczy <italic>et al.</italic> (1999)</xref> observed 15&#x0025; of
+centrosomes in <italic>dhc-1</italic>(RNAi) embryos were disassociated from the male
+pronuclei. This observation was also made in <italic>Drosophila</italic> heavy chain
+mutants (<xref ref-type="bibr" rid="B37">Robinson <italic>et al.</italic>, 1999</xref>).
+Similarly, centrosomes were dissociated from the male pronuclei in 5/17
+(30&#x0025;) <italic>dli-1</italic>(RNAi) embryos from injected wild-type mothers and
+3/8 embryos from heterozygous injections had dissociated centrosomes (Figure
+<xref ref-type="fig" rid="F7">7</xref>).</p><fig id="F6"><caption><p>DLI-1 is required for centrosome separation in the one-cell
+<italic>C. elegans</italic> embryo. Cytological analysis of metaphase embryos stained
+for the centrosomal component ZYG-9, tubulin, or DNA as indicated. All images
+are oriented with anterior to the left. (A&#x2013;C) Wild-type embryo at
+metaphase. (A) Anti-ZYG-9 stains the two centrosomes that have rotated and
+aligned along an anterior-posterior axis. (B) Centrosomes nucleate microtubules
+forming the bipolar spindle visualized by anti-tubulin staining. (C) DAPI
+staining shows chromosomes condensed to the metaphase plate. (D&#x2013;F)
+<italic>dli-1</italic>(RNAi) embryo in which centrosomes did separate. (D) Centrosomes
+have separated but have failed to centrate. This panel represents the most
+successful degree of rotation and spindle alignment observed. (E and F)
+Centrosomes do nucleate microtubules and chromosomes are condensed but have not
+yet congressed to a metaphase plate. (G&#x2013;I) <italic>dli-1</italic>(RNAi) embryo
+exhibiting the most severe centrosome separation phenotype. (G) Some embryos
+(10/17) from wild-type injections failed to separate centrosomes and therefore
+formed no bipolar spindle. (H) Microtubules are nucleated and chromosomes have
+condensed and congressed to a metaphase plate (I). Embryos from heterozygous
+injections (7/8) were phenotypically identical to the embryo in G&#x2013;I. Bar,
+&#x223C;10 &#x03BC;m.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mk1011614006"
+alt-version="yes"></graphic></fig><fig id="F7"><caption><p>Centrosomes are dissociated from the male pronucleus in
+32&#x0025; of <italic>dli-1</italic>(RNAi). In 5/17 embryos from
+wild-type&#x2013;injected mothers and 3/8 embryos from <italic>dli-1</italic>
+heterozygous injected mothers, centrosomes (arrows) were dissociated from the
+male pronucleus (arrowheads). (A&#x2013;D) Embryo from a <italic>dli-1</italic>
+heterozygous-injected mother showing centrosomes as visualized by anti-ZYG-9
+staining (A), microtubules visualized by anti-tubulin staining (B), DAPI
+staining to reveal DNA (C), and merged (D). Bar, &#x223C;10
+&#x03BC;m.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="mk1011614007"
+alt-version="yes"></graphic></fig></sec><sec><title>DHC-1 Is Correctly Localized
+in dli-1 RNAi Embryos</title><p>The phenotypic similarity between
+<italic>dli-1</italic>(RNAi) and <italic>dhc-1</italic>(RNAi) embryos raises the question of
+whether the <italic>dli-1</italic>(RNAi) phenotype is directly related to the function
+of the gene product or the result of ablating DHC-1 function through disruption
+of the cytoplasmic dynein complex itself. To address this question,
+<italic>dli-1</italic>(RNAi) embryos were stained with antibodies to <italic>C. elegans</italic>
+DHC-1 (a gift from P. G&#x00F6;nczy and A. Hyman, EMBL, Heidelberg, Germany). In
+wild-type embryos, DHC-1 is distributed throughout the cytoplasm in a punctate
+manner, localizes to the cell cortex, and is enriched at the periphery of both
+the male and female pronuclei before NEB (<xref ref-type="bibr" rid="B18">Gonczy
+<italic>et al.</italic>, 1999</xref>). During prometaphase, DHC-1 is enriched on both
+sides of congressing chromosomes, and at metaphase and anaphase it is
+additionally enriched on the spindle on both sides of the metaphase plate
+(Figure <xref ref-type="fig" rid="F8">8</xref>A) and between segregating
+chromosomes, respectively. Compared with wild-type and <italic>dhc-1</italic>(RNAi)
+embryos, DHC-1 appears to localize correctly in <italic>dli-1</italic>(RNAi) embryos. We
+were unable to faithfully reproduce the pronuclear envelope staining pattern in
+wild-type embryos; however, metaphase and anaphase DHC-1 staining clearly shows
+DHC-1 localized to metaphase chromosomes and spindles. Therefore, we focused on
+metaphase and prometaphase staining in <italic>dli-1</italic>(RNAi) embryos to score for
+correct DHC-1 localization. In several <italic>dli-1</italic>(RNAi) embryos, due to
+failed centrosome separation, nothing similar to a bipolar spindle is formed and
+therefore spindle staining could not be observed. However, in these embryos
+DHC-1 still clearly localizes to prometaphase and metaphase chromosomes (Figure
+<xref ref-type="fig" rid="F8">8</xref>G). Additionally, when centrosome
+separation does occur, DHC-1 can be seen to localize in a pattern similar to the
+metaphase spindle staining seen in wild-type embryos (compare Figure <xref
+ref-type="fig" rid="F8">8</xref>, A and E). These data suggest the phenotypes
+observed in <italic>dli-1</italic>(RNAi) embryos are specific to loss of DLI-1 and not
+strictly a result of disrupting the cytoplasmic dynein complex.</p><fig
+id="F8"><caption><p>DHC-1 localizes correctly in
+<italic>dli-1</italic>(RNAi) embryos. (A) DHC-1 localization to the mitotic spindle in a
+wild-type metaphase embryo. (B) The same wild-type embryo stained with DAPI to
+reveal metaphase chromosomes. (C and D) <italic>dli-1</italic>(RNAi) embryo also at
+metaphase. DHC-1 localizes to either side of the condensed metaphase chromosomes
+and the mitotic spindle. Centrosomes have apparently separated enough in this
+embryo for a mitotic spindle to form. (E and F) <italic>dhc-1</italic>(RNAi) embryo also
+at metaphase. No DHC-1 staining is detectable. (G and H) Posterior end of a
+<italic>dli-1</italic>(RNAi) embryo as chromosomes are condensing at metaphase. When
+centrosomes fail to separate and no spindle is formed, DHC-1 staining is still
+observed on metaphase (arrowhead) and prometaphase (arrow) chromosomes. Bars,
+&#x223C;10 &#x03BC;m.</p></caption><graphic
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mk1011614008"
+alt-version="yes"></graphic></fig></sec></sec><sec
+sec-type="discussion"><title>DISCUSSION</title><p>We describe phenotypic characterization
+of the first mutant alleles of cytoplasmic dynein LIC, which we have named
+<italic>dli-1</italic>. Unlike the dynein motor protein and other subunits of the dynein
+complex, LIC is restricted to the cytoplasmic dynein complex and has no homolog
+in axonemal dynein (reviewed in <xref ref-type="bibr" rid="B23">King,
+2000</xref>). This suggests LIC may be required for discrete aspects of dynein's
+function. Support for a role in mitosis is found in the recent observation that
+LIC directly interacts with pericentrin, a conserved centrosome component (<xref
+ref-type="bibr" rid="B34">Purohit <italic>et al.</italic>, 1999</xref>).</p><p>The three
+loss-of-function alleles we have isolated in <italic>C. elegans</italic> also suggest a
+requirement for the <italic>dli-1</italic> gene product during mitosis. Homozygous
+animals are sterile and many postembryonic cell lineages undergo stochastic
+failed division attempts. Affected cell lineages are those that continue
+division attempts through late larval stages in wild-type animals. Early larval
+lineages appear unaffected in <italic>dli-1</italic> mutants. These observations suggest
+enough maternal product or message is available during embryogenesis and early
+larval development to allow proper cell division to occur.</p><p>The precise
+role that LIC plays during cell division is still not understood. Previous
+analysis of LIC peptide sequences led to the speculation that LIC may be an
+ATPase and serve a regulatory role for dynein's function through this activity
+(<xref ref-type="bibr" rid="B15">Gill <italic>et al.</italic>, 1994</xref>; <xref
+ref-type="bibr" rid="B20">Hughes <italic>et al.</italic>, 1995</xref>). This suggestion
+is based on identification of a putative P-loop domain within the protein
+sequence. The P-loop (or Walker A box) is one of three conserved motifs found in
+numerous nucleotide-hydrolyzing proteins, including the ABC transporter family
+of ATPases, and is defined by the consensus sequence GXXXXGK(S/T) (<xref
+ref-type="bibr" rid="B47">Walker <italic>et al.</italic>, 1982</xref>). Although this
+consensus is present in all LIC sequences found to date, the other two motifs
+(the Walker B box and the signature motif) are not present. Additionally,
+previous work has shown a conserved lysine residue (corresponding to K59 in
+<italic>dli-1</italic>) within the P-loop sequence is required for proper nucleotide
+binding and therefore ATPase activity (<xref ref-type="bibr" rid="B49">Wu and
+Horvitz, 1998</xref>). Amino acid substitutions at K59 in our rescuing construct
+to either alanine or the conservative arginine residue are still able to confer
+complete rescue in the <italic>dli-1</italic> alleles for multiple generations of
+homozygous animals. This suggests that nucleotide binding is not required for
+DLI-1 function and that DLI-1 is not an ATPase.</p><p>To circumvent maternal
+rescue and observe the earliest phenotype for depletion of DLI-1, we have used
+RNAi to specifically inhibit function of the <italic>dli-1</italic> gene product. As
+expected, a much earlier requirement for <italic>dli-1</italic>, than observed in our
+mutants was revealed. The resulting phenotypes suggest DLI-1 is required for
+many of dynein's mitotic functions, but potentially not for dynein's role in
+meiotic spindle formation. When RNAi is performed against the <italic>C.
+elegans</italic> dynein heavy chain <italic>dhc-1</italic>, numerous female pronuclei are
+formed in one-cell embryos (<xref ref-type="bibr" rid="B18">Gonczy <italic>et
+al.</italic>, 1999</xref>). Additionally, when RNAi is performed against two
+subunits of the dynactin complex, p150<sup>glued</sup> or p50/dynamintin,
+multiple female pronuclei are also observed, although at a much smaller
+percentage compared with <italic>dhc-1</italic>(RNAi) (<xref ref-type="bibr"
+rid="B18">Gonczy <italic>et al.</italic>, 1999</xref>). In all <italic>dli-1</italic>(RNAi)
+embryos observed, whether the injected mother was wild type or heterozygous,
+only a single female pronucleus is formed. Additionally, anti-tubulin antibody
+staining in early <italic>dli-1</italic>(RNAi) embryos shows meiotic spindles are formed
+and meiotic chromosomes are condensed and correctly localized within the spindle
+(Figure <xref ref-type="fig" rid="F5">5</xref>, D&#x2013;F). However, meiotic
+spindles are only seen in 5/12 <italic>dhc-1</italic>(RNAi) embryos. Additionally, two
+of these five embryos show chromosomes scattered outside of the meiotic spindle.
+These data cannot be used as conclusive evidence that DLI-1 is not required for
+meiotic spindle formation whereas DHC-1 is, because these are static
+observations, and the <italic>dhc-1</italic>(RNAi) embryos could have been fixed before
+or in between meiotic spindle formation. An alternative explanation is that even
+in injected heterozygotes, <italic>dli-1</italic>(RNAi) is incompletely penetrant and
+only a small amount of protein is required for proper dynein function during
+meiosis. Defects in meiotic spindle formation, however, would account for
+missegregation of meiotic chromosomes and the formation of multiple female
+pronuclei in <italic>dhc-1</italic>(RNAi) embryos. Because LIC has been shown to
+interact with the centrosome component pericentrin, and meiotic spindles form
+without centrosomes, it is still an attractive possibility that meiotic spindle
+formation is not affected in <italic>dli-1</italic>(RNAi) embryos because DLI-1 is not
+required for meiotic spindle formation.</p><p>The pronuclear migration defects
+observed in <italic>dli-1</italic>(RNAi) embryos suggests LIC is required for this
+aspect of dynein motor function. The majority of <italic>dli-1</italic>(RNAi) embryos
+from wild-type injections underwent failed pronuclear migration (16/19), and
+100&#x0025; of embryos from heterozygous injections showed failed pronuclear
+migration Interestingly, alleles of most other subunits of the cytoplasmic
+dynein complex as well as components of the dynactin complex have been isolated
+in genetic screens for defective nuclear migration in <italic>A. nidulans</italic> and
+<italic>N. crassa</italic> (<xref ref-type="bibr" rid="B31">Plamann <italic>et al.</italic>,
+1994</xref>; <xref ref-type="bibr" rid="B50">Xiang <italic>et al.</italic>,
+1994</xref>). Although LIC mutants were not isolated in these screens, our RNAi
+data show <italic>dli-1</italic> is required at least for pronuclear migration and
+potentially, therefore, in other nuclear migration events.</p><p>DLI-1 also
+appears to be required for centrosome separation. Although centrosome separation
+occurred in 9/25 <italic>dli-1</italic>(RNAi) embryos, the spindle that was formed
+failed to centrate and the centrosomes never completely migrated to opposite
+poles of the male pronucleus. Again, incomplete penetrance could explain the
+9/25 embryos in which centrosomes did separate from one another. Additionally,
+in 32&#x0025; (8/25) of <italic>dli-1</italic>(RNAi) embryos, centrosomes were
+dissociated from the male pronulcear envelope. This phenotype was also observed
+in 15&#x0025; of <italic>dhc-1</italic>(RNAi) embryos. These data are not surprising
+because LIC has been shown to directly interact with the conserved centrosome
+component pericentrin. Loss of this interaction through <italic>dli-1</italic>(RNAi) may
+increase disassociation of centrosomes from the nuclear envelope.</p><p>Dynein
+LIC is required for the function of the dynein motor complex. However, like
+other subunits of this complex, a specific role has yet to be defined. Numerous
+light chain subunits are found associated with the dynein motor complex and have
+been shown to be required not only for certain dynein functions such as nuclear
+migration (<xref ref-type="bibr" rid="B4">Beckwith <italic>et al.</italic>, 1998</xref>)
+but also for interacting with proteins that are not currently implicated in
+dynein's mitotic roles such as Bcl-2 (<xref ref-type="bibr"
+rid="B35">Puthalakath <italic>et al.</italic>, 1999</xref>) and neuronal nitric-oxide
+synthase (<xref ref-type="bibr" rid="B21">Jaffrey and Snyder,
+1996</xref>).</p><p>The observed interaction between LIC and pericentrin (<xref
+ref-type="bibr" rid="B34">Purohit <italic>et al.</italic>, 1999</xref>) suggests a
+mechanism for at least two of the requirements we have shown for DLI-1:
+centrosome separation and centrosome association with the male pronucleus. The
+dynein motor complex could be localized to the microtubule-organizing centers
+through such an interaction, allowing it to provide the force necessary to
+separate centrosomes and align the bipolar spindle. This interaction, however,
+does not explain the pronuclear migration defect seen in <italic>dli-1</italic>(RNAi)
+embryos. Pronuclear migration defects are also seen after RNAi of dynein light
+chain (<italic>dlc-1)</italic> (<xref ref-type="bibr" rid="B17">Gonczy <italic>et al.</italic>,
+2000</xref>). Both observations, therefore, may result from mislocalization of
+the dynein motor complex.</p><p>It seems unlikely that LIC is playing only a
+structural role for the dynein motor complex. The protein has been shown to
+exist as numerous phosphorylated species, and this phosphorylation is regulated
+in a cell cycle-dependent manner (<xref ref-type="bibr" rid="B15">Gill <italic>et
+al.</italic>, 1994</xref>; <xref ref-type="bibr" rid="B20">Hughes <italic>et al.</italic>,
+1995</xref>; <xref ref-type="bibr" rid="B28">Niclas <italic>et al.</italic>,
+1996</xref>). Mapping LIC's interaction domains and analyzing the regulation of
+its phosphorylation should begin to shed more light on the nature of its role
+within the dynein
+complex.</p></sec></body><back><ack><title>ACKNOWLEDGMENTS</title><p>We thank David
+Fay and Li Yan for isolating two of the <italic>dli-1</italic> alleles. We thank Pierre
+G&#x00F6;nczy and Tony Hyman (EMBL, Heidelberg, Germany) for anti-DHC-1
+antibodies, Lisa Matthews (Cornell University, Ithaca, NY) for anti-ZYG-9
+antibodies, and David Greenstein (Vanderbilt University, Nashville, TN) for
+anti-CEH-18 antibodies. We also thank Yuji Kohara for providing cDNAs and Alan
+Coulson for cosmids. Some strains used in this work were obtained from the
+Caenorhabditis Genetics Center. We thank Dan Starr and David Fay for helpful
+discussions and comments on the manuscript. J.Y. was supported by a National
+Institutes of Health Predoctoral Training Grant. This work was supported by a
+grant from the Public Health Service (GM-47869) and Howard Hughes Medical
+Institute of which M.H. is an assistant
+investigator.</p></ack><ref-list><title>REFERENCES</title>
+<ref id="B1"><citation><name><surname>Albertson</surname><given-names>D.G.</given-names></name><name><surname>Riddle</surname><given-names>D.L.</given-names></name><name><surname>Blumenthal
+</surname><given-names>T.</given-names></name><name><surname>Meyer</surname><given-names>B.J.</given-names></name><name>
+<surname>Priess</surname><given-names>J.R.</given-names></name><article-title><italic>
+C. elegans</italic> II</article-title><source>C. elegans
+II</source><year>1997</year><publisher-loc>Cold
+Spring Harbor, NY</publisher-loc><publisher-name>Cold Spring Harbor Laboratory Press</publisher-name><fpage>47</fpage><lpage
+>78</lpage></citation></ref>
+<ref
+id="B2"><citation><name><surname>Azzaria</surname><given-names>M.</given-names></name><name><surname>
+Schurr</surname><given-names>E.</given-names></name><name><surname>Gros</surname><given-names>P.</given-names></name>
+<article-title>Discrete mutations introduced in the predicted nucleotide-binding sites
+of the mdr1 gene abolish its ability to confer multidrug
+resistance</article-title><source>Mol. Cell.
+Biol.</source><year>1989</year><volume>9</volume><fpage>5289</fpage><lpage>5297
+</lpage></citation></ref><ref
+id="B3"><citation><name><surname>Barstead</surname><given-names>R.J.</given-names></name><name><surname>
+Kleiman</surname><given-names>L.</given-names></name><name><surname>Waterston</surname><given-names>R.H.</given-names>
+</name><article-title>Cloning, sequencing, and mapping of an alpha-actinin gene from the
+nematode <italic>Caenorhabditis elegans</italic></article-title><source>Cell Motil.
+Cytoskeleton</source><year>1991</year><volume>20</volume><fpage>69</fpage><lpage
+>78</lpage></citation></ref><ref
+id="B4"><citation><name><surname>Beckwith</surname><given-names>S.M.</given-names></name><name><surname>
+Roghi</surname><given-names>C.H.</given-names></name><name><surname>Liu</surname><given-names>B.</given-names></name>
+<name><surname>Ronald Morris</surname><given-names>N.</given-names></name><article-title>The
+&#x201C;8-kD&#x201D; cytoplasmic dynein light chain is required for nuclear
+migration and for dynein heavy chain localization in <italic>Aspergillus
+nidulans</italic></article-title><source>J. Cell
+Biol.</source><year>1998</year><volume>143</volume><fpage>1239</fpage><lpage>
+1247</lpage></citation></ref><ref
+id="B5"><citation><name><surname>Bielli</surname><given-names>A.</given-names></name><name><surname>
+Thornqvist</surname><given-names>P.O.</given-names></name><name><surname>Hendrick</surname><given-names>A.G.
+</given-names></name><name><surname>Finn</surname><given-names>R.</given-names></name><name><surname>Fitzgerald
+</surname><given-names>K.</given-names></name><name><surname>McCaffrey</surname><given-names>M.W.</given-names></name>
+<article-title>The small GTPase Rab4A interacts with the central region of cytoplasmic
+dynein light intermediate chain-1</article-title><source>Biochem. Biophys. Res.
+Commun.</source><year>2001</year><volume>281</volume><fpage>1141</fpage><lpage>
+1153</lpage></citation></ref><ref
+id="B6"><citation><name><surname>Blumenthal</surname><given-names>T.a.S.,
+K.</given-names></name><name><surname>Riddle</surname><given-names>D.L.</given-names></name><name><surname>Blumenthal
+</surname><given-names>T.</given-names></name><name><surname>Meyer</surname><given-names>B.J.</given-names></name><name>
+<surname>Priess</surname><given-names>J.R.</given-names></name><article-title>RNA Processing and Gene
+Structure</article-title><source>C. elegans II</source><year>1997</year><publisher-loc>Cold Spring Harbor, NY</publisher-loc><publisher-name>Cold Spring Harbor Laboratory
+Press</publisher-name><fpage>117</fpage>
+<lpage>145</lpage></citation></ref><ref
+id="B7"><citation><name><surname>Bowman</surname><given-names>A.B.</given-names></name><name><surname>
+Patel-King</surname><given-names>R.S.</given-names></name><name><surname>Benashski</surname><given-names>S.E.
+</given-names></name><name><surname>McCaffery</surname><given-names>J.M.</given-names></name><name><surname>
+Goldstein</surname><given-names>L.S.</given-names></name><name><surname>King</surname><given-names>S.M.</given-names>
+</name><article-title><italic>Drosophila</italic> roadblock and <italic>Chlamydomonas</italic> LC7: a
+conserved family of dynein-associated proteins involved in axonal transport,
+flagellar motility, and mitosis</article-title><source>J. Cell
+Biol.</source><year>1999</year><volume>146</volume><fpage>165</fpage><lpage>180
+</lpage></citation></ref>
+
+<ref
+id="B8"><citation><name><surname>Brenner</surname><given-names>S.</given-names></name><article-title>The
+genetics of <italic>Caenorhabditis
+elegans</italic></article-title><source>Genetics</source><year>1974
+</year><volume>77</volume><fpage>71</fpage><lpage>94</lpage></citation></ref>
+<ref
+id="B9"><citation><name><surname>Deyrup</surname><given-names>A.T.</given-names></name><name><surname>
+Krishnan</surname><given-names>S.</given-names></name><name><surname>Cockburn</surname><given-names>B.N.</given-names>
+</name><name><surname>Schwartz</surname><given-names>N.B.</given-names></name><article-title>Deletion and
+site-directed mutagenesis of the ATP-binding motif (P-loop) in the bifunctional
+murine ATP-sulfurylase/adenosine 5&#x2032;-phosphosulfate kinase
+enzyme</article-title><source>J. Biol.
+Chem.</source><year>1998</year><volume>273</volume><fpage>9450</fpage><lpage>
+9456</lpage></citation></ref>
+<ref
+id="B10"><citation><name><surname>Dillman
+III</surname><given-names>J.F.</given-names></name><name><surname>Dabney</surname><given-names>L.P.</given-names></name>
+<name><surname>Pfister</surname><given-names>K.K.</given-names></name><article-title>Cytoplasmic dynein is
+associated with slow axonal transport</article-title><source>Proc. Natl. Acad. Sci.
+USA</source><year>1996</year><volume>93</volume><fpage>141</fpage><lpage>144
+</lpage></citation></ref><ref
+id="B11"><citation><name><surname>Epstein</surname><given-names>H.F.</given-names></name><name><surname>
+Shakes</surname><given-names>D.C.</given-names></name><source>Caenorhabditis elegans:
+modern biological analysis of an
+organism</source><year>1995</year><publisher-loc>San
+Diego, CA</publisher-loc><publisher-name>Academic Press</publisher-name></citation></ref><ref
+id="B12"><citation><name><surname>Fay</surname><given-names>D.S.</given-names></name><name><surname>Han
+</surname><given-names>M.</given-names></name><article-title>Mutations in cye-1, a <italic>Caenorhabditis
+elegans</italic> cyclin E homolog, reveal coordination between cell-cycle control
+and vulval development &#x005B;In Process
+Citation&#x005D;</article-title><source>Development</source><year>
+2000</year><volume>127</volume><fpage>4049</fpage><lpage>4060</lpage></citation></ref><ref
+id="B13"><citation><name><surname>Fire</surname><given-names>A.</given-names></name><name><surname>Xu</surname
+><given-names>S.</given-names></name><name><surname>Montgomery</surname><given-names>M.K.</given-names></name><name>
+<surname>Kostas</surname><given-names>S.A.</given-names></name><name><surname>Driver</surname><given-names>S.E.</given-names
+></name><name><surname>Mello</surname><given-names>C.C.</given-names></name><article-title>Potent and
+specific genetic interference by double-stranded RNA in <italic>Caenorhabditis
+elegans</italic> &#x005B;see
+comments&#x005D;</article-title><source>Nature</source><year>1998
+</year><volume>391</volume><fpage>806</fpage><lpage>811</lpage></citation></ref><ref
+id="B14"><citation><name><surname>Gaglio</surname><given-names>T.</given-names></name><name><surname>
+Dionne</surname><given-names>M.A.</given-names></name><name><surname>Compton</surname><given-names>D.A.</given-names>
+</name><article-title>Mitotic spindle poles are organized by structural and motor
+proteins in addition to centrosomes</article-title><source>J. Cell
+Biol.</source><year>1997</year><volume>138</volume><fpage>1055</fpage><lpage>
+1066</lpage></citation></ref><ref
+id="B15"><citation><name><surname>Gill</surname><given-names>S.R.</given-names></name><name><surname>
+Cleveland</surname><given-names>D.W.</given-names></name><name><surname>Schroer</surname><given-names>T.A.</given-names>
+</name><article-title>Characterization of DLC-A and DLC-B, two families of cytoplasmic
+dynein light chain subunits</article-title><source>Mol. Biol.
+Cell</source><year>1994</year><volume>5</volume><fpage>645</fpage><lpage>654
+</lpage></citation></ref><ref
+id="B16"><citation><name><surname>Gill</surname><given-names>S.R.</given-names></name><name><surname>
+Schroer</surname><given-names>T.A.</given-names></name><name><surname>Szilak</surname><given-names>I.</given-names>
+</name><name><surname>Steuer</surname><given-names>E.R.</given-names></name><name><surname>Sheetz</surname><given-names
+>M.P.</given-names></name><name><surname>Cleveland</surname><given-names>D.W.</given-names></name><article-title>
+Dynactin, a conserved, ubiquitously expressed component of an activator of
+vesicle motility mediated by cytoplasmic dynein</article-title><source>J. Cell
+Biol.</source><year>1991</year><volume>115</volume><fpage>1639</fpage><lpage>
+1650</lpage></citation></ref><ref
+id="B17"><citation><name><surname>Gonczy</surname><given-names>P.</given-names></name><name><surname>
+Echeverri</surname><given-names>G.</given-names></name><name><surname>Oegema</surname><given-names>K.</given-names>
+</name><name><surname>Coulson</surname><given-names>A.</given-names></name><name><surname>Jones</surname><given-names>S
+.J.</given-names></name><name><surname>Copley</surname><given-names>R.R.</given-names></name><name><surname>
+Duperon</surname><given-names>J.</given-names></name><name><surname>Oegema</surname><given-names>J.</given-names></name>
+<name><surname>Brehm</surname><given-names>M.</given-names></name><name><surname>Cassin</surname><given-names>E.
+</given-names></name><name><surname>Hannak</surname><given-names>E.</given-names></name><name><surname>Kirkham</surname
+><given-names>M.</given-names></name><name><surname>Pichler</surname><given-names>S.</given-names></name><name><surname>
+Flohrs</surname><given-names>K.</given-names></name><name><surname>Goessen</surname><given-names>A.</given-names></name>
+<name><surname>Leidel</surname><given-names>S.</given-names></name><name><surname>Alleaume</surname><given-names>A.M.
+</given-names></name><name><surname>Martin</surname><given-names>C.</given-names></name><name><surname>Ozlu</surname>
+<given-names>N.</given-names></name><name><surname>Bork</surname><given-names>P.</given-names></name><name><surname>
+Hyman</surname><given-names>A.A.</given-names></name><article-title>Functional genomic analysis of cell
+division in <italic>C. elegans</italic> using RNAi of genes on chromosome III &#x005B;In
+Process
+Citation&#x005D;</article-title><source>Nature</source><year>2000
+</year><volume>408</volume><fpage>331</fpage><lpage>336</lpage></citation></ref><ref
+id="B18"><citation><name><surname>Gonczy</surname><given-names>P.</given-names></name><name><surname>
+Pichler</surname><given-names>S.</given-names></name><name><surname>Kirkham</surname><given-names>M.</given-names></name
+><name><surname>Hyman</surname><given-names>A.A.</given-names></name><article-title>Cytoplasmic dynein is
+required for distinct aspects of MTOC positioning, including centrosome
+separation, in the one cell stage <italic>Caenorhabditis elegans</italic>
+embryo</article-title><source>J. Cell
+Biol.</source><year>1999</year><volume>147</volume><fpage>135</fpage><lpage>150
+</lpage></citation></ref><ref
+id="B19"><citation><name><surname>Greenstein</surname><given-names>D.</given-names></name><name><surname>
+Hird</surname><given-names>S.</given-names></name><name><surname>Plasterk</surname><given-names>R.H.</given-names></name
+><name><surname>Andachi</surname><given-names>Y.</given-names></name><name><surname>Kohara</surname><given-names>Y.
+</given-names></name><name><surname>Wang</surname><given-names>B.</given-names></name><name><surname>Finney</surname>
+<given-names>M.</given-names></name><name><surname>Ruvkun</surname><given-names>G.</given-names></name><article-title>
+Targeted mutations in the <italic>Caenorhabditis elegans</italic> POU homeo box gene
+ceh-18 cause defects in oocyte cell cycle arrest, gonad migration, and epidermal
+differentiation</article-title><source>Genes
+Dev.</source><year>1994</year><volume>8</volume><fpage>1935</fpage><lpage>1948
+</lpage></citation></ref><ref
+id="B20"><citation><name><surname>Hughes</surname><given-names>S.M.</given-names></name><name><surname>
+Vaughan</surname><given-names>K.T.</given-names></name><name><surname>Herskovits</surname><given-names>J.S.</given-names
+></name><name><surname>Vallee</surname><given-names>R.B.</given-names></name><article-title>Molecular
+analysis of a cytoplasmic dynein light intermediate chain reveals homology to a
+family of ATPases</article-title><source>J. Cell
+Sci.</source><year>1995</year><volume>108</volume><fpage>17</fpage><lpage>24
+</lpage></citation></ref><ref
+id="B21"><citation><name><surname>Jaffrey</surname><given-names>S.R.</given-names></name><name><surname>
+Snyder</surname><given-names>S.H.</given-names></name><article-title>PIN: an associated protein inhibitor
+of neuronal nitric oxide
+synthase</article-title><source>Science</source><year>1996</year><volume>274</volume>
+<fpage>774</fpage><lpage>777</lpage>
+</citation></ref><ref
+id="B22"><citation><name><surname>Karki</surname><given-names>S.</given-names></name><name><surname>
+Holzbaur</surname><given-names>E.L.</given-names></name><article-title>Affinity chromatography
+demonstrates a direct binding between cytoplasmic dynein and the dynactin
+complex</article-title><source>J. Biol.
+Chem.</source><year>1995</year><volume>270</volume><fpage>28806</fpage><lpage>
+28811</lpage></citation></ref><ref
+id="B23"><citation><name><surname>King</surname><given-names>S.M.</given-names></name><article-title>The
+dynein microtubule motor</article-title><source>Biochim. Biophys.
+Acta</source><year>2000</year><volume>1496</volume><fpage>60</fpage><lpage>75
+</lpage></citation></ref><ref
+id="B24"><citation><name><surname>Lacey</surname><given-names>M.L.</given-names></name><name><surname>
+Haimo</surname><given-names>L.T.</given-names></name><article-title>Cytoplasmic dynein is a vesicle
+protein</article-title><source>J. Biol.
+Chem.</source><year>1992</year><volume>267</volume><fpage>4793</fpage><lpage>
+4798</lpage></citation></ref><ref
+id="B25"><citation><name><surname>Matthews</surname><given-names>L.R.</given-names></name><name><surname>
+Carter</surname><given-names>P.</given-names></name><name><surname>Thierry-Mieg</surname><given-names>D.</given-names>
+</name><name><surname>Kemphues</surname><given-names>K.</given-names></name><article-title>ZYG-9, a
+<italic>Caenorhabditis elegans</italic> protein required for microtubule organization
+and function, is a component of meiotic and mitotic spindle
+poles</article-title><source>J. Cell
+Biol.</source><year>1998</year><volume>141</volume><fpage>1159</fpage><lpage>
+1168</lpage></citation></ref><ref
+id="B26"><citation><name><surname>McCarter</surname><given-names>J.</given-names></name><name><surname>
+Bartlett</surname><given-names>B.</given-names></name><name><surname>Dang</surname><given-names>T.</given-names></name>
+<name><surname>Schedl</surname><given-names>T.</given-names></name><article-title>Soma-germ cell interactions
+in <italic>Caenorhabditis elegans</italic>: multiple events of hermaphrodite germline
+development require the somatic sheath and spermathecal
+lineages</article-title><source>Dev.
+Biol.</source><year>1997</year><volume>181</volume><fpage>121</fpage><lpage>143
+</lpage></citation></ref><ref
+id="B27"><citation><name><surname>Mello</surname><given-names>C.C.</given-names></name><name><surname>
+Kramer</surname><given-names>J.M.</given-names></name><name><surname>Stinchcomb</surname><given-names>D.</given-names>
+</name><name><surname>Ambros</surname><given-names>V.</given-names></name><article-title>Efficient gene
+transfer in <italic>C. elegans</italic>: extrachromosomal maintenance and integration of
+transforming sequences</article-title><source>EMBO
+J.</source><year>1991</year><volume>10</volume><fpage>3959</fpage><lpage>3970
+</lpage></citation></ref><ref
+id="B28"><citation><name><surname>Niclas</surname><given-names>J.</given-names></name><name><surname>Allan
+</surname><given-names>V.J.</given-names></name><name><surname>Vale</surname><given-names>R.D.</given-names></name>
+<article-title>Cell cycle regulation of dynein association with membranes modulates
+microtubule-based organelle transport</article-title><source>J. Cell
+Biol.</source><year>1996</year><volume>133</volume><fpage>585</fpage><lpage>593
+</lpage></citation></ref><ref
+id="B29"><citation><name><surname>Nurminsky</surname><given-names>D.I.</given-names></name><name><surname>
+Nurminskaya</surname><given-names>M.V.</given-names></name><name><surname>Benevolenskaya</surname><given-names>E.
+V.</given-names></name><name><surname>Shevelyov</surname><given-names>Y.Y.</given-names></name><name><surname>
+Hartl</surname><given-names>D.L.</given-names></name><name><surname>Gvozdev</surname><given-names>V.A.</given-names>
+</name><article-title>Cytoplasmic dynein intermediate-chain isoforms with different
+targeting properties created by tissue-specific alternative
+splicing</article-title><source>Mol. Cell
+Biol.</source><year>1998</year><volume>18</volume><fpage>6816</fpage><lpage>6825
+</lpage></citation></ref><ref
+id="B30"><citation><name><surname>Palazzo</surname><given-names>R.E.</given-names></name><name><surname>
+Vaisberg</surname><given-names>E.A.</given-names></name><name><surname>Weiss</surname><given-names>D.G.</given-names>
+</name><name><surname>Kuznetsov</surname><given-names>S.A.</given-names></name><name><surname>Steffen</surname>
+<given-names>W.</given-names></name><article-title>Dynein is required for spindle assembly in
+cytoplasmic extracts of <italic>Spisula solidissima</italic> oocytes</article-title><source>J.
+Cell
+Sci.</source><year>1999</year><volume>112</volume><fpage>1291</fpage><lpage>302
+</lpage></citation></ref><ref
+id="B31"><citation><name><surname>Plamann</surname><given-names>M.</given-names></name><name><surname>
+Minke</surname><given-names>P.F.</given-names></name><name><surname>Tinsley</surname><given-names>J.H.</given-names>
+</name><name><surname>Bruno</surname><given-names>K.S.</given-names></name><article-title>Cytoplasmic dynein
+and actin-related protein Arp1 are required for normal nuclear distribution in
+filamentous fungi</article-title><source>J. Cell
+Biol.</source><year>1994</year><volume>127</volume><fpage>139</fpage><lpage>149
+</lpage></citation></ref><ref
+id="B32"><citation><name><surname>Presley</surname><given-names>J.F.</given-names></name><name><surname>
+Cole</surname><given-names>N.B.</given-names></name><name><surname>Schroer</surname><given-names>T.A.</given-names>
+</name><name><surname>Hirschberg</surname><given-names>K.</given-names></name><name><surname>Zaal</surname><given-names
+>K.J.</given-names></name><name><surname>Lippincott-Schwartz</surname><given-names>J.</given-names></name>
+<article-title>ER-to-Golgi transport visualized in living cells &#x005B;see
+comments&#x005D;</article-title><source>Nature</source><year>1997
+</year><volume>389</volume><fpage>81</fpage><lpage>85</lpage> </citation></ref><ref
+id="B33"><citation><name><surname>Pulak</surname><given-names>R.</given-names></name><name><surname>
+Anderson</surname><given-names>P.</given-names></name><article-title>mRNA surveillance by the
+<italic>Caenorhabditis elegans</italic> smg genes</article-title><source>Genes
+Dev.</source><year>1993</year><volume>7</volume><fpage>1885</fpage><lpage>1897
+</lpage></citation></ref><ref
+id="B34"><citation><name><surname>Purohit</surname><given-names>A.</given-names></name><name><surname>
+Tynan</surname><given-names>S.H.</given-names></name><name><surname>Vallee</surname><given-names>R.</given-names></name>
+<name><surname>Doxsey</surname><given-names>S.J.</given-names></name><article-title>Direct interaction of
+pericentrin with cytoplasmic dynein light intermediate chain contributes to
+mitotic spindle organization</article-title><source>J. Cell
+Biol.</source><year>1999</year><volume>147</volume><fpage>481</fpage><lpage>492
+</lpage></citation></ref><ref
+id="B35"><citation><name><surname>Puthalakath</surname><given-names>H.</given-names></name><name><surname>
+Huang</surname><given-names>D.C.</given-names></name><name><surname>O'Reilly</surname><given-names>L.A.</given-names>
+</name><name><surname>King</surname><given-names>S.M.</given-names></name><name><surname>Strasser</surname><given-names
+>A.</given-names></name><article-title>The proapoptotic activity of the Bcl-2 family member
+Bim is regulated by interaction with the dynein motor
+complex</article-title><source>Mol.
+Cell</source><year>1999</year><volume>3</volume><fpage>287</fpage><lpage>296
+</lpage></citation></ref><ref
+id="B36"><citation><name><surname>Riddle</surname><given-names>D.L.</given-names></name><name><surname>
+Blumenthal</surname><given-names>T.</given-names></name><name><surname>Meyer</surname><given-names>B.J.</given-names>
+</name><name><surname>Priess</surname><given-names>J.R.</given-names></name><source>C. elegans II</source><year>1997</year><publisher-loc>Cold Spring Harbor, NY</publisher-loc><publisher-name>Cold Spring Harbor Laboratory
+Press</publisher-name></citation></ref><ref
+id="B37"><citation><name><surname>Robinson</surname><given-names>J.T.</given-names></name><name><surname>
+Wojcik</surname><given-names>E.J.</given-names></name><name><surname>Sanders</surname><given-names>M.A.</given-names>
+</name><name><surname>McGrail</surname><given-names>M.</given-names></name><name><surname>Hays</surname><given-names>T.
+S.</given-names></name><article-title>Cytoplasmic dynein is required for the nuclear
+attachment and migration of centrosomes during mitosis in
+<italic>Drosophila</italic></article-title><source>J. Cell
+Biol.</source><year>1999</year><volume>146</volume><fpage>597</fpage><lpage>608
+</lpage></citation></ref>
+<ref
+id="B38"><citation><name><surname>Schedl</surname><given-names>T.</given-names></name><name><surname>Riddle</surname><given-names>D.L.</given-names></name><name><surname>Blumenthal
+</surname><given-names>T.</given-names></name><name><surname>Meyer</surname><given-names>B.J.</given-names></name><name>
+<surname>Priess</surname><given-names>J.R.</given-names></name><article-title>
+Developmental genetics of the germ line</article-title><source>C. elegans II</source><year>1997</year><publisher-loc>Cold Spring Harbor, NY</publisher-loc><publisher-name>Cold Spring Harbor Laboratory
+Press</publisher-name><fpage>241</fpage>
+<lpage>269</lpage></citation></ref><ref
+id="B39"><citation><name><surname>Skop</surname><given-names>A.R.</given-names></name><name><surname>White
+</surname><given-names>J.G.</given-names></name><article-title>The dynactin complex is required for
+cleavage plane specification in early <italic>Caenorhabditis elegans</italic>
+embryos</article-title><source>Curr.
+Biol.</source><year>1998</year><volume>8</volume><fpage>1110</fpage><lpage>1116
+</lpage></citation></ref><ref
+id="B40"><citation><name><surname>Stephens</surname><given-names>K.M.</given-names></name><name><surname>
+Roush</surname><given-names>C.</given-names></name><name><surname>Nester</surname><given-names>E.</given-names></name>
+<article-title><italic>Agrobacterium tumefaciens</italic> VirB11 protein requires a consensus
+nucleotide-binding site for function in virulence</article-title><source>J.
+Bacteriol.</source><year>1995</year><volume>177</volume><fpage>27</fpage><lpage>
+36</lpage></citation></ref><ref
+id="B41"><citation><name><surname>Strome</surname><given-names>S.</given-names></name><article-title>
+Determination of cleavage
+planes</article-title><source>Cell</source><year>1993</year><volume>72</volume><fpage>
+3</fpage><lpage>6</lpage></citation></ref><ref
+id="B42"><citation><name><surname>Sulston</surname><given-names>J.E.</given-names></name><name><surname>
+Horvitz</surname><given-names>H.R.</given-names></name><article-title>Post-embryonic cell lineages of the
+nematode <italic>Caenorhabditis elegans</italic></article-title><source>Dev.
+Biol.</source><year>1977</year><volume>56</volume><fpage>110</fpage><lpage>156
+</lpage></citation></ref><ref
+id="B43"><citation><name><surname>Sulston</surname><given-names>J.E.</given-names></name><name><surname>
+Schierenberg</surname><given-names>E.</given-names></name><name><surname>White</surname><given-names>J.G.</given-names>
+</name><name><surname>Thomson</surname><given-names>J.N.</given-names></name><article-title>The embryonic cell
+lineage of the nematode <italic>Caenorhabditis elegans</italic></article-title><source>Dev.
+Biol.</source><year>1983</year><volume>100</volume><fpage>64</fpage><lpage>119
+</lpage></citation></ref><ref
+id="B44"><citation><name><surname>Tynan</surname><given-names>S.H.</given-names></name><name><surname>
+Purohit</surname><given-names>A.</given-names></name><name><surname>Doxsey</surname><given-names>S.J.</given-names>
+</name><name><surname>Vallee</surname><given-names>R.B.</given-names></name><article-title>Light intermediate
+chain 1 defines a functional subfraction of cytoplasmic dynein which binds to
+pericentrin &#x005B;In Process Citation&#x005D;</article-title><source>J. Biol.
+Chem.</source><year>2000</year><volume>275</volume><fpage>32763</fpage><lpage>
+32768</lpage></citation></ref><ref
+id="B45"><citation><name><surname>Vaisberg</surname><given-names>E.A.</given-names></name><name><surname>
+Koonce</surname><given-names>M.P.</given-names></name><name><surname>McIntosh</surname><given-names>J.R.</given-names>
+</name><article-title>Cytoplasmic dynein plays a role in mammalian mitotic spindle
+formation</article-title><source>J. Cell
+Biol.</source><year>1993</year><volume>123</volume><fpage>849</fpage><lpage>858
+</lpage></citation></ref><ref
+id="B46"><citation><name><surname>Vaughan</surname><given-names>K.T.</given-names></name><name><surname>
+Vallee</surname><given-names>R.B.</given-names></name><article-title>Cytoplasmic dynein binds dynactin
+through a direct interaction between the intermediate chains and
+p150Glued</article-title><source>J. Cell
+Biol.</source><year>1995</year><volume>131</volume><fpage>1507</fpage><lpage>
+1516</lpage></citation></ref><ref
+id="B47"><citation><name><surname>Walker</surname><given-names>J.E.</given-names></name><name><surname>
+Saraste</surname><given-names>M.</given-names></name><name><surname>Runswick</surname><given-names>M.J.</given-names>
+</name><name><surname>Gay</surname><given-names>N.J.</given-names></name><article-title>Distantly related
+sequences in the alpha- and beta-subunits of ATP synthase, myosin, kinases and
+other ATP-requiring enzymes and a common nucleotide binding
+fold</article-title><source>EMBO
+J.</source><year>1982</year><volume>1</volume><fpage>945</fpage><lpage>951
+</lpage></citation></ref><ref
+id="B48"><citation><name><surname>Wordeman</surname><given-names>L.</given-names></name><name><surname>
+Mitchison</surname><given-names>T.J.</given-names></name><article-title>Identification and partial
+characterization of mitotic centromere-associated kinesin, a kinesin-related
+protein that associates with centromeres during mitosis &#x005B;see
+comments&#x005D;</article-title><source>J. Cell
+Biol.</source><year>1995</year><volume>128</volume><fpage>95</fpage><lpage>104
+</lpage></citation></ref><ref
+id="B49"><citation><name><surname>Wu</surname><given-names>Y.C.</given-names></name><name><surname>Horvitz
+</surname><given-names>H.R.</given-names></name><article-title>The <italic>C. elegans</italic> cell corpse
+engulfment gene ced-7 encodes a protein similar to ABC
+transporters</article-title><source>Cell</source><year>1998</year><volume>93</volume>
+<fpage>951</fpage><lpage>960</lpage></citation></ref><ref
+id="B50"><citation><name><surname>Xiang</surname><given-names>X.</given-names></name><name><surname>
+Beckwith</surname><given-names>S.M.</given-names></name><name><surname>Morris</surname><given-names>N.R.</given-names>
+</name><article-title>Cytoplasmic dynein is involved in nuclear migration in
+<italic>Aspergillus nidulans</italic></article-title><source>Proc. Natl. Acad. Sci.
+USA</source><year>1994</year><volume>91</volume><fpage>2100</fpage><lpage>2104
+</lpage></citation></ref><ref
+id="B51"><citation><name><surname>Xiang</surname><given-names>X.</given-names></name><name><surname>Roghi
+</surname><given-names>C.</given-names></name><name><surname>Morris</surname><given-names>N.R.</given-names></name>
+<article-title>Characterization and localization of the cytoplasmic dynein heavy chain
+in <italic>Aspergillus nidulans</italic></article-title><source>Proc. Natl. Acad. Sci.
+USA</source><year>1995</year><volume>92</volume><fpage>9890</fpage><lpage>9894
+</lpage></citation></ref><ref
+id="B52"><citation><name><surname>Young</surname><given-names>A.</given-names></name><name><surname>
+Dictenberg</surname><given-names>J.B.</given-names></name><name><surname>Purohit</surname><given-names>A.</given-names>
+</name><name><surname>Tuft</surname><given-names>R.</given-names></name><name><surname>Doxsey</surname><given-names>S.
+J.</given-names></name><article-title>Cytoplasmic dynein-mediated assembly of pericentrin and
+gamma tubulin onto centrosomes</article-title><source>Mol. Biol.
+Cell</source><year>2000</year><volume>11</volume><fpage>2047</fpage><lpage>2056
+</lpage></citation></ref></ref-list></back></article><?mtl /hellip?> 

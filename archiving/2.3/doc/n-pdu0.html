@@ -1,0 +1,86 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Electronic Location Identifier</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;elocation-id&gt;</h1>
+         <h1 class="elementname">Electronic Location Identifier</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Page identifier for an article that does not have traditional
+                   page numbers; the value could be an article identifier, DOI, etc., for example,
+                   &#8220;E70&#8221;
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-9xp0.html"><span class="attrtag">seq</span></a> <a href="n-9xp0.html"><span class="attrname">Sequence</span></a></h5>
+      </div>
+      <div class="relatedelem">
+         <h2 class="header">Related Elements</h2>
+         <p class="para">A number of elements in the Suite relate to page numbers:
+                   
+            <ul class="bullist">
+               <li><a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> names the page number
+                             on which the article begins;
+               </li>
+               <li><a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a> names the page number on which the article ends (which should be the same page number or a number larger than the starting
+                  page number);
+               </li>
+               <li><a href="n-pdu0.html"><span class="elementtag">&lt;elocation-id&gt;</span></a> replaces the start and end page elements just described for electronic-only journals;
+               </li>
+               <li><a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> records discontinuous page ranges (See note below.); and
+               </li>
+               <li><a href="n-w6t0.html"><span class="elementtag">&lt;page-count&gt;</span></a> holds the total page count, if the publisher has provided one. Typically this element records what the publisher said and
+                  makes no validity claim.
+               </li>
+            </ul> 
+         </p>
+         <p class="para">Note: The <a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> is intended to record supplementary information and should <em>not</em> be used in the place of  the <a href="n-gqw0.html"><span class="elementtag">&lt;fpage&gt;</span></a> and <a href="n-ap40.html"><span class="elementtag">&lt;lpage&gt;</span></a> elements, which are typically needed for citation matching. The <a href="n-art0.html"><span class="elementtag">&lt;page-range&gt;</span></a> element is merely a text string, containing such material as &#8220;8-11, 14-19, 40&#8221;,
+                                    which would mean that the article began on page
+                                    8, ran through 11, skipped to page 14, ran
+                                    through 19, and concluded on page 40.
+         </p>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  elocation-id (#PCDATA)                                    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-7hc0.html"><span class="elementtag">&lt;article-meta&gt;</span></a> <a href="n-7hc0.html"><span class="elementname">Article Metadata</span></a>; <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-6zw0.html"><span class="elementtag">&lt;front-stub&gt;</span></a> <a href="n-6zw0.html"><span class="elementname">Stub Front Metadata</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">No sample is available at this time.
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

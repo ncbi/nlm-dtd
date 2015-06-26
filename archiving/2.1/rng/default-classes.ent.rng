@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- MODULE:    Default Element Classes Module -->
+<!-- VERSION:   2.1 -->
+<!-- DATE:      June 2005 -->
+<!---->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- PUBLIC DOCUMENT TYPE DEFINITION -->
+<!-- TYPICAL INVOCATION -->
+<!--
+  "-//NLM//DTD Default Element Classes Module v2.1 20050630//EN"
+  Delivered as file "default-classes.ent"
+-->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- SYSTEM:     Journal Archiving and Interchange DTD of the -->
+<!-- Archiving and Interchange DTD Suite -->
+<!---->
+<!-- PURPOSE:    To declare the Parameter Entities (PEs) used to -->
+<!-- define the default element classes. Classes are -->
+<!-- OR-groups of elements that are defined together -->
+<!-- to be used in mixes and in Element Declarations. -->
+<!---->
+<!-- Note: Since PEs must be declared before they -->
+<!-- are used, this module must be called before all -->
+<!-- content modules that declare elements, and after -->
+<!-- the class customization module (if any). -->
+<!---->
+<!-- CONTAINS:   PEs that define the element classes to be used -->
+<!-- in the Journal Archive and Interchange DTD Suite -->
+<!-- modules. -->
+<!---->
+<!-- CREATED FOR: -->
+<!-- Digital Archive of Journal Articles -->
+<!-- National Center for Biotechnology Information -->
+<!-- (NCBI) -->
+<!-- National Library of Medicine (NLM) -->
+<!---->
+<!-- ORIGINAL CREATION DATE: -->
+<!-- August 2004 -->
+<!---->
+<!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.) -->
+<!-- B. Tommie Usdin (Mulberry Technologies, Inc.) -->
+<!---->
+<!-- Suggestions for refinements and enhancements to -->
+<!-- this DTD should be sent in email to: -->
+<!-- archive-dtd@ncbi.nlm.nih.gov -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- DTD VERSION/CHANGE HISTORY -->
+<!-- ============================================================= -->
+<!--
+  
+  Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+  
+       =============================================================
+       Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+  
+       Changed to MathML 2.0 and MathML 2.0 Character Sets
+       Added new material requested by NCBI   
+  
+  
+   18. Parameter Entity naming comments that called classes "mixes"
+       were changed to reflect class status. There are no mixes in 
+       this module.
+  
+  
+   17. PERMISSIONS - Added a new <permissions> wrapper element to
+       consolidate copyright and licensing information. For backwards
+       compatibility, the new element will be added alongside the
+       existing copyright elements. Best practice will be to use the
+       new container, but <copyright-statement>, <copyright-year>,
+       and <license> will be accepted in their old positions (for
+       example inside in preformat elements)
+        - Added <permissions> to display back matter class, thus 
+          adding it to nearly all the display and paragraph-level
+          elements. <permissions> should be used in preference to 
+          the <copyright> statement directly in the same PE. For the 
+          defaults, the following elements were changed:
+            appendix, article-meta, boxed-text, chem-struct-wrapper,
+            disp-formula, disp-quote, fig, graphic, preformat,
+            statement, supplementary-material, table-wrap,
+            table-wrap-foot, verse-group
+  
+  
+   16. Updated public identifier to "v2.1 20050630" 
+  
+       =============================================================
+       Version 2.0                    (DAL/BTU/TRG) v2.0 (2005-01-25)
+  
+   15. Removed duplicate declaration of the %ref-list.class; The two
+       were (fortunately) identical.
+  
+   14. Comments for this module were cleaned up as part of the delivery 
+       of the NCBI Historical DTD. Since only comments were changed,
+       this was not even considered to be a dot release and the
+       formal public identifier remained unchanged.   
+  
+       =============================================================
+       Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
+  
+  
+       Major requirement changes led to the new release, producing
+       DTD version "2.0":
+         a) The splitting of the Archival and Interchange Tag Set 
+            DTDs into three DTDs from two: an authoring DTD, an
+            archive regularization and interchange DTD (the
+            current Blue Publishing DTD), and a preservationist 
+            archive DTD (the current Green Archiving and Interchange 
+            DTD).
+         b) AIT Working Group suggestions from the June 04 meeting 
+            and June/July 2004 followup discussions
+         c) Suite remodularization to meet new (and newly articulated)
+            modularization requirements
+         d) New or renamed classes and mixes to make modifications
+            easier and more consistent
+  
+   13. ACCESS CLASS
+       ### Customization Alert ###
+       a. Took <ext-link> out of -%access.class;. It did not belong.
+          It belongs in -%address-link.class;
+  
+   12. PARA CLASS
+       ### Customization Alert ###
+       a. Deleted -%para.class; 
+       b. Its place in the definition of the Paragraph <p> element 
+          will be taken by the -%p-elements; entity.
+       c. Its place in other mixes will be taken by the combination
+          of:
+          - %just-para.class; and 
+          - %rest-of-para.class;
+  
+   11. LINK CLASSES
+       ### Customization Alert ###
+       a. Deleted the following classes: 
+          - %link.class; 
+          - %inpara-address; 
+          - %ext-links.class;
+       b. Replaced above with four link classes: 
+             - %address-link.class; (the links used in addresses)
+             - %fn-link.class;      (just fn)
+             - %simple-link.class;  (the internal links, same)
+             - %article-link.class; (links for journal article)
+          as follows:
+             - All occurrences of -%ext-links.class; replaced with
+               the new class %address-links.class;     
+             - All occurrences of -%link.class; replaced with some
+               combination of the new link classes just named.
+          These were not usually DTD changes, just parameterization
+          changes.
+  
+   10. PERSON NAME/STRING-NAME - Allowed a looser name model 
+       <string-name> to be used anywhere <name> is used. This 
+       includes:
+        - Inside -%references.class; 
+           (Therefore added to <citation>, <product>, 
+            <related-article>)
+        - New Parameter Entity %name.class; for types
+          of names: <name>, <string-name>, <collab>
+        - Inside %contrib-model; (which uses %name.class; thus
+          adding <string-name> to <contributor>)
+        - Inside <person-group> (in %name.class;)
+  
+    9. ROLE ELEMENT - Was added to the default references class 
+        -%references.class;
+  
+    8. DATES
+       a. Added new class -%date-parts.class; to hold all the
+          potential components of date, such as <year>, <day>,
+          etc.
+       b. Added <string-date> to default -%date.class;
+  
+    7. NEW IDENTIFICATION ELEMENTS
+       a. Added three new identification elements:
+        - ISSUE ID = new element for an identifier such as a DOI (as
+          opposed to an <issue> Issue Number) associated with a 
+          journal issue
+        - ISSUE TITLE = new element for a theme or special issue title
+        - VOLUME ID = new element for a theme or special issue title
+       b. These identification elements were:
+          - Added to <article-meta>
+          - Added to %references.class; (thus to <citation>,
+              <related-article>, and <product>)
+          - Defined in common module
+          - Added to several new Parameter Entities that are
+            named %nnn-elements; (Such Parameter Entities hold
+            the elements that may be mixed with #PCDATA inside
+            the element named "nnn".)
+  
+    6. REFERENCES.CLASS - Added the following elements to the
+       - %references.class;:
+        - <issue-id>
+        - <issue-title>
+        - <page-range>
+        - <role>
+        - <string-name>
+        - <volume-id>
+        Thus adding them to:
+        - <citation>
+        - <related-article>
+        - <product>
+  
+    5. DISPLAY BACK MATTER - Added <attrib> to %display-back-matter;
+       thus adding it to the following elements:
+        - <array>
+        - <boxed-text>
+        - <chem-struct-wrapper>
+        - <disp-quote>
+        - <fig>
+        - <graphic>
+        - <preformat>
+        - <table-wrap>
+        - <verse-group>
+  
+    4. ADDRESS ELEMENTS CLASS 
+       ### Customization Alert ###
+       - Redefined to remove <email> and <uri>       
+  
+    3. MAKE CLASS NAMES EXPLICIT - Some classes did not have the
+       ".class" suffix. Renamed such classes to add the suffix.
+       ### Customization Alert ###
+       - %address-elements;    ==> to  -%address.class;
+       - %contrib-info;        ==> -%contrib-info.class;
+                                      (uri added to class)
+       - %display-back-matter; ==> -%display-back-matter.class;
+       - %block-math;          ==> -%block-math.class;
+       - %inline-math;         ==> -%inline-math.class;
+  
+    2. NEW CLASSES - To correct potential classing problems, added 
+       the following new Parameter Entities and added a few new 
+       comments:
+  
+       New Classes:
+          - %app.class;
+          - %corresp.class;
+          - %def.class;
+          - %degree.class;
+          - %fn-link.class;
+          - %front-back.class; and %sec-back.class;
+               changed the following to use them
+                 - %doc-back-matter-mix;
+                 - %sec-back-matter-mix;
+          - %just-base-display.class;
+               and used it in 
+                 - %chem-struct-wrapper-model;
+                 - %array-model;
+                 - %fig-group-model; 
+          - %just-para.class;
+               used in <author-comment>, <bio>, <def>, 
+                 <caption>, - %fig-model;
+          - %just-table.class;
+          - %kwd.class;
+          - %back.class;
+          - %front-back.class;
+          - %ref-list.class;
+          - %sec-back.class;
+          - %table-foot.class;
+          - %tbody.class;
+  
+    1. Created this module as version "v2.0 20040830"
+-->
+<!-- ============================================================= -->
+<!-- CLASSES FOR COMMON ELEMENTS (%common.ent;) -->
+<!-- ============================================================= -->
+<!-- ADDRESS CLASS ELEMENTS -->
+<!--
+  Potential element components of an address;
+  not a proper class
+-->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="address.class">
+    <choice>
+      <ref name="addr-line"/>
+      <ref name="country"/>
+      <ref name="fax"/>
+      <ref name="institution"/>
+      <ref name="phone"/>
+    </choice>
+  </define>
+  <!-- CITATION CLASS ELEMENTS -->
+  <!--
+    Reference to an external document, as used 
+    within, for example, the text of a 
+    paragraph
+  -->
+  <define name="citation.class">
+    <ref name="citation"/>
+  </define>
+  <!-- DEFINITION CLASS ELEMENTS -->
+  <!--
+    Definitions and other elements to match
+    with terms and abbreviations
+  -->
+  <define name="def.class">
+    <ref name="def"/>
+  </define>
+  <!-- DEGREE CLASS -->
+  <!--
+    The academic or professional degrees that
+    accompany a person's name
+  -->
+  <define name="degree.class">
+    <ref name="degrees"/>
+  </define>
+  <!-- IDENTIFIER CLASS ELEMENTS -->
+  <!--
+    DOIs and other identifiers are used by
+    publishers at many levels, for example for
+    an <abstract> or a <figure>.
+  -->
+  <define name="id.class">
+    <ref name="object-id"/>
+  </define>
+  <!-- LABEL CLASS -->
+  <!--
+    The label element, used to hold the number
+    or character of a labeled object such as a
+    table or footnote
+  -->
+  <define name="label.class">
+    <ref name="label"/>
+  </define>
+  <!-- NAMES CLASS -->
+  <!--
+    The elements used to name the personal names
+    for individuals and the collaboration names
+    for groups
+  -->
+  <define name="name.class">
+    <choice>
+      <ref name="collab"/>
+      <ref name="name"/>
+      <ref name="string-name"/>
+    </choice>
+  </define>
+  <!-- PERSONAL NAMES CLASS -->
+  <!--
+    The element components of a person's name,
+    for the name of a contributor
+  -->
+  <define name="person-name.class">
+    <choice>
+      <ref name="given-names"/>
+      <ref name="prefix"/>
+      <ref name="surname"/>
+      <ref name="suffix"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- ARTICLE METADATA CLASSES %articlemeta.ent; -->
+  <!-- ============================================================= -->
+  <!-- CONTRIBUTOR INFORMATION -->
+  <!-- Metadata about a contributor -->
+  <!-- CONFERENCE CLASS -->
+  <!--
+    The element components of the description
+    of a conference; not a proper class
+  -->
+  <define name="conference.class">
+    <choice>
+      <ref name="conf-date"/>
+      <ref name="conf-name"/>
+      <ref name="conf-num"/>
+      <ref name="conf-loc"/>
+      <ref name="conf-sponsor"/>
+      <ref name="conf-theme"/>
+      <ref name="conf-acronym"/>
+    </choice>
+  </define>
+  <!-- CORRESPONDING AUTHOR CLASS -->
+  <!--
+    Elements associated with the corresponding
+    author
+  -->
+  <define name="corresp.class">
+    <ref name="corresp"/>
+  </define>
+  <!-- DATE CLASS ELEMENTS -->
+  <!-- Dates and other matters of history -->
+  <define name="date.class">
+    <choice>
+      <ref name="date"/>
+      <ref name="string-date"/>
+    </choice>
+  </define>
+  <!-- DATE PARTS CLASS ELEMENTS -->
+  <!-- Components of date-style elements -->
+  <define name="date-parts.class">
+    <choice>
+      <ref name="day"/>
+      <ref name="month"/>
+      <ref name="season"/>
+      <ref name="year"/>
+    </choice>
+  </define>
+  <!-- KEYWORD CLASS ELEMENTS -->
+  <!-- Keywords and any keyword-synonyms -->
+  <define name="kwd.class">
+    <ref name="kwd"/>
+  </define>
+  <!-- ============================================================= -->
+  <!-- BACK MATTER CLASSES (%backmatter.ent;) -->
+  <!-- ============================================================= -->
+  <!-- JUST APPENDIX CLASS -->
+  <!-- The appendix and only the appendix -->
+  <define name="app.class">
+    <ref name="app"/>
+  </define>
+  <!-- BACK MATTER CLASS -->
+  <!--
+    Ancillary elements, typically used in the
+    back matter of an article, section, etc.
+  -->
+  <define name="back.class">
+    <choice>
+      <ref name="ack"/>
+      <ref name="app-group"/>
+      <ref name="bio"/>
+      <ref name="fn-group"/>
+      <ref name="glossary"/>
+      <ref name="ref-list"/>
+    </choice>
+  </define>
+  <!-- FRONT MATTER CLASS -->
+  <!--
+    Ancillary elements, typically used in the
+    front matter of an article, book, etc.  .
+  -->
+  <!-- FRONT AND BACK CLASS -->
+  <!--
+    Ancillary elements, typically used in the
+    front or back matter of an article
+  -->
+  <define name="front-back.class">
+    <ref name="notes"/>
+  </define>
+  <!-- SECTION BACK MATTER CLASS -->
+  <!--
+    Ancillary elements, typically used in the
+    back matter of a section, etc.
+  -->
+  <define name="sec-back.class">
+    <choice>
+      <ref name="fn-group"/>
+      <ref name="glossary"/>
+      <ref name="ref-list"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- DISPLAY CLASSES -->
+  <!-- ============================================================= -->
+  <!-- ACCESSIBILITY CLASS ELEMENTS -->
+  <!--
+    Elements added to make it easier to process
+    journal articles in ways that are more
+    accessible to people and devices with special
+    needs, for example the visually handicapped.
+      <alt-text> is a short phrase description of
+    an objects, <long-desc> is a more complete
+    description of the content or intent of an
+    object.
+  -->
+  <define name="access.class">
+    <choice>
+      <ref name="alt-text"/>
+      <ref name="long-desc"/>
+    </choice>
+  </define>
+  <!-- DISPLAY CLASS ELEMENTS -->
+  <!--
+    Graphical or other image-related elements.
+    The display elements may occur within 
+    the text of a table cell or paragraph
+    although they are typically at the same 
+    hierarchical level as a paragraph.
+  -->
+  <define name="block-display.class">
+    <choice>
+      <ref name="array"/>
+      <ref name="boxed-text"/>
+      <ref name="chem-struct"/>
+      <ref name="chem-struct-wrapper"/>
+      <ref name="fig"/>
+      <ref name="fig-group"/>
+      <ref name="graphic"/>
+      <ref name="media"/>
+      <ref name="preformat"/>
+      <ref name="supplementary-material"/>
+      <ref name="table-wrap"/>
+      <ref name="table-wrap-group"/>
+    </choice>
+  </define>
+  <!-- CAPTION DISPLAY ELEMENTS -->
+  <!-- Basic figure display elements -->
+  <define name="caption.class">
+    <ref name="caption"/>
+  </define>
+  <!-- DISPLAY ELEMENT BACK MATTER ELEMENTS -->
+  <!--
+    Miscellaneous stuff at the end of a display
+    element such as a figure or a boxed text
+    element such as a sidebar
+  -->
+  <define name="display-back-matter.class">
+    <choice>
+      <ref name="attrib"/>
+      <ref name="copyright-statement"/>
+      <ref name="permissions"/>
+    </choice>
+  </define>
+  <!-- FIGURE DISPLAY ELEMENTS -->
+  <!-- Basic figure display elements -->
+  <define name="fig-display.class">
+    <ref name="fig"/>
+  </define>
+  <!-- INLINE DISPLAY CLASS ELEMENTS -->
+  <!--
+    Non-block display elements that set or
+    display inline with the text
+  -->
+  <define name="inline-display.class">
+    <choice>
+      <ref name="inline-graphic"/>
+      <ref name="private-char"/>
+    </choice>
+  </define>
+  <!-- MOST BASIC DISPLAY ELEMENTS -->
+  <!--
+    Just the few display elements that are
+    simple display objects: a picture, a movie,
+    a sound file.
+  -->
+  <define name="just-base-display.class">
+    <choice>
+      <ref name="graphic"/>
+      <ref name="media"/>
+    </choice>
+  </define>
+  <!-- SIMPLE DISPLAY ELEMENTS -->
+  <!--
+    The simplest and most basic of the Display
+    Class elements, which may be allowed in many
+    places, for example, inside other Display
+    Class elements or inside the cell of a
+    Table
+  -->
+  <define name="simple-display.class">
+    <choice>
+      <ref name="array"/>
+      <ref name="chem-struct"/>
+      <ref name="graphic"/>
+      <ref name="media"/>
+      <ref name="preformat"/>
+    </choice>
+  </define>
+  <!-- SIMPLE TABLE DISPLAY ELEMENTS -->
+  <!--
+    Very similar to the simple-display.class, but
+    Table Wrappers <table-wrap> should contain
+    <table>s, <oasis:table>s, etc., not
+    arrays.
+  -->
+  <define name="simple-intable-display.class">
+    <choice>
+      <ref name="chem-struct"/>
+      <ref name="graphic"/>
+      <ref name="media"/>
+      <ref name="preformat"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- FORMAT CLASSES (%format.ent;) -->
+  <!-- ============================================================= -->
+  <!-- APPEARANCE CLASS ELEMENTS -->
+  <!--
+                        Names those elements (inherited from the
+    XHTML table DTD that are only concerned with
+    appearance, not with structure or content.
+    Use of these elements is to be discouraged.
+  -->
+  <define name="appearance.class">
+    <choice>
+      <ref name="font"/>
+      <ref name="hr"/>
+    </choice>
+  </define>
+  <!-- FORCED BREAK FORMATTING CLASS ELEMENTS -->
+  <!--
+    Element to force a formatting break such as
+    a line break
+  -->
+  <define name="break.class">
+    <ref name="break"/>
+  </define>
+  <!-- EMPHASIS/RENDITION ELEMENTS -->
+  <!--
+    Elements concerning with marking the location
+    of typographical emphasis (highlighting)
+    DTD DESIGN NOTE: There are no emphasis
+    elements for <fractur>, <openface> (black
+    board), <script>, etc. because this DTD
+    recommends the use of the STIX extensions
+    to accomplish this, as soon as they are 
+    available.
+  -->
+  <define name="emphasis.class">
+    <choice>
+      <ref name="bold"/>
+      <ref name="italic"/>
+      <ref name="monospace"/>
+      <ref name="overline"/>
+      <ref name="overline-start"/>
+      <ref name="overline-end"/>
+      <ref name="sc"/>
+      <ref name="strike"/>
+      <ref name="underline"/>
+      <ref name="underline-start"/>
+      <ref name="underline-end"/>
+    </choice>
+  </define>
+  <!-- UP/DOWN RENDITION ELEMENTS -->
+  <define name="subsup.class">
+    <choice>
+      <ref name="sub"/>
+      <ref name="sup"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- LINK CLASSES (%link.ent;) -->
+  <!-- ============================================================= -->
+  <!-- ADDRESS LINK CLASS ELEMENTS -->
+  <!--
+    Link elements that can be used inside 
+    addresses. This is essentially the three
+    generic external links.
+    (Note: in earlier releases, this Parameter
+    Entity was named %address-elements;,
+    although it functioned as a class.)
+  -->
+  <define name="address-link.class">
+    <choice>
+      <ref name="email"/>
+      <ref name="ext-link"/>
+      <ref name="uri"/>
+    </choice>
+  </define>
+  <!-- JOURNAL ARTICLE LINK CLASS ELEMENTS -->
+  <!--
+    Links used inside journal articles, to point
+    to related material
+  -->
+  <define name="article-link.class">
+    <choice>
+      <ref name="inline-supplementary-material"/>
+      <ref name="related-article"/>
+    </choice>
+  </define>
+  <!-- FOOTNOTE LINKS CLASS -->
+  <!-- Only the most basic, internal links -->
+  <define name="fn-link.class">
+    <ref name="fn"/>
+  </define>
+  <!-- RELATED ARTICLE LINKS CLASS -->
+  <!--
+    For using <related-article> at the paragraph
+    level
+  -->
+  <define name="related-article.class">
+    <ref name="related-article"/>
+  </define>
+  <!-- SIMPLE LINKS/CROSS-REFERENCES CLASS -->
+  <!--
+    The smaller and simpler linking elements
+    that might be inside, for example, a
+    Keyword <kwd>
+  -->
+  <define name="simple-link.class">
+    <choice>
+      <ref name="fn"/>
+      <ref name="target"/>
+      <ref name="xref"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- LIST CLASSES (%list.ent;) -->
+  <!-- ============================================================= -->
+  <!-- LIST CLASS ELEMENTS -->
+  <!--
+    All the types of lists that may occur 
+    as part of the text, therefore excluding
+    Bibliographic Reference Lists <ref-list>
+  -->
+  <define name="list.class">
+    <choice>
+      <ref name="def-list"/>
+      <ref name="list"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- MATH CLASSES (%math.ent;) -->
+  <!-- ============================================================= -->
+  <!--
+    MATHEMATICAL EXPRESSIONS AND FORMULAE 
+    CLASS ELEMENTS
+  -->
+  <define name="block-math.class">
+    <ref name="disp-formula"/>
+  </define>
+  <!--
+    INLINE MATHEMATICAL EXPRESSIONS MIX CLASS 
+    ELEMENTS
+  -->
+  <define name="inline-math.class">
+    <ref name="inline-formula"/>
+  </define>
+  <!-- MATHEMATICAL EXPRESSIONS CLASS ELEMENTS -->
+  <define name="math.class">
+    <choice>
+      <ref name="tex-math"/>
+      <ref name="mml.math"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- PARAGRAPH CLASSES (%para.ent;) -->
+  <!-- ============================================================= -->
+  <!-- REST OF PARAGRAPH CLASS -->
+  <!--
+    Information for the reader that is at the
+    same structural level as a Paragraph.
+    Contains all paragraph-level objects that are
+    not also used inside tables and excepting
+    also the paragraph element itself
+  -->
+  <define name="rest-of-para.class">
+    <choice>
+      <ref name="ack"/>
+      <ref name="disp-quote"/>
+      <ref name="speech"/>
+      <ref name="statement"/>
+      <ref name="verse-group"/>
+    </choice>
+  </define>
+  <!-- IN TABLE PARAGRAPH CLASS -->
+  <!--
+    The simpler of the paragraph-level elements
+    that might be found inside a table cell
+  -->
+  <define name="intable-para.class">
+    <choice>
+      <ref name="disp-quote"/>
+      <ref name="speech"/>
+      <ref name="statement"/>
+      <ref name="verse-group"/>
+    </choice>
+  </define>
+  <!-- JUST PARAGRAPH CLASS -->
+  <!-- To hold the Paragraph element, alone. -->
+  <define name="just-para.class">
+    <ref name="p"/>
+  </define>
+  <!-- ============================================================= -->
+  <!-- PHRASE CLASSES (%phrase.ent;) -->
+  <!-- ============================================================= -->
+  <!-- PHRASE CLASS ELEMENTS -->
+  <!--
+    Small inline elements, that surround a word
+    or phrase in the text because the subject
+    (content) should be identified as something
+    special or different
+  -->
+  <define name="phrase.class">
+    <choice>
+      <ref name="abbrev"/>
+      <ref name="named-content"/>
+    </choice>
+  </define>
+  <!-- ============================================================= -->
+  <!-- REFERENCES CLASSES (%references.ent;) -->
+  <!-- ============================================================= -->
+  <!-- BIBLIOGRAPHIC REFERENCE (CITATION) CLASS -->
+  <!--
+    The elements that may be included inside a
+    Citation (bibliographic reference)
+  -->
+  <define name="references.class">
+    <choice>
+      <ref name="access-date"/>
+      <ref name="annotation"/>
+      <ref name="article-title"/>
+      <ref name="collab"/>
+      <ref name="comment"/>
+      <ref name="conf-date"/>
+      <ref name="conf-loc"/>
+      <ref name="conf-name"/>
+      <ref name="day"/>
+      <ref name="edition"/>
+      <ref name="email"/>
+      <ref name="elocation-id"/>
+      <ref name="etal"/>
+      <ref name="ext-link"/>
+      <ref name="fpage"/>
+      <ref name="gov"/>
+      <ref name="isbn"/>
+      <ref name="issn"/>
+      <ref name="issue"/>
+      <ref name="issue-id"/>
+      <ref name="issue-title"/>
+      <ref name="lpage"/>
+      <ref name="month"/>
+      <ref name="name"/>
+      <ref name="object-id"/>
+      <ref name="page-count"/>
+      <ref name="page-range"/>
+      <ref name="patent"/>
+      <ref name="person-group"/>
+      <ref name="pub-id"/>
+      <ref name="publisher-loc"/>
+      <ref name="publisher-name"/>
+      <ref name="role"/>
+      <ref name="season"/>
+      <ref name="series"/>
+      <ref name="source"/>
+      <ref name="std"/>
+      <ref name="string-name"/>
+      <ref name="supplement"/>
+      <ref name="time-stamp"/>
+      <ref name="trans-source"/>
+      <ref name="trans-title"/>
+      <ref name="uri"/>
+      <ref name="volume"/>
+      <ref name="volume-id"/>
+      <ref name="year"/>
+    </choice>
+  </define>
+  <!-- JUST REFERENCE-LIST CLASS -->
+  <!--
+    The reference list and only the reference
+    list
+  -->
+  <define name="ref-list.class">
+    <ref name="ref-list"/>
+  </define>
+  <!-- ============================================================= -->
+  <!-- SECTION CLASS (%section.ent;) -->
+  <!-- ============================================================= -->
+  <!-- SECTION CLASS ELEMENTS -->
+  <!--
+    Information for the reader that is at the
+    same structural level as a Section, which is
+    a headed structure full of smaller elements
+    such as paragraphs.
+  -->
+  <define name="sec.class">
+    <ref name="sec"/>
+  </define>
+  <!-- ============================================================= -->
+  <!-- TABLE MODEL CLASSES -->
+  <!-- ============================================================= -->
+  <!-- JUST TABLE CLASS -->
+  <!--
+    To include just a table <tale-wrap> 
+    element
+  -->
+  <define name="just-table.class">
+    <ref name="table-wrap"/>
+  </define>
+  <!-- TABLE CLASS ELEMENTS -->
+  <!--
+    Elements that will be used to contain the
+    rows and columns inside the Table Wrapper 
+    element <table-wrap>.  The following elements 
+    can be set up for inclusion:
+      XHTML Table Model    table
+  -->
+  <define name="table.class">
+    <ref name="table"/>
+  </define>
+  <!-- TABLE FOOT CLASS -->
+  <!--
+    Elements to include at the end of a table
+    in the table.
+  -->
+  <define name="table-foot.class">
+    <ref name="table-wrap-foot"/>
+  </define>
+  <!-- TABLE BODY CLASS -->
+  <!--
+    To include just a table <tale-wrap> 
+    element
+  -->
+  <define name="tbody.class">
+    <ref name="tbody"/>
+  </define>
+</grammar>
+<!-- ================== End Journal Suite Default Classes  ======= -->

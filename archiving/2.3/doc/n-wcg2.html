@@ -1,0 +1,2235 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>MathML 2.0</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="dtdinfo">
+         <h2 class="header">MathML 2.0</h2>
+         <p><pre class="taggedtext">
+
+&lt;!-- MathML 2.0 DTD  ....................................................... --&gt;
+&lt;!-- file: mathml2.dtd
+--&gt;
+
+&lt;!-- MathML 2.0 DTD
+
+     This is the Mathematical Markup Language (MathML) 2.0, an XML
+     application for describing mathematical notation and capturing
+     both its structure and content.
+
+     Copyright &amp;#xa9; 1998-2003 W3C&amp;#xae; (MIT, ERCIM, Keio), All Rights 
+     Reserved. W3C liability, trademark, document use and software
+     licensing rules apply. 
+
+     Permission to use, copy, modify and distribute the MathML 2.0 DTD and
+     its accompanying documentation for any purpose and without fee is
+     hereby granted in perpetuity, provided that the above copyright notice
+     and this paragraph appear in all copies.  The copyright holders make
+     no representation about the suitability of the DTD for any purpose.
+
+     It is provided "as is" without expressed or implied warranty.
+
+        Revision:   $Id: mathml2.dtd,v 1.12 2003/11/04 13:14:35 davidc Exp $
+
+     This entity may be identified by the PUBLIC and SYSTEM identifiers:
+
+       PUBLIC "-//W3C//DTD MathML 2.0//EN"
+       SYSTEM "mathml2.dtd"
+
+     Revisions: editor and revision history at EOF
+--&gt;
+&lt;!-- Entity used to enable marked sections which enforces stricter		
+     checking of MathML syntax rules		
+--&gt;
+&lt;!ENTITY % MathMLstrict "IGNORE"&gt;		
+
+&lt;!-- MathML Qualified Names module ............................... --&gt;
+&lt;!ENTITY % mathml-qname.module "INCLUDE" &gt;
+&lt;![%mathml-qname.module;[
+&lt;!ENTITY % mathml-qname.mod
+     PUBLIC "-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN"
+            "mathml2-qname-1.mod" &gt;
+%mathml-qname.mod;]]&gt;
+
+&lt;!-- if %NS.prefixed; is INCLUDE, include all NS attributes, 
+     otherwise just those associated with MathML
+--&gt;
+&lt;![%NS.prefixed;[
+  &lt;!ENTITY % MATHML.NamespaceDecl.attrib 
+         "%NamespaceDecl.attrib;"
+&gt;
+]]&gt;
+&lt;!ENTITY % MATHML.NamespaceDecl.attrib 
+     "%MATHML.xmlns.attrib;"
+&gt;
+
+
+&lt;!-- Attributes shared by all elements  .......................... --&gt;
+
+&lt;!ENTITY % MATHML.Common.attrib
+     "%MATHML.NamespaceDecl.attrib;
+      %XLINK.prefix;:href   CDATA           #IMPLIED		
+      %XLINK.prefix;:type   CDATA           #IMPLIED	
+      class        CDATA                    #IMPLIED
+      style        CDATA                    #IMPLIED
+      id           ID                       #IMPLIED
+      xref         IDREF                    #IMPLIED
+      other        CDATA                    #IMPLIED"
+&gt;
+
+&lt;!-- Presentation element set  ................................... --&gt;
+
+&lt;!-- Attribute definitions --&gt;
+
+&lt;!ENTITY % att-fontsize
+     "fontsize     CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-fontweight
+     "fontweight   ( normal | bold )        #IMPLIED" &gt;
+&lt;!ENTITY % att-fontstyle
+     "fontstyle    ( normal | italic )      #IMPLIED" &gt;
+&lt;!ENTITY % att-fontfamily
+     "fontfamily   CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-color
+     "color        CDATA                    #IMPLIED" &gt;
+
+&lt;!-- MathML2 typographically-distinguished symbol attributes --&gt;
+
+&lt;![%MathMLstrict;[
+  &lt;!ENTITY % att-mathvariant
+     "mathvariant     ( normal | bold | italic | bold-italic | double-struck | 
+                        bold-fraktur | script | bold-script | fraktur |
+                        sans-serif | bold-sans-serif | sans-serif-italic |
+                        sans-serif-bold-italic | monospace )
+                                                                   #IMPLIED" &gt;
+]]&gt;
+&lt;!ENTITY % att-mathvariant
+     "mathvariant     CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-mathsize
+     "mathsize     CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-mathcolor
+     "mathcolor     CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-mathbackground
+     "mathbackground     CDATA                    #IMPLIED" &gt;
+
+&lt;!ENTITY % att-fontinfo
+     "%att-fontsize;
+      %att-fontweight;
+      %att-fontstyle;
+      %att-fontfamily;
+      %att-color;
+      %att-mathvariant;
+      %att-mathsize;
+      %att-mathcolor;
+      %att-mathbackground;"
+&gt;
+
+&lt;!ENTITY % att-form
+     "form         ( prefix | infix | postfix )  #IMPLIED" &gt;
+&lt;!ENTITY % att-fence
+     "fence        ( true | false )         #IMPLIED" &gt;
+&lt;!ENTITY % att-separator
+     "separator    ( true | false )         #IMPLIED" &gt;
+&lt;!ENTITY % att-lspace
+     "lspace       CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-rspace
+     "rspace       CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-stretchy
+     "stretchy     ( true | false )         #IMPLIED" &gt;
+&lt;!ENTITY % att-symmetric
+     "symmetric    ( true | false )         #IMPLIED" &gt;
+&lt;!ENTITY % att-maxsize
+     "maxsize      CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-minsize
+     "minsize      CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-largeop
+     "largeop      ( true | false)          #IMPLIED" &gt;
+&lt;!ENTITY % att-movablelimits
+     "movablelimits ( true | false )        #IMPLIED" &gt;
+&lt;!ENTITY % att-accent
+     "accent       ( true | false )         #IMPLIED" &gt;
+
+&lt;!ENTITY % att-opinfo
+     "%att-form;
+      %att-fence;
+      %att-separator;
+      %att-lspace;
+      %att-rspace;
+      %att-stretchy;
+      %att-symmetric;
+      %att-maxsize;
+      %att-minsize;
+      %att-largeop;
+      %att-movablelimits;
+      %att-accent;"
+&gt;
+&lt;!ENTITY % att-width
+     "width        CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-height
+     "height       CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-depth
+     "depth        CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-linebreak
+     "linebreak    CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-sizeinfo
+     "%att-width;
+      %att-height;
+      %att-depth;"
+&gt;
+&lt;!ENTITY % att-lquote               
+     "lquote       CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-rquote               
+     "rquote       CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-linethickness        
+     "linethickness CDATA                   #IMPLIED" &gt;
+&lt;!ENTITY % att-scriptlevel          
+     "scriptlevel  CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-displaystyle         
+     "displaystyle ( true | false )         #IMPLIED" &gt;
+&lt;!ENTITY % att-scriptsizemultiplier 
+     "scriptsizemultiplier CDATA            #IMPLIED" &gt;
+&lt;!ENTITY % att-scriptminsize        
+     "scriptminsize CDATA                   #IMPLIED" &gt;
+&lt;!ENTITY % att-background           
+     "background   CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-veryverythinmathspace           
+     "veryverythinmathspace   CDATA         #IMPLIED" &gt;
+&lt;!ENTITY % att-verythinmathspace           
+     "verythinmathspace   CDATA             #IMPLIED" &gt;
+&lt;!ENTITY % att-thinmathspace           
+     "thinmathspace   CDATA                 #IMPLIED" &gt;
+&lt;!ENTITY % att-mediummathspace           
+     "mediummathspace   CDATA               #IMPLIED" &gt;
+&lt;!ENTITY % att-thickmathspace           
+     "thickmathspace   CDATA                #IMPLIED" &gt;
+&lt;!ENTITY % att-verythickmathspace           
+     "verythickmathspace   CDATA            #IMPLIED" &gt;
+&lt;!ENTITY % att-veryverythickmathspace           
+     "veryverythickmathspace   CDATA        #IMPLIED" &gt;
+&lt;!ENTITY % att-open                 
+     "open         CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-close                
+     "close        CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-separators          
+     "separators   CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-subscriptshift       
+     "subscriptshift CDATA                  #IMPLIED" &gt;
+&lt;!ENTITY % att-superscriptshift     
+     "superscriptshift CDATA                #IMPLIED" &gt;
+&lt;!ENTITY % att-accentunder          
+     "accentunder  ( true | false )         #IMPLIED" &gt;
+&lt;!ENTITY % att-align       
+     "align        CDATA                    #IMPLIED" &gt;
+&lt;![%MathMLstrict;[
+  &lt;!ENTITY % att-numalign	
+     "numalign     ( left | center | right )         #IMPLIED" &gt;
+  &lt;!ENTITY % att-denomalign
+     "denomalign   ( left | center | right )         #IMPLIED" &gt;
+]]&gt;
+&lt;!ENTITY % att-numalign		
+     "numalign        CDATA                    #IMPLIED" &gt;		
+&lt;!ENTITY % att-denomalign		
+     "denomalign        CDATA                    #IMPLIED" &gt;		
+&lt;!ENTITY % att-rowalign-list		
+     "rowalign     CDATA                    #IMPLIED" &gt;		
+&lt;!ENTITY % att-columnalign-list		
+     "columnalign  CDATA                    #IMPLIED" &gt;		
+&lt;![%MathMLstrict;[
+  &lt;!ENTITY % att-rowalign
+     "rowalign     ( top | bottom |	center | baseline | axis )    #IMPLIED" &gt;
+  &lt;!ENTITY % att-columnalign
+     "columnalign  ( left | center | right )        #IMPLIED" &gt;
+]]&gt;
+&lt;!ENTITY % att-rowalign      
+     "rowalign     CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-columnalign     
+     "columnalign  CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-columnwidth   
+     "columnwidth  CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-groupalign-list		
+     "groupalign   CDATA                    #IMPLIED" &gt;		
+&lt;![%MathMLstrict;[
+  &lt;!ENTITY % att-groupalign
+     "groupalign   ( left | right | center | decimalpoint )   #IMPLIED" &gt;
+]]&gt;
+&lt;!ENTITY % att-groupalign      
+     "groupalign   CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-alignmentscope 
+     "alignmentscope CDATA                  #IMPLIED" &gt;
+&lt;!ENTITY % att-rowspacing           
+     "rowspacing   CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-columnspacing      
+     "columnspacing CDATA                   #IMPLIED" &gt;
+&lt;!ENTITY % att-rowlines            
+     "rowlines     CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-columnlines        
+     "columnlines  CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-frame            
+     "frame       ( none | solid | dashed ) #IMPLIED" &gt;
+&lt;!ENTITY % att-side		
+     "side       ( left | right | leftoverlap | rightoverlap ) #IMPLIED" &gt;		
+&lt;!ENTITY % att-framespacing         
+     "framespacing CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-minlabelspacing		
+     "minlabelspacing CDATA                 #IMPLIED" &gt;		
+&lt;![%MathMLstrict;[
+  &lt;!ENTITY % att-equalrows
+     "equalrows    ( true | false )         #IMPLIED" &gt;
+  &lt;!ENTITY % att-equalcolumns
+     "equalcolumns ( true | false )         #IMPLIED" &gt;
+]]&gt;
+&lt;!ENTITY % att-equalrows        
+     "equalrows    CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-equalcolumns         
+     "equalcolumns CDATA                    #IMPLIED" &gt;
+
+&lt;!ENTITY % att-tableinfo            
+     "%att-align;
+      %att-rowalign-list;	
+      %att-columnalign-list;	
+      %att-columnwidth;
+      %att-groupalign-list;	
+      %att-alignmentscope;
+      %att-side;		
+      %att-rowspacing;
+      %att-columnspacing;
+      %att-rowlines;
+      %att-columnlines;
+      %att-width;		
+      %att-frame;
+      %att-framespacing;
+      %att-minlabelspacing;		
+      %att-equalrows;
+      %att-equalcolumns;
+      %att-displaystyle;" 
+&gt;
+
+&lt;!ENTITY % att-rowspan              
+     "rowspan      CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-columnspan           
+     "columnspan   CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-edge        
+     "edge         ( left | right )         #IMPLIED" &gt;
+&lt;!ENTITY % att-actiontype          
+     "actiontype   CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-selection       
+     "selection    CDATA                    #IMPLIED" &gt;
+
+&lt;!ENTITY % att-name                 
+     "name         CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-alt              
+     "alt          CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-index           
+     "index        CDATA                    #IMPLIED" &gt;
+
+&lt;![%MathMLstrict;[
+  &lt;!ENTITY % att-bevelled
+     "bevelled      ( true | false )        #IMPLIED" &gt;
+]]&gt;
+&lt;!ENTITY % att-bevelled       
+     "bevelled      CDATA                    #IMPLIED" &gt;
+
+&lt;!-- Presentation schemata with content --&gt;
+
+&lt;!ENTITY % ptoken                   
+     "%mi.qname; | %mn.qname; | %mo.qname;
+      | %mtext.qname; | %ms.qname;" &gt;
+
+&lt;!ATTLIST %mi.qname;
+      %MATHML.Common.attrib;
+      %att-fontinfo;
+&gt;
+
+&lt;!ATTLIST %mn.qname;      
+      %MATHML.Common.attrib; 
+      %att-fontinfo;
+&gt;
+
+&lt;!ATTLIST %mo.qname;     
+      %MATHML.Common.attrib; 
+      %att-fontinfo;
+      %att-opinfo;
+&gt;
+
+&lt;!ATTLIST %mtext.qname;  
+      %MATHML.Common.attrib;
+      %att-fontinfo;
+&gt;
+
+&lt;!ATTLIST %ms.qname;     
+      %MATHML.Common.attrib;
+      %att-fontinfo;
+      %att-lquote;
+      %att-rquote;
+&gt;
+
+&lt;!-- Empty presentation schemata --&gt;
+
+&lt;!ENTITY % petoken                  
+     "%mspace.qname;" &gt;
+&lt;!ELEMENT %mspace.qname;  EMPTY &gt;
+
+&lt;!ATTLIST %mspace.qname; 
+      %att-sizeinfo;
+      %att-linebreak;
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!-- Presentation: general layout schemata --&gt;
+
+&lt;!ENTITY % pgenschema               
+     "%mrow.qname; | %mfrac.qname; | %msqrt.qname; | %mroot.qname; 
+      | %menclose.qname; | %mstyle.qname; | %merror.qname; 
+      | %mpadded.qname; | %mphantom.qname; | %mfenced.qname;" &gt;
+
+&lt;!ATTLIST %mrow.qname;        
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %mfrac.qname;     
+      %MATHML.Common.attrib;
+      %att-bevelled;		
+      %att-numalign;		
+      %att-denomalign;		
+      %att-linethickness;
+&gt;
+
+&lt;!ATTLIST %msqrt.qname;     
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %menclose.qname;  
+      %MATHML.Common.attrib;
+      notation CDATA 'longdiv' &gt;
+
+&lt;!ATTLIST %mroot.qname;    
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %mstyle.qname;  
+      %MATHML.Common.attrib;
+      %att-fontinfo;
+      %att-opinfo;
+      %att-lquote;
+      %att-rquote;
+      %att-linethickness;
+      %att-scriptlevel;
+      %att-scriptsizemultiplier;
+      %att-scriptminsize;
+      %att-background;
+      %att-veryverythinmathspace;
+      %att-verythinmathspace;
+      %att-thinmathspace;
+      %att-mediummathspace;
+      %att-thickmathspace;
+      %att-verythickmathspace;
+      %att-veryverythickmathspace;
+      %att-open;
+      %att-close;
+      %att-separators;
+      %att-subscriptshift;
+      %att-superscriptshift;
+      %att-accentunder;
+      %att-tableinfo;
+      %att-rowspan;
+      %att-columnspan;
+      %att-edge;
+      %att-selection;
+      %att-bevelled;	
+      %att-height;		
+      %att-depth;		
+&gt;
+
+&lt;!ATTLIST %merror.qname;   
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %mpadded.qname;     
+      %MATHML.Common.attrib;
+      %att-sizeinfo;
+      %att-lspace;
+&gt;
+
+&lt;!ATTLIST %mphantom.qname;      
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %mfenced.qname;     
+      %MATHML.Common.attrib;
+      %att-open;
+      %att-close;
+      %att-separators;
+&gt;
+
+&lt;!-- Presentation layout schemata: scripts and limits --&gt;
+
+&lt;!ENTITY % pscrschema               
+     "%msub.qname; | %msup.qname; | %msubsup.qname; | %munder.qname; 
+      | %mover.qname; | %munderover.qname; | %mmultiscripts.qname;" &gt;
+
+&lt;!ATTLIST %msub.qname;      
+      %MATHML.Common.attrib;
+      %att-subscriptshift;
+&gt;
+
+&lt;!ATTLIST %msup.qname;         
+      %MATHML.Common.attrib;
+      %att-superscriptshift;
+&gt;
+
+&lt;!ATTLIST %msubsup.qname;    
+      %MATHML.Common.attrib;
+      %att-subscriptshift;
+      %att-superscriptshift;
+&gt;
+
+&lt;!ATTLIST %munder.qname;   
+      %MATHML.Common.attrib;
+      %att-accentunder;
+&gt;
+
+&lt;!ATTLIST %mover.qname;   
+      %MATHML.Common.attrib;
+      %att-accent;
+&gt;
+
+&lt;!ATTLIST %munderover.qname;   
+      %MATHML.Common.attrib;
+      %att-accent;
+      %att-accentunder;
+&gt;
+
+&lt;!ATTLIST %mmultiscripts.qname;   
+      %MATHML.Common.attrib;
+      %att-subscriptshift;
+      %att-superscriptshift;
+&gt;
+
+&lt;!-- Presentation layout schemata: empty elements for scripts --&gt;
+
+&lt;!ENTITY % pscreschema              
+     "%mprescripts.qname; | %none.qname;" &gt;
+
+&lt;!ELEMENT %mprescripts.qname;  EMPTY &gt;
+&lt;!ATTLIST %mprescripts.qname;   
+      %MATHML.xmlns.attrib; &gt;
+
+&lt;!ELEMENT %none.qname;  EMPTY &gt;
+&lt;!ATTLIST %none.qname;    
+      %MATHML.xmlns.attrib; &gt;
+
+&lt;!-- Presentation layout schemata: tables --&gt;
+
+&lt;![%MathMLstrict;[
+&lt;!-- in strict mode only allow mtable at top level.
+     mtr ,mlabledtr and mtd only allowed inside mtable.
+--&gt;
+  &lt;!ENTITY % ptabschema    "%mtable.qname;" &gt;
+]]&gt;
+
+&lt;!ENTITY % ptabschema               
+     "%mtable.qname; | %mtr.qname; | %mlabeledtr.qname; | %mtd.qname;" &gt;
+
+&lt;!ATTLIST %mtable.qname;
+      %MATHML.Common.attrib;
+      %att-tableinfo;
+&gt;
+
+&lt;!ATTLIST %mtr.qname;    
+      %MATHML.Common.attrib;
+      %att-rowalign;
+      %att-columnalign-list;	
+      %att-groupalign-list;	
+&gt;
+
+&lt;!ATTLIST %mlabeledtr.qname;  
+      %MATHML.Common.attrib;
+      %att-rowalign;
+      %att-columnalign-list;	
+      %att-groupalign-list;	
+&gt;
+
+&lt;!ATTLIST %mtd.qname;   
+      %MATHML.Common.attrib;
+      %att-rowalign;
+      %att-columnalign;
+      %att-groupalign-list;	
+      %att-rowspan;
+      %att-columnspan;
+&gt;
+&lt;!ENTITY % plschema                 
+     "%pgenschema; | %pscrschema; | %ptabschema;" &gt;
+
+&lt;!-- Empty presentation layout schemata --&gt;
+
+&lt;!ENTITY % peschema                 
+     "%maligngroup.qname; | %malignmark.qname;" &gt;
+
+&lt;!ELEMENT %malignmark.qname;  EMPTY &gt;
+
+&lt;!ATTLIST %malignmark.qname;  
+      %att-edge; &gt;
+
+&lt;!ELEMENT %maligngroup.qname;  EMPTY &gt;
+&lt;!ATTLIST %maligngroup.qname;  
+      %MATHML.Common.attrib;
+      %att-groupalign;
+&gt;
+
+
+&lt;!ELEMENT %mglyph.qname;  EMPTY &gt;
+&lt;!ATTLIST %mglyph.qname;    
+      %att-alt;
+      %att-fontfamily;
+      %att-index; &gt;
+
+&lt;!-- Presentation action schemata --&gt;
+
+&lt;!ENTITY % pactions                 
+     "%maction.qname;" &gt;
+&lt;!ATTLIST %maction.qname;    
+      %MATHML.Common.attrib;
+      %att-actiontype;
+      %att-selection;
+&gt;
+
+&lt;!-- The following entity for substitution into
+     content constructs excludes elements that
+     are not valid as expressions.
+--&gt;
+
+&lt;!ENTITY % PresInCont               
+     "%ptoken; | %petoken; |
+      %plschema; | %peschema; | %pactions;" &gt;
+
+&lt;!-- Presentation entity: all presentation constructs --&gt;
+
+
+&lt;![%MathMLstrict;[
+&lt;!-- In strict mode don't allow prescripts and none at top level.--&gt;
+  &lt;!ENTITY % Presentation "%PresInCont;"&gt;             
+]]&gt;
+&lt;!ENTITY % Presentation             
+     "%ptoken; | %petoken; | %pscreschema; |
+      %plschema; | %peschema; | %pactions;"&gt;
+
+&lt;!-- Content element set  ........................................ --&gt;
+
+&lt;!-- Attribute definitions --&gt;
+
+&lt;!ENTITY % att-base                 
+     "base         CDATA                    '10'" &gt;
+&lt;!ENTITY % att-closure              
+     "closure      CDATA                    'closed'" &gt;
+&lt;!ENTITY % att-definition           
+     "definitionURL CDATA                   ''" &gt;
+&lt;!ENTITY % att-encoding             
+     "encoding     CDATA                    ''" &gt;
+&lt;!ENTITY % att-nargs             
+     "nargs        CDATA                    '1'" &gt;
+&lt;!ENTITY % att-occurrence           
+     "occurrence   CDATA                    'function-model'" &gt;
+&lt;!ENTITY % att-order   
+     "order        CDATA                    'numeric'" &gt;
+&lt;!ENTITY % att-scope                
+     "scope        CDATA                    'local'" &gt;
+&lt;!ENTITY % att-type                 
+     "type         CDATA                    #IMPLIED" &gt;
+
+&lt;!-- Content elements: leaf nodes --&gt;
+
+&lt;!ENTITY % ctoken               
+     "%csymbol.qname; | %ci.qname; | %cn.qname;" &gt;
+
+&lt;!ATTLIST %ci.qname;     
+      %MATHML.Common.attrib;
+      %att-type;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ATTLIST %csymbol.qname;   
+      %MATHML.Common.attrib;
+      %att-encoding;
+      %att-type;
+      %att-definition;
+&gt;
+
+&lt;!ATTLIST %cn.qname;    
+      %MATHML.Common.attrib;
+      %att-type;
+      %att-base;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!-- Content elements: specials --&gt;
+
+&lt;!ENTITY % cspecial                 
+     "%apply.qname; | %reln.qname; |
+      %lambda.qname;" &gt;
+
+&lt;!ATTLIST %apply.qname;   
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %reln.qname;   
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %lambda.qname;      
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!-- Content elements: others --&gt;
+
+&lt;!ENTITY % cother                   
+     "%condition.qname; | %declare.qname; | %sep.qname;" &gt;
+
+&lt;!ATTLIST %condition.qname;     
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %declare.qname;    
+      %MATHML.Common.attrib;
+      %att-type;
+      %att-scope;
+      %att-nargs;
+      %att-occurrence;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %sep.qname;  EMPTY &gt;
+&lt;!ATTLIST %sep.qname;         
+      %MATHML.xmlns.attrib; &gt;
+
+&lt;!-- Content elements: semantic mapping --&gt;
+
+&lt;![%MathMLstrict;[
+&lt;!-- in strict mode only allow semantics at top level.
+     annotation and annotation-xml only allowed in semantics
+--&gt;
+  &lt;!ENTITY % csemantics  "%semantics.qname;" &gt;
+]]&gt;
+&lt;!ENTITY % csemantics               
+     "%semantics.qname; | %annotation.qname; |
+      %annotation-xml.qname;" &gt;
+
+&lt;!ATTLIST %semantics.qname;  
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ATTLIST %annotation.qname;  
+      %MATHML.Common.attrib;
+      %att-encoding;
+&gt;
+
+&lt;!ATTLIST %annotation-xml.qname; 
+      %MATHML.Common.attrib;
+      %att-encoding;
+&gt;
+
+&lt;!-- Content elements: constructors --&gt;
+
+&lt;!ENTITY % cconstructor             
+     "%interval.qname; | %list.qname; | %matrix.qname; 
+      | %matrixrow.qname; | %set.qname; | %vector.qname;
+      | %piecewise.qname; " &gt;
+
+&lt;!ATTLIST %interval.qname;   
+      %MATHML.Common.attrib;
+      %att-closure;
+&gt;
+
+&lt;!ATTLIST %set.qname;        
+      %MATHML.Common.attrib;
+      %att-type;
+&gt;
+
+&lt;!ATTLIST %list.qname;          
+      %MATHML.Common.attrib;
+      %att-order;
+&gt;
+
+&lt;!ATTLIST %vector.qname;    
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %matrix.qname;    
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %matrixrow.qname;     
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %piecewise.qname;   
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %piece.qname;   
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %otherwise.qname;   
+      %MATHML.Common.attrib;
+&gt;
+
+
+&lt;!-- Content elements: symbols --&gt;
+
+&lt;!ENTITY % c0ary              
+    "%integers.qname; |
+     %reals.qname; |
+     %rationals.qname; |
+     %naturalnumbers.qname; |
+     %complexes.qname; |
+     %primes.qname; |
+     %exponentiale.qname; |
+     %imaginaryi.qname; |
+     %notanumber.qname; |
+     %true.qname; |
+     %false.qname; |
+     %emptyset.qname; |
+     %pi.qname; |
+     %eulergamma.qname; |
+     %infinity.qname;" &gt;
+
+&lt;!ELEMENT %integers.qname;  EMPTY &gt;
+&lt;!ATTLIST %integers.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %reals.qname;  EMPTY &gt;
+&lt;!ATTLIST %reals.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %rationals.qname;  EMPTY &gt;
+&lt;!ATTLIST %rationals.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %naturalnumbers.qname;  EMPTY &gt;
+&lt;!ATTLIST %naturalnumbers.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %complexes.qname;  EMPTY &gt;
+&lt;!ATTLIST %complexes.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %primes.qname;  EMPTY &gt;
+&lt;!ATTLIST %primes.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %exponentiale.qname;  EMPTY &gt;
+&lt;!ATTLIST %exponentiale.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %imaginaryi.qname;  EMPTY &gt;
+&lt;!ATTLIST %imaginaryi.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %notanumber.qname;  EMPTY &gt;
+&lt;!ATTLIST %notanumber.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %true.qname;  EMPTY &gt;
+&lt;!ATTLIST %true.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %false.qname;  EMPTY &gt;
+&lt;!ATTLIST %false.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %emptyset.qname;  EMPTY &gt;
+&lt;!ATTLIST %emptyset.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %pi.qname;  EMPTY &gt;
+&lt;!ATTLIST %pi.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %eulergamma.qname;  EMPTY &gt;
+&lt;!ATTLIST %eulergamma.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %infinity.qname;  EMPTY &gt;
+&lt;!ATTLIST %infinity.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!-- Content elements: operators --&gt;
+
+&lt;!ENTITY % cfuncop1ary              
+     "%inverse.qname; | %ident.qname;|
+      %domain.qname; |  %codomain.qname; | 
+      %image.qname;  " &gt;
+
+&lt;!ELEMENT %inverse.qname;  EMPTY &gt;
+&lt;!ATTLIST %inverse.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %domain.qname;  EMPTY &gt;
+&lt;!ATTLIST %domain.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %codomain.qname;  EMPTY &gt;
+&lt;!ATTLIST %codomain.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %image.qname;  EMPTY &gt;
+&lt;!ATTLIST %image.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+
+
+&lt;!ENTITY % cfuncopnary              
+     "%fn.qname; | %compose.qname;" &gt;
+
+&lt;!ATTLIST %fn.qname;     
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %ident.qname;  EMPTY &gt;
+&lt;!ATTLIST %ident.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %compose.qname;  EMPTY &gt;
+&lt;!ATTLIST %compose.qname;  
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % carithop1ary             
+     "%abs.qname; | %conjugate.qname; | %exp.qname; | %factorial.qname; |
+      %arg.qname; | %real.qname; | %imaginary.qname; |
+      %floor.qname; | %ceiling.qname;" &gt;
+
+&lt;!ELEMENT %exp.qname;  EMPTY &gt;
+&lt;!ATTLIST %exp.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %abs.qname;  EMPTY &gt;
+&lt;!ATTLIST %abs.qname;        
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arg.qname;  EMPTY &gt;
+&lt;!ATTLIST %arg.qname;     
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %real.qname;  EMPTY &gt;
+&lt;!ATTLIST %real.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %imaginary.qname;  EMPTY &gt;
+&lt;!ATTLIST %imaginary.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %conjugate.qname;  EMPTY &gt;
+&lt;!ATTLIST %conjugate.qname;  
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %factorial.qname;  EMPTY &gt;
+&lt;!ATTLIST %factorial.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+
+&lt;!ELEMENT %floor.qname;  EMPTY &gt;
+&lt;!ATTLIST %floor.qname;     
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %ceiling.qname;  EMPTY &gt;
+&lt;!ATTLIST %ceiling.qname;     
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+&lt;!ENTITY % carithop1or2ary          
+     "%minus.qname;" &gt;
+
+&lt;!ELEMENT %minus.qname;  EMPTY &gt;
+&lt;!ATTLIST %minus.qname;     
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % carithop2ary             
+     "%quotient.qname; | %divide.qname; | %power.qname; | %rem.qname;" &gt;
+
+&lt;!ELEMENT %quotient.qname;  EMPTY &gt;
+&lt;!ATTLIST %quotient.qname;       
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %divide.qname;  EMPTY &gt;
+&lt;!ATTLIST %divide.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %power.qname;  EMPTY &gt;
+&lt;!ATTLIST %power.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %rem.qname;  EMPTY &gt;
+&lt;!ATTLIST %rem.qname;       
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % carithopnary             
+     "%plus.qname; | %times.qname; | %max.qname; 
+      | %min.qname; | %gcd.qname; | %lcm.qname;" &gt;
+
+&lt;!ELEMENT %plus.qname;  EMPTY &gt;
+&lt;!ATTLIST %plus.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %max.qname;  EMPTY &gt;
+&lt;!ATTLIST %max.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %min.qname;  EMPTY &gt;
+&lt;!ATTLIST %min.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %times.qname;  EMPTY &gt;
+&lt;!ATTLIST %times.qname;      
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %gcd.qname;  EMPTY &gt;
+&lt;!ATTLIST %gcd.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %lcm.qname;  EMPTY &gt;
+&lt;!ATTLIST %lcm.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % carithoproot             
+     "%root.qname;" &gt;
+
+&lt;!ELEMENT %root.qname;  EMPTY &gt;
+&lt;!ATTLIST %root.qname;     
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % clogicopquant            
+     "%exists.qname; | %forall.qname;" &gt;
+
+&lt;!ELEMENT %exists.qname;  EMPTY &gt;
+&lt;!ATTLIST %exists.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %forall.qname;  EMPTY &gt;
+&lt;!ATTLIST %forall.qname;     
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % clogicopnary             
+     "%and.qname; | %or.qname; | %xor.qname;" &gt;
+
+&lt;!ELEMENT %and.qname;  EMPTY &gt;
+&lt;!ATTLIST %and.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %or.qname;  EMPTY &gt;
+&lt;!ATTLIST %or.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %xor.qname;  EMPTY &gt;
+&lt;!ATTLIST %xor.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % clogicop1ary             
+     "%not.qname;" &gt;
+
+&lt;!ELEMENT %not.qname;  EMPTY &gt;
+&lt;!ATTLIST %not.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % clogicop2ary             
+     "%implies.qname;" &gt;
+
+&lt;!ELEMENT %implies.qname;  EMPTY &gt;
+&lt;!ATTLIST %implies.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % ccalcop                  
+     "%log.qname; | %int.qname; | %diff.qname; | %partialdiff.qname; |
+      %divergence.qname; | %grad.qname; | %curl.qname; | %laplacian.qname;" &gt;
+
+&lt;!ELEMENT %divergence.qname;  EMPTY &gt;
+&lt;!ATTLIST %divergence.qname;     
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %grad.qname;  EMPTY &gt;
+&lt;!ATTLIST %grad.qname;  
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %curl.qname;  EMPTY &gt;
+&lt;!ATTLIST %curl.qname;     
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %laplacian.qname;  EMPTY &gt;
+&lt;!ATTLIST %laplacian.qname;     
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %log.qname;  EMPTY &gt;
+&lt;!ATTLIST %log.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %int.qname;  EMPTY &gt;
+&lt;!ATTLIST %int.qname;    
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %diff.qname;  EMPTY &gt;
+&lt;!ATTLIST %diff.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %partialdiff.qname;  EMPTY &gt;
+&lt;!ATTLIST %partialdiff.qname;  
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % ccalcop1ary              
+     "%ln.qname;" &gt;
+
+&lt;!ELEMENT %ln.qname;  EMPTY &gt;
+&lt;!ATTLIST %ln.qname;   
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % csetop1ary               
+     "%card.qname;" &gt;
+
+&lt;!ELEMENT %card.qname;  EMPTY &gt;
+&lt;!ATTLIST %card.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % csetop2ary               
+     "%setdiff.qname;" &gt;
+
+&lt;!ELEMENT %setdiff.qname;  EMPTY &gt;
+&lt;!ATTLIST %setdiff.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % csetopnary               
+     "%union.qname; | %intersect.qname; | %cartesianproduct.qname; " &gt;
+
+&lt;!ELEMENT %union.qname;  EMPTY &gt;
+&lt;!ATTLIST %union.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %intersect.qname;  EMPTY &gt;
+&lt;!ATTLIST %intersect.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %cartesianproduct.qname;  EMPTY &gt;
+&lt;!ATTLIST %cartesianproduct.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % cseqop                   
+     "%sum.qname; | %product.qname; | %limit.qname;" &gt;
+
+&lt;!ELEMENT %sum.qname;  EMPTY &gt;
+&lt;!ATTLIST %sum.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %product.qname;  EMPTY &gt;
+&lt;!ATTLIST %product.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %limit.qname;  EMPTY &gt;
+&lt;!ATTLIST %limit.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % ctrigop                  
+     "%sin.qname; | %cos.qname; | %tan.qname; 
+      | %sec.qname; | %csc.qname; | %cot.qname; 
+      | %sinh.qname; | %cosh.qname; | %tanh.qname; 
+      | %sech.qname; | %csch.qname; | %coth.qname; 
+      | %arcsin.qname; | %arccos.qname; | %arctan.qname;
+      | %arccosh.qname; | %arccot.qname; | %arccoth.qname;
+      | %arccsc.qname; | %arccsch.qname; | %arcsec.qname;
+      | %arcsech.qname; | %arcsinh.qname; | %arctanh.qname;
+      " &gt;
+
+&lt;!ELEMENT %sin.qname;  EMPTY &gt;
+&lt;!ATTLIST %sin.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %cos.qname;  EMPTY &gt;
+&lt;!ATTLIST %cos.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %tan.qname;  EMPTY &gt;
+&lt;!ATTLIST %tan.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %sec.qname;  EMPTY &gt;
+&lt;!ATTLIST %sec.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %csc.qname;  EMPTY &gt;
+&lt;!ATTLIST %csc.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %cot.qname;  EMPTY &gt;
+&lt;!ATTLIST %cot.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %sinh.qname;  EMPTY &gt;
+&lt;!ATTLIST %sinh.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %cosh.qname;  EMPTY &gt;
+&lt;!ATTLIST %cosh.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %tanh.qname;  EMPTY &gt;
+&lt;!ATTLIST %tanh.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %sech.qname;  EMPTY &gt;
+&lt;!ATTLIST %sech.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %csch.qname;  EMPTY &gt;
+&lt;!ATTLIST %csch.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %coth.qname;  EMPTY &gt;
+&lt;!ATTLIST %coth.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arcsin.qname;  EMPTY &gt;
+&lt;!ATTLIST %arcsin.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arccos.qname;  EMPTY &gt;
+&lt;!ATTLIST %arccos.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arctan.qname;  EMPTY &gt;
+&lt;!ATTLIST %arctan.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arccosh.qname;  EMPTY &gt;
+&lt;!ATTLIST %arccosh.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+
+&lt;!ELEMENT %arccot.qname;  EMPTY &gt;
+&lt;!ATTLIST %arccot.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arccoth.qname;  EMPTY &gt;
+&lt;!ATTLIST %arccoth.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+
+&lt;!ELEMENT %arccsc.qname;  EMPTY &gt;
+&lt;!ATTLIST %arccsc.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arccsch.qname;  EMPTY &gt;
+&lt;!ATTLIST %arccsch.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arcsec.qname;  EMPTY &gt;
+&lt;!ATTLIST %arcsec.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arcsech.qname;  EMPTY &gt;
+&lt;!ATTLIST %arcsech.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arcsinh.qname;  EMPTY &gt;
+&lt;!ATTLIST %arcsinh.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %arctanh.qname;  EMPTY &gt;
+&lt;!ATTLIST %arctanh.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+
+
+&lt;!ENTITY % cstatopnary              
+     "%mean.qname; | %sdev.qname; |
+      %variance.qname; | %median.qname; |
+      %mode.qname;" &gt;
+
+&lt;!ELEMENT %mean.qname;  EMPTY &gt;
+&lt;!ATTLIST %mean.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %sdev.qname;  EMPTY &gt;
+&lt;!ATTLIST %sdev.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %variance.qname;  EMPTY &gt;
+&lt;!ATTLIST %variance.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %median.qname;  EMPTY &gt;
+&lt;!ATTLIST %median.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %mode.qname;  EMPTY &gt;
+&lt;!ATTLIST %mode.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % cstatopmoment            
+     "%moment.qname;" &gt;
+
+&lt;!ELEMENT %moment.qname;  EMPTY &gt;
+&lt;!ATTLIST %moment.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % clalgop1ary              
+     "%determinant.qname; |
+      %transpose.qname;" &gt;
+
+&lt;!ELEMENT %determinant.qname;  EMPTY &gt;
+&lt;!ATTLIST %determinant.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %transpose.qname;  EMPTY &gt;
+&lt;!ATTLIST %transpose.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % clalgop2ary              
+     "%vectorproduct.qname; 
+      | %scalarproduct.qname; 
+      | %outerproduct.qname;" &gt;
+
+&lt;!ELEMENT %vectorproduct.qname;  EMPTY &gt;
+&lt;!ATTLIST %vectorproduct.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %scalarproduct.qname;  EMPTY &gt;
+&lt;!ATTLIST %scalarproduct.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %outerproduct.qname;  EMPTY &gt;
+&lt;!ATTLIST %outerproduct.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % clalgopnary              
+     "%selector.qname;" &gt;
+
+&lt;!ELEMENT %selector.qname;  EMPTY &gt;
+&lt;!ATTLIST %selector.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!-- Content elements: relations --&gt;
+
+&lt;!ENTITY % cgenrel2ary             
+     "%neq.qname; | %factorof.qname;" &gt;
+
+&lt;!ELEMENT %neq.qname;  EMPTY &gt;
+&lt;!ATTLIST %neq.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %factorof.qname;  EMPTY &gt;
+&lt;!ATTLIST %factorof.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % cgenrelnary              
+     "%eq.qname; | %leq.qname; | %lt.qname; | %geq.qname; 
+      | %gt.qname;| %equivalent.qname; | %approx.qname;" &gt;
+
+&lt;!ELEMENT %eq.qname;  EMPTY &gt;
+&lt;!ATTLIST %eq.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %equivalent.qname;  EMPTY &gt;
+&lt;!ATTLIST %equivalent.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %approx.qname;  EMPTY &gt;
+&lt;!ATTLIST %approx.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %gt.qname;  EMPTY &gt;
+&lt;!ATTLIST %gt.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %lt.qname;  EMPTY &gt;
+&lt;!ATTLIST %lt.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %geq.qname;  EMPTY &gt;
+&lt;!ATTLIST %geq.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %leq.qname;  EMPTY &gt;
+&lt;!ATTLIST %leq.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % csetrel2ary              
+     "%in.qname; | %notin.qname; | %notsubset.qname; | %notprsubset.qname;" &gt;
+
+&lt;!ELEMENT %in.qname;  EMPTY &gt;
+&lt;!ATTLIST %in.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %notin.qname;  EMPTY &gt;
+&lt;!ATTLIST %notin.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %notsubset.qname;  EMPTY &gt;
+&lt;!ATTLIST %notsubset.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %notprsubset.qname;  EMPTY &gt;
+&lt;!ATTLIST %notprsubset.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % csetrelnary       
+     "%subset.qname; | %prsubset.qname;" &gt;
+
+&lt;!ELEMENT %subset.qname;  EMPTY &gt;
+&lt;!ATTLIST %subset.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ELEMENT %prsubset.qname;  EMPTY &gt;
+&lt;!ATTLIST %prsubset.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+&gt;
+
+&lt;!ENTITY % cseqrel2ary              
+     "%tendsto.qname;" &gt;
+
+&lt;!ELEMENT %tendsto.qname;  EMPTY &gt;
+&lt;!ATTLIST %tendsto.qname;
+      %MATHML.Common.attrib;
+      %att-definition;
+      %att-encoding;
+      %att-type;
+&gt;
+
+&lt;!-- Content elements: quantifiers --&gt;
+
+&lt;!ENTITY % cquantifier            
+     "%lowlimit.qname; | %uplimit.qname; | %bvar.qname; 
+      | %degree.qname; | %logbase.qname;
+      | %momentabout.qname; | %domainofapplication.qname; " &gt;
+
+&lt;!ATTLIST %lowlimit.qname;
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %uplimit.qname;
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %bvar.qname;
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %degree.qname;
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %logbase.qname;
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %momentabout.qname;
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!ATTLIST %domainofapplication.qname;
+      %MATHML.Common.attrib;
+&gt;
+
+&lt;!-- Operator groups --&gt;
+
+&lt;!ENTITY % cop1ary                  
+     "%cfuncop1ary; | %carithop1ary; | %clogicop1ary; |
+      %ccalcop1ary; | %ctrigop; | %clalgop1ary; |
+      %csetop1ary;" &gt;
+
+&lt;!ENTITY % cop2ary                  
+     "%carithop2ary; | %clogicop2ary;| %clalgop2ary; | %csetop2ary;" &gt;
+
+&lt;!ENTITY % copnary                  
+     "%cfuncopnary; | %carithopnary; | %clogicopnary; |
+      %csetopnary; | %cstatopnary; | %clalgopnary;" &gt;
+
+&lt;!ENTITY % copmisc                  
+     "%carithoproot; | %carithop1or2ary; | %ccalcop; |
+      %cseqop; | %cstatopmoment; | %clogicopquant;" &gt;
+
+&lt;!-- Relation groups --&gt;
+
+&lt;!ENTITY % crel2ary                 
+     "%cgenrel2ary; | %csetrel2ary; | %cseqrel2ary;" &gt;
+
+&lt;!ENTITY % crelnary                 
+     "%cgenrelnary; | %csetrelnary;" &gt;
+
+&lt;!-- Content constructs: all --&gt;
+
+&lt;!ENTITY % Content                  
+     "%ctoken; | %cspecial; | %cother; | %csemantics; | %c0ary;
+      | %cconstructor; | %cquantifier; | %cop1ary; | %cop2ary; 
+      | %copnary; |%copmisc; | %crel2ary; | %crelnary;" &gt;
+
+&lt;!-- Content constructs for substitution in presentation structures --&gt;
+
+&lt;!ENTITY % ContInPres               
+     "%ci.qname; |%csymbol.qname;| %cn.qname; | %c0ary; |
+      %apply.qname; | %fn.qname; |
+      %lambda.qname; | %reln.qname; |
+      %cconstructor; |
+      %semantics.qname; |%declare.qname;" &gt;
+
+&lt;!-- ............................................................. --&gt;
+&lt;!-- Recursive definition for content of expressions. Include
+     presentation constructs at lowest level so presentation
+     layout schemata hold presentation or content elements.
+     Include content constructs at lowest level so content
+     elements hold PCDATA or presentation elements at leaf
+     level (for permitted substitutable elements in context)
+--&gt;
+&lt;![%MathMLstrict;[
+&lt;!-- in strict mode don't allow presentation in content
+     except where allowed by chapter 5:
+     ci, cn, csymbol, semantics
+--&gt;
+  &lt;!ENTITY % ContentExpression  "(%Content;)*" &gt;
+  &lt;!ENTITY % semanticsContentExpression        
+       "(%Content; | %PresInCont; |
+         %annotation.qname; | %annotation-xml.qname;)*" &gt;
+]]&gt;
+&lt;!ENTITY % ContentExpression        
+     "(%Content; | %PresInCont;)*" &gt;
+&lt;!ENTITY % semanticsContentExpression    "%ContentExpression;"&gt;    
+
+
+&lt;!ENTITY % PresExpression      
+     "(%Presentation; | %ContInPres;)*" &gt;
+&lt;!ENTITY % MathExpression           
+     "(%PresInCont; | %ContInPres;)*" &gt;
+
+&lt;!-- PCDATA or MathML character elements --&gt;
+&lt;!ENTITY % MathMLCharacters         
+     "#PCDATA | %mglyph.qname; " &gt;
+
+&lt;!-- Content elements: tokens                       --&gt;
+&lt;!-- (may contain embedded presentation constructs) --&gt;
+
+&lt;!ELEMENT %ci.qname;                 (%MathMLCharacters; | %PresInCont;)* &gt;
+&lt;!ELEMENT %csymbol.qname;            (%MathMLCharacters; | %PresInCont;)* &gt;
+&lt;!ELEMENT %cn.qname;                 (%MathMLCharacters; | %sep.qname; | %PresInCont;)* &gt;
+
+&lt;!-- Content elements: special --&gt;
+
+&lt;!ELEMENT %apply.qname;              (%ContentExpression;) &gt;
+&lt;!ELEMENT %reln.qname;               (%ContentExpression;) &gt;
+&lt;!ELEMENT %lambda.qname;             (%ContentExpression;) &gt;
+
+&lt;!-- Content elements: other --&gt;
+
+&lt;!ELEMENT %condition.qname;          (%ContentExpression;) &gt;
+&lt;!ELEMENT %declare.qname;            (%ContentExpression;) &gt;
+
+&lt;!-- Content elements: semantics --&gt;
+
+&lt;!ELEMENT %semantics.qname;          (%semanticsContentExpression;) &gt;
+&lt;!ENTITY % Annotation.content  "( #PCDATA )" &gt;
+&lt;!ELEMENT %annotation.qname;         %Annotation.content; &gt;
+
+&lt;!ENTITY % Annotation-xml.content "ANY" &gt;
+&lt;!ELEMENT %annotation-xml.qname;     %Annotation-xml.content; &gt;
+
+&lt;!-- Content elements: constructors --&gt;
+
+&lt;!ELEMENT %interval.qname;           (%ContentExpression;) &gt;
+&lt;!ELEMENT %set.qname;                (%ContentExpression;) &gt;
+&lt;!ELEMENT %list.qname;               (%ContentExpression;) &gt;
+&lt;!ELEMENT %vector.qname;             (%ContentExpression;) &gt;
+&lt;!ELEMENT %matrix.qname;             (%ContentExpression;) &gt;
+&lt;!ELEMENT %matrixrow.qname;          (%ContentExpression;) &gt;
+
+&lt;!ELEMENT %piecewise.qname;          ((%piece.qname;)*, (%otherwise.qname;)? ) &gt;
+&lt;!ELEMENT %piece.qname;              (%ContentExpression;) &gt;
+&lt;!ELEMENT %otherwise.qname;          (%ContentExpression;) &gt;
+
+&lt;!-- Content elements: operator (user-defined) --&gt;
+
+&lt;!ELEMENT %fn.qname;                 (%ContentExpression;) &gt;
+
+&lt;!-- Content elements: quantifiers --&gt;
+
+&lt;!ELEMENT %lowlimit.qname;           (%ContentExpression;) &gt;
+&lt;!ELEMENT %uplimit.qname;            (%ContentExpression;) &gt;
+&lt;!ELEMENT %bvar.qname;               (%ContentExpression;) &gt;
+&lt;!ELEMENT %degree.qname;             (%ContentExpression;) &gt;
+&lt;!ELEMENT %logbase.qname;            (%ContentExpression;) &gt;
+&lt;!ELEMENT %momentabout.qname;        (%ContentExpression;) &gt;
+&lt;!ELEMENT %domainofapplication.qname; (%ContentExpression;) &gt;
+
+&lt;!-- ............................................................. --&gt;
+&lt;!-- Presentation layout schemata contain tokens,
+     layout and content schemata.
+--&gt;
+
+
+
+&lt;![%MathMLstrict;[
+&lt;!-- In strict mode enforce mfrac has exactly two children
+      same for msub etc --&gt;
+  &lt;!ENTITY % onePresExpression
+       "(%Presentation; | %ContInPres;)" &gt;
+  &lt;!ENTITY % twoPresExpression
+       "(%onePresExpression;,%onePresExpression;)" &gt;
+  &lt;!ENTITY % threePresExpression
+       "(%onePresExpression;,%onePresExpression;,%onePresExpression;)" &gt;
+  &lt;!ENTITY % mtrPresExpression
+       "(%mtr.qname;|%mlabeledtr.qname;)*" &gt;
+  &lt;!ENTITY % mtdPresExpression
+       "(%mtd.qname;)*" &gt;
+  &lt;!ENTITY % prscrPresExpression " (%onePresExpression;,
+  ((%onePresExpression;|%none.qname;),(%onePresExpression;|%none.qname;))*,
+  (%mprescripts.qname;,
+  ((%onePresExpression;|%none.qname;),(%onePresExpression;|%none.qname;))*)?
+  )"&gt;
+]]&gt;
+
+
+&lt;!-- By default keep them as they were in MathML 2.0  --&gt;
+&lt;!ENTITY % onePresExpression   "%PresExpression;"&gt;
+&lt;!ENTITY % twoPresExpression   "%PresExpression;"&gt;
+&lt;!ENTITY % threePresExpression "%PresExpression;"&gt;
+&lt;!ENTITY % mtrPresExpression   "%PresExpression;"&gt;
+&lt;!ENTITY % mtdPresExpression   "%PresExpression;"&gt;
+&lt;!ENTITY % prscrPresExpression "%PresExpression;"&gt;
+
+&lt;!ELEMENT %mstyle.qname;             (%PresExpression;) &gt;
+&lt;!ELEMENT %merror.qname;             (%PresExpression;) &gt;
+&lt;!ELEMENT %mphantom.qname;           (%PresExpression;) &gt;
+&lt;!ELEMENT %mrow.qname;               (%PresExpression;) &gt;
+&lt;!ELEMENT %mfrac.qname;              (%twoPresExpression;) &gt;
+&lt;!ELEMENT %msqrt.qname;              (%PresExpression;) &gt;
+&lt;!ELEMENT %menclose.qname;           (%PresExpression;) &gt;
+&lt;!ELEMENT %mroot.qname;              (%twoPresExpression;) &gt;
+&lt;!ELEMENT %msub.qname;               (%twoPresExpression;) &gt;
+&lt;!ELEMENT %msup.qname;               (%twoPresExpression;) &gt;
+&lt;!ELEMENT %msubsup.qname;            (%threePresExpression;) &gt;
+&lt;!ELEMENT %mmultiscripts.qname;      (%prscrPresExpression;) &gt;
+&lt;!ELEMENT %munder.qname;             (%twoPresExpression;) &gt;
+&lt;!ELEMENT %mover.qname;              (%twoPresExpression;) &gt;
+&lt;!ELEMENT %munderover.qname;         (%threePresExpression;) &gt;
+&lt;!ELEMENT %mtable.qname;             (%mtrPresExpression;) &gt;
+&lt;!ELEMENT %mtr.qname;                (%mtdPresExpression;) &gt;
+&lt;!ELEMENT %mlabeledtr.qname;         (%mtdPresExpression;) &gt;
+&lt;!ELEMENT %mtd.qname;                (%PresExpression;) &gt;
+&lt;!ELEMENT %maction.qname;            (%PresExpression;) &gt;
+&lt;!ELEMENT %mfenced.qname;            (%PresExpression;) &gt;
+&lt;!ELEMENT %mpadded.qname;            (%PresExpression;) &gt;
+
+&lt;!-- Presentation elements contain PCDATA or malignmark constructs. --&gt;
+
+&lt;!ELEMENT %mi.qname;                 (%MathMLCharacters; |
+      %malignmark.qname;)* &gt;
+&lt;!ELEMENT %mn.qname;                 (%MathMLCharacters; |
+      %malignmark.qname;)* &gt;
+&lt;!ELEMENT %mo.qname;                 (%MathMLCharacters; |
+      %malignmark.qname;)* &gt;
+&lt;!ELEMENT %mtext.qname;              (%MathMLCharacters; |
+      %malignmark.qname;)* &gt;
+&lt;!ELEMENT %ms.qname;                 (%MathMLCharacters; |
+      %malignmark.qname;)* &gt;
+
+&lt;!-- Browser interface definition  ............................... --&gt;
+
+&lt;!-- Attributes for top-level element "math" --&gt;
+
+&lt;!ENTITY % att-macros               
+     "macros       CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-mode                 
+     "mode         CDATA                    #IMPLIED" &gt;
+&lt;![%MathMLstrict;[
+  &lt;!ENTITY % att-display
+     "display      ( block | inline )                    'inline'" &gt;
+]]&gt;
+&lt;!ENTITY % att-display                
+     "display      CDATA                    #IMPLIED" &gt;
+
+&lt;!ENTITY % att-schemalocation               
+     "%Schema.prefix;:schemaLocation CDATA  #IMPLIED"&gt;		
+
+&lt;!ENTITY % att-topinfo          
+     "%MATHML.Common.attrib;
+      %att-schemalocation;		
+      %att-macros;
+      %att-mode;
+      %att-display;" &gt;
+
+&lt;!-- Attributes for browser interface element --&gt;
+
+&lt;!ENTITY % att-baseline             
+     "baseline     CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-overflow            
+     "overflow  ( scroll | elide | truncate | scale ) 'scroll'" &gt;
+&lt;!ENTITY % att-altimg               
+     "altimg       CDATA                    #IMPLIED" &gt;
+&lt;!ENTITY % att-alttext           
+     "alttext      CDATA                    #IMPLIED" &gt;
+
+&lt;!ENTITY % att-browif           
+     "%att-type;
+      %att-name;
+      %att-height;
+      %att-width;
+      %att-baseline;
+      %att-overflow;
+      %att-altimg;
+      %att-alttext;" &gt;
+
+&lt;!-- ............................................................. --&gt;
+&lt;!-- The top-level element "math" contains MathML encoded
+     mathematics. The "math" element has the browser info
+     attributes iff it is also the browser interface element.
+--&gt;
+
+&lt;!ELEMENT %math.qname;               (%MathExpression;) &gt;
+
+&lt;!ATTLIST %math.qname;
+      %att-topinfo;
+      %att-browif; &gt;
+
+&lt;!-- MathML Character Entities .............................................. --&gt;
+&lt;!ENTITY % mathml-charent.module "INCLUDE" &gt;
+&lt;![%mathml-charent.module;[
+&lt;!-- Entity sets from ISO Technical Report 9573-13 ..... --&gt;
+
+&lt;!ENTITY % ent-isoamsa
+      PUBLIC "-//W3C//ENTITIES Added Math Symbols: Arrow Relations for MathML 2.0//EN"
+             "iso9573-13/isoamsa.ent" &gt;
+%ent-isoamsa;
+
+&lt;!ENTITY % ent-isoamsb
+      PUBLIC "-//W3C//ENTITIES Added Math Symbols: Binary Operators for MathML 2.0//EN"
+             "iso9573-13/isoamsb.ent" &gt;
+%ent-isoamsb;
+
+&lt;!ENTITY % ent-isoamsc
+      PUBLIC "-//W3C//ENTITIES Added Math Symbols: Delimiters for MathML 2.0//EN"
+             "iso9573-13/isoamsc.ent" &gt;
+%ent-isoamsc;
+
+&lt;!ENTITY % ent-isoamsn
+      PUBLIC "-//W3C//ENTITIES Added Math Symbols: Negated Relations for MathML 2.0//EN"
+             "iso9573-13/isoamsn.ent" &gt;
+%ent-isoamsn;
+
+&lt;!ENTITY % ent-isoamso
+      PUBLIC "-//W3C//ENTITIES Added Math Symbols: Ordinary for MathML 2.0//EN"
+             "iso9573-13/isoamso.ent" &gt;
+%ent-isoamso;
+
+&lt;!ENTITY % ent-isoamsr
+      PUBLIC "-//W3C//ENTITIES Added Math Symbols: Relations for MathML 2.0//EN"
+             "iso9573-13/isoamsr.ent" &gt;
+%ent-isoamsr;
+
+&lt;!ENTITY % ent-isogrk3
+      PUBLIC "-//W3C//ENTITIES Greek Symbols for MathML 2.0//EN"
+             "iso9573-13/isogrk3.ent" &gt;
+%ent-isogrk3;
+
+&lt;!ENTITY % ent-isomfrk
+      PUBLIC "-//W3C//ENTITIES Math Alphabets: Fraktur for MathML 2.0//EN"
+             "iso9573-13/isomfrk.ent" &gt;
+%ent-isomfrk;
+
+&lt;!ENTITY % ent-isomopf
+      PUBLIC "-//W3C//ENTITIES Math Alphabets: Open Face for MathML 2.0//EN"
+             "iso9573-13/isomopf.ent" &gt;
+%ent-isomopf;
+
+&lt;!ENTITY % ent-isomscr
+      PUBLIC "-//W3C//ENTITIES Math Alphabets: Script for MathML 2.0//EN"
+             "iso9573-13/isomscr.ent" &gt;
+%ent-isomscr;
+
+&lt;!ENTITY % ent-isotech
+      PUBLIC "-//W3C//ENTITIES General Technical for MathML 2.0//EN"
+             "iso9573-13/isotech.ent" &gt;
+%ent-isotech;
+
+&lt;!-- Entity sets from informative annex to ISO 8879:1986 (SGML) ....... --&gt;
+
+&lt;!ENTITY % ent-isobox
+      PUBLIC "-//W3C//ENTITIES Box and Line Drawing for MathML 2.0//EN"
+             "iso8879/isobox.ent" &gt;
+%ent-isobox;
+
+&lt;!ENTITY % ent-isocyr1
+      PUBLIC "-//W3C//ENTITIES Russian Cyrillic for MathML 2.0//EN"
+             "iso8879/isocyr1.ent" &gt;
+%ent-isocyr1;
+
+&lt;!ENTITY % ent-isocyr2
+      PUBLIC "-//W3C//ENTITIES Non-Russian Cyrillic for MathML 2.0//EN"
+             "iso8879/isocyr2.ent" &gt;
+%ent-isocyr2;
+
+&lt;!ENTITY % ent-isodia
+      PUBLIC "-//W3C//ENTITIES Diacritical Marks for MathML 2.0//EN"
+             "iso8879/isodia.ent" &gt;
+%ent-isodia;
+
+&lt;!ENTITY % ent-isolat1
+      PUBLIC "-//W3C//ENTITIES Added Latin 1 for MathML 2.0//EN"
+             "iso8879/isolat1.ent" &gt;
+%ent-isolat1;
+
+&lt;!ENTITY % ent-isolat2
+      PUBLIC "-//W3C//ENTITIES Added Latin 2 for MathML 2.0//EN"
+             "iso8879/isolat2.ent" &gt;
+%ent-isolat2;
+
+&lt;!ENTITY % ent-isonum
+      PUBLIC "-//W3C//ENTITIES Numeric and Special Graphic for MathML 2.0//EN"
+             "iso8879/isonum.ent" &gt;
+%ent-isonum;
+
+&lt;!ENTITY % ent-isopub
+      PUBLIC "-//W3C//ENTITIES Publishing for MathML 2.0//EN"
+             "iso8879/isopub.ent" &gt;
+%ent-isopub;
+
+&lt;!-- New characters defined by MathML ............................ --&gt;
+
+&lt;!ENTITY % ent-mmlextra
+      PUBLIC "-//W3C//ENTITIES Extra for MathML 2.0//EN"
+             "mathml/mmlextra.ent" &gt;
+%ent-mmlextra;
+
+&lt;!-- MathML aliases for characters defined above ................. --&gt;
+
+&lt;!ENTITY % ent-mmlalias
+      PUBLIC "-//W3C//ENTITIES Aliases for MathML 2.0//EN"
+             "mathml/mmlalias.ent" &gt;
+%ent-mmlalias;
+
+&lt;!-- end of MathML Character Entity section --&gt;]]&gt;
+
+&lt;!-- Revision History:
+
+       Initial draft (syntax = XML) 1997-05-09
+          Stephen Buswell
+       Revised 1997-05-14
+          Robert Miner
+       Revised 1997-06-29 and 1997-07-02
+          Stephen Buswell
+       Revised 1997-12-15
+          Stephen Buswell
+       Revised 1998-02-08
+          Stephen Buswell
+       Revised 1998-04-04
+          Stephen Buswell
+       Entities and small revisions 1999-02-21
+          David Carlisle
+       Added attribute definitionURL to ci and cn 1999-10-11
+          Nico Poppelier
+       Additions for MathML 2  1999-12-16
+          David Carlisle
+       Namespace support 2000-01-14
+          David Carlisle
+       XHTML Compatibility 2000-02-23
+          Murray Altheim
+       New content elements 2000-03-26
+          David Carlisle
+       Further revisions for MathML2 CR draft 2000-07-11
+          David Carlisle
+       Further revisions for MathML2 CR draft 2000-10-31		
+          David Carlisle		
+       Revisions for Unicode 3.2  2002-05-21		
+          David Carlisle		
+       Add width and side attributes to mtable (to align with the specification)  2002-06-05		
+          David Carlisle		
+       Use %XLINK.prefix rather than hardwired xlink:, add xlink:type 2002-06-12		
+          David Carlisle		
+       Add missing numalign and denomalign attributes for mfrac 2002-07-05		
+          David Carlisle		
+       Add MathMLstrict entity and related extra constraints 2002-12-05		
+          David Carlisle		
+       Add support for xi:schemaLocation 2003-04-05		
+          David Carlisle		
+       Removed actiontype from mstyle (to match spec) 2003-04-07		
+          David Carlisle		
+       Additional constraints for MathMLstrict code (From Simon		
+          Pepping on www-math list) 2003-05-22		
+          David Carlisle		
+       Add missing minlabelspacing attribute (From Simon		
+          Pepping on www-math list) 2003-05-22		
+          David Carlisle		
+       Removed restricted menclose notation checking from MathMLstrict 2003-09-08		
+          David Carlisle		
+
+--&gt;
+
+&lt;!-- end of MathML 2.0 DTD  ................................................ --&gt;
+&lt;!-- ....................................................................... --&gt;
+
+
+</pre></p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

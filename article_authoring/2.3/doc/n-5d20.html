@@ -1,0 +1,97 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib3-pumpkin.css" type="text/css">
+      <title>Element: Appendix Matter</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;app-group&gt;</h1>
+         <h1 class="elementname">Appendix Matter</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Wrapper element for one or more appendices (<a href="n-6g20.html"><span class="elementtag">&lt;app&gt;</span></a> elements), which hold additional or ancillary material attached to an article
+         </p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">This element is the same as the Appendix Matter
+                   <tt>&lt;appm&gt;</tt> element used in AAP- and ISO 12083-derivative DTDs.
+         </p>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-pv40.html"><span class="attrtag">content-type</span></a> <a href="n-pv40.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-t2s0.html"><span class="attrtag">id</span></a> <a href="n-t2s0.html"><span class="attrname">Identifier</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  app-group    %app-group-model;                            &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">The following, in order:
+               <ul class="bullist">
+                  <li>
+                                       <a href="n-3rx0.html"><span class="elementname">Title</span></a> <a href="n-3rx0.html"><span class="elementtag">&lt;title&gt;</span></a>, zero or one
+                  </li>
+                  <li>
+                                       <a href="n-tea0.html"><span class="elementname">Paragraph</span></a> <a href="n-tea0.html"><span class="elementtag">&lt;p&gt;</span></a>, zero or more
+                  </li>
+                  <li>
+                                       <a href="n-6g20.html"><span class="elementname">Appendix</span></a> <a href="n-6g20.html"><span class="elementtag">&lt;app&gt;</span></a>, zero or more
+                  </li>
+               </ul>
+                     
+            </p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-mz20.html"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-mz20.html"><span class="elementname">Back Matter</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+
+&lt;article&gt;
+&lt;front&gt;
+...&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;
+&lt;ref-list&gt;...
+&lt;/ref-list&gt;
+<strong><span class="focus">&lt;app-group&gt;
+&lt;app&gt;&lt;title&gt;Appendix&lt;/title&gt;
+&lt;sec&gt;&lt;title&gt;The Bipolar Seesaw.&lt;/title&gt;
+&lt;p&gt;The evidence for the antiphasing of the millennial-duration climate 
+changes occurring on the Antarctic continent ...&lt;/p&gt;...
+&lt;/app&gt;
+&lt;/app-group&gt;</span></strong>
+
+&lt;/back&gt;
+&lt;/article&gt; 
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">backmatter.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Article Authoring Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>

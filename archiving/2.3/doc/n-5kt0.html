@@ -1,0 +1,145 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="taglib2.css" type="text/css">
+      <title>Element: Object Identifier</title>
+      <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2005-->
+   </head>
+   <body class="main">
+      <div class="pageheader">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+             National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+             National Library of Medicine (NLM)
+         </h4>
+      </div>
+      <div class="header">
+         <h1 class="elementtag">&lt;object-id&gt;</h1>
+         <h1 class="elementname">Object Identifier</h1>
+      </div>
+      <div class="definition">
+         <h2 class="header">Definition</h2>
+         <p class="para">Used to record an identifier, such as a DOI, for elements other than the top-level element <a href="n-4nc0.html"><span class="elementtag">&lt;article&gt;</span></a>, for example, for the elements <a href="n-8a20.html"><span class="elementtag">&lt;abstract&gt;</span></a> or <a href="n-h4w0.html"><span class="elementtag">&lt;fig&gt;</span></a></p>
+      </div>
+      <div class="remarks">
+         <h2 class="header">Remarks</h2>
+         <p class="para">Such an identifier may be created by a publisher or archive, and there is no requirement that identifiers be unique.</p>
+         <p class="para">Design Note: An element, rather than an attribute, was chosen as the means to capture DOIs and other identifiers so multiple
+            identifiers could be retained.
+         </p>
+         <p class="para">The Archiving Tag Set includes two elements which may be used to record a DOI as an identifier:  <a href="n-5kt0.html"><span class="elementtag">&lt;object-id&gt;</span></a> and <a href="n-fj70.html"><span class="elementtag">&lt;pub-id&gt;</span></a>.  The <a href="n-5kt0.html"><span class="elementtag">&lt;object-id&gt;</span></a> is used to identify parts of an article, e.g., a particular section, a figure, a table, or even a specific citation (as an
+            entity) in the article&#8217;s bibliographic reference list.  The <a href="n-fj70.html"><span class="elementtag">&lt;pub-id&gt;</span></a> element is used inside a citation to identify a cited publication.  Consequently, a bibliographic reference (<a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> or <a href="n-2is0.html"><span class="elementtag">&lt;nlm-citation&gt;</span></a> could contain both the <a href="n-5kt0.html"><span class="elementtag">&lt;object-id&gt;</span></a> element (with the DOI for that citation) and the <a href="n-fj70.html"><span class="elementtag">&lt;pub-id&gt;</span></a> element (with the DOI for the journal being referenced in the citation) as shown by the example below:
+         </p>
+         <div class="codeblock"><pre>
+&lt;article&gt;
+&lt;front&gt;
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="doi"&gt;MyPub.20070215.03154&lt;/article-id&gt;
+...&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;ref id="B6"&gt;&lt;label&gt;6&lt;/label&gt;
+&lt;citation&gt;
+&lt;object-id pub-id-type="doi"&gt;MyPub.20070215.03154.s433&lt;/object-id&gt;
+...&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B7"&gt;&lt;label&gt;7&lt;/label&gt;
+&lt;citation&gt;
+&lt;object-id pub-id-type="doi"&gt;MyPub.20070215.03154.s434&lt;/object-id&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Brook&lt;/surname&gt;
+&lt;given-names&gt;I.&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;Infant Botulism&lt;/article-title&gt;
+&lt;source&gt;J Perinatol.&lt;/source&gt;
+&lt;year&gt;2007&lt;/year&gt;
+&lt;volume&gt;27&lt;/volume&gt;
+&lt;issue&gt;3&lt;/issue&gt;
+&lt;fpage&gt;175&lt;/fpage&gt;
+&lt;lpage&gt;180&lt;/lpage&gt;
+&lt;pub-id pub-id-type="pmid"&gt;17314986&lt;/pub-id&gt;
+&lt;pub-id pub-id-type="doi"&gt;10.1038/sj.jp.7211651&lt;/pub-id&gt;
+&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B8"&gt;&lt;label&gt;8&lt;/label&gt;
+&lt;citation&gt;
+&lt;object-id pub-id-type="doi"&gt;MyPub.20070215.03154.s435&lt;/object-id&gt;
+...&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;ref id="B9"&gt;&lt;label&gt;9&lt;/label&gt;
+&lt;citation&gt;
+&lt;object-id pub-id-type="doi"&gt;MyPub.20070215.03154.s436&lt;/object-id&gt;
+...&lt;/citation&gt;
+&lt;/ref&gt;
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+</pre></div>
+      </div>
+      <div class="attrlist">
+         <h2 class="header">Attributes</h2>
+         <h5 class="header"><a href="n-rhi0.html"><span class="attrtag">content-type</span></a> <a href="n-rhi0.html"><span class="attrname">Type of Content</span></a></h5>
+         <h5 class="header"><a href="n-fdj0.html"><span class="attrtag">pub-id-type</span></a> <a href="n-fdj0.html"><span class="attrname">Type of Publication Identifier</span></a></h5>
+      </div>
+      <div class="modelinfo">
+         <h2 class="header">Model Information</h2>
+         <div class="contentmodel">
+            <h3 class="header">Content Model</h3><pre class="contentdesc">&lt;!ELEMENT  object-id    (#PCDATA)                                    &gt;</pre></div>
+         <div class="modeldesc">
+            <h3 class="header">Description</h3>
+            <p class="para">Text, numbers, or special characters</p>
+         </div>
+         <div class="elementcontext">
+            <h3 class="header">This element may be contained in:</h3>
+            <p class="para"><a href="n-8a20.html"><span class="elementtag">&lt;abstract&gt;</span></a> <a href="n-8a20.html"><span class="elementname">Abstract</span></a>; <a href="n-pn30.html"><span class="elementtag">&lt;boxed-text&gt;</span></a> <a href="n-pn30.html"><span class="elementname">Boxed Text</span></a>; <a href="n-sj30.html"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-sj30.html"><span class="elementname">Chemical Structure (Display)</span></a>; <a href="n-az30.html"><span class="elementtag">&lt;chem-struct-wrapper&gt;</span></a> <a href="n-az30.html"><span class="elementname">Chemical Structure Wrapper</span></a>; <a href="n-2c50.html"><span class="elementtag">&lt;citation&gt;</span></a> <a href="n-2c50.html"><span class="elementname">Citation</span></a>; <a href="n-h4w0.html"><span class="elementtag">&lt;fig&gt;</span></a> <a href="n-h4w0.html"><span class="elementname">Figure</span></a>; <a href="n-eqx0.html"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-eqx0.html"><span class="elementname">Graphic</span></a>; <a href="n-wb40.html"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-wb40.html"><span class="elementname">Media Object</span></a>; <a href="n-z770.html"><span class="elementtag">&lt;product&gt;</span></a> <a href="n-z770.html"><span class="elementname">Product Information</span></a>; <a href="n-h4e0.html"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-h4e0.html"><span class="elementname">Related Article Information</span></a>; <a href="n-4a60.html"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-4a60.html"><span class="elementname">Supplementary Material</span></a>; <a href="n-tn60.html"><span class="elementtag">&lt;table-wrap&gt;</span></a> <a href="n-tn60.html"><span class="elementname">Table Wrapper</span></a></p>
+         </div>
+      </div>
+      <div class="taggedexamp">
+         <h2 class="header">Tagged Example</h2>
+         <div class="taggedex"><pre class="taggedtext">
+...
+&lt;sec sec-type="results"&gt;
+&lt;title&gt;Results&lt;/title&gt;
+&lt;p&gt;We identified 703 abstracts, of which 687 were not 
+relevant ... Details of randomisation procedures, 
+treatment schedules, and numbers of patients followed 
+up are given on the &lt;italic&gt;BMJ&lt;/italic&gt; website.&lt;/p&gt;
+&lt;fig id="F1"&gt;
+&lt;caption&gt;
+&lt;p&gt;Deaths among patients receiving day hospital care
+or alternative services. Odds ratios of death by end
+of follow up were calculated by fixed effects model.
+Heterogeneity between trials is presented as
+&amp;#x03C7;&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;/caption&gt;
+&lt;alt-text&gt;Deaths in hospitals or with alternative 
+services&lt;/alt-text&gt;
+&lt;graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="fors2662.f1" alt-version="yes"&gt;
+<strong><span class="focus">&lt;object-id&gt;456472&lt;/object-id&gt;</span></strong>
+&lt;/graphic&gt;
+&lt;/fig&gt;
+...
+&lt;/sec&gt;
+...
+
+
+</pre></div>
+      </div>
+      <div class="moduledefined">
+         <h2 class="header">Module</h2>
+         <p class="moduledefined">common.ent</p>
+      </div>
+      <div class="pagefooter">
+         <h2 class="headname">Journal Archiving and Interchange Tag Set Tag Library version 2.3</h2>
+         <h4 class="pubdate">Version of March 2007</h4>
+      </div>
+   </body>
+</html>
